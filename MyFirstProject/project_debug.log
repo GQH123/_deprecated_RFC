@@ -1,4 +1,4 @@
-[2023-05-09 15:33:38] (Project) [INFO] Project MyFirstProject launched.
+[2023-05-09 15:36:23] (Project) [INFO] Project MyFirstProject launched.
 
 Project Configurations:
 {
@@ -15,4 +15,4 @@ Project Configurations:
     "project_run_log_path": "./project_run.log"
 }
 
-[2023-05-09 15:33:38] (Itemset) [WARN] Param 'return_type' is not set, use ['resp'] instead. (from RFC.itemset.BaseItemset)
+[2023-05-09 15:36:23] (Itemset) [WARN] Param 'return_type' is not set, use ['resp'] instead. (from RFC.itemset.BaseItemset)
