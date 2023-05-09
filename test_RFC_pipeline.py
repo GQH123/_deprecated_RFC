@@ -57,7 +57,7 @@ def get_itemset():
         itemset_config = get_config('rawitemset')
         itemset_config = itemset_config(
             name='MyItemset',
-            items=list(range(200000, 200010)),
+            items=list(range(200010, 200020)),
             preprocess=None,
             attrs={
                 'url': lambda i, x: f'https://www.pixiv.net/ajax/illust/{x}',
@@ -98,12 +98,30 @@ def get_requestor():
                     },
                     'method': 'passin',
                 },
+                'proxies': {
+                    'kwargs': {
+                        'proxies': {
+                            'http': 'http://10.176.50.14:7890',
+                            'https': 'http://10.176.50.14:7890',
+                        },
+                        'ptype': str,
+                    },
+                    'method': 'passin',
+                },
             },
         )
         # arguments_config.print()
         return arguments_config
 
     def get_session_config():
+        session_config = get_config('asks')
+        session_config = session_config(
+            name='MySession',
+            arguments_config=get_arguments_config(),
+            connections=10,
+            request_timeout=10,
+            connection_timeout=10,
+        )
         """
         session_config = get_config('aiohttp')
         session_config = session_config(
@@ -114,6 +132,7 @@ def get_requestor():
             connections_per_host=10,
         )
         """
+        """
         session_config = get_config('requests')
         session_config = session_config(
             name='MySession',
@@ -121,19 +140,32 @@ def get_requestor():
             connect_timeout=20,
             read_timeout=10,
         )
+        """
         # session_config.print(include_sub=True)
         return session_config
+
+    def get_middleware_config():
+        middleware_config = get_config('json')
+        middleware_config = middleware_config(
+            name='MyMiddleware',
+            savename=lambda item: f'{item.name}.json',
+            mode='json',
+        )
+        # middleware_config.print(include_sub=True)
+        return middleware_config
 
     def get_requestor_config():
         requestor_config = get_config('requestor')
         requestor_config = requestor_config(
             name='MyRequestor',
             session_config=get_session_config(),
+            middleware_config=get_middleware_config(),
         )
         requestor_config.print(include_sub=True)
         return requestor_config
 
     requstor_config = get_requestor_config()
+    requstor_config.print()
     requestor = get_module(requstor_config)
     return requestor
 

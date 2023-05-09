@@ -1,5 +1,6 @@
 import aiohttp
 from typing import List
+from functools import partial
 
 from RFC.utils.exception_utils import NotSupported
 
@@ -17,15 +18,21 @@ class AioHTTPSession(Session):
         else:
             self.connections = session_config.connections
             self.connections_per_host = session_config.connections_per_host
-            self.connector = aiohttp.TCPConnector(
+            """
+            self.connector = partial(aiohttp.TCPConnector,
                 limit=self.connections,
                 limit_per_host=self.connections_per_host,
             )
+            """
             self.total_timeout = session_config.total_timeout
             self.connect_timeout = session_config.connect_timeout
             self.sock_connect_timeout = session_config.sock_connect_timeout
             self.sock_read_timeout = session_config.sock_read_timeout
-            self.timeout = aiohttp.ClientTimeout(
+            self.common_args = ['headers', 'cookies']
+
+            self.session = None
+            """
+            self.timeout = partial(aiohttp.ClientTimeout,
                 total=self.total_timeout,
                 connect=self.connect_timeout,
                 sock_connect=self.sock_connect_timeout,
@@ -38,9 +45,10 @@ class AioHTTPSession(Session):
             }
             request_args = self.arguments(include=self.common_args)
             request_args.update(self.session_specific_args)
-            self.session = aiohttp.ClientSession(
+            self.session = partial(aiohttp.ClientSession,
                 **request_args
             )
+            """
 
     def _init_request_args(
         self,
@@ -82,7 +90,31 @@ class AioHTTPSession(Session):
         self,
         request_args: dict,
     ):
-        if self.session:
+        async def _lazy_init_session():
+            self.connector = aiohttp.TCPConnector(
+                limit=self.connections,
+                limit_per_host=self.connections_per_host,
+            )
+            self.timeout = aiohttp.ClientTimeout(
+                total=self.total_timeout,
+                connect=self.connect_timeout,
+                sock_connect=self.sock_connect_timeout,
+                sock_read=self.sock_read_timeout,
+            )
+            self.session_specific_args = {
+                'connector': self.connector,
+                'timeout': self.timeout,
+            }
+            session_request_args = self.arguments(include=self.common_args)
+            session_request_args.update(self.session_specific_args)
+            self.session = aiohttp.ClientSession(
+                **session_request_args,
+            )
+
+        if self.use_session and not self.session:
+            await _lazy_init_session()
+
+        if self.use_session:
             resp = await self.session.request(
                 **request_args
             )
@@ -91,6 +123,11 @@ class AioHTTPSession(Session):
                 **request_args
             )
         return resp
+
+    async def _close(
+        self,
+    ):
+        await self.session.close()
 
     """
     async def _request_resp(

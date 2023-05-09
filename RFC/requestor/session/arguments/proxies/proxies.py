@@ -1,5 +1,5 @@
 from RFC.utils.structural_utils import leaf, get_leaves
-from RFC.utils.exception_utils import NotSupported, ConditionOverflowError
+from RFC.utils.exception_utils import NotSupported, ConditionOverflowError, ParamTypeError
 
 from .QGNetProxyManager import QGNetProxyManager
 
@@ -20,6 +20,24 @@ def off(**kwargs):
 @leaf(freeze=True)
 def fixed(value, **kwargs):
     return value
+
+
+@leaf()
+def passin(proxies, ptype, **kwargs):
+    if ptype is dict:
+        if isinstance(proxies, dict):
+            return proxies 
+        else:
+            raise ParamTypeError('proxies', proxies, dict, __name__)
+    elif ptype is str:
+        if isinstance(proxies, str):
+            return proxies 
+        elif isinstance(proxies, dict):
+            return proxies['http']
+        else:
+            raise ParamTypeError('proxies', proxies, str, __name__)
+
+    raise ParamTypeError('proxies', proxies, [dict, str], __name__)
 
 
 @leaf()

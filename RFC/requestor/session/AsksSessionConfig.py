@@ -8,6 +8,9 @@ class AsksSessionConfig(SessionConfig):
     connections: int
     _connections: int = field(init=False, repr=False)
 
+    request_timeout: int | float | None
+    _request_timeout: int | float | None = field(init=False, repr=False)
+
     connection_timeout: int | float | None
     _connection_timeout: int | float | None = field(init=False, repr=False)
 
@@ -18,6 +21,8 @@ class AsksSessionConfig(SessionConfig):
         super().__post_init__()
         if isinstance(self.connections, property):
             self._connections = 1
+        if isinstance(self.request_timeout, property):
+            self._request_timeout = 60
         if isinstance(self.connection_timeout, property):
             self._connection_timeout = 60
         if isinstance(self.persist_cookies, property):
@@ -34,6 +39,14 @@ class AsksSessionConfig(SessionConfig):
     @connections.setter
     def connections(self, value: int):
         self._connections = value
+
+    @property
+    def request_timeout(self):
+        return self._request_timeout
+    
+    @request_timeout.setter
+    def request_timeout(self, value: int | float | None):
+        self._request_timeout = value
 
     @property
     def connection_timeout(self):

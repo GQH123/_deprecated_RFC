@@ -1,5 +1,13 @@
 {
     "requestor": {
+        "middleware": {
+            "options": {
+                "get_middleware": [
+                    "(middleware_config: RFC.requestor.middleware.MiddleWareConfig.MiddleWareConfig | str, **kwargs)",
+                    "system"
+                ]
+            }
+        },
         "session": {
             "arguments": {
                 "cookies": {
@@ -103,6 +111,10 @@
                             "(value, **kwargs)",
                             "normal"
                         ],
+                        "passin": [
+                            "(proxies, ptype, **kwargs)",
+                            "normal"
+                        ],
                         "login": [
                             "(pm_type, **kwargs)",
                             "normal"
@@ -120,14 +132,6 @@
                 "options": {
                     "get_arguments": [
                         "(arguments_config: RFC.requestor.session.arguments.ArgumentsConfig.ArgumentsConfig | str, **kwargs)",
-                        "system"
-                    ]
-                }
-            },
-            "middleware": {
-                "options": {
-                    "get_middleware": [
-                        "(middleware_config: RFC.requestor.session.middleware.MiddleWareConfig.MiddleWareConfig | str, **kwargs)",
                         "system"
                     ]
                 }

@@ -1,4 +1,4 @@
-[2023-05-09 21:15:28] (Project, from RFC.user.project.BaseProject) [INFO] Project MyFirstProject launched.
+[2023-05-09 23:25:37] (Project, from RFC.user.project.BaseProject) [INFO] Project MyFirstProject launched.
 
 Project Configurations:
 {
@@ -15,10 +15,24 @@ Project Configurations:
     "project_run_log_path": "./project_run.log"
 }
 
-[2023-05-09 21:15:28] (Itemset, from RFC.itemset.BaseItemset) [WARN] Param 'params' is not set, use {} instead.
-[2023-05-09 21:15:28] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200008: a bytes-like object is required, not 'Response'
+[2023-05-09 23:25:37] (Itemset, from RFC.itemset.BaseItemset) [WARN] Param 'params' is not set, use {} instead.
+[2023-05-09 23:25:47] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200014: 
 
-[2023-05-09 21:15:28] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200002: a bytes-like object is required, not 'Response'
+[2023-05-09 23:25:57] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200017: 
 
-[2023-05-09 21:15:29] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200001: a bytes-like object is required, not 'Response'
+[2023-05-09 23:26:07] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200018: 
+
+[2023-05-09 23:26:17] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200011: 
+
+[2023-05-09 23:26:27] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200012: 
+
+[2023-05-09 23:26:37] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200019: 
+
+[2023-05-09 23:26:47] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200016: 
+
+[2023-05-09 23:26:57] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200013: 
+
+[2023-05-09 23:27:07] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200010: 
+
+[2023-05-09 23:27:17] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200015: 
 

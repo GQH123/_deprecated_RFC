@@ -69,7 +69,7 @@ class RequestsSession(Session):
         self,
         request_args: dict,
     ):
-        if self.session:
+        if self.use_session:
             resp = self.session.request(
                 **request_args
             )

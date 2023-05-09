@@ -15,7 +15,7 @@ class AsksSession(Session):
         else:
             self.connections = session_config.connections
             self.persist_cookies = session_config.persist_cookies
-            self.common_args = ['headers', 'cookies']
+            self.common_args = ['headers']
             self.session_specific_args = {
                 'connections': self.connections,
                 'persist_cookies': self.persist_cookies,
@@ -31,7 +31,7 @@ class AsksSession(Session):
         session_config: AsksSessionConfig,
     ):
         self.request_specific_args = {
-            'timeout': session_config.timeout,
+            'timeout': session_config.request_timeout,
             'connection_timeout': session_config.connection_timeout,
         }
 
@@ -71,7 +71,7 @@ class AsksSession(Session):
         self,
         request_args: dict,
     ):
-        if self.session:
+        if self.use_session:
             resp = await self.session.request(
                 **request_args
             )

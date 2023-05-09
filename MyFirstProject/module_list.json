@@ -1,4 +1,5 @@
 {
+    "middleware": "RFC.requestor.middleware",
     "cookies": "RFC.requestor.session.arguments.cookies",
     "base": "RFC.requestor.session.arguments.headers.base",
     "referer": "RFC.requestor.session.arguments.headers.referer",
@@ -9,7 +10,6 @@
     "proxies": "RFC.requestor.session.arguments.proxies",
     "url": "RFC.requestor.session.arguments.url",
     "arguments": "RFC.requestor.session.arguments",
-    "middleware": "RFC.requestor.session.middleware",
     "session": "RFC.requestor.session",
     "requestor": "RFC.requestor",
     "itemset": "RFC.itemset"

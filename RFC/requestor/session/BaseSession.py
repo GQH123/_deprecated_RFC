@@ -79,7 +79,7 @@ class BaseSession(BaseModule):
 
         exclude = excludes[method]
         rename_map = rename_maps[method]
-        if self.session:
+        if self.use_session:
             exclude += self.common_args
         kwargs = {k: v[method] for k, v in kwargs.items() if method in v}
         request_args = partial(
@@ -122,11 +122,11 @@ class BaseSession(BaseModule):
         else:
             raise ConditionOverflowError(item.method, __name__)
 
-        if self.session:
+        if self.use_session:
             request_args.update(self.request_specific_args)
         else:
             request_args.update(self.request_specific_args)
-            request_args.update(self.common_args)
+            request_args.update(self.arguments(include=self.common_args))
         request_args.update(dict(
             method=item.method,
         ))
@@ -151,6 +151,11 @@ class BaseSession(BaseModule):
             self.contiguous_failed_counts = 0
             return True
         return False
+
+    async def _close(
+        self,
+    ):
+        ...
 
     def _retrieve_config(
         self,

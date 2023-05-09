@@ -7,7 +7,9 @@ import pickle
 import inspect
 import builtins
 import functools
+import traceback
 from typing import Any
+from functools import partial
 # from string import Formatter
 from datetime import datetime
 from dataclasses import dataclass, field
@@ -56,10 +58,11 @@ def _parse_fileIO(file, from_module=None):
         return file
     if isinstance(file, str):
         if file in output_channels:
+            if isinstance(output_channels[file], partial):
+                output_channels[file] = output_channels[file]()  # lazy open
             return output_channels[file]
         else:
-            return None
-            # raise ParamValueError('file', file, list(output_channels.keys()), from_module)
+            raise ParamValueError('file', file, list(output_channels.keys()), from_module)
     if isinstance(file, list):
         return [_parse_fileIO(f, from_module) for f in file]
     raise ParamTypeError('file', file, [io.IOBase, str], from_module)
@@ -80,18 +83,19 @@ def update_output_channels(channel_name, channel, prefix_project_dir='root', fro
     if isinstance(channel, io.IOBase):
         output_channels[channel_name] = channel
     elif isinstance(channel, str):
-        output_channels[channel_name] = open(os.path.join(get_project_prefix(prefix_project_dir, from_module), channel), 'w')
+        output_channels[channel_name] = partial(open, os.path.join(get_project_prefix(prefix_project_dir, from_module), channel), 'w')  # lazy open
     else:
         raise ParamTypeError('channel', channel, [io.IOBase, str], from_module)
 
 def log(
     message: Any = '',
     file: Any = 'main',
-    note: str = '',
+    note: str = 'Log',
     mode: str = 'info',
     from_module: str | None = None,
     pure_output: bool = False,
     flush: bool = True,
+    trace: bool = False,
     **kwargs,
 ):
     try:
@@ -104,6 +108,8 @@ def log(
     file = _parse_fileIO(file, from_module)
     current_time = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
     mode = f'[{mode.upper()}]'
+    if trace:
+        message += f'\nTraceback:\n{traceback.format_exc()}\n'
     if pure_output:
         result = message
     else:

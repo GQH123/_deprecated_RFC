@@ -1,1 +1,1 @@
-../../../utils/structural_initializer.py
+../../utils/structural_initializer.py

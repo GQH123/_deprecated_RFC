@@ -66,9 +66,11 @@ class BaseRequestor(BaseModule):
             self.async_framework = None
     
     def _init_middlewares(self, requestor_config):
-        self.middleware_configs = requestor_config.middleware_configs
+        self.middleware_config = requestor_config.middleware_config
         self.middlewares = []
-        for middleware_config in self.middleware_configs:
+        if not isinstance(self.middleware_config, list):
+            self.middleware_config = [self.middleware_config]
+        for middleware_config in self.middleware_config:
             middleware_config.framework = self.framework
             middleware = get_middleware(middleware_config)
             self.middlewares.append(middleware)
@@ -100,11 +102,10 @@ class BaseRequestor(BaseModule):
         name: str = None,
         result: Any = None,
     ):
-        update_output_channels('current_requested_item_error', f'{item.name}.error', 'error')
         if name is None:
             name = f'{item.name}'
         log(f'Error fetching {name}: {e}\n', 'main', 'Requestor.Error', 'error', __name__)
-        log(f'Error fetching {name}: {e}, traceback:\n{traceback.format_exc()}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__)
+        log(f'Error fetching {name}: {e}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__, trace=True)
         log(f'Error fetching {name}: {e}\n', 'test', 'Requestor.Error', 'error', __name__)
         if result is not None:
             log(f'\nrequest headers: {result.headers}\n\nrequest url: {result.url}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__)
@@ -119,10 +120,12 @@ class BaseRequestor(BaseModule):
         result = None
         try:
             update_output_channels('current_requested_item_log', f'{item.name}.log', 'log')
+            update_output_channels('current_requested_item_error', f'{item.name}.error', 'error')
             result = await self.session.request(item, rank)
             for middleware in self.middlewares:
-                result = await middleware(item, result)
+                result, status = await middleware(item, result)
             # self._save_result(item.name, result)
+            log(f'Fetched {item.name}', 'current_requested_item_log', 'Requestor._fetch', 'info', __name__)
         except Exception as e:
             self._error_handler(e, item, name, result)
         if sema is not None:
@@ -139,6 +142,7 @@ class BaseRequestor(BaseModule):
             for item in items:
                 await sema.acquire()
                 nursery.start_soon(self._fetch, rank, item, sema, f'fetching {item.name}')
+        await self._close_session()
 
     async def _fetch_all_asyncio(
         self,
@@ -153,6 +157,7 @@ class BaseRequestor(BaseModule):
             tasks.append(asyncio.create_task(self._fetch(rank, item, sema, f'fetching {item.name}')))
         for task in tasks:
             await task
+        await self._close_session()
 
     async def _fetch_all_sync(
         self,
@@ -161,6 +166,12 @@ class BaseRequestor(BaseModule):
     ):
         for item in items:
             await self._fetch(rank, item, None, f'fetching {item.name}')
+        await self._close_session()
+    
+    async def _close_session(
+        self,
+    ):
+        await self.session._close()
 
     def run_single(
         self,

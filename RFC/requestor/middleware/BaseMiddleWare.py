@@ -2,7 +2,8 @@ from typing import Any
 
 from RFC.itemset.RawItemset import RawItem
 from RFC.utils.BaseModule import BaseModule
-from RFC.utils.exception_utils import NotSupported, ConditionOverflowError
+from RFC.utils.functional_utils import log
+
 
 from .BaseMiddleWareConfig import BaseMiddleWareConfig
 
@@ -35,9 +36,9 @@ class BaseMiddleWare(BaseModule):
         middleware_config: BaseMiddleWareConfig,
     ):
         super().__init__(middleware_config)
-        self._init_attr(middleware_config=middleware_config)
-        self._init_process(middleware_config=middleware_config)
-        self._init_error_handler(middleware_config=middleware_config)
+        self._init_attr(middleware_config)
+        self._init_process(middleware_config)
+        self._init_error_handler(middleware_config)
 
     async def __call__(
         self,

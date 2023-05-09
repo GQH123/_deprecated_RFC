@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from .MiddleWareConfig import MiddleWareConfig
 
 
+@dataclass
 class JSON_MiddleWareConfig(MiddleWareConfig):
     savename: callable
     _savename: callable = field(init=False, repr=False)
