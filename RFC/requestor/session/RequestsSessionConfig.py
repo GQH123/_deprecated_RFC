@@ -12,6 +12,7 @@ class RequestsSessionConfig(SessionConfig):
     _read_timeout: int | float | None = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.connect_timeout, property):
             self._connect_timeout = None
         if isinstance(self.read_timeout, property):

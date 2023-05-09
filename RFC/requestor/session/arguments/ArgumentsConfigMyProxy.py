@@ -28,6 +28,7 @@ class ArgumentsConfigMyProxy(ArgumentsConfig):
             proxy_type,
             rank,
         ):
+        super().__post_init__()
         if hist_log is None:
             hist_log = f'proxy_history_{rank}.log'
         if run_log is None:

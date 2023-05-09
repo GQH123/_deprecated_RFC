@@ -9,6 +9,7 @@ class BaseMiddleWareConfig(BaseConfig):
     _framework: str = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.framework, property):
             self._framework = None
 

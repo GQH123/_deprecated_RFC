@@ -25,6 +25,7 @@ class AioHTTPSessionConfig(SessionConfig):
     _connections_per_host: int = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.total_timeout, property):
             self._total_timeout = None
         if isinstance(self.connect_timeout, property):

@@ -26,6 +26,7 @@ class BaseSessionConfig(BaseConfig):
     _async_framework: str | None = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.arguments_config, property):
             self._arguments_config = ArgumentsConfig()
         if isinstance(self.contiguous_failed_counts_threshold, property):

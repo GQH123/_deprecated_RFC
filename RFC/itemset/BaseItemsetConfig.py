@@ -19,6 +19,7 @@ class BaseItemsetConfig(BaseConfig):
     _shuffle: bool = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.items, property):
             self._items = []
         if isinstance(self.preprocess, property):

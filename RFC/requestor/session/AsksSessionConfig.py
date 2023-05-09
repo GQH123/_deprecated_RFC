@@ -15,6 +15,7 @@ class AsksSessionConfig(SessionConfig):
     _persist_cookies: bool = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.connections, property):
             self._connections = 1
         if isinstance(self.connection_timeout, property):

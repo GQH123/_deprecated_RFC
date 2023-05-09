@@ -11,6 +11,7 @@ class BaseRequestorConfig(BaseConfig):
     _session_config: SessionConfig = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.session_config, property):
             self._session_config = SessionConfig()
 

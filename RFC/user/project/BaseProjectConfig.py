@@ -33,6 +33,7 @@ class BaseProjectConfig(BaseConfig):
     _project_debug_log_path: str = field(init=False, repr=False, default='./project_debug.log')
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.project_name, property):
             self._project_name = '<unknown>'
         if isinstance(self.project_raw_path, property):

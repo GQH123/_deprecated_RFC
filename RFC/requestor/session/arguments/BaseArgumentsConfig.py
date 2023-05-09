@@ -81,6 +81,7 @@ class BaseArgumentsConfig(BaseConfig):
     _config: dict = field(init=False, repr=False)
 
     def __post_init__(self):
+        super().__post_init__()
         if isinstance(self.config, property):
             self._config = get_option()
     

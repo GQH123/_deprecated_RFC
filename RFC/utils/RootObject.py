@@ -11,7 +11,7 @@ class RootObject:
 
     def __post_init__(self):
         if isinstance(self.name, property):
-            self._name = '<anonymous>'
+            self.name = '<anonymous>'
     
     @property
     def name(self):
