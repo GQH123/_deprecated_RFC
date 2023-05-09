@@ -23,7 +23,7 @@ def config_help():
 config_help()
 
 
-# In[4]:
+# In[2]:
 
 
 def initialize_project():
@@ -76,7 +76,7 @@ def get_itemset():
 itemset = get_itemset()
 
 
-# In[ ]:
+# In[4]:
 
 
 def get_requestor():
@@ -131,7 +131,7 @@ def get_requestor():
 requestor = get_requestor()
 
 
-# In[ ]:
+# In[5]:
 
 
 # Convert .ipynb to .py

@@ -22,12 +22,10 @@ class AsksSessionConfig(SessionConfig):
             self._connection_timeout = 60
         if isinstance(self.persist_cookies, property):
             self._persist_cookies = False
-        if isinstance(self.framework, property):
-            self._framework = 'asks'
-        if isinstance(self.use_async, property):
-            self._use_async = True
-        if isinstance(self.async_framework, property):
-            self._async_framework = 'trio'
+    
+        self._framework = 'asks'
+        self._use_async = True
+        self._async_framework = 'trio'
     
     @property
     def connections(self):

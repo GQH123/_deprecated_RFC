@@ -17,10 +17,9 @@ class RequestsSessionConfig(SessionConfig):
             self._connect_timeout = None
         if isinstance(self.read_timeout, property):
             self._read_timeout = None
-        if isinstance(self.framework, property):
-            self._framework = 'requests'
-        if isinstance(self.use_async, property):
-            self._use_async = False
+
+        self._framework = 'requests'
+        self._use_async = False
 
     @property
     def connect_timeout(self):

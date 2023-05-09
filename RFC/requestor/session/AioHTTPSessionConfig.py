@@ -38,12 +38,10 @@ class AioHTTPSessionConfig(SessionConfig):
             self._connections = 1
         if isinstance(self.connections_per_host, property):
             self._connections_per_host = 0
-        if isinstance(self.framework, property):
-            self._framework = 'aiohttp'
-        if isinstance(self.use_async, property):
-            self._use_async = True
-        if isinstance(self.async_framework, property):
-            self._async_framework = 'asyncio'
+
+        self._framework = 'aiohttp'
+        self._use_async = True
+        self._async_framework = 'asyncio'
 
     @property
     def total_timeout(self):

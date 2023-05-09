@@ -9,35 +9,35 @@ class BaseProjectConfig(BaseConfig):
     _project_name: str = field(init=False, repr=False)
 
     project_raw_path: str
-    _project_raw_path: str = field(init=False, repr=False, default='/raw')
+    _project_raw_path: str = field(init=False, repr=False)
 
     project_config_path: str
-    _project_config_path: str = field(init=False, repr=False, default='./configs')
+    _project_config_path: str = field(init=False, repr=False)
 
     project_result_path: str
-    _project_result_path: str = field(init=False, repr=False, default='./saves')
+    _project_result_path: str = field(init=False, repr=False)
 
     project_log_path: str
-    _project_log_path: str = field(init=False, repr=False, default='./logs')
+    _project_log_path: str = field(init=False, repr=False)
 
     project_info_path: str
-    _project_info_path: str = field(init=False, repr=False, default='./project_info.json')
+    _project_info_path: str = field(init=False, repr=False)
 
     project_run_log_path: str
-    _project_run_log_path: str = field(init=False, repr=False, default='./project_run.log')
+    _project_run_log_path: str = field(init=False, repr=False)
 
     debug: bool
     _debug: bool = field(init=False, repr=False, default=False)
 
     project_debug_log_path: str
-    _project_debug_log_path: str = field(init=False, repr=False, default='./project_debug.log')
+    _project_debug_log_path: str = field(init=False, repr=False)
 
     def __post_init__(self):
         super().__post_init__()
         if isinstance(self.project_name, property):
             self._project_name = '<unknown>'
         if isinstance(self.project_raw_path, property):
-            self._project_raw_path = '/raw'
+            self._project_raw_path = './raw'
         if isinstance(self.project_config_path, property):
             self._project_config_path = './configs'
         if isinstance(self.project_result_path, property):
