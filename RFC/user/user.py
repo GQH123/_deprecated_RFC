@@ -39,9 +39,9 @@ from RFC.requestor.session.arguments.ArgumentsConfigMyProxy import ArgumentsConf
 
 # ===============================================================================
 
-from RFC.launch import launch_project
+from RFC.user.launch import launch_project
 
-from RFC.ProjectConfig import ProjectConfig
+from RFC.user.project.ProjectConfig import ProjectConfig
 
 # ===============================================================================
 

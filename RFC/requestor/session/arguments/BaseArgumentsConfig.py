@@ -77,13 +77,26 @@ class BaseArgumentsConfig(dict, BaseConfig):
 
 @dataclass
 class BaseArgumentsConfig(BaseConfig):
-    config: dict = field(default_factory=get_option)
+    config: dict
+    _config: dict = field(init=False, repr=False)
+
+    def __post_init__(self):
+        if isinstance(self.config, property):
+            self._config = get_option()
+    
+    @property
+    def config(self):
+        return self._config
+    
+    @config.setter
+    def config(self, value: dict):
+        self._config = value
 
     def __call__(
         self,
         **kwargs,
     ):
         config = kwargs.pop('config', {})
-        self.__dict__.update(kwargs)
-        self.__dict__['config'].update(config)
+        super().__call__(**kwargs)
+        self.config.update(config)
         return self

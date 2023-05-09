@@ -2,9 +2,8 @@ import os
 from datetime import datetime
 
 from RFC.utils.functional_utils import log, update_output_channels, load_object, save_object, get_prev_module_name, init_global_project_config, pretty_print_parser
-
-from .compile import run_compile
-from .ProjectConfig import ProjectConfig
+from RFC.user.compile import run_compile
+from RFC.user.project.ProjectConfig import ProjectConfig
 
 
 def launch_project(

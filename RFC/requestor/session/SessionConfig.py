@@ -5,6 +5,10 @@ from .BaseSessionConfig import BaseSessionConfig
 
 @dataclass
 class SessionConfig(BaseSessionConfig):
-    framework: str = field(default='<unknown>')
-    use_async: bool = field(default=False)
-    async_framework: str | None = field(default=None)
+    def __post_init__(self):
+        if isinstance(self.framework, property):
+            self._framework = '<unknown>'
+        if isinstance(self.use_async, property):
+            self._use_async = False
+        if isinstance(self.async_framework, property):
+            self._async_framework = None

@@ -1,8 +1,7 @@
 import RFC.requestor as requestor
 import RFC.itemset as itemset
 from RFC.utils.functional_utils import update_output_channels, switch_output_channel
-
-from .settings import init_settings
+from RFC.settings import init_settings
 
 
 def init(**kwargs):

@@ -3,7 +3,6 @@ from dataclasses import dataclass, field
 
 from .RootObject import RootObject
 from .functional_utils import save_object, load_object
-from .exception_utils import FileNotFoundError, FileFormatError
 
 
 @dataclass
@@ -37,5 +36,9 @@ class BaseConfig(RootObject):
         self,
         **kwargs,
     ):
-        self.__dict__.update(kwargs)
+        for k, v in kwargs.items():
+            if hasattr(self, k):
+                setattr(self, k, v)
+            else:
+                raise AttributeError(f'No attribute named {k} in {self._get_self_type_name()}')
         return self

@@ -6,8 +6,7 @@ import RFC.requestor as requestor
 import RFC.itemset as itemset
 from RFC.utils.functional_utils import save_object, update_output_channels, log, get_project_prefix
 from RFC.utils.structural_utils import summary_leaves
-
-from .settings import setup_settings
+from RFC.settings import setup_settings
 
 
 def check_integrity(rootdir='RFC'):

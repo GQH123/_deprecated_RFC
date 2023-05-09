@@ -49,9 +49,9 @@ def get_itemset(
     if itemset_type not in all_supported_itemsets:
         raise ParamValueError('itemset_type', itemset_type, all_supported_itemsets, __name__)
     if itemset_type == 'raw':
-        return RawItemset(itemset_config, **kwargs)
+        return RawItemset(itemset_config)
     elif itemset_type == 'default':
-        return Itemset(itemset_config, **kwargs)
+        return Itemset(itemset_config)
     else:
         raise ConditionOverflowError(itemset_type, __name__)
 

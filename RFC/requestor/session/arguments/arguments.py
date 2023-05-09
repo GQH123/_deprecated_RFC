@@ -20,9 +20,9 @@ def get_arguments_config(
     if arguments_config not in all_supported_arguments:
         raise ParamValueError('arguments_config', arguments_config, all_supported_arguments, __name__)
     if arguments_config == 'default':
-        return ArgumentsConfig()
+        return ArgumentsConfig(**kwargs)
     elif arguments_config == 'my_proxy':
-        return ArgumentsConfigMyProxy()
+        return ArgumentsConfigMyProxy(**kwargs)
     else:
         raise ConditionOverflowError(arguments_config, __name__)
 
@@ -47,9 +47,9 @@ def get_arguments(
     if arguments_type not in all_supported_arguments:
         raise ParamValueError('arguments_type', arguments_type, all_supported_arguments, __name__)
     if arguments_type == 'default':
-        return Arguments(arguments_config, **kwargs)
+        return Arguments(arguments_config)
     elif arguments_type == 'my_proxy':
-        return Arguments(arguments_config, **kwargs)
+        return Arguments(arguments_config)
     else:
         raise ConditionOverflowError(arguments_type, __name__)
 

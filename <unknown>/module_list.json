@@ -1,0 +1,16 @@
+{
+    "cookies": "RFC.requestor.session.arguments.cookies",
+    "base": "RFC.requestor.session.arguments.headers.base",
+    "referer": "RFC.requestor.session.arguments.headers.referer",
+    "user-agent": "RFC.requestor.session.arguments.headers.user-agent",
+    "headers": "RFC.requestor.session.arguments.headers",
+    "params": "RFC.requestor.session.arguments.params",
+    "payload": "RFC.requestor.session.arguments.payload",
+    "proxies": "RFC.requestor.session.arguments.proxies",
+    "url": "RFC.requestor.session.arguments.url",
+    "arguments": "RFC.requestor.session.arguments",
+    "middleware": "RFC.requestor.session.middleware",
+    "session": "RFC.requestor.session",
+    "requestor": "RFC.requestor",
+    "itemset": "RFC.itemset"
+}

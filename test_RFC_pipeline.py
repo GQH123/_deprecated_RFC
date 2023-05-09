@@ -23,7 +23,7 @@ def config_help():
 config_help()
 
 
-# In[2]:
+# In[4]:
 
 
 def initialize_project():
@@ -76,7 +76,7 @@ def get_itemset():
 itemset = get_itemset()
 
 
-# In[4]:
+# In[ ]:
 
 
 def get_requestor():
@@ -129,3 +129,14 @@ def get_requestor():
 
 
 requestor = get_requestor()
+
+
+# In[ ]:
+
+
+# Convert .ipynb to .py
+import os
+
+if __name__ == '__main__':
+    os.system('jupyter nbconvert --to python test_RFC_pipeline.ipynb')
+

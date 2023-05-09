@@ -19,7 +19,7 @@ def get_requestor_config(
     if requestor_type not in all_supported_requestors:
         raise ParamValueError('requestor_type', requestor_type, all_supported_requestors, __name__)
     if requestor_type == 'default':
-        return RequestorConfig()
+        return RequestorConfig(**kwargs)
     else:
         raise ConditionOverflowError(requestor_type, __name__)
 
@@ -42,7 +42,7 @@ def get_requestor(
     if requstor_type not in all_supported_requestors:
         raise ParamValueError('requestor_type', requstor_type, all_supported_requestors, __name__)
     if requstor_type == 'default':
-        return Requestor(requestor_config, **kwargs)
+        return Requestor(requestor_config)
     else:
         raise ConditionOverflowError(requstor_type, __name__)
 

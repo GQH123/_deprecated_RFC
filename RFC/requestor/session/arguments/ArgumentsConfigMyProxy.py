@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, InitVar
 from .ArgumentsConfig import ArgumentsConfig
 
 
@@ -16,7 +16,18 @@ options = {
 
 @dataclass
 class ArgumentsConfigMyProxy(ArgumentsConfig):
-    def __post_init__(self, hist_log=None, run_log=None, proxy_type='default', rank=0):
+    hist_log: InitVar[str | None] = None
+    run_log: InitVar[str | None] = None
+    proxy_type: InitVar[str] = 'default'
+    rank: InitVar[int] = 0
+                      
+    def __post_init__(
+            self, 
+            hist_log,
+            run_log,
+            proxy_type,
+            rank,
+        ):
         if hist_log is None:
             hist_log = f'proxy_history_{rank}.log'
         if run_log is None:

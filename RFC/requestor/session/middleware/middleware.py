@@ -16,15 +16,14 @@ def init(**kwargs):
 
 def get_middleware_config(
     middleware_config: str,
-    framework: str,
     **kwargs,
 ):
     if middleware_config not in all_supported_middlewares:
         raise ParamValueError('middleware_config', middleware_config, all_supported_middlewares, __name__)
     if middleware_config == 'default':
-        return MiddleWareConfig(framework=framework)
+        return MiddleWareConfig(**kwargs)
     elif middleware_config == 'json':
-        return JSON_MiddleWareConfig(framework=framework)
+        return JSON_MiddleWareConfig(**kwargs)
     else:
         raise ConditionOverflowError(middleware_config, __name__)
 
@@ -49,9 +48,9 @@ def get_middleware(
     if middleware_type not in all_supported_middlewares:
         raise ParamValueError('middleware_type', middleware_type, all_supported_middlewares, __name__)
     if middleware_type == 'default':
-        return MiddleWare(middleware_config, **kwargs)
+        return MiddleWare(middleware_config)
     elif middleware_type == 'json':
-        return JSON_MiddleWare(middleware_config, **kwargs)
+        return JSON_MiddleWare(middleware_config)
     else:
         raise ConditionOverflowError(middleware_type, __name__)
 

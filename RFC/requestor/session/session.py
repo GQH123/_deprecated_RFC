@@ -26,11 +26,11 @@ def get_session_config(
     if session_config not in all_supported_sessions:
         raise ParamValueError('session_config', session_config, all_supported_sessions, __name__)
     if session_config == 'requests':
-        return RequestsSessionConfig()
+        return RequestsSessionConfig(**kwargs)
     elif session_config == 'asks':
-        return AsksSessionConfig()
+        return AsksSessionConfig(**kwargs)
     elif session_config == 'aiohttp':
-        return AioHTTPSessionConfig()
+        return AioHTTPSessionConfig(**kwargs)
     else:
         raise ConditionOverflowError(session_config, __name__)
 
@@ -57,11 +57,11 @@ def get_session(
     if session_type not in all_supported_sessions:
         raise ParamValueError('session_type', session_type, all_supported_sessions, __name__)
     if session_type == 'requests':
-        return RequestsSession(session_config, **kwargs)
+        return RequestsSession(session_config)
     elif session_type == 'asks':
-        return AsksSession(session_config, **kwargs)
+        return AsksSession(session_config)
     elif session_type == 'aiohttp':
-        return AioHTTPSession(session_config, **kwargs)
+        return AioHTTPSession(session_config)
     else:
         raise ConditionOverflowError(session_type, __name__)
 

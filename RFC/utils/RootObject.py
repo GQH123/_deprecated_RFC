@@ -6,7 +6,20 @@ from .functional_utils import log, parse_restriction, check_restriction, pretty_
 
 @dataclass
 class RootObject:
-    name: str = field(default='<anonymous>')
+    name: str
+    _name: str = field(init=False, repr=False)
+
+    def __post_init__(self):
+        if isinstance(self.name, property):
+            self._name = '<anonymous>'
+    
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, value: str):
+        self._name = value
 
     def print(
         self,
