@@ -1,3 +1,5 @@
+from typing import Any
+
 from RFC.itemset.RawItemset import RawItem
 from RFC.utils.BaseModule import BaseModule
 from RFC.utils.exception_utils import NotSupported, ConditionOverflowError
@@ -16,7 +18,7 @@ class BaseMiddleWare(BaseModule):
         self,
         middleware_config: BaseMiddleWareConfig,
     ):
-        async def return_raw(resp):
+        async def return_raw(item, resp):
             return resp
         self.process = return_raw
 
@@ -24,7 +26,7 @@ class BaseMiddleWare(BaseModule):
         self,
         middleware_config: BaseMiddleWareConfig,
     ):
-        async def raise_error(e, x):
+        async def raise_error(e, item, resp):
             raise e
         self.error_handler = raise_error
 
@@ -37,14 +39,15 @@ class BaseMiddleWare(BaseModule):
         self._init_process(middleware_config=middleware_config)
         self._init_error_handler(middleware_config=middleware_config)
 
-    async def __process__(
+    async def __call__(
         self,
         item: RawItem,
+        result: Any,
     ):
         try:
-            return await self.process(item), True
+            return await self.process(item, result), True
         except Exception as e:
-            return await self.error_handler(e, item), False
+            return await self.error_handler(e, item, result), False
     
     def _retrieve_config(
         self,

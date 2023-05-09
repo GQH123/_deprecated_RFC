@@ -18,6 +18,8 @@ def config_help():
     aiohttp_session_config_example.print(include_sub=False)
     requestor_config_exmaple = get_config('requestor')
     requestor_config_exmaple.print(include_sub=False)
+    middleware_config_example = get_config('json')
+    middleware_config_example.print(include_sub=False)
 
 
 config_help()

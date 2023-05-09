@@ -32,6 +32,13 @@ from RFC.requestor.session.AioHTTPSessionConfig import AioHTTPSessionConfig
 
 # ===============================================================================
 
+from RFC.requestor.middleware.middleware import get_middleware
+
+from RFC.requestor.middleware.MiddleWareConfig import MiddleWareConfig
+from RFC.requestor.middleware.JSON_MiddleWareConfig import JSON_MiddleWareConfig
+
+# ===============================================================================
+
 from RFC.requestor.session.arguments.arguments import get_arguments
 
 from RFC.requestor.session.arguments.ArgumentsConfig import ArgumentsConfig
@@ -57,6 +64,8 @@ all_supported_configs = {
     'requests': RequestsSessionConfig,
     'asks': AsksSessionConfig,
     'aiohttp': AioHTTPSessionConfig,
+    'middleware': MiddleWareConfig,
+    'json': JSON_MiddleWareConfig,
     'arguments': ArgumentsConfig,
     'arguments-myproxy': ArgumentsConfigMyProxy,
     'project': ProjectConfig,
@@ -66,6 +75,7 @@ all_supported_module_types = {
     'itemset': get_itemset,
     'requestor': get_requestor,
     'session': get_session,
+    'middleware': get_middleware,
     'arguments': get_arguments,
 }
 
@@ -88,6 +98,10 @@ def _get_single_config(
         config = AsksSessionConfig()
     elif 'aiohttp' in config_name:
         config = AioHTTPSessionConfig()
+    elif 'middleware' in config_name:
+        config = MiddleWareConfig()
+    elif 'json' in config_name:
+        config = JSON_MiddleWareConfig()
     elif 'arguments-myproxy' in config_name:
         config = ArgumentsConfigMyProxy()
     elif 'arguments-noproxy' in config_name:
@@ -109,7 +123,7 @@ def get_config(
 
 def get_module(
     module_config: str | BaseConfig,
-):
+) -> BaseModule:
     if isinstance(module_config, str):
         module_config = _get_single_config(module_config)
 
@@ -120,6 +134,8 @@ def get_module(
         module = get_requestor(module_config)
     elif 'SessionConfig' in module_name:
         module = get_session(module_config)
+    elif 'MiddleWareConfig' in module_name:
+        module = get_middleware(module_config)
     elif 'ArgumentsConfig' in module_name:
         module = get_arguments(module_config)
     else:

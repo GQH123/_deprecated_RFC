@@ -1,28 +1,24 @@
-[2023-05-09 20:55:08] (Project, from RFC.user.project.BaseProject) [INFO] Project MyFirstProject launched.
+[2023-05-09 21:15:28] (Project, from RFC.user.project.BaseProject) [INFO] Project MyFirstProject launched.
 
 Project Configurations:
 {
     "name": "MyProject",
     "project_config_path": "./configs",
     "project_debug_log_path": "./project_debug.log",
+    "project_error_path": "./errors",
     "project_info_path": "./project_info.json",
     "project_log_path": "./logs",
     "project_name": "MyFirstProject",
-    "project_raw_path": "./raw",
+    "project_raw_path": "./rawitems",
     "project_result_path": "./saves",
     "project_root": "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/MyFirstProject",
     "project_run_log_path": "./project_run.log"
 }
 
-[2023-05-09 20:55:08] (Itemset, from RFC.itemset.BaseItemset) [WARN] Param 'return_type' is not set, use ['resp'] instead.
-[2023-05-09 20:55:08] (Itemset, from RFC.itemset.BaseItemset) [WARN] Param 'params' is not set, use {} instead.
-[2023-05-09 20:55:29] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200000: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200000 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbdd50>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+[2023-05-09 21:15:28] (Itemset, from RFC.itemset.BaseItemset) [WARN] Param 'params' is not set, use {} instead.
+[2023-05-09 21:15:28] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200008: a bytes-like object is required, not 'Response'
 
-[2023-05-09 20:55:49] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200007: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200007 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbe770>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+[2023-05-09 21:15:28] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200002: a bytes-like object is required, not 'Response'
 
-[2023-05-09 20:56:09] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200003: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200003 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbf610>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
-
-[2023-05-09 20:56:29] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200005: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200005 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbec80>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
-
-[2023-05-09 20:56:49] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200006: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200006 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbc640>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+[2023-05-09 21:15:29] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200001: a bytes-like object is required, not 'Response'
 

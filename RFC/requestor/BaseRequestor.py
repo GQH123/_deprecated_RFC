@@ -12,6 +12,7 @@ from RFC.utils.exception_utils import NotSupported, ConditionOverflowError, Para
 from RFC.utils.functional_utils import get_prev_module_name, log, update_output_channels, save_object
 
 from .session.session import get_session
+from .middleware.middleware import get_middleware
 from .BaseRequestorConfig import BaseRequestorConfig
 
 
@@ -63,9 +64,18 @@ class BaseRequestor(BaseModule):
                 self._fetch = retrying(async_framework=asyncio)(self._fetch)
         else:
             self.async_framework = None
+    
+    def _init_middlewares(self, requestor_config):
+        self.middleware_configs = requestor_config.middleware_configs
+        self.middlewares = []
+        for middleware_config in self.middleware_configs:
+            middleware_config.framework = self.framework
+            middleware = get_middleware(middleware_config)
+            self.middlewares.append(middleware)
 
     def _init_all(self, requestor_config):
         self._init_session(requestor_config)
+        self._init_middlewares(requestor_config)
 
     def __init__(
         self,
@@ -74,24 +84,30 @@ class BaseRequestor(BaseModule):
         super().__init__(requestor_config)
         self._init_all(requestor_config)
     
+    """ [function moved to middleware]
     def _save_result(
         self,
         name: str,
         result: Any,
     ):
         save_object(result, name, 'result')
+    """
 
     def _error_handler(
         self,
         e: Exception,
         item: RawItem,
         name: str = None,
+        result: Any = None,
     ):
+        update_output_channels('current_requested_item_error', f'{item.name}.error', 'error')
         if name is None:
             name = f'{item.name}'
         log(f'Error fetching {name}: {e}\n', 'main', 'Requestor.Error', 'error', __name__)
-        log(f'Error fetching {name}: {e}, traceback:\n{traceback.format_exc()}\n', 'debug', 'Requestor.Error', 'error', __name__)
+        log(f'Error fetching {name}: {e}, traceback:\n{traceback.format_exc()}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__)
         log(f'Error fetching {name}: {e}\n', 'test', 'Requestor.Error', 'error', __name__)
+        if result is not None:
+            log(f'\nrequest headers: {result.headers}\n\nrequest url: {result.url}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__)
 
     async def _fetch(
         self,
@@ -100,12 +116,15 @@ class BaseRequestor(BaseModule):
         sema: Any = None,
         name: str = None,
     ):
+        result = None
         try:
             update_output_channels('current_requested_item_log', f'{item.name}.log', 'log')
-            result = await self.session.request(item, item.return_type, rank)
-            self._save_result(item.name, result)
+            result = await self.session.request(item, rank)
+            for middleware in self.middlewares:
+                result = await middleware(item, result)
+            # self._save_result(item.name, result)
         except Exception as e:
-            self._error_handler(e, item, name)
+            self._error_handler(e, item, name, result)
         if sema is not None:
             sema.release()
 
@@ -119,7 +138,7 @@ class BaseRequestor(BaseModule):
         async with trio.open_nursery() as nursery:
             for item in items:
                 await sema.acquire()
-                nursery.start_soon(self._fetch, rank, item, item.return_type, sema, f'fetching {item.name}')
+                nursery.start_soon(self._fetch, rank, item, sema, f'fetching {item.name}')
 
     async def _fetch_all_asyncio(
         self,
@@ -131,7 +150,7 @@ class BaseRequestor(BaseModule):
         tasks = []
         for item in items:
             await sema.acquire()
-            tasks.append(asyncio.create_task(self._fetch(rank, item, item.return_type, sema, f'fetching {item.name}')))
+            tasks.append(asyncio.create_task(self._fetch(rank, item, sema, f'fetching {item.name}')))
         for task in tasks:
             await task
 

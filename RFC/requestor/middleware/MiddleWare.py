@@ -14,7 +14,7 @@ class MiddleWare(BaseMiddleWare):
         self,
         middleware_config: MiddleWareConfig,
     ):
-        async def return_raw(resp):
+        async def return_raw(item, resp):
             return resp
         self.process = return_raw
         ...
@@ -23,7 +23,7 @@ class MiddleWare(BaseMiddleWare):
         self,
         middleware_config: MiddleWareConfig,
     ):
-        async def raise_error(e, x):
+        async def raise_error(e, item, resp):
             raise e
         self.error_handler = raise_error
         ...

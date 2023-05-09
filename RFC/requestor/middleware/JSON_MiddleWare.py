@@ -1,16 +1,23 @@
+from RFC.utils.functional_utils import log, save_object
+
 from .MiddleWare import MiddleWare
 from .JSON_MiddleWareConfig import JSON_MiddleWareConfig
 from .Exceptions import MiddleWare_UnknownFramework
 
-from RFC.utils.functional_utils import log
-
 
 class JSON_MiddleWare(MiddleWare):
+    def _init_attr(
+        self,
+        middleware_config: JSON_MiddleWareConfig,
+    ):
+        self.savename = middleware_config.savename
+        self.mode = middleware_config.mode
+
     def _init_process(
         self,
         middleware_config: JSON_MiddleWareConfig,
     ):
-        async def return_json(resp):
+        async def return_json(item, resp):
             if self.framework == 'requests':
                 return resp.json()
             elif self.framework == 'aiohttp':
@@ -19,18 +26,25 @@ class JSON_MiddleWare(MiddleWare):
                 return resp.json()
             else:
                 raise MiddleWare_UnknownFramework(self.framework)
+        
+        async def save(item, result):
+            json = await return_json(item, result)
+            save_object(self.savename(item), json, 'save', self.mode)
 
-        self.process = return_json
+        self.process = save
 
     def _init_error_handler(
         self,
         middleware_config: JSON_MiddleWareConfig,
     ):
-        async def error_handler(e, x):
+        async def error_handler(e, item, resp):
             if type(e).__name__ == 'MiddleWare_UnknownFramework':
-                log('encountered unknown framework', 'current_requested_item_log', 'JSON_MiddleWare', 'error', __name__)
+                log('middleware encountered unknown framework', 'current_requested_item_error', 'JSON_MiddleWare', 'error', __name__)
+            elif type(e).__name__ == 'SavingError':
+                log(f'middleware saving error [{type(e)}] {e}', 'current_requested_item_error', 'Save_MiddleWare', 'error', __name__)
             else:
-                log('json decoding error', 'current_requested_item_log', 'JSON_MiddleWare', 'error', __name__)
+                log('json decoding error', 'current_requested_item_error', 'JSON_MiddleWare', 'error', __name__)
+            
 
         self.error_handler = error_handler
 
@@ -46,6 +60,10 @@ class JSON_MiddleWare(MiddleWare):
     ):
         parent_attr = super()._retrieve_config()
         my_attr = parent_attr
+        my_attr.update({
+            'savename': self.savename,
+            'mode': self.mode,
+        })
         if return_config:
             return JSON_MiddleWareConfig(**my_attr)
         else:

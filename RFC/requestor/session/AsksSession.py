@@ -81,6 +81,7 @@ class AsksSession(Session):
             )
         return resp
 
+    """
     async def _request_resp(
         self,
         request_resp,
@@ -98,6 +99,7 @@ class AsksSession(Session):
             return request_resp.json()
         else:
             return super()._request_resp(request_resp, rtype)
+    """
     
     def _retrieve_config(
         self,

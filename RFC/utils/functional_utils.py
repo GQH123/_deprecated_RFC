@@ -12,7 +12,7 @@ from typing import Any
 from datetime import datetime
 from dataclasses import dataclass, field
 
-from RFC.utils.exception_utils import ParamTypeError, ParamError, ParamValueError, FileNotFoundError, FileFormatError, ParamSettingError
+from RFC.utils.exception_utils import SavingError, ParamTypeError, ParamError, ParamValueError, FileNotFoundError, FileFormatError, ParamSettingError
 
 
 def get_prev_module_name(
@@ -34,8 +34,8 @@ def init_global_project_config(project_config):
 def get_project_prefix(prefix='root', from_module=None):
     if from_module is None:
         from_module = get_prev_module_name(2)
-    if prefix not in ['root', 'result', 'log', 'config', 'raw']:
-        raise ParamValueError('prefix', prefix, ['root', 'result', 'log', 'raw', 'config'], from_module)
+    if prefix not in ['root', 'result', 'log', 'config', 'raw', 'error']:
+        raise ParamValueError('prefix', prefix, ['root', 'result', 'log', 'raw', 'config', 'error'], from_module)
     if prefix == 'root':
         return global_project_config.project_root
     elif prefix == 'result':
@@ -46,7 +46,8 @@ def get_project_prefix(prefix='root', from_module=None):
         return os.path.join(global_project_config.project_root, global_project_config.project_config_path)
     elif prefix == 'raw':
         return os.path.join(global_project_config.project_root, global_project_config.project_raw_path)
-
+    elif prefix == 'error':
+        return os.path.join(global_project_config.project_root, global_project_config.project_error_path)
 
 def _parse_fileIO(file, from_module=None):
     if from_module is None:
@@ -235,7 +236,7 @@ def save_object(obj, path, prefix_project_dir='root', mode='auto'):
             raise AssertionError(f"Unknown Error, mode: {mode}")
     except Exception as e:
         # print(f'Saving {path} fails... [{type(e).__name__}], {e}')
-        raise e
+        raise SavingError(obj, path, prefix_project_dir, mode, e)
 
 
 def load_object(path, mode='auto', prefix_project_dir='root') -> object:

@@ -15,6 +15,7 @@ class BaseProject(BaseModule):
         project_config: BaseProjectConfig,
     ):
         self.project_name = project_config.project_name
+        self.project_error_path = project_config.project_error_path
         self.project_raw_path = project_config.project_raw_path
         self.project_config_path = project_config.project_config_path
         self.project_result_path = project_config.project_result_path
@@ -44,6 +45,8 @@ class BaseProject(BaseModule):
         os.system(f'rm -rf "{self.project_root}"')
         if not os.path.exists(self.project_root):
             os.makedirs(self.project_root)
+        if not os.path.exists(os.path.join(self.project_root, self.project_error_path)):
+            os.makedirs(os.path.join(self.project_root, self.project_error_path))
         if not os.path.exists(os.path.join(self.project_root, self.project_raw_path)):
             os.makedirs(os.path.join(self.project_root, self.project_raw_path))
         if not os.path.exists(os.path.join(self.project_root, self.project_config_path)):
@@ -59,6 +62,7 @@ class BaseProject(BaseModule):
             project_info = load_object(os.path.join(self.project_root, self.project_info_path))
             project_info.update({
                 'name': self.project_name,
+                'error_path': self.project_error_path,
                 'raw_path': self.project_raw_path,
                 'config_path': self.project_config_path,
                 'result_path': self.project_result_path,
@@ -73,6 +77,7 @@ class BaseProject(BaseModule):
         else:
             project_info = {
                 'name': self.project_name,
+                'error_path': self.project_error_path,
                 'raw_path': self.project_raw_path,
                 'config_path': self.project_config_path,
                 'result_path': self.project_result_path,
@@ -105,6 +110,7 @@ class BaseProject(BaseModule):
         my_attr = parent_attr
         my_attr.update({
             'project_name': self.project_name,
+            'project_error_path': self.project_error_path,
             'project_raw_path': self.project_raw_path,
             'project_config_path': self.project_config_path,
             'project_result_path': self.project_result_path,

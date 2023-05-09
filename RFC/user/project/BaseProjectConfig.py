@@ -8,6 +8,9 @@ class BaseProjectConfig(BaseConfig):
     project_name: str
     _project_name: str = field(init=False, repr=False)
 
+    project_error_path: str
+    _project_error_path: str = field(init=False, repr=False)
+
     project_raw_path: str
     _project_raw_path: str = field(init=False, repr=False)
 
@@ -33,8 +36,10 @@ class BaseProjectConfig(BaseConfig):
         super().__post_init__()
         if isinstance(self.project_name, property):
             self._project_name = '<unknown>'
+        if isinstance(self.project_error_path, property):
+            self._project_error_path = './errors'
         if isinstance(self.project_raw_path, property):
-            self._project_raw_path = './raw'
+            self._project_raw_path = './rawitems'
         if isinstance(self.project_config_path, property):
             self._project_config_path = './configs'
         if isinstance(self.project_result_path, property):
@@ -55,6 +60,14 @@ class BaseProjectConfig(BaseConfig):
     @project_name.setter
     def project_name(self, value: str):
         self._project_name = value
+    
+    @property
+    def project_error_path(self):
+        return self._project_error_path
+    
+    @project_error_path.setter
+    def project_error_path(self, value: str):
+        self._project_error_path = value
 
     @property
     def project_raw_path(self):

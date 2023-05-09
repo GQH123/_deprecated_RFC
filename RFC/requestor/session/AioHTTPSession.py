@@ -92,6 +92,7 @@ class AioHTTPSession(Session):
             )
         return resp
 
+    """
     async def _request_resp(
         self,
         request_resp,
@@ -109,6 +110,7 @@ class AioHTTPSession(Session):
             return await request_resp.json()
         else:
             return super()._request_resp(request_resp, rtype)
+    """
     
     def _retrieve_config(
         self,

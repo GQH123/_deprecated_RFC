@@ -115,3 +115,16 @@ class ParamSettingError(Exception):
 
     def __reduce__(self):
         return (ParamSettingError, (self.error_msg, self.params, self.module_name))
+
+class SavingError(Exception):
+    def __init__(self, obj, path, prefix_project_dir, mode, e, module_name=None, **params):
+        self.obj = obj
+        self.path = path
+        self.prefix_project_dir = prefix_project_dir
+        self.mode = mode
+        self.e = e
+        self.module_name = module_name if module_name else get_prev_module_name()
+        super(SavingError, self).__init__(f"Error when saving {repr(obj)} to {repr(path)} under project dir {repr(prefix_project_dir)} with mode {repr(mode)}.[{type(e)}] {e}. Error raised from {self.module_name}.")
+
+    def __reduce__(self):
+        return (SavingError, (self.obj, self.path, self.prefix_project_dir, self.mode, self.e, self.module_name))

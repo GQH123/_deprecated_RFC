@@ -136,42 +136,13 @@ class BaseSession(BaseModule):
             resp = self._request(request_args)
         return resp
 
-    def _request_resp(
-        self,
-        request_resp,
-        rtype: str,  # ['resp', 'text', 'content', 'body', 'json']
-    ):
-        raise ConditionOverflowError(rtype, __name__)
-        ...
-
-    async def _return_response(
-        self,
-        request_resp,
-        return_type: List[str],
-    ):
-        all_supported_rtype = ['resp', 'text', 'content', 'body', 'json']
-        results = {}
-        for rtype in return_type:
-            if rtype not in all_supported_rtype:
-                raise ParamValueError('rtype', rtype, all_supported_rtype, __name__)
-            if rtype in results:
-                continue
-            if self.use_async:
-                results[rtype] = await self._request_resp(request_resp, rtype)
-            else:
-                results[rtype] = self._request_resp(request_resp, rtype)
-        return results
-
     async def request(
         self,
         item: RawItem,
-        return_type: str,
         rank: int,
     ):
-        if not isinstance(return_type, list):
-            return_type = [return_type]
         request_resp = await self._session_request(item, rank)
-        return await self._return_response(request_resp, return_type)
+        return request_resp
 
     def _check_session_renew(
         self,

@@ -79,6 +79,7 @@ class RequestsSession(Session):
             )
         return resp
 
+    """
     def _request_resp(
         self,
         request_resp,
@@ -96,6 +97,7 @@ class RequestsSession(Session):
             return request_resp.json()
         else:
             return super()._get_returned_request_resp(request_resp, rtype)
+    """
 
     def _retrieve_config(
         self,
