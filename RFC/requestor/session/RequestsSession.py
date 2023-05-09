@@ -1,6 +1,8 @@
 import requests
 from typing import List
 
+from RFC.utils.functional_utils import log
+
 from .Session import Session
 from .RequestsSessionConfig import RequestsSessionConfig
 
@@ -17,9 +19,10 @@ class RequestsSession(Session):
             self.session_specific_args = {}
             request_args = self.arguments(include=self.common_args)
             request_args.update(self.session_specific_args)
-            self.session = requests.Session(
-                **request_args
-            )
+            self.session = requests.Session()
+            self.session.cookies = requests.cookies.cookiejar_from_dict(request_args.pop('cookies'))
+            self.session.proxies = request_args['proxies']
+            self.session.headers.update(request_args['headers'])
 
     def _init_request_args(
         self,

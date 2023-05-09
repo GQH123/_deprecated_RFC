@@ -1,4 +1,5 @@
 import os
+import sys
 from datetime import datetime
 
 from RFC.utils.BaseModule import BaseModule
@@ -20,7 +21,6 @@ class BaseProject(BaseModule):
         self.project_log_path = project_config.project_log_path
         self.project_info_path = project_config.project_info_path
         self.project_run_log_path = project_config.project_run_log_path
-        self.debug = project_config.debug
         self.project_debug_log_path = project_config.project_debug_log_path
         self.project_root = os.path.abspath(self.project_name)
         # project_run_log_path = os.path.join(project_name, project_run_log_path)
@@ -28,9 +28,6 @@ class BaseProject(BaseModule):
         # if debug:
         #     project_debug_log_path = os.path.join(project_name, project_debug_log_path)
 
-        if not os.path.exists(self.project_root):
-            os.mkdir(self.project_root)
-        
         project_config.project_root = self.project_root
         init_global_project_config(project_config)
         
@@ -44,6 +41,18 @@ class BaseProject(BaseModule):
     def launch(
         self,
     ):
+        os.system(f'rm -rf "{self.project_root}"')
+        if not os.path.exists(self.project_root):
+            os.makedirs(self.project_root)
+        if not os.path.exists(os.path.join(self.project_root, self.project_raw_path)):
+            os.makedirs(os.path.join(self.project_root, self.project_raw_path))
+        if not os.path.exists(os.path.join(self.project_root, self.project_config_path)):
+            os.makedirs(os.path.join(self.project_root, self.project_config_path))
+        if not os.path.exists(os.path.join(self.project_root, self.project_result_path)):
+            os.makedirs(os.path.join(self.project_root, self.project_result_path))
+        if not os.path.exists(os.path.join(self.project_root, self.project_log_path)):
+            os.makedirs(os.path.join(self.project_root, self.project_log_path))
+
         run_compile()
 
         if os.path.exists(os.path.join(self.project_root, self.project_info_path)):
@@ -57,7 +66,6 @@ class BaseProject(BaseModule):
                 'root': self.project_root,
                 'info_path': self.project_info_path,
                 'run_log_path': self.project_run_log_path,
-                'debug': self.debug,
                 'debug_log_path': self.project_debug_log_path,
                 # 'created_time': datetime.now().strftime('%Y-%m-%d_%H-%M-%S'),
                 'last_launched_time': datetime.now().strftime('%Y-%m-%d_%H-%M-%S'),
@@ -72,18 +80,18 @@ class BaseProject(BaseModule):
                 'root': self.project_root,
                 'info_path': self.project_info_path,
                 'run_log_path': self.project_run_log_path,
-                'debug': self.debug,
                 'debug_log_path': self.project_debug_log_path,
                 'created_time': datetime.now().strftime('%Y-%m-%d_%H-%M-%S'),
                 'last_launched_time': datetime.now().strftime('%Y-%m-%d_%H-%M-%S'),
             }
 
-        if self.project_run_log_path:
-                update_output_channels('main', self.project_run_log_path)
+        update_output_channels('test', sys.stdout)
 
-        if self.debug:
-            if self.project_debug_log_path:
-                update_output_channels('debug', self.project_debug_log_path)
+        if self.project_run_log_path:
+            update_output_channels('main', self.project_run_log_path)
+
+        if self.project_debug_log_path:
+            update_output_channels('debug', self.project_debug_log_path)
 
         save_object(project_info, self.project_info_path)
         log(f'Project {self.project_name} launched.\n', note='Project', mode='info', from_module=get_prev_module_name(1))
@@ -103,7 +111,6 @@ class BaseProject(BaseModule):
             'project_log_path': self.project_log_path,
             'project_info_path': self.project_info_path,
             'project_run_log_path': self.project_run_log_path,
-            'debug': self.debug,
             'project_debug_log_path': self.project_debug_log_path,
         })
         if return_config:

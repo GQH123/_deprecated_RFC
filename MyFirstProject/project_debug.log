@@ -1,0 +1,280 @@
+[2023-05-09 20:55:29] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200000: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200000 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbdd50>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')), traceback:
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f3d1abbdd50>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200000 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbdd50>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/BaseRequestor.py", line 105, in _fetch
+    result = await self.session.request(item, item.return_type, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 173, in request
+    request_resp = await self._session_request(item, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 136, in _session_request
+    resp = self._request(request_args)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/RequestsSession.py", line 73, in _request
+    resp = self.session.request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200000 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbdd50>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+
+[2023-05-09 20:55:49] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200007: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200007 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbe770>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')), traceback:
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f3d1abbe770>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200007 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbe770>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/BaseRequestor.py", line 105, in _fetch
+    result = await self.session.request(item, item.return_type, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 173, in request
+    request_resp = await self._session_request(item, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 136, in _session_request
+    resp = self._request(request_args)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/RequestsSession.py", line 73, in _request
+    resp = self.session.request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200007 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbe770>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+
+[2023-05-09 20:56:09] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200003: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200003 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbf610>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')), traceback:
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f3d1abbf610>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200003 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbf610>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/BaseRequestor.py", line 105, in _fetch
+    result = await self.session.request(item, item.return_type, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 173, in request
+    request_resp = await self._session_request(item, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 136, in _session_request
+    resp = self._request(request_args)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/RequestsSession.py", line 73, in _request
+    resp = self.session.request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200003 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbf610>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+
+[2023-05-09 20:56:29] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200005: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200005 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbec80>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')), traceback:
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f3d1abbec80>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200005 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbec80>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/BaseRequestor.py", line 105, in _fetch
+    result = await self.session.request(item, item.return_type, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 173, in request
+    request_resp = await self._session_request(item, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 136, in _session_request
+    resp = self._request(request_args)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/RequestsSession.py", line 73, in _request
+    resp = self.session.request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200005 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbec80>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+
+[2023-05-09 20:56:49] (Requestor.Error, from RFC.requestor.BaseRequestor) [ERROR] Error fetching fetching illust_200006: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200006 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbc640>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')), traceback:
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f3d1abbc640>, 'Connection to www.pixiv.net timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200006 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbc640>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/BaseRequestor.py", line 105, in _fetch
+    result = await self.session.request(item, item.return_type, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 173, in request
+    request_resp = await self._session_request(item, rank)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/BaseSession.py", line 136, in _session_request
+    resp = self._request(request_args)
+  File "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/RFC/requestor/session/RequestsSession.py", line 73, in _request
+    resp = self.session.request(
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.pixiv.net', port=443): Max retries exceeded with url: /ajax/illust/200006 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d1abbc640>, 'Connection to www.pixiv.net timed out. (connect timeout=20)'))
+
+

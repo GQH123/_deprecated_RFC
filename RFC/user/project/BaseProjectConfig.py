@@ -26,9 +26,6 @@ class BaseProjectConfig(BaseConfig):
     project_run_log_path: str
     _project_run_log_path: str = field(init=False, repr=False)
 
-    debug: bool
-    _debug: bool = field(init=False, repr=False, default=False)
-
     project_debug_log_path: str
     _project_debug_log_path: str = field(init=False, repr=False)
 
@@ -48,8 +45,6 @@ class BaseProjectConfig(BaseConfig):
             self._project_info_path = './project_info.json'
         if isinstance(self.project_run_log_path, property):
             self._project_run_log_path = './project_run.log'
-        if isinstance(self.debug, property):
-            self._debug = False
         if isinstance(self.project_debug_log_path, property):
             self._project_debug_log_path = './project_debug.log'
     
@@ -108,14 +103,6 @@ class BaseProjectConfig(BaseConfig):
     @project_run_log_path.setter
     def project_run_log_path(self, value: str):
         self._project_run_log_path = value
-
-    @property
-    def debug(self):
-        return self._debug
-    
-    @debug.setter
-    def debug(self, value: bool):
-        self._debug = value
 
     @property
     def project_debug_log_path(self):

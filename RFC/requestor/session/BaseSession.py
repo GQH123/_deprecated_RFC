@@ -80,7 +80,7 @@ class BaseSession(BaseModule):
         exclude = excludes[method]
         rename_map = rename_maps[method]
         if self.session:
-            excludes.append(self.common_args)
+            exclude += self.common_args
         kwargs = {k: v[method] for k, v in kwargs.items() if method in v}
         request_args = partial(
             self.arguments,
@@ -100,6 +100,7 @@ class BaseSession(BaseModule):
     async def _session_request(
         self,
         item: RawItem,
+        rank: int,
     ):
         all_supported_methods = ['get', 'post']
         if item.method not in all_supported_methods:
@@ -109,12 +110,14 @@ class BaseSession(BaseModule):
             request_args = self._request_args('get')(
                 url=item.url,
                 params=item.params,
+                rank=rank,
             )
         elif item.method == 'post':
             request_args = self._request_args('post')(
                 url=item.url,
                 params=item.params,
                 payload=item.payload,
+                rank=rank,
             )
         else:
             raise ConditionOverflowError(item.method, __name__)
@@ -163,10 +166,11 @@ class BaseSession(BaseModule):
         self,
         item: RawItem,
         return_type: str,
+        rank: int,
     ):
         if not isinstance(return_type, list):
             return_type = [return_type]
-        request_resp = await self._session_request(item)
+        request_resp = await self._session_request(item, rank)
         return await self._return_response(request_resp, return_type)
 
     def _check_session_renew(

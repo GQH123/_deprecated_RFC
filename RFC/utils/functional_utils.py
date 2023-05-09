@@ -39,13 +39,13 @@ def get_project_prefix(prefix='root', from_module=None):
     if prefix == 'root':
         return global_project_config.project_root
     elif prefix == 'result':
-        return global_project_config.project_result_path
+        return os.path.join(global_project_config.project_root, global_project_config.project_result_path)
     elif prefix == 'log':
-        return global_project_config.project_log_path
+        return os.path.join(global_project_config.project_root, global_project_config.project_log_path)
     elif prefix == 'config':
-        return global_project_config.project_config_path
+        return os.path.join(global_project_config.project_root, global_project_config.project_config_path)
     elif prefix == 'raw':
-        return global_project_config.project_raw_path
+        return os.path.join(global_project_config.project_root, global_project_config.project_raw_path)
 
 
 def _parse_fileIO(file, from_module=None):
@@ -57,7 +57,8 @@ def _parse_fileIO(file, from_module=None):
         if file in output_channels:
             return output_channels[file]
         else:
-            raise ParamValueError('file', file, list(output_channels.keys()), from_module)
+            return None
+            # raise ParamValueError('file', file, list(output_channels.keys()), from_module)
     if isinstance(file, list):
         return [_parse_fileIO(f, from_module) for f in file]
     raise ParamTypeError('file', file, [io.IOBase, str], from_module)
@@ -72,7 +73,7 @@ def init_output_channels():
 init_output_channels()
 
 
-def update_output_channels(channel_name, channel, prefix_project_dir='root', from_module=None):
+def update_output_channels(channel_name, channel, prefix_project_dir='root', from_module='<unknown>'):
     if from_module is None:
         from_module = get_prev_module_name(1)
     if isinstance(channel, io.IOBase):
@@ -100,21 +101,16 @@ def log(
         return
     from_module = get_prev_module_name(1) if from_module is None else from_module
     file = _parse_fileIO(file, from_module)
-    current_time = datetime.now().strftime("[%Y-%m-%d %H:%M:%S] ")
-    if note:
-        note = f'({note}) '
-    if mode != 'info':
-        from_module = ' (from ' + from_module + ')'
-    else:
-        from_module = ''
-
-    mode = f'[{mode.upper()}] '
+    current_time = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
+    mode = f'[{mode.upper()}]'
     if pure_output:
         result = message
     else:
-        result = current_time + note + mode + message + from_module
+        result = f'{current_time} ({note}, from {from_module}) {mode} {message}'
 
     def print_with_file(file):
+        if file is None:
+            return
         print(result, file=file, flush=flush, **kwargs)
 
     if not isinstance(file, list):
@@ -166,7 +162,7 @@ def parse_restriction(x, args_name, from_module):
         case x if all(isinstance(y, str) for y in x):
             x = x
         case _:
-            raise ParamSettingError(f"Incorrect format of arg {args_name}", from_module=from_module, **{args_name: x})
+            raise ParamSettingError(f"Incorrect format of arg {args_name}", module_name=from_module, **{args_name: x})
     return x
 
 
@@ -238,10 +234,11 @@ def save_object(obj, path, prefix_project_dir='root', mode='auto'):
         else:
             raise AssertionError(f"Unknown Error, mode: {mode}")
     except Exception as e:
-        print(f'Saving {path} fails... [{type(e).__name__}], {e}')
+        # print(f'Saving {path} fails... [{type(e).__name__}], {e}')
+        raise e
 
 
-def load_object(path, mode='auto', prefix_project_dir='root', default=None) -> object:
+def load_object(path, mode='auto', prefix_project_dir='root') -> object:
     def load_json():
         return json.load(open(path, 'r'))
 
@@ -271,5 +268,5 @@ def load_object(path, mode='auto', prefix_project_dir='root', default=None) -> o
         else:
             raise AssertionError(f"Unknown Error, mode: {mode}")
     except Exception as e:
-        print(f'Loading {path} fails, using default ... [{type(e).__name__}], {e}')
-        return default
+        # print(f'Loading {path} fails, using default ... [{type(e).__name__}], {e}')
+        raise e

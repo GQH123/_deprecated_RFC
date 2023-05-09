@@ -31,7 +31,6 @@ def initialize_project():
     def get_project_config():
         project_config = get_config('project')
         project_config = project_config(
-            debug=True,
             name='MyProject',
             project_debug_log_path="./project_debug.log",
             project_info_path="./project_info.json",
@@ -56,7 +55,7 @@ def get_itemset():
         itemset_config = get_config('rawitemset')
         itemset_config = itemset_config(
             name='MyItemset',
-            items=list(range(200000, 210000)),
+            items=list(range(200000, 200010)),
             preprocess=None,
             attrs={
                 'url': lambda i, x: f'https://www.pixiv.net/ajax/illust/{x}',
@@ -103,6 +102,7 @@ def get_requestor():
         return arguments_config
 
     def get_session_config():
+        """
         session_config = get_config('aiohttp')
         session_config = session_config(
             name='MySession',
@@ -110,6 +110,14 @@ def get_requestor():
             total_timeout=20,
             connections=10,
             connections_per_host=10,
+        )
+        """
+        session_config = get_config('requests')
+        session_config = session_config(
+            name='MySession',
+            arguments_config=get_arguments_config(),
+            connect_timeout=20,
+            read_timeout=10,
         )
         # session_config.print(include_sub=True)
         return session_config
@@ -130,13 +138,4 @@ def get_requestor():
 
 requestor = get_requestor()
 
-
-# In[ ]:
-
-
-# Convert .ipynb to .py
-import os
-
-if __name__ == '__main__':
-    os.system('jupyter nbconvert --to python test_RFC_pipeline.ipynb')
-
+requestor.run(itemset)

@@ -3,6 +3,7 @@ import trio
 import asyncio
 import inspect
 import functools
+import traceback
 from typing import Any
 
 from RFC.itemset.RawItemset import RawItemset, RawItem
@@ -87,8 +88,10 @@ class BaseRequestor(BaseModule):
         name: str = None,
     ):
         if name is None:
-            name = f'fetching {item.name}'
-        print(f'Error {name}: {e}')
+            name = f'{item.name}'
+        log(f'Error fetching {name}: {e}\n', 'main', 'Requestor.Error', 'error', __name__)
+        log(f'Error fetching {name}: {e}, traceback:\n{traceback.format_exc()}\n', 'debug', 'Requestor.Error', 'error', __name__)
+        log(f'Error fetching {name}: {e}\n', 'test', 'Requestor.Error', 'error', __name__)
 
     async def _fetch(
         self,
@@ -99,13 +102,10 @@ class BaseRequestor(BaseModule):
     ):
         try:
             update_output_channels('current_requested_item_log', f'{item.name}.log', 'log')
-            if self.use_async:
-                result = await self.session.request(item, item.return_type, rank=rank)
-            else:
-                result = self.session.request(item, item.return_type, rank=rank)
+            result = await self.session.request(item, item.return_type, rank)
             self._save_result(item.name, result)
         except Exception as e:
-            self._error_handler(e, item, item.return_type, name)
+            self._error_handler(e, item, name)
         if sema is not None:
             sema.release()
 
@@ -141,23 +141,32 @@ class BaseRequestor(BaseModule):
         items: RawItemset,
     ):
         for item in items:
-            await self._fetch(rank, item, item.return_type, None, f'fetching {item.name}')
+            await self._fetch(rank, item, None, f'fetching {item.name}')
 
-    async def run(
+    def run_single(
         self,
         items: RawItemset,
+        rank = 0,
         nproc: int = 1,
         async_sema: int = 1,
     ):
         if self.use_async:
             if self.async_framework == 'trio':
-                trio.run(self._fetch_all_trio, items, async_sema)
+                trio.run(self._fetch_all_trio, rank, items, async_sema)
             elif self.async_framework == 'asyncio':
-                asyncio.run(self._fetch_all_asyncio(items, async_sema))
+                asyncio.run(self._fetch_all_asyncio(rank, items, async_sema))
             else:
                 raise ConditionOverflowError(self.async_framework,  __name__)
         else:
-            await self._fetch_all_sync(items)
+            asyncio.run(self._fetch_all_sync(rank, items))
+    
+    def run(
+        self,
+        items: RawItemset,
+        nproc: int = 1,
+        async_sema: int = 1,
+    ):
+        self.run_single(items, 0, nproc, async_sema)
     
     def _retrieve_config(
         self,

@@ -68,12 +68,16 @@ class BaseItemset(BaseModule):
             log(f"Param 'return_type' is not set, use ['resp'] instead.", mode='warn', note='Itemset', from_module=__name__)
         if 'name' not in attrs:
             log(f"Param 'name' is not set, use <item_index> instead.", mode='warn', note='Itemset', from_module=__name__)
+        if 'params' not in attrs:
+            log(f"Param 'params' is not set, use {repr(dict())} instead.", mode='warn', note='Itemset', from_module=__name__)
         for attr in attrs:
             self.init_attr(attr, attrs[attr])
         if 'return_type' not in self.attrs:
             self.init_attr('return_type', [['resp'] for _ in self.items])
         if 'name' not in self.attrs:
             self.init_attr('name', lambda i, x: str(i))
+        if 'params' not in self.attrs:
+            self.init_attr('params', lambda i, x: dict())
         for i, method in enumerate(self.attrs['method']):
             if method == 'post' and ('payload' not in self.attrs or self.attrs['payload'][i] == {}):
                 log(f"Param 'payload' is not set for post item {self.attrs['name'][i]}.", mode='warn', note='Itemset', from_module=__name__)

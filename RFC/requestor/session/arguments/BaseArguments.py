@@ -78,6 +78,10 @@ class BaseArguments(BaseModule):
         if self.arguments_partial is None:
             self._get_arguments_partial()
         arguments = self.arguments_partial(include=include, exclude=exclude, url=url, payload=payload, **kwargs)
+        if 'headers' in arguments:
+            if 'base' in arguments['headers']:
+                headers_base = arguments['headers'].pop('base')
+                arguments['headers'] = headers_base | arguments['headers']
         for name in rename_map:
             if name in arguments:
                 _argument = arguments.pop(name)
