@@ -18,8 +18,8 @@ class BaseArguments(BaseModule):
         self,
         arguments_config: BaseArgumentsConfig,
     ):
-        self.arguments_config = arguments_config
-        self.name = self.arguments_config.name
+        super().__init__(arguments_config)
+        self.config = arguments_config.config.copy()
         self.init_all()
 
     def _traverse_arguments_config(
@@ -62,7 +62,7 @@ class BaseArguments(BaseModule):
         def arguments_wrapper(arguments_partial, include, exclude, url=None, payload=None, **kwargs):
             arguments = self._traverse_arguments_partial({name: value for name, value in arguments_partial.items() if check_restriction(name, include, exclude)}, url=url, payload=payload, **kwargs)
             return arguments
-        self.arguments_partial = partial(arguments_wrapper, self._traverse_arguments_config(self.arguments_config.config, '', '<AnythingIsFine>', '.'.join(__name__.split('.')[:-1])))
+        self.arguments_partial = partial(arguments_wrapper, self._traverse_arguments_config(self.config, '', '<AnythingIsFine>', '.'.join(__name__.split('.')[:-1])))
 
     def _get_request_params(
         self,
@@ -89,3 +89,17 @@ class BaseArguments(BaseModule):
         **kwargs,
     ):
         return self._get_request_params(**kwargs)
+    
+    def _retrieve_config(
+        self,
+        return_config: bool = False
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        my_attr.update({
+            'config': self.config,
+        })
+        if return_config:
+            return BaseArgumentsConfig(**my_attr)
+        else:
+            return my_attr

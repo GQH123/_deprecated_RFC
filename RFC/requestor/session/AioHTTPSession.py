@@ -15,15 +15,20 @@ class AioHTTPSession(Session):
             self.session = None
         else:
             self.connections = self.session_config.connections
+            self.connections_per_host = self.session_config.connections_per_host
             self.connector = aiohttp.TCPConnector(
-                limit=self.session_config.connections,
-                limit_per_host=self.session_config.connections_per_host,
+                limit=self.connections,
+                limit_per_host=self.connections_per_host,
             )
+            self.total_timeout = self.session_config.total_timeout
+            self.connect_timeout = self.session_config.connect_timeout
+            self.sock_connect_timeout = self.session_config.sock_connect_timeout
+            self.sock_read_timeout = self.session_config.sock_read_timeout
             self.timeout = aiohttp.ClientTimeout(
-                total=self.session_config.total_timeout,
-                connect=self.session_config.connect_timeout,
-                sock_connect=self.session_config.sock_connect_timeout,
-                sock_read=self.session_config.sock_read_timeout,
+                total=self.total_timeout,
+                connect=self.connect_timeout,
+                sock_connect=self.sock_connect_timeout,
+                sock_read=self.sock_read_timeout,
             )
             self.common_args = ['headers', 'cookies']
             self.session_specific_args = {
@@ -102,3 +107,22 @@ class AioHTTPSession(Session):
             return await request_resp.json()
         else:
             return super()._request_resp(request_resp, rtype)
+    
+    def _retrieve_config(
+        self,
+        return_config: bool = False,
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        my_attr.update({
+            'total_timeout': self.total_timeout,
+            'connect_timeout': self.connect_timeout,
+            'sock_connect_timeout': self.sock_connect_timeout,
+            'sock_read_timeout': self.sock_read_timeout,
+            'connections': self.connections,
+            'connections_per_host': self.connections_per_host,
+        })
+        if return_config:
+            return AioHTTPSessionConfig(**my_attr)
+        else:
+            return my_attr

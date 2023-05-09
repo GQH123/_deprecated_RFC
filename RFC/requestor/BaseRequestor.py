@@ -11,7 +11,7 @@ from RFC.utils.exception_utils import NotSupported, ConditionOverflowError, Para
 from RFC.utils.functional_utils import get_prev_module_name, log, update_output_channels, save_object
 
 from .session.session import get_session
-from .RequestorConfig import RequestorConfig
+from .BaseRequestorConfig import BaseRequestorConfig
 
 
 all_supported_async_frameworks = ['trio', 'asyncio']
@@ -68,10 +68,9 @@ class BaseRequestor(BaseModule):
 
     def __init__(
         self,
-        requestor_config: RequestorConfig,
+        requestor_config: BaseRequestorConfig,
     ):
-        self.requestor_config = requestor_config
-        self.name = requestor_config.name
+        super().__init__(requestor_config)
         self._init_all()
     
     def _save_result(
@@ -159,3 +158,17 @@ class BaseRequestor(BaseModule):
                 raise ConditionOverflowError(self.async_framework,  __name__)
         else:
             await self._fetch_all_sync(items)
+    
+    def _retrieve_config(
+        self,
+        return_config: bool = False
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        my_attr.update({
+            'session_config': self.session_config,
+        })
+        if return_config:
+            return BaseRequestorConfig(**my_attr)
+        else:
+            return my_attr

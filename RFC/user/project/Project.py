@@ -1,14 +1,15 @@
-from .ArgumentsConfig import ArgumentsConfig
-from .BaseArguments import BaseArguments
+from .ProjectConfig import ProjectConfig
+from .BaseProject import BaseProject
 
 
-class Arguments(BaseArguments):
+class Project(BaseProject):
     def __init__(
         self,
-        arguments_config: ArgumentsConfig,
+        project_config: ProjectConfig,
     ):
-        super().__init__(arguments_config)
-    
+        super().__init__(project_config)
+        ...
+
     def _retrieve_config(
         self,
         return_config: bool = False
@@ -17,6 +18,6 @@ class Arguments(BaseArguments):
         my_attr = parent_attr
         ...
         if return_config:
-            return ArgumentsConfig(**my_attr)
+            return ProjectConfig(**my_attr)
         else:
             return my_attr

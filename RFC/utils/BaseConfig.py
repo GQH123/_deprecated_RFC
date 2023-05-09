@@ -7,6 +7,21 @@ from .functional_utils import save_object, load_object
 
 @dataclass
 class BaseConfig(RootObject):
+    name: str
+    _name: str = field(init=False, repr=False)
+
+    def __post_init__(self):
+        if isinstance(self.name, property):
+            self.name = '<anonymous>'
+    
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, value: str):
+        self._name = value
+
     def save(
         self,
         savename: str = None,

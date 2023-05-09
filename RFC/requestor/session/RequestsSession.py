@@ -23,11 +23,12 @@ class RequestsSession(Session):
     def _init_request_args(
         self,
     ):
-        self.timeout = self.session_config.timeout
         self.connect_timeout = self.session_config.connect_timeout
         self.read_timeout = self.session_config.read_timeout
         if self.connect_timeout is not None and self.read_timeout is not None:
             self.timeout = (self.connect_timeout, self.read_timeout)
+        else:
+            self.timeout = None
         self.request_specific_args = {
             'timeout': self.timeout,
         }
@@ -90,3 +91,18 @@ class RequestsSession(Session):
             return request_resp.json()
         else:
             return super()._get_returned_request_resp(request_resp, rtype)
+
+    def _retrieve_config(
+        self,
+        return_config: bool = False,
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        my_attr.update({
+            'connect_timeout': self.connect_timeout,
+            'read_timeout': self.read_timeout,
+        })
+        if return_config:
+            return RequestsSessionConfig(**my_attr)
+        else:
+            return my_attr

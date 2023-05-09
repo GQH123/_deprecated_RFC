@@ -55,8 +55,7 @@ class BaseSession(BaseModule):
         self,
         session_config: BaseSessionConfig,
     ):
-        self.session_config = session_config
-        self.name = self.session_config.name
+        super().__init__(session_config)
         self.use_session = self.session_config.use_session
         self._init_all()
 
@@ -169,3 +168,22 @@ class BaseSession(BaseModule):
             self.contiguous_failed_counts = 0
             return True
         return False
+
+    def _retrieve_config(
+        self,
+        return_config: bool = False,
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        my_attr.update({
+            'arguments_config': self.arguments_config,
+            'contiguous_failed_counts_threshold': self.contiguous_failed_counts_threshold,
+            'use_session': self.use_session,
+            'framework': self.framework,
+            'use_async': self.use_async,
+            'async_framework': self.async_framework,
+        })
+        if return_config:
+            return BaseSessionConfig(**my_attr)
+        else:
+            return my_attr

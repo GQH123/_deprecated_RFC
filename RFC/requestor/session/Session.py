@@ -101,3 +101,15 @@ class Session(BaseSession):
         else:
             return super()._request_resp(request_resp, rtype)
         ...
+
+    def _retrieve_config(
+        self,
+        return_config: bool = False
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        ...
+        if return_config:
+            return SessionConfig(**my_attr)
+        else:
+            return my_attr

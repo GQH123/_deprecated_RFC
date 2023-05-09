@@ -1,26 +1,9 @@
 import os
-from dataclasses import dataclass, field
 
 from .functional_utils import log, parse_restriction, check_restriction, pretty_print_parser
 
 
-@dataclass
 class RootObject:
-    name: str
-    _name: str = field(init=False, repr=False)
-
-    def __post_init__(self):
-        if isinstance(self.name, property):
-            self.name = '<anonymous>'
-    
-    @property
-    def name(self):
-        return self._name
-    
-    @name.setter
-    def name(self, value: str):
-        self._name = value
-
     def print(
         self,
         include='all',

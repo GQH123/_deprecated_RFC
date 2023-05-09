@@ -39,3 +39,14 @@ class JSON_MiddleWare(MiddleWare):
         middleware_config: JSON_MiddleWareConfig,
     ):
         super().__init__(middleware_config=middleware_config)
+    
+    def _retrieve_config(
+        self,
+        return_config: bool = False
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        if return_config:
+            return JSON_MiddleWareConfig(**my_attr)
+        else:
+            return my_attr

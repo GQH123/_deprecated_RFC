@@ -30,9 +30,11 @@ class BaseItemset(BaseModule):
         if not isinstance(self.items, list):
             raise ParamTypeError('self.items', self.items, list, __name__)
 
+        self.preprocess = preprocess
         if preprocess:
             self.items = [preprocess(item) for item in self.items]
 
+        self.shuffle = shuffle
         if shuffle:
             random.shuffle(self.items)
 
@@ -95,8 +97,7 @@ class BaseItemset(BaseModule):
         self,
         itemset_config: BaseItemsetConfig,
     ):
-        self.itemset_config = itemset_config
-        self.name = self.itemset_config.name
+        super().__init__(itemset_config)
         self.init_items(itemset_config.items, itemset_config.preprocess, itemset_config.shuffle)
         self.init_all_attrs(itemset_config.attrs)
         self.convert2item()
@@ -111,3 +112,20 @@ class BaseItemset(BaseModule):
         idx: int,
     ):
         return self.items[idx]
+    
+    def _retrieve_config(
+        self,
+        return_config: bool = False
+    ):
+        parent_attr = super()._retrieve_config()
+        my_attr = parent_attr
+        my_attr.update({
+            'items': self.items,
+            'attrs': self.attrs,
+            'preprocess': self.preprocess,
+            'shuffle': self.shuffle,
+        })
+        if return_config:
+            return BaseItemsetConfig(**my_attr)
+        else:
+            return my_attr
