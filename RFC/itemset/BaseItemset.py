@@ -1,8 +1,6 @@
-import sys
 import random
 import inspect
 from typing import Any, List, Callable
-from dataclasses import dataclass, field
 
 from RFC.utils.BaseModule import BaseModule
 from RFC.utils.functional_utils import load_object, log
@@ -11,13 +9,10 @@ from RFC.utils.exception_utils import ParamTypeError, ParamSettingError
 from .BaseItemsetConfig import BaseItemsetConfig
 
 
-@dataclass
-class BaseItem:
-    name: str = field()
-    url: str = field()
-    payload: dict = field(default_factory=dict)
-    params: dict = field(default_factory=dict)
-    method: str = field(default='get')
+class BaseItem(dict):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.__dict__ = self
 
 
 class BaseItemset(BaseModule):
@@ -93,8 +88,8 @@ class BaseItemset(BaseModule):
         n: int = 10,
     ):
         for item in self.items[:n]:
-            log(item, pure_output=True)
-        log(pure_output=True)
+            log(item, file=['stdout'], pure_output=True)
+        log(file=['stdout'], pure_output=True)
 
     def __init__(
         self,

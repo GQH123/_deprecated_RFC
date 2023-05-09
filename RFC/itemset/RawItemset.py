@@ -1,11 +1,7 @@
-from typing import List
-from dataclasses import dataclass, field
-
 from .Itemset import Itemset, Item
 from .RawItemsetConfig import RawItemsetConfig
 
 
-@dataclass
 class RawItem(Item):
     ...
 

@@ -75,10 +75,10 @@ class ParamError(Exception):
     def __init__(self, message, module_name=None):
         self.message = message
         self.module_name = module_name if module_name else get_prev_module_name()
-        super(ParamTypeError, self).__init__(f"{self.message}. Error raised from {self.module_name}.")
+        super(ParamError, self).__init__(f"{self.message}. Error raised from {self.module_name}.")
 
     def __reduce__(self):
-        return (ParamTypeError, (self.message, self.module_name))
+        return (ParamError, (self.message, self.module_name))
 
 
 class ParamTypeError(Exception):

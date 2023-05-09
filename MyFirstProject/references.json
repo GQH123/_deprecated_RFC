@@ -126,13 +126,9 @@
             },
             "middleware": {
                 "options": {
-                    "func1": [
-                        "(**kwargs)",
-                        "normal"
-                    ],
-                    "func2": [
-                        "(**kwargs)",
-                        "normal"
+                    "get_middleware": [
+                        "(middleware_config: RFC.requestor.session.middleware.MiddleWareConfig.MiddleWareConfig | str, **kwargs)",
+                        "system"
                     ]
                 }
             },

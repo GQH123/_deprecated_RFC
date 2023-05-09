@@ -51,13 +51,13 @@ def get_project_prefix(prefix='root', from_module=None):
 def _parse_fileIO(file, from_module=None):
     if from_module is None:
         from_module = get_prev_module_name(2)
-    if isinstance(file, io.IOBase) or file is output_channels:
+    if isinstance(file, io.IOBase):
         return file
     if isinstance(file, str):
         if file in output_channels:
             return output_channels[file]
         else:
-            ParamValueError('file', file, list(output_channels.keys()), from_module)
+            raise ParamValueError('file', file, list(output_channels.keys()), from_module)
     if isinstance(file, list):
         return [_parse_fileIO(f, from_module) for f in file]
     raise ParamTypeError('file', file, [io.IOBase, str], from_module)
@@ -75,13 +75,12 @@ init_output_channels()
 def update_output_channels(channel_name, channel, prefix_project_dir='root', from_module=None):
     if from_module is None:
         from_module = get_prev_module_name(1)
-    if not isinstance(channel, io.IOBase):
-        raise ParamTypeError('channel', channel, [io.IOBase], from_module)
     if isinstance(channel, io.IOBase):
         output_channels[channel_name] = channel
     elif isinstance(channel, str):
         output_channels[channel_name] = open(os.path.join(get_project_prefix(prefix_project_dir, from_module), channel), 'w')
-
+    else:
+        raise ParamTypeError('channel', channel, [io.IOBase, str], from_module)
 
 def log(
     message: Any = '',
@@ -121,7 +120,7 @@ def log(
     if not isinstance(file, list):
         file = [file]
     for channel in file:
-        print_with_file(file[channel])
+        print_with_file(channel)
 
 
 """
