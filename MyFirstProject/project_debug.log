@@ -1,0 +1,178 @@
+[2023-05-05 15:38:48] (Project) [INFO] Project MyFirstProject launched.
+
+Project Configurations:
+{
+    "debug": true,
+    "name": "MyProject",
+    "project_debug_log_path": "./project_debug.log",
+    "project_info_path": "./project_info.json",
+    "project_name": "MyFirstProject",
+    "project_root": "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/MyFirstProject",
+    "project_run_log_path": "./project_run.log"
+}
+
+[2023-05-05 15:38:49] (Pipeline) [INFO] initializing itemset...
+
+RawItem(name='illust_200088', url='https://www.pixiv.net/ajax/illust/200088', payload={}, params={}, method='get')
+RawItem(name='illust_206234', url='https://www.pixiv.net/ajax/illust/206234', payload={}, params={}, method='get')
+RawItem(name='illust_205347', url='https://www.pixiv.net/ajax/illust/205347', payload={}, params={}, method='get')
+RawItem(name='illust_202174', url='https://www.pixiv.net/ajax/illust/202174', payload={}, params={}, method='get')
+RawItem(name='illust_203625', url='https://www.pixiv.net/ajax/illust/203625', payload={}, params={}, method='get')
+RawItem(name='illust_200338', url='https://www.pixiv.net/ajax/illust/200338', payload={}, params={}, method='get')
+RawItem(name='illust_201389', url='https://www.pixiv.net/ajax/illust/201389', payload={}, params={}, method='get')
+RawItem(name='illust_202551', url='https://www.pixiv.net/ajax/illust/202551', payload={}, params={}, method='get')
+RawItem(name='illust_204745', url='https://www.pixiv.net/ajax/illust/204745', payload={}, params={}, method='get')
+RawItem(name='illust_203103', url='https://www.pixiv.net/ajax/illust/203103', payload={}, params={}, method='get')
+
+[2023-05-05 15:38:49] (Pipeline) [INFO] initializing requestor...
+
+[2023-05-05 15:38:49] [INFO] 
+RequestorConfig
+{
+    "name": "MyRequestor",
+    "session_config": {
+        "arguments_config": {
+            "config": {
+                "cookies": {
+                    "kwargs": {
+                        "cookies": {
+                            "PHPSESSID": "1234567890abcdef1234567890abcdef",
+                            "device_token": "1234567890abcdef1234567890abcdef"
+                        },
+                        "ctype": "<class 'dict'>"
+                    },
+                    "method": "passin"
+                },
+                "headers": {
+                    "base": {
+                        "kwargs": {
+                            "option": "default"
+                        },
+                        "method": "switch"
+                    },
+                    "kwargs": {},
+                    "referer": {
+                        "kwargs": {},
+                        "method": "from_url"
+                    },
+                    "user-agent": {
+                        "kwargs": {
+                            "type": "firefox"
+                        },
+                        "method": "random_fake"
+                    }
+                },
+                "kwargs": {},
+                "params": {
+                    "kwargs": {
+                        "ptype": "<class 'dict'>"
+                    },
+                    "method": "passin"
+                },
+                "payload": {
+                    "kwargs": {
+                        "ptype": "<class 'dict'>"
+                    },
+                    "method": "passin"
+                },
+                "proxies": {
+                    "kwargs": {},
+                    "method": "off"
+                },
+                "url": {
+                    "kwargs": {},
+                    "method": "passin"
+                }
+            },
+            "name": "MyArguments"
+        },
+        "async_framework": "asyncio",
+        "connect_timeout": null,
+        "connections": 10,
+        "connections_per_host": 10,
+        "contiguous_failed_counts_threshold": null,
+        "framework": "aiohttp",
+        "name": "MySession",
+        "sock_connect_timeout": null,
+        "sock_read_timeout": null,
+        "total_timeout": 20,
+        "use_async": true,
+        "use_session": true
+    }
+}
+[2023-05-05 15:40:09] (Pipeline) [INFO] initializing requestor...
+
+[2023-05-05 15:40:09] [INFO] 
+RequestorConfig
+{
+    "name": "MyRequestor",
+    "session_config": {
+        "arguments_config": {
+            "config": {
+                "cookies": {
+                    "kwargs": {
+                        "cookies": {
+                            "PHPSESSID": "1234567890abcdef1234567890abcdef",
+                            "device_token": "1234567890abcdef1234567890abcdef"
+                        },
+                        "ctype": "<class 'dict'>"
+                    },
+                    "method": "passin"
+                },
+                "headers": {
+                    "base": {
+                        "kwargs": {
+                            "option": "default"
+                        },
+                        "method": "switch"
+                    },
+                    "kwargs": {},
+                    "referer": {
+                        "kwargs": {},
+                        "method": "from_url"
+                    },
+                    "user-agent": {
+                        "kwargs": {
+                            "type": "firefox"
+                        },
+                        "method": "random_fake"
+                    }
+                },
+                "kwargs": {},
+                "params": {
+                    "kwargs": {
+                        "ptype": "<class 'dict'>"
+                    },
+                    "method": "passin"
+                },
+                "payload": {
+                    "kwargs": {
+                        "ptype": "<class 'dict'>"
+                    },
+                    "method": "passin"
+                },
+                "proxies": {
+                    "kwargs": {},
+                    "method": "off"
+                },
+                "url": {
+                    "kwargs": {},
+                    "method": "passin"
+                }
+            },
+            "name": "MyArguments"
+        },
+        "async_framework": "asyncio",
+        "connect_timeout": null,
+        "connections": 10,
+        "connections_per_host": 10,
+        "contiguous_failed_counts_threshold": null,
+        "framework": "aiohttp",
+        "name": "MySession",
+        "sock_connect_timeout": null,
+        "sock_read_timeout": null,
+        "total_timeout": 20,
+        "use_async": true,
+        "use_session": true
+    }
+}

@@ -1,0 +1,171 @@
+from typing import List
+from functools import partial
+
+from RFC.itemset.RawItemset import RawItem
+from RFC.utils.BaseModule import BaseModule
+from RFC.utils.exception_utils import ConditionOverflowError, ParamValueError
+
+from .arguments.arguments import get_arguments
+from .BaseSessionConfig import BaseSessionConfig
+
+
+class BaseSession(BaseModule):
+    def _init_arguments(self):
+        self.arguments_config = self.session_config.arguments_config
+        self.arguments = get_arguments(self.arguments_config)
+
+    def _init_attrs(
+        self,
+    ):
+        self.use_async = self.session_config.use_async
+        self.framework = self.session_config.framework
+        self.async_framework = self.session_config.async_framework
+
+    def _init_session_args(
+        self,
+    ):
+        self.session = ...
+        ...
+
+    def _init_request_args(
+        self,
+    ):
+        ...
+
+    def _init_states(
+        self,
+    ):
+        self.method_request_args = {}
+        self.contiguous_failed_counts = 0
+        if self.session_config.contiguous_failed_counts_threshold:
+            self.contiguous_failed_counts_threshold = self.session_config.contiguous_failed_counts_threshold
+        else:
+            self.contiguous_failed_counts_threshold = -1
+
+    def _init_all(
+        self,
+    ):
+        self._init_arguments()
+        self._init_attrs()
+        self._init_session_args()
+        self._init_request_args()
+        self._init_states()
+
+    def __init__(
+        self,
+        session_config: BaseSessionConfig,
+    ):
+        self.session_config = session_config
+        self.name = self.session_config.name
+        self.use_session = self.session_config.use_session
+        self._init_all()
+
+    def _request_args(
+        self,
+        method: str,
+        excludes: dict[str, List[str]],
+        rename_maps: dict[str, dict[str, str]],
+        **kwargs,
+    ):
+        if method in self.method_request_args:
+            return self.method_request_args[method]
+
+        exclude = excludes[method]
+        rename_map = rename_maps[method]
+        if self.session:
+            excludes.append(self.common_args)
+        kwargs = {k: v[method] for k, v in kwargs.items() if method in v}
+        request_args = partial(
+            self.arguments,
+            exclude=exclude,
+            rename_map=rename_map,
+            **kwargs,
+        )
+        self.method_request_args[method] = request_args
+        return request_args
+
+    def _request(
+        self,
+        request_args: dict,
+    ):
+        ...
+
+    async def _session_request(
+        self,
+        item: RawItem,
+    ):
+        all_supported_methods = ['get', 'post']
+        if item.method not in all_supported_methods:
+            raise ParamValueError('item.method', item.method, all_supported_methods, __name__)
+
+        if item.method == 'get':
+            request_args = self._request_args('get')(
+                url=item.url,
+                params=item.params,
+            )
+        elif item.method == 'post':
+            request_args = self._request_args('post')(
+                url=item.url,
+                params=item.params,
+                payload=item.payload,
+            )
+        else:
+            raise ConditionOverflowError(item.method, __name__)
+
+        if self.session:
+            request_args.update(self.request_specific_args)
+        else:
+            request_args.update(self.request_specific_args)
+            request_args.update(self.common_args)
+        request_args.update(dict(
+            method=item.method,
+        ))
+        if self.use_async:
+            resp = await self._request(request_args)
+        else:
+            resp = self._request(request_args)
+        return resp
+
+    def _request_resp(
+        self,
+        request_resp,
+        rtype: str,  # ['resp', 'text', 'content', 'body', 'json']
+    ):
+        raise ConditionOverflowError(rtype, __name__)
+        ...
+
+    async def _return_response(
+        self,
+        request_resp,
+        return_type: List[str],
+    ):
+        all_supported_rtype = ['resp', 'text', 'content', 'body', 'json']
+        results = {}
+        for rtype in return_type:
+            if rtype not in all_supported_rtype:
+                raise ParamValueError('rtype', rtype, all_supported_rtype, __name__)
+            if rtype in results:
+                continue
+            if self.use_async:
+                results[rtype] = await self._request_resp(request_resp, rtype)
+            else:
+                results[rtype] = self._request_resp(request_resp, rtype)
+        return results
+
+    async def request(
+        self,
+        item: RawItem,
+        return_type: str,
+    ):
+        if not isinstance(return_type, list):
+            return_type = [return_type]
+        request_resp = await self._session_request(item)
+        return await self._return_response(request_resp, return_type)
+
+    def _check_session_renew(
+        self,
+    ):
+        if self.contiguous_failed_counts == self.contiguous_failed_counts_threshold:
+            self.contiguous_failed_counts = 0
+            return True
+        return False

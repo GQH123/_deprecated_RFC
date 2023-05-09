@@ -1,0 +1,28 @@
+[2023-04-26 22:51:58] (Project) [INFO] Project MyFirstProject launched.
+
+Project Configurations:
+{
+    "debug": true,
+    "name": "MyProject",
+    "project_debug_log_path": "./project_debug.log",
+    "project_info_path": "./project_info.json",
+    "project_name": "MyFirstProject",
+    "project_root": "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/MyFirstProject",
+    "project_run_log_path": "./project_run.log"
+}
+
+[2023-04-26 22:52:45] [INFO] initializing itemset...
+
+RawItem(name='illust_200638', url='https://www.pixiv.net/ajax/illust/200638', payload={}, params={}, method='get')
+RawItem(name='illust_207008', url='https://www.pixiv.net/ajax/illust/207008', payload={}, params={}, method='get')
+RawItem(name='illust_202549', url='https://www.pixiv.net/ajax/illust/202549', payload={}, params={}, method='get')
+RawItem(name='illust_205025', url='https://www.pixiv.net/ajax/illust/205025', payload={}, params={}, method='get')
+RawItem(name='illust_200176', url='https://www.pixiv.net/ajax/illust/200176', payload={}, params={}, method='get')
+RawItem(name='illust_203270', url='https://www.pixiv.net/ajax/illust/203270', payload={}, params={}, method='get')
+RawItem(name='illust_200872', url='https://www.pixiv.net/ajax/illust/200872', payload={}, params={}, method='get')
+RawItem(name='illust_209292', url='https://www.pixiv.net/ajax/illust/209292', payload={}, params={}, method='get')
+RawItem(name='illust_204394', url='https://www.pixiv.net/ajax/illust/204394', payload={}, params={}, method='get')
+RawItem(name='illust_203473', url='https://www.pixiv.net/ajax/illust/203473', payload={}, params={}, method='get')
+
+[2023-04-26 22:52:56] [INFO] initializing session...
+

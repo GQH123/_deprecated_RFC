@@ -1,0 +1,10 @@
+{
+    "project_name": "MyFirstProject",
+    "project_root": "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/MyFirstProject",
+    "project_info_path": "./project_info.json",
+    "project_run_log_path": "./project_run.log",
+    "debug": true,
+    "project_debug_log_path": "./project_debug.log",
+    "created_time": "2023-04-26_22-29-41",
+    "last_launched_time": "2023-05-05_15-38-48"
+}

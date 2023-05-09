@@ -1,0 +1,178 @@
+{
+    "requestor": {
+        "requestor": {
+            "headers": {
+                "headers": {
+                    "headers": [
+                        "func1",
+                        "func2"
+                    ],
+                    "payload": {
+                        "payload": {
+                            "payload": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "proxies": {
+                        "proxies": {
+                            "proxies": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "referer": {
+                        "referer": {
+                            "referer": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "url": {
+                        "url": {
+                            "url": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "user-agent": {
+                        "user-agent": {
+                            "user-agent": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    }
+                }
+            },
+            "middlewares": {
+                "middlewares": {
+                    "R404": {
+                        "R404": {
+                            "R404": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "middlewares": [
+                        "func1",
+                        "func2"
+                    ]
+                }
+            },
+            "requestor": [
+                "func1",
+                "func2"
+            ],
+            "sessions": {
+                "sessions": {
+                    "sessions": [
+                        "func1",
+                        "func2"
+                    ],
+                    "timeout": {
+                        "timeout": {
+                            "timeout": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "crawler": {
+        "requestor": {
+            "headers": {
+                "headers": {
+                    "headers": [
+                        "func1",
+                        "func2"
+                    ],
+                    "payload": {
+                        "payload": {
+                            "payload": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "proxies": {
+                        "proxies": {
+                            "proxies": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "referer": {
+                        "referer": {
+                            "referer": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "url": {
+                        "url": {
+                            "url": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "user-agent": {
+                        "user-agent": {
+                            "user-agent": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    }
+                }
+            },
+            "middlewares": {
+                "middlewares": {
+                    "R404": {
+                        "R404": {
+                            "R404": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    },
+                    "middlewares": [
+                        "func1",
+                        "func2"
+                    ]
+                }
+            },
+            "requestor": [
+                "func1",
+                "func2"
+            ],
+            "sessions": {
+                "sessions": {
+                    "sessions": [
+                        "func1",
+                        "func2"
+                    ],
+                    "timeout": {
+                        "timeout": {
+                            "timeout": [
+                                "func1",
+                                "func2"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
