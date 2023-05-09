@@ -10,54 +10,62 @@ from .BaseSessionConfig import BaseSessionConfig
 
 
 class BaseSession(BaseModule):
-    def _init_arguments(self):
-        self.arguments_config = self.session_config.arguments_config
+    def _init_arguments(
+        self,
+        session_config: BaseSessionConfig,
+    ):
+        self.arguments_config = session_config.arguments_config
         self.arguments = get_arguments(self.arguments_config)
 
     def _init_attrs(
         self,
+        session_config: BaseSessionConfig,
     ):
-        self.use_async = self.session_config.use_async
-        self.framework = self.session_config.framework
-        self.async_framework = self.session_config.async_framework
+        self.use_async = session_config.use_async
+        self.framework = session_config.framework
+        self.async_framework = session_config.async_framework
+        self.use_session = session_config.use_session
 
     def _init_session_args(
         self,
+        session_config: BaseSessionConfig,
     ):
         self.session = ...
         ...
 
     def _init_request_args(
         self,
+        session_config: BaseSessionConfig,
     ):
         ...
 
     def _init_states(
         self,
+        session_config: BaseSessionConfig,
     ):
         self.method_request_args = {}
         self.contiguous_failed_counts = 0
-        if self.session_config.contiguous_failed_counts_threshold:
-            self.contiguous_failed_counts_threshold = self.session_config.contiguous_failed_counts_threshold
+        if session_config.contiguous_failed_counts_threshold:
+            self.contiguous_failed_counts_threshold = session_config.contiguous_failed_counts_threshold
         else:
             self.contiguous_failed_counts_threshold = -1
 
     def _init_all(
         self,
+        session_config: BaseSessionConfig,
     ):
-        self._init_arguments()
-        self._init_attrs()
-        self._init_session_args()
-        self._init_request_args()
-        self._init_states()
+        self._init_arguments(session_config=session_config)
+        self._init_attrs(session_config=session_config)
+        self._init_session_args(session_config=session_config)
+        self._init_request_args(session_config=session_config)
+        self._init_states(session_config=session_config)
 
     def __init__(
         self,
         session_config: BaseSessionConfig,
     ):
         super().__init__(session_config)
-        self.use_session = self.session_config.use_session
-        self._init_all()
+        self._init_all(session_config=session_config)
 
     def _request_args(
         self,
@@ -176,7 +184,7 @@ class BaseSession(BaseModule):
         parent_attr = super()._retrieve_config()
         my_attr = parent_attr
         my_attr.update({
-            'arguments_config': self.arguments_config,
+            'arguments_config': self.arguments.__config__(),
             'contiguous_failed_counts_threshold': self.contiguous_failed_counts_threshold,
             'use_session': self.use_session,
             'framework': self.framework,

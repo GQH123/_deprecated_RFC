@@ -10,20 +10,21 @@ from .AioHTTPSessionConfig import AioHTTPSessionConfig
 class AioHTTPSession(Session):
     def _init_session_args(
         self,
+        session_config: AioHTTPSessionConfig,
     ):
         if not self.use_session:
             self.session = None
         else:
-            self.connections = self.session_config.connections
-            self.connections_per_host = self.session_config.connections_per_host
+            self.connections = session_config.connections
+            self.connections_per_host = session_config.connections_per_host
             self.connector = aiohttp.TCPConnector(
                 limit=self.connections,
                 limit_per_host=self.connections_per_host,
             )
-            self.total_timeout = self.session_config.total_timeout
-            self.connect_timeout = self.session_config.connect_timeout
-            self.sock_connect_timeout = self.session_config.sock_connect_timeout
-            self.sock_read_timeout = self.session_config.sock_read_timeout
+            self.total_timeout = session_config.total_timeout
+            self.connect_timeout = session_config.connect_timeout
+            self.sock_connect_timeout = session_config.sock_connect_timeout
+            self.sock_read_timeout = session_config.sock_read_timeout
             self.timeout = aiohttp.ClientTimeout(
                 total=self.total_timeout,
                 connect=self.connect_timeout,
@@ -43,6 +44,7 @@ class AioHTTPSession(Session):
 
     def _init_request_args(
         self,
+        session_config: AioHTTPSessionConfig,
     ):
         self.request_specific_args = {}
 

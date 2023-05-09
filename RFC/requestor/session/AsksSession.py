@@ -8,12 +8,13 @@ from .AsksSessionConfig import AsksSessionConfig
 class AsksSession(Session):
     def _init_session_args(
         self,
+        session_config: AsksSessionConfig,
     ):
         if not self.use_session:
             self.session = None
         else:
-            self.connections = self.session_config.connections
-            self.persist_cookies = self.session_config.persist_cookies
+            self.connections = session_config.connections
+            self.persist_cookies = session_config.persist_cookies
             self.common_args = ['headers', 'cookies']
             self.session_specific_args = {
                 'connections': self.connections,
@@ -27,10 +28,11 @@ class AsksSession(Session):
 
     def _init_request_args(
         self,
+        session_config: AsksSessionConfig,
     ):
         self.request_specific_args = {
-            'timeout': self.session_config.timeout,
-            'connection_timeout': self.session_config.connection_timeout,
+            'timeout': session_config.timeout,
+            'connection_timeout': session_config.connection_timeout,
         }
 
     def __init__(

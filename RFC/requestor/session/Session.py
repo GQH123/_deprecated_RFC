@@ -12,11 +12,12 @@ from .SessionConfig import SessionConfig
 class Session(BaseSession):
     def _init_session_args(
         self,
+        session_config: SessionConfig,
     ):
         if not self.use_session:
             self.session = None
         else:
-            self.X = self.session_config.X
+            self.X = session_config.X
             self.common_args = ['...', ]
             self.session_specific_args = {
                 'X': self.X,
@@ -31,6 +32,7 @@ class Session(BaseSession):
 
     def _init_request_args(
         self,
+        session_config: SessionConfig,
     ):
         self.request_specific_args = {
             '...': ...

@@ -9,13 +9,7 @@ from .BaseProjectConfig import BaseProjectConfig
 
 
 class BaseProject(BaseModule):
-    def __init__(
-        self,
-        project_config: BaseProjectConfig,
-    ):
-        super().__init__(project_config)
-
-    def launch(
+    def _init_attr(
         self,
         project_config: BaseProjectConfig,
     ):
@@ -39,6 +33,17 @@ class BaseProject(BaseModule):
         
         project_config.project_root = self.project_root
         init_global_project_config(project_config)
+        
+    def __init__(
+        self,
+        project_config: BaseProjectConfig,
+    ):
+        super().__init__(project_config)
+        self._init_attr(project_config)
+
+    def launch(
+        self,
+    ):
         run_compile()
 
         if os.path.exists(os.path.join(self.project_root, self.project_info_path)):
@@ -82,7 +87,7 @@ class BaseProject(BaseModule):
 
         save_object(project_info, self.project_info_path)
         log(f'Project {self.project_name} launched.\n', note='Project', mode='info', from_module=get_prev_module_name(1))
-        log(f'Project Configurations:\n{pretty_print_parser(project_config.__dict__)}\n', pure_output=True)
+        log(f'Project Configurations:\n{pretty_print_parser(self.__dict__)}\n', pure_output=True)
 
     def _retrieve_config(
         self,

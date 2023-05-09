@@ -8,6 +8,7 @@ from .RequestsSessionConfig import RequestsSessionConfig
 class RequestsSession(Session):
     def _init_session_args(
         self,
+        session_config: RequestsSessionConfig,
     ):
         if not self.use_session:
             self.session = None
@@ -22,9 +23,10 @@ class RequestsSession(Session):
 
     def _init_request_args(
         self,
+        session_config: RequestsSessionConfig,
     ):
-        self.connect_timeout = self.session_config.connect_timeout
-        self.read_timeout = self.session_config.read_timeout
+        self.connect_timeout = session_config.connect_timeout
+        self.read_timeout = session_config.read_timeout
         if self.connect_timeout is not None and self.read_timeout is not None:
             self.timeout = (self.connect_timeout, self.read_timeout)
         else:

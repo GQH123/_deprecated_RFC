@@ -28,7 +28,7 @@ def get_prev_module_name(
 
 def init_global_project_config(project_config):
     global global_project_config
-    global_project_config = project_config.copy()
+    global_project_config = project_config  # need to be modified
 
 
 def get_project_prefix(prefix='root', from_module=None):

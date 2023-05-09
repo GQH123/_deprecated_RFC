@@ -47,8 +47,8 @@ def retrying(retry_times:int|str='forever', sleep_time=1, **kwargs):  # used onl
 
 
 class BaseRequestor(BaseModule):
-    def _init_session(self):
-        self.session_config = self.requestor_config.session_config
+    def _init_session(self, requestor_config):
+        self.session_config = requestor_config.session_config
         self.session = get_session(self.session_config)
         self.framework = self.session.framework
         self.use_async = self.session.use_async
@@ -63,15 +63,15 @@ class BaseRequestor(BaseModule):
         else:
             self.async_framework = None
 
-    def _init_all(self):
-        self._init_session()
+    def _init_all(self, requestor_config):
+        self._init_session(requestor_config)
 
     def __init__(
         self,
         requestor_config: BaseRequestorConfig,
     ):
         super().__init__(requestor_config)
-        self._init_all()
+        self._init_all(requestor_config)
     
     def _save_result(
         self,
@@ -166,7 +166,7 @@ class BaseRequestor(BaseModule):
         parent_attr = super()._retrieve_config()
         my_attr = parent_attr
         my_attr.update({
-            'session_config': self.session_config,
+            'session_config': self.session.__config__(),
         })
         if return_config:
             return BaseRequestorConfig(**my_attr)
