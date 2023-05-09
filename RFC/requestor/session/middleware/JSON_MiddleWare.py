@@ -2,6 +2,8 @@ from .MiddleWare import MiddleWare
 from .JSON_MiddleWareConfig import JSON_MiddleWareConfig
 from .Exceptions import MiddleWare_UnknownFramework
 
+from RFC.utils.functional_utils import log
+
 
 class JSON_MiddleWare(MiddleWare):
     def _init_process(
@@ -26,7 +28,9 @@ class JSON_MiddleWare(MiddleWare):
     ):
         async def error_handler(e, x):
             if type(e).__name__ == 'MiddleWare_UnknownFramework':
-                print('MiddleWare_UnknownFramework
+                log('encountered unknown framework', 'current_requested_item_log', 'JSON_MiddleWare', 'error', __name__)
+            else:
+                log('json decoding error', 'current_requested_item_log', 'JSON_MiddleWare', 'error', __name__)
 
         self.error_handler = error_handler
 

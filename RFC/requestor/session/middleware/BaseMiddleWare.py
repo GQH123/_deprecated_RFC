@@ -43,6 +43,6 @@ class BaseMiddleWare(BaseModule):
         item: RawItem,
     ):
         try:
-            return await self.process(item)
+            return await self.process(item), True
         except Exception as e:
-            return await self.error_handler(e, item)
+            return await self.error_handler(e, item), False
