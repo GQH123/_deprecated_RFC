@@ -11,7 +11,9 @@ class RootObject:
         include_sub=True,
         **kwargs,
     ):
-        log('\n'+self._to_str(include=include, exclude=exclude, include_sub=include_sub), file='stdout', mode='info', **kwargs)
+        file = kwargs.pop('file', ['stdout'])
+        mode = kwargs.pop('mode', 'info')
+        log('\n'+self._to_str(include=include, exclude=exclude, include_sub=include_sub), file=file, mode=mode, **kwargs)
 
     def _get_self_type_name(
         self,
