@@ -50,13 +50,13 @@ def setup():
     # result['crawler'], _module_list = crawler.setup(**setup_settings.get('crawler', {}))
     # update_module_list(module_list, _module_list)
 
-    save_object(result, 'references.json', 'root')
-    save_object(module_list, 'module_list.json', 'root')
+    save_object(result, 'references.json', 'meta')
+    save_object(module_list, 'module_list.json', 'meta')
 
     module_leaves_summary = summary_leaves()
     leaves_summary_log_path = self_kwargs['leaves_summary_log_path']
     if leaves_summary_log_path:
-        pprint(module_leaves_summary, stream=open(os.path.join(get_project_prefix(), leaves_summary_log_path), 'w'))
+        pprint(module_leaves_summary, stream=open(os.path.join(get_project_prefix('meta'), leaves_summary_log_path), 'w'))
 
     log('\nDone.', file=file, note='Compiler', pure_output=True, end='')
 
@@ -64,7 +64,7 @@ def setup():
 def run_compile():
     log('\n', file=['stdout'], pure_output=True, end='')
     self_kwargs = setup_settings['kwargs']
-    update_output_channels('compile_log', self_kwargs['compile_log_path'])
+    update_output_channels('compile_log', self_kwargs['compile_log_path'], 'meta')
     check_integrity()
     log('\n', file=['stdout', 'compile_log'], pure_output=True, end='')
     setup()

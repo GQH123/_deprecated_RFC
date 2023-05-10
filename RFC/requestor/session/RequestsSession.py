@@ -21,6 +21,9 @@ class RequestsSession(Session):
             request_args.update(self.session_specific_args)
             self.session = requests.Session()
             self.session.cookies = requests.cookies.cookiejar_from_dict(request_args.pop('cookies'))
+            # self.session.trust_env = False  # disable proxy auto-detection
+            if not isinstance(request_args['proxies'], dict):
+                log(message=f"proxies type should be {repr(dict)}, not {repr(type(request_args['proxies']))}", file=['test', 'main'], note='proxies', mode='warn', from_module=__name__)
             self.session.proxies = request_args['proxies']
             self.session.headers.update(request_args['headers'])
 

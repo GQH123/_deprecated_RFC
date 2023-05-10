@@ -36,10 +36,13 @@ def init_global_project_config(project_config):
 def get_project_prefix(prefix='root', from_module=None):
     if from_module is None:
         from_module = get_prev_module_name(2)
-    if prefix not in ['root', 'result', 'log', 'config', 'raw', 'error']:
-        raise ParamValueError('prefix', prefix, ['root', 'result', 'log', 'raw', 'config', 'error'], from_module)
+    all_supported_prefix = ['root', 'meta', 'result', 'log', 'raw', 'config', 'error']
+    if prefix not in all_supported_prefix:
+        raise ParamValueError('prefix', prefix, all_supported_prefix, from_module)
     if prefix == 'root':
         return global_project_config.project_root
+    elif prefix == 'meta':
+        return os.path.join(global_project_config.project_root, global_project_config.project_meta_path)
     elif prefix == 'result':
         return os.path.join(global_project_config.project_root, global_project_config.project_result_path)
     elif prefix == 'log':
@@ -50,6 +53,7 @@ def get_project_prefix(prefix='root', from_module=None):
         return os.path.join(global_project_config.project_root, global_project_config.project_raw_path)
     elif prefix == 'error':
         return os.path.join(global_project_config.project_root, global_project_config.project_error_path)
+
 
 def _parse_fileIO(file, from_module=None):
     if from_module is None:

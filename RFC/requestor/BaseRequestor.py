@@ -104,9 +104,8 @@ class BaseRequestor(BaseModule):
     ):
         if name is None:
             name = f'{item.name}'
-        log(f'Error fetching {name}: {e}\n', 'main', 'Requestor.Error', 'error', __name__)
+        log(f'Error fetching {name}: {e}', ['main', 'test'], 'Requestor.Error', 'error', __name__)
         log(f'Error fetching {name}: {e}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__, trace=True)
-        log(f'Error fetching {name}: {e}\n', 'test', 'Requestor.Error', 'error', __name__)
         if result is not None:
             log(f'\nrequest headers: {result.headers}\n\nrequest url: {result.url}\n', 'current_requested_item_error', 'Requestor.Error', 'error', __name__)
 

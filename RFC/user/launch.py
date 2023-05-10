@@ -5,4 +5,4 @@ def launch_project(
     project_config: ProjectConfig
 ):
     project = Project(project_config)
-    project.launch()
+    return project.launch()

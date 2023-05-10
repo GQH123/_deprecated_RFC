@@ -8,6 +8,9 @@ class BaseProjectConfig(BaseConfig):
     project_name: str
     _project_name: str = field(init=False, repr=False)
 
+    project_meta_path: str
+    _project_meta_path: str = field(init=False, repr=False)
+
     project_error_path: str
     _project_error_path: str = field(init=False, repr=False)
 
@@ -36,6 +39,8 @@ class BaseProjectConfig(BaseConfig):
         super().__post_init__()
         if isinstance(self.project_name, property):
             self._project_name = '<unknown>'
+        if isinstance(self.project_meta_path, property):
+            self._project_meta_path = './metainfo'
         if isinstance(self.project_error_path, property):
             self._project_error_path = './errors'
         if isinstance(self.project_raw_path, property):
@@ -61,6 +66,14 @@ class BaseProjectConfig(BaseConfig):
     def project_name(self, value: str):
         self._project_name = value
     
+    @property
+    def project_meta_path(self):
+        return self._project_meta_path
+    
+    @project_meta_path.setter
+    def project_meta_path(self, value: str):
+        self._project_meta_path = value
+
     @property
     def project_error_path(self):
         return self._project_error_path

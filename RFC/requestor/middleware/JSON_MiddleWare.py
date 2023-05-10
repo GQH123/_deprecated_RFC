@@ -11,8 +11,6 @@ class JSON_MiddleWare(MiddleWare):
         middleware_config: JSON_MiddleWareConfig,
     ):
         super()._init_attr(middleware_config)
-        self.savename = middleware_config.savename
-        self.mode = middleware_config.mode
 
     def _init_process(
         self,
@@ -27,13 +25,7 @@ class JSON_MiddleWare(MiddleWare):
                 return resp.json()
             else:
                 raise MiddleWare_UnknownFramework(self.framework)
-        
-        async def save(item, resp):
-            log(f'saving {item.name} -> {self.savename(item)}', 'current_requested_item_log', 'JSON_MiddleWare.save', 'info', __name__)
-            json = await return_json(item, resp)
-            save_object(json, self.savename(item), 'result', self.mode)
-
-        self.process = save
+        self.process = return_json
 
     def _init_error_handler(
         self,
@@ -41,12 +33,9 @@ class JSON_MiddleWare(MiddleWare):
     ):
         async def error_handler(e, item, resp):
             if type(e).__name__ == 'MiddleWare_UnknownFramework':
-                log('middleware encountered unknown framework', 'current_requested_item_error', 'JSON_MiddleWare.__call__.json', 'error', __name__, trace=True)
-            elif type(e).__name__ == 'SavingError':
-                log(f'middleware saving error [{type(e)}] {e}\n', 'current_requested_item_error', 'JSON_MiddleWare.__call__.save', 'error', __name__, trace=True)
+                self.error_logger(f'middleware encountered unknown framework {repr(self.framework)}', 'JSON_MiddleWare.return_json')
             else:
-                log(f'middleware error [{type(e)}] {e}', 'current_requested_item_error', 'JSON_MiddleWare.__call__.json', 'error', __name__, trace=True)
-
+                self.error_logger(f'middleware error [{type(e)}] {e}', 'JSON_MiddleWare.return_json')
         self.error_handler = error_handler
 
     def __init__(
@@ -61,10 +50,6 @@ class JSON_MiddleWare(MiddleWare):
     ):
         parent_attr = super()._retrieve_config()
         my_attr = parent_attr
-        my_attr.update({
-            'savename': self.savename,
-            'mode': self.mode,
-        })
         if return_config:
             return JSON_MiddleWareConfig(**my_attr)
         else:

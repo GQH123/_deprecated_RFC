@@ -1,4 +1,5 @@
 from typing import Any
+from functools import partial
 
 from RFC.itemset.RawItemset import RawItem
 from RFC.utils.BaseModule import BaseModule
@@ -14,6 +15,8 @@ class BaseMiddleWare(BaseModule):
         middleware_config: BaseMiddleWareConfig,
     ):
         self.framework = middleware_config.framework
+        self.info_logger = partial(log, file=['debug', 'current_requested_item_log'], mode='info')
+        self.error_logger = partial(log, file=['debug', 'current_requested_item_error'], mode='error', trace=True)
 
     def _init_process(
         self,

@@ -1,14 +1,31 @@
+import os
+import inspect
+from datetime import datetime
 from functools import partial
 
 from RFC.user.user import get_config, launch_project, get_module
 from RFC.utils.BaseModule import BaseModule
-from RFC.utils.functional_utils import log
+from RFC.utils.functional_utils import log, save_object
 from RFC.utils.exception_utils import ParamValueError
 
 from .BasePipelineConfig import BasePipelineConfig
 
 
 class BasePipeline(BaseModule):
+    def _save_config(
+        self,
+    ):
+        _frame = inspect.stack()[2]
+        config_file_path = os.path.realpath(_frame[0].f_code.co_filename)
+        with open(config_file_path, 'r') as f:
+            config_file_content = f.read()
+        save_object(
+            config_file_content,
+            f"{self.project_config.project_name}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.py",
+            'config',
+            mode = 'text',
+        )
+        
     def _init_attr(
         self,
         pipeline_config: BasePipelineConfig,
@@ -35,7 +52,7 @@ class BasePipeline(BaseModule):
             return project_config
 
         self.project_config = get_project_config()
-        launch_project(self.project_config)
+        self.project_info = launch_project(self.project_config)
 
     def _init_itemset(
         self,
@@ -154,6 +171,7 @@ class BasePipeline(BaseModule):
         async_sema: int = 1,
         **kwargs,
     ):
+        self._save_config()
         self.requestor.run(self.itemset, nproc, async_sema, **kwargs)
     
     def _retrieve_config(
