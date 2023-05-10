@@ -1,0 +1,19 @@
+[2023-05-10 19:28:36] (Project, from RFC.user.project.BaseProject) [INFO] Project PixivArtworkInfo(Demo) launched.
+
+Project Configurations:
+{
+    "name": "<anonymous>",
+    "project_config_path": "./configs",
+    "project_debug_log_path": "./project_debug.log",
+    "project_error_path": "./errors",
+    "project_info_path": "./project_info.json",
+    "project_log_path": "./logs",
+    "project_meta_path": "./metainfo",
+    "project_name": "PixivArtworkInfo(Demo)",
+    "project_raw_path": "./rawitems",
+    "project_result_path": "./saves",
+    "project_root": "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/PixivArtworkInfo(Demo)",
+    "project_run_log_path": "./project_run.log"
+}
+
+[2023-05-10 19:28:36] (Itemset, from RFC.itemset.BaseItemset) [WARN] Param 'params' is not set, use {} instead.

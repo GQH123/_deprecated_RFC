@@ -1,0 +1,2 @@
+[2023-05-10 19:28:37] (SaveMiddleWare.save, from RFC.utils.functional_utils) [INFO] saving item 'illust_200015' -> 'illust_200015.json'
+[2023-05-10 19:28:37] (Requestor._fetch, from RFC.requestor.BaseRequestor) [INFO] Fetched illust_200015
