@@ -1,0 +1,14 @@
+{
+    "name": "PixivArtworkInfo",
+    "error_path": "./errors",
+    "raw_path": "./rawitems",
+    "config_path": "./configs",
+    "result_path": "./saves",
+    "log_path": "./logs",
+    "root": "/remote-home/qhgao/Workspace/Datasets/Crawlers/TMP/workdir/PixivArtworkInfo",
+    "info_path": "./project_info.json",
+    "run_log_path": "./project_run.log",
+    "debug_log_path": "./project_debug.log",
+    "created_time": "2023-05-10_13-47-11",
+    "last_launched_time": "2023-05-10_13-47-11"
+}

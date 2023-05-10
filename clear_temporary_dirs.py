@@ -1,7 +1,7 @@
 import os
 
 
-def system(cmd, debug=False):
+def system(cmd, debug=True):
     if debug:
         print(cmd)
     os.system(cmd)
@@ -17,7 +17,7 @@ def clear(path='.'):
             if file.endswith('.pyc'):
                 rm(os.path.join(root, file))
         for dir in dirs:
-            if dir == '__pycache__' or dir == '.ipynb_checkpoints':
+            if dir == '__pycache__' or dir == '.ipynb_checkpoints' or dir == 'deprecated':
                 rm(os.path.join(root, dir))
 
 
