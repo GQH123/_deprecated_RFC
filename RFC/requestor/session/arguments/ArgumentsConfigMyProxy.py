@@ -39,7 +39,7 @@ class ArgumentsConfigMyProxy(ArgumentsConfig):
             run_log=run_log,
             rank=rank,
         ))
-        self.arguments_config['proxies'] = proxy_settings
+        self.config['proxies'] = proxy_settings
     
     def __call__(self, hist_log=None, run_log=None, proxy_type='default', rank=0, **kwargs):
         super().__call__(**kwargs)

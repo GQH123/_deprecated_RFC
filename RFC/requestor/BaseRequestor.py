@@ -123,6 +123,10 @@ class BaseRequestor(BaseModule):
             result = await self.session.request(item, rank)
             for middleware in self.middlewares:
                 result, status = await middleware(item, result)
+                if not status:
+                    error = result
+                    result = None
+                    raise error
             # self._save_result(item.name, result)
             log(f'Fetched {item.name}', 'current_requested_item_log', 'Requestor._fetch', 'info', __name__)
         except Exception as e:

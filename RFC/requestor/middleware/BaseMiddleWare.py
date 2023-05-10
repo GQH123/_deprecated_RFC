@@ -15,8 +15,8 @@ class BaseMiddleWare(BaseModule):
         middleware_config: BaseMiddleWareConfig,
     ):
         self.framework = middleware_config.framework
-        self.info_logger = partial(log, file=['debug', 'current_requested_item_log'], mode='info')
-        self.error_logger = partial(log, file=['debug', 'current_requested_item_error'], mode='error', trace=True)
+        self.info_logger = lambda msg, note: log(message=msg, file=['debug', 'current_requested_item_log'], note=note, mode='info')
+        self.error_logger = lambda msg, note: log(message=msg, file=['debug', 'current_requested_item_error'], note=note, mode='error', trace=True)
 
     def _init_process(
         self,
@@ -31,7 +31,7 @@ class BaseMiddleWare(BaseModule):
         middleware_config: BaseMiddleWareConfig,
     ):
         async def raise_error(e, item, resp):
-            raise e
+            return e
         self.error_handler = raise_error
 
     def __init__(

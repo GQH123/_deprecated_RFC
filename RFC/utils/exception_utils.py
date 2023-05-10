@@ -124,7 +124,7 @@ class SavingError(Exception):
         self.mode = mode
         self.e = e
         self.module_name = module_name if module_name else get_prev_module_name()
-        super(SavingError, self).__init__(f"Error when saving {repr(obj)} to {repr(path)} under project dir {repr(prefix_project_dir)} with mode {repr(mode)}.[{type(e)}] {e}. Error raised from {self.module_name}.")
+        super(SavingError, self).__init__(f"Error when saving {repr(obj)} to {repr(path)} under project dir {repr(prefix_project_dir)} with mode {repr(mode)}.[{type(e).__name__}] {e}. Error raised from {self.module_name}.")
 
     def __reduce__(self):
         return (SavingError, (self.obj, self.path, self.prefix_project_dir, self.mode, self.e, self.module_name))

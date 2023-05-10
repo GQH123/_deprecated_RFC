@@ -35,7 +35,10 @@ from RFC.requestor.session.AioHTTPSessionConfig import AioHTTPSessionConfig
 from RFC.requestor.middleware.middleware import get_middleware
 
 from RFC.requestor.middleware.MiddleWareConfig import MiddleWareConfig
-from RFC.requestor.middleware.JSON_MiddleWareConfig import JSON_MiddleWareConfig
+from RFC.requestor.middleware.JSONMiddleWareConfig import JSONMiddleWareConfig
+from RFC.requestor.middleware.SaveMiddleWareConfig import SaveMiddleWareConfig
+from RFC.requestor.middleware.StatusCodeMiddleWareConfig import StatusCodeMiddleWareConfig
+from RFC.requestor.middleware.SaveBinaryMiddleWareConfig import SaveBinaryMiddleWareConfig
 
 # ===============================================================================
 
@@ -46,7 +49,7 @@ from RFC.requestor.session.arguments.ArgumentsConfigMyProxy import ArgumentsConf
 
 # ===============================================================================
 
-from RFC.user.launch import launch_project
+from RFC.user.pipeline.PipelineConfig import PipelineConfig
 from RFC.user.project.ProjectConfig import ProjectConfig
 
 # ===============================================================================
@@ -65,10 +68,15 @@ all_supported_configs = {
     'asks': AsksSessionConfig,
     'aiohttp': AioHTTPSessionConfig,
     'middleware': MiddleWareConfig,
-    'json': JSON_MiddleWareConfig,
+    'json': JSONMiddleWareConfig,
+    'statuscode': StatusCodeMiddleWareConfig,
+    'binary': SaveBinaryMiddleWareConfig,
+    'save': SaveMiddleWareConfig,
     'arguments': ArgumentsConfig,
-    'arguments-myproxy': ArgumentsConfigMyProxy,
+    'myproxy': ArgumentsConfigMyProxy,
+    'noproxy': ArgumentsConfig,
     'project': ProjectConfig,
+    'pipeline': PipelineConfig,
 }
 
 all_supported_module_types = {
@@ -82,8 +90,21 @@ all_supported_module_types = {
 
 def _get_single_config(
     config_name: str,
+    exact_match: bool = False,
 ):
-    config_name = config_name.lower()
+    if not exact_match:
+        config_name = config_name.lower()
+        for config_part_name in all_supported_configs.keys():
+            if config_part_name in config_name:
+                return all_supported_configs[config_part_name]()
+        raise NotSupported('config_name', config_name, all_supported_configs.keys(), __name__)
+    else:
+        for _, config_cls in all_supported_configs.items():
+            if config_name == config_cls.__name__:
+                return config_cls()
+        raise NotSupported('config_name', config_name, [cls.__name__ for cls in all_supported_configs.values()], __name__)
+    
+    """
     if 'rawitemset' in config_name:
         config = RawItemsetConfig()
     elif 'itemset' in config_name:
@@ -101,10 +122,16 @@ def _get_single_config(
     elif 'middleware' in config_name:
         config = MiddleWareConfig()
     elif 'json' in config_name:
-        config = JSON_MiddleWareConfig()
-    elif 'arguments-myproxy' in config_name:
+        config = JSONMiddleWareConfig()
+    elif 'statuscode' in config_name:
+        config = StatusCodeMiddleWareConfig()
+    elif 'binary' in config_name:
+        config = SaveBinaryMiddleWareConfig()
+    elif 'save' in config_name:
+        config = SaveMiddleWareConfig()
+    elif 'myproxy' in config_name:
         config = ArgumentsConfigMyProxy()
-    elif 'arguments-noproxy' in config_name:
+    elif 'noproxy' in config_name:
         config = ArgumentsConfig()
     elif 'arguments' in config_name:
         config = ArgumentsConfig()
@@ -113,12 +140,14 @@ def _get_single_config(
     else:
         raise NotSupported('config_name', config_name, all_supported_configs.keys(), __name__)
     return config
+    """
 
 
 def get_config(
     config_name: str,
+    exact_match: bool = False,
 ):
-    return _get_single_config(config_name)
+    return _get_single_config(config_name, exact_match)
 
 
 def get_module(

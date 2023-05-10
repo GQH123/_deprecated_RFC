@@ -12,7 +12,7 @@ PixivArtworkInfo_Config = PipelineConfig(
     verbose=True,
     user_project_config=dict(
         version='project',
-        project_name="PixivArtworkInfo",
+        project_name="PixivArtworkInfo(Demo)",
     ),
     user_itemset_config=dict(
         items=list(range(200010, 200020)),
@@ -51,7 +51,14 @@ PixivArtworkInfo_Config = PipelineConfig(
     ),
     user_middleware_config=[
         dict(
+            version='statuscode',
+            expected_status_codes=[200],
+        ),
+        dict(
             version='json',
+        ),
+        dict(
+            version='save',
             savename=lambda item: f'{item.name}.json',
             mode='json',
         ),

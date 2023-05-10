@@ -3,7 +3,7 @@
         "middleware": {
             "options": {
                 "get_middleware": [
-                    "(middleware_config: RFC.requestor.middleware.MiddleWareConfig.MiddleWareConfig | str, **kwargs)",
+                    "get_middleware(middleware_config: RFC.requestor.middleware.MiddleWareConfig.MiddleWareConfig | str, **kwargs)",
                     "system"
                 ]
             }
@@ -13,11 +13,11 @@
                 "cookies": {
                     "options": {
                         "passin": [
-                            "(cookies, ctype, **kwargs)",
+                            "passin(cookies, ctype, **kwargs)",
                             "normal"
                         ],
                         "read_from_file_by_rank": [
-                            "(cookies_file, rank, **kwargs)",
+                            "read_from_file_by_rank(cookies_file, rank, **kwargs)",
                             "normal"
                         ]
                     }
@@ -26,15 +26,15 @@
                     "base": {
                         "options": {
                             "fixed": [
-                                "(base: dict, **kwargs)",
+                                "fixed(base: dict, **kwargs)",
                                 "normal"
                             ],
                             "passin": [
-                                "(base: dict, **kwargs)",
+                                "passin(base: dict, **kwargs)",
                                 "normal"
                             ],
                             "switch": [
-                                "(option: str, **kwargs)",
+                                "switch(option: str, **kwargs)",
                                 "normal"
                             ]
                         }
@@ -42,19 +42,19 @@
                     "referer": {
                         "options": {
                             "from_url_once": [
-                                "(url, **kwargs)",
+                                "from_url_once(url, **kwargs)",
                                 "normal"
                             ],
                             "from_url": [
-                                "(url, **kwargs)",
+                                "from_url(url, **kwargs)",
                                 "normal"
                             ],
                             "fixed": [
-                                "(value, **kwargs)",
+                                "fixed(value, **kwargs)",
                                 "normal"
                             ],
                             "none": [
-                                "(**kwargs)",
+                                "none(**kwargs)",
                                 "normal"
                             ]
                         }
@@ -62,15 +62,15 @@
                     "user-agent": {
                         "options": {
                             "fixed": [
-                                "(value, **kwargs)",
+                                "fixed(value, **kwargs)",
                                 "normal"
                             ],
                             "random_fake": [
-                                "(type, **kwargs)",
+                                "random_fake(type, **kwargs)",
                                 "normal"
                             ],
                             "none": [
-                                "(**kwargs)",
+                                "none(**kwargs)",
                                 "normal"
                             ]
                         }
@@ -80,11 +80,11 @@
                 "params": {
                     "options": {
                         "fixed": [
-                            "(params, ptype, **kwargs)",
+                            "fixed(params, ptype, **kwargs)",
                             "normal"
                         ],
                         "passin": [
-                            "(params, ptype, **kwargs)",
+                            "passin(params, ptype, **kwargs)",
                             "normal"
                         ]
                     }
@@ -92,11 +92,11 @@
                 "payload": {
                     "options": {
                         "fixed": [
-                            "(payload, ptype, **kwargs)",
+                            "fixed(payload, ptype, **kwargs)",
                             "normal"
                         ],
                         "passin": [
-                            "(payload, ptype, **kwargs)",
+                            "passin(payload, ptype, **kwargs)",
                             "normal"
                         ]
                     }
@@ -104,19 +104,19 @@
                 "proxies": {
                     "options": {
                         "off": [
-                            "(**kwargs)",
+                            "off(**kwargs)",
                             "normal"
                         ],
                         "fixed": [
-                            "(value, **kwargs)",
+                            "fixed(value, **kwargs)",
                             "normal"
                         ],
                         "passin": [
-                            "(proxies, ptype, **kwargs)",
+                            "passin(proxies, ptype, **kwargs)",
                             "normal"
                         ],
                         "login": [
-                            "(pm_type, **kwargs)",
+                            "login(pm_type, **kwargs)",
                             "normal"
                         ]
                     }
@@ -124,28 +124,28 @@
                 "url": {
                     "options": {
                         "passin": [
-                            "(url, **kwargs)",
+                            "passin(url, **kwargs)",
                             "normal"
                         ]
                     }
                 },
                 "options": {
                     "get_arguments": [
-                        "(arguments_config: RFC.requestor.session.arguments.ArgumentsConfig.ArgumentsConfig | str, **kwargs)",
+                        "get_arguments(arguments_config: RFC.requestor.session.arguments.ArgumentsConfig.ArgumentsConfig | str, **kwargs)",
                         "system"
                     ]
                 }
             },
             "options": {
                 "get_session": [
-                    "(session_config: RFC.requestor.session.SessionConfig.SessionConfig | str, **kwargs) -> RFC.requestor.session.Session.Session",
+                    "get_session(session_config: RFC.requestor.session.SessionConfig.SessionConfig | str, **kwargs) -> RFC.requestor.session.Session.Session",
                     "system"
                 ]
             }
         },
         "options": {
             "get_requestor": [
-                "(requestor_config: RFC.requestor.RequestorConfig.RequestorConfig | str, **kwargs)",
+                "get_requestor(requestor_config: RFC.requestor.RequestorConfig.RequestorConfig | str, **kwargs)",
                 "system"
             ]
         }
@@ -153,7 +153,7 @@
     "itemset": {
         "options": {
             "get_itemset": [
-                "(itemset_config: str | RFC.itemset.ItemsetConfig.ItemsetConfig, **kwargs)",
+                "get_itemset(itemset_config: str | RFC.itemset.ItemsetConfig.ItemsetConfig, **kwargs)",
                 "system"
             ]
         }

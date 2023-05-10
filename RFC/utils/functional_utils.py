@@ -147,9 +147,22 @@ def check_fileIO(f):
     return isinstance(f, io.IOBase)
 
 
+class MyJSONExcoder(json.JSONEncoder):
+    def default(self, x):
+        if inspect.isfunction(x):
+            return x.__name__ + str(inspect.signature(x))
+        elif hasattr(x, '__dict__') and (type(x).__name__ not in dir(builtins)):
+            return x.__dict__
+        else:
+            try:
+                return json.JSONEncoder.default(self, x)
+            except:
+                return str(x)
+
+
 def pretty_print_parser(obj):
     if isinstance(obj, dict):
-        return json.dumps(obj, sort_keys=True, indent=4, default=lambda x: x.__dict__ if hasattr(x, '__dict__') and (type(x).__name__ not in dir(builtins)) else str(x))
+        return json.dumps(obj, sort_keys=True, indent=4, cls=MyJSONExcoder)
     else:
         raise ParamTypeError('obj', obj, [dict], __name__)
 
@@ -214,7 +227,7 @@ def _parse_mode(path, mode):
 
 def save_object(obj, path, prefix_project_dir='root', mode='auto'):
     def save_json():
-        json.dump(obj, open(path, 'w'), ensure_ascii=False, indent=4)
+        json.dump(obj, open(path, 'w'), ensure_ascii=False, indent=4, cls=MyJSONExcoder)
 
     def save_pickle():
         pickle.dump(obj, open(path, 'wb'))

@@ -4,7 +4,7 @@ from .MiddleWareConfig import MiddleWareConfig
 
 
 @dataclass
-class Save_MiddleWareConfig(MiddleWareConfig):
+class SaveBinaryMiddleWareConfig(MiddleWareConfig):
     savename: callable
     _savename: callable = field(init=False, repr=False)
 
@@ -14,7 +14,7 @@ class Save_MiddleWareConfig(MiddleWareConfig):
     def __post_init__(self):
         super().__post_init__()
         if isinstance(self.savename, property):
-            self._savename = lambda item: f'{item.name}.data'
+            self._savename = lambda item, ext: f'{item.name}.{ext}'
         if isinstance(self.mode, property):
             self._mode = 'auto'
     

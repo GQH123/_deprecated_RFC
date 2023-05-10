@@ -18,8 +18,8 @@ def setup(**kwargs):
         elif submodule_name == module_name:
             submodule = import_submodule(submodule_name, __name__)
             if 'init' in submodule.leaves:
-                result['options'] = {'init': (str(inspect.signature(submodule.leaves['init'][0])), submodule.leaves['init'][1])}
-            result['options'] = {func_name: (str(inspect.signature(func[0])), func[1]) for func_name, func in submodule.leaves.items() if func_name != 'init'}
+                result['options'] = {'init': (submodule.leaves['init'][0].__name__+str(inspect.signature(submodule.leaves['init'][0])), submodule.leaves['init'][1])}
+            result['options'] = {func_name: (func[0].__name__+str(inspect.signature(func[0])), func[1]) for func_name, func in submodule.leaves.items() if func_name != 'init'}
     _result = result['options']
     del result['options']
     result['options'] = _result

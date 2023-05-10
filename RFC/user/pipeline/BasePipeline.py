@@ -3,7 +3,8 @@ import inspect
 from datetime import datetime
 from functools import partial
 
-from RFC.user.user import get_config, launch_project, get_module
+from RFC.user.user import get_config, get_module
+from RFC.user.launch import launch_project
 from RFC.utils.BaseModule import BaseModule
 from RFC.utils.functional_utils import log, save_object
 from RFC.utils.exception_utils import ParamValueError
@@ -118,7 +119,7 @@ class BasePipeline(BaseModule):
 
         def get_middleware_config():
             nonlocal user_middleware_config 
-            all_supported_middleware_type = ['json']
+            all_supported_middleware_type = ['json', 'save', 'binary', 'statuscode']
             if not isinstance(user_middleware_config, list):
                 user_middleware_config = [user_middleware_config]
             middleware_configs = []

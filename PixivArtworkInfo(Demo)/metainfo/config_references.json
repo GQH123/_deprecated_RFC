@@ -1,0 +1,240 @@
+{
+    "itemset": {
+        "ItemsetConfig": {
+            "_name": "<anonymous>",
+            "_items": [],
+            "_preprocess": "<lambda>(x)",
+            "_attrs": {},
+            "_shuffle": false
+        },
+        "RawItemsetConfig": {
+            "_name": "<anonymous>",
+            "_items": [],
+            "_preprocess": "<lambda>(x)",
+            "_attrs": {},
+            "_shuffle": false
+        }
+    },
+    "user": {
+        "project": {
+            "ProjectConfig": {
+                "_name": "<anonymous>",
+                "_project_name": "<unknown>",
+                "_project_meta_path": "./metainfo",
+                "_project_error_path": "./errors",
+                "_project_raw_path": "./rawitems",
+                "_project_config_path": "./configs",
+                "_project_result_path": "./saves",
+                "_project_log_path": "./logs",
+                "_project_info_path": "./project_info.json",
+                "_project_run_log_path": "./project_run.log",
+                "_project_debug_log_path": "./project_debug.log"
+            }
+        },
+        "pipeline": {
+            "PipelineConfig": {
+                "_name": "<anonymous>",
+                "_verbose": false,
+                "_requestor_name": "MyRequestor",
+                "_user_project_config": {},
+                "_user_itemset_config": {},
+                "_user_arguments_config": {},
+                "_user_session_config": {},
+                "_user_middleware_config": {}
+            }
+        }
+    },
+    "requestor": {
+        "RequestorConfig": {
+            "_name": "<anonymous>",
+            "_middleware_config": []
+        },
+        "session": {
+            "RequestsSessionConfig": {
+                "_name": "<anonymous>",
+                "_contiguous_failed_counts_threshold": null,
+                "_use_session": true,
+                "_framework": "requests",
+                "_use_async": false,
+                "_async_framework": null,
+                "_connect_timeout": null,
+                "_read_timeout": null
+            },
+            "SessionConfig": {
+                "_name": "<anonymous>",
+                "_contiguous_failed_counts_threshold": null,
+                "_use_session": true,
+                "_framework": "<unknown>",
+                "_use_async": false,
+                "_async_framework": null
+            },
+            "AioHTTPSessionConfig": {
+                "_name": "<anonymous>",
+                "_contiguous_failed_counts_threshold": null,
+                "_use_session": true,
+                "_framework": "aiohttp",
+                "_use_async": true,
+                "_async_framework": "asyncio",
+                "_total_timeout": null,
+                "_connect_timeout": null,
+                "_sock_connect_timeout": null,
+                "_sock_read_timeout": null,
+                "_connections": 1,
+                "_connections_per_host": 0
+            },
+            "AsksSessionConfig": {
+                "_name": "<anonymous>",
+                "_contiguous_failed_counts_threshold": null,
+                "_use_session": true,
+                "_framework": "asks",
+                "_use_async": true,
+                "_async_framework": "trio",
+                "_connections": 1,
+                "_request_timeout": 60,
+                "_connection_timeout": 60,
+                "_persist_cookies": false
+            },
+            "arguments": {
+                "ArgumentsConfigMyProxy": {
+                    "_name": "<anonymous>",
+                    "_config": {
+                        "headers": {
+                            "base": {
+                                "method": "switch",
+                                "kwargs": {
+                                    "option": "default"
+                                }
+                            },
+                            "user-agent": {
+                                "method": "random_fake",
+                                "kwargs": {
+                                    "type": "firefox"
+                                }
+                            },
+                            "referer": {
+                                "method": "from_url",
+                                "kwargs": {}
+                            },
+                            "kwargs": {}
+                        },
+                        "url": {
+                            "method": "passin",
+                            "kwargs": {}
+                        },
+                        "payload": {
+                            "method": "passin",
+                            "kwargs": {
+                                "ptype": "<class 'dict'>"
+                            }
+                        },
+                        "params": {
+                            "method": "passin",
+                            "kwargs": {
+                                "ptype": "<class 'dict'>"
+                            }
+                        },
+                        "proxies": {
+                            "method": "login",
+                            "kwargs": {
+                                "type": "QGNet",
+                                "username": "D6FL1CJ8",
+                                "password": "9FC1ADB88090",
+                                "hist_log": "proxy_history_0.log",
+                                "run_log": "proxy_run_0.log",
+                                "rank": 0
+                            }
+                        },
+                        "cookies": {
+                            "method": "passin",
+                            "kwargs": {
+                                "ctype": "<class 'dict'>"
+                            }
+                        },
+                        "kwargs": {}
+                    }
+                },
+                "ArgumentsConfig": {
+                    "_name": "<anonymous>",
+                    "_config": {
+                        "headers": {
+                            "base": {
+                                "method": "switch",
+                                "kwargs": {
+                                    "option": "default"
+                                }
+                            },
+                            "user-agent": {
+                                "method": "random_fake",
+                                "kwargs": {
+                                    "type": "firefox"
+                                }
+                            },
+                            "referer": {
+                                "method": "from_url",
+                                "kwargs": {}
+                            },
+                            "kwargs": {}
+                        },
+                        "url": {
+                            "method": "passin",
+                            "kwargs": {}
+                        },
+                        "payload": {
+                            "method": "passin",
+                            "kwargs": {
+                                "ptype": "<class 'dict'>"
+                            }
+                        },
+                        "params": {
+                            "method": "passin",
+                            "kwargs": {
+                                "ptype": "<class 'dict'>"
+                            }
+                        },
+                        "proxies": {
+                            "method": "off",
+                            "kwargs": {}
+                        },
+                        "cookies": {
+                            "method": "passin",
+                            "kwargs": {
+                                "ctype": "<class 'dict'>"
+                            }
+                        },
+                        "kwargs": {}
+                    }
+                }
+            }
+        },
+        "middleware": {
+            "SaveBinaryMiddleWareConfig": {
+                "_name": "<anonymous>",
+                "_framework": null,
+                "_savename": "<lambda>(item, ext)",
+                "_mode": "auto"
+            },
+            "SaveMiddleWareConfig": {
+                "_name": "<anonymous>",
+                "_framework": null,
+                "_savename": "<lambda>(item)",
+                "_mode": "auto"
+            },
+            "JSONMiddleWareConfig": {
+                "_name": "<anonymous>",
+                "_framework": null
+            },
+            "MiddleWareConfig": {
+                "_name": "<anonymous>",
+                "_framework": null
+            },
+            "StatusCodeMiddleWareConfig": {
+                "_name": "<anonymous>",
+                "_framework": null,
+                "_expected_status_codes": [
+                    200
+                ],
+                "_strict": false
+            }
+        }
+    }
+}

@@ -4,5 +4,5 @@ from .MiddleWareConfig import MiddleWareConfig
 
 
 @dataclass
-class JSON_MiddleWareConfig(MiddleWareConfig):
+class JSONMiddleWareConfig(MiddleWareConfig):
     ...

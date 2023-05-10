@@ -7,10 +7,14 @@ import RFC.itemset as itemset
 from RFC.utils.functional_utils import save_object, update_output_channels, log, get_project_prefix
 from RFC.utils.structural_utils import summary_leaves
 from RFC.settings import setup_settings
+from RFC.user.user import all_supported_configs, get_config
+
+
+log_file = ['stdout', 'compile_log']
 
 
 def check_integrity(rootdir='RFC'):
-    log('\nchecking integrity...\n\n', file=['stdout', 'compile_log'], note='Checker', pure_output=True, end='')
+    log('\nchecking integrity...\n\n', file=log_file, note='Checker', pure_output=True, end='')
     for root, dirs, files in os.walk(rootdir):
         for file in files:
             if file != '__init__.py':
@@ -18,18 +22,17 @@ def check_integrity(rootdir='RFC'):
             filepath = os.path.join(root, file)
             if os.path.islink(filepath):
                 if not os.path.exists(os.path.join(root, os.readlink(filepath))):
-                    log(f'broken __init__.py for path {repr(root)}', file=['stdout', 'compile_log'], mode='warn')
+                    log(f'broken __init__.py for path {repr(root)}', file=log_file, mode='warn')
                 else:
-                    log(f'system predefined __init__.py for path {repr(root)}', file=['stdout', 'compile_log'])
+                    log(f'system predefined __init__.py for path {repr(root)}', file=log_file)
             else:
-                log(f'custom __init__.py for path {repr(root)}', file=['stdout', 'compile_log'])
+                log(f'custom __init__.py for path {repr(root)}', file=log_file)
 
-    log('\nDone.', file=['stdout', 'compile_log'], note='Checker', pure_output=True, end='')
+    log('\nDone.', file=log_file, note='Checker', pure_output=True, end='')
 
 
 def setup():
-    file = ['stdout', 'compile_log']
-    log('\ncompiling modules...\n\n', file=file, note='Compiler', pure_output=True, end='')
+    log('\ncompiling modules...\n\n', file=log_file, note='Compiler', pure_output=True, end='')
     self_kwargs = setup_settings['kwargs']
 
     def update_module_list(module_list, _module_list):
@@ -58,7 +61,30 @@ def setup():
     if leaves_summary_log_path:
         pprint(module_leaves_summary, stream=open(os.path.join(get_project_prefix('meta'), leaves_summary_log_path), 'w'))
 
-    log('\nDone.', file=file, note='Compiler', pure_output=True, end='')
+    log('\nDone.', file=log_file, note='Compiler', pure_output=True, end='')
+
+
+def check_all_config(rootdir='RFC'):
+    config_structure = {}
+    all_supported_config_names = [config.__name__ for config in all_supported_configs.values()]
+    for root, dirs, files in os.walk(rootdir):
+        for file in files:
+            if not file.endswith('.py') or 'Config' not in file or file.startswith('Base'):
+                continue
+            config_name = file[:-len('.py')]
+            assert config_name in all_supported_config_names, f'config {config_name} not registered in RFC.user.user.all_supported_configs'
+            root_parts = root.split(os.sep)
+            _config_structure = config_structure
+            for part in root_parts:
+                if part == 'RFC':
+                    continue
+                if part not in _config_structure:
+                    _config_structure[part] = {}
+                _config_structure = _config_structure[part]
+            _config_structure[config_name] = get_config(config_name, exact_match=True)._to_str(include_sub=False, return_attr=True)
+    save_object(config_structure, 'config_references.json', 'meta')
+    
+    log('\nDone.', file=log_file, note='Compiler', pure_output=True, end='')
 
 
 def run_compile():
@@ -66,6 +92,8 @@ def run_compile():
     self_kwargs = setup_settings['kwargs']
     update_output_channels('compile_log', self_kwargs['compile_log_path'], 'meta')
     check_integrity()
-    log('\n', file=['stdout', 'compile_log'], pure_output=True, end='')
+    log('\n', file=log_file, pure_output=True, end='')
     setup()
+    log('\n', file=log_file, pure_output=True, end='')
+    check_all_config()
     log('\n', file=['stdout'], pure_output=True, end='')
