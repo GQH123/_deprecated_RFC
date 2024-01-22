@@ -8,6 +8,7 @@ from .middlewares import get_middlewares
 
 import trio
 import asyncio
+# TODO: add import try except for trio and asyncio
 
 
 class Requestor(RootType):
