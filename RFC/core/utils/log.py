@@ -255,7 +255,19 @@ def enable_explicit_format() -> None:
     handlers = _get_library_root_logger().handlers
 
     for handler in handlers:
-        formatter = logging.Formatter("[%(levelname)s|%(filename)s:%(lineno)s] %(asctime)s >> %(message)s")
+        # formatter = logging.Formatter("[%(levelname)s|%(filename)s:%(lineno)s] %(asctime)s >> %(message)s")
+        formatter = logging.Formatter("%(asctime)s <%(processName)s:%(process)d, %(threadName)s:%(thread)d> (%(filename)s:%(lineno)s, %(name)s.%(funcName)s) [%(levelname)s] %(message)s")
+        handler.setFormatter(formatter)
+        
+        
+def set_formatter(formatter: logging.Formatter) -> None:
+    """
+    Set the format for every logger.
+    All handlers currently bound to the root logger are affected by this method.
+    """
+    handlers = _get_library_root_logger().handlers
+
+    for handler in handlers:
         handler.setFormatter(formatter)
 
 
