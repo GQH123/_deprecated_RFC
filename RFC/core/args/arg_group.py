@@ -10,7 +10,6 @@ from RFC.core.utils.defs import allSupportedRequestLibsNames
 
 from .arg import *
 from .arg import ArgSetter
-from .arg import RequestArgSetter
 from .arg import ArgKeeper
 
 __all__ = [
@@ -93,9 +92,6 @@ class ArgGroup(RootType):
             raise RuntimeError(f"unknown status {repr(self._status[arg])} when setting arg {repr(arg)} in {repr(self)}\npath: {path_repr}")
         return self._args_value[arg]
 
-    def __repr__(self):
-        return f'{repr(self.__class__.__qualname__)}'
-
 
 class _ArgGroup(ArgGroup):
     _defined_args: Dict[str, ArgSetter] = {
@@ -103,7 +99,7 @@ class _ArgGroup(ArgGroup):
 
 
 class RequestArgGroup(ArgGroup):
-    _defined_args: Dict[str, RequestArgSetter] = {
+    _defined_args: Dict[str, ArgSetter] = {
         'url': URLSetter('not_set'),                # `url`         is required, not set will raise error
         'referer': RefererSetter('host'),           # `referer`     is default to host of `url`
         'cookies': CookiesSetter('not_set'),        # `cookies`     should be set, but not required
@@ -117,11 +113,6 @@ class RequestArgGroup(ArgGroup):
 
 class ItemArgGroup(ArgGroup):
     _defined_args: Dict[str, ArgSetter] = {
-        ...
-    }
-
-
-class SessionArgGroup(ArgGroup):
-    _defined_args: Dict[str, ArgSetter] = {
-        ...
+        'save_path': SavePathSetter('none'),
+        'middleware': MiddleWareSetter('none'),
     }

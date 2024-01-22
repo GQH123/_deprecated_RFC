@@ -130,6 +130,7 @@ class ItemType(RootType):
             Add a new item to the queue of this `ItemType`.
         """
         item = cls(id, *extra_args, **extra_kwargs)
+        item.pend()
         cls._root_item_queue.append(item)
         cls._item_queue.append(weakref.ref(item, cls._remove_item_weakref))
         
@@ -151,13 +152,17 @@ class ItemType(RootType):
         pass
     # SUBCLASS
 
+    @classmethod
+    def __repr__(cls):
+        return f"{cls.__name__}({repr(cls._defined_arg_groups)})"
+
 
 class _ItemType(ItemType):
+    _item_queue: List[Item] = []
     _defined_arg_groups: Dict[str, ArgGroup] = {
         ...
     }
-    _item_queue: List[Item] = []
     
     @classmethod
     def _generate(cls, result: Any) -> None:
-        pass
+        ...

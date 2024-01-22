@@ -54,8 +54,8 @@ class FrozenDict(OrderedDict):
         
     def __getitem__(self, name):
         return super().__getitem__(name)
-    
-    
+
+
 class FrozenAttrDict(FrozenDict, AttrDict):
     """
         A dict whose keys can be accessed as attributes and cannot be modified after initialization.

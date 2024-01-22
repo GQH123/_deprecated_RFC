@@ -23,6 +23,8 @@ __all__ = [
     'ProxiesSetter',
     'UserAgentSetter',
     'HeadersSetter',
+    'SavePathSetter',
+    'MiddleWareSetter',
 ]
 
 
@@ -129,9 +131,6 @@ class ArgSetter(ArgRootType):
         self._logger.info(f'{repr(self)} called, result: {repr(result)}.')
         return result
 
-    def __repr__(self):
-        return f'{repr(self.__class__.__qualname__)}'
-
 
 class _ArgSetter(ArgSetter):
     _all_supported_setters = {
@@ -211,9 +210,6 @@ class ArgKeeper(ArgRootType):
         result = self.keeper(state, *self.keeper_args)
         self._logger.info(f'{repr(self)} called, result: {repr(result)}.')
         return result
-
-    def __repr__(self):
-        return f'{repr(self.__class__.__qualname__)}'
 
 
 class _ArgKeeper(ArgKeeper):
@@ -335,4 +331,20 @@ class HeadersSetter(ArgSetter):
         'none': lambda id, arg_group, **kwargs: {},
         'not_set': _headers_not_set,
         'switch': _switch,
+    }
+
+
+class SavePathSetter(ArgSetter):
+    # TODO
+    _all_supported_setters = {
+        'fixed': lambda id, arg_group, value, **kwargs: value,
+        'none': lambda id, arg_group, **kwargs: {},
+    }
+
+
+class MiddleWareSetter(ArgSetter):
+    # TODO
+    _all_supported_setters = {
+        'fixed': lambda id, arg_group, value, **kwargs: value,
+        'none': lambda id, arg_group, **kwargs: {},
     }

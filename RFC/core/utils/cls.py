@@ -57,3 +57,6 @@ class RootType():
         else:
             name = '.'.join([__name__, self.__class__.__name__])
         self._logger = get_logger(name)
+    
+    def __repr__(self):
+        return f'{repr(self.__class__.__qualname__)}'

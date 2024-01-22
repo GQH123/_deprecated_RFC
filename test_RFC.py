@@ -80,7 +80,8 @@ def _test_all_supported_request_libs():
     
   
 if __name__ == '__main__':
-    _test_RequestArgGroup()
+    print(RequestArgGroup.__qualname__)
+    # _test_RequestArgGroup()
     # _test_all_supported_request_libs()
     # _test_logger_formatter()
     

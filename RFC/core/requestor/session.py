@@ -92,3 +92,11 @@ class RequestsSession(Session):
         self,
     ):
         ...
+
+
+class AioHTTPSession(Session):
+    ...
+    
+    
+class AsksSession(Session):
+    ...
