@@ -1,21 +1,23 @@
-from typing import Callable, Any, Optional, Iterable, Tuple, Mapping, Dict
+from typing import Mapping, Dict
 
-from RFC.core.utils.cls import RootType
-from RFC.core.utils.defs import (
+from ..utils.cls import RootType
+from ..utils.defs import (
     UNVISITED,
     VISITING,
     VISITED,
 )
-from RFC.core.utils.defs import allSupportedRequestLibsNames
+from ..utils.log import get_logger
 
 from .arg import *
 from .arg import ArgSetter
-from .arg import ArgKeeper
+# from .arg import ArgKeeper
 
 __all__ = [
     'RequestArgGroup',
     'ItemArgGroup',
 ]
+
+logger = get_logger(__name__)
 
 
 class ArgGroup(RootType):
@@ -45,7 +47,7 @@ class ArgGroup(RootType):
         for defined_arg in self._defined_args:
             if defined_arg not in self._args:
                 self._args[defined_arg] = self._defined_args[defined_arg]
-                self._logger.info(f'arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}')
+                self._logger.info(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
     
     def __call__(self, id, *extra_args, **extra_kwargs):
         """
@@ -116,3 +118,18 @@ class ItemArgGroup(ArgGroup):
         'save_path': SavePathSetter('none'),
         'middleware': MiddleWareSetter('none'),
     }
+
+
+# ------------------------------------ Module Postprocess ------------------------------------ #
+
+def _module_postprocess():
+    module_report = {}
+    for var_name, var_value in globals().items():
+        if var_name in __all__:
+            module_report[repr(var_value.__qualname__)] = {name: repr(setter) for name, setter in var_value._defined_args.items()}
+    import json
+    logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
+    with open(f'docs/refs/{__name__}.json', 'w') as f:
+        json.dump(module_report, f, indent=4, ensure_ascii=False)
+
+_module_postprocess()

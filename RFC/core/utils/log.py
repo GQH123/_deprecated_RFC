@@ -32,7 +32,6 @@ _default_log_level = logging.WARNING
 
 _tqdm_active = True
 
-
 __all__ = [
     "get_log_levels_dict",
     "get_logger",

@@ -5,6 +5,7 @@ from RFC.core.utils.log import (
     enable_explicit_format,
     set_verbosity_info,
     set_verbosity_warning,
+    set_verbosity_debug,
     set_formatter,
 )
 from RFC.core.utils.defs import (
@@ -80,8 +81,8 @@ def _test_all_supported_request_libs():
     
   
 if __name__ == '__main__':
-    print(RequestArgGroup.__qualname__)
+    # print(RequestArgGroup.__qualname__)
     # _test_RequestArgGroup()
     # _test_all_supported_request_libs()
     # _test_logger_formatter()
-    
+    ...

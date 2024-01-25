@@ -91,3 +91,9 @@ except ImportError:
 """
 
 allSupportedRequestLibsNames = list(allSupportedRequestLibsMapping.keys())
+
+
+import multiprocessing as mp
+
+RFC_GLOBAL_MANAGER = mp.Manager()
+RFC_GLOBAL_LOCK = RFC_GLOBAL_MANAGER.RLock()

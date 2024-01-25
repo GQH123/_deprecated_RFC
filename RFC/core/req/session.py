@@ -1,8 +1,14 @@
-from typing import List, Callable, Dict, Iterable, Any
+from typing import Callable, Dict, Any
 
-from RFC.core.utils.cls import RootType
-from RFC.core.utils.ds import AttrDict
-from RFC.core.item.item import Item
+from ..utils.cls import RootType
+from ..utils.ds import AttrDict
+from ..item.item import Item
+
+__all__ = [
+    'RequestsSession',
+    'AioHTTPSession',
+    'AsksSession',
+]
 
 
 class Session(RootType):
@@ -22,7 +28,7 @@ class Session(RootType):
     ):
         super().__init__()
         self._get_logger()
-        self._session_args = session_args
+        self._args = session_args
         self._session = None
         self._no_session = None
         
@@ -95,8 +101,40 @@ class RequestsSession(Session):
 
 
 class AioHTTPSession(Session):
-    ...
+    _request_lib: str = 'aiohttp'
+    _async_lib: str = 'asyncio'
+    _all_supported_methods: Dict[str, Callable] = {
+        'get': lambda session, item: None,
+        'post': lambda session, item: None,
+    }
+        
+    def _get_session(
+        self,
+        item: Item,
+    ):
+        ...
+    
+    def close(
+        self,
+    ):
+        ...
     
     
 class AsksSession(Session):
-    ...
+    _request_lib: str = 'asks'
+    _async_lib: str = 'trio'
+    _all_supported_methods: Dict[str, Callable] = {
+        'get': lambda session, item: None,
+        'post': lambda session, item: None,
+    }
+        
+    def _get_session(
+        self,
+        item: Item,
+    ):
+        ...
+    
+    def close(
+        self,
+    ):
+        ...

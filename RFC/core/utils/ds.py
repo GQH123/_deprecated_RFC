@@ -2,7 +2,6 @@ from collections import OrderedDict
 
 from .attr import get_attr_shadowed_name
 
-
 __all__ = [
     'AttrDict',
     'FrozenDict',

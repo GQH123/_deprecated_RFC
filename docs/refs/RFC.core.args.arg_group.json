@@ -1,0 +1,16 @@
+{
+    "'RequestArgGroup'": {
+        "url": "URLSetter(ArgSetter._not_set())",
+        "referer": "RefererSetter(RefererSetter._host())",
+        "cookies": "CookiesSetter(ArgSetter._not_set())",
+        "params": "ParamsSetter(ArgSetter._none())",
+        "payload": "PayloadSetter(ArgSetter._none())",
+        "proxies": "ProxiesSetter(ArgSetter._none())",
+        "user-agent": "UserAgentSetter(UserAgentSetter._random())",
+        "headers": "HeadersSetter(HeadersSetter._switch())"
+    },
+    "'ItemArgGroup'": {
+        "save_path": "SavePathSetter(ArgSetter._none())",
+        "middleware": "MiddleWareSetter(ArgSetter._none())"
+    }
+}

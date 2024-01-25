@@ -1,25 +1,50 @@
 from typing import Any
+from multiprocessing import Process
 
-from RFC.core.utils.cls import RootType
-from RFC.core.item.item import Item
+from ..utils.log import get_logger
+from ..utils.cls import RootType
+from ..item.item import Item, ItemType
 
 from .session import Session
 from .middlewares import get_middlewares
 
-import trio
-import asyncio
-# TODO: add import try except for trio and asyncio
+logger = get_logger(__name__)
+
+try:
+    import trio
+except Exception as e:
+    error_report = f'[{repr(e).__name__}] {repr(e)}'
+    logger.warning(f"failed to import trio, caught error {error_report}")
+    trio = None
+
+try:
+    import asyncio
+except Exception as e:
+    error_report = f'[{repr(e).__name__}] {repr(e)}'
+    logger.warning(f"failed to import asyncio, caught error {error_report}")
+    asyncio = None
+
+__all__ = [
+    'Requestor'
+]
 
 
 class Requestor(RootType):
+    """
+        Requestor bridges `Item`s, `Session`s and `MiddleWare`s, to perform complete life-cycle of requesting an item.
+        
+        It supportes both sync/async request libs, and can be run in single/multiple processes.
+        
+        It is not expected to be subclassed.
+    """
     def __init__(
         self,
         session: Session,
     ):
         super().__init__()
-        self._get_logger()
+        self._get_logger(add_file_handler=True)  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
         self._session = session
-        # self._request_lib = session._request_lib
+        # self._request_lib = session._request_lib  # requestor does not need to know the request_lib
         self._async_lib = session._async_lib
     
     def _handle_error(
@@ -28,13 +53,13 @@ class Requestor(RootType):
         item: Item,
         result: Any,
     ):
-        ...
+        # TODO: add error handling logics
         raise error
     
     def _get_item_from_root_queue(
         self,
     ):
-        ...
+        return ItemType.fetch()
     
     def _fetch_single(
         self,
@@ -48,8 +73,9 @@ class Requestor(RootType):
             for middleware in middlewares:
                 result, status = middleware(item, result)
             item.finish(True, result)
-            self._logger.info(f'fetched {repr(item)}')
+            self._logger.info(f"{repr(self)} process {self._logger._process_name} fetched {repr(item)}")
         except Exception as e:
+            self._logger.info(f"{repr(self)} process {self._logger._process_name} failed on {repr(item)}, caught error {repr(e)}")
             item.finish(False)
             self._handle_error(e, item, result)
     
@@ -66,8 +92,9 @@ class Requestor(RootType):
             for middleware in middlewares:
                 result, status = middleware(item, result)
             item.finish(True, result)
-            self._logger.info(f'fetched {repr(item)}')
+            self._logger.info(f"{repr(self)} process {self._logger._process_name} fetched {repr(item)}")
         except Exception as e:
+            self._logger.info(f"{repr(self)} process {self._logger._process_name} failed on {repr(item)}, caught error {repr(e)}")
             item.finish(False)
             self._handle_error(e, item, result)
         finally:
@@ -79,6 +106,7 @@ class Requestor(RootType):
     ):
         while True:
             item = self._get_item_from_root_queue()
+            self._logger.info(f"{repr(self)} process {self._logger._process_name} got {repr(item)} from root queue")
             if item is None:
                 break
             self._fetch_single(item)
@@ -86,12 +114,13 @@ class Requestor(RootType):
 
     async def _fetch_all_asyncio(
         self,
-        async_sema: int = 1,
+        async_sema: int,
     ):
         sema = asyncio.Semaphore(async_sema)
         tasks = []
         while True:
             item = self._get_item_from_root_queue()
+            self._logger.info(f"{repr(self)} process {self._logger._process_name} got {repr(item)} from root queue")
             if item is None:
                 break
             await sema.acquire()
@@ -102,12 +131,13 @@ class Requestor(RootType):
     
     async def _fetch_all_trio(
         self,
-        async_sema: int = 1,
+        async_sema: int,
     ):
         sema = trio.Semaphore(async_sema, max_value=async_sema)
         async with trio.open_nursery() as nursery:
             while True:
                 item = self._get_item_from_root_queue()
+                self._logger.info(f"{repr(self)} process {self._logger._process_name} got {repr(item)} from root queue")
                 if item is None:
                     break
                 await sema.acquire()
@@ -116,17 +146,29 @@ class Requestor(RootType):
         
     def _fetch_all_single_process(
         self,
-        async_sema: int = 1,
+        async_sema: int,
+        process_name: str = 'none',
     ):
+        """
+            Requestor now in different processes, each process has its own context.
+        """
+        self._logger._process_name = process_name
         if self._async_lib is None or self._async_lib == 'none':
+            self._logger.info(f"{repr(self)} process {process_name} start fetching with sync")
             self._fetch_all_sync()
         else:
             if self._async_lib == 'asyncio':
+                if asyncio is None:
+                    raise ValueError(f"async_lib {repr(self._async_lib)} is not supported in this environment")
+                self._logger.info(f"{repr(self)} process {process_name} start fetching with asyncio")
                 asyncio.run(self._fetch_all_asyncio(async_sema=async_sema))
             elif self._async_lib == 'trio':
+                if trio is None:
+                    raise ValueError(f"async_lib {repr(self._async_lib)} is not supported in this environment")
+                self._logger.info(f"{repr(self)} process {process_name} start fetching with trio")
                 trio.run(self._fetch_all_trio, async_sema=async_sema)
             else:
-                raise ValueError(f'unsupported async_lib {repr(self._async_lib)} in {repr(self)}')
+                raise ValueError(f"unsupported async_lib {repr(self._async_lib)} in {repr(self)}")
         
     def _finish(
         self,
@@ -143,5 +185,12 @@ class Requestor(RootType):
         nproc: int = 1,
         async_sema: int = 1,
     ):
-        # TODO: add multiprocessing support
-        self._fetch_all_single_process(async_sema=async_sema)
+        async_sema = async_sema if not (self._async_lib is None or self._async_lib == 'none') else None
+        self._logger.info(f"{repr(self)} start fetching with {nproc} processes and {async_sema} async semaphores")
+        processes = []
+        for i in range(nproc):
+            process_name = f'requestor-worker-{i}'
+            processes.append(Process(target=self._fetch_all_single_process, args=(async_sema, process_name), name=process_name))
+            processes[i].start()
+        for i in range(nproc):
+            processes[i].join()

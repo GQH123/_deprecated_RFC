@@ -1,7 +1,6 @@
 import inspect
 from typing import Callable
 
-
 __all__ = [
     'get_module_path',
     'get_class_name',
@@ -79,7 +78,7 @@ def get_attr_shadowed_name(obj, attr, is_class=False):
     return f'_{get_class_name(obj_class, True)}{attr}'
 
 
-def get_func_param(func: Callable):
+def get_func_param(func: Callable, repr: bool = True):
     """
         return the parameter list of a function, such as
         ```
@@ -88,7 +87,8 @@ def get_func_param(func: Callable):
               'is_class': <Parameter "is_class=False">})
         ```
     """
-    return inspect.signature(func).parameters
+    params = inspect.signature(func).parameters
+    return params if not repr else dict(params)
 
 
 def get_func_param_name(func: Callable):

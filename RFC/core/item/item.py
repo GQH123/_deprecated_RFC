@@ -1,18 +1,26 @@
-import weakref
+# import weakref
+# from weakref import ref
 from time import time
-from typing import Any, Callable, Optional, List, Dict, Mapping
+from multiprocessing.managers import ListProxy
+from typing import Any, Callable, Dict, Mapping
 
-from RFC.core.utils.ds import AttrDict
-from RFC.core.utils.cls import RootType
-from RFC.core.utils.defs import (
+from ..utils.ds import AttrDict
+from ..utils.cls import RootType
+from ..utils.defs import (
     PENDING,
     PROCESSING,
     FAILED,
     FINISHED,
     GENERATING,
     _itemStatusToName,
+    RFC_GLOBAL_MANAGER,
+    RFC_GLOBAL_LOCK,
 )
-from RFC.core.args.arg_group import ArgGroup
+from ..args.arg_group import ArgGroup
+
+__all__ = [
+    'ItemType'
+]
 
 
 class Item(RootType):
@@ -91,10 +99,9 @@ class ItemType(RootType):
     _defined_arg_groups: Dict[str, ArgGroup] = { # define arg_groups in this ItemType, str as group name, ArgGroup as default for this group
     } # SUBCLASS
     
-    _root_item_queue: List[Item] = []  # queue of items to be processed
+    _root_item_queue: ListProxy[Item] = RFC_GLOBAL_MANAGER.list()  # queue of items to be processed
     
-    _item_queue: List[Item] = []  # queue of weakref to items in this ItemType, should be subclassed
-    # SUBCLASS
+    # _item_queue: ListProxy[ref[Item]] = RFC_GLOBAL_MANAGER.list() # SUBCLASS, queue of weakref to items in this ItemType, should be subclassed  # deprecated, cannot maintain weakref across multi-processings
 
     def __init__(self):
         """
@@ -104,10 +111,9 @@ class ItemType(RootType):
             
             `ItemType` should not be instantiated, you should subclass it and define `ArgGroup`s in class definition.
         """
-        raise ValueError(f"{repr(self)} should not be instantiated")
+        raise ValueError(f"{repr(self)} should never be called")
     
-    @classmethod
-    def __call__(cls, id, *extra_args, **extra_kwargs):
+    def __new__(cls, id, *extra_args, **extra_kwargs):
         """
             Call `ArgGroup`s in this `ItemType`.
         """
@@ -118,11 +124,12 @@ class ItemType(RootType):
             args_value['id'] = id
         return Item(args_value, cls._generate)
     
+    """
     @classmethod
     def _remove_item_weakref(cls, _ref):
-        # TODO: thread safety may need to be considered here
         if _ref in cls._item_queue:
             cls._item_queue.remove(_ref)
+    """
     
     @classmethod
     def _add_item(cls, id: Any, *extra_args, **extra_kwargs) -> None:
@@ -131,14 +138,16 @@ class ItemType(RootType):
         """
         item = cls(id, *extra_args, **extra_kwargs)
         item.pend()
-        cls._root_item_queue.append(item)
-        cls._item_queue.append(weakref.ref(item, cls._remove_item_weakref))
+        with RFC_GLOBAL_LOCK:
+            cls._root_item_queue.append(item)
+        # cls._item_queue.append(weakref.ref(item, cls._remove_item_weakref))
         
     @classmethod
     def fetch(cls):
-        if not cls._root_item_queue:
-            return None
-        return cls._root_item_queue.pop()
+        with RFC_GLOBAL_LOCK:
+            if not cls._root_item_queue:
+                return None
+            return cls._root_item_queue.pop()
 
     @classmethod
     def _generate(cls, result: Any) -> None:
@@ -158,11 +167,10 @@ class ItemType(RootType):
 
 
 class _ItemType(ItemType):
-    _item_queue: List[Item] = []
+    # _item_queue: ListProxy[ref[Item]] = RFC_GLOBAL_MANAGER.list()
     _defined_arg_groups: Dict[str, ArgGroup] = {
         ...
     }
-    
     @classmethod
     def _generate(cls, result: Any) -> None:
         ...

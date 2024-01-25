@@ -1,12 +1,14 @@
+from logging import FileHandler
 from typing import Callable, Any, Optional
 
-from RFC.core.utils.ds import AttrDict
-from RFC.core.utils.cls import RootType
-from RFC.core.utils.defs import (
-    FuncName,
+from ..utils.ds import AttrDict
+from ..utils.cls import RootType
+from ..utils.defs import (
     OptionalFunc,
     RobustOptionalFuncArgsTuple,
 )
+from ..utils.log import get_logger
+from ..utils.attr import get_func_param
 
 import os
 import json
@@ -27,8 +29,33 @@ __all__ = [
     'MiddleWareSetter',
 ]
 
+logger = get_logger(__name__)
 
-class ArgRootType(RootType):
+
+class ArgRootTypeMeta(type):
+    keyword_prefixes = ['_all_supported_']
+
+    def __new__(cls, clsname, bases, attrs):
+        for name, val in attrs.items():
+            if not isinstance(val, dict):
+                continue
+            key_attr = False
+            inherited_dict = {}
+            for keyword_prefix in cls.keyword_prefixes:
+                if name.startswith(keyword_prefix):
+                    key_attr = True
+                    break
+            if not key_attr:
+                continue
+            for base in bases:
+                if hasattr(base, name):
+                    inherited_dict.update(getattr(base, name))
+            inherited_dict.update(val)
+            attrs[name] = inherited_dict
+        return super().__new__(cls, clsname, bases, attrs)
+
+
+class ArgRootType(RootType, metaclass=ArgRootTypeMeta):
     """
         `ArgRootType` implement some common methods for arg utilities.
         
@@ -38,7 +65,7 @@ class ArgRootType(RootType):
         self,
     ):
         super().__init__()
-        self._get_logger()
+        self._get_logger(add_file_handler=False)
 
 
 class ArgCaster(ArgRootType):
@@ -102,9 +129,14 @@ class ArgSetter(ArgRootType):
         
         `ArgSetter` should only be used to instantiate `ArgGroup`.
     """
+    @staticmethod
+    def _not_set(id, arg_group, **kwargs):
+        raise ValueError(f"arg {repr(kwargs['self'])} not set in {repr(arg_group)}")
+        
     _all_supported_setters = {
         'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: None
+        'none': lambda id, arg_group, **kwargs: None,
+        'not_set': _not_set,
     }
     # SUBCLASS
 
@@ -121,32 +153,36 @@ class ArgSetter(ArgRootType):
         super().__init__()
         setter, self.setter_args = self._parse_func_arg_tuple(setter)
         self.setter = self._get_setter_func(setter)
-        self._logger.info(f'{repr(self)} initiated with setter {repr(setter)}.')
+        self._logger.info(f"{repr(self)} initiated with setter {repr(setter)}.")
 
     def __call__(self, id: Any, arg_group: Any) -> Any:
         """
             This is used in `ArgGroup` for generating args for that group. Should not be called by user.
         """
         result = self.setter(id, arg_group, *self.setter_args, self=self)
-        self._logger.info(f'{repr(self)} called, result: {repr(result)}.')
+        self._logger.info(f"{repr(self)} called, result: {repr(result)}.")
         return result
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.setter.__qualname__}({', '.join(self.setter_args)}))"
 
 
 class _ArgSetter(ArgSetter):
     _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: None
     }
 
 
 """
+    `ArgSetter` should not need to know request_lib, which will mess up the operation logic of RFC.
+
+
 class RequestArgSetter(ArgSetter):
     def _get_caster_by_request_lib(self, request_lib: str) -> FuncName:
         \"""
             This method is used to get the name of `to_caster` function from the `<request_lib>`, which will be used in `__call__` method.
         \"""
         caster = 'none'
-        self._logger.info(f'{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.')
+        self._logger.info(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
         return caster
     # SUBCLASS
     
@@ -159,7 +195,7 @@ class RequestArgSetter(ArgSetter):
     
     def __call__(self, id: Any, arg_group: Any, request_lib: str) -> Any:
         result = self.cast(self.setter(id, arg_group, *self.setter_args, self=self), to_caster=self._get_caster_by_request_lib(request_lib))
-        self._logger.info(f'{repr(self)} called, result: {repr(result)}.')
+        self._logger.info(f"{repr(self)} called, result: {repr(result)}.")
         return result
 
 
@@ -178,9 +214,103 @@ class _RequestArgSetter(RequestArgSetter):
     }
     def _get_caster_by_request_lib(self, request_lib: str) -> FuncName:
         caster = 'none'
-        self._logger.info(f'{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.')
+        self._logger.info(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
         return caster
 """
+
+
+class URLSetter(ArgSetter):
+    _all_supported_setters = {
+        'replace_id': lambda id, arg_group, template, **kwargs: template.format(id=id),
+    }
+
+
+class RefererSetter(ArgSetter):
+    _all_supported_setters = {
+        'url': lambda id, arg_group, **kwargs: arg_group.url,
+        'host': lambda id, arg_group, **kwargs: '{uri.scheme}://{uri.netloc}/'.format(uri=urlparse(arg_group.url)),
+    }
+
+
+class CookiesSetter(ArgSetter):
+    @staticmethod
+    def _read_from_file(id, arg_group, path, type='text', sep='; ', cont='=', id2rank=None, **kwargs):
+        _supported_file_types = ['text', 'json']
+        if type not in _supported_file_types:
+            raise ValueError(f"cookies file type {repr(type)} not supported, supported types are {repr(_supported_file_types)}.")
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"cookies file {repr(path)} not found.")
+        if id2rank is None:
+            id2rank = lambda id: 0
+        if type == 'text':
+            with open(path, 'r') as f:
+                cookies = [cookies for cookies in f.read().split(sep) if cookies]
+            cookies = {k_v.split(cont)[0]: cont.join(k_v.split(cont)[1:]) for k_v in cookies}
+        elif type == 'json':
+            with open(path, 'r') as f:
+                cookies = json.load(f)
+        cookies = cookies[id2rank(id)]
+        return cookies
+
+    _all_supported_setters = {
+        'file': _read_from_file,
+    }
+
+
+class ParamsSetter(ArgSetter):
+    pass
+
+
+class PayloadSetter(ArgSetter):
+    pass
+
+
+class ProxiesSetter(ArgSetter):
+    pass
+
+
+class UserAgentSetter(ArgSetter):
+    @staticmethod
+    def _random(id, arg_group, type='random', **kwargs):
+        if type not in ua.browsers + ['random']:
+            raise ValueError(f"user-agent random type {repr(type)} not supported, supported types are {repr(ua.browsers + ['random'])}.")
+        return ua[type]
+
+    _all_supported_setters = {
+        'random': _random,
+    }
+
+
+class HeadersSetter(ArgSetter):
+    @staticmethod
+    def _switch(id, arg_group, type='default', **kwargs):
+        options = {
+            'default': {
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+                'Sec-Fetch-Dest': 'document',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                'Sec-Fetch-Site': 'same-site',
+                'Sec-Fetch-Mode': 'navigate',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7,en-GB;q=0.6,ru;q=0.5',
+            },
+        }
+        if type not in options:
+            raise ValueError(f"headers type {repr(type)} not supported, supported types are {repr(list(options.keys()))}.")
+        return options[type]
+
+    _all_supported_setters = {
+        'switch': _switch,
+    }
+
+
+class SavePathSetter(ArgSetter):
+    pass
+
+
+class MiddleWareSetter(ArgSetter):
+    pass
 
 
 class ArgKeeper(ArgRootType):
@@ -204,11 +334,11 @@ class ArgKeeper(ArgRootType):
         super().__init__()
         keeper, self.keeper_args = self._parse_func_arg_tuple(keeper)
         self.keeper = self._get_keeper_func(keeper)
-        self._logger.info(f'{repr(self)} initiated with keeper {repr(keeper)}.')
+        self._logger.info(f"{repr(self)} initiated with keeper {repr(keeper)}.")
 
     def __call__(self, state: AttrDict) -> Any:
         result = self.keeper(state, *self.keeper_args)
-        self._logger.info(f'{repr(self)} called, result: {repr(result)}.')
+        self._logger.info(f"{repr(self)} called, result: {repr(result)}.")
         return result
 
 
@@ -218,133 +348,27 @@ class _ArgKeeper(ArgKeeper):
     }
 
 
-class URLSetter(ArgSetter):
-    @staticmethod
-    def _url_not_set(id, arg_group, **kwargs):
-        raise ValueError(f"arg {repr('url')} not set in {repr(arg_group)}")
+# ------------------------------------ Module Postprocess ------------------------------------ #
 
-    _all_supported_setters = {
-        'replace_id': lambda id, arg_group, template, **kwargs: template.format(id=id),
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'not_set': _url_not_set,
-    }
-
-
-class RefererSetter(ArgSetter):
-    _all_supported_setters = {
-        'url': lambda id, arg_group, **kwargs: arg_group.url,
-        'host': lambda id, arg_group, **kwargs: '{uri.scheme}://{uri.netloc}/'.format(uri=urlparse(arg_group.url)),
-        'fixed': lambda id, arg_group, value, **kwargs: value
-    }
-
-
-class CookiesSetter(ArgSetter):
-    def _cookies_not_set(id, arg_group, **kwargs):
-        self = kwargs['self']
-        self._logger.warning(f"arg {repr('cookies')} not set in {repr(arg_group)}")
-        
-    @staticmethod
-    def _read_from_file(id, arg_group, path, type='text', sep='; ', cont='=', id2rank=None, **kwargs):
-        _supported_file_types = ['text', 'json']
-        if type not in _supported_file_types:
-            raise ValueError(f"cookies file type {repr(type)} not supported, supported types are {repr(_supported_file_types)}.")
-        if not os.path.exists(path):
-            raise FileNotFoundError(f"cookies file {repr(path)} not found.")
-        if id2rank is None:
-            id2rank = lambda id: 0
-        if type == 'text':
-            with open(path, 'r') as f:
-                cookies = [cookies for cookies in f.read().split(sep) if cookies]
-            cookies = {k_v.split(cont)[0]: cont.join(k_v.split(cont)[1:]) for k_v in cookies}
-        elif type == 'json':
-            with open(path, 'r') as f:
-                cookies = json.load(f)
-        cookies = cookies[id2rank(id)]
-        return cookies
-
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'not_set': _cookies_not_set,
-        'file': _read_from_file,
-    }
-
-
-class ParamsSetter(ArgSetter):
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: '',
-    }
-
-
-class PayloadSetter(ArgSetter):
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: '',
-    }
-
-
-class ProxiesSetter(ArgSetter):
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: '',
-    }
-
-
-class UserAgentSetter(ArgSetter):
-    @staticmethod
-    def _random(id, arg_group, type='random', **kwargs):
-        if type not in ua.browsers + ['random']:
-            raise ValueError(f"user-agent random type {repr(type)} not supported, supported types are {repr(ua.browsers + ['random'])}.")
-        return ua[type]
+def _module_postprocess():
     
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'random': _random,
-    }
-
-
-class HeadersSetter(ArgSetter):
-    def _headers_not_set(id, arg_group, **kwargs):
-        self = kwargs['self']
-        self._logger.warning(f"arg {repr('headers')} not set in {repr(arg_group)}")
+    def _repr_function(name, func):
+        if func.__name__ == '<lambda>':
+            func.__name__ = '_'+name
+            func.__qualname__ = func.__qualname__.split('<lambda>', 1)[0] + func.__name__
+        return f'{func.__qualname__}({repr(get_func_param(func))})'
         
-    @staticmethod
-    def _switch(id, arg_group, type='default', **kwargs):
-        options = {
-            'default': {
-                'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1',
-                'Sec-Fetch-Dest': 'document',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-                'Sec-Fetch-Site': 'same-site',
-                'Sec-Fetch-Mode': 'navigate',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7,en-GB;q=0.6,ru;q=0.5',
-            },
-        }
-        if type not in options:
-            raise ValueError(f"headers type {repr(type)} not supported, supported types are {repr(list(options.keys()))}.")
-        return options[type]
-    
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: {},
-        'not_set': _headers_not_set,
-        'switch': _switch,
-    }
+    module_report = {}
+    global_vars = globals().copy()
+    for var_name, var_value in global_vars.items():
+        if var_name in __all__:
+            if issubclass(var_value, ArgSetter):
+                module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_setters.items()}
+            elif issubclass(var_value, ArgKeeper):
+                module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_keepers.items()}
+    import json
+    logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
+    with open(f'docs/refs/{__name__}.json', 'w') as f:
+        json.dump(module_report, f, indent=4, ensure_ascii=False)
 
-
-class SavePathSetter(ArgSetter):
-    # TODO
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: {},
-    }
-
-
-class MiddleWareSetter(ArgSetter):
-    # TODO
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: {},
-    }
+_module_postprocess()

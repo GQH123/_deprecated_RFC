@@ -1,4 +1,6 @@
-from typing import List, Callable, Dict, Iterable
+import os
+from logging import FileHandler
+from typing import Callable, Iterable
 
 from .log import get_logger
 from .defs import (
@@ -6,6 +8,10 @@ from .defs import (
     RobustOptionalFuncArgsTuple,
     OptionalFuncArgsTuple
 )
+
+__all__ = [
+    'RootType'
+]
 
 
 class RootType():
@@ -50,13 +56,18 @@ class RootType():
     def __init__(self):
         pass
     
-    def _get_logger(self, name=None):
+    def _get_logger(self, name=None, log_path=None, add_file_handler=True):
         name = name or getattr(self, '_name', None)
         if name:
             name = '.'.join([__name__, self.__class__.__name__, name])
         else:
             name = '.'.join([__name__, self.__class__.__name__])
         self._logger = get_logger(name)
+        if add_file_handler:
+            if log_path is None:
+                log_path = './logs'
+            log_path = os.path.join(log_path, name+'.log')
+            self._logger.addHandler(FileHandler(log_path, mode='w', encoding='utf-8'))
     
     def __repr__(self):
         return f'{repr(self.__class__.__qualname__)}'
