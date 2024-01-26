@@ -23,7 +23,7 @@ __all__ = [
 ]
 
 
-class Item(RootType):
+class Item(AttrDict, RootType):
     """
         `Item` is the instance of `ItemType`, which is the unit of crawling. `Item` is fixed across different `ItemType`s, you should never subclass it.
         
@@ -38,15 +38,14 @@ class Item(RootType):
             raise ValueError(f"no id in {repr(args)}, which is required for items")
         if 'bloodline' not in args:
             raise ValueError(f"no bloodline in {repr(args)}, which is required for items")
-        super().__init__()
-        self._get_logger(repr(self._args.id))
-        self._args = args
-        self._status = None      
+        super().__init__(args)
+        self._get_logger(repr(self.id))  # type: ignore
+        self._status = None     
         self._timestamp = {}                        # Dict[str, int | str], timestamp of each status
         self._generate = generate
         
     def __repr__(self):
-        return f"{self._args.bloodline[-1].__name__}({repr(self._args.id)})"
+        return f"{self.bloodline[-1].__name__}({repr(self.id)})"  # type: ignore
 
     def _status_check(self, status: int):
         if status not in _itemStatusToName:
@@ -72,7 +71,7 @@ class Item(RootType):
         if check_status:
             self._status_check(status)
         self._timestamp[status] = time()
-        self._logger.info(f"status updated from {repr(_itemStatusToName[self._status])} to {repr(_itemStatusToName[status])}")
+        self._logger.info(f"status updated from {repr(_itemStatusToName[self._status] if self._status is not None else None)} to {repr(_itemStatusToName[status])}")  
         self._status = status
         
     def pend(self):
@@ -122,7 +121,7 @@ class ItemType(RootType):
             args_value.update(cls._defined_arg_groups[arg_group](id, *extra_args, **extra_kwargs))
         if 'id' not in args_value:
             args_value['id'] = id
-        return Item(args_value, cls._generate)
+        return Item(AttrDict(args_value), cls._generate)
     
     """
     @classmethod
@@ -137,9 +136,9 @@ class ItemType(RootType):
             Add a new item to the queue of this `ItemType`.
         """
         item = cls(id, *extra_args, **extra_kwargs)
-        item.pend()
+        item.pend()  # type: ignore # now the item is of type `Item` but not `ItemType`
         with RFC_GLOBAL_LOCK:
-            cls._root_item_queue.append(item)
+            cls._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
         # cls._item_queue.append(weakref.ref(item, cls._remove_item_weakref))
         
     @classmethod
@@ -169,7 +168,6 @@ class ItemType(RootType):
 class _ItemType(ItemType):
     # _item_queue: ListProxy[ref[Item]] = RFC_GLOBAL_MANAGER.list()
     _defined_arg_groups: Dict[str, ArgGroup] = {
-        ...
     }
     @classmethod
     def _generate(cls, result: Any) -> None:

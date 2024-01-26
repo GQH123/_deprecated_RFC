@@ -5,6 +5,7 @@ from ..utils.defs import (
     UNVISITED,
     VISITING,
     VISITED,
+    RobustOptionalFuncArgsTuple,
 )
 from ..utils.log import get_logger
 
@@ -26,7 +27,7 @@ class ArgGroup(RootType):
     
     def __init__(
         self,
-        **args: Mapping[str, ArgSetter],
+        **args: ArgSetter | RobustOptionalFuncArgsTuple,
     ):
         """
             Set `ArgSetter` for defined args in this group, will use default if not.
@@ -40,7 +41,7 @@ class ArgGroup(RootType):
                 continue
             if not isinstance(args[arg], ArgSetter):
                 args[arg] = self._defined_args[arg].__class__(args[arg])  # no need to pass in instantiated `ArgSetter`s
-            if type(args[arg]) != type(self._defined_args[arg]):
+            if args[arg].__class__ != self._defined_args[arg].__class__:
                 self._logger.warning(f"arg {repr(arg)} type mismatch, expected {repr(self._defined_args[arg])}, got {repr(args[arg])}")
                 continue
             self._args[arg] = args[arg]

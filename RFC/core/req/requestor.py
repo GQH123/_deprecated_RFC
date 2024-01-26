@@ -44,8 +44,6 @@ class Requestor(RootType):
         super().__init__()
         self._get_logger(add_file_handler=True)  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
         self._session = session
-        # self._request_lib = session._request_lib  # requestor does not need to know the request_lib
-        self._async_lib = session._async_lib
     
     def _handle_error(
         self,
@@ -61,7 +59,7 @@ class Requestor(RootType):
     ):
         return ItemType.fetch()
     
-    def _fetch_single(
+    def _fetch_single_sync(
         self,
         item: Item,
     ):
@@ -71,7 +69,7 @@ class Requestor(RootType):
         try:
             result = self._session.request(item)
             for middleware in middlewares:
-                result, status = middleware(item, result)
+                result, status = middleware.apply_sync(item, result, self._session._request_lib, self._session._async_lib)
             item.finish(True, result)
             self._logger.info(f"{repr(self)} process {self._logger._process_name} fetched {repr(item)}")
         except Exception as e:
@@ -88,9 +86,9 @@ class Requestor(RootType):
         middlewares = get_middlewares(item.middlewares)
         result = None
         try:
-            result = await self._session.request_async(item)
+            result = await self._session.request(item)
             for middleware in middlewares:
-                result, status = middleware(item, result)
+                result, status = await middleware.apply_async(item, result)
             item.finish(True, result)
             self._logger.info(f"{repr(self)} process {self._logger._process_name} fetched {repr(item)}")
         except Exception as e:
@@ -109,8 +107,8 @@ class Requestor(RootType):
             self._logger.info(f"{repr(self)} process {self._logger._process_name} got {repr(item)} from root queue")
             if item is None:
                 break
-            self._fetch_single(item)
-        self._finish()
+            self._fetch_single_sync(item)
+        self._finish_sync()
 
     async def _fetch_all_asyncio(
         self,
@@ -153,24 +151,24 @@ class Requestor(RootType):
             Requestor now in different processes, each process has its own context.
         """
         self._logger._process_name = process_name
-        if self._async_lib is None or self._async_lib == 'none':
+        if self._session._async_lib == 'none':
             self._logger.info(f"{repr(self)} process {process_name} start fetching with sync")
             self._fetch_all_sync()
         else:
-            if self._async_lib == 'asyncio':
+            if self._session._async_lib == 'asyncio':
                 if asyncio is None:
-                    raise ValueError(f"async_lib {repr(self._async_lib)} is not supported in this environment")
+                    raise ValueError(f"async_lib {repr(self._session._async_lib)} is not supported in this environment")
                 self._logger.info(f"{repr(self)} process {process_name} start fetching with asyncio")
                 asyncio.run(self._fetch_all_asyncio(async_sema=async_sema))
-            elif self._async_lib == 'trio':
+            elif self._session._async_lib == 'trio':
                 if trio is None:
-                    raise ValueError(f"async_lib {repr(self._async_lib)} is not supported in this environment")
+                    raise ValueError(f"async_lib {repr(self._session._async_lib)} is not supported in this environment")
                 self._logger.info(f"{repr(self)} process {process_name} start fetching with trio")
                 trio.run(self._fetch_all_trio, async_sema=async_sema)
             else:
-                raise ValueError(f"unsupported async_lib {repr(self._async_lib)} in {repr(self)}")
+                raise ValueError(f"unsupported async_lib {repr(self._session._async_lib)} in {repr(self)}")
         
-    def _finish(
+    def _finish_sync(
         self,
     ):
         self._session.close()
@@ -178,14 +176,14 @@ class Requestor(RootType):
     async def _finish_async(
         self,
     ):
-        await self._session.close_async()
+        await self._session.close()
     
-    def fetch(
+    def __call__(
         self,
         nproc: int = 1,
         async_sema: int = 1,
     ):
-        async_sema = async_sema if not (self._async_lib is None or self._async_lib == 'none') else None
+        async_sema = async_sema if self._session._async_lib != 'none' else None
         self._logger.info(f"{repr(self)} start fetching with {nproc} processes and {async_sema} async semaphores")
         processes = []
         for i in range(nproc):

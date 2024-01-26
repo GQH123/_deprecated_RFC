@@ -1,14 +1,14 @@
-from typing import Callable, Any, Optional, Tuple, List, Dict
+from typing import Callable, Any, Optional, Tuple, List, Dict, Union
 
 FuncName = str
 Func = FuncName | Callable
 OptionalFunc = Optional[Func]
-Args = Optional[Any | List]
-# FuncArgsTuple = Tuple[Func, Args]
-OptionalFuncArgsTuple = Tuple[OptionalFunc, Args]
-# RobustFuncArgsTuple = Func | Tuple[Func] | FuncArgsTuple
+Args = List
+OptionalFuncArgsTuple = Tuple[OptionalFunc, Args | Any]  # it seems that variable-length tuple annotation can not support forms like (A, B) / (A, B, B) / (A, B, B, B) before Python 3.11, with which we can use Tuple[OptionalFunc, Args | *tuple[Any, ...]] instead, refer to https://stackoverflow.com/questions/68346281/what-type-hint-for-heterogeneous-variable-length-tuple-in-python for more details
 RobustOptionalFuncArgsTuple = OptionalFunc | Tuple[OptionalFunc] | OptionalFuncArgsTuple
-RecursiveDictStr2Callable = Dict[str, 'RecursiveDictStr2Callable' | Callable]
+RecursiveDictStr2Callable = Dict[str, Callable | 'RecursiveDictStr2Callable']
+# FuncArgsTuple = Tuple[Func, Args]
+# RobustFuncArgsTuple = Func | Tuple[Func] | FuncArgsTuple
 
 # Visit Status of ArgSetters
 

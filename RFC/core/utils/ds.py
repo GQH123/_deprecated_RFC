@@ -1,4 +1,5 @@
 from collections import OrderedDict
+from typing import Any
 
 from .attr import get_attr_shadowed_name
 
@@ -11,12 +12,22 @@ __all__ = [
 
 class AttrDict(dict):
     """
-        A dict whose keys can be accessed as attributes.
+        A dict of which keys can be accessed as attributes.
+        
+        DO NOT use non-special methods of `dict` on this class, such as `update`, the attributes may not be updated correctly.
     """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for key, value in self.items():
             setattr(self, key, value)
+            
+    def __setattr__(self, name, value):
+        super().__setattr__(name, value)
+        super().__setitem__(name, value)
+        
+    def __setitem__(self, name, value):
+        super().__setattr__(name, value)
+        super().__setitem__(name, value)
 
 
 class FrozenDict(OrderedDict):

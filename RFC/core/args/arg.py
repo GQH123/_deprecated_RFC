@@ -1,11 +1,12 @@
 from logging import FileHandler
-from typing import Callable, Any, Optional
+from typing import Callable, Any, Optional, Dict, List
 
 from ..utils.ds import AttrDict
 from ..utils.cls import RootType
 from ..utils.defs import (
     OptionalFunc,
     RobustOptionalFuncArgsTuple,
+    RecursiveDictStr2Callable,
 )
 from ..utils.log import get_logger
 from ..utils.attr import get_func_param
@@ -72,7 +73,7 @@ class ArgCaster(ArgRootType):
     """
         `ArgCaster` separate caster part of `ArgSetter` to make it simpler, and to implement other arg utilities more easily.
     """
-    _all_supported_casters = {
+    _all_supported_casters: RecursiveDictStr2Callable = {
         'to': {
             'none': lambda x: x,
         },
@@ -84,6 +85,8 @@ class ArgCaster(ArgRootType):
     
     @classmethod
     def _get_caster_func(cls, caster: OptionalFunc, to: bool) -> Callable:
+        if callable(caster):
+            return caster
         return cls._get_func_recursive(('to' if to else 'from', caster or 'none'), cls._all_supported_casters, "caster")
     
     def __init__(self):
@@ -93,8 +96,8 @@ class ArgCaster(ArgRootType):
     def cast(
         cls,
         value: Any,
-        from_caster: Optional[RobustOptionalFuncArgsTuple] = None,
-        to_caster: Optional[RobustOptionalFuncArgsTuple] = None,
+        from_caster: RobustOptionalFuncArgsTuple = None,
+        to_caster: RobustOptionalFuncArgsTuple = None,
     ) -> Any:
         """
             `<caster>` is used to convert value to different types/formats, which has two types, `from_caster` and `to_caster`. `from_caster` is used to cast value from `<setter>` to the inner type, `to_caster` is used to cast value from the inner type to other types. `<caster>` can be a string or a function which accepts `<value>` and returns `<casted_value>`.
@@ -141,6 +144,8 @@ class ArgSetter(ArgRootType):
     # SUBCLASS
 
     def _get_setter_func(self, setter: OptionalFunc) -> Callable:
+        if callable(setter):
+            return setter
         return self._get_func_recursive(setter or 'none', self._all_supported_setters, "setter")
 
     def __init__(
@@ -234,7 +239,7 @@ class RefererSetter(ArgSetter):
 
 class CookiesSetter(ArgSetter):
     @staticmethod
-    def _read_from_file(id, arg_group, path, type='text', sep='; ', cont='=', id2rank=None, **kwargs):
+    def _read_from_file(id, arg_group, path, type='text', sep='; ', cont='=', id2rank: Optional[Callable[[Any], int]]=None, **kwargs):
         _supported_file_types = ['text', 'json']
         if type not in _supported_file_types:
             raise ValueError(f"cookies file type {repr(type)} not supported, supported types are {repr(_supported_file_types)}.")
@@ -245,10 +250,14 @@ class CookiesSetter(ArgSetter):
         if type == 'text':
             with open(path, 'r') as f:
                 cookies = [cookies for cookies in f.read().split(sep) if cookies]
-            cookies = {k_v.split(cont)[0]: cont.join(k_v.split(cont)[1:]) for k_v in cookies}
+            cookies = [{k_v.split(cont)[0]: cont.join(k_v.split(cont)[1:]) for k_v in _cookies} for _cookies in cookies]
         elif type == 'json':
             with open(path, 'r') as f:
                 cookies = json.load(f)
+                if not isinstance(cookies, list):
+                    cookies = [cookies]
+        else:
+            raise ValueError(f"cookies file type {repr(type)} not supported, supported types are {repr(_supported_file_types)}.")
         cookies = cookies[id2rank(id)]
         return cookies
 
@@ -272,6 +281,8 @@ class ProxiesSetter(ArgSetter):
 class UserAgentSetter(ArgSetter):
     @staticmethod
     def _random(id, arg_group, type='random', **kwargs):
+        if isinstance(ua.browsers, str):
+            ua.browsers = [ua.browsers]
         if type not in ua.browsers + ['random']:
             raise ValueError(f"user-agent random type {repr(type)} not supported, supported types are {repr(ua.browsers + ['random'])}.")
         return ua[type]
@@ -313,12 +324,13 @@ class MiddleWareSetter(ArgSetter):
     pass
 
 
+"""
 class ArgKeeper(ArgRootType):
-    """
+    \"""
         `ArgKeeper` is used to set and maintain value for an arg in `ArgManager`. It shares similarity with `ArgSetter` that both of them are used to set value for an arg, but they are different in that `ArgKeeper` is used to set and maintain value for an arg in the long run, while `ArgSetter` is used to set value for an arg only once.
         
         `ArgKeeper` should only be used to instantiate `ArgManager`.
-    """
+    \"""
     _all_supported_keepers = {
         'fixed': lambda state, **kwargs: state.previous_value,
     }
@@ -346,6 +358,7 @@ class _ArgKeeper(ArgKeeper):
     _all_supported_keepers = {
         'fixed': lambda state, **kwargs: state.previous_value,
     }
+"""
 
 
 # ------------------------------------ Module Postprocess ------------------------------------ #
@@ -364,8 +377,8 @@ def _module_postprocess():
         if var_name in __all__:
             if issubclass(var_value, ArgSetter):
                 module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_setters.items()}
-            elif issubclass(var_value, ArgKeeper):
-                module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_keepers.items()}
+            # elif issubclass(var_value, ArgKeeper):
+            #     module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_keepers.items()}
     import json
     logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
     with open(f'docs/refs/{__name__}.json', 'w') as f:

@@ -15,26 +15,20 @@ class Session(RootType):
     """
         `Session` is responsible for requesting items, each subclass on behalf a different request lib, except for `Session` itself.
     """
-    _request_lib: str = 'not_set'   # SUBCLASS
-    _async_lib: str = 'not_set'     # SUBCLASS
-    _all_supported_methods: Dict[str, Callable] = {
-        'get': lambda session, item: None,
-        'post': lambda session, item: None,
-    } # SUBCLASS, you should implement functions for each of these different requesting methods
-    
+    _request_lib: str = 'not_set'   # SUBCLASS, set this to the name of the request lib
+    _async_lib: str = 'not_set'     # SUBCLASS, set this to the name of the async lib, 'none' if not async
+
     def __init__(
         self,
         session_args: AttrDict,
     ):
         super().__init__()
         self._get_logger()
-        self._args = session_args
-        self._session = None
-        self._no_session = None
-        
+        self._session = self._get_session(session_args)
+
     def _get_session(
         self,
-        item: Item,
+        session_args: AttrDict
     ):
         """
             Here you should implement session/no_session getting for correspoding request lib.
@@ -46,32 +40,40 @@ class Session(RootType):
         self,
         item: Item
     ) -> Any:
-        method_func = self._get_func_recursive(item.method, self._all_supported_methods)
-        session = self._get_session(item)
-        return method_func(session, item)
+        """
+            Here you should implement session requesting for correspoding request lib.
+            
+            Note that if `self._async_lib` is not 'none', then this method should be async.
+        """
+        ...
+    # SUBCLASS
     
     def close(
         self,
     ):
         """
             Here you should implement session closing for correpoding request lib.
+            
+            Note that if `self._async_lib` is not 'none', then this method should be async.
         """
         ...
     # SUBCLASS
-    
-    
+
+
 class _Session(Session):
     _request_lib: str = 'not_set'
     _async_lib: str = 'not_set'
-    _all_supported_methods: Dict[str, Callable] = {
-        'get': lambda session, item: None,
-        'post': lambda session, item: None,
-    }
-        
+
     def _get_session(
         self,
-        item: Item,
+        session_args: AttrDict
     ):
+        ...
+    
+    def request(
+        self,
+        item: Item
+    ) -> Any:
         ...
     
     def close(
@@ -83,15 +85,17 @@ class _Session(Session):
 class RequestsSession(Session):
     _request_lib: str = 'requests'
     _async_lib: str = 'none'
-    _all_supported_methods: Dict[str, Callable] = {
-        'get': lambda session, item: None,
-        'post': lambda session, item: None,
-    }
-        
+
     def _get_session(
         self,
-        item: Item,
+        session_args: AttrDict
     ):
+        ...
+    
+    def request(
+        self,
+        item: Item
+    ) -> Any:
         ...
     
     def close(
@@ -103,18 +107,20 @@ class RequestsSession(Session):
 class AioHTTPSession(Session):
     _request_lib: str = 'aiohttp'
     _async_lib: str = 'asyncio'
-    _all_supported_methods: Dict[str, Callable] = {
-        'get': lambda session, item: None,
-        'post': lambda session, item: None,
-    }
-        
+
     def _get_session(
         self,
-        item: Item,
+        session_args: AttrDict
     ):
         ...
     
-    def close(
+    async def request(
+        self,
+        item: Item
+    ) -> Any:
+        ...
+    
+    async def close(
         self,
     ):
         ...
@@ -123,18 +129,20 @@ class AioHTTPSession(Session):
 class AsksSession(Session):
     _request_lib: str = 'asks'
     _async_lib: str = 'trio'
-    _all_supported_methods: Dict[str, Callable] = {
-        'get': lambda session, item: None,
-        'post': lambda session, item: None,
-    }
-        
+
     def _get_session(
         self,
-        item: Item,
+        session_args: AttrDict
     ):
         ...
     
-    def close(
+    async def request(
+        self,
+        item: Item
+    ) -> Any:
+        ...
+    
+    async def close(
         self,
     ):
         ...

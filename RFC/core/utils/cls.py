@@ -35,17 +35,17 @@ class RootType():
 
     @staticmethod
     def _get_func_recursive(
-        func_name_path: Iterable[str] | Callable,
+        func_name_path: Iterable[str] | str,
         all_supported_funcs: RecursiveDictStr2Callable,
         note: str
     ):
-        if callable(func_name_path):
-            return func_name_path
         if isinstance(func_name_path, str):
             func_name_path = (func_name_path,)
         now_supported_funcs = all_supported_funcs
         func_name_path_repr = '.'.join(func_name_path)
         for func_name in func_name_path:
+            if callable(now_supported_funcs):
+                raise ValueError(f"{note} {repr(func_name_path_repr)} is not a valid {note}.")
             if func_name not in now_supported_funcs:
                 raise ValueError(f"{note} {repr(func_name_path_repr)} not supported, supported {note}s are {repr(list(now_supported_funcs.keys()))}.")
             now_supported_funcs = now_supported_funcs[func_name]
