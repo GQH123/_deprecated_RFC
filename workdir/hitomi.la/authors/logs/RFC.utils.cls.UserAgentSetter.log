@@ -1,0 +1,9 @@
+2024-01-28 00:33:30,160 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.UserAgentSetter.__init__)
+[DEBUG] UserAgentSetter initiated with setter tuple 'random'.
+
+2024-01-28 00:33:30,160 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.UserAgentSetter.__init__)
+[DEBUG] UserAgentSetter(UserAgentSetter._random()) parsed setter <staticmethod(<function UserAgentSetter._random at 0x7f5f3d13ad40>)> and setter args [].
+
+2024-01-28 00:33:30,161 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.UserAgentSetter.__init__)
+[INFO] UserAgentSetter(UserAgentSetter._random()) initiated with setter 'random'.
+

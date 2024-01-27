@@ -1,0 +1,9 @@
+2024-01-28 00:32:57,548 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.RefererSetter.__init__)
+[DEBUG] RefererSetter initiated with setter tuple 'host'.
+
+2024-01-28 00:32:57,549 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.RefererSetter.__init__)
+[DEBUG] RefererSetter(RefererSetter._host()) parsed setter <function RefererSetter._host at 0x7f5f3d13ac20> and setter args [].
+
+2024-01-28 00:32:57,549 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.RefererSetter.__init__)
+[INFO] RefererSetter(RefererSetter._host()) initiated with setter 'host'.
+

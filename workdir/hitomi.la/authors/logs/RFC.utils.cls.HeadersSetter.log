@@ -1,0 +1,9 @@
+2024-01-28 00:33:35,848 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.HeadersSetter.__init__)
+[DEBUG] HeadersSetter initiated with setter tuple 'switch'.
+
+2024-01-28 00:33:35,848 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.HeadersSetter.__init__)
+[DEBUG] HeadersSetter(HeadersSetter._switch()) parsed setter <staticmethod(<function HeadersSetter._switch at 0x7f5f3d13add0>)> and setter args [].
+
+2024-01-28 00:33:35,849 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.HeadersSetter.__init__)
+[INFO] HeadersSetter(HeadersSetter._switch()) initiated with setter 'switch'.
+

@@ -1,0 +1,9 @@
+2024-01-28 00:33:39,926 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.StreamSetter.__init__)
+[DEBUG] StreamSetter initiated with setter tuple ('fixed', False).
+
+2024-01-28 00:33:39,927 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.StreamSetter.__init__)
+[DEBUG] StreamSetter(ArgSetter._fixed(False)) parsed setter <function ArgSetter._fixed at 0x7f5f3d13a7a0> and setter args [False].
+
+2024-01-28 00:33:39,927 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.StreamSetter.__init__)
+[INFO] StreamSetter(ArgSetter._fixed(False)) initiated with setter 'fixed'.
+
