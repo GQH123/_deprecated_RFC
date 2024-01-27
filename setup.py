@@ -9,6 +9,9 @@ setup(
     author="Renatus",
     packages=find_packages(),
     entry_points={
+        "console_scripts": [
+            "rfc = RFC.user.main:main",
+        ],
     },
     install_requires=[],
     include_package_data=True,
