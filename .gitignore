@@ -1,4 +1,6 @@
 .vscode
+workdir/
+test_RFC/
 
 
 # Byte-compiled / optimized / DLL files
