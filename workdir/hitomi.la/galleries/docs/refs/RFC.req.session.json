@@ -1,0 +1,17 @@
+{
+    "'RequestsSession'": {
+        "lib": "'not_set'",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "None",
+        "headers": "{}"
+    },
+    "'AioHTTPSession'": {
+        "lib": "'not_set'",
+        "no_session": "False"
+    },
+    "'AsksSession'": {
+        "lib": "'not_set'",
+        "no_session": "False"
+    }
+}

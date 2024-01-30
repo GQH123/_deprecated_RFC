@@ -1,0 +1,12 @@
+{
+    "'StatusCodeMiddleware'": {
+        "expected_status_codes": "[200]"
+    },
+    "'BasicMiddleware'": {},
+    "'JSONMiddleware'": {},
+    "'ContentSaverMiddleware'": {},
+    "'StreamDownloaderMiddleware'": {
+        "chunk_size": "1024"
+    },
+    "'ResultSaverMiddleware'": {}
+}
