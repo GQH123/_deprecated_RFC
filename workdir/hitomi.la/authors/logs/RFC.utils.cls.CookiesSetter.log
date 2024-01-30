@@ -1,9 +1,0 @@
-2024-01-28 00:33:03,650 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.CookiesSetter.__init__)
-[DEBUG] CookiesSetter initiated with setter tuple ('fixed', {}).
-
-2024-01-28 00:33:03,651 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.CookiesSetter.__init__)
-[DEBUG] CookiesSetter(ArgSetter._fixed({})) parsed setter <function ArgSetter._fixed at 0x7f5f3d13a7a0> and setter args [{}].
-
-2024-01-28 00:33:03,651 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.CookiesSetter.__init__)
-[INFO] CookiesSetter(ArgSetter._fixed({})) initiated with setter 'fixed'.
-

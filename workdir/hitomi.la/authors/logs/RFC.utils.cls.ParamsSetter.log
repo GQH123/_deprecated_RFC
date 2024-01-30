@@ -1,9 +1,0 @@
-2024-01-28 00:33:10,220 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.ParamsSetter.__init__)
-[DEBUG] ParamsSetter initiated with setter tuple 'none'.
-
-2024-01-28 00:33:10,221 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.ParamsSetter.__init__)
-[DEBUG] ParamsSetter(ArgSetter._none()) parsed setter <function ArgSetter._none at 0x7f5f3d13a830> and setter args [].
-
-2024-01-28 00:33:10,221 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.ParamsSetter.__init__)
-[INFO] ParamsSetter(ArgSetter._none()) initiated with setter 'none'.
-

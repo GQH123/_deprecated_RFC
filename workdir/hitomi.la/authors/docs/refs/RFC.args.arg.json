@@ -1,4 +1,10 @@
 {
+    "'MethodSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "replace_id": "ArgSetter._replace_id({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
     "'URLSetter'": {
         "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
         "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
@@ -64,5 +70,12 @@
         "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
         "replace_id": "ArgSetter._replace_id({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
         "auto": "SaveDirSetter._auto({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'prefix': <Parameter \"prefix\">, 'sep': <Parameter \"sep\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'BloodlineSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "replace_id": "ArgSetter._replace_id({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "inherit": "BloodlineSetter._inherit({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, '_bld': <Parameter \"_bld=None\">, 'kwargs': <Parameter \"**kwargs\">})"
     }
 }

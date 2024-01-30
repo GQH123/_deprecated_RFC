@@ -1,9 +1,0 @@
-2024-01-28 00:32:49,111 <MainProcess:179245, MainThread:140047051478848> (arg.py:160, RFC.utils.cls.URLSetter.__init__)
-[DEBUG] URLSetter initiated with setter tuple 'not_set'.
-
-2024-01-28 00:32:49,111 <MainProcess:179245, MainThread:140047051478848> (arg.py:163, RFC.utils.cls.URLSetter.__init__)
-[DEBUG] URLSetter(ArgSetter._not_set()) parsed setter <staticmethod(<function ArgSetter._not_set at 0x7f5f3d13a710>)> and setter args [].
-
-2024-01-28 00:32:49,111 <MainProcess:179245, MainThread:140047051478848> (arg.py:164, RFC.utils.cls.URLSetter.__init__)
-[INFO] URLSetter(ArgSetter._not_set()) initiated with setter 'not_set'.
-

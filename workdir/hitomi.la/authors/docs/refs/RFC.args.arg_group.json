@@ -1,28 +1,37 @@
 {
-    "'MiddlewareArgs'": {},
+    "'StatusCodeMiddlewareArgs'": {
+        "expected_status_codes": "[200]"
+    },
+    "'BasicMiddlewareArgs'": {},
+    "'JSONMiddlewareArgs'": {},
+    "'SaverMiddlewareArgs'": {},
+    "'StreamDownloaderMiddlewareArgs'": {},
     "'SessionArgs'": {
         "lib": "None",
         "no_session": "False",
         "cookies": "{}",
-        "proxies": "None",
+        "proxies": "{}",
         "headers": "{}"
     },
     "'RequestorArgs'": {
         "nproc": "1",
-        "async_sema": "1"
+        "async_sema": "1",
+        "report_step": "100"
     },
     "'RequestArgGroup'": {
+        "method": "MethodSetter(ArgSetter._fixed('get'))",
         "url": "URLSetter(ArgSetter._not_set())",
         "referer": "RefererSetter(RefererSetter._host())",
         "cookies": "CookiesSetter(ArgSetter._fixed({}))",
         "params": "ParamsSetter(ArgSetter._none())",
         "payload": "PayloadSetter(ArgSetter._none())",
-        "proxies": "ProxiesSetter(ArgSetter._none())",
+        "proxies": "ProxiesSetter(ArgSetter._fixed({}))",
         "user_agent": "UserAgentSetter(UserAgentSetter._random())",
         "headers": "HeadersSetter(HeadersSetter._switch())",
         "stream": "StreamSetter(ArgSetter._fixed(False))"
     },
     "'ItemArgGroup'": {
-        "save_dir": "SaveDirSetter(ArgSetter._not_set())"
+        "save_dir": "SaveDirSetter(ArgSetter._not_set())",
+        "bloodline": "BloodlineSetter(BloodlineSetter._inherit())"
     }
 }
