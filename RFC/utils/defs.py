@@ -41,6 +41,7 @@ _itemStatusToName = {
     PROCESSING: "processing",
     FAILED: "failed",
     FINISHED: "finished",
+    GENERATING: "generating",
 }
 
 _nameToItemStatus = {
@@ -48,6 +49,7 @@ _nameToItemStatus = {
     "processing": PROCESSING,
     "failed": FAILED,
     "finished": FINISHED,
+    "generating": GENERATING,
 }
 
 allSupportedRequestLibsMapping = {}

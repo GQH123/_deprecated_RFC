@@ -1,5 +1,6 @@
 """ Logging utilities."""
 
+import inspect
 import logging
 import os
 import sys
@@ -28,7 +29,7 @@ log_levels = {
     "critical": logging.CRITICAL,
 }
 
-_default_log_level = logging.DEBUG
+_default_log_level = logging.INFO
 
 _tqdm_active = True
 
@@ -51,6 +52,31 @@ __all__ = [
     "reset_format",
     "warning_advice",
 ]
+
+
+class _RFCLogRecord(logging.LogRecord):
+    """
+    Custom LogRecord class with additional attributes.
+
+    This class is used to override the `getMessage` method of the `LogRecord` class.
+    """
+    def __init__(self, name, level, pathname, lineno,
+                 msg, args, exc_info, func=None, sinfo=None, **kwargs):
+        super().__init__(name, level, pathname, lineno,
+                         msg, args, exc_info, func, sinfo, **kwargs)
+        try:
+            st = inspect.stack()[5]
+            self.last_funcName = st.function
+            self.last_filename = os.path.split(st.filename)[-1]
+            self.last_lineno = st.lineno
+        except Exception:
+            unknown = '<unknown>'
+            self.last_funcName = unknown
+            self.last_filename = unknown
+            self.last_lineno = unknown
+
+
+logging.setLogRecordFactory(_RFCLogRecord)
 
 
 def _get_default_logging_level():
@@ -122,14 +148,14 @@ def get_logger(name: Optional[str] = None) -> logging.Logger:
     if name is None:
         name = _get_library_name()
 
-    _configure_library_root_logger()
+    # _configure_library_root_logger()
     logger = logging.getLogger(name)
     
-    _default_handler = logging.StreamHandler()  # Set sys.stderr as stream.
-    _default_handler.flush = sys.stderr.flush
+    # _default_handler = logging.StreamHandler()  # Set sys.stderr as stream.
+    # _default_handler.flush = sys.stderr.flush
 
     # Apply our default configuration to the library root logger.
-    logger.addHandler(_default_handler)
+    # logger.addHandler(_default_handler)
     logger.setLevel(_get_default_logging_level())
     logger.propagate = True
     
@@ -269,7 +295,7 @@ def enable_explicit_format(logger=None) -> None:
 
     for handler in handlers:
         # formatter = logging.Formatter("[%(levelname)s|%(filename)s:%(lineno)s] %(asctime)s >> %(message)s")
-        formatter = logging.Formatter("%(asctime)s <%(processName)s:%(process)d, %(threadName)s:%(thread)d> (%(filename)s:%(lineno)s, %(name)s.%(funcName)s)\n[%(levelname)s] %(message)s\n")
+        formatter = logging.Formatter("%(asctime)s <%(processName)s:%(process)d, %(threadName)s:%(thread)d> (%(last_filename)s:%(last_funcName)s:%(last_lineno)s -> %(filename)s:%(funcName)s:%(lineno)s) from logger `%(name)s`\n[%(levelname)s] %(message)s\n")
         handler.setFormatter(formatter)
         
         
@@ -305,7 +331,28 @@ def warning_advice(self, *args, **kwargs):
     if no_advisory_warnings:
         return
     self.warning(*args, **kwargs)
+    
+    
+def _add_file_handler_to_root_logger(
+    logger=None,
+    log_path=None,
+    enable_format=True,
+):
+    if logger is None:
+        logger = _get_library_root_logger()
+    if log_path is None:
+        log_path = '.'
+    log_path = os.path.join(log_path, logger.name+'.log')
+    log_dir = os.path.dirname(log_path)
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+    logger.addHandler(logging.FileHandler(log_path, mode='w', encoding='utf-8', delay=True))
+    if enable_format:
+        enable_explicit_format(logger)
 
 
 logging.Logger.warning_advice = warning_advice
+_configure_library_root_logger()
+_add_file_handler_to_root_logger()
 enable_explicit_format()
+# print(_get_library_root_logger().handlers)

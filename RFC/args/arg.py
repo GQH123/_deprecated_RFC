@@ -1,7 +1,11 @@
-from logging import FileHandler
-from typing import Callable, Any, Optional, Dict, List
+import os
+import json
+from urllib.parse import urlparse
+from fake_useragent import UserAgent
+ua = UserAgent()
 
-from ..utils.ds import AttrDict
+from typing import Callable, Any, Optional
+
 from ..utils.cls import RootType
 from ..utils.defs import (
     OptionalFunc,
@@ -11,13 +15,8 @@ from ..utils.defs import (
 from ..utils.log import get_logger
 from ..utils.attr import get_func_param
 
-import os
-import json
-from urllib.parse import urlparse
-from fake_useragent import UserAgent
-ua = UserAgent()
-
 __all__ = [
+    'MethodSetter',
     'URLSetter',
     'RefererSetter',
     'CookiesSetter',
@@ -28,9 +27,11 @@ __all__ = [
     'HeadersSetter',
     'StreamSetter',
     'SaveDirSetter',
+    'BloodlineSetter',
 ]
 
 logger = get_logger(__name__)
+logger.info(f"importing module {__name__}")
 
 
 class ArgRootTypeMeta(type):
@@ -66,13 +67,14 @@ class ArgRootType(RootType, metaclass=ArgRootTypeMeta):
         self,
     ):
         super().__init__()
-        self._get_logger()
+        # self.__class__._get_logger(__name__)
 
 
+"""
 class ArgCaster(ArgRootType):
-    """
+    \"""
         `ArgCaster` separate caster part of `ArgSetter` to make it simpler, and to implement other arg utilities more easily.
-    """
+    \"""
     _all_supported_casters: RecursiveDictStr2Callable = {
         'to': {
             'none': lambda x: x,
@@ -99,11 +101,11 @@ class ArgCaster(ArgRootType):
         from_caster: RobustOptionalFuncArgsTuple = None,
         to_caster: RobustOptionalFuncArgsTuple = None,
     ) -> Any:
-        """
+        \"""
             `<caster>` is used to convert value to different types/formats, which has two types, `from_caster` and `to_caster`. `from_caster` is used to cast value from `<setter>` to the inner type, `to_caster` is used to cast value from the inner type to other types. `<caster>` can be a string or a function which accepts `<value>` and returns `<casted_value>`.
             
             This method is used to convert the value type by `<from_caster>` and `<to_caster>`.
-        """
+        \"""
         if from_caster is not None:
             from_caster, from_caster_args = cls._parse_func_arg_tuple(from_caster)
             from_caster = cls._get_caster_func(from_caster, to=False)
@@ -124,6 +126,7 @@ class _ArgCaster(ArgCaster):
             'none': lambda x: x,
         }
     }
+"""
 
 
 class ArgSetter(ArgRootType):
@@ -132,6 +135,8 @@ class ArgSetter(ArgRootType):
         
         `ArgSetter` should only be used to instantiate `ArgGroup`.
     """
+    _name: str = 'argsetter'
+
     @staticmethod
     def _not_set(id, arg_group, **kwargs):
         raise ValueError(f"arg {repr(kwargs['self'])} not set in {repr(arg_group)}")
@@ -157,18 +162,19 @@ class ArgSetter(ArgRootType):
             `<setter>` is used to set value, which may be a direct value or a function which accepts `<id>` and `<arg_group>` for setting different `Item`s in an `Itemset` with flexible references to other args in corresponding `ArgGroup`.
         """
         super().__init__()
+        ArgSetter._get_logger(__name__, level='debug', propagate=False)
         self._logger.debug(f"{self.__class__.__name__} initiated with setter tuple {repr(setter)}.")
         setter, self.setter_args = self._parse_func_arg_tuple(setter)
         self.setter = self._get_setter_func(setter)
         self._logger.debug(f"{repr(self)} parsed setter {repr(self.setter)} and setter args {repr(self.setter_args)}.")
-        self._logger.info(f"{repr(self)} initiated with setter {repr(setter)}.")
+        self._logger.debug(f"{repr(self)} initiated with setter {repr(setter)}.")
 
-    def __call__(self, id: Any, arg_group: Any) -> Any:
+    def __call__(self, id: Any, arg_group: Any, *extra_args, **extra_kwargs) -> Any:
         """
             This is used in `ArgGroup` for generating args for that group. Should not be called by user.
         """
-        result = self.setter(id, arg_group, *self.setter_args, self=self)
-        self._logger.info(f"{repr(self)} called, result: {repr(result)}.")
+        result = self.setter(id, arg_group, *self.setter_args, *extra_args, self=self, **extra_kwargs)
+        self._logger.debug(f"{repr(self)} called, result: {repr(result)}.")
         return result
 
     def __repr__(self):
@@ -190,7 +196,7 @@ class RequestArgSetter(ArgSetter):
             This method is used to get the name of `to_caster` function from the `<request_lib>`, which will be used in `__call__` method.
         \"""
         caster = 'none'
-        self._logger.info(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
+        self._logger.debug(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
         return caster
     # SUBCLASS
     
@@ -203,7 +209,7 @@ class RequestArgSetter(ArgSetter):
     
     def __call__(self, id: Any, arg_group: Any, request_lib: str) -> Any:
         result = self.cast(self.setter(id, arg_group, *self.setter_args, self=self), to_caster=self._get_caster_by_request_lib(request_lib))
-        self._logger.info(f"{repr(self)} called, result: {repr(result)}.")
+        self._logger.debug(f"{repr(self)} called, result: {repr(result)}.")
         return result
 
 
@@ -222,9 +228,13 @@ class _RequestArgSetter(RequestArgSetter):
     }
     def _get_caster_by_request_lib(self, request_lib: str) -> FuncName:
         caster = 'none'
-        self._logger.info(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
+        self._logger.debug(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
         return caster
 """
+
+
+class MethodSetter(ArgSetter):
+    pass
 
 
 class URLSetter(ArgSetter):
@@ -324,17 +334,24 @@ class HeadersSetter(ArgSetter):
 class SaveDirSetter(ArgSetter):
     @staticmethod
     def _auto(id, arg_group, prefix, sep, **kwargs):
-        bloodline = kwargs.get('bloodline', [])
-        bloodline_path = prefix
-        for item_type, item_id in bloodline:
-            bloodline_path = os.path.join(bloodline_path, repr(item_id), sep)
-        bloodline_path = os.path.join(bloodline_path, repr(id))
-        return bloodline_path
+        save_dir = os.path.join(prefix, sep.join([repr(item_id) for item_type_name, item_id in arg_group.bloodline]))
+        return save_dir
 
     _all_supported_setters = {
         'auto': _auto,
     }
 
+
+class BloodlineSetter(ArgSetter):
+    @staticmethod
+    def _inherit(id, arg_group, _bld=None, **kwargs):
+        if _bld is None:
+            _bld = []
+        return _bld + [(kwargs['_item_type'], id)]
+
+    _all_supported_setters = {
+        'inherit': _inherit,
+    }
 
 """
 class ArgKeeper(ArgRootType):
@@ -358,11 +375,11 @@ class ArgKeeper(ArgRootType):
         super().__init__()
         keeper, self.keeper_args = self._parse_func_arg_tuple(keeper)
         self.keeper = self._get_keeper_func(keeper)
-        self._logger.info(f"{repr(self)} initiated with keeper {repr(keeper)}.")
+        self._logger.debug(f"{repr(self)} initiated with keeper {repr(keeper)}.")
 
     def __call__(self, state: AttrDict) -> Any:
         result = self.keeper(state, *self.keeper_args)
-        self._logger.info(f"{repr(self)} called, result: {repr(result)}.")
+        self._logger.debug(f"{repr(self)} called, result: {repr(result)}.")
         return result
 
 
@@ -391,9 +408,12 @@ def _module_postprocess():
                 module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_setters.items()}
             # elif issubclass(var_value, ArgKeeper):
             #     module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_keepers.items()}
-    import json
+    module_ref_path = 'docs/refs'
+    if not os.path.exists(module_ref_path):
+        os.makedirs(module_ref_path)
     logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
-    with open(f'docs/refs/{__name__}.json', 'w') as f:
+    with open(os.path.join(module_ref_path, f'{__name__}.json'), 'w') as f:
         json.dump(module_report, f, indent=4, ensure_ascii=False)
 
 _module_postprocess()
+logger.info(f"module {__name__} imported")

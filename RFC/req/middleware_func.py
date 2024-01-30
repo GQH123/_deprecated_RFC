@@ -3,6 +3,11 @@ import cgi
 import mimetypes
 from tqdm import tqdm
 
+from ..utils.log import get_logger
+
+logger = get_logger(__name__)
+logger.info(f"importing module {__name__}")
+
 
 def get_status_code(resp, request_lib):
     if request_lib == 'requests':
@@ -107,3 +112,8 @@ def get_stream_sync(resp, request_lib, path, chunk_size, logger=None):
             logger.info(f"downloaded stream to {repr(path)}")
     else:
         raise ValueError(f"unsupported request_lib {repr(request_lib)}")
+
+
+# ------------------------------------ Module Postprocess ------------------------------------ #
+
+logger.info(f"module {__name__} imported")

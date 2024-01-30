@@ -22,20 +22,25 @@ class AttrDict(dict):
             setattr(self, key, value)
         
     def __setattr__(self, name, value):
-        super().__setattr__(name, value)
         super().__setitem__(name, value)
+        self.__dict__[name] = value
         
     def __setitem__(self, name, value):
         self.__setattr__(name, value)
         
     def __getattr__(self, name):
-        try:
-            return super().__getattr__(name)
-        except AttributeError:
-            return None
+        return None
         
     def __getitem__(self, name):
-        return self.__getattr__(name)
+        return self.__getattribute__(name)  # DO NOT USE self.__getattr__(name), this is wrong
+    
+    """
+    def __getstate__(self):  # for pickle in multiprocessing
+        return self.__dict__
+    
+    def __setstate__(self, _dict):
+        self.__dict__ = _dict
+    """
 
 
 class FrozenDict(OrderedDict):

@@ -1,4 +1,6 @@
-from typing import Mapping, Dict, Any, List
+import os
+import json
+from typing import Dict, Any, List
 
 from ..utils.ds import AttrDict
 from ..utils.cls import RootType
@@ -17,24 +19,56 @@ from .arg import ArgSetter
 __all__ = [
     'RequestArgGroup',
     'ItemArgGroup',
-    'MiddlewareArgs',
     'RequestorArgs',
     'SessionArgs',
+    'StatusCodeMiddlewareArgs',
+    'BasicMiddlewareArgs',
+    'JSONMiddlewareArgs',
+    'SaverMiddlewareArgs',
+    'StreamDownloaderMiddlewareArgs',
 ]
 
 logger = get_logger(__name__)
+logger.info(f"importing module {__name__}")
 
 
-class Args(AttrDict, RootType):
+class ArgsMeta(type):
+    keyword = ['_defined_args', '_required_args']
+
+    def __new__(cls, clsname, bases, attrs):
+        for name, val in attrs.items():
+            if name not in cls.keyword:
+                continue
+            if isinstance(val, dict):
+                inherited = {}
+                for base in bases:
+                    if hasattr(base, name):
+                        inherited.update(getattr(base, name))
+                inherited.update(val)
+            elif isinstance(val, list):
+                inherited = []
+                for base in bases:
+                    if hasattr(base, name):
+                        inherited += getattr(base, name)
+                inherited += val
+            else:
+                continue
+            attrs[name] = inherited
+        return super().__new__(cls, clsname, bases, attrs)
+
+
+class Args(AttrDict, RootType, metaclass=ArgsMeta):
+    _name: str = 'args'
+    
     _defined_args: AttrDict = AttrDict()    # SUBCLASS, define args in this group, str as arg name, ArgSetter as default for this arg
     _required_args: List[str] = []          # SUBCLASS, required args
     
     def __init__(
         self,
-        **args: Any,
+        args: Any,
     ):
         _args = {}
-        self._get_logger()
+        Args._get_logger(__name__, level='debug', propagate=False)
         for arg in args:
             if arg not in self._defined_args:
                 self._logger.warning(f"arg {repr(arg)} not defined in {repr(self)}")
@@ -47,21 +81,26 @@ class Args(AttrDict, RootType):
                 _args[defined_arg] = self._defined_args[defined_arg]
                 self._logger.info(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
         super().__init__(_args)
+        
+    def __repr__(self):
+        return f'{repr(self.__class__.__qualname__)}({repr({key: value for key, value in self.items() if key in self._defined_args})})'
 
 
 class ArgGroup(RootType):
+    _name: str = 'arggroup'
+    
     _defined_args: Dict[str, ArgSetter] = {}  # SUBCLASS, define args in this group, str as arg name, ArgSetter as default for this arg
     
     def __init__(
         self,
-        **args: ArgSetter | RobustOptionalFuncArgsTuple,
+        args: ArgSetter | RobustOptionalFuncArgsTuple,
     ):
         """
             Set `ArgSetter` for defined args in this group, will use default if not.
         """
         super().__init__()
         self._args = {}  # must set `eslf._args` before calling `self._get_logger` because the latter will call `self.__getattr__` to get `self._name` args
-        self._get_logger()
+        ArgGroup._get_logger(__name__, level='debug', propagate=False)
         for arg in args:
             if arg not in self._defined_args:
                 self._logger.warning(f"arg {repr(arg)} not defined in {repr(self)}")
@@ -94,7 +133,6 @@ class ArgGroup(RootType):
         for arg in self._args:
             if arg not in self._status:
                 self._path = []
-                self._status[arg] = UNVISITED
                 self.__getattr__(arg)
         return self._args_value
 
@@ -106,6 +144,8 @@ class ArgGroup(RootType):
         """
         if arg not in self._args:
             raise AttributeError(f"arg {repr(arg)} is not defined in {repr(self)}")
+        if arg not in self._status:
+            self._status[arg] = UNVISITED
         if self._status[arg] == UNVISITED:
             self._path.append(arg)
             self._status[arg] = VISITING
@@ -130,9 +170,30 @@ class _Args(Args):
     
 
 class MiddlewareArgs(Args):
+    pass
+    
+    
+class StatusCodeMiddlewareArgs(MiddlewareArgs):
     _defined_args: AttrDict = AttrDict({
+        'expected_status_codes': [200],
     })
     _required_args: List[str] = []
+
+
+class BasicMiddlewareArgs(MiddlewareArgs):
+    pass
+
+
+class JSONMiddlewareArgs(MiddlewareArgs):
+    pass
+
+
+class SaverMiddlewareArgs(MiddlewareArgs):
+    pass
+
+
+class StreamDownloaderMiddlewareArgs(MiddlewareArgs):
+    pass
 
 
 class SessionArgs(Args):
@@ -140,7 +201,7 @@ class SessionArgs(Args):
         'lib': None,
         'no_session': False,
         'cookies': {},
-        'proxies': None,  # example: {'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}
+        'proxies': {},  # example: {'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}
         'headers': {},
     })
     _required_args: List[str] = ['lib']
@@ -150,7 +211,9 @@ class RequestorArgs(Args):
     _defined_args: AttrDict = AttrDict({
         'nproc': 1,
         'async_sema': 1,
+        'report_step': 100,
     })
+    _required_args: List[str] = []
 
 
 class _ArgGroup(ArgGroup):
@@ -160,12 +223,13 @@ class _ArgGroup(ArgGroup):
 
 class RequestArgGroup(ArgGroup):
     _defined_args: Dict[str, ArgSetter] = {
+        'method': MethodSetter(('fixed', 'get')),
         'url': URLSetter('not_set'),                # `url`         is required, not set will raise error
         'referer': RefererSetter('host'),           # `referer`     is default to host of `url`
         'cookies': CookiesSetter(('fixed', {})),      # `cookies`     default to empty dict
         'params': ParamsSetter('none'),             # `params`      default to None
         'payload': PayloadSetter('none'),           # `payload`     default to None
-        'proxies': ProxiesSetter('none'),           # `proxies`     default to None
+        'proxies': ProxiesSetter(('fixed', {})),           # `proxies`     default to None
         'user_agent': UserAgentSetter('random'),    # `user-agent`  is randomly set by convention
         'headers': HeadersSetter('switch'),         # `headers`     can switch to different headers templates
         'stream': StreamSetter(('fixed', False)),     # `stream`      default to False
@@ -175,6 +239,7 @@ class RequestArgGroup(ArgGroup):
 class ItemArgGroup(ArgGroup):
     _defined_args: Dict[str, ArgSetter] = {
         'save_dir': SaveDirSetter('not_set'),       # `save_dir`    is required, not set will raise error
+        'bloodline': BloodlineSetter('inherit'),    # `bloodline`   is required, not set will raise error
     }
 
 
@@ -185,9 +250,12 @@ def _module_postprocess():
     for var_name, var_value in globals().items():
         if var_name in __all__:
             module_report[repr(var_value.__qualname__)] = {name: repr(setter) for name, setter in var_value._defined_args.items()}
-    import json
     logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
-    with open(f'docs/refs/{__name__}.json', 'w') as f:
+    module_ref_path = 'docs/refs'
+    if not os.path.exists(module_ref_path):
+        os.makedirs(module_ref_path)
+    with open(os.path.join(module_ref_path, f'{__name__}.json'), 'w') as f:
         json.dump(module_report, f, indent=4, ensure_ascii=False)
 
 _module_postprocess()
+logger.info(f"module {__name__} imported")

@@ -11,7 +11,19 @@ __all__ = [
     'retry',
     'save_object',
     'load_object',
+    'get_prev_module_name',
 ]
+
+
+def get_prev_module_name(
+    level: int,
+) -> str:
+    try:
+        frame = inspect.getmodule(inspect.stack()[level][0])
+        assert frame is not None
+        return frame.__name__
+    except Exception:
+        return '<unknown>'
 
 
 def retry(
@@ -151,7 +163,7 @@ def save_object(obj, path, mode='auto', logger=None, raise_exception=False):
             raise e
         else:
             if logger is not None:
-                error_report = f'[{type(e)}] {e}'
+                error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
                 logger.warning(f"failed to save {repr(obj)} with mode {repr(mode)} to {repr(path)}, caught exception {repr(error_report)}")
 
 
@@ -193,6 +205,6 @@ def load_object(path, mode='auto', logger=None, default_return=None, raise_excep
             raise e
         else:
             if logger is not None:
-                error_report = f'[{type(e)}] {e}'
+                error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
                 logger.warning(f"failed to load {repr(path)} with mode {repr(mode)}, caught exception {repr(error_report)}")
             return default_return

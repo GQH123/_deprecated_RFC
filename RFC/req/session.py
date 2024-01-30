@@ -1,30 +1,33 @@
+import os
+import json
 from typing import Callable, Dict, Any
 
 from ..utils.log import get_logger
 from ..utils.cls import RootType
 from ..utils.ds import AttrDict
-from ..item.item import Item
+# from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
 
 logger = get_logger(__name__)
+logger.info(f"importing module {__name__}")
 
 try:
     import requests
 except Exception as e:
-    error_report = f'[{repr(e).__name__}] {repr(e)}'
+    error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
     logger.warning(f"failed to import requests, caught error {error_report}")
     requests = None
 
 try:
     import aiohttp
 except Exception as e:
-    error_report = f'[{repr(e).__name__}] {repr(e)}'
+    error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
     logger.warning(f"failed to import aiohttp, caught error {error_report}")
     aiohttp = None
 
 try:
     import asks
 except Exception as e:
-    error_report = f'[{repr(e).__name__}] {repr(e)}'
+    error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
     logger.warning(f"failed to import asks, caught error {error_report}")
     asks = None
 
@@ -52,13 +55,16 @@ class SessionMeta(type):
         return super().__new__(cls, clsname, bases, attrs)
 
 
-class Session(AttrDict, RootType):
+class Session(AttrDict, RootType, metaclass=SessionMeta):
     """
         `Session` is responsible for requesting items, each subclass on behalf a different request lib, except for `Session` itself.
     """
+    _name: str = 'session'  # SUBCLASS
+    
     _request_lib: str = 'not_set'   # SUBCLASS, set this to the name of the request lib
     _async_lib: str = 'not_set'     # SUBCLASS, set this to the name of the async lib, 'none' if not async
     _defined_args = {
+        'lib': 'not_set',
         'no_session': False,
     }  # SUBCLASS, expected init args with default value for this session
 
@@ -66,10 +72,11 @@ class Session(AttrDict, RootType):
         self,
         session_args: AttrDict
     ):
+        self._get_logger_self(__name__)
         _args = AttrDict()
         for arg in session_args:
             if arg not in self._defined_args:
-                self._logger.warning(f"arg {repr(arg)} not defined in {repr(self)}")
+                self._logger.warning(f"arg {repr(arg)} not defined")
                 continue
             _args[arg] = session_args[arg]
         for defined_arg in self._defined_args:
@@ -77,10 +84,9 @@ class Session(AttrDict, RootType):
                 _args[defined_arg] = self._defined_args[defined_arg]
                 self._logger.info(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
         super().__init__(_args)
-        self._get_logger()
         self._logger.info("initialized")
         self._session = self._get_session()
-        self._logger.info(f"session created in {repr(self)}")
+        self._logger.info(f"session created, {repr(self)}")
 
     def _get_session(
         self,
@@ -93,7 +99,7 @@ class Session(AttrDict, RootType):
     
     def request(
         self,
-        item: Item
+        item,
     ) -> Any:
         """
             Here you should implement session requesting for correspoding request lib.
@@ -113,9 +119,16 @@ class Session(AttrDict, RootType):
         """
         ...
     # SUBCLASS
+    
+    def __repr__(self):
+        cls_repr = f'{repr(self.__class__.__qualname__)}'
+        args_repr = repr({args: self[args] for args in self._defined_args})
+        return f'{cls_repr}({args_repr})'
 
 
 class _Session(Session):
+    _name: str = ...
+    
     _request_lib: str = 'not_set'
     _async_lib: str = 'not_set'
     _defined_args = {
@@ -128,7 +141,7 @@ class _Session(Session):
     
     def request(
         self,
-        item: Item
+        item,
     ) -> Any:
         ...
     
@@ -139,6 +152,8 @@ class _Session(Session):
 
 
 class RequestsSession(Session):
+    _name: str = 'session_requests'
+
     _request_lib: str = 'requests'
     _async_lib: str = 'none'
     _defined_args = {
@@ -168,7 +183,7 @@ class RequestsSession(Session):
         
     def request(
         self,
-        item: Item
+        item,
     ) -> Any:
         """
         return self._session.request(
@@ -214,6 +229,8 @@ class RequestsSession(Session):
 
 
 class AioHTTPSession(Session):
+    _name: str = 'session_aiohttp'
+
     _request_lib: str = 'aiohttp'
     _async_lib: str = 'asyncio'
     _defined_args = {
@@ -226,7 +243,7 @@ class AioHTTPSession(Session):
     
     async def request(
         self,
-        item: Item
+        item,
     ) -> Any:
         ...
     
@@ -237,6 +254,8 @@ class AioHTTPSession(Session):
     
     
 class AsksSession(Session):
+    _name: str = 'session_asks'
+
     _request_lib: str = 'asks'
     _async_lib: str = 'trio'
     _defined_args = {
@@ -249,7 +268,7 @@ class AsksSession(Session):
     
     async def request(
         self,
-        item: Item
+        item,
     ) -> Any:
         ...
     
@@ -267,21 +286,19 @@ _nameToSession = {
     'asks': AsksSession
 }
 
-__all__ = [cls.__name__ for cls in list(_nameToSession.keys())] + ['get_session']
+__all__ = [cls.__name__ for cls in list(_nameToSession.values())] + ['get_session']
 
 
 def get_session(session_args: AttrDict, logger=None):
-    session_name = session_args.lib
-    if session_name not in _nameToSession:
-        if logger is not None:
-            logger.warning(f"session {repr(session_name)} not defined, all session defined are {repr(list(_nameToSession.keys()))}")
     try:
-        session = _nameToSession[session_name](session_args[session_name])
+        session_name = session_args.lib
+        session = _nameToSession[session_name](session_args)
         return session
     except Exception as e:
         if logger is not None:
-            error_report = f'[{repr(e).__name__}] {repr(e)}'
-            logger.warning(f"failed to initialize session {repr(session_name)} with args {repr(session_args[session_name])}, caught error {error_report}")
+            error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
+            logger.error(f"failed to initialize session {repr(session_name)} with args {repr(session_args[session_name])}, caught error {error_report}")
+        raise e
 
 
 def _module_postprocess():
@@ -289,10 +306,13 @@ def _module_postprocess():
     for var_name, var_value in globals().items():
         if var_name in __all__ and isinstance(var_value, type):
             module_report[repr(var_value.__qualname__)] = {name: repr(setter) for name, setter in var_value._defined_args.items()}
-    import json
     logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
-    with open(f'docs/refs/{__name__}.json', 'w') as f:
+    module_ref_path = 'docs/refs'
+    if not os.path.exists(module_ref_path):
+        os.makedirs(module_ref_path)
+    with open(os.path.join(module_ref_path, f'{__name__}.json'), 'w') as f:
         json.dump(module_report, f, indent=4, ensure_ascii=False)
 
 
 _module_postprocess()
+logger.info(f"module {__name__} imported")

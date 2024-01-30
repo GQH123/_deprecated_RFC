@@ -1,9 +1,7 @@
 # import weakref
 # from weakref import ref
-import random
 from time import time
-from multiprocessing.managers import ListProxy
-from typing import Any, Callable, Dict, Mapping
+from typing import Any, Callable, Dict
 
 from ..utils.ds import AttrDict
 from ..utils.cls import RootType
@@ -14,18 +12,19 @@ from ..utils.defs import (
     FINISHED,
     GENERATING,
     _itemStatusToName,
-    RFC_GLOBAL_MANAGER,
-    RFC_GLOBAL_LOCK,
 )
 from ..args.arg_group import (
-    ArgGroup,
-    RequestorArgs,
-    SessionArgs,
-    MiddlewareArgs
+    # ArgGroup,
+    RequestArgGroup,
+    ItemArgGroup,
 )
-from ..req.requestor import Requestor
-from ..req.middleware import get_middleware
-from ..req.session import get_session
+from ..utils.log import get_logger
+
+logger = get_logger(__name__)
+logger.info(f"importing module {__name__}")
+
+from .queue import RootQueue
+from .entry import Entry
 
 __all__ = [
     'ItemType'
@@ -38,6 +37,8 @@ class Item(AttrDict, RootType):
         
         Note that `item`s may be arranged to and crawled in different threads/processings. Any raised errors will not be able to interrupt the main process, they will be handled and recorded in each `item` separately.
     """
+    _name: str = 'item'
+    
     def __init__(
         self,
         args: AttrDict,
@@ -50,13 +51,13 @@ class Item(AttrDict, RootType):
         if 'save_dir' not in args:
             raise ValueError(f"no save_dir in {repr(args)}, which is required for items")
         super().__init__(args)
-        self._get_logger(name=repr(self), log_path=self.save_dir)  # type: ignore
+        self._get_logger_self(name=f"{self.bloodline[-1][0]}({repr(self.bloodline[-1][1])})", log_path=self.save_dir, level='info')  # type: ignore
         self._status = None     
         self._timestamp = {}                        # Dict[str, int | str], timestamp of each status
         self._generate = generate
         
     def __repr__(self):
-        return f"{self.bloodline[-1][0].__name__}({repr(self.id)})"  # type: ignore
+        return '.'.join([f"{bloodline_item[0]}({repr(bloodline_item[1])})" for bloodline_item in self.bloodline])
 
     def _status_check(self, status: int):
         if status not in _itemStatusToName:
@@ -97,7 +98,7 @@ class Item(AttrDict, RootType):
             return
         self._update_status(GENERATING)
         try:
-            self._generate(result)
+            self._generate(id=self.id, result=result)
         except Exception as e:
             self._update_status(FAILED)
             raise e
@@ -106,6 +107,8 @@ class Item(AttrDict, RootType):
 
 
 class ItemTypeMeta(type):
+    keyword = ['_defined_args']
+
     def __new__(cls, clsname, bases, attrs):
         for name, val in attrs.items():
             if not isinstance(val, dict) or name not in cls.keyword:
@@ -116,68 +119,48 @@ class ItemTypeMeta(type):
                     inherited_dict.update(getattr(base, name))
             inherited_dict.update(val)
             attrs[name] = inherited_dict
-        return super().__new__(cls, clsname, bases, attrs)
+        new_cls = super().__new__(cls, clsname, bases, attrs)
+        new_cls._get_logger(__name__, level='info')
+        return new_cls
 
 
-class ItemType(RootType, metaclass=ItemTypeMeta):
-    _defined_arg_groups: Dict[str, ArgGroup] = {    # define arg_groups in this ItemType, str as group name, ArgGroup as default for this group
-    } # SUBCLASS
+class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
+    """
+        `ItemType` serves as the unit of requesting, which is normally responsible for a repetitious kind of a crawler target, such as pages of a website, or a specific kind of API.
+        
+        When trying to crawl a whole website, there can be many such intermediate targets organized in a tree-like structure, and `ItemType` can be regarded as the representation of each node in the tree.
+        
+        `ItemType` should not be instantiated, you should subclass it and define `ArgGroup`s in class definition.
+    """
+    _name: str = 'itemtype'  # SUBCLASS
     
-    requestor_args: RequestorArgs = RequestorArgs()         # SUBCLASS
-    session_args: dict[str, MiddlewareArgs] = {}            # SUBCLASS
-    middleware_args: SessionArgs = SessionArgs()            # SUBCLASS
-
-    _root_item_queue = RFC_GLOBAL_MANAGER.list()  # : ListProxy[Item], queue of items to be processed
-    _started: bool = False
-    _logger = None
+    # _defined_arg_groups: Dict[str, ArgGroup] = {    # define arg_groups in this ItemType, str as group name, ArgGroup as default for this group
+    # } # SUBCLASS
     
-    # _item_queue: ListProxy[ref[Item]] = RFC_GLOBAL_MANAGER.list() # SUBCLASS, queue of weakref to items in this ItemType, should be subclassed  # deprecated, cannot maintain weakref across multi-processings
-
-    def __init__(self):
-        """
-            `ItemType` serves as the unit of requesting, which is normally responsible for a repetitious kind of a crawler target, such as pages of a website, or a specific kind of API.
-            
-            When trying to crawl a whole website, there can be many such intermediate targets organized in a tree-like structure, and `ItemType` can be regarded as the representation of each node in the tree.
-            
-            `ItemType` should not be instantiated, you should subclass it and define `ArgGroup`s in class definition.
-        """
-        raise ValueError(f"{repr(self)} should never be called")
+    request_arg_group: dict = {}  # : RequestArgGroup = RequestArgGroup()  # SUBCLASS
+    item_arg_group: dict = {}  # : ItemArgGroup = ItemArgGroup()           # SUBCLASS
     
+    requestor_args: dict = {}  # : RequestorArgs = RequestorArgs()         # SUBCLASS
+    middleware_args: dict = {}  # : dict[str, MiddlewareArgs] = {}         # SUBCLASS
+    session_args: dict = {}  # : SessionArgs = SessionArgs(lib='not_set')  # SUBCLASS
+
+    # _session = None       # OPTIONAL[SUBCLASS]
+    # _middleware = None    # OPTIONAL[SUBCLASS]
+    # _requestor = None     # OPTIONAL[SUBCLASS]
+    _logger = None          # OPTIONAL[SUBCLASS]
+
     def __new__(cls, id, *extra_args, **extra_kwargs):
         """
             Call `ArgGroup`s in this `ItemType`.
         """
         args_value = {}
-        for arg_group in cls._defined_arg_groups:
-            args_value.update(cls._defined_arg_groups[arg_group](id, *extra_args, **extra_kwargs))
+        # for arg_group in cls._defined_arg_groups:
+        #     args_value.update(cls._defined_arg_groups[arg_group](id, *extra_args, **extra_kwargs))
+        args_value.update(RequestArgGroup(cls.request_arg_group)(id, *extra_args, **extra_kwargs))
+        args_value.update(ItemArgGroup(cls.item_arg_group)(id, *extra_args, _item_type=cls.__name__, **extra_kwargs))
         if 'id' not in args_value:
             args_value['id'] = id
         return Item(AttrDict(args_value), cls._generate)
-    
-    """
-    @classmethod
-    def _remove_item_weakref(cls, _ref):
-        if _ref in cls._item_queue:
-            cls._item_queue.remove(_ref)
-    """
-    
-    @classmethod
-    def _add_item(cls, id: Any, *extra_args, **extra_kwargs) -> None:
-        """
-            Add a new item to the queue of this `ItemType`.
-        """
-        item = cls(id, *extra_args, **extra_kwargs)
-        item.pend()  # type: ignore # now the item is of type `Item` but not `ItemType`
-        with RFC_GLOBAL_LOCK:
-            cls._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
-        # cls._item_queue.append(weakref.ref(item, cls._remove_item_weakref))
-        
-    @classmethod
-    def fetch(cls):
-        with RFC_GLOBAL_LOCK:
-            if not cls._root_item_queue:
-                return None
-            return cls._root_item_queue.pop()
 
     @classmethod
     def _generate(cls, id: Any, result: Any) -> None:
@@ -186,50 +169,51 @@ class ItemType(RootType, metaclass=ItemTypeMeta):
 
             New items should be added directly through class method `_add_item` of other `ItemType`s. This function should not return anything.
             
-            Note that you should add new items in reversee order. Because `item`s will be fetched from the end of the queue, so that the newly added `item`s will be processed first.
+            Note that you should add new items in reversed order. Because `item`s will be fetched from the end of the queue, so that the newly added `item`s will be processed first.
         """
+        # NewItemType._add_items(new_ids_parsed_from_result)
         pass
     # SUBCLASS
     
     @classmethod
-    def start(cls, ids, debug=False, debug_n=10) -> None:
+    def _add_items(cls, ids, *extra_args, **extra_kwargs) -> None:
         """
-            Start crawling with given `ids`. This is the MAIN ENTRY of the RFC, which I decided to place in `ItemType`. So in fact `ItemType` is the most important class in RFC. With such design, you could only import `ItemType`, subclass it to make your new `ItemType`s, and call its `start` method to start crawling, without accessing to any other RFC modules.
-            
-            `ItemType` can only be started once. You should call `start` method only on your entry `ItemType`.
+            Add new items to `RootQueue`.
         """
-        if cls._logger is None:
-            cls._get_logger()
-        if cls._started:
-            cls._logger.warning(f"{repr(cls)} has already been started, cannot start again")
-            return
-        try:
-            if debug:
-                cls._logger.info(f"debug mode, only {debug_n} randomly selected items will be crawled")
-                random.shuffle(ids)
-                ids = ids[:debug_n]
-                cls._session = get_session(cls.session_args)
-                cls._middleware = get_middleware(cls.middleware_args)
-                cls._requestor = Requestor(cls._session, cls._middleware, cls.requestor_args)
-            for id in ids:
-                cls._add_item(id)  # add entry items
-        except Exception as e:
-            error_report = f'[{repr(e).__name__}] {repr(e)}'
-            cls._logger.info(f"{repr(cls)} failed to start, caught error {error_report}")
-            raise e
-        cls._started = True
-        cls._logger.info(f"{repr(cls)} started")
-        cls._requestor.run()
+        if cls.__name__ not in cls._item_type_register:
+            cls._item_type_register[cls.__name__] = cls
+        for id in ids[::-1]:  # add new items in reversed order
+            # item = cls(id, *extra_args, **extra_kwargs)
+            # item.pend()     # type: ignore # now the item is of type `Item` but not `ItemType`
+            cls._add((cls.__name__, id, extra_args, extra_kwargs))  # add items to root queue
 
+    # @classmethod
+    # def register(cls):
+    #     cls._item_type_register[cls.__name__] = cls
+        
     @classmethod
     def __repr__(cls):
         return f"{cls.__name__}({repr(cls._defined_arg_groups)})"
 
 
 class _ItemType(ItemType):
-    # _item_queue: ListProxy[ref[Item]] = RFC_GLOBAL_MANAGER.list()
-    _defined_arg_groups: Dict[str, ArgGroup] = {
-    }
+    _name: str = '_itemtype'
+    
+    request_arg_group: dict = {}
+    item_arg_group: dict = {}
+
+    requestor_args: dict = {}
+    middleware_args: dict = {}
+    session_args: dict = {}
+    
+    # include those in your subclass `ItemType` if you want to use its own `logger`
+    _logger = None      # OPTIONAL[SUBCLASS]
+
     @classmethod
     def _generate(cls, id: Any, result: Any) -> None:
         ...
+
+
+# ------------------------------------ Module Postprocess ------------------------------------ #
+
+logger.info(f"module {__name__} imported")

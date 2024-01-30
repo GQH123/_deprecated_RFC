@@ -1,11 +1,19 @@
 import os
+import json
 from typing import Any, Dict
 
 from ..utils.cls import RootType
 from ..utils.ds import AttrDict
 from ..utils.func import save_object
 from ..utils.log import get_logger
-from ..item.item import Item
+# from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
+from ..args.arg_group import (
+    StatusCodeMiddlewareArgs,
+    BasicMiddlewareArgs,
+    JSONMiddlewareArgs,
+    SaverMiddlewareArgs,
+    StreamDownloaderMiddlewareArgs,
+)
 
 from .middleware_func import (
     get_status_code,
@@ -19,6 +27,7 @@ from .middleware_func import (
 )
 
 logger = get_logger(__name__)
+logger.info(f"importing module {__name__}")
 
 
 class MiddlewareMeta(type):
@@ -38,6 +47,8 @@ class MiddlewareMeta(type):
 
 
 class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
+    _name: str = 'middleware'  # SUBCLASS
+    
     _defined_args = {
     }  # SUBCLASS, expected init args with default value for this middleware
 
@@ -45,24 +56,24 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
         self,
         middleware_args: AttrDict
     ):
+        self._get_logger_self(__name__, level='info')
         _args = AttrDict()
         for arg in middleware_args:
             if arg not in self._defined_args:
-                self._logger.warning(f"arg {repr(arg)} not defined in {repr(self)}")
+                self._logger.warning(f"arg {repr(arg)} not defined")
                 continue
             _args[arg] = middleware_args[arg]
         for defined_arg in self._defined_args:
             if defined_arg not in _args:
                 _args[defined_arg] = self._defined_args[defined_arg]
-                self._logger.info(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
+                self._logger.warning(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
         super().__init__(_args)
-        self._get_logger()
         self._logger.info("initialized")
 
 
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
@@ -71,7 +82,7 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
@@ -82,7 +93,7 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
     def _handle_error(
         self,
         error: Exception,
-        item: Item,
+        item,
         result: AttrDict,
     ):
         raise error
@@ -90,41 +101,56 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
         
     def apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
         try:
+            self._logger.info(f"applying on {repr(item)}, received {repr(result)}")
+            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input {repr(result)}")
             _result = self._apply_sync(item, result, request_lib)
-            self._logger.info(f"applied on {repr(item)}")
+            self._logger.info(f"applied on {repr(item)}, sent {repr(_result)}")
+            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output {repr(_result)}")
             return _result
         except Exception as e:
             self._logger.info(f"failed on {repr(item)}, caught error {repr(e)}")
+            item._logger.info(f"failed middleware {repr(self)} on {repr(item)}, caught error {repr(e)}")
             self._handle_error(e, item, result)
 
     async def apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
     ):
         try:
+            self._logger.info(f"applying on {repr(item)}, received {repr(result)}")
+            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input {repr(result)}")
             _result = await self._apply_async(item, result, request_lib, async_lib)
-            self._logger.info(f"applied on {repr(item)}")
+            self._logger.info(f"applied on {repr(item)}, sent {repr(_result)}")
+            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output {repr(_result)}")
             return _result
         except Exception as e:
             self._logger.info(f"failed on {repr(item)}, caught error {repr(e)}")
+            item._logger.info(f"failed middleware {repr(self)} on {repr(item)}, caught error {repr(e)}")
             self._handle_error(e, item, result)
+    
+    def __repr__(self):
+        cls_repr = f'{repr(self.__class__.__qualname__)}'
+        args_repr = repr({args: self[args] for args in self._defined_args})
+        return f'{cls_repr}({args_repr})'
 
 
 class _Middleware(Middleware):
+    _name: str = ...
+
     _defined_args = {
     }
 
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
@@ -132,7 +158,7 @@ class _Middleware(Middleware):
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
@@ -141,13 +167,15 @@ class _Middleware(Middleware):
 
 
 class StatusCodeMiddleware(Middleware):
+    _name: str = 'middleware_status_code'
+
     _defined_args = {
         'expected_status_codes': [200],
     }
 
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
@@ -159,7 +187,7 @@ class StatusCodeMiddleware(Middleware):
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
@@ -168,23 +196,25 @@ class StatusCodeMiddleware(Middleware):
 
 
 class BasicMiddleware(Middleware):
+    _name: str = 'middleware_basic'
+    
     _defined_args = {
     }
     
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
         result.filename = get_filename(result.response, request_lib, repr(item.id))         # type: ignore
         result.fileext = get_fileext(result.response, request_lib)                          # type: ignore
-        result.save_path = os.path.join(item.save_path, result.filename + result.fileext)   # type: ignore
+        result.save_path = os.path.join(item.save_dir, result.filename + result.fileext)   # type: ignore
         return result
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
@@ -193,12 +223,14 @@ class BasicMiddleware(Middleware):
 
 
 class JSONMiddleware(Middleware):
+    _name: str = 'middleware_json'
+    
     _defined_args = {
     }
 
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
@@ -207,7 +239,7 @@ class JSONMiddleware(Middleware):
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
@@ -217,43 +249,50 @@ class JSONMiddleware(Middleware):
 
 
 class SaverMiddleware(Middleware):
+    _name: str = 'middleware_saver'
+    
     _defined_args = {
     }
     
-    def _save(self, result, content):
+    def _save(self, item, result, content):
         if 'save_path' not in result:
             self._logger.warning(f"no save_path in {repr(result)}, skipped save, use BasicMiddleware before saving")
+            item._logger.warning(f"no save_path in {repr(result)}, skipped save in {repr(self)}, use BasicMiddleware before saving")
             return
         save_object(content, result.save_path, 'auto', self._logger)
     
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
         content = result.json if 'json' in result else get_content_sync(result.response, request_lib)  # type: ignore
-        self._save(result, content)
+        self._save(item, result, content)
+        return result
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
     ):
         content = result.json if 'json' in result else await get_content_async(result.response, request_lib)  # type: ignore
-        self._save(result, content)
+        self._save(item, result, content)
+        return result
 
 
 class StreamDownloaderMiddleware(Middleware):
+    _name: str = 'middleware_stream_downloader'
+    
     _defined_args = {
         'chunk_size': 1024,
     }
 
     def _apply_sync(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
     ):
@@ -263,7 +302,7 @@ class StreamDownloaderMiddleware(Middleware):
 
     async def _apply_async(
         self,
-        item: Item,
+        item,
         result: AttrDict,
         request_lib: str,
         async_lib: str,
@@ -274,14 +313,14 @@ class StreamDownloaderMiddleware(Middleware):
 # ------------------------------------ Module Postprocess ------------------------------------ #
 
 _nameToMiddleware = {
-    'status_code': StatusCodeMiddleware,
-    'basic': BasicMiddleware,
-    'json': JSONMiddleware,
-    'saver': SaverMiddleware,
-    'stream_downloader': StreamDownloaderMiddleware,
+    'status_code': (StatusCodeMiddleware, StatusCodeMiddlewareArgs),
+    'basic': (BasicMiddleware, BasicMiddlewareArgs),
+    'json': (JSONMiddleware, JSONMiddlewareArgs),
+    'saver': (SaverMiddleware, SaverMiddlewareArgs),
+    'stream_downloader': (StreamDownloaderMiddleware, StreamDownloaderMiddlewareArgs),
 }
 
-__all__ = [cls.__name__ for cls in list(_nameToMiddleware.keys())] + ['get_middleware']
+__all__ = [cls[0].__name__ for cls in list(_nameToMiddleware.values())] + ['get_middleware']
 
 
 def get_middleware(middleware_args: AttrDict, logger=None):
@@ -291,11 +330,13 @@ def get_middleware(middleware_args: AttrDict, logger=None):
             if logger is not None:
                 logger.warning(f"middleware {repr(middleware_name)} not defined, all middleware defined are {repr(list(_nameToMiddleware.keys()))}")
         try:
-            middleware_list.append(_nameToMiddleware[middleware_name](middleware_args[middleware_name]))
+            middleware_cls, middleware_args_cls = _nameToMiddleware[middleware_name]
+            middleware_list.append(middleware_cls(middleware_args_cls(middleware_args[middleware_name])))
         except Exception as e:
             if logger is not None:
-                error_report = f'[{repr(e).__name__}] {repr(e)}'
+                error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
                 logger.warning(f"failed to initialize middleware {repr(middleware_name)} with args {repr(middleware_args[middleware_name])}, caught error {error_report}")
+            raise e
     return middleware_list
 
 
@@ -304,10 +345,14 @@ def _module_postprocess():
     for var_name, var_value in globals().items():
         if var_name in __all__ and isinstance(var_value, type):
             module_report[repr(var_value.__qualname__)] = {name: repr(setter) for name, setter in var_value._defined_args.items()}
-    import json
     logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
-    with open(f'docs/refs/{__name__}.json', 'w') as f:
+    module_ref_path = 'docs/refs'
+    if not os.path.exists(module_ref_path):
+        os.makedirs(module_ref_path)
+    with open(os.path.join(module_ref_path, f'{__name__}.json'), 'w') as f:
         json.dump(module_report, f, indent=4, ensure_ascii=False)
 
 
 _module_postprocess()
+
+logger.info(f"module {__name__} imported")

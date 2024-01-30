@@ -5,6 +5,9 @@ from typing import Callable, Iterable
 from .log import (
     get_logger,
     enable_explicit_format,
+    _get_library_name,
+    log_levels,
+    _default_log_level,
 )
 from .defs import (
     RecursiveDictStr2Callable,
@@ -59,20 +62,85 @@ class RootType():
     def __init__(self):
         pass
     
-    def _get_logger(self, name=None, log_path=None, add_file_handler=True, enable_format=True):
-        name = name or getattr(self, '_name', None)
-        if name:
-            name = '.'.join([__name__, self.__class__.__name__, name])
-        else:
-            name = '.'.join([__name__, self.__class__.__name__])
-        self._logger = get_logger(name)
+    @classmethod
+    def _get_logger(
+        cls,
+        prefix=None,
+        name=None,
+        log_path=None,
+        add_file_handler=True,
+        enable_format=True,
+        level=_default_log_level,
+        propagate=True,
+    ):
+        if getattr(cls, '_logger', None) is not None:
+            # cls._logger.info(f"logger already exists in {repr(cls)}")
+            return
+        if isinstance(level, str):
+            level = log_levels[level]
+        if not isinstance(level, int):
+            raise ValueError(f"level {repr(level)} is not a valid log level.")
+        name = name or getattr(cls, '_name', None)
+        if name is None:
+            name_list = []
+            if prefix is not None:
+                name_list.append(prefix)
+            name_list.append(cls.__name__)
+            name = '.'.join(name_list)
+        logger_name = name
+        if not logger_name.startswith(_get_library_name()+'.'):
+            logger_name = _get_library_name()+'.'+logger_name
+        cls._logger = get_logger(logger_name)
+        cls._logger.setLevel(level)
         if add_file_handler:
             if log_path is None:
                 log_path = './logs'
             log_path = os.path.join(log_path, name+'.log')
-            self._logger.addHandler(FileHandler(log_path, mode='w', encoding='utf-8'))
+            log_dir = os.path.dirname(log_path)
+            if not os.path.exists(log_dir):
+                os.makedirs(log_dir)
+            cls._logger.addHandler(FileHandler(log_path, mode='w', encoding='utf-8', delay=True))
+        if enable_format:
+            enable_explicit_format(cls._logger)
+        cls._logger.propagate = propagate
+    
+    def _get_logger_self(
+        self,
+        prefix=None,
+        name=None,
+        log_path=None,
+        add_file_handler=True,
+        enable_format=True,
+        level=_default_log_level,
+        propagate=True,
+    ):
+        if isinstance(level, str):
+            level = log_levels[level]
+        if not isinstance(level, int):
+            raise ValueError(f"level {repr(level)} is not a valid log level.")
+        name = name or getattr(self, '_name', None)
+        if name is None:
+            name_list = []
+            if prefix is not None:
+                name_list.append(prefix)
+            name_list.append(self.__class__.__name__)
+            name = '.'.join(name_list)
+        logger_name = name
+        if not logger_name.startswith(_get_library_name()+'.'):
+            logger_name = _get_library_name()+'.'+logger_name
+        self._logger = get_logger(logger_name)
+        self._logger.setLevel(level)
+        if add_file_handler:
+            if log_path is None:
+                log_path = './logs'
+            log_path = os.path.join(log_path, name+'.log')
+            log_dir = os.path.dirname(log_path)
+            if not os.path.exists(log_dir):
+                os.makedirs(log_dir)
+            self._logger.addHandler(FileHandler(log_path, mode='w', encoding='utf-8', delay=True))
         if enable_format:
             enable_explicit_format(self._logger)
+        self._logger.propagate = propagate
     
     def __repr__(self):
         return f'{repr(self.__class__.__qualname__)}'
