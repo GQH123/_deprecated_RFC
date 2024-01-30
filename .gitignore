@@ -2,7 +2,7 @@
 saves/
 test_RFC/
 logs/
-RFC.log
+*.log
 
 
 # Byte-compiled / optimized / DLL files
