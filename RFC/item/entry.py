@@ -4,7 +4,6 @@ from ..utils.cls import RootType
 from ..args.arg_group import (
     RequestorArgs,
     SessionArgs,
-    MiddlewareArgs
 )
 from ..req.middleware import get_middleware
 from ..req.session import get_session
@@ -44,10 +43,9 @@ class Entry(RootType):
                 cls._logger.info(f"debug mode, only {debug_n} randomly selected items will be crawled")
                 random.shuffle(ids)
                 ids = ids[:debug_n]
-                cls._session = get_session(SessionArgs(cls.session_args), cls._logger)
-                cls._middleware = get_middleware(cls.middleware_args, cls._logger)
-                cls._requestor = Requestor(cls._session, cls._middleware, RequestorArgs(cls.requestor_args))
-                # print(cls._session, cls._middleware, cls._requestor)
+            cls._session = get_session(SessionArgs(cls.session_args), cls._logger)
+            cls._middleware = get_middleware(cls.middleware_args, cls._logger)
+            cls._requestor = Requestor(cls._session, cls._middleware, RequestorArgs(cls.requestor_args))
             cls._add_items(ids, *extra_args, **extra_kwargs)
         except Exception as e:
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}'

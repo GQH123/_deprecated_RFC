@@ -6,6 +6,11 @@ from ..utils.log import get_logger
 from ..utils.cls import RootType
 from ..utils.ds import AttrDict
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
+from ..args.arg_group import (
+    RequestsSessionArgs,
+    AioHTTPSessionArgs,
+    AsksSessionArgs,
+)
 
 logger = get_logger(__name__)
 logger.info(f"importing module {__name__}")
@@ -160,6 +165,7 @@ class RequestsSession(Session):
         'cookies': {},
         'proxies': None,  # example: {'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}
         'headers': {},
+        'stream': False,
     }
 
     def _get_session(
@@ -170,7 +176,7 @@ class RequestsSession(Session):
             s.request = requests.request  # request method is the key method of requests.Session
         else:
             if requests is None:
-                raise ValueError(f"request_lib {repr(self._request_lib)} is not supported in this environment")
+                raise ValueError(f"request_lib {repr(self._request_lib)} is not supported")
             s = requests.Session()
             if self.cookies:
                 s.cookies = requests.cookies.cookiejar_from_dict(self.cookies)
@@ -207,20 +213,26 @@ class RequestsSession(Session):
             **item.kwargs,
         )
         """
-        return self._session.request(
-            method = item.method,
+        _headers = item.headers or {}
+        if item.user_agent:
+            _headers['user-agent'] = item.user_agent
+        if item.referer:
+            _headers['referer'] = item.referer
+        _headers = _headers or None
+        _proxies = item.proxies or None
+        _cookies = item.cookies or None
+        request_args = dict(
+            method=item.method,
             url=item.url,
             params=item.params,
             data=item.payload,
-            headers=item.headers.update({
-                'user-agent': item.user_agent,
-                'referer': item.referer,
-            }),
+            headers=_headers,
             allow_redirects=True,
-            cookies=item.cookies,
-            proxies=item.proxies,
-            stream=item.stream,  # is you want to use StreamDownloadersession, this must be True
-        )  # only support these args for now
+            cookies=_cookies,
+            proxies=_proxies,
+            stream=self.stream,  # is you want to use StreamDownloadersession, this must be True
+        )
+        return self._session.request(**request_args)
     
     def close(
         self,
@@ -234,23 +246,62 @@ class AioHTTPSession(Session):
     _request_lib: str = 'aiohttp'
     _async_lib: str = 'asyncio'
     _defined_args = {
+        'cookies': {},
+        'proxies': None,
+        'headers': {},
+        'chunked_size': None,
     }
 
     def _get_session(
         self,
     ):
-        ...
+        return None  # lazy init
+    
+    async def _lazy_init(
+        self,
+    ):
+        if self.no_session:
+            s = AttrDict()
+            s.request = aiohttp.request  # request method is the key method of requests.Session
+        else:
+            if aiohttp is None:
+                raise ValueError(f"request_lib {repr(self._request_lib)} is not supported")
+            s = aiohttp.ClientSession(cookies=self.cookies or {}, headers=self.headers or {})
+        return s
     
     async def request(
         self,
         item,
     ) -> Any:
-        ...
+        if self._session is None:
+            self._session = await self._lazy_init()
+        _headers = item.headers or {}
+        if item.user_agent:
+            _headers['user-agent'] = item.user_agent
+        if item.referer:
+            _headers['referer'] = item.referer
+        _headers = _headers or None
+        _proxies = item.proxies or self._proxies or None
+        if isinstance(_proxies, dict):
+            _proxies = list(_proxies.values())[0]
+        _cookies = item.cookies or None
+        request_args = dict(
+            method=item.method,
+            url=item.url,
+            params=item.params,
+            data=item.payload,
+            headers=_headers,
+            allow_redirects=True,
+            cookies=_cookies,
+            proxy=_proxies,
+            chunked=self.chunked_size,
+        )
+        return await self._session.request(**request_args)
     
     async def close(
         self,
     ):
-        ...
+        await self._session.close()
     
     
 class AsksSession(Session):
@@ -281,18 +332,19 @@ class AsksSession(Session):
 # ------------------------------------ Module Postprocess ------------------------------------ #
 
 _nameToSession = {
-    'requests': RequestsSession,
-    'aiohttp': AioHTTPSession,
-    'asks': AsksSession
+    'requests': (RequestsSession, RequestsSessionArgs),
+    'aiohttp': (AioHTTPSession, AioHTTPSessionArgs),
+    'asks': (AsksSession, AsksSessionArgs),
 }
 
-__all__ = [cls.__name__ for cls in list(_nameToSession.values())] + ['get_session']
+__all__ = [cls[0].__name__ for cls in list(_nameToSession.values())] + ['get_session']
 
 
 def get_session(session_args: AttrDict, logger=None):
     try:
         session_name = session_args.lib
-        session = _nameToSession[session_name](session_args)
+        session_cls, session_args_cls = _nameToSession[session_name]
+        session = session_cls(session_args_cls(session_args))
         return session
     except Exception as e:
         if logger is not None:

@@ -11,8 +11,9 @@ from ..args.arg_group import (
     StatusCodeMiddlewareArgs,
     BasicMiddlewareArgs,
     JSONMiddlewareArgs,
-    SaverMiddlewareArgs,
     StreamDownloaderMiddlewareArgs,
+    ResultSaverMiddlewareArgs,
+    ContentSaverMiddlewareArgs
 )
 
 from .middleware_func import (
@@ -106,11 +107,11 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
         request_lib: str,
     ):
         try:
-            self._logger.info(f"applying on {repr(item)}, received {repr(result)}")
-            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input {repr(result)}")
+            self._logger.info(f"applying on {repr(item)}, received")
+            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
             _result = self._apply_sync(item, result, request_lib)
-            self._logger.info(f"applied on {repr(item)}, sent {repr(_result)}")
-            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output {repr(_result)}")
+            self._logger.info(f"applied on {repr(item)}, sent")
+            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
             return _result
         except Exception as e:
             self._logger.info(f"failed on {repr(item)}, caught error {repr(e)}")
@@ -125,11 +126,11 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
         async_lib: str,
     ):
         try:
-            self._logger.info(f"applying on {repr(item)}, received {repr(result)}")
-            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input {repr(result)}")
+            self._logger.info(f"applying on {repr(item)}, received")
+            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
             _result = await self._apply_async(item, result, request_lib, async_lib)
-            self._logger.info(f"applied on {repr(item)}, sent {repr(_result)}")
-            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output {repr(_result)}")
+            self._logger.info(f"applied on {repr(item)}, sent")
+            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
             return _result
         except Exception as e:
             self._logger.info(f"failed on {repr(item)}, caught error {repr(e)}")
@@ -207,8 +208,8 @@ class BasicMiddleware(Middleware):
         result: AttrDict,
         request_lib: str,
     ):
-        result.filename = get_filename(result.response, request_lib, repr(item.id))         # type: ignore
-        result.fileext = get_fileext(result.response, request_lib)                          # type: ignore
+        result.filename = get_filename(result.response, request_lib, str(item.id))         # type: ignore
+        result.fileext = get_fileext(result.response, request_lib)                         # type: ignore
         result.save_path = os.path.join(item.save_dir, result.filename + result.fileext)   # type: ignore
         return result
 
@@ -248,18 +249,18 @@ class JSONMiddleware(Middleware):
         return result
 
 
-class SaverMiddleware(Middleware):
-    _name: str = 'middleware_saver'
+class ContentSaverMiddleware(Middleware):
+    _name: str = 'middleware_content_saver'
     
     _defined_args = {
     }
     
-    def _save(self, item, result, content):
+    def _save(self, item, result):
         if 'save_path' not in result:
-            self._logger.warning(f"no save_path in {repr(result)}, skipped save, use BasicMiddleware before saving")
-            item._logger.warning(f"no save_path in {repr(result)}, skipped save in {repr(self)}, use BasicMiddleware before saving")
+            self._logger.warning(f"no save_path found, skipped save, use BasicMiddleware before saving")
+            item._logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
             return
-        save_object(content, result.save_path, 'auto', self._logger)
+        save_object(result.content, result.save_path, 'auto', self._logger)
     
     def _apply_sync(
         self,
@@ -267,8 +268,8 @@ class SaverMiddleware(Middleware):
         result: AttrDict,
         request_lib: str,
     ):
-        content = result.json if 'json' in result else get_content_sync(result.response, request_lib)  # type: ignore
-        self._save(item, result, content)
+        result.content = result.json if 'json' in result else get_content_sync(result.response, request_lib)  # type: ignore
+        self._save(item, result)
         return result
 
     async def _apply_async(
@@ -278,8 +279,8 @@ class SaverMiddleware(Middleware):
         request_lib: str,
         async_lib: str,
     ):
-        content = result.json if 'json' in result else await get_content_async(result.response, request_lib)  # type: ignore
-        self._save(item, result, content)
+        result.content = result.json if 'json' in result else await get_content_async(result.response, request_lib)  # type: ignore
+        self._save(item, result)
         return result
 
 
@@ -297,7 +298,7 @@ class StreamDownloaderMiddleware(Middleware):
         request_lib: str,
     ):
         if 'save_path' not in result:
-            raise ValueError(f"no save_path in {repr(result)}, use BasicMiddleware before downloading stream")
+            raise ValueError(f"no save_path found, use BasicMiddleware before downloading stream")
         return get_stream_sync(result.response, request_lib, result.save_path, self.chunk_size)  # type: ignore
 
     async def _apply_async(
@@ -310,13 +311,44 @@ class StreamDownloaderMiddleware(Middleware):
         raise NotImplementedError
 
 
+class ResultSaverMiddleware(Middleware):
+    _name: str = 'middleware_result_saver'
+    
+    _defined_args = {
+    }
+
+    def _apply_sync(
+        self,
+        item,
+        result: AttrDict,
+        request_lib: str,
+    ):
+        _result = AttrDict()
+        exclude = ['response', 'content'] if item.is_leaf else ['response']  # TODO, add is_leaf arg for item
+        for key in result:
+            if key not in exclude:
+                _result[key] = result[key]
+        save_object(_result, os.path.join(item.save_dir, '_result.pkl'), 'pkl', self._logger)
+        return result
+
+    async def _apply_async(
+        self,
+        item,
+        result: AttrDict,
+        request_lib: str,
+        async_lib: str,
+    ):
+        return self._apply_sync(item, result, request_lib)
+
+
 # ------------------------------------ Module Postprocess ------------------------------------ #
 
 _nameToMiddleware = {
     'status_code': (StatusCodeMiddleware, StatusCodeMiddlewareArgs),
     'basic': (BasicMiddleware, BasicMiddlewareArgs),
     'json': (JSONMiddleware, JSONMiddlewareArgs),
-    'saver': (SaverMiddleware, SaverMiddlewareArgs),
+    'result_saver': (ResultSaverMiddleware, ResultSaverMiddlewareArgs),
+    'content_saver': (ContentSaverMiddleware, ContentSaverMiddlewareArgs),
     'stream_downloader': (StreamDownloaderMiddleware, StreamDownloaderMiddlewareArgs),
 }
 

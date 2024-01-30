@@ -1,5 +1,6 @@
 import os
 import json
+import string
 from urllib.parse import urlparse
 from fake_useragent import UserAgent
 ua = UserAgent()
@@ -140,12 +141,17 @@ class ArgSetter(ArgRootType):
     @staticmethod
     def _not_set(id, arg_group, **kwargs):
         raise ValueError(f"arg {repr(kwargs['self'])} not set in {repr(arg_group)}")
+    
+    @staticmethod
+    def _field(id, arg_group, template, **kwargs):
+        kwargs['id'] = id
+        return template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
         
     _all_supported_setters = {
         'fixed': lambda id, arg_group, value, **kwargs: value,
         'none': lambda id, arg_group, **kwargs: None,
         'not_set': _not_set,
-        'replace_id': lambda id, arg_group, template, **kwargs: template.format(id=id),
+        'field': _field,
     }
     # SUBCLASS
 
@@ -162,7 +168,7 @@ class ArgSetter(ArgRootType):
             `<setter>` is used to set value, which may be a direct value or a function which accepts `<id>` and `<arg_group>` for setting different `Item`s in an `Itemset` with flexible references to other args in corresponding `ArgGroup`.
         """
         super().__init__()
-        ArgSetter._get_logger(__name__, level='debug', propagate=False)
+        ArgSetter._get_logger(__name__, level='info', propagate=False)
         self._logger.debug(f"{self.__class__.__name__} initiated with setter tuple {repr(setter)}.")
         setter, self.setter_args = self._parse_func_arg_tuple(setter)
         self.setter = self._get_setter_func(setter)
@@ -321,6 +327,7 @@ class HeadersSetter(ArgSetter):
                 'Accept-Encoding': 'gzip, deflate, br',
                 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7,en-GB;q=0.6,ru;q=0.5',
             },
+            'none': {},
         }
         if type not in options:
             raise ValueError(f"headers type {repr(type)} not supported, supported types are {repr(list(options.keys()))}.")
@@ -334,7 +341,10 @@ class HeadersSetter(ArgSetter):
 class SaveDirSetter(ArgSetter):
     @staticmethod
     def _auto(id, arg_group, prefix, sep, **kwargs):
-        save_dir = os.path.join(prefix, sep.join([repr(item_id) for item_type_name, item_id in arg_group.bloodline]))
+        save_dir = prefix
+        for item_type_name, item_id in arg_group.bloodline[:-1]:
+            save_dir = os.path.join(save_dir, str(item_id), sep)
+        save_dir = os.path.join(save_dir, str(arg_group.bloodline[-1][1]))
         return save_dir
 
     _all_supported_setters = {
@@ -345,6 +355,7 @@ class SaveDirSetter(ArgSetter):
 class BloodlineSetter(ArgSetter):
     @staticmethod
     def _inherit(id, arg_group, _bld=None, **kwargs):
+        _bld = kwargs.get('bloodline', None)
         if _bld is None:
             _bld = []
         return _bld + [(kwargs['_item_type'], id)]

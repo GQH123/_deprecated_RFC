@@ -34,13 +34,12 @@ class AttrDict(dict):
     def __getitem__(self, name):
         return self.__getattribute__(name)  # DO NOT USE self.__getattr__(name), this is wrong
     
-    """
     def __getstate__(self):  # for pickle in multiprocessing
         return self.__dict__
-    
-    def __setstate__(self, _dict):
-        self.__dict__ = _dict
-    """
+
+    def __setstate__(self, state):
+        for k, v in state.items():
+            self.__setattr__(k, v)
 
 
 class FrozenDict(OrderedDict):

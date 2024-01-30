@@ -24,7 +24,8 @@ __all__ = [
     'StatusCodeMiddlewareArgs',
     'BasicMiddlewareArgs',
     'JSONMiddlewareArgs',
-    'SaverMiddlewareArgs',
+    'ResultSaverMiddlewareArgs',
+    'ContentSaverMiddlewareArgs',
     'StreamDownloaderMiddlewareArgs',
 ]
 
@@ -188,11 +189,15 @@ class JSONMiddlewareArgs(MiddlewareArgs):
     pass
 
 
-class SaverMiddlewareArgs(MiddlewareArgs):
+class StreamDownloaderMiddlewareArgs(MiddlewareArgs):
     pass
 
 
-class StreamDownloaderMiddlewareArgs(MiddlewareArgs):
+class ResultSaverMiddlewareArgs(MiddlewareArgs):
+    pass
+
+
+class ContentSaverMiddlewareArgs(MiddlewareArgs):
     pass
 
 
@@ -207,11 +212,31 @@ class SessionArgs(Args):
     _required_args: List[str] = ['lib']
 
 
+class RequestsSessionArgs(SessionArgs):
+    _defined_args: AttrDict = AttrDict({
+        'stream': False,
+    })
+    _required_args: List[str] = []
+
+
+class AioHTTPSessionArgs(SessionArgs):
+    _defined_args: AttrDict = AttrDict({
+        'chunked_size': None,
+    })
+    _required_args: List[str] = []
+
+
+class AsksSessionArgs(SessionArgs):
+    pass
+
+
 class RequestorArgs(Args):
     _defined_args: AttrDict = AttrDict({
         'nproc': 1,
         'async_sema': 1,
         'report_step': 100,
+        'wait_timeout': 20,
+        'wait_sleep': 2,
     })
     _required_args: List[str] = []
 

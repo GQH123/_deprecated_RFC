@@ -12,6 +12,7 @@ from ..utils.defs import (
     FINISHED,
     GENERATING,
     _itemStatusToName,
+    get_global_lock,
 )
 from ..args.arg_group import (
     # ArgGroup,
@@ -57,7 +58,7 @@ class Item(AttrDict, RootType):
         self._generate = generate
         
     def __repr__(self):
-        return '.'.join([f"{bloodline_item[0]}({repr(bloodline_item[1])})" for bloodline_item in self.bloodline])
+        return '.'.join([f"{bloodline_item[0]}({str(bloodline_item[1])})" for bloodline_item in self.bloodline])
 
     def _status_check(self, status: int):
         if status not in _itemStatusToName:
@@ -98,7 +99,7 @@ class Item(AttrDict, RootType):
             return
         self._update_status(GENERATING)
         try:
-            self._generate(id=self.id, result=result)
+            self._generate(item=self, result=result)
         except Exception as e:
             self._update_status(FAILED)
             raise e
@@ -160,10 +161,11 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         args_value.update(ItemArgGroup(cls.item_arg_group)(id, *extra_args, _item_type=cls.__name__, **extra_kwargs))
         if 'id' not in args_value:
             args_value['id'] = id
+        cls._logger.info(f"item created with args:\n{repr(args_value)}")
         return Item(AttrDict(args_value), cls._generate)
 
     @classmethod
-    def _generate(cls, id: Any, result: Any) -> None:
+    def _generate(cls, item: Any, result: Any) -> None:
         """
             You need to parse the result first, then generate new items of some `ItemType`s.
 
@@ -180,8 +182,12 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         """
             Add new items to `RootQueue`.
         """
-        if cls.__name__ not in cls._item_type_register:
-            cls._item_type_register[cls.__name__] = cls
+        lock = get_global_lock()
+        with lock:
+            if cls._item_type_register is None:
+                RootQueue._lazy_init()
+            if cls.__name__ not in cls._item_type_register:
+                cls._item_type_register[cls.__name__] = cls
         for id in ids[::-1]:  # add new items in reversed order
             # item = cls(id, *extra_args, **extra_kwargs)
             # item.pend()     # type: ignore # now the item is of type `Item` but not `ItemType`
@@ -210,7 +216,7 @@ class _ItemType(ItemType):
     _logger = None      # OPTIONAL[SUBCLASS]
 
     @classmethod
-    def _generate(cls, id: Any, result: Any) -> None:
+    def _generate(cls, item: Any, result: Any) -> None:
         ...
 
 

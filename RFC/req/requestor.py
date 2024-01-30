@@ -1,4 +1,5 @@
 import os
+import time
 import datetime
 import traceback
 from typing import Any, List, Optional
@@ -11,7 +12,9 @@ from ..utils.cls import RootType
 from ..utils.defs import (
     FINISHED,
     FAILED,
+    RFC_GLOBAL_MANAGER,
 )
+from ..utils.func import load_object
 from ..item.queue import RootQueue
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
 
@@ -54,6 +57,8 @@ class Requestor(AttrDict, RootType):
         'nproc': 1,
         'async_sema': 1,
         'report_step': 100,
+        'wait_timeout': 20,
+        'wait_sleep': 2,
     }
 
     def __init__(
@@ -92,12 +97,41 @@ class Requestor(AttrDict, RootType):
     ):
         return RootQueue.fetch()
     
+    def _check_saved_result(
+        self,
+        item,
+    ):
+        if not os.path.exists(os.path.join(item.save_dir, '_result.pkl')):
+            return None
+        try:
+            self._logger.info(f"process {self._logger._process_name} saved result found for {repr(item)}")
+            item._logger.info(f"saved result found for {repr(item)}")
+            return load_object(os.path.join(item.save_dir, '_result.pkl'), raise_exception=True, logger=self._logger)
+        except Exception as e:
+            error_report = f'[{repr(type(e).__name__)}] {repr(e)}\n{traceback.format_exc()}'
+            self._logger.info(f"process {self._logger._process_name} failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
+            item._logger.info(f"failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
+            return None
+        
+    def _fetch_single_finally_sync(
+        self,
+    ):
+        self._step += 1
+        if self._step % self.report_step == 0:
+            self._report_items()
+            
     def _fetch_single_sync(
         self,
         item,
     ):
         item.process()
-        result = None
+        result = self._check_saved_result(item)
+        if result is not None:
+            item.finish(True, result)
+            self._finished_items.append((repr(item), 'SKIPPED', item._timestamp[FINISHED]))
+            self._logger.info(f"process {self._logger._process_name} fetched {repr(item)} from saved result")
+            self._fetch_single_finally_sync()
+            return
         try:
             resp = self._session.request(item)
             result = AttrDict({
@@ -113,17 +147,32 @@ class Requestor(AttrDict, RootType):
             item.finish(False)
             self._handle_error(e, item, result)
         finally:
-            self._step += 1
-            if self._step % self.report_step == 0:
-                self._report_items()
+            self._fetch_single_finally_sync()
+            
+    async def _fetch_single_finally_async(
+        self,
+        sema,
+    ):
+        self._step += 1
+        if self._step % self.report_step == 0:
+            self._report_items()
+        if sema is not None:
+            sema.release()
     
     async def _fetch_single_async(
         self,
         item,
         sema: Any = None,
+        task_name: str = None,
     ):
         item.process()
-        result = None
+        result = self._check_saved_result(item)
+        if result is not None:
+            item.finish(True, result)
+            self._finished_items.append((repr(item), 'SKIPPED', item._timestamp[FINISHED]))
+            self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)} from saved result")
+            await self._fetch_single_finally_async(sema)
+            return
         try:
             resp = await self._session.request(item)
             result = AttrDict({
@@ -133,26 +182,30 @@ class Requestor(AttrDict, RootType):
                 result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
             item.finish(True, result)
             self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
-            self._logger.info(f"process {self._logger._process_name} fetched {repr(item)}, step {self._step}")
+            self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)}, step {self._step}")
         except Exception as e:
-            self._logger.warning(f"process {self._logger._process_name} failed on {repr(item)}, step {self._step}, caught error {repr(e)}")
+            self._logger.warning(f"process {self._logger._process_name} task {task_name} failed on {repr(item)}, step {self._step}, caught error {repr(e)}\n{traceback.format_exc()}")
+            # self._logger.warning(f"process {self._logger._process_name} task {task_name} failed on {repr(item)}, step {self._step}, caught error {repr(e)}")
             item.finish(False)
             self._handle_error(e, item, result)
         finally:
-            self._step += 1
-            if self._step % self.report_step == 0:
-                self._report_items()
-            if sema is not None:
-                sema.release()
+            await self._fetch_single_finally_async(sema)
 
     def _fetch_all_sync(
         self,
     ):
+        st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
             if item is None:
-                self._logger.info(f"process {self._logger._process_name} got None from root queue, QUIT")
-                break
+                if st_wait_time is None:
+                    st_wait_time = time.time()
+                if time.time() - st_wait_time > self.wait_timeout:
+                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and waited for {self.wait_timeout} seconds, QUIT")
+                    break
+                time.sleep(self.wait_sleep)
+                continue
+            st_wait_time = None
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             self._fetch_single_sync(item)
         self._finish_sync()
@@ -163,14 +216,22 @@ class Requestor(AttrDict, RootType):
     ):
         sema = asyncio.Semaphore(async_sema)
         tasks = []
+        st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
             if item is None:
-                self._logger.info(f"process {self._logger._process_name} got None from root queue, QUIT")
-                break
+                if st_wait_time is None:
+                    st_wait_time = time.time()
+                if time.time() - st_wait_time > self.wait_timeout:
+                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and waited for {self.wait_timeout} seconds, QUIT")
+                    break
+                await asyncio.sleep(self.wait_sleep)
+                continue
+            st_wait_time = None
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             await sema.acquire()
-            tasks.append(asyncio.create_task(self._fetch_single_async(item, sema)))
+            task_name = f'async-{len(tasks)}'
+            tasks.append(asyncio.create_task(self._fetch_single_async(item, sema, task_name), name=task_name))
         for task in tasks:
             await task
         await self._finish_async()
@@ -180,12 +241,19 @@ class Requestor(AttrDict, RootType):
         async_sema: int,
     ):
         sema = trio.Semaphore(async_sema, max_value=async_sema)
+        st_wait_time = None
         async with trio.open_nursery() as nursery:
             while True:
                 item = self._get_item_from_root_queue()
                 if item is None:
-                    self._logger.info(f"process {self._logger._process_name} got None from root queue, QUIT")
-                    break
+                    if st_wait_time is None:
+                        st_wait_time = time.time()
+                    if time.time() - st_wait_time > self.wait_timeout:
+                        self._logger.info(f"process {self._logger._process_name} got None from root queue, and waited for {self.wait_timeout} seconds, QUIT")
+                        break
+                    time.sleep(self.wait_sleep)  # TODO
+                    continue
+                st_wait_time = None
                 self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
                 await sema.acquire()
                 nursery.start_soon(self._fetch_single_async, item, sema)
@@ -201,7 +269,7 @@ class Requestor(AttrDict, RootType):
         """
         self._logger._process_name = process_name
         if self._session._async_lib == 'none':
-            self._logger.info(f"process {process_name} start fetching with sync")
+            self._logger.info(f"process {self._logger._process_name} start fetching with sync")
             self._fetch_all_sync()
         else:
             if self._session._async_lib == 'asyncio':

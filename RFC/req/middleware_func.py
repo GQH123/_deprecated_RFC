@@ -21,35 +21,36 @@ def get_status_code(resp, request_lib):
 
 
 def get_filename(resp, request_lib, default_filename=None):
-    if request_lib == 'requests':
-        contentdisposition = resp.headers.get('Content-Disposition')
-        if contentdisposition is None:
-            return default_filename
-        _, params = cgi.parse_header(contentdisposition)
-        filename = params["filename"]
-        if filename is None:
-            return default_filename
-        return filename
-    else:
-        raise ValueError(f"unsupported request_lib {repr(request_lib)}")
+    contentdisposition = resp.headers.get('content-disposition')
+    if contentdisposition is None:
+        return default_filename
+    _, params = cgi.parse_header(contentdisposition)
+    filename = params["filename"]
+    if filename is None:
+        return default_filename
+    return filename
 
 
 def get_fileext(resp, request_lib):
-    if request_lib == 'requests':
-        content_type = resp.headers['content-type']
-        ext = mimetypes.guess_extension(content_type)
-        if ext is None:
-            return ''
-        if not ext.startswith('.'):
-            ext = '.' + ext
-        return ext
-    else:
-        raise ValueError(f"unsupported request_lib {repr(request_lib)}")
+    content_type = get_content_type(resp, request_lib)
+    if content_type is None:
+        return ''
+    if ';' in content_type:
+        content_type = content_type.split(';')[0]
+    ext = mimetypes.guess_extension(content_type)
+    if ext is None:
+        if '/' in content_type:
+            return '.' + content_type.split('/')[-1]
+        else:
+            return '.' + content_type
+    if not ext.startswith('.'):
+        ext = '.' + ext
+    return ext
 
 
 def get_content_type(resp, request_lib):
     if request_lib == 'requests':
-        return resp.headers['content-type']
+        return resp.headers['content-type']  # 'text/html; charset=UTF-8'
     elif request_lib == 'aiohttp':
         return resp.headers['CONTENT-TYPE']
     elif request_lib == 'asks':

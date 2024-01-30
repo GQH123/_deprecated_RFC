@@ -103,7 +103,7 @@ def retry(
 
 
 def _parse_mode(obj, path, mode, logger):
-    all_supported_modes = ['auto', 'binary', 'text', 'json', 'pickle']
+    all_supported_modes = ['auto', 'binary', 'text', 'json', 'pickle', 'pkl']
     if mode not in all_supported_modes:
         raise ValueError(f"unsupported mode {mode}, supported modes are {all_supported_modes}")
     if mode != 'auto':
@@ -127,9 +127,25 @@ def _parse_mode(obj, path, mode, logger):
     return mode
 
 
+class RobustJSONEncoder(json.JSONEncoder):
+    def default(self, x):
+        if inspect.isfunction(x):
+            return x.__name__ + str(inspect.signature(x))
+        elif hasattr(x, '__dict__') and (type(x).__name__ not in dir(__builtins__)):
+            try:
+                return json.JSONEncoder.default(self, x.__dict__)
+            except:
+                return self.default(x.__dict__)
+        else:
+            try:
+                return json.JSONEncoder.default(self, x)
+            except:
+                return repr(x)
+
+
 def save_object(obj, path, mode='auto', logger=None, raise_exception=False):
     def save_json():
-        json.dump(obj, open(path, 'w'), ensure_ascii=False, indent=4)
+        json.dump(obj, open(path, 'w'), ensure_ascii=False, indent=4, cls=RobustJSONEncoder)
 
     def save_pickle():
         pickle.dump(obj, open(path, 'wb'))
@@ -153,7 +169,12 @@ def save_object(obj, path, mode='auto', logger=None, raise_exception=False):
         elif mode == 'pickle' or mode == 'pkl':
             save_pickle()
         elif mode == 'text':
-            save_text()
+            try:
+                return save_text()
+            except TypeError:
+                if logger is not None:
+                    logger.warning(f"cannot save text file {repr(path)} as text, trying to save as binary")
+                return save_binary()
         elif mode == 'binary':
             save_binary()
         else:
@@ -163,7 +184,7 @@ def save_object(obj, path, mode='auto', logger=None, raise_exception=False):
             raise e
         else:
             if logger is not None:
-                error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
+                error_report = f'[{repr(type(e).__name__)}] {repr(e)}\n{traceback.format_exc()}'
                 logger.warning(f"failed to save {repr(obj)} with mode {repr(mode)} to {repr(path)}, caught exception {repr(error_report)}")
 
 
