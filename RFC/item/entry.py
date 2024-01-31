@@ -46,11 +46,12 @@ class Entry(RootType):
             cls._session = get_session(SessionArgs(cls.session_args), cls._logger)
             cls._middleware = get_middleware(cls.middleware_args, cls._logger)
             cls._requestor = Requestor(cls._session, cls._middleware, RequestorArgs(cls.requestor_args))
-            cls._add_items(ids, *extra_args, **extra_kwargs)
         except Exception as e:
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
             cls._logger.error(f"{repr(cls)} failed to start, caught error {error_report}")
             raise e
+        cls._lazy_init()
+        cls._add_items(ids, *extra_args, **extra_kwargs)
         cls._started = True
         cls._logger.info(f"{repr(cls)} started")
         cls._requestor.run()

@@ -14,7 +14,10 @@ from ..utils.defs import (
     FAILED,
     RFC_GLOBAL_MANAGER,
 )
-from ..utils.func import load_object
+from ..utils.func import (
+    load_object,
+    save_object,
+)
 from ..item.queue import RootQueue
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
 
@@ -86,6 +89,7 @@ class Requestor(AttrDict, RootType):
         item,
         result: Any,
     ):
+        save_object(item, os.path.join(item.save_dir, '_item.pkl'), 'pkl', item._logger)
         item.finish(False)
         self._failed_items.append((repr(item), error_report, item._timestamp[FAILED]))
         error_report = f'[{repr(type(error).__name__)}] {repr(error)}'

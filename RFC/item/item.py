@@ -187,7 +187,8 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         for id in ids[::-1]:  # add new items in reversed order
             # item = cls(id, *extra_args, **extra_kwargs)
             # item.pend()     # type: ignore # now the item is of type `Item` but not `ItemType`
-            cls._add((cls.__name__, id, extra_args, extra_kwargs))  # add items to root queue
+            # cls._add((cls.__name__, id, extra_args, extra_kwargs))  # add items to root queue
+            cls._add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
 
     @classmethod
     def _add_items(cls, ids, *extra_args, **extra_kwargs) -> None:
@@ -200,13 +201,13 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             ids = list(ids)
         if 'bloodline' not in extra_kwargs:
            cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items")
-        lock = get_global_lock()
-        with lock:
-            if cls._item_type_register is None:
-                RootQueue._lazy_init()
-            if cls.__name__ not in cls._item_type_register:
-                cls._item_type_register[cls.__name__] = cls
-        manager = get_global_manager()
+        # lock = get_global_lock()
+        # with lock:
+        #     if cls._item_type_register is None:
+        #         RootQueue._lazy_init()
+        #     if cls.__name__ not in cls._item_type_register:
+        #         cls._item_type_register[cls.__name__] = cls
+        # manager = get_global_manager()
         processes = []
         nproc = min(1, cls.requestor_args['nproc'])
         n_ids = len(ids)
