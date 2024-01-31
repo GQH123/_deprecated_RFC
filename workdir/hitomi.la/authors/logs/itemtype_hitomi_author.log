@@ -1,0 +1,10 @@
+2024-01-31 20:30:46,471 <MainProcess:1503034, MainThread:139699439028032> (entry.py:start:54 -> item.py:_add_items:203) from logger `RFC.itemtype_hitomi_author`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-01-31 20:30:46,477 <MainProcess:1503034, MainThread:139699439028032> (crawler.py:<module>:139 -> entry.py:start:56) from logger `RFC.itemtype_hitomi_author`
+[INFO] <class '__main__.HitomiAuthor'> started
+
+2024-01-31 20:30:46,527 <Process-2:1503127, MainThread:139699439028032> (item.py:_add_items_sinle_process:191 -> item.py:__new__:169) from logger `RFC.itemtype_hitomi_author`
+[INFO] item created with args:
+{'url': 'https://ltn.hitomi.la/artist/mutou mato-all.nozomi', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890', 'all': 'socks5://127.0.0.1:7890'}, 'method': 'get', 'referer': 'https://ltn.hitomi.la/', 'cookies': {}, 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17720', 'headers': {'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1', 'Sec-Fetch-Dest': 'document', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'navigate', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7,en-GB;q=0.6,ru;q=0.5'}, 'stream': False, 'is_leaf': False, 'retry_limit': 3, 'bloodline': [('HitomiAuthor', 'mutou mato')], 'save_dir': 'saves/mutou mato', 'id': 'mutou mato'}
+

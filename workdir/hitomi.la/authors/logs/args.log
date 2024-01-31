@@ -1,0 +1,12 @@
+2024-01-31 20:30:46,339 <MainProcess:1503034, MainThread:139699439028032> (entry.py:start:46 -> arg_group.py:__init__:87) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-01-31 20:30:46,339 <MainProcess:1503034, MainThread:139699439028032> (entry.py:start:46 -> arg_group.py:__init__:87) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-01-31 20:30:46,340 <MainProcess:1503034, MainThread:139699439028032> (entry.py:start:46 -> arg_group.py:__init__:87) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-01-31 20:30:46,340 <MainProcess:1503034, MainThread:139699439028032> (session.py:get_session:344 -> arg_group.py:__init__:87) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+

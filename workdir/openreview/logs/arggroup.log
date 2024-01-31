@@ -1,0 +1,396 @@
+2024-01-31 14:47:36,979 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:36,984 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:36,987 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:36,989 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:36,991 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:36,993 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:36,994 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:36,996 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:36,998 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,000 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,002 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,021 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,022 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,023 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,024 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,026 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,026 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,029 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,030 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,031 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,032 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,033 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,066 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,068 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,069 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,070 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,071 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,072 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,073 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,074 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,076 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,077 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,078 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,175 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,177 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,179 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,181 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,183 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,185 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,187 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,189 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,191 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,192 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,194 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,256 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,257 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,259 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,260 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,262 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,263 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,264 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,265 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,266 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,267 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,269 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,388 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,389 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,389 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,390 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,391 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,392 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,392 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,393 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,394 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,394 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,395 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,499 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,501 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,502 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,504 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,505 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,506 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,507 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,508 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,510 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,511 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,514 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,634 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,635 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,635 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,636 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,637 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,637 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,638 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,638 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,639 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,640 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,641 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,907 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,908 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,910 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,911 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,912 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,913 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,914 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,915 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,916 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,917 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,918 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:37,973 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:37,974 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:37,976 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:37,977 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,978 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:37,980 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:37,981 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:37,981 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,982 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:37,983 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:37,984 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:38,087 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:38,088 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:38,088 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:38,089 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:38,090 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:38,091 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:38,092 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:38,093 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:38,094 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:38,094 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:38,095 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+
+2024-01-31 14:47:38,184 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'method' not set, using default MethodSetter(ArgSetter._fixed('get'))
+
+2024-01-31 14:47:38,185 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'referer' not set, using default RefererSetter(RefererSetter._host())
+
+2024-01-31 14:47:38,186 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'cookies' not set, using default CookiesSetter(ArgSetter._fixed({}))
+
+2024-01-31 14:47:38,187 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'params' not set, using default ParamsSetter(ArgSetter._none())
+
+2024-01-31 14:47:38,188 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'payload' not set, using default PayloadSetter(ArgSetter._none())
+
+2024-01-31 14:47:38,189 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'user_agent' not set, using default UserAgentSetter(UserAgentSetter._random())
+
+2024-01-31 14:47:38,190 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'headers' not set, using default HeadersSetter(HeadersSetter._switch())
+
+2024-01-31 14:47:38,191 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'stream' not set, using default StreamSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:38,192 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'is_leaf' not set, using default IsLeafSetter(ArgSetter._fixed(False))
+
+2024-01-31 14:47:38,193 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:165 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'retry_limit' not set, using default RetryLimitSetter(ArgSetter._fixed(3))
+
+2024-01-31 14:47:38,194 <requestor-worker-0:678701, MainThread:140637071750976> (item.py:__new__:166 -> arg_group.py:__init__:122) from logger `RFC.arggroup`
+[INFO] arg 'bloodline' not set, using default BloodlineSetter(BloodlineSetter._inherit())
+

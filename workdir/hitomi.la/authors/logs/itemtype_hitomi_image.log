@@ -1,0 +1,4 @@
+2024-01-31 20:43:25,235 <Process-3:27639:1786025, MainThread:139699439028032> (item.py:_add_items_sinle_process:191 -> item.py:__new__:169) from logger `RFC.itemtype_hitomi_image`
+[INFO] item created with args:
+{'ancestor_id': 474198, 'bloodline': [('HitomiAuthor', 'mutou mato'), ('HitomiGallery', 474198), ('HitomiImage', '0020')], 'url': 'https://aa.hitomi.la/webp/1706702402/2390/5f681fced6d2c110e86994a1fff6cb2a4833e2f035cae89b81278e2f87053569.webp', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890', 'all': 'socks5://127.0.0.1:7890', 'no': 'localhost, 127.0.0.1'}, 'referer': 'https://hitomi.la/reader/474198.html', 'headers': {}, 'is_leaf': True, 'method': 'get', 'cookies': {}, 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Macintosh; U; PPC Mac OS; en-en) AppleWebKit/412 (KHTML, like Gecko) Safari/412', 'stream': False, 'retry_limit': 3, 'save_dir': 'saves/mutou mato/subs/474198/subs/0020', 'id': '0020'}
+

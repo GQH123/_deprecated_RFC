@@ -1,8 +1,7 @@
 .vscode
 saves/
-test_RFC/
-logs/
-*.log
+RFC.log
+RFC_stderr.log
 
 
 # Byte-compiled / optimized / DLL files
