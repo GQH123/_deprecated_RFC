@@ -1,0 +1,1072 @@
+{
+    "_count_all": {
+        "oral": "85,  1.47%",
+        "spotlight": "366,  6.31%",
+        "poster": "1799,  31.03%",
+        "submitted": "3548,  61.19%",
+        "total": "5798,  100.00%"
+    },
+    "_count": {
+        "oral": "0,  0.00%",
+        "spotlight": "2,  4.17%",
+        "poster": "17,  35.42%",
+        "submitted": "29,  60.42%",
+        "total": "48,  100.00%"
+    },
+    "sparse": {
+        "_count": {
+            "oral": "0,  0.00%",
+            "spotlight": "2,  4.17%",
+            "poster": "17,  35.42%",
+            "submitted": "29,  60.42%",
+            "total": "48,  100.00%"
+        },
+        "Adaptive sparse approximation": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "OSRT: An Online Sparse Approximation Model for Scattered Data",
+                    "url": "https://openreview.net/forum?id=aG3EARrrd1",
+                    "keywords": [
+                        "Online learning",
+                        "Scattered data",
+                        "Adaptive sparse approximation",
+                        "Radial basis function",
+                        "Tree decomposition"
+                    ],
+                    "abstract": "Online learning is a crucial technique for dealing with large and evolving datasets in various domains, such as real-time data analysis, online advertising, or financial modeling. In this paper, we propose a novel predictive statistical model called the Online Sparse Residual Tree (OSRT) for handling streaming multivariate scattered data. OSRT is based on online tree decomposition and online adaptive radial basis function (RBF) exploration. OSRT dynamically expands its network depth as more data arrives, and incorporates a sparse and appropriate RBF refinement at each child node to minimize the residual error from its parent node. OSRT also uses an incremental method to explore the central node of the RBF function, ensuring both sparsity and accuracy of the model. When the network reaches its maximum depth, the OSRT model updates the RBF approximation of its final layer based on the most recent data. This ensures that the model captures the latest trends in the evolving data. We evaluate our algorithm on several datasets, and compare it with existing online RBF methods. From the results, it is shown that OSRT achieves higher efficiency and accuracy."
+                }
+            ]
+        },
+        "Sparse Coding": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Sparse-Guard: Sparse Coding-Based Defense against Model Inversion Attacks",
+                    "url": "https://openreview.net/forum?id=kDoKXaucJV",
+                    "keywords": [
+                        "Privacy Attacks",
+                        "Model Inversion Attack",
+                        "Sparse Coding",
+                        "Attack Defense",
+                        "Image Reconstruction"
+                    ],
+                    "abstract": "In this paper, we study neural network architectures that are robust to model inversion attacks. It is well-known that standard network architectures are vulnerable to model inversion, where an adversary can reconstruct images or data used to train the network by inspecting the network's output or the intermediate outputs from a single hidden network layer. Surprisingly, very little is known about how a network's architecture contributes to its robustness (or vulnerability). Instead, recent work on mitigating such attacks has focused on injecting random noise into the network layers or augmenting the training dataset with synthetic data. \n\nOur main result is a novel sparse coding-based network architecture, $Sparse$-$Guard$, that is robust to model inversion attacks. Three decades of computer science research has studied sparse coding in the context of image denoising, object recognition, and adversarial misclassification settings, but to the best of our knowledge, its connection to state-of-the-art privacy vulnerabilities remains unstudied. However, sparse coding architectures suggest an advantageous means to prevent privacy attacks because they allow us to control the amount of irrelevant private information encoded in a model's intermediate representations in a manner that can be computed efficiently during training, that adds little to the trained model's overall parameter complexity, and that is known to have little effect on classification accuracy. Specifically, we demonstrate that compared to networks trained with state-of-the-art noise-based or data augmentation-based defenses, $Sparse$-$Guard$ networks maintain comparable or higher classification accuracy while degrading state-of-the-art training data reconstructions by a factor of $1.2$ to $16.2$ across a variety of reconstruction quality metrics (PSNR, SSIM, FID) on standard datasets. We also show that $Sparse$-$Guard$ is equally robust to attacks regardless of whether the leaked layer is earlier or later, suggesting it is also an effective defense under novel security paradigms such as Federated Learning."
+                }
+            ]
+        },
+        "sparse learning": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "2,  100.00%",
+                "total": "2,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Optimization over Sparse Restricted Convex Sets via Two Steps Projection",
+                    "url": "https://openreview.net/forum?id=H8OOlBjhkU",
+                    "keywords": [
+                        "sparse learning",
+                        "hard-thresholding",
+                        "stochastic optimization",
+                        "zeroth-order optimization",
+                        "restricted smoothness",
+                        "restricted strong convexity"
+                    ],
+                    "abstract": "In sparse optimization,  enforcing hard constraints using the $\\ell_0$ pseudo-norm offers advantages like controlled sparsity compared to convex relaxations. However, many real-world applications (e.g., portfolio optimization) demand not only sparsity constraints but also some extra constraint (such as limit of budget). While prior algorithms have been developed to address this complex scenario with mixed combinatorial and convex constraints, they typically require the closed form projection onto the mixed constraints which might not exist, and/or only provide local guarantees of convergence which is different from the global guarantees commonly sought in sparse optimization. To fill this gap, in this paper, we study the problem of sparse optimization with extra $\\textit{restricted convex}$ constraints commonly encountered in the literature. We present a new variant of iterative hard-thresholding algorithm equipped with a two-step consecutive projection operator customized for these mixed constraints,  serving as a simple alternative to the Euclidean projection onto the mixed constraint. By introducing a novel trade-off between sparsity relaxation and sub-optimality, we provide global guarantees in objective value for the output of our algorithm, in the deterministic, stochastic, and zeroth-order settings, under the conventional restricted strong-convexity/smoothness assumptions.  As a fundamental contribution in  proof techniques, we develop a novel extension of the classic three-point lemma to the considered two-step non-convex projection operator, which allows us to analyze the convergence in objective value in an elegant way that has not been possible with existing techniques. Finally, we illustrate the applicability of our method on several sparse learning tasks."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Sparse hyperbolic representation learning",
+                    "url": "https://openreview.net/forum?id=CJnyR3M6Oh",
+                    "keywords": [
+                        "sparse learning",
+                        "hyperbolic space",
+                        "Cartan-Hadamard norm"
+                    ],
+                    "abstract": "Minimizing the space complexity of entity representations without the loss of information makes data science procedures computationally efficient and effective.\nFor the entities with the tree structure, hyperbolic-space-based representation learning (HSBRL) has successfully reduced the space complexity of representations by using low-dimensional space.\nNevertheless, it has not minimized the space complexity of each representation since it has used the same dimension for all representations and has not selected the best dimension for each representation.\nThis paper, for the first time, constructs a sparse learning scheme to minimize the dimension for each representation in HSBRL.\nThe most significant difficulty is that we cannot construct a well-defined sparse learning scheme for HSBRL based on a coordinate system since there is no canonical coordinate system that reflects geometric structure perfectly, unlike in linear space.\nForcibly applying a linear sparse learning method on a coordinate system of hyperbolic space causes a non-uniform sparsity.\nAnother difficulty is that existing Riemannian gradient descent cannot reach a sparse solution since the algorithm oscillates on a non-smooth function, which is essential in sparse learning.\nTo overcome the above issue, for the first time, we geometrically define the sparseness and sparse regularization in hyperbolic space, to achieve geometrically uniform sparsity.\nAlso, we propose the first optimization algorithm that can avoid the oscillation problem and obtain sparse representations in hyperbolic space by the geometric shrinkage-thresholding idea."
+                }
+            ]
+        },
+        "sparse visual recognition": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "SparseFormer: Sparse Visual Recognition via Limited Latent Tokens",
+                    "url": "https://openreview.net/forum?id=2pvECsmld3",
+                    "keywords": [
+                        "sparse visual recognition",
+                        "vision transformer",
+                        "computer vision",
+                        "representation learning"
+                    ],
+                    "abstract": "Human visual recognition is a sparse process, where only a few salient visual cues are attended to rather than every detail being traversed uniformly. However, most current vision networks follow a dense paradigm, processing every single visual unit (such as pixels or patches) in a uniform manner. In this paper, we challenge this dense paradigm and present a new method, coined SparseFormer, to imitate human’s sparse visual recognition in an end-to-end manner. SparseFormer learns to represent images using a highly limited number of tokens (as low as 49) in the latent space with sparse feature sampling procedure instead of processing dense units in the original image space. Therefore, SparseFormer circumvents most of dense operations on the image space and has much lower computational costs. Experiments on the ImageNet-1K classification show that SparseFormer achieves performance on par with canonical or well-established models while offering more favorable accuracy-throughput tradeoff. Moreover, the design of our network can be easily extended to the video classification with promising performance at lower computational costs. We hope that our work can provide an alternative way for visual modeling and inspire further research on sparse vision architectures."
+                }
+            ]
+        },
+        "dynamic sparse training": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Dynamic Sparse Training with Structured Sparsity",
+                    "url": "https://openreview.net/forum?id=kOBkxFRKTA",
+                    "keywords": [
+                        "Machine Learning",
+                        "dynamic sparse training",
+                        "structured sparsity",
+                        "N:M sparsity",
+                        "efficient deep learning",
+                        "RigL",
+                        "SRigL",
+                        "constant fan-in",
+                        "dynamic neuron ablation",
+                        "neuron ablation",
+                        "structured and fine-grained sparsity",
+                        "online inference",
+                        "accelerating inference"
+                    ],
+                    "abstract": "Dynamic Sparse Training (DST) methods achieve state-of-the-art results in sparse neural network training, matching the generalization of dense models while enabling sparse training and inference. Although the resulting models are highly sparse and theoretically less computationally expensive, achieving speedups with unstructured sparsity on real-world hardware is challenging. In this work, we propose a sparse-to-sparse DST method, Structured RigL (SRigL), to learn a variant of fine-grained structured N:M sparsity by imposing a constant fan-in constraint. Using our empirical analysis of existing DST methods at high sparsity, we additionally employ a neuron ablation method which enables SRigL to achieve state-of-the-art sparse-to-sparse structured DST performance on a variety of Neural Network (NN) architectures. We demonstrate reduced real-world timings on CPU for online inference — 3.6×/2× faster at 90% sparsity than equivalent dense/unstructured sparse layers, respectively"
+                }
+            ]
+        },
+        "sparse coding": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Measuring Feature Sparsity in Language Models",
+                    "url": "https://openreview.net/forum?id=SznHfMwmjG",
+                    "keywords": [
+                        "sparse coding",
+                        "sparse dictionary learning",
+                        "interpretability",
+                        "language models",
+                        "superposition",
+                        "polysemanticity",
+                        "metrics"
+                    ],
+                    "abstract": "Recent works have proposed that intermediate activations in language models can be modelled as sparse linear combinations of vectors corresponding to features of the input text. Under this assumption, these works have aimed to reconstruct these feature directions using sparse coding. We develop metrics which can be used to assess the success of these sparse coding techniques and thereby implicitly test the validity of the linearity and sparsity assumptions. We show that our metrics can predict the level of sparsity on synthetic sparse linear activations, and that they can distinguish between sparse linear data and several other distributions. We use our metrics to measure the level of sparsity in several language models. We find evidence that language model activations can be accurately modelled by sparse linear combinations of features, significantly more so than control datasets. We also show that model activations appear to be sparsest in the first and final layers, and least sparse in middle layers."
+                }
+            ]
+        },
+        "Dynamic Sparse Training; Neuron Revitalization": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "NeurRev: Train Better Sparse Neural Network Practically via Neuron Revitalization",
+                    "url": "https://openreview.net/forum?id=60lNoatp7u",
+                    "keywords": [
+                        "Dynamic Sparse Training; Neuron Revitalization"
+                    ],
+                    "abstract": "Dynamic Sparse Training (DST) employs a greedy search mechanism to identify an optimal sparse subnetwork by periodically pruning and growing network connections during training. To guarantee effectiveness, DST algorithms rely on high search frequency, which consequently, requires large learning rate and batch size to enforce stable neuron learning. Such settings demand extreme memory consumption, as well as generating significant system overheads that limit the wide deployment of deep learning-based applications on resource-constraint platforms. To reconcile such, we propose $\\underline{Neur}$on $\\underline{Rev}$italization framework for DST (NeurRev), based on an innovative finding that dormant neurons exist with the presence of weight sparsity, and cannot be revitalized (i.e., activated for learning) even with high sparse mask search frequency. These dormant neurons produce a large quantity of zeros during training, which contribute relatively little to the outputs of succeeding layers or to the final results. Different from most existing DST algorithms that spare no effort designing weight growing criteria, NeurRev focuses on optimizing the long-neglected pruning part, which awakes dormant neurons by pruning and incurs no additional computation costs. As such, NeurRev advances more effective neuron learning, which not only achieves outperforming accuracy in a variety of networks and datasets, but also promoting a low-cost dynamism at system-level. Systematical evaluations on training speed and system overhead are conducted on the mobile devices, where the proposed NeurRev framework consistently outperforms representative state-of-the-arts. Code will be released."
+                }
+            ]
+        },
+        "sparse datasets": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Lost in Transformation: Current roadblocks for Transformers in 3D medical image segmentation",
+                    "url": "https://openreview.net/forum?id=PFUrgJtfs0",
+                    "keywords": [
+                        "representation learning",
+                        "transformers",
+                        "medical image segmentation",
+                        "semantic segmentation",
+                        "sparse datasets"
+                    ],
+                    "abstract": "In the medical image segmentation domain, sparsely-annotated, limited datasets are common, posing a natural hurdle for Transformer-based segmentation networks. In this work, we systematically dissect 9 such popular Transformer networks on two representative organ and pathology segmentation datasets and explore whether Transformers are still beneficial under these challenging conditions. 1) We demonstrate that these Transformer-based segmentation networks frequently incorporate substantial convolutional backbones, which predominantly contribute to their performance, while Transformers themselves play a peripheral role. 2) Extending beyond accuracy, we analyze error and representational similarity to uncover architectures with underutilized Transformers, demonstrated by indiscernible change on both metrics without the Transformer. 3) We quantify the massive dataset size 'chasm' between medical and natural images, examine the impact of data reduction on performance, showing that Transformers bridge the performance gap to CNNs as the dataset size increases. 4) Additionally, we probe the importance of long-range interactions, showing that even limited receptive fields offer high performance in segmenting medical images, questioning the need for long-range interactions inherent to Transformers. In doing so, we identify significant challenges faced by major architectures employing Transformers for medical image segmentation, which may contribute to potential inefficiencies downstream in the domain."
+                }
+            ]
+        },
+        "Sparse Federated Learning": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "From Random to Relevant: Harnessing Salient Masks in Non-IID Federated Learning",
+                    "url": "https://openreview.net/forum?id=IQZuCuFeAM",
+                    "keywords": [
+                        "Sparsity",
+                        "Pruning",
+                        "Federated Learning",
+                        "Sparse Federated Learning",
+                        "Communication efficiency",
+                        "Efficient FL",
+                        "Pruning at Initialization"
+                    ],
+                    "abstract": "Federated learning (FL) offers the ability to train models using decentralized data at client sites, ensuring data privacy by eliminating the need for data centralization. A predominant challenge with FL is the constrained computation and narrow communication bandwidth, particularly evident in resource-restricted edge client nodes. Various solutions, such as transmitting sparse models and iterative pruning have been suggested to tackle this. However, many existing methods necessitate the transmission of full model weights throughout the training, rely heavily on arbitrary or random pruning criteria or costly iterative pruning schedules. \n\nIn this work, we propose SSFL, a streamlined approach for sparse decentralized FL training and communication. SSFL identifies a subnetwork prior to training, leveraging parameter saliency scores keeping in mind the distribution of local client data in non-IID scenarios. Distinctively, only the sparse model weights are communicated in each round between client models in a decentralized manner, sidestepping the conventional need of transferring the complete dense model at any phase of training. We validate SSFL's effectiveness using standard non-IID benchmarks, noting marked improvements in the sparsity-accuracy trade-offs. Finally, we deploy our method in a real-world federated learning framework and report improvement in communication time."
+                }
+            ]
+        },
+        "Sparse Neural Network": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "($\\texttt{PASS}$) Visual Prompt Locates Good Structure Sparisty through a Recurent HyperNetwork",
+                    "url": "https://openreview.net/forum?id=Uavy4DLrXR",
+                    "keywords": [
+                        "Channel Prunning",
+                        "Visual Prompt",
+                        "Sparse Neural Network"
+                    ],
+                    "abstract": "Large-scale neural networks have demonstrated remarkable performance in different domains like vision and language processing, although at the cost of massive computation resources. As illustrated by compression literature, structured model pruning is a prominent algorithm to encourage model efficiency, thanks to its acceleration-friendly sparsity patterns. One of the key questions of structural pruning is how to estimate the channel significance. In parallel, work on data-centric AI has shown that prompting-based techniques enable impressive generalization of large language models across diverse downstream tasks. In this paper, we investigate a charming possibility -  *leveraging visual prompts to capture the channel importance and derive high-quality structural sparsity*. To this end, we propose a novel algorithmic framework, namely \\texttt{PASS}. It is a tailored hyper-network to take both visual prompts and network weight statistics as input, and output layer-wise channel sparsity in a recurrent manner. Such designs consider the intrinsic channel dependency between layers. Comprehensive experiments across multiple network architectures and six datasets demonstrate the superiority of $\\texttt{PASS}$ in locating good structural sparsity. For example, at the same FLOPs level, $\\texttt{PASS}$ subnetworks achieve 1\\%$\\sim$3\\% better accuracy on Food101 dataset; or with a similar performance of 80\\% accuracy, $\\texttt{PASS}$ subnetworks obtain 0.35$\\times$ more speedup than the baselines. Codes are provided in the supplements."
+                }
+            ]
+        },
+        "Sparse embedding": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "DSparsE: Dynamic Sparse Embedding for Knowledge Graph Completion",
+                    "url": "https://openreview.net/forum?id=z4qWt62BdN",
+                    "keywords": [
+                        "Knowledge graph completion",
+                        "Link prediction",
+                        "Dynamic learning",
+                        "Sparse embedding"
+                    ],
+                    "abstract": "Addressing the incompleteness problem in knowledge graphs remains a significant challenge. Current graph completion methods, such as ComDensE (a representative of the fully connected network) and InteractE (a representative of the convolutional network), have certain limitations. Specifically, ComDensE is prone to overfitting and has constraints on network depth, while InteractE has limitations in feature interaction and interpretability. To overcome these drawbacks, we propose the Dynamic Sparse Embedding (DSparsE) model. This model employs sparse learning techniques, replacing the conventional dense layers with adaptable sparse ones. DSparsE incorporates a structure reminiscent of the Mixture of Experts (MoE) at the encoding stage and a residual structure at the decoding stage, which optimizes feature extraction and decoding without a significant increase of parameters. Comparative tests are evaluated on the FB15k-237 and WN18RR datasets. It is demonstrated that DSparsE outperforms both ComDensE and InteractE on FB15k-237 in terms of hits@1, with improvements of 2.3\\% and 3.0\\%, respectively."
+                }
+            ]
+        },
+        "Sparse co-training": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Sparse Cocktail: Every Sparse Pattern Every Sparse Ratio All At Once",
+                    "url": "https://openreview.net/forum?id=HsJzGWvg7K",
+                    "keywords": [
+                        "Sparse co-training",
+                        "pruning",
+                        "efficient and flexible NN inferencing"
+                    ],
+                    "abstract": "Sparse Neural Networks (SNNs) have received voluminous attention for mitigating the explosion in computational costs and memory footprints of modern deep neural networks. Despite their popularity, most state-of-the-art training approaches seek to find a single high-quality sparse subnetwork with a preset sparsity pattern and ratio, making them inadequate to satiate platform and resource variability. Recently proposed approaches attempt to jointly train multiple subnetworks (we term as ``sparse co-training\") with a \\ul{fixed sparsity pattern}, to allow switching sparsity ratios subject to resource requirements. In this work, we take one more step forward and expand the scope of sparse co-training to cover \\underline{diverse sparsity patterns} and \\underline{multiple sparsity ratios} \\textit{at once}. We introduce \\textbf{Sparse Cocktail}, the \\underline{first} sparse co-training framework that co-trains a suite of sparsity patterns simultaneously, loaded with multiple sparsity ratios which facilitate harmonious switch across various sparsity patterns and ratios at inference depending on the hardware availability. More specifically, Sparse Cocktail alternatively trains subnetworks generated from different sparsity patterns with a gradual increase in sparsity ratios across patterns and relies on an \\textit{unified mask generation process} and the \\textit{Dense Pivot Co-training}  to ensure the subnetworks of different patterns orchestrate their shared parameters without canceling each other’s performance. Experiment results on image classification, object detection and instance segmentation illustrate the favorable effectiveness and flexibility of Sparse Cocktail, pointing to a promising direction for sparse co-training. Codes will be released."
+                }
+            ]
+        },
+        "Sparse expansive representations": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "SoftHash: High-dimensional Hashing with A Soft Winner-Take-All Mechanism",
+                    "url": "https://openreview.net/forum?id=cNwugejbW6",
+                    "keywords": [
+                        "Locality-sensitive hashing",
+                        "Sparse expansive representations",
+                        "Hebb rule",
+                        "Winner-take-all",
+                        "Image retrieval",
+                        "Word similarity search"
+                    ],
+                    "abstract": "Locality-Sensitive Hashing (LSH) is a classical algorithm that aims to hash similar data points into the same bucket with high probability.\nInspired by the fly olfactory system, one variant of the LSH algorithm called $\\textit{FlyHash}$, assigns hash codes into a high-dimensional space, showing great performance for similarity search.\nHowever, the semantic representation capability of $\\textit{FlyHash}$ is not yet satisfactory, since it is a data-independent hashing algorithm, where the projection space is constructed randomly, rather than adapted to the input data manifold.\nIn this paper, we propose a data-dependent hashing algorithm named $\\textit{SoftHash}$. In particular, $\\textit{SoftHash}$ is motivated by the bio-nervous system that maps the input sensory signals into a high-dimensional space, to improve the semantic representation of hash codes. \nWe learn the hashing projection function using a Hebbian-like learning rule coupled with the idea of Winner-Take-All (WTA).\nSpecifically, the synaptic weights are updated solely based on the activities of pre- and post-synaptic neurons. Unlike the previous works that adopt the hard WTA rule, we introduce a soft WTA rule, whereby the non-winning neurons are not fully suppressed in the learning process.\nThis allows weakly correlated data to have a chance to be learned to generate more representative hash codes.\nWe conduct extensive experiments on six real-world datasets for tasks including image retrieval and word similarity search. The experimental results demonstrate that our method significantly outperforms these baselines in terms of data similarity search accuracy and speed."
+                }
+            ]
+        },
+        "Time Series Prediction; Multivariate Time Series; Modern Hopfield Networks; Sparse Hopfield Model; Hopfield Layer; Attention Mechanism": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "STanHop: Sparse Tandem Hopfield Model for Memory-Enhanced Time Series Prediction",
+                    "url": "https://openreview.net/forum?id=6iwg437CZs",
+                    "keywords": [
+                        "Time Series Prediction; Multivariate Time Series; Modern Hopfield Networks; Sparse Hopfield Model; Hopfield Layer; Attention Mechanism"
+                    ],
+                    "abstract": "We present STanHop-Net (Sparse Tandem Hopfield Network) for multivariate time series prediction with memory-enhanced capabilities. At the heart of our approach is STanHop, a novel Hopfield-based neural network block, which sparsely learns and stores both temporal and cross-series representations in a data-dependent fashion. In essence, STanHop sequentially learn temporal representation and cross-series representation using two tandem sparse Hopfield layers. In addition, StanHop incorporates two additional external memory modules: a Plug-and-Play module and a Tune-and-Play module for train-less and task-aware  memory-enhancements, respectively. They allow StanHop-Net to fastly respond to certain sudden events. Methodologically, we construct the StanHop-Net by stacking STanHop blocks in a hierarchical fashion, enabling multi-resolution feature extraction with resolution-specific sparsity. Theoretically, we introduce a sparse extension of the modern Hopfield model and show that it endows a tighter memory retrieval error compared to the dense counterpart without sacrificing memory capacity. Empirically, we validate the efficacy of our framework on both synthetic and real-world settings."
+                }
+            ]
+        },
+        "Sparse mixture of experts": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "MOESART: An Effective Sampling-based Router for Sparse Mixture of Experts",
+                    "url": "https://openreview.net/forum?id=KTq2XSBNsa",
+                    "keywords": [
+                        "Sparse mixture of experts",
+                        "Routing in neural networks",
+                        "Conditional computation"
+                    ],
+                    "abstract": "The sparse Mixture-of-Experts (Sparse-MoE) is a promising framework for efficiently scaling up model capacity. This framework consists of a set of experts (subnetworks) and one or more routers. The routers activate only a small subset of the experts on a per-example basis, which can save on resources. Among the most widely used sparse routers are Top-k and its variants, which activate k experts for each example during training. While very effective at model scaling, these routers are prone to performance issues because of discontinuous nature of the routing problem. Differentiable routers have been shown to mitigate the performance issues of Top-k, but these are not k-sparse during training, which limits their utility. To address this challenge, we propose MOESART: a novel k-sparse routing approach, which maintains k-sparsity during both training and inference. Unlike existing routers, MOESART aims at learning a good k-sparse approximation of the classical, softmax router. We achieve this through carefully designed sampling and expert weighting strategies. We compare MOESART with state-of-the-art MoE routers, through large-scale experiments on 14 datasets from various domains, including recommender systems, vision, and natural language processing. MOESART achieves up to 16% (relative) reduction in out-of-sample loss on standard image datasets, and up to 15% (relative) improvement in AUC on standard recommender systems, over popular k-sparse routers, e.g., Top-k, V-MoE, Expert Choice Router and X-MoE. Moreover, for distilling natural language processing models, MOESART can improve predictive performance by 0.5% (absolute) on average over the Top-k router across 7 GLUE and 2 SQuAD benchmarks."
+                }
+            ]
+        },
+        "Sparse Training": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  20.00%",
+                "submitted": "4,  80.00%",
+                "total": "5,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Ultra-sparse network advantage in deep learning via Cannistraci-Hebb brain-inspired training with hyperbolic meta-deep community-layered epitopology",
+                    "url": "https://openreview.net/forum?id=iayEcORsGd",
+                    "keywords": [
+                        "Sparse Training",
+                        "Network Science",
+                        "Epitopological Learning",
+                        "Network Automata",
+                        "Network Percolation",
+                        "Hyperbolic Network"
+                    ],
+                    "abstract": "Sparse training (ST) aims to ameliorate deep learning by replacing fully connected artificial neural networks (ANNs) with sparse or ultra-sparse ones, such as brain networks are, therefore it might benefit to borrow brain-inspired learning paradigms from complex network intelligence theory. Here, we launch the ultra-sparse advantage challenge, whose goal is to offer evidence on the extent to which ultra-sparse (around 1% connection retained) topologies can achieve any leaning advantage on fully connected. Epitopological learning is a field of network science and complex network intelligence that studies how to implement learning on complex networks by changing the shape of their connectivity structure (epitopological plasticity). One way to implement Epitopological (epi- means new) Learning is via link prediction: predicting the likelihood of nonobserved links to appear in the network. Cannistraci-Hebb learning theory inspired the CH3-L3 network automata rule for link prediction which is effective for general-purpose link prediction. Here, starting from CH3-L3 we propose Epitopological Sparse Meta-deep Learning (ESML) to apply Epitopological Learning to sparse training. In empirical experiments, we find that ESML learns ANNs with ultra-sparse hyperbolic (epi-)topology in which emerges a community layer organization that is meta-deep (meaning that each layer also has an internal depth due to power-law node hierarchy). Furthermore, we discover that ESML can in many cases automatically sparse the neurons during training (arriving even to 30% neurons left in hidden layers), this process of node dynamic removal is called percolation. Starting from this network science evidence, we design Cannistraci-Hebb training (CHT), a 4-step training methodology that put ESML at its heart. We conduct experiments on 6 datasets and 3 network structures (MLPs, VGG16, ResNet50) comparing CHT to dynamic sparse training SOTA algorithms and fully connected network. The results indicate that, with a mere 1\\% of links retained during training, CHT surpasses fully connected networks on VGG16 and ResNet50. This key finding is an evidence for ultra-sparse advantage and signs a milestone in deep learning. CHT acts akin to a gradient-free oracle which adopts CH3-L3 based epitopological learning to guide the placement of new links in the ultra-sparse network topology to facilitate sparse-weight gradient learning, and this in turn reduces the convergence time of ultra-sparse training. Finally, CHT offers first examples of parsimony dynamic sparse training because, in many datasets, it can retain network performance by percolating and significantly reducing the node network size."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Sparser, Better, Deeper, Stronger: Improving Sparse Training with Exact Orthogonal Initialization",
+                    "url": "https://openreview.net/forum?id=3mY9aGiMn0",
+                    "keywords": [
+                        "Sparse Training",
+                        "Pruning",
+                        "Orthogonal Initialization"
+                    ],
+                    "abstract": "Sparse training aims to train sparse models from scratch, achieving remarkable results in recent years. A key design choice in sparse training is the sparse initialization, which determines the trainable sub-network through a binary mask. Existing methods mainly revolve around selecting the mask based on predefined dense weight initialization. However, such an approach may not efficiently leverage the mask's potential impact on training parameters and optimization. An alternative direction, inspired by research into dynamical isometry, is to introduce orthogonality in the sparse subnetwork. This helps prevent the gradient signal from vanishing or exploding, ultimately enhancing the reliability of the backpropagation process. In this work, we propose Exact Orthogonal Initialization (EOI), a novel sparse orthogonal initialization scheme based on composing random Givens rotations. Contrary to other existing approaches, our method provides exact (not approximated) orthogonality and enables the creation of layers with arbitrary densities. Through experiments on contemporary network architectures, we present the effectiveness of EOI and demonstrate that it consistently outperforms other commonly used sparse initialization techniques. Furthermore, to showcase the full potential of our method, we show that it enables the training of highly sparse 1000-layer MLP and CNN networks without any residual connections or normalization techniques.  Our research highlights the importance of weight initialization in sparse training, underscoring the vital part it plays alongside the sparse mask selection."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Efficient Denoising Diffusion via Probabilistic Masking",
+                    "url": "https://openreview.net/forum?id=lhZEodF8Dn",
+                    "keywords": [
+                        "Diffusion Model",
+                        "Sparse Training",
+                        "Model Compression"
+                    ],
+                    "abstract": "Diffusion models have exhibited remarkable advancements in generating high-quality data. However, a critical drawback of these models is their computationally intensive inference process, which requires a large number of timesteps to generate a single sample. Existing methods address this challenge by decoupling the forward and reverse processes, and they rely on handcrafted rules (e.g., uniform skipping) for sampling acceleration, leading to the risk of discarding important steps and deviating from the optimal trajectory. In this paper, we propose an Efficient Denoising Diffusion method via Probabilistic Masking (EDDPM) that can identify and skip the redundant steps during training. To determine whether a timestep should be skipped or not, we employ probabilistic reparameterization to continualize the binary determination mask. The mask distribution parameters are learned jointly with the diffusion model weights. By incorporating a real-time sparse constraint, our method can effectively identify and eliminate unnecessary steps during the training iterations, thereby improving inference efficiency. Notably, as the model becomes fully trained, the random masks converge to a sparse and deterministic one, retaining only a small number of essential steps. Empirical results demonstrate the superiority of our proposed EDDPM over the state-of-the-art sampling acceleration methods across various domains. EDDPM can generate high-quality samples with only 20\\% of the  steps for time series imputation and achieve 4.89 FID with 5 steps for CIFAR-10. Moreover, when starting from a pretrained model, our method efficiently identifies the most informative timesteps within a single epoch, which demonstrates the potential of EDDPM to be a practical tool to explore large diffusion models with limited resources."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Plasticity-Driven Sparsity Training for Deep Reinforcement Learning",
+                    "url": "https://openreview.net/forum?id=WsIDPBcnCN",
+                    "keywords": [
+                        "Reinforcement Learning",
+                        "Sparse Training",
+                        "Network Plasticity"
+                    ],
+                    "abstract": "While the increasing complexity and model size of Deep Reinforcement Learning (DRL) networks promise potential for real-world applications, these same attributes can hinder deployment in scenarios that require efficient, low-latency models. The sparse-to-sparse training paradigm has gained traction in DRL for memory compression as it reduces peak memory usage and per-iteration computation. However, this approach may escalate the overall computational cost throughout the training process. Additionally, we establish a connection between sparsity and the loss of neural plasticity. Our findings indicate that the sparse-to-sparse training paradigm may compromise network plasticity early on due to an initially high degree of sparsity, potentially undermining policy performance. In this study, we present a novel sparse DRL training approach, building upon the naïve dense-to-sparse training method, i.e., iterative magnitude pruning, aimed to enhance network plasticity during sparse training. Our proposed approach, namely Plasticity-Driven Sparsity Training (PlaD), incorporates memory reset mechanisms to improve the consistency of the replay buffer, thereby enhancing network plasticity. Furthermore, it utilizes dynamic weight rescaling to mitigate the training instability that can arise from the interplay between sparse training and memory reset. We assess PlaD on various MuJoCo locomotion tasks. We assess PlaD on various MuJoCo locomotion tasks. Remarkably, it delivers performance on par with the dense model, even at sparsity levels exceeding 90%."
+                },
+                {
+                    "type": "submitted",
+                    "title": "MAST: A Sparse Training Framework for Multi-agent Reinforcement Learning",
+                    "url": "https://openreview.net/forum?id=dtFN6T4aMU",
+                    "keywords": [
+                        "Sparse Training",
+                        "Multi-Agent Reinforcement Learning"
+                    ],
+                    "abstract": "Deep Multi-agent Reinforcement Learning (MARL) is often confronted with large state and action spaces, necessitating the utilization of neural networks with extensive parameters and incurring substantial computational overhead. Consequently, there arises a pronounced need for methods that expedite training and enable model compression in MARL. Nevertheless, existing training acceleration techniques are primarily tailored for single-agent scenarios, as the task of compressing MARL agents within sparse models presents unique and intricate challenges. In this paper, we introduce an innovative Multi-Agent Sparse Training (MAST) framework. MAST capitalizes on gradient-based topology evolution to exclusively train multiple MARL agents using sparse networks. This is then combined with a novel hybrid TD-($\\lambda$) schema, coupled with the Soft Mellowmax Operator, to establish dependable learning targets, particularly in sparse scenarios. Additionally, we employ a dual replay buffer mechanism to enhance policy stability within sparse networks. Remarkably, our comprehensive experimental investigation on the SMAC benchmarks, for the first time, that deep multi-agent Q learning algorithms manifest significant redundancy in terms of Floating Point Operations (FLOPs). This redundancy translates into up to $20$-fold reduction in FLOPs for both training and inference, accompanied by a commensurate level of model compression, all achieved with less than 3\\% performance degradation."
+                }
+            ]
+        },
+        "sparse observation": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Continuous Field Reconstruction from Sparse Observations with Implicit Neural Networks",
+                    "url": "https://openreview.net/forum?id=kuTZMZdCPZ",
+                    "keywords": [
+                        "implicit neural representations",
+                        "field reconstruction",
+                        "sparse observation"
+                    ],
+                    "abstract": "Reliably reconstructing physical fields from sparse sensor data is a challenge that frequenty arises in many scientific domains. In practice, the process generating the data is often not known to sufficient accuracy. Therefore, there is a growing interest in the deep neural network route to the problem. In this work, we present a novel approach that learns a continuous representation of the field using implicit neural representations (INR). Specifically, after factorizing spatiotemporal variability into spatial and temporal components using the technique of separation of variables, the method learns relevant basis functions from sparsely sampled irregular data points to thus develop a continuous representation of the data. In experimental evaluations, the proposed model outperforms recent INR methods, offering superior reconstruction quality on simulation data from a state of the art climate model and on a second dataset that comprises of ultra-high resolution satellite-based sea surface temperature field."
+                }
+            ]
+        },
+        "sparse mixture-of-experts": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Sparse MoE as a New Treatment: Addressing Forgetting, Fitting, Learning Issues in Multi-Modal Multi-Task Learning",
+                    "url": "https://openreview.net/forum?id=bIHyMpzeuI",
+                    "keywords": [
+                        "multi-modal learning",
+                        "multi-task learning",
+                        "sparse mixture-of-experts"
+                    ],
+                    "abstract": "Sparse Mixture-of-Experts (SMoE) is a promising paradigm that can be easily tailored for multi-task learning. Its conditional computing nature allows us to organically allocate relevant parts of a model for performant and efficient predictions. However, several under-explored pain points persist, especially when considering scenarios with both multiple modalities and tasks: 1 $\\textit{{Modality Forgetting Issue.}}$ Diverse modalities may prefer conflicting optimization directions, resulting in ineffective learning or knowledge forgetting; 2 $\\textit{{Modality Fitting Issue.}}$ Current SMoE pipelines select a fixed number of experts for all modalities, which can end up over-fitting to simpler modalities or under-fitting complex modalities; 3 $\\textit{{Heterogeneous Learning Pace.}}$ The varied modality attributes, task resources ($\\textit{i.e.,}$ the number of input samples), and task objectives usually lead to distinct optimization difficulties and convergence. Given these issues, there is a clear need for a systematic approach to harmonizing multi-model and multi-task objectives when using SMoE. We aim to address these pain points, and propose a new $\\underline{S}$parse $\\underline{M}$oE framework for $\\underline{M}$ulti-$\\underline{M}$odal $\\underline{M}$ulti-task learning, $\\textit{a.k.a.}$, $\\texttt{SM$^4$}$, which ($1$) disentangles model spaces for different modalities to mitigate their optimization conflicts; \n($2$) automatically determines the modality-specific model size ($\\textit{i.e.}$, the number of experts) to improve fitting; and ($3$) synchronizes the learning paces of disparate modalities and tasks based on training dynamics in SMoE like the entropy of routing decisions. Comprehensive experiments validate the effectiveness of $\\texttt{SM$^4$}$, which outperforms previous state-of-the-art across $3$ task groups and $11$ different modalities with a clear performance margin ($\\textit{e.g.}$, $\\ge 1.37\\%$) and a substantial computation reduction ($46.49\\% \\sim 98.62\\%$). Code is included in the supplement."
+                }
+            ]
+        },
+        "Sparse Mixture-of-Experts": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "1,  50.00%",
+                "poster": "1,  50.00%",
+                "submitted": "0,  0.00%",
+                "total": "2,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "spotlight",
+                    "title": "Merge, Then Compress: Demystify Efficient SMoE with Hints from Its Routing Policy",
+                    "url": "https://openreview.net/forum?id=eFWG9Cy3WK",
+                    "keywords": [
+                        "Sparse Mixture-of-Experts",
+                        "Efficiency",
+                        "Merging",
+                        "Compression"
+                    ],
+                    "abstract": "Sparsely activated Mixture-of-Experts (SMoE) has shown promise to scale up the learning capacity of neural networks, however, they have issues like: ($a$) $\\textit{High Memory Usage,}$ due to duplication of the network layers into multiple copies as experts; and ($b$) $\\textit{Redundancy in Experts,}$ as common learning-based routing policies suffer from representational collapse. Therefore, vanilla SMoE models are memory inefficient and non-scalable, especially for resource-constrained downstream scenarios. In this paper, we ask: Can we craft a compact SMoE model by consolidating expert information? What is the best recipe to merge multiple experts into fewer but more knowledgeable experts? Our pilot investigation reveals that conventional model merging methods fail to be effective in such expert merging for SMoE. The potential reasons are: ($1$) redundant information overshadows critical experts; ($2$) appropriate neuron permutation for each expert is missing to bring all of them in alignment. To address these challenges, we propose a novel merging algorithm for SMoE, $\\textit{i.e.}$, $\\texttt{M-SMoE}$, which leverages routing statistics to guide expert merging. Specifically, it starts with neuron permutation alignment for experts; then, dominant experts and their \"group members\" are formed based on routing policies; lastly, every expert group is merged into a single expert by utilizing each expert's activation frequency as their weight for merging, thus diminishing the impact of insignificant experts. Moreover, we draw an interesting observation that our proposed merging promotes a low dimensionality in the merged expert's weight space, naturally paving the way for additional compression. Hence, our final method, $\\texttt{MC-SMoE}$ ($\\textit{i.e.}$, Merge, then Compress SMoE), further decomposes the merged experts into low-rank and structural sparse alternatives. Extensive experiments across $8$ benchmarks validate the effectiveness of our proposals. For instance, our $\\texttt{MC-SMoE}$ achieves up to $80\\%$ memory and a $20\\%$ FLOPs reduction, with virtually no loss in performance. Our code is provided as supplementary material."
+                },
+                {
+                    "type": "poster",
+                    "title": "Sparse MoE with Language Guided Routing for Multilingual Machine Translation",
+                    "url": "https://openreview.net/forum?id=ySS7hH1smL",
+                    "keywords": [
+                        "Sparse Mixture-of-Experts",
+                        "Multilingual Machine Translation",
+                        "Language Guided Routing"
+                    ],
+                    "abstract": "Sparse Mixture-of-Experts (SMoE) has gained increasing popularity as a promising framework for scaling up multilingual machine translation (MMT) models with negligible extra computational overheads. However, current SMoE solutions neglect the intrinsic structures of the MMT problem: ($a$) $\\textit{Linguistics Hierarchy.}$ Languages are naturally grouped according to their lingual properties like genetic families, phonological characteristics, etc; ($b$) $\\textit{Language Complexity.}$ The learning difficulties are varied for diverse languages due to their grammar complexity, available resources, etc. Therefore, routing a fixed number of experts (e.g., $1$ or $2$ experts in usual) only at the word level leads to inferior performance. To fill in the missing puzzle, we propose $\\textbf{\\texttt{Lingual-SMoE}}$ by equipping the SMoE with adaptive and linguistic-guided routing policies. Specifically, it ($1$) extracts language representations to incorporate linguistic knowledge and uses them to allocate experts into different groups; ($2$) determines the number of activated experts for each target language in an adaptive and automatic manner, according to their translation difficulties, which aims to mitigate the potential over-/under-fitting issues of learning simple/challenges translations. Sufficient experimental studies on MMT benchmarks with {$16$, $50$, $100$} language pairs and various network architectures, consistently validate the superior performance of our proposals. For instance, $\\texttt{Lingual-SMoE}$ outperforms its dense counterpart by over $5\\%$ BLEU scores on $\\texttt{OPUS-100}$ dataset. Codes are included in the supplement."
+                }
+            ]
+        },
+        "Sparse Phase Retrieval": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "A Fast and Provable Algorithm for Sparse Phase Retrieval",
+                    "url": "https://openreview.net/forum?id=BlkxbI6vzl",
+                    "keywords": [
+                        "Sparse Phase Retrieval",
+                        "Nonconvex Optimization",
+                        "Quadratic Convergence"
+                    ],
+                    "abstract": "We study the sparse phase retrieval problem, which aims to recover a sparse signal from a limited number of phaseless measurements. Existing algorithms for sparse phase retrieval primarily rely on first-order methods with linear convergence rate. In this paper, we propose an efficient second-order algorithm based on Newton projection, which maintains the same per-iteration computational complexity as popular first-order methods. The proposed algorithm is theoretically guaranteed to converge to the ground truth (up to a global sign) at a quadratic convergence rate after at most $\\mathcal{O}\\big(\\log (\\Vert\\boldsymbol{x}^{\\natural} \\Vert /x_{\\min}^{\\natural})\\big)$ iterations, provided a sample complexity of $\\mathcal{O}(s^2\\log n)$, where $\\boldsymbol{x}^{\\natural} \\in \\mathbb{R}^n$ represents an $s$-sparse ground truth signal. Numerical experiments demonstrate that our algorithm outperforms state-of-the-art methods in terms of achieving a significantly faster convergence rate."
+                }
+            ]
+        },
+        "Sparse": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "SAS: Structured Activation Sparsification",
+                    "url": "https://openreview.net/forum?id=vZfi5to2Xl",
+                    "keywords": [
+                        "Structured",
+                        "Sparse",
+                        "Pruning",
+                        "Projection"
+                    ],
+                    "abstract": "Wide networks usually yield better accuracy than their narrower counterpart at the expense of the massive $\\texttt{mult}$ cost.\nTo break this tradeoff, we advocate a novel concept of $\\textit{Structured Activation Sparsification}$, dubbed SAS, which boosts accuracy without increasing computation by utilizing the projected sparsity in activation maps with a specific structure. \nConcretely, the projected sparse activation is allowed to have N nonzero value among M consecutive activations.\nOwing to the local structure in sparsity, the wide $\\texttt{matmul}$ between a dense weight and the sparse activation is executed as an equivalent narrow $\\texttt{matmul}$ between a dense weight and dense activation, which is compatible with NVIDIA's $\\textit{SparseTensorCore}$ developed for the N:M structured sparse weight.\nIn extensive experiments, we demonstrate that increasing sparsity monotonically improves accuracy (up to 7% on CIFAR10) without increasing the $\\texttt{mult}$ count.\nFurthermore, we show that structured sparsification of $\\textit{activation}$ scales better than that of $\\textit{weight}$ given the same computational budget."
+                }
+            ]
+        },
+        "Sparse Attention": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "SEA: Sparse Linear Attention with Estimated Attention Mask",
+                    "url": "https://openreview.net/forum?id=JbcwfmYrob",
+                    "keywords": [
+                        "Sparse Attention",
+                        "Attention Estimation",
+                        "Linear Attention",
+                        "Transformers",
+                        "NLP"
+                    ],
+                    "abstract": "The transformer architecture has made breakthroughs in recent years on tasks which require modeling pairwise relationships between sequential elements, as is the case in natural language understanding. However, transformers struggle with long sequences due to the quadratic complexity of the attention operation, and previous research has aimed to lower the complexity by sparsifying or linearly approximating the attention matrix. Yet, these approaches cannot straightforwardly distill knowledge from a teacher's attention matrix, and often require complete retraining from scratch. Furthermore, previous sparse and linear approaches may also lose interpretability if they do not produce full quadratic attention matrices. To address these challenges, we propose SEA: Sparse linear attention with an Estimated Attention mask. SEA estimates the attention matrix with linear complexity via kernel-based linear attention, then creates a sparse approximation to the full attention matrix with a top-k selection to perform a sparse attention operation. For language modeling tasks (Wikitext2), previous linear and sparse attention methods show a roughly two-fold worse perplexity scores over the quadratic OPT-125M baseline, while SEA achieves an even better perplexity than OPT-125M, using roughly half as much memory as OPT-125M. Moreover, SEA maintains an interpretable attention matrix and can utilize knowledge distillation to lower the complexity of existing pretrained transformers. We believe that our work will have a large practical impact, as it opens the possibility of running large transformers on resource-limited devices with less memory."
+                }
+            ]
+        },
+        "sparse Bayesian learning": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Training Bayesian Neural Networks with Sparse Subspace Variational Inference",
+                    "url": "https://openreview.net/forum?id=TskzCtpMEO",
+                    "keywords": [
+                        "Bayesian neural networks",
+                        "sparse Bayesian learning",
+                        "variational inference"
+                    ],
+                    "abstract": "Bayesian neural networks (BNNs) offer uncertainty quantification but come with the downside of substantially increased training and inference costs. Sparse BNNs have been investigated for efficient inference, typically by either slowly introducing sparsity throughout the training or by post-training compression of dense BNNs. The dilemma of how to cut down massive training costs remains, particularly given the requirement to learn about the uncertainty. To solve this challenge, we introduce Sparse Subspace Variational Inference (SSVI), the first fully sparse BNN framework that maintains a consistently sparse Bayesian model throughout the training and inference phases. Starting from a randomly initialized low-dimensional sparse subspace, our approach alternately optimizes the sparse subspace basis selection and its associated parameters. While basis selection is characterized as a non-differentiable problem, we approximate the optimal solution with a removal-and-addition strategy, guided by novel criteria based on weight distribution statistics. Our extensive experiments show that SSVI sets new benchmarks in crafting sparse BNNs, achieving, for instance, a 10-20× compression in model size with under 3\\% performance drop, and up to 20× FLOPs reduction during training. Remarkably, SSVI also demonstrates enhanced robustness to hyperparameters, reducing the need for intricate tuning in VI and occasionally even surpassing VI-trained dense BNNs."
+                }
+            ]
+        },
+        "Extremely Sparse Labled Data": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Variance-enlarged Poisson Learning for Graph-based Semi-Supervised Learning with Extremely Sparse Labeled Data",
+                    "url": "https://openreview.net/forum?id=yeeVBMDAwy",
+                    "keywords": [
+                        "Semi-Supervised Learning",
+                        "Poisson Learning",
+                        "Extremely Sparse Labled Data"
+                    ],
+                    "abstract": "suffer from degenerate solutions where label functions tend to be nearly constant across unlabeled data. In this paper, we introduce Variance-enlarged Poisson Learning (VPL), a simple yet powerful framework tailored to address the challenges arising from the presence of degenerate solutions. VPL incorporates a variance-enlarged regularization term, which induces a Poisson equation specifically for unlabeled data. This intuitive approach increases the dispersion of labels from their average mean, effectively reducing the likelihood of degenerate solutions characterized by nearly constant label functions. We subsequently introduce two streamlined algorithms, V-Laplace and V-Poisson, each intricately designed to enhance Laplace and Poisson learning, respectively. Furthermore, we broaden the scope of VPL to encompass graph neural networks, introducing Variance-enlarged Graph Poisson Networks to facilitate improved label propagation. To achieve a deeper understanding of VPL's behavior, we conduct a comprehensive theoretical exploration in both discrete and variational cases. Our findings elucidate that VPL inherently amplifies the importance of connections within the same class while concurrently tempering those between different classes. We support our claims with extensive experiments, demonstrating the effectiveness of VPL and showcasing its superiority over existing methods."
+                }
+            ]
+        },
+        "Compressed Sensing and Sparse Reconstruction": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Information-Ordered Bottlenecks for Adaptive Dimensionality Reduction",
+                    "url": "https://openreview.net/forum?id=XbydvPq92M",
+                    "keywords": [
+                        "Deep Learning",
+                        "Nonlinear Dimension Reduction and Manifold Learning",
+                        "Neural Networks",
+                        "Component Analysis (ICA",
+                        "PCA",
+                        "CCA",
+                        "FLDA)",
+                        "Compressed Sensing and Sparse Reconstruction"
+                    ],
+                    "abstract": "We present the information-ordered bottleneck (IOB), a neural layer designed to adaptively compress data into latent variables ordered by likelihood maximization. Without retraining, IOB nodes can be truncated at any bottleneck width, capturing the most crucial information in the first latent variables. Unifying several previous approaches, we show that IOBs achieve near-optimal compression for a given encoding architecture and can assign ordering to latent signals in a manner that is semantically meaningful. IOBs demonstrate a remarkable ability to compress embeddings of image and text data, leveraging the performance of SOTA architectures such as CNNs, transformers, and diffusion models. Moreover, we introduce a novel theory for estimating global intrinsic dimensionality with IOBs and show that they recover SOTA dimensionality estimates for complex synthetic data. Furthermore, we showcase the utility of these models for exploratory analysis through applications on heterogeneous datasets, enabling computer-aided discovery of dataset complexity."
+                }
+            ]
+        },
+        "sparse system identification": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Interpretable Sparse System Identification: Beyond Recent Deep Learning Techniques on Time-Series Prediction",
+                    "url": "https://openreview.net/forum?id=aFWUY3E7ws",
+                    "keywords": [
+                        "time series",
+                        "sparse system identification",
+                        "long term prediction"
+                    ],
+                    "abstract": "With the continuous advancement of neural network methodologies, time series prediction has attracted substantial interest over the past decades. Nonetheless, the interpretability of neural networks is insufficient and the utilization of deep learning techniques for prediction necessitates significant computational expenditures, rendering its application arduous in numerous scenarios. In order to tackle this challenge, an interpretable sparse system identification method which does not require a time-consuming training through back-propagation is proposed in this study. This method integrates advantages from both knowledge-based and data-driven approaches, and constructs dictionary functions by leveraging Fourier basis and taking into account both the long-term trends and the short-term fluctuations behind data. By using the $l_1$ norm for sparse optimization, prediction results can be gained with an explicit sparse expression function and an extremely high accuracy. The performance evaluation of the proposed method is conducted on comprehensive benchmark datasets, including ETT, Exchange, and ILI. Results reveal that our proposed method attains a significant overall improvement of more than 20\\% in accordance with the most recent state-of-the-art deep learning methodologies. Additionally, our method demonstrates the efficient training capability on only CPUs. Therefore, this study may shed some light onto the realm of time series reconstruction and prediction."
+                }
+            ]
+        },
+        "sparse subnetworks": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Discovering Knowledge-Critical Subnetworks in Neural Language Models",
+                    "url": "https://openreview.net/forum?id=Mkdwvl3Y8L",
+                    "keywords": [
+                        "sparse subnetworks",
+                        "knowledge graphs",
+                        "interpretability"
+                    ],
+                    "abstract": "Pretrained language models (LMs) encode implicit representations of knowledge in their parameters. However, localizing these representations and disentangling them from each other remains an open problem. In this work, we investigate whether pretrained language models contain various *knowledge-critical* subnetworks: particular sparse computational subgraphs responsible for encoding specific knowledge the model has memorized. We propose a multi-objective differentiable weight masking scheme to discover these subnetworks and show that we can use them to precisely remove specific knowledge from models while minimizing adverse effects on the behavior of the original language model. We demonstrate our method on multiple GPT2 variants, uncovering highly sparse subnetworks (98\\%+) that are solely responsible for specific collections of relational knowledge. When these subnetworks are removed, the remaining network maintains most of its initial capacity (modeling language and other memorized relational knowledge) but struggles to express the removed knowledge, and suffers performance drops on examples needing this removed knowledge on downstream tasks after finetuning."
+                }
+            ]
+        },
+        "Sparse neural networks": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  50.00%",
+                "submitted": "1,  50.00%",
+                "total": "2,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Sparse Weight Averaging with Multiple Particles for Iterative Magnitude Pruning",
+                    "url": "https://openreview.net/forum?id=Y9t7MqZtCR",
+                    "keywords": [
+                        "Unstructured pruning",
+                        "Sparse neural networks",
+                        "Lottery ticket hypothesis",
+                        "Weight averaging",
+                        "Bayesian neural networks"
+                    ],
+                    "abstract": "Given the ever-increasing size of modern neural networks, the significance of sparse architectures has surged due to their accelerated inference speeds and minimal memory demands. When it comes to global pruning techniques, Iterative Magnitude Pruning (IMP) still stands as a state-of-the-art algorithm despite its simple nature, particularly in extremely sparse regimes. In light of the recent finding that the two successive matching IMP solutions are linearly connected without a loss barrier, we propose Sparse Weight Averaging with Multiple Particles (SWAMP), a straightforward modification of IMP that achieves performance comparable to an ensemble of two IMP solutions. For every iteration, we concurrently train multiple sparse models, referred to as particles, using different batch orders yet the same matching ticket, and then weight average such models to produce a single mask. We demonstrate that our method consistently outperforms existing baselines across different sparsities through extensive experiments on various neural network structures and data."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Constructing Sparse Neural Architecture with Deterministic Ramanujan Graphs",
+                    "url": "https://openreview.net/forum?id=x6gnuUXpxM",
+                    "keywords": [
+                        "Sparse neural networks",
+                        "expander graphs",
+                        "pruning",
+                        "Ramanujan graphs"
+                    ],
+                    "abstract": "We present a sparsely connected neural network architecture constructed using the theory of Ramanujan graphs which provide comparable performance to a dense network. The method can be considered as a before-training, deterministic, weight free, pruning at initialization (PaI) technique. The deterministic Ramanujan graphs occur either as Cayley graphs of certain algebraic groups or as Ramanujan $r$-coverings of the full $(k,l)$ bi-regular bipartite graph on $k + l$ vertices. Sparse networks are constructed for bipartite graphs representing both the convolution and the fully connected layers. We experimentally show that the proposed sparse architecture provides comparable accuracy with a lower sparsity ratio than those achieved by previous approaches based on non-deterministic methods for benchmark datasets. In addition, they retain other desirable properties such as path connectivity and symmetricity."
+                }
+            ]
+        },
+        "Sparse Neural Networks": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "On Synthetic Data and Iterative Magnitude Pruning: a Linear Mode Connectivity Study",
+                    "url": "https://openreview.net/forum?id=5451cIQdWp",
+                    "keywords": [
+                        "Neural Network Pruning",
+                        "Linear Mode Connectivity",
+                        "Dataset Distillation",
+                        "Sparse Neural Networks"
+                    ],
+                    "abstract": "Recent works have shown that distilled data representations can be leveraged for accelerating the training of DNNs. However, to date, very little is understood about the effect of these synthetic data representations in the area of architectural optimization, specifically with Iterative Magnitude Pruning (IMP) and pruning at initialization. We push the boundaries of pruning with distilled data, matching the performance of traditional IMP on ResNet-18 \\& CIFAR-10 while using 150x less training points to find a sparsity mask. We find that distilled data guides IMP to discard parameters contributing to the sharpness of the loss landscape, fostering smoother landscapes. These synthetic subnetworks are stable to SGD noise at initialization in settings when the dense model or subnetworks found with standard IMP are not, such as ResNet-10 on ImageNet-10. In other words, training from initialization across different shuffling of data will result in linear mode connectivity, a phenomenon which rarely happens without some pretraining. We visualize these loss landscapes and quantitatively measure sharpness through hessian approximations to understand these effects. This behavior is heavily linked to the compressed representation of the data, highlighting the importance of synthetic data in neural architectural validation. In order to find both a high performing and robust sparse architecture, a more optimal synthetic data representation is needed that can compress irrelevant noise like distilled data, yet better maintain task-specific information from the real data as dataset complexity increases."
+                }
+            ]
+        },
+        "sparse dictionary learning": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Measuring Feature Sparsity in Language Models",
+                    "url": "https://openreview.net/forum?id=SznHfMwmjG",
+                    "keywords": [
+                        "sparse coding",
+                        "sparse dictionary learning",
+                        "interpretability",
+                        "language models",
+                        "superposition",
+                        "polysemanticity",
+                        "metrics"
+                    ],
+                    "abstract": "Recent works have proposed that intermediate activations in language models can be modelled as sparse linear combinations of vectors corresponding to features of the input text. Under this assumption, these works have aimed to reconstruct these feature directions using sparse coding. We develop metrics which can be used to assess the success of these sparse coding techniques and thereby implicitly test the validity of the linearity and sparsity assumptions. We show that our metrics can predict the level of sparsity on synthetic sparse linear activations, and that they can distinguish between sparse linear data and several other distributions. We use our metrics to measure the level of sparsity in several language models. We find evidence that language model activations can be accurately modelled by sparse linear combinations of features, significantly more so than control datasets. We also show that model activations appear to be sparsest in the first and final layers, and least sparse in middle layers."
+                }
+            ]
+        },
+        "Sparse training": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "SpaFL: Communication-Efficient Federated Learning with Sparse Models and Low Computational Overhead",
+                    "url": "https://openreview.net/forum?id=DZyhUXpEee",
+                    "keywords": [
+                        "Federated Learning",
+                        "Communication efficiency",
+                        "Sparse training",
+                        "Computational overhead"
+                    ],
+                    "abstract": "The large communication and computation overhead of federated learning (FL) is one of the main challenges facing its practical deployment over resource-constrained clients and systems. In this work, SpaFL: a communication-efficient FL framework is proposed to optimize both personalized model parameters and sparse model structures  with low computational overhead. In SpaFL, a trainable threshold is defined for each neuron/filter to prune its connected parameters. Both model parameters and thresholds are jointly optimized to enable the automatic sparsification of the models while recovering prematurely pruned parameters during training. To reduce communication costs, only thresholds are communicated between a server and clients instead of parameters, thereby enabling the clients to learn how to prune. Further, global thresholds are used to update model parameters by extracting aggregated parameter importance. The convergence of SpaFL is analyzed, and the results provide new insights into the tradeoff between computation overhead and learning performance. Experimental results show that SpaFL improves accuracy while requiring much less communication and computing resources compared to both dense and sparse personalized baselines."
+                }
+            ]
+        },
+        "Sparse regularization": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Enhancing One-Shot Pruned Generative Pre-training Language Models through Sparse-Dense-Sparse Mechanism",
+                    "url": "https://openreview.net/forum?id=TjXjkxhSdE",
+                    "keywords": [
+                        "Generative pre-trained language models",
+                        "Unstructured pruning",
+                        "Sparse regularization",
+                        "Model compression"
+                    ],
+                    "abstract": "Generative pre-trained language models (PLMs) are engineered to be robust in contextual understanding and exhibit outstanding performance in various natural language processing tasks. However, their considerable size incurs significant computational and storage costs. Modern pruning strategies employ one-shot techniques to compress PLMs without the need for retraining on task-specific or otherwise general data; however, these approaches often lead to an indispensable reduction in performance. In this paper, we propose SDS, a Sparse-Dense-Sparse pruning framework to enhance the performance of the pruned PLMs from a weight distribution optimization perspective. We outline the pruning process in three steps. Initially, we prune less critical connections in the model with conventional one-shot pruning methods. Next, we reconstruct a dense model featuring a pruning-friendly weight distribution by reactivating pruned connections with sparse regularization. Finally, we perform a second pruning round, yielding a superior pruned model compared to the initial pruning. Notably, SDS requires only a limited number of calibration samples, comparable to typical one-shot pruning methods, but significantly outperforms them. Experimental results demonstrate that, under an identical sparsity configuration, SDS outperforms the state-of-the-art pruning technique SparseGPT by decreasing language comprehension perplexity by an average of 2.4 and achieving an average accuracy improvement of over 2% across seven downstream tasks on OPTs."
+                }
+            ]
+        },
+        "online sparse approximation": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "VTruST : Controllable value function based subset selection for Data-Centric Trustworthy AI",
+                    "url": "https://openreview.net/forum?id=7m5jhNXklB",
+                    "keywords": [
+                        "Data centric trustworthy AI",
+                        "value function",
+                        "data valuation",
+                        "online sparse approximation",
+                        "fairness",
+                        "robustness",
+                        "explainability"
+                    ],
+                    "abstract": "Trustworthy AI is crucial to the widespread adoption of AI in high-stakes applications with explainability, fairness, and robustness being some of the key trustworthiness metrics. Data-Centric AI (DCAI) aims to construct high-quality datasets for efficient training of trustworthy models. In this work, we propose a controllable framework for data-centric trustworthy AI (DCTAI)- VTruST, that allows users to control the trade-offs between the different trustworthiness metrics of the constructed training datasets. A key challenge in implementing an efficient DCTAI framework is to design an online value-function-based training data subset selection algorithm. We pose the training data valuation and subset selection problem as an online sparse approximation formulation, where the $\\textit{features}$ for each training datapoint is obtained in an online manner through an iterative training algorithm. We propose a novel online version of the OMP algorithm for solving this problem. We also derive conditions on the data matrix, that guarantee the exact recovery of the sparse solution. We demonstrate the generality and effectiveness of our approach by designing data-driven value functions for the above trustworthiness metrics. Experimental results show that VTruST outperforms the state-of-the-art baselines for fair learning as well as robust training, on standard fair and robust datasets. We also demonstrate that VTruST can provide effective tradeoffs between different trustworthiness metrics through pareto optimal fronts. Finally, we show that the data valuation generated by VTruST can provide effective data-centric explanations for different trustworthiness metrics."
+                }
+            ]
+        },
+        "sparse retriever": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "1,  100.00%",
+                "poster": "0,  0.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "spotlight",
+                    "title": "Retrieval-based Disentangled Representation Learning with Natural Language Supervision",
+                    "url": "https://openreview.net/forum?id=ZlQRiFmq7Y",
+                    "keywords": [
+                        "Disentangled representation learning",
+                        "information retriever",
+                        "sparse retriever"
+                    ],
+                    "abstract": "Disentangled representation learning remains challenging as the underlying factors of variation in the data do not naturally exist. The inherent complexity of real-world data makes it unfeasible to exhaustively enumerate and encapsulate all its variations within a finite set of factors. However, it is worth noting that most real-world data have linguistic equivalents, typically in the form of textual descriptions. These linguistic counterparts can represent the data and effortlessly decomposed into distinct tokens. In light of this, we present Vocabulary Disentangled Retrieval (VDR), a retrieval-based framework that harnesses natural language as proxies of the underlying data variation to drive disentangled representation learning. Our approach employ a bi-encoder model to represent both data and natural language in a vocabulary space, enabling the model to distinguish dimensions that capture intrinsic characteristics within data through its natural language counterpart, thus facilitating disentanglement. We extensively assess the performance of VDR across 15 retrieval benchmark datasets, covering text-to-text and cross-modal retrieval scenarios, as well as human evaluation. Our experimental results compellingly demonstrate the superiority of VDR over previous bi-encoder retrievers with comparable model size and training costs, achieving an impressive 8.7% improvement in NDCG@10 on the BEIR benchmark, a 5.3\\% increase on MS COCO, and a 6.0% increase on Flickr30k in terms of mean recall in the zero-shot setting. Moreover, The results from human evaluation indicate that interpretability of our method is on par with SOTA captioning models."
+                }
+            ]
+        },
+        "sparse recovery": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Optimal Sketching for Residual Error Estimation for Matrix and Vector Norms",
+                    "url": "https://openreview.net/forum?id=RsJwmWvE6Q",
+                    "keywords": [
+                        "Sketching",
+                        "Residual error",
+                        "Low-rank approximation",
+                        "sparse recovery"
+                    ],
+                    "abstract": "We study the problem of residual error estimation for matrix and vector norms using a linear sketch. Such estimates can be used, for example, to quickly assess how useful a more expensive low-rank approximation computation will be. The matrix case concerns the Frobenius norm and the task is to approximate the $k$-residual $\\|A - A_k\\|_F$ of the input matrix $A$ within a $(1+\\epsilon)$-factor, where $A_k$ is the optimal rank-$k$ approximation. We provide a tight bound of $\\Theta(k^2/\\epsilon^4)$ on the size of bilinear sketches, which have the form of a matrix product $SAT$. This improves the previous $O(k^2/\\epsilon^6)$ upper bound in (Andoni et al. SODA 2013) and gives the first non-trivial lower bound, to the best of our knowledge. \nIn our algorithm, our sketching matrices $S$ and $T$ can both be sparse matrices, allowing for a very fast update time. \nWe demonstrate that this gives a substantial advantage empirically, for roughly the same sketch size and accuracy as in previous work. \n\nFor the vector case, we consider the $\\ell_p$-norm for $p>2$, where the task is to approximate the $k$-residual $\\|x - x_k\\|_p$ up to a constant factor, where $x_k$ is the optimal $k$-sparse approximation to $x$. Such vector norms are frequently studied in the data stream literature and are useful for finding frequent items or so-called heavy hitters. We establish an upper bound of $O(k^{2/p}n^{1-2/p}\\operatorname{poly}(\\log n))$ for constant $\\epsilon$ on the dimension of a linear sketch for this problem. Our algorithm can be extended to the $\\ell_p$ sparse recovery problem with the same sketching dimension, which seems to be the first such bound for $p > 2$. We also show an $\\Omega(k^{2/p}n^{1-2/p})$ lower bound for the sparse recovery problem, which is tight up to a $\\mathrm{poly}(\\log n)$ factor."
+                }
+            ]
+        },
+        "Singular value decomposition; Sparse matrix; Unsupervised learning": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Fast Updating of Truncated SVD for Representation Learning in Sparse Matrix",
+                    "url": "https://openreview.net/forum?id=CX2RgsS29V",
+                    "keywords": [
+                        "Singular value decomposition; Sparse matrix; Unsupervised learning"
+                    ],
+                    "abstract": "Updating truncated Singular Value Decomposition (SVD) has extensive applications in representation learning.\nThe continuous evolution of massive-scaled data matrices in practical scenarios highlights the importance of aligning SVD-based models with fast-paced updates.\nRecent methods for updating truncated SVD can be recognized as Rayleigh-Ritz projection procedures where their projection matrices are augmented based on the original singular vectors.\nHowever, the updating process in these methods densifies the update matrix and applies the projection to all singular vectors, resulting in inefficiency.\nThis paper presents a novel method for dynamically approximating the truncated SVD of a sparse and temporally evolving matrix.\nThe proposed method takes advantage of sparsity in the orthogonalization process of the augment matrices and employs an extended decomposition to store projections in the column space of singular vectors independently.\nNumerical experimental results on updating truncated SVD for evolving sparse matrices show an order of magnitude improvement in the efficiency of our proposed method while maintaining precision comparing to previous methods."
+                }
+            ]
+        },
+        "sparse matching": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "ROBUST SPARSE AND DENSE MATCHING",
+                    "url": "https://openreview.net/forum?id=mjzwioGLux",
+                    "keywords": [
+                        "sparse matching",
+                        "dense matching",
+                        "optical flow",
+                        "geometry estimation"
+                    ],
+                    "abstract": "Finding corresponding pixels within a pair of images is a fundamental computer vision task with various applications. Due to the specific requirements of different tasks like optical flow estimation and local feature matching, previous works are primarily categorized into dense matching and sparse feature matching focusing on specialized architectures along with task-specific datasets, which may somewhat hinder the generalization performance of specialized models. In this paper, we propose RSDM, a robust network for sparse and dense matching. A cascaded GRU module is elaborately designed for refinement to explore the geometric similarity iteratively at multiple scales following an independent uncertainty estimation module for sparsification. To narrow the gap between synthetic samples and real-world scenarios, we organize a new dataset with sparse correspondence ground truth by generating optical flow supervision with greater intervals. In due course, we are able to mix up various dense and sparse matching datasets significantly improving the training diversity. The generalization capacity of our proposed RSDM is greatly enhanced by learning the matching and uncertainty estimation in a two-stage manner on the mixed data. Superior performance is achieved for zero-shot matching as well as downstream geometry estimation across multiple datasets, outperforming the previous methods by a large margin."
+                }
+            ]
+        },
+        "sparse training": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "2,  100.00%",
+                "total": "2,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "BiDST: Dynamic Sparse Training is a Bi-Level Optimization Problem",
+                    "url": "https://openreview.net/forum?id=qbw861vueP",
+                    "keywords": [
+                        "sparse training",
+                        "efficient learning algorithm"
+                    ],
+                    "abstract": "Dynamic Sparse Training (DST) is an effective approach for addressing the substantial training resource requirements posed by the ever-increasing size of the Deep Neural Networks (DNNs). Characterized by its dynamic ``train-prune-grow'' schedule during training, DST implicitly develops a bi-level structure for training the weights while discovering a subnetwork topology. However, such a structure is consistently overlooked by the current DST algorithms for further optimization opportunities, and these algorithms, on the other hand, solely optimize the weights while determining masks heuristically. In this paper, we extensively study DST algorithms and argue that the training scheme of DST naturally forms a bi-level problem in which the updating of weight and mask is interdependent. Based on this observation, we introduce a novel efficient training framework called BiDST, which for the first time, introduces bi-level optimization methodology into dynamic sparse training domain. Unlike traditional partial-heuristic DST schemes, which suffer from sub-optimal search efficiency for masks and miss the opportunity to fully explore the topological space of neural networks, BiDST excels at discovering excellent sparse patterns by optimizing mask and weight simultaneously, resulting in maximum $2.62$% higher accuracy, $2.1\\times$ faster execution speed, and $25\\times$ reduced overhead. Code will be released."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Always-Sparse Training with Guided Stochastic Exploration",
+                    "url": "https://openreview.net/forum?id=XMaPp8CIXq",
+                    "keywords": [
+                        "sparse training",
+                        "sparsity",
+                        "pruning",
+                        "lottery tickets",
+                        "scalable",
+                        "efficient"
+                    ],
+                    "abstract": "The excessive computational requirements of modern artificial neural networks (ANNs) are posing limitations on the machines that can run them. Sparsification of ANNs is often motivated by time, memory and energy savings only during model inference, yielding no benefits during training. A growing body of work is now focusing on providing the benefits of model sparsification also during training. While these methods greatly improve the training efficiency, the training algorithms yielding the most accurate models still materialize the dense weights, or compute dense gradients during training. We propose an efficient, always-sparse training algorithm which improves the accuracy over previous methods. Additionally, our method has excellent scaling to larger and sparser models, supported by its linear time complexity with respect to the model width during training and inference. We evaluate our method on CIFAR-10/100 and ImageNet using ResNet, VGG, and ViT models, and compare it against a range of sparsification methods."
+                }
+            ]
+        },
+        "Sparse Feedback": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "Peering Through Preferences: Unraveling Feedback Acquisition for Aligning Large Language Models",
+                    "url": "https://openreview.net/forum?id=dKl6lMwbCy",
+                    "keywords": [
+                        "LLMs",
+                        "Sparse Feedback",
+                        "Ratings",
+                        "Rankings",
+                        "Inconsistency",
+                        "Evaluation"
+                    ],
+                    "abstract": "Aligning large language models (LLMs) with human values and intents critically involves the use of human or AI feedback. While dense feedback annotations are expensive to acquire and integrate, sparse feedback presents a structural design choice between ratings (e.g., score Response A on a scale of 1-7) and rankings (e.g., is Response A better than Response B?). In this work, we analyze the effect of this design choice for the alignment and evaluation of LLMs. We uncover an inconsistency problem wherein the preferences inferred from ratings and rankings significantly disagree 60% for both human and AI annotators. Our subsequent analysis identifies various facets of annotator biases that explain this phenomena such as human annotators would rate denser responses higher while preferring accuracy during pairwise judgments, for a particular comparison instance. To our surprise, we observe that the choice of feedback protocol has a significant effect on the evaluation of aligned LLMs. In particular, we find that LLMs that leverage rankings data for alignment (say model X) are preferred over those that leverage ratings data (say model Y), with a rank-based evaluation protocol (is X/Y's response better than reference response?) but not with a rating-based evaluation protocol (score Rank X/Y's response on a scale of 1-7). Our findings thus shed light on critical gaps in methods for evaluating the real-world utility of language models and their strong dependence on the feedback protocol used for alignment."
+                }
+            ]
+        },
+        "Graphs; Semi-Supervised Node Classification; Unsupervised learning; Clustering; Sparse Labels Setting": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Sparse Labels Node Classification: Unsupervised Learning for Mentoring Supervised Learning in Sparse Label Settings",
+                    "url": "https://openreview.net/forum?id=dCDX1fjrXr",
+                    "keywords": [
+                        "Graphs; Semi-Supervised Node Classification; Unsupervised learning; Clustering; Sparse Labels Setting"
+                    ],
+                    "abstract": "Despite their huge success, Graph Neural Networks (GNNs) still require lots of labeled examples (per class) at training time in order to perform well on the Semi-Supervised Node Classification (SSNC) task. This is a major drawback since labels are usually expensive and time-consuming to get. Though several attempts have been made to address this problem, most attempts still require; a significant amount of labeled examples for at least some classes (considered base classes), as well a minimum amount of labels per class (for other classes). In this work, we attempt to alleviate these hard requirements. Our problem thus differs from the traditional SSNC settings in the sense that in this work we try to address the setting in which we only have extremely few labeled nodes seen at training time, and in addition, these labeled nodes are not provided (chosen) on a per-class basis. We name this task Sparse Labels Node Classification (SLNC). To address this problem, we Estimate Label Information (ELI) from a pseudo space by leveraging unsupervised learning techniques. We use this estimated label information to enhance reformulations of well-known semi-supervised learning (SSL) frameworks, as well as guide the labeled nodes selection process for training. We show that our approach outperforms baselines on SLNC by 10-20% when the number of labeled nodes seen at training is extremely few."
+                }
+            ]
+        },
+        "Sparse Subspace Learning": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "0,  0.00%",
+                "submitted": "1,  100.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "Unsupervised Feature Selection using a Basis of Feature Space and Self-Representation Learning",
+                    "url": "https://openreview.net/forum?id=PfFpK0JAsQ",
+                    "keywords": [
+                        "Unsupervised Feature Selection",
+                        "Self-Representation Learning",
+                        "Graph Regularization",
+                        "Sparse Subspace Learning"
+                    ],
+                    "abstract": "In recent years, there has been extensive research into unsupervised feature selection methods based on self-representation.\nHowever, there exists a major gap in the mathematical principles that underlie these approaches and their capacity to represent the feature space.\nIn this paper, a novel representation learning method, Graph Regularized Self-Representation and Sparse Subspace Learning (GRSSLFS), is proposed for the unsupervised feature selection.\nFirstly, GRSSLFS expresses the self-representation problem based on the concept of ``a basis of feature space'' to represent the original feature space as a low-dimensional space made of linearly independent features. Furthermore, the manifold structure corresponding to the newly constructed subspace is learned in order to preserve the geometric structure of the feature vectors. Secondly, the objective function of GRSSLFS is developed based on a self-representation framework that combines subspace learning and matrix factorization of the basis matrix. Finally, the effectiveness of GRSSLFS is explored through experiments on widely-used datasets. Results show that GRSSLFS achieves a high level of performance in comparison with several classic and state-of-the-art feature selection methods."
+                }
+            ]
+        }
+    }
+}

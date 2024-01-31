@@ -1,0 +1,152 @@
+{
+    "_count_all": {
+        "oral": "85,  1.47%",
+        "spotlight": "366,  6.31%",
+        "poster": "1799,  31.03%",
+        "submitted": "3548,  61.19%",
+        "total": "5798,  100.00%"
+    },
+    "_count": {
+        "oral": "0,  0.00%",
+        "spotlight": "0,  0.00%",
+        "poster": "5,  62.50%",
+        "submitted": "3,  37.50%",
+        "total": "8,  100.00%"
+    },
+    "lora": {
+        "_count": {
+            "oral": "0,  0.00%",
+            "spotlight": "0,  0.00%",
+            "poster": "5,  62.50%",
+            "submitted": "3,  37.50%",
+            "total": "8,  100.00%"
+        },
+        "LoRA": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "4,  57.14%",
+                "submitted": "3,  42.86%",
+                "total": "7,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "submitted",
+                    "title": "LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition",
+                    "url": "https://openreview.net/forum?id=w8eCnnq57m",
+                    "keywords": [
+                        "Parameter Efficient Tuning",
+                        "LoRA",
+                        "Cross-Task Generalization"
+                    ],
+                    "abstract": "Low-rank adaptations (LoRA) are often employed to fine-tune large language models (LLMs) for new tasks. This paper investigates LoRA composability for cross-task generalization and introduces LoraHub, a simple framework devised for the purposive assembly of LoRA modules trained on diverse given tasks, with the objective of achieving adaptable performance on unseen tasks. With just a few examples from a new task, LoraHub can fluidly combine multiple LoRA modules, eliminating the need for human expertise and assumptions.  Notably, the composition requires neither additional model parameters nor gradients.  Our empirical results, derived from the Big-Bench Hard benchmark, suggest that LoraHub can effectively mimic the performance of in-context learning in few-shot scenarios, excluding the necessity of in-context examples alongside each inference input."
+                },
+                {
+                    "type": "submitted",
+                    "title": "HiddenKey: Parameter-Efficient FineTuning Meets Dropout under a Unified Framework",
+                    "url": "https://openreview.net/forum?id=DZBpVcc2Xc",
+                    "keywords": [
+                        "Dropout",
+                        "LoRA",
+                        "Parameter-Efficient FineTuning",
+                        "NLU",
+                        "NLG",
+                        "NLP"
+                    ],
+                    "abstract": "The emerging powerful capabilities exhibited by large language models (LLMs) have established them as a fundamental element in various applications that rely on advanced language understanding. At the same time, fine-tuning has become the standard learning approach to adapting LLMs to a concrete application (e.g., instruction tuning, alignment tuning, and task/user-specific specialization). Due to the high cost associated with full finetuning, parameter-efficient finetuning (PEFT) methods, especially LoRA, have gained popularity due to their lower storage, memory, and computation requirements. However, the possible contradiction between limited trainable parameters and the dropout regularization methods (which aim at alleviating overfitting associated with excessive parameter redundancy), has been largely overlooked. With extensive experiments of LoRA-based PEFT, we first confirm that PEFT is also overfitting-prone. We then revisit transformer-specific dropout methods, and validate their equivalence and differences mathematically and empirically. To facilitate a comprehensive comparison, we introduce a unified framework to instantiate them along dropping position, structural pattern and compensation measure, and uncover their new preferences and performance comparisons in PEFT scenarios. This framework also enables us to integrate the best of all into a new dropout method named HiddenKey, which shows performance superiority over existing methods on both NLU and NLG tasks. Compared to baselines, it also achieves better performance with less finetuning time, and offers continuous improvement with further finetuning. These highlight HiddenKey as the better practice for high-performance and parameter-efficient finetuning of LLMs."
+                },
+                {
+                    "type": "poster",
+                    "title": "The Expressive Power of Low-Rank Adaptation",
+                    "url": "https://openreview.net/forum?id=likXVjmh3E",
+                    "keywords": [
+                        "LoRA",
+                        "expressive power",
+                        "parameter-efficient fine-tuning",
+                        "adaptation",
+                        "neural networks",
+                        "transformer"
+                    ],
+                    "abstract": "*Low-Rank Adaptation* (LoRA), a parameter-efficient fine-tuning method that leverages low-rank adaptation of weight matrices, has emerged as a prevalent technique for fine-tuning pre-trained models such as large language models and diffusion models.\nDespite its huge success in practice, the theoretical underpinnings of LoRA have largely remained unexplored. \nThis paper takes the first step to bridge this gap by theoretically analyzing the expressive power of LoRA. \nWe prove that, for fully connected neural networks, LoRA can adapt any model $f$ to accurately represent any smaller target model $\\bar{f}$ if LoRA-rank $\\geq(\\text{width of }f) \\times \\frac{\\text{depth of }\\bar{f}}{\\text{depth of }f}$, under a mild assumption. \nWe also quantify the approximation error when the LoRA-rank is lower than the threshold. \nFor Transformer networks, we show any model can be adapted to a target model of the same size with rank-$(\\frac{\\text{embedding size}}{2})$ LoRA adapters.\nAll our theoretical insights are validated by numerical experiments."
+                },
+                {
+                    "type": "poster",
+                    "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+                    "url": "https://openreview.net/forum?id=WvFoJccpo8",
+                    "keywords": [
+                        "Large Language Models",
+                        "Quantization",
+                        "LoRA",
+                        "Instruct Fine-tuning"
+                    ],
+                    "abstract": "Recently years have witnessed a rapid development of large language models (LLMs). Despite the strong ability in many language-understanding tasks, the heavy computational burden largely restricts the application of LLMs especially when one needs to deploy them onto edge devices. In this paper, we propose a quantization-aware low-rank adaptation (QA-LoRA) algorithm. The motivation lies in the imbalanced degrees of freedom of quantization and adaptation, and the solution is to use group-wise operators which increase the degree of freedom of quantization meanwhile decreasing that of adaptation. QA-LoRA is easily implemented with a few lines of code, and it equips the original LoRA with two-fold abilities: (i) during fine-tuning, the LLM's weights are quantized (e.g., into INT4) to reduce time and memory usage; (ii) after fine-tuning, the LLM and auxiliary weights are naturally integrated into a quantized model without loss of accuracy. We apply QA-LoRA to the LLaMA and LLaMA2 model families and validate its effectiveness in different fine-tuning datasets and downstream scenarios. The code is submitted and will be made publically available."
+                },
+                {
+                    "type": "poster",
+                    "title": "NOLA: Networks as Linear Combination of Low Rank Random Basis",
+                    "url": "https://openreview.net/forum?id=TjfXcDgvzk",
+                    "keywords": [
+                        "computer vision",
+                        "natural language processing",
+                        "natural language generation",
+                        "GPT",
+                        "large language models",
+                        "LoRA",
+                        "adaptation",
+                        "Transfer Learning",
+                        "Transformers"
+                    ],
+                    "abstract": "Large Language Models (LLMs) have recently gained popularity due to their impressive few-shot performance across various downstream tasks. However, fine-tuning all parameters and storing a unique model for each downstream task or domain becomes impractical because of the massive size of checkpoints (e.g., 350GB in GPT-3). Current literature, such as LoRA, showcases the potential of low-rank modifications to the original weights of an LLM, enabling efficient adaptation and storage for task-specific models. These methods can reduce the number of parameters needed to fine-tune an LLM by several orders of magnitude. Yet, these methods face two primary limitations: 1) the parameter reduction is lower-bounded by the rank one decomposition, and 2) the extent of reduction is heavily influenced by both the model architecture and the chosen rank.\nFor instance, in larger models, even a rank one decomposition might exceed the number of parameters truly needed for adaptation. In this paper, we introduce NOLA, which overcomes the rank one lower bound present in LoRA. It achieves this by re-parameterizing the low-rank matrices in LoRA using linear combinations of randomly generated matrices (basis) and optimizing the linear mixture coefficients only. This approach allows us to decouple the number of trainable parameters from both the choice of rank and the network architecture. We present adaptation results using GPT-2 and ViT in natural language and computer vision tasks. NOLA performs as well as, or better than models with equivalent parameter counts. Furthermore, we demonstrate that we can halve the parameters in larger models compared to LoRA with rank one, without sacrificing performance."
+                },
+                {
+                    "type": "poster",
+                    "title": "Convolution Meets LoRA: Parameter Efficient Finetuning for Segment Anything Model",
+                    "url": "https://openreview.net/forum?id=ezscMer8L0",
+                    "keywords": [
+                        "Parameter-efficient fine-tuning",
+                        "Segment Anything Model",
+                        "LoRA",
+                        "Semantic Segmentation"
+                    ],
+                    "abstract": "The Segment-Anything Model (SAM) stands as a foundational framework for image segmentation. While it exhibits remarkable zero-shot generalization in typical scenarios, its advantage diminishes when applied to specialized domains like medical imagery and remote sensing. To address this limitation, this paper introduces Conv-LoRA, a simple yet effective parameter-efficient fine-tuning approach. By integrating ultra-lightweight convolutional parameters into LoRA, Conv-LoRA can inject image-related inductive biases into the plain ViT encoder, further reinforcing SAM’s local prior assumption. Notably, Conv-LoRA not only preserves SAM’s extensive segmentation knowledge but also revives its capacity of learning high-level image semantics, which is constrained by SAM’s foreground-background segmentation pretraining. Comprehensive experimentation across diverse benchmarks spanning multiple domains underscores Conv-LoRA’s superiority in adapting SAM to real-world semantic segmentation tasks."
+                },
+                {
+                    "type": "submitted",
+                    "title": "Copyright Plug-in Market for The Text-to-Image Copyright Protection",
+                    "url": "https://openreview.net/forum?id=pSf8rrn49H",
+                    "keywords": [
+                        "generative model",
+                        "copyright",
+                        "text-to-image",
+                        "LoRA"
+                    ],
+                    "abstract": "The images generated by text-to-image models could be accused of the  copyright infringement, which has aroused heated debate among AI developers, content creators, legislation department and judicature department. Especially, the state-of-the-art text-to-image models are capable of generating extremely high-quality works while at the same time lack the ability to attribute credits to  the original creators,  which brings anxiety to the artists' community. In this paper, we propose a conceptual framework -- copyright Plug-in Market -- to address the tension between the users, the content creators and the generative models. We introduce three  operations in the \\copyright Plug-in Market: addition, extraction and combination to facilitate proper credit attribution in the text-to-image procedure and enable the digital copyright protection.  For the addition operation, we train a \\copyright plug-in for a specific copyrighted concept and add it to the generative model and then we are able to generate new images with the copyrighted concept, which abstract existing solutions of portable LoRAs. We further introduce the extraction operation to enable content creators to claim copyrighted concept from infringing generative models  and the combination operation to enable users to combine different \\copyright plug-ins to generate images with multiple copyrighted concepts. We believe these basic operations give good incentives to each participant in the market, and enable  enough flexibility  to  thrive the market. Technically, we innovate an ``inverse LoRA'' approach to instantiate the extraction operation and propose a ``data-ignorant layer-wise distillation'' approach to combine the multiple extractions or additions easily. To showcase the diverse capabilities of copyright plug-ins, we conducted experiments in two domains: style transfer and cartoon IP recreation. The results demonstrate that copyright plug-ins can effectively accomplish copyright extraction and combination, providing a valuable copyright protection solution for the era of generative AIs."
+                }
+            ]
+        },
+        "lora": {
+            "_count": {
+                "oral": "0,  0.00%",
+                "spotlight": "0,  0.00%",
+                "poster": "1,  100.00%",
+                "submitted": "0,  0.00%",
+                "total": "1,  100.00%"
+            },
+            "papers": [
+                {
+                    "type": "poster",
+                    "title": "ReLoRA: High-Rank Training Through Low-Rank Updates",
+                    "url": "https://openreview.net/forum?id=DLJznSp6X3",
+                    "keywords": [
+                        "language models",
+                        "pre-training",
+                        "training efficiency",
+                        "parameter-efficient fine-tuning",
+                        "lora"
+                    ],
+                    "abstract": "Despite the dominance and effectiveness of scaling, resulting in large networks with hundreds of billions of parameters, the necessity to train overparametrized models remains poorly understood, while training costs grow exponentially. In this paper, we explore parameter-efficient training techniques as an approach to training large neural networks. We introduce a novel method called ReLoRA, which utilizes low-rank updates to train high-rank networks. We apply ReLoRA to training transformer language models with up to 1.3B parameters and demonstrate comparable performance to regular neural network training. ReLoRA saves up to 5.5Gb of RAM per GPU and improves training speed by 9-40% depending on the model size and hardware setup. Our findings show the potential of parameter-efficient techniques for large-scale pre-training."
+                }
+            ]
+        }
+    }
+}
