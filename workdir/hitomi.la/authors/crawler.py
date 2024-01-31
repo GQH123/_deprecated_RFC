@@ -19,10 +19,7 @@ class HitomiAuthor(ItemType):
     _logger = None
     request_arg_group = {
         'url': ('field', 'https://ltn.hitomi.la/artist/{id}-all.nozomi'),
-        'proxies': ('fixed', {
-            'http': 'http://127.0.0.1:7890',
-            'https': 'http://127.0.0.1:7890',
-        }),
+        'proxies': ('fixed', default_proxy_config),
     }
     item_arg_group = {
         'save_dir': ('auto', 'saves', 'subs'),
@@ -40,7 +37,7 @@ class HitomiAuthor(ItemType):
         'result_saver': {},
     }
     requestor_args = {
-        'nproc': 64,
+        'nproc': 1,
         'async_sema': 24,
         'wait_timeout': 20,
         'wait_sleep': 1,
@@ -65,10 +62,7 @@ class HitomiGallery(HitomiAuthor):
     _logger = None
     request_arg_group = {
         'url': ('field', 'https://ltn.hitomi.la/galleries/{id}.js'),
-        'proxies': ('fixed', {
-            'http': 'http://127.0.0.1:7890',
-            'https': 'http://127.0.0.1:7890',
-        }),
+        'proxies': ('fixed', default_proxy_config),
         'referer': ('field', 
             'https://ltn.hitomi.la/artist/{ancestor_id}-all.nozomi'
         ),
@@ -127,14 +121,12 @@ class HitomiImage(HitomiGallery):
     _logger = None
     request_arg_group = {
         'url': ('field', '{url}'),
-        'proxies': ('fixed', {
-            'http': 'http://127.0.0.1:7890',
-            'https': 'http://127.0.0.1:7890',
-        }),
+        'proxies': ('fixed', default_proxy_config),
         'referer': ('field', 
             'https://hitomi.la/reader/{ancestor_id}.html'
         ),
         'headers': ('switch', 'none'),
+        'is_leaf': ('fixed', True),
     }
     
     @classmethod

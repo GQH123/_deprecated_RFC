@@ -4,11 +4,16 @@
         "no_session": "False",
         "cookies": "{}",
         "proxies": "None",
-        "headers": "{}"
+        "headers": "{}",
+        "stream": "False"
     },
     "'AioHTTPSession'": {
         "lib": "'not_set'",
-        "no_session": "False"
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "None",
+        "headers": "{}",
+        "chunked_size": "None"
     },
     "'AsksSession'": {
         "lib": "'not_set'",

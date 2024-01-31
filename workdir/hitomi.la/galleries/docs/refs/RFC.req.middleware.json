@@ -3,7 +3,8 @@
         "expected_status_codes": "[200]"
     },
     "'BasicMiddleware'": {},
-    "'JSONMiddleware'": {},
+    "'TextSaverMiddleware'": {},
+    "'JSONSaverMiddleware'": {},
     "'ContentSaverMiddleware'": {},
     "'StreamDownloaderMiddleware'": {
         "chunk_size": "1024"

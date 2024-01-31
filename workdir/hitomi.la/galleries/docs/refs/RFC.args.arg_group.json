@@ -3,11 +3,35 @@
         "expected_status_codes": "[200]"
     },
     "'BasicMiddlewareArgs'": {},
-    "'JSONMiddlewareArgs'": {},
+    "'JSONSaverMiddlewareArgs'": {},
+    "'TextSaverMiddlewareArgs'": {},
     "'StreamDownloaderMiddlewareArgs'": {},
     "'ResultSaverMiddlewareArgs'": {},
     "'ContentSaverMiddlewareArgs'": {},
     "'SessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}"
+    },
+    "'RequestsSessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}",
+        "stream": "False"
+    },
+    "'AioHTTPSessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}",
+        "chunked_size": "None"
+    },
+    "'AsksSessionArgs'": {
         "lib": "None",
         "no_session": "False",
         "cookies": "{}",
@@ -31,7 +55,8 @@
         "proxies": "ProxiesSetter(ArgSetter._fixed({}))",
         "user_agent": "UserAgentSetter(UserAgentSetter._random())",
         "headers": "HeadersSetter(HeadersSetter._switch())",
-        "stream": "StreamSetter(ArgSetter._fixed(False))"
+        "stream": "StreamSetter(ArgSetter._fixed(False))",
+        "is_leaf": "IsLeafSetter(ArgSetter._fixed(False))"
     },
     "'ItemArgGroup'": {
         "save_dir": "SaveDirSetter(ArgSetter._not_set())",
