@@ -39,7 +39,7 @@ class RootQueue(RootType):
         lock = get_global_lock()
         with lock:
             RootQueue._step.value += 1
-            RootQueue._root_item_queue.append(item_tuple)  # type: ignore # now the item is of type `Item` but not `ItemType`
+            RootQueue._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
             if RootQueue._step.value & 1023 == 0:
                 RootQueue._logger.info(f"{RootQueue._step.value} items added")
                 RootQueue._logger.info(f"{repr(item)} added")

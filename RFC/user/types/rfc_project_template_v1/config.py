@@ -14,6 +14,7 @@ def get_config(project_path):
         'examples': {},
         'crawler_example.py': cp('crawler_example.py'),
         'debug_example.ipynb': cp('debug_example.ipynb'),
+        'run_nohup.sh': cp('run_nohup.sh'),
     }
 
     return config
