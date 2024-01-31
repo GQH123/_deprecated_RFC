@@ -20,6 +20,7 @@ class RootQueue(RootType):
     # _item_queue: ListProxy[ref[Item]] = RFC_GLOBAL_MANAGER.list()
     
     _item_type_register = None  # Dict[str, ItemType], register of all `ItemType`s, DO NOT SUBCLASS
+    _step = None
 
     def __init__(self):
         """
@@ -32,6 +33,7 @@ class RootQueue(RootType):
         manager = get_global_manager()
         cls._root_item_queue = manager.list()
         cls._item_type_register = manager.dict()
+        cls._step = manager.Value('i', 0)
     
     @classmethod
     def _add(cls, item_tuple) -> None:
@@ -41,9 +43,15 @@ class RootQueue(RootType):
         # cls._logger.debug(cls._root_item_queue)
         lock = get_global_lock()
         with lock:
+            cls._step.value += 1
             cls._root_item_queue.append(item_tuple)  # type: ignore # now the item is of type `Item` but not `ItemType`
-        cls._logger.info(f"{repr(item_tuple)} added to {repr(cls)}")
-        RootQueue._logger.info(f"{repr(item_tuple)} added to {repr(cls)}")
+            if cls._step.value & 1023 == 0:
+                RootQueue._logger.info(f"{cls._step.value} items added to {repr(cls)}")
+                RootQueue._logger.info(f"{repr(item_tuple)} added to {repr(cls)}")
+                cls._logger.info(f"{cls._step.value} items added to {repr(cls)}")
+                cls._logger.info(f"{repr(item_tuple)} added to {repr(cls)}")
+        # cls._logger.info(f"{repr(item_tuple)} added to {repr(cls)}")
+        # RootQueue._logger.info(f"{repr(item_tuple)} added to {repr(cls)}")
         # cls._item_queue.append(weakref.ref(item, cls._remove_item_weakref))
         
     @classmethod
