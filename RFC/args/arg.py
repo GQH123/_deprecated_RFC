@@ -70,66 +70,6 @@ class ArgRootType(RootType, metaclass=ArgRootTypeMeta):
         self,
     ):
         super().__init__()
-        # self.__class__._get_logger(__name__)
-
-
-"""
-class ArgCaster(ArgRootType):
-    \"""
-        `ArgCaster` separate caster part of `ArgSetter` to make it simpler, and to implement other arg utilities more easily.
-    \"""
-    _all_supported_casters: RecursiveDictStr2Callable = {
-        'to': {
-            'none': lambda x: x,
-        },
-        'from': {
-            'none': lambda x: x,
-        }
-    }
-    # SUBCLASS
-    
-    @classmethod
-    def _get_caster_func(cls, caster: OptionalFunc, to: bool) -> Callable:
-        if callable(caster):
-            return caster
-        return cls._get_func_recursive(('to' if to else 'from', caster or 'none'), cls._all_supported_casters, "caster")
-    
-    def __init__(self):
-        raise ValueError(f"{repr(self)} should not be instantiated")
-
-    @classmethod
-    def cast(
-        cls,
-        value: Any,
-        from_caster: RobustOptionalFuncArgsTuple = None,
-        to_caster: RobustOptionalFuncArgsTuple = None,
-    ) -> Any:
-        \"""
-            `<caster>` is used to convert value to different types/formats, which has two types, `from_caster` and `to_caster`. `from_caster` is used to cast value from `<setter>` to the inner type, `to_caster` is used to cast value from the inner type to other types. `<caster>` can be a string or a function which accepts `<value>` and returns `<casted_value>`.
-            
-            This method is used to convert the value type by `<from_caster>` and `<to_caster>`.
-        \"""
-        if from_caster is not None:
-            from_caster, from_caster_args = cls._parse_func_arg_tuple(from_caster)
-            from_caster = cls._get_caster_func(from_caster, to=False)
-            value = from_caster(value, *from_caster_args)
-        if to_caster is not None:
-            to_caster, to_caster_args = cls._parse_func_arg_tuple(to_caster)
-            to_caster = cls._get_caster_func(to_caster, to=True)
-            value = to_caster(value, *to_caster_args)
-        return value
-    
-    
-class _ArgCaster(ArgCaster):
-    _all_supported_casters = {
-        'to': {
-            'none': lambda x: x,
-        },
-        'from': {
-            'none': lambda x: x,
-        }
-    }
-"""
 
 
 class ArgSetter(ArgRootType):
@@ -192,53 +132,6 @@ class ArgSetter(ArgRootType):
 class _ArgSetter(ArgSetter):
     _all_supported_setters = {
     }
-
-
-"""
-    `ArgSetter` should not need to know request_lib, which will mess up the operation logic of RFC.
-
-
-class RequestArgSetter(ArgSetter):
-    def _get_caster_by_request_lib(self, request_lib: str) -> FuncName:
-        \"""
-            This method is used to get the name of `to_caster` function from the `<request_lib>`, which will be used in `__call__` method.
-        \"""
-        caster = 'none'
-        self._logger.debug(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
-        return caster
-    # SUBCLASS
-    
-    def __init__(
-        self,
-        setter: RobustOptionalFuncArgsTuple = None,
-        from_caster: RobustOptionalFuncArgsTuple = None,
-    ):
-        super().__init__(setter, from_caster)
-    
-    def __call__(self, id: Any, arg_group: Any, request_lib: str) -> Any:
-        result = self.cast(self.setter(id, arg_group, *self.setter_args, self=self), to_caster=self._get_caster_by_request_lib(request_lib))
-        self._logger.debug(f"{repr(self)} called, result: {repr(result)}.")
-        return result
-
-
-class _RequestArgSetter(RequestArgSetter):
-    _all_supported_casters = {
-        'to': {
-            'none': lambda x: x,
-        },
-        'from': {
-            'none': lambda x: x,
-        }
-    }
-    _all_supported_setters = {
-        'fixed': lambda id, arg_group, value, **kwargs: value,
-        'none': lambda id, arg_group, **kwargs: None
-    }
-    def _get_caster_by_request_lib(self, request_lib: str) -> FuncName:
-        caster = 'none'
-        self._logger.debug(f"{repr(self)} get caster {repr(caster)} from request lib {repr(request_lib)}.")
-        return caster
-"""
 
 
 class MethodSetter(ArgSetter):
@@ -376,42 +269,6 @@ class BloodlineSetter(ArgSetter):
         'inherit': _inherit,
     }
 
-"""
-class ArgKeeper(ArgRootType):
-    \"""
-        `ArgKeeper` is used to set and maintain value for an arg in `ArgManager`. It shares similarity with `ArgSetter` that both of them are used to set value for an arg, but they are different in that `ArgKeeper` is used to set and maintain value for an arg in the long run, while `ArgSetter` is used to set value for an arg only once.
-        
-        `ArgKeeper` should only be used to instantiate `ArgManager`.
-    \"""
-    _all_supported_keepers = {
-        'fixed': lambda state, **kwargs: state.previous_value,
-    }
-    # SUBCLASS
-
-    def _get_keeper_func(self, keeper: OptionalFunc) -> Callable:
-        return self._get_func_recursive(keeper or 'none', self._all_supported_keepers, "keeper")
-
-    def __init__(
-        self,
-        keeper: RobustOptionalFuncArgsTuple = None,
-    ):
-        super().__init__()
-        keeper, self.keeper_args = self._parse_func_arg_tuple(keeper)
-        self.keeper = self._get_keeper_func(keeper)
-        self._logger.debug(f"{repr(self)} initiated with keeper {repr(keeper)}.")
-
-    def __call__(self, state: AttrDict) -> Any:
-        result = self.keeper(state, *self.keeper_args)
-        self._logger.debug(f"{repr(self)} called, result: {repr(result)}.")
-        return result
-
-
-class _ArgKeeper(ArgKeeper):
-    _all_supported_keepers = {
-        'fixed': lambda state, **kwargs: state.previous_value,
-    }
-"""
-
 
 # ------------------------------------ Module Postprocess ------------------------------------ #
 
@@ -429,8 +286,6 @@ def _module_postprocess():
         if var_name in __all__:
             if issubclass(var_value, ArgSetter):
                 module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_setters.items()}
-            # elif issubclass(var_value, ArgKeeper):
-            #     module_report[repr(var_value.__qualname__)] = {name: _repr_function(name, func) for name, func in var_value._all_supported_keepers.items()}
     module_ref_path = 'docs/refs'
     if not os.path.exists(module_ref_path):
         os.makedirs(module_ref_path)

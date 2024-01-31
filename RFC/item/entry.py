@@ -17,12 +17,7 @@ logger.info(f"importing module {__name__}")
 class Entry(RootType):
     _name: str = 'entry'
     
-    # requestor_args: RequestorArgs = RequestorArgs()           # SUBCLASS in `ItemType`
-    # middleware_args: dict[str, MiddlewareArgs] = {}           # SUBCLASS in `ItemType`
-    # session_args: SessionArgs = SessionArgs(lib='not_set')    # SUBCLASS in `ItemType
-    
     _started: bool = False
-    # _logger = None  # _logger should be defined in `ItemType`
     
     @classmethod
     def start(cls, ids=[], *extra_args, **extra_kwargs) -> None:
@@ -37,12 +32,6 @@ class Entry(RootType):
             cls._logger.warning(f"{repr(cls)} has already been started, cannot start again")
             return
         try:
-            # if not isinstance(ids, list):
-            #     ids = list(ids)
-            # if debug_n is not None:
-            #     cls._logger.info(f"debug mode, only {debug_n} randomly selected items will be crawled")
-            #     random.shuffle(ids)
-            #     ids = ids[:debug_n]
             cls._session = get_session(SessionArgs(cls.session_args), cls._logger)
             cls._middleware = get_middleware(cls.middleware_args, cls._logger)
             cls._requestor = Requestor(cls._session, cls._middleware, RequestorArgs(cls.requestor_args))

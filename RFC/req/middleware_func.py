@@ -109,8 +109,6 @@ async def get_json_async(resp, request_lib):
 def get_text_sync(resp, request_lib):
     if request_lib == 'requests':
         return resp.text
-    # elif request_lib == 'asks':
-    #     return resp.json()
     else:
         raise ValueError(f"unsupported sync request_lib {repr(request_lib)}")
 

@@ -12,8 +12,6 @@ from ..utils.defs import (
     FINISHED,
     GENERATING,
     _itemStatusToName,
-    get_global_lock,
-    get_global_manager,
     Process,
 )
 from ..args.arg_group import (
@@ -139,10 +137,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         `ItemType` should not be instantiated, you should subclass it and define `ArgGroup`s in class definition.
     """
     _name: str = 'itemtype'  # SUBCLASS
-    
-    # _defined_arg_groups: Dict[str, ArgGroup] = {    # define arg_groups in this ItemType, str as group name, ArgGroup as default for this group
-    # } # SUBCLASS
-    
+
     request_arg_group: dict = {}  # : RequestArgGroup = RequestArgGroup()  # SUBCLASS
     item_arg_group: dict = {}  # : ItemArgGroup = ItemArgGroup()           # SUBCLASS
     
@@ -150,9 +145,6 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
     middleware_args: dict = {}  # : dict[str, MiddlewareArgs] = {}         # SUBCLASS
     session_args: dict = {}  # : SessionArgs = SessionArgs(lib='not_set')  # SUBCLASS
 
-    # _session = None       # OPTIONAL[SUBCLASS]
-    # _middleware = None    # OPTIONAL[SUBCLASS]
-    # _requestor = None     # OPTIONAL[SUBCLASS]
     _logger = None          # OPTIONAL[SUBCLASS]
 
     def __new__(cls, id, *extra_args, **extra_kwargs):
@@ -160,8 +152,6 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             Call `ArgGroup`s in this `ItemType`.
         """
         args_value = extra_kwargs
-        # for arg_group in cls._defined_arg_groups:
-        #     args_value.update(cls._defined_arg_groups[arg_group](id, *extra_args, **extra_kwargs))
         args_value.update(RequestArgGroup(cls.request_arg_group)(id, *extra_args, **extra_kwargs))
         args_value.update(ItemArgGroup(cls.item_arg_group)(id, *extra_args, _item_type=cls.__name__, **extra_kwargs))
         if 'id' not in args_value:
@@ -178,16 +168,12 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             
             Note that you should add new items in reversed order. Because `item`s will be fetched from the end of the queue, so that the newly added `item`s will be processed first.
         """
-        # NewItemType._add_items(new_ids_parsed_from_result)
         pass
     # SUBCLASS
     
     @classmethod
     def _add_items_sinle_process(cls, ids, extra_args, extra_kwargs) -> None:
         for id in ids[::-1]:  # add new items in reversed order
-            # item = cls(id, *extra_args, **extra_kwargs)
-            # item.pend()     # type: ignore # now the item is of type `Item` but not `ItemType`
-            # cls._add((cls.__name__, id, extra_args, extra_kwargs))  # add items to root queue
             cls._add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
 
     @classmethod
@@ -201,13 +187,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             ids = list(ids)
         if 'bloodline' not in extra_kwargs:
            cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items")
-        # lock = get_global_lock()
-        # with lock:
-        #     if cls._item_type_register is None:
-        #         RootQueue._lazy_init()
-        #     if cls.__name__ not in cls._item_type_register:
-        #         cls._item_type_register[cls.__name__] = cls
-        # manager = get_global_manager()
+    
         processes = []
         nproc = min(1, cls.requestor_args['nproc'])
         n_ids = len(ids)
@@ -216,12 +196,6 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             upper_n_ids = n_ids * (i + 1) // nproc
             processes.append(Process(target=cls._add_items_sinle_process, args=(ids[lower_n_ids:upper_n_ids], extra_args, extra_kwargs)))
             processes[i].start()
-        # for i in range(nproc):
-        #     processes[i].join()
-
-    # @classmethod
-    # def register(cls):
-    #     cls._item_type_register[cls.__name__] = cls
         
     @classmethod
     def __repr__(cls):
