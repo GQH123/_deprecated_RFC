@@ -30,14 +30,14 @@ class HitomiGallery(ItemType):
     }
     middleware_args = {
         'status_code': {
-            'expected_status_codes': [200],
+            'expected_status_codes': [200, 404],
         },
         'basic': {},
         'text_saver': {},
         'result_saver': {},
     }
     requestor_args = {
-        'nproc': 64,
+        'nproc': 12,
         'async_sema': 30,
         'wait_timeout': 20,
         'wait_sleep': 1,

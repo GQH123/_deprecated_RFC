@@ -56,6 +56,12 @@
         "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
         "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
     },
+    "'RetryLimitSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
     "'UserAgentSetter'": {
         "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
         "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
