@@ -13,6 +13,8 @@ from ..utils.defs import (
     GENERATING,
     _itemStatusToName,
     get_global_lock,
+    get_global_manager,
+    Process,
 )
 from ..args.arg_group import (
     # ArgGroup,
@@ -93,9 +95,12 @@ class Item(AttrDict, RootType):
     def process(self):
         self._update_status(PROCESSING)
         
-    def finish(self, if_ok: bool, result: Any=None):
-        if not if_ok:
+    def finish(self, is_ok: bool, result: Any=None):
+        if not is_ok:
             self._update_status(FAILED)
+            return
+        if self.is_leaf:
+            self._update_status(FINISHED)
             return
         self._update_status(GENERATING)
         try:
@@ -154,7 +159,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         """
             Call `ArgGroup`s in this `ItemType`.
         """
-        args_value = {}
+        args_value = extra_kwargs
         # for arg_group in cls._defined_arg_groups:
         #     args_value.update(cls._defined_arg_groups[arg_group](id, *extra_args, **extra_kwargs))
         args_value.update(RequestArgGroup(cls.request_arg_group)(id, *extra_args, **extra_kwargs))
@@ -178,20 +183,40 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
     # SUBCLASS
     
     @classmethod
+    def _add_items_sinle_process(cls, ids, extra_args, extra_kwargs) -> None:
+        for id in ids[::-1]:  # add new items in reversed order
+            # item = cls(id, *extra_args, **extra_kwargs)
+            # item.pend()     # type: ignore # now the item is of type `Item` but not `ItemType`
+            cls._add((cls.__name__, id, extra_args, extra_kwargs))  # add items to root queue
+
+    @classmethod
     def _add_items(cls, ids, *extra_args, **extra_kwargs) -> None:
         """
             Add new items to `RootQueue`.
         """
+        if not isinstance(ids, list):
+            if isinstance(ids, str):
+                ids = [ids]
+            ids = list(ids)
+        if 'bloodline' not in extra_kwargs:
+           cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items")
         lock = get_global_lock()
         with lock:
             if cls._item_type_register is None:
                 RootQueue._lazy_init()
             if cls.__name__ not in cls._item_type_register:
                 cls._item_type_register[cls.__name__] = cls
-        for id in ids[::-1]:  # add new items in reversed order
-            # item = cls(id, *extra_args, **extra_kwargs)
-            # item.pend()     # type: ignore # now the item is of type `Item` but not `ItemType`
-            cls._add((cls.__name__, id, extra_args, extra_kwargs))  # add items to root queue
+        manager = get_global_manager()
+        processes = []
+        nproc = min(1, cls.requestor_args['nproc'])
+        n_ids = len(ids)
+        for i in range(nproc):
+            lower_n_ids = n_ids * i // nproc
+            upper_n_ids = n_ids * (i + 1) // nproc
+            processes.append(Process(target=cls._add_items_sinle_process, args=(ids[lower_n_ids:upper_n_ids], extra_args, extra_kwargs)))
+            processes[i].start()
+        # for i in range(nproc):
+        #     processes[i].join()
 
     # @classmethod
     # def register(cls):

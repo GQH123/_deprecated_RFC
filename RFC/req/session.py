@@ -6,11 +6,13 @@ from ..utils.log import get_logger
 from ..utils.cls import RootType
 from ..utils.ds import AttrDict
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
-from ..args.arg_group import (
-    RequestsSessionArgs,
-    AioHTTPSessionArgs,
-    AsksSessionArgs,
-)
+from ..args.arg_group import *
+
+__all__ = [
+    'RequestsSession',
+    'AioHTTPSession',
+    'AsksSession',
+]
 
 logger = get_logger(__name__)
 logger.info(f"importing module {__name__}")
@@ -35,13 +37,6 @@ except Exception as e:
     error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
     logger.warning(f"failed to import asks, caught error {error_report}")
     asks = None
-
-
-__all__ = [
-    'RequestsSession',
-    'AioHTTPSession',
-    'AsksSession',
-]
 
 
 class SessionMeta(type):
@@ -77,7 +72,7 @@ class Session(AttrDict, RootType, metaclass=SessionMeta):
         self,
         session_args: AttrDict
     ):
-        self._get_logger_self(__name__)
+        self._get_logger_self(__name__, level='debug')
         _args = AttrDict()
         for arg in session_args:
             if arg not in self._defined_args:
@@ -232,6 +227,7 @@ class RequestsSession(Session):
             proxies=_proxies,
             stream=self.stream,  # is you want to use StreamDownloadersession, this must be True
         )
+        # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
         return self._session.request(**request_args)
     
     def close(
@@ -296,6 +292,7 @@ class AioHTTPSession(Session):
             proxy=_proxies,
             chunked=self.chunked_size,
         )
+        # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
         return await self._session.request(**request_args)
     
     async def close(

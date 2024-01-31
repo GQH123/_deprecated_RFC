@@ -86,12 +86,12 @@ class Requestor(AttrDict, RootType):
         item,
         result: Any,
     ):
-        error_report = f'[{repr(type(error).__name__)}] {repr(error)}'
+        item.finish(False)
         self._failed_items.append((repr(item), error_report, item._timestamp[FAILED]))
+        error_report = f'[{repr(type(error).__name__)}] {repr(error)}'
         item._logger.error(f"failed on {repr(item)}, caught error {repr(error_report)}")
         item._logger.error(traceback.format_exc())
-        self._logger.warning(f"failed on {repr(item)}, caught error {repr(error_report)}")
-    
+
     def _get_item_from_root_queue(
         self,
     ):
@@ -106,6 +106,8 @@ class Requestor(AttrDict, RootType):
         try:
             self._logger.info(f"process {self._logger._process_name} saved result found for {repr(item)}")
             item._logger.info(f"saved result found for {repr(item)}")
+            if item.is_leaf:
+                return 'SKIPPED'
             return load_object(os.path.join(item.save_dir, '_result.pkl'), raise_exception=True, logger=self._logger)
         except Exception as e:
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}\n{traceback.format_exc()}'
@@ -132,22 +134,29 @@ class Requestor(AttrDict, RootType):
             self._logger.info(f"process {self._logger._process_name} fetched {repr(item)} from saved result")
             self._fetch_single_finally_sync()
             return
-        try:
-            resp = self._session.request(item)
-            result = AttrDict({
-                'response': resp,
-            })
-            for middleware in self._middleware:
-                result = middleware.apply_sync(item, result, self._session._request_lib)
-            item.finish(True, result)
-            self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
-            self._logger.info(f"process {self._logger._process_name} fetched {repr(item)}")
-        except Exception as e:
-            self._logger.warning(f"process {self._logger._process_name} failed on {repr(item)}, caught error {repr(e)}")
-            item.finish(False)
-            self._handle_error(e, item, result)
-        finally:
-            self._fetch_single_finally_sync()
+        retry_limit = max(0, item.retry_limit)
+        retry_times = retry_limit
+        while True:
+            try:
+                resp = self._session.request(item)
+                result = AttrDict({
+                    'response': resp,
+                })
+                for middleware in self._middleware:
+                    result = middleware.apply_sync(item, result, self._session._request_lib)
+                item.finish(True, result)
+                self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
+                self._logger.info(f"process {self._logger._process_name} fetched {repr(item)}")
+                break
+            except Exception as e:
+                error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
+                self._logger.warning(f"process {self._logger._process_name} failed on {repr(item)}, remaining retries {retry_times}, caught error {repr(error_report)}")
+                retry_times -= 1
+                if retry_times < 0:
+                    self._handle_error(e, item, result)
+                    break
+                time.sleep(self.wait_sleep)
+        self._fetch_single_finally_sync()
             
     async def _fetch_single_finally_async(
         self,
@@ -162,6 +171,7 @@ class Requestor(AttrDict, RootType):
     async def _fetch_single_async(
         self,
         item,
+        async_sleep,
         sema: Any = None,
         task_name: str = None,
     ):
@@ -173,23 +183,29 @@ class Requestor(AttrDict, RootType):
             self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)} from saved result")
             await self._fetch_single_finally_async(sema)
             return
-        try:
-            resp = await self._session.request(item)
-            result = AttrDict({
-                'response': resp,
-            })
-            for middleware in self._middleware:
-                result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
-            item.finish(True, result)
-            self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
-            self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)}, step {self._step}")
-        except Exception as e:
-            self._logger.warning(f"process {self._logger._process_name} task {task_name} failed on {repr(item)}, step {self._step}, caught error {repr(e)}\n{traceback.format_exc()}")
-            # self._logger.warning(f"process {self._logger._process_name} task {task_name} failed on {repr(item)}, step {self._step}, caught error {repr(e)}")
-            item.finish(False)
-            self._handle_error(e, item, result)
-        finally:
-            await self._fetch_single_finally_async(sema)
+        retry_limit = max(0, item.retry_limit)
+        retry_times = retry_limit
+        while True:
+            try:
+                resp = await self._session.request(item)
+                result = AttrDict({
+                    'response': resp,
+                })
+                for middleware in self._middleware:
+                    result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
+                item.finish(True, result)
+                self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
+                self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)}, step {self._step}")
+                break
+            except Exception as e:
+                error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
+                self._logger.warning(f"process {self._logger._process_name} failed on {repr(item)}, remaining retries {retry_times}, caught error {repr(error_report)}")
+                retry_times -= 1
+                if retry_times < 0:
+                    self._handle_error(e, item, result)
+                    break
+                await async_sleep(self.wait_sleep)
+        await self._fetch_single_finally_async(sema)
 
     def _fetch_all_sync(
         self,
@@ -201,7 +217,7 @@ class Requestor(AttrDict, RootType):
                 if st_wait_time is None:
                     st_wait_time = time.time()
                 if time.time() - st_wait_time > self.wait_timeout:
-                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and waited for {self.wait_timeout} seconds, QUIT")
+                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
                     break
                 time.sleep(self.wait_sleep)
                 continue
@@ -223,7 +239,7 @@ class Requestor(AttrDict, RootType):
                 if st_wait_time is None:
                     st_wait_time = time.time()
                 if time.time() - st_wait_time > self.wait_timeout:
-                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and waited for {self.wait_timeout} seconds, QUIT")
+                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
                     break
                 await asyncio.sleep(self.wait_sleep)
                 continue
@@ -231,7 +247,7 @@ class Requestor(AttrDict, RootType):
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             await sema.acquire()
             task_name = f'async-{len(tasks)}'
-            tasks.append(asyncio.create_task(self._fetch_single_async(item, sema, task_name), name=task_name))
+            tasks.append(asyncio.create_task(self._fetch_single_async(item, asyncio.sleep, sema, task_name), name=task_name))
         for task in tasks:
             await task
         await self._finish_async()
@@ -249,14 +265,14 @@ class Requestor(AttrDict, RootType):
                     if st_wait_time is None:
                         st_wait_time = time.time()
                     if time.time() - st_wait_time > self.wait_timeout:
-                        self._logger.info(f"process {self._logger._process_name} got None from root queue, and waited for {self.wait_timeout} seconds, QUIT")
+                        self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
                         break
-                    time.sleep(self.wait_sleep)  # TODO
+                    await trio.sleep(self.wait_sleep)
                     continue
                 st_wait_time = None
                 self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
                 await sema.acquire()
-                nursery.start_soon(self._fetch_single_async, item, sema)
+                nursery.start_soon(self._fetch_single_async, item, trio.sleep, sema)
         await self._finish_async()
         
     def _fetch_all_single_process(
@@ -289,10 +305,10 @@ class Requestor(AttrDict, RootType):
         self,
     ):
         with open('logs/items_finished.txt', 'a') as f:
-            f.write('\n'.join([f'{item}\n\tstatus: {error}\ntimestamp: {datetime.datetime.fromtimestamp(time)}\n' for item, error, time in self._finished_items])+'\n')
+            f.write('\n'.join([f'{item}\n\tstatus: {error}\ntimestamp: {datetime.datetime.fromtimestamp(time)}\n' for item, error, time in self._finished_items])+('\n' if self._finished_items else ''))
             self._finished_items = []
         with open('logs/items_failed.txt', 'a') as f:
-            f.write('\n'.join([f'{item}\n\tstatus: {error}\ntimestamp: {datetime.datetime.fromtimestamp(time)}\n' for item, error, time in self._failed_items])+'\n')
+            f.write('\n'.join([f'{item}\n\tstatus: {error}\ntimestamp: {datetime.datetime.fromtimestamp(time)}\n' for item, error, time in self._failed_items])+('\n' if self._failed_items else ''))
             self._failed_items = []
         
     def _finish_sync(

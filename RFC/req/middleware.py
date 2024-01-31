@@ -7,25 +7,8 @@ from ..utils.ds import AttrDict
 from ..utils.func import save_object
 from ..utils.log import get_logger
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
-from ..args.arg_group import (
-    StatusCodeMiddlewareArgs,
-    BasicMiddlewareArgs,
-    JSONMiddlewareArgs,
-    StreamDownloaderMiddlewareArgs,
-    ResultSaverMiddlewareArgs,
-    ContentSaverMiddlewareArgs
-)
-
-from .middleware_func import (
-    get_status_code,
-    get_filename,
-    get_fileext,
-    get_json_sync,
-    get_json_async,
-    get_content_sync,
-    get_content_async,
-    get_stream_sync,
-)
+from ..args.arg_group import *
+from .middleware_func import *
 
 logger = get_logger(__name__)
 logger.info(f"importing module {__name__}")
@@ -223,11 +206,53 @@ class BasicMiddleware(Middleware):
         return self._apply_sync(item, result, request_lib)
 
 
-class JSONMiddleware(Middleware):
-    _name: str = 'middleware_json'
+class TextSaverMiddleware(Middleware):
+    _name: str = 'middleware_text_saver'
     
     _defined_args = {
     }
+    
+    def _save(self, item, result):
+        if 'save_path' not in result:
+            self._logger.warning(f"no save_path found, skipped save, use BasicMiddleware before saving")
+            item._logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
+            return
+        save_object(result.text, result.save_path, 'text', self._logger)
+
+    def _apply_sync(
+        self,
+        item,
+        result: AttrDict,
+        request_lib: str,
+    ):
+        result.text = get_text_sync(result.response, request_lib)     # type: ignore
+        self._save(item, result)
+        return result
+
+    async def _apply_async(
+        self,
+        item,
+        result: AttrDict,
+        request_lib: str,
+        async_lib: str,
+    ):
+        result.text = await get_text_async(result.response, request_lib)     # type: ignore
+        self._save(item, result)
+        return result
+
+
+class JSONSaverMiddleware(Middleware):
+    _name: str = 'middleware_json_saver'
+    
+    _defined_args = {
+    }
+    
+    def _save(self, item, result):
+        if 'save_path' not in result:
+            self._logger.warning(f"no save_path found, skipped save, use BasicMiddleware before saving")
+            item._logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
+            return
+        save_object(result.json, result.save_path, 'json', self._logger)
 
     def _apply_sync(
         self,
@@ -236,6 +261,7 @@ class JSONMiddleware(Middleware):
         request_lib: str,
     ):
         result.json = get_json_sync(result.response, request_lib)     # type: ignore
+        self._save(item, result)
         return result
 
     async def _apply_async(
@@ -246,6 +272,7 @@ class JSONMiddleware(Middleware):
         async_lib: str,
     ):
         result.json = await get_json_async(result.response, request_lib)     # type: ignore
+        self._save(item, result)
         return result
 
 
@@ -324,7 +351,7 @@ class ResultSaverMiddleware(Middleware):
         request_lib: str,
     ):
         _result = AttrDict()
-        exclude = ['response', 'content'] if item.is_leaf else ['response']  # TODO, add is_leaf arg for item
+        exclude = ['response', 'content'] if item.is_leaf else ['response']
         for key in result:
             if key not in exclude:
                 _result[key] = result[key]
@@ -346,7 +373,8 @@ class ResultSaverMiddleware(Middleware):
 _nameToMiddleware = {
     'status_code': (StatusCodeMiddleware, StatusCodeMiddlewareArgs),
     'basic': (BasicMiddleware, BasicMiddlewareArgs),
-    'json': (JSONMiddleware, JSONMiddlewareArgs),
+    'json_saver': (JSONSaverMiddleware, JSONSaverMiddlewareArgs),
+    'text_saver': (TextSaverMiddleware, TextSaverMiddlewareArgs),
     'result_saver': (ResultSaverMiddleware, ResultSaverMiddlewareArgs),
     'content_saver': (ContentSaverMiddleware, ContentSaverMiddlewareArgs),
     'stream_downloader': (StreamDownloaderMiddleware, StreamDownloaderMiddlewareArgs),

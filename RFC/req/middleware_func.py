@@ -5,6 +5,21 @@ from tqdm import tqdm
 
 from ..utils.log import get_logger
 
+__all__ = [
+    'get_status_code',
+    'get_filename',
+    'get_fileext',
+    'get_content_type',
+    'get_content_sync',
+    'get_content_async',
+    'get_json_sync',
+    'get_json_async',
+    'get_text_sync',
+    'get_text_async',
+    'get_content_length',
+    'get_stream_sync',
+]
+
 logger = get_logger(__name__)
 logger.info(f"importing module {__name__}")
 
@@ -87,6 +102,22 @@ def get_json_sync(resp, request_lib):
 async def get_json_async(resp, request_lib):
     if request_lib == 'aiohttp':
         return await resp.json() 
+    else:
+        raise ValueError(f"unsupported async request_lib {repr(request_lib)}")
+
+
+def get_text_sync(resp, request_lib):
+    if request_lib == 'requests':
+        return resp.text
+    # elif request_lib == 'asks':
+    #     return resp.json()
+    else:
+        raise ValueError(f"unsupported sync request_lib {repr(request_lib)}")
+
+
+async def get_text_async(resp, request_lib):
+    if request_lib == 'aiohttp':
+        return await resp.text() 
     else:
         raise ValueError(f"unsupported async request_lib {repr(request_lib)}")
 

@@ -96,25 +96,27 @@ allSupportedRequestLibsNames = list(allSupportedRequestLibsMapping.keys())
 
 
 import multiprocessing as mp
+from multiprocessing import Process
 
 # lazy init in case that pickle error occurs, https://stackoverflow.com/questions/36533134/cant-get-attribute-abc-on-module-main-from-abc-h-py
 RFC_GLOBAL_MANAGER = None
 RFC_GLOBAL_LOCK = None
 
 
-def get_global_manager():  
+def _init_global_manager():
     global RFC_GLOBAL_MANAGER
     global RFC_GLOBAL_LOCK
+    RFC_GLOBAL_MANAGER = mp.Manager()
+    RFC_GLOBAL_LOCK = RFC_GLOBAL_MANAGER.RLock()
+
+
+def get_global_manager():
     if RFC_GLOBAL_MANAGER is None:
-        RFC_GLOBAL_MANAGER = mp.Manager()
-        RFC_GLOBAL_LOCK = RFC_GLOBAL_MANAGER.RLock()
+        _init_global_manager()
     return RFC_GLOBAL_MANAGER
 
 
 def get_global_lock():
-    global RFC_GLOBAL_MANAGER
-    global RFC_GLOBAL_LOCK
     if RFC_GLOBAL_MANAGER is None:
-        RFC_GLOBAL_MANAGER = mp.Manager()
-        RFC_GLOBAL_LOCK = RFC_GLOBAL_MANAGER.RLock()
+        _init_global_manager()
     return RFC_GLOBAL_LOCK

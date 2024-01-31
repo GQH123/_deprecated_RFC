@@ -29,6 +29,8 @@ __all__ = [
     'StreamSetter',
     'SaveDirSetter',
     'BloodlineSetter',
+    'IsLeafSetter',
+    'RetryLimitSetter',
 ]
 
 logger = get_logger(__name__)
@@ -299,6 +301,14 @@ class StreamSetter(ArgSetter):
     pass
 
 
+class IsLeafSetter(ArgSetter):
+    pass
+
+
+class RetryLimitSetter(ArgSetter):
+    pass
+
+
 class UserAgentSetter(ArgSetter):
     @staticmethod
     def _random(id, arg_group, type='random', **kwargs):
@@ -341,6 +351,8 @@ class HeadersSetter(ArgSetter):
 class SaveDirSetter(ArgSetter):
     @staticmethod
     def _auto(id, arg_group, prefix, sep, **kwargs):
+        prefix = ArgSetter._field(id, arg_group, prefix, **kwargs)
+        sep = ArgSetter._field(id, arg_group, sep, **kwargs)
         save_dir = prefix
         for item_type_name, item_id in arg_group.bloodline[:-1]:
             save_dir = os.path.join(save_dir, str(item_id), sep)

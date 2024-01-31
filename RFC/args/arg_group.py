@@ -23,10 +23,14 @@ __all__ = [
     'SessionArgs',
     'StatusCodeMiddlewareArgs',
     'BasicMiddlewareArgs',
-    'JSONMiddlewareArgs',
+    'JSONSaverMiddlewareArgs',
     'ResultSaverMiddlewareArgs',
     'ContentSaverMiddlewareArgs',
     'StreamDownloaderMiddlewareArgs',
+    'TextSaverMiddlewareArgs',
+    'RequestsSessionArgs',
+    'AioHTTPSessionArgs',
+    'AsksSessionArgs',
 ]
 
 logger = get_logger(__name__)
@@ -185,7 +189,11 @@ class BasicMiddlewareArgs(MiddlewareArgs):
     pass
 
 
-class JSONMiddlewareArgs(MiddlewareArgs):
+class JSONSaverMiddlewareArgs(MiddlewareArgs):
+    pass
+
+
+class TextSaverMiddlewareArgs(MiddlewareArgs):
     pass
 
 
@@ -258,6 +266,8 @@ class RequestArgGroup(ArgGroup):
         'user_agent': UserAgentSetter('random'),    # `user-agent`  is randomly set by convention
         'headers': HeadersSetter('switch'),         # `headers`     can switch to different headers templates
         'stream': StreamSetter(('fixed', False)),     # `stream`      default to False
+        'is_leaf': IsLeafSetter(('fixed', False)),
+        'retry_limit': RetryLimitSetter(('fixed', 3)),
     }
 
 
