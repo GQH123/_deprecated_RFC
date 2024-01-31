@@ -1,0 +1,12 @@
+{
+    "name": "ValidationError",
+    "message": "limit must be <= 1000",
+    "status": 400,
+    "details": {
+        "path": "limit",
+        "comparison": "<=",
+        "limit": 1000,
+        "invalidValue": 3548,
+        "reqId": "2024-01-31-964069"
+    }
+}
