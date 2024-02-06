@@ -1,0 +1,940 @@
+{
+    "props": {
+        "pageProps": {
+            "colorScheme": "dark",
+            "cookies": {
+                "models": {
+                    "types": [],
+                    "baseModels": [],
+                    "status": [],
+                    "earlyAccess": false,
+                    "supportsGeneration": false
+                },
+                "questions": {},
+                "gallery": {
+                    "singleImageModel": false,
+                    "singleImageAlbum": false,
+                    "types": [],
+                    "resources": [],
+                    "tags": [],
+                    "excludedTags": []
+                },
+                "referrals": {}
+            },
+            "session": null,
+            "flags": {
+                "earlyAccessModel": true,
+                "apiKeys": true,
+                "ambientCard": true,
+                "gallery": true,
+                "posts": false,
+                "articles": true,
+                "articleCreate": true,
+                "adminTags": false,
+                "civitaiLink": false,
+                "stripe": false,
+                "imageTraining": false,
+                "imageTrainingResults": false,
+                "sdxlGeneration": true,
+                "imageGeneration": true,
+                "enhancedSearch": true,
+                "alternateHome": true,
+                "collections": true,
+                "air": false,
+                "modelCardV2": true,
+                "profileCollections": true,
+                "imageSearch": true,
+                "buzz": true,
+                "signal": false,
+                "assistant": false,
+                "bounties": true,
+                "newsroom": true,
+                "safety": true,
+                "profileOverhaul": true,
+                "csamReports": false,
+                "clubs": true,
+                "createClubs": false,
+                "moderateTags": false,
+                "chat": false,
+                "creatorsProgram": false,
+                "buzzWithdrawalTransfer": false
+            },
+            "filters": {
+                "browsingMode": "NSFW"
+            },
+            "id": 6433,
+            "trpcState": {
+                "json": {
+                    "mutations": [],
+                    "queries": [
+                        {
+                            "state": {
+                                "data": {
+                                    "pages": [
+                                        {
+                                            "nextCursor": null,
+                                            "items": [
+                                                {
+                                                    "id": 70779,
+                                                    "name": "01439-1080477712-as109%2C(Highes____waifu2x_art_noise1_scale.png",
+                                                    "url": "ba7af3e7-f55b-42dc-be79-384740f72a00",
+                                                    "nsfw": "None",
+                                                    "width": 1280,
+                                                    "height": 2048,
+                                                    "hash": "U7FP:D0|8wDi1PyE}?x^Yhog,GGG?JiHOsAt",
+                                                    "meta": null,
+                                                    "hideMeta": false,
+                                                    "generationProcess": "txt2img",
+                                                    "createdAt": "2023-02-03T12:54:49.642Z",
+                                                    "mimeType": "image/png",
+                                                    "type": "image",
+                                                    "metadata": {
+                                                        "hash": "U7FP:D0|8wDi1PyE}?x^Yhog,GGG?JiHOsAt",
+                                                        "width": 1280,
+                                                        "height": 2048
+                                                    },
+                                                    "ingestion": "Scanned",
+                                                    "scannedAt": "2023-09-22T23:28:47.144Z",
+                                                    "needsReview": null,
+                                                    "postId": 57486,
+                                                    "postTitle": "[LORA]Flat_Color-flat_colorShowcase",
+                                                    "index": 0,
+                                                    "publishedAt": "2023-02-03T12:54:49.642Z",
+                                                    "modelVersionId": 7555,
+                                                    "availability": "Public",
+                                                    "user": {
+                                                        "id": 157437,
+                                                        "username": "Ekitai_192",
+                                                        "image": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                                        "deletedAt": null,
+                                                        "cosmetics": [],
+                                                        "profilePicture": null
+                                                    },
+                                                    "stats": {
+                                                        "cryCountAllTime": 0,
+                                                        "laughCountAllTime": 0,
+                                                        "likeCountAllTime": 7,
+                                                        "dislikeCountAllTime": 0,
+                                                        "heartCountAllTime": 4,
+                                                        "commentCountAllTime": 1,
+                                                        "collectedCountAllTime": 5,
+                                                        "tippedAmountCountAllTime": 0,
+                                                        "viewCountAllTime": 2251
+                                                    },
+                                                    "reactions": [],
+                                                    "tags": null,
+                                                    "tagIds": [
+                                                        5262,
+                                                        5228,
+                                                        3629,
+                                                        111960,
+                                                        2687,
+                                                        5773,
+                                                        122902,
+                                                        115041,
+                                                        531,
+                                                        7954,
+                                                        6997,
+                                                        5791,
+                                                        132582,
+                                                        111763,
+                                                        8447,
+                                                        529,
+                                                        5448,
+                                                        666,
+                                                        5449,
+                                                        144825,
+                                                        149130,
+                                                        2879,
+                                                        3257,
+                                                        112428,
+                                                        162011,
+                                                        163455,
+                                                        7620,
+                                                        2397,
+                                                        111753,
+                                                        5163,
+                                                        192,
+                                                        66,
+                                                        4,
+                                                        5133
+                                                    ]
+                                                },
+                                                {
+                                                    "id": 70778,
+                                                    "name": "01438-2301572872-as109%2C(Highes____waifu2x_art_noise1_scale.png",
+                                                    "url": "15708976-86fd-46a4-24b6-a1068b9dae00",
+                                                    "nsfw": "None",
+                                                    "width": 1280,
+                                                    "height": 2048,
+                                                    "hash": "ULGSfjMwMw%g_Mt8^Qxa,_J6%2X8wGFeM}jb",
+                                                    "meta": null,
+                                                    "hideMeta": false,
+                                                    "generationProcess": "txt2img",
+                                                    "createdAt": "2023-02-03T12:54:49.642Z",
+                                                    "mimeType": "image/png",
+                                                    "type": "image",
+                                                    "metadata": {
+                                                        "hash": "ULGSfjMwMw%g_Mt8^Qxa,_J6%2X8wGFeM}jb",
+                                                        "width": 1280,
+                                                        "height": 2048
+                                                    },
+                                                    "ingestion": "Scanned",
+                                                    "scannedAt": "2023-09-22T23:44:34.800Z",
+                                                    "needsReview": null,
+                                                    "postId": 57486,
+                                                    "postTitle": "[LORA]Flat_Color-flat_colorShowcase",
+                                                    "index": 1,
+                                                    "publishedAt": "2023-02-03T12:54:49.642Z",
+                                                    "modelVersionId": 7555,
+                                                    "availability": "Public",
+                                                    "user": {
+                                                        "id": 157437,
+                                                        "username": "Ekitai_192",
+                                                        "image": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                                        "deletedAt": null,
+                                                        "cosmetics": [],
+                                                        "profilePicture": null
+                                                    },
+                                                    "stats": {
+                                                        "cryCountAllTime": 0,
+                                                        "laughCountAllTime": 0,
+                                                        "likeCountAllTime": 0,
+                                                        "dislikeCountAllTime": 0,
+                                                        "heartCountAllTime": 0,
+                                                        "commentCountAllTime": 1,
+                                                        "collectedCountAllTime": 1,
+                                                        "tippedAmountCountAllTime": 0,
+                                                        "viewCountAllTime": 1993
+                                                    },
+                                                    "reactions": [],
+                                                    "tags": null,
+                                                    "tagIds": [
+                                                        5262,
+                                                        5228,
+                                                        3629,
+                                                        5798,
+                                                        1930,
+                                                        140856,
+                                                        115041,
+                                                        27182,
+                                                        531,
+                                                        1238,
+                                                        5791,
+                                                        144823,
+                                                        111763,
+                                                        8447,
+                                                        529,
+                                                        143215,
+                                                        5448,
+                                                        666,
+                                                        3623,
+                                                        9143,
+                                                        5449,
+                                                        2954,
+                                                        112128,
+                                                        112428,
+                                                        113343,
+                                                        162011,
+                                                        112415,
+                                                        112127,
+                                                        111898,
+                                                        111984,
+                                                        5163,
+                                                        192,
+                                                        66,
+                                                        4,
+                                                        5133
+                                                    ]
+                                                },
+                                                {
+                                                    "id": 70777,
+                                                    "name": "01436-2304391266-as109%2C(Highes____waifu2x_art_noise1_scale.png",
+                                                    "url": "9b1600be-9bba-45a1-433a-c63997721c00",
+                                                    "nsfw": "None",
+                                                    "width": 1280,
+                                                    "height": 2048,
+                                                    "hash": "UWKBatyrO?tR~COWtRkW-;RPkBofIAVsNGj[",
+                                                    "meta": null,
+                                                    "hideMeta": false,
+                                                    "generationProcess": "txt2img",
+                                                    "createdAt": "2023-02-03T12:54:49.642Z",
+                                                    "mimeType": "image/png",
+                                                    "type": "image",
+                                                    "metadata": {
+                                                        "hash": "UWKBatyrO?tR~COWtRkW-;RPkBofIAVsNGj[",
+                                                        "width": 1280,
+                                                        "height": 2048
+                                                    },
+                                                    "ingestion": "Scanned",
+                                                    "scannedAt": "2023-09-22T23:29:38.669Z",
+                                                    "needsReview": null,
+                                                    "postId": 57486,
+                                                    "postTitle": "[LORA]Flat_Color-flat_colorShowcase",
+                                                    "index": 2,
+                                                    "publishedAt": "2023-02-03T12:54:49.642Z",
+                                                    "modelVersionId": 7555,
+                                                    "availability": "Public",
+                                                    "user": {
+                                                        "id": 157437,
+                                                        "username": "Ekitai_192",
+                                                        "image": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                                        "deletedAt": null,
+                                                        "cosmetics": [],
+                                                        "profilePicture": null
+                                                    },
+                                                    "stats": {
+                                                        "cryCountAllTime": 0,
+                                                        "laughCountAllTime": 0,
+                                                        "likeCountAllTime": 1,
+                                                        "dislikeCountAllTime": 0,
+                                                        "heartCountAllTime": 1,
+                                                        "commentCountAllTime": 0,
+                                                        "collectedCountAllTime": 1,
+                                                        "tippedAmountCountAllTime": 0,
+                                                        "viewCountAllTime": 1247
+                                                    },
+                                                    "reactions": [],
+                                                    "tags": null,
+                                                    "tagIds": [
+                                                        5262,
+                                                        5228,
+                                                        115513,
+                                                        3629,
+                                                        5798,
+                                                        111960,
+                                                        2687,
+                                                        4409,
+                                                        140856,
+                                                        27182,
+                                                        531,
+                                                        1238,
+                                                        6997,
+                                                        5791,
+                                                        144823,
+                                                        132582,
+                                                        111763,
+                                                        8447,
+                                                        529,
+                                                        143215,
+                                                        4150,
+                                                        666,
+                                                        111765,
+                                                        9143,
+                                                        144825,
+                                                        161852,
+                                                        144165,
+                                                        142886,
+                                                        112428,
+                                                        5304,
+                                                        163455,
+                                                        163454,
+                                                        192,
+                                                        4,
+                                                        66,
+                                                        7620,
+                                                        2397,
+                                                        111753,
+                                                        5193,
+                                                        111849,
+                                                        111962,
+                                                        8628,
+                                                        5484,
+                                                        111754,
+                                                        5133
+                                                    ]
+                                                },
+                                                {
+                                                    "id": 70776,
+                                                    "name": "01435-1276915413-as109%2C(Highes____waifu2x_art_noise1_scale.png",
+                                                    "url": "6247682a-ffa7-4721-aef4-0f6edee7dd00",
+                                                    "nsfw": "None",
+                                                    "width": 1280,
+                                                    "height": 2048,
+                                                    "hash": "UUKw;1^*E0o|~V?axrR*E0-o%MRQ={t7ofNG",
+                                                    "meta": null,
+                                                    "hideMeta": false,
+                                                    "generationProcess": "txt2img",
+                                                    "createdAt": "2023-02-03T12:54:49.642Z",
+                                                    "mimeType": "image/png",
+                                                    "type": "image",
+                                                    "metadata": {
+                                                        "hash": "UUKw;1^*E0o|~V?axrR*E0-o%MRQ={t7ofNG",
+                                                        "width": 1280,
+                                                        "height": 2048
+                                                    },
+                                                    "ingestion": "Scanned",
+                                                    "scannedAt": "2023-09-22T23:40:04.735Z",
+                                                    "needsReview": null,
+                                                    "postId": 57486,
+                                                    "postTitle": "[LORA]Flat_Color-flat_colorShowcase",
+                                                    "index": 3,
+                                                    "publishedAt": "2023-02-03T12:54:49.642Z",
+                                                    "modelVersionId": 7555,
+                                                    "availability": "Public",
+                                                    "user": {
+                                                        "id": 157437,
+                                                        "username": "Ekitai_192",
+                                                        "image": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                                        "deletedAt": null,
+                                                        "cosmetics": [],
+                                                        "profilePicture": null
+                                                    },
+                                                    "stats": {
+                                                        "cryCountAllTime": 0,
+                                                        "laughCountAllTime": 0,
+                                                        "likeCountAllTime": 0,
+                                                        "dislikeCountAllTime": 0,
+                                                        "heartCountAllTime": 0,
+                                                        "commentCountAllTime": 0,
+                                                        "collectedCountAllTime": 0,
+                                                        "tippedAmountCountAllTime": 0,
+                                                        "viewCountAllTime": 1139
+                                                    },
+                                                    "reactions": [],
+                                                    "tags": null,
+                                                    "tagIds": [
+                                                        5262,
+                                                        5228,
+                                                        115513,
+                                                        5772,
+                                                        3629,
+                                                        5798,
+                                                        2687,
+                                                        5773,
+                                                        115041,
+                                                        27182,
+                                                        531,
+                                                        1238,
+                                                        6997,
+                                                        5791,
+                                                        111763,
+                                                        8447,
+                                                        5448,
+                                                        127090,
+                                                        149130,
+                                                        112428,
+                                                        113343,
+                                                        112415,
+                                                        192,
+                                                        7620,
+                                                        2397,
+                                                        111753,
+                                                        66,
+                                                        5193,
+                                                        111849,
+                                                        8628,
+                                                        4,
+                                                        5484,
+                                                        111754,
+                                                        5133
+                                                    ]
+                                                },
+                                                {
+                                                    "id": 70775,
+                                                    "name": "01440-1080477713-as109%2C(Highes____waifu2x_art_noise1_scale.png",
+                                                    "url": "e75d39c6-159a-4931-e888-07d94e00c000",
+                                                    "nsfw": "None",
+                                                    "width": 1280,
+                                                    "height": 2048,
+                                                    "hash": "UEGl-*?c02tRyZ%MjXoKG0Xn-;ogOBtl%3NH",
+                                                    "meta": null,
+                                                    "hideMeta": false,
+                                                    "generationProcess": "txt2img",
+                                                    "createdAt": "2023-02-03T12:54:49.642Z",
+                                                    "mimeType": "image/png",
+                                                    "type": "image",
+                                                    "metadata": {
+                                                        "hash": "UEGl-*?c02tRyZ%MjXoKG0Xn-;ogOBtl%3NH",
+                                                        "width": 1280,
+                                                        "height": 2048
+                                                    },
+                                                    "ingestion": "Scanned",
+                                                    "scannedAt": "2023-09-22T23:47:25.030Z",
+                                                    "needsReview": null,
+                                                    "postId": 57486,
+                                                    "postTitle": "[LORA]Flat_Color-flat_colorShowcase",
+                                                    "index": 4,
+                                                    "publishedAt": "2023-02-03T12:54:49.642Z",
+                                                    "modelVersionId": 7555,
+                                                    "availability": "Public",
+                                                    "user": {
+                                                        "id": 157437,
+                                                        "username": "Ekitai_192",
+                                                        "image": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                                        "deletedAt": null,
+                                                        "cosmetics": [],
+                                                        "profilePicture": null
+                                                    },
+                                                    "stats": {
+                                                        "cryCountAllTime": 0,
+                                                        "laughCountAllTime": 0,
+                                                        "likeCountAllTime": 2,
+                                                        "dislikeCountAllTime": 0,
+                                                        "heartCountAllTime": 1,
+                                                        "commentCountAllTime": 0,
+                                                        "collectedCountAllTime": 1,
+                                                        "tippedAmountCountAllTime": 0,
+                                                        "viewCountAllTime": 980
+                                                    },
+                                                    "reactions": [],
+                                                    "tags": null,
+                                                    "tagIds": [
+                                                        66,
+                                                        4,
+                                                        7620,
+                                                        2397,
+                                                        5262,
+                                                        5228,
+                                                        115513,
+                                                        5772,
+                                                        3629,
+                                                        2687,
+                                                        115041,
+                                                        27182,
+                                                        531,
+                                                        1238,
+                                                        5791,
+                                                        144823,
+                                                        111763,
+                                                        8447,
+                                                        529,
+                                                        143215,
+                                                        666,
+                                                        141917,
+                                                        161852,
+                                                        130197,
+                                                        112128,
+                                                        111797,
+                                                        113343,
+                                                        112415,
+                                                        112127,
+                                                        162348,
+                                                        192,
+                                                        111753,
+                                                        5484,
+                                                        111754,
+                                                        5133
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "pageParams": [
+                                        null
+                                    ]
+                                },
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707199475287,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "image",
+                                    "getInfinite"
+                                ],
+                                {
+                                    "input": {
+                                        "modelVersionId": 7555,
+                                        "prioritizedUserIds": [
+                                            157437
+                                        ],
+                                        "period": "AllTime",
+                                        "sort": "MostReactions",
+                                        "limit": 20
+                                    },
+                                    "type": "infinite"
+                                }
+                            ],
+                            "queryHash": "[[\"image\",\"getInfinite\"],{\"input\":{\"limit\":20,\"modelVersionId\":7555,\"period\":\"AllTime\",\"prioritizedUserIds\":[157437],\"sort\":\"MostReactions\"},\"type\":\"infinite\"}]"
+                        },
+                        {
+                            "state": {
+                                "data": [
+                                    {
+                                        "entityId": 7555,
+                                        "entityType": "ModelVersion",
+                                        "hasAccess": true,
+                                        "availability": "Public"
+                                    }
+                                ],
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707199475290,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "common",
+                                    "getEntityAccess"
+                                ],
+                                {
+                                    "input": {
+                                        "entityId": 7555,
+                                        "entityType": "ModelVersion"
+                                    },
+                                    "type": "query"
+                                }
+                            ],
+                            "queryHash": "[[\"common\",\"getEntityAccess\"],{\"input\":{\"entityId\":7555,\"entityType\":\"ModelVersion\"},\"type\":\"query\"}]"
+                        },
+                        {
+                            "state": {
+                                "data": [
+                                    {
+                                        "entityType": "ModelVersion",
+                                        "entityId": 7555,
+                                        "requiresClub": false,
+                                        "clubs": [],
+                                        "availability": "Public"
+                                    }
+                                ],
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707199475292,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "common",
+                                    "getEntityClubRequirement"
+                                ],
+                                {
+                                    "input": {
+                                        "entityId": 7555,
+                                        "entityType": "ModelVersion"
+                                    },
+                                    "type": "query"
+                                }
+                            ],
+                            "queryHash": "[[\"common\",\"getEntityClubRequirement\"],{\"input\":{\"entityId\":7555,\"entityType\":\"ModelVersion\"},\"type\":\"query\"}]"
+                        },
+                        {
+                            "state": {
+                                "data": {
+                                    "id": 6433,
+                                    "name": "[LORA]Flat_Color",
+                                    "description": "<p>Whenanimageiscoloredinsolidblocksofcolor,withoutshadows,highlights,orgradients.Theimageis\"flat\"inthattherearelittletonoindicationsofdepth.</p><p>Thismodelworksbetteron<strong><em>scenery</em></strong>thancharacter,ifyouwantaimagewithawellsketchedgirl,Iwontrecommendyoutotrythislora.</p>",
+                                    "poi": false,
+                                    "nsfw": false,
+                                    "type": "LORA",
+                                    "uploadType": "Created",
+                                    "updatedAt": "2023-02-03T12:54:49.642Z",
+                                    "deletedAt": null,
+                                    "deletedBy": null,
+                                    "status": "Published",
+                                    "checkpointType": null,
+                                    "allowNoCredit": true,
+                                    "allowCommercialUse": "None",
+                                    "allowDerivatives": true,
+                                    "allowDifferentLicense": true,
+                                    "licenses": [],
+                                    "publishedAt": "2023-02-03T12:54:49.637Z",
+                                    "locked": false,
+                                    "meta": {
+                                        "imageNsfw": "None"
+                                    },
+                                    "earlyAccessDeadline": null,
+                                    "mode": null,
+                                    "availability": "Public",
+                                    "reportStats": null,
+                                    "user": {
+                                        "id": 157437,
+                                        "image": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                        "username": "Ekitai_192",
+                                        "deletedAt": null,
+                                        "rank": {
+                                            "leaderboardRank": null
+                                        },
+                                        "profilePicture": {
+                                            "id": 4506138,
+                                            "name": null,
+                                            "url": "b589447c-350c-4cd7-ede2-0c3ae9a26400",
+                                            "nsfw": "None",
+                                            "hash": null,
+                                            "userId": 157437,
+                                            "ingestion": "Scanned",
+                                            "type": "image",
+                                            "width": null,
+                                            "height": null,
+                                            "metadata": {
+                                                "userId": 157437,
+                                                "profilePicture": true
+                                            }
+                                        },
+                                        "cosmetics": []
+                                    },
+                                    "modelVersions": [
+                                        {
+                                            "id": 7555,
+                                            "modelId": 6433,
+                                            "name": "flat_color",
+                                            "description": "<p><strong>parameters</strong></p><p>as109<strong>,</strong>(Highestpicturequality),(Master'swork),(Detailedeyedescription),(8Kwallpaper),(Detailedfacedescription),(flatcolor:1.3),(ligneclaire:1.3),(beautiful_detalied_oange_sky:1.2),(cloudysky:1.2),pale_color,reflective_water,(1girl:1.3),sunset,twilight,flying_fishes,standing_on_liquid,lookingatviewer,outdoors,(full_body),holding_shoes,wideshot,(((masterpiece))),(bestquality),beautifuldetailedbrightaquaeyes,(beautifuldetailedshinypink_hair:1.2),verylonghair,(smile),(white_shirt),barefoot,barelegs,busstop,street,fence,road_sign,ripples,utility_pole<br/>Negativeprompt:nsfw,tiger,deformed,lowers,badanatomy,badhands,badfeet,text,error,missingfingers,extradigt,fewerdigt,cropped,worstquality,lowquality,normalquality,blurry,mosaic_censoring,mosaic,extralegs,extrafingers,extratongues,extranavels,extrafeet,extrahands,multiplelegs,multiplefingers,multipletongues,multiplenavels,multiplefeet,multiplehands,helmt,lowres,badanatomy,badhands,text,error,missingfingers,extradigit,fewerdigits,cropped,worstquality,lowquality,normalquality,jpegartifacts,signature,username,blurry<br/>Steps:30,Sampler:DPM++2SaKarras,CFGscale:4.5,Seed:1080477712,Size:640x1024,Modelhash:5db7b92a37,Batchsize:3,Batchpos:0,ENSD:31337,AddNetEnabled:True,AddNetModule1:LoRA,AddNetModel1:flat_color(a89a33de),AddNetWeight1:0.55</p>",
+                                            "steps": null,
+                                            "epochs": null,
+                                            "clipSkip": null,
+                                            "createdAt": "2023-02-03T12:54:49.642Z",
+                                            "updatedAt": "2023-02-03T12:54:49.642Z",
+                                            "trainedWords": [
+                                                "flat_color,ligne_claire"
+                                            ],
+                                            "trainingStatus": null,
+                                            "trainingDetails": null,
+                                            "inaccurate": false,
+                                            "baseModel": "Other",
+                                            "baseModelType": "Standard",
+                                            "earlyAccessTimeFrame": 0,
+                                            "status": "Published",
+                                            "publishedAt": "2023-02-03T12:54:49.642Z",
+                                            "meta": {},
+                                            "vaeId": null,
+                                            "settings": null,
+                                            "rank": {
+                                                "downloadCountAllTime": 17995,
+                                                "generationCountAllTime": 0,
+                                                "ratingCountAllTime": 24,
+                                                "ratingAllTime": 5
+                                            },
+                                            "files": [
+                                                {
+                                                    "id": 7625,
+                                                    "url": "https://5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/civitai-prod-settled/157437/model/flatColor.iepi.pt",
+                                                    "sizeKB": 74063.5791015625,
+                                                    "name": "flat_color.pt",
+                                                    "type": "Model",
+                                                    "visibility": "Public",
+                                                    "metadata": {
+                                                        "fp": "fp16",
+                                                        "size": "full",
+                                                        "format": "PickleTensor"
+                                                    },
+                                                    "pickleScanResult": "Success",
+                                                    "pickleScanMessage": "NoPickleimports",
+                                                    "virusScanResult": "Success",
+                                                    "virusScanMessage": null,
+                                                    "scannedAt": "2023-02-03T12:56:10.311Z",
+                                                    "hashes": [
+                                                        {
+                                                            "type": "AutoV1",
+                                                            "hash": "A89A33DE"
+                                                        },
+                                                        {
+                                                            "type": "AutoV2",
+                                                            "hash": "E91F4A5285"
+                                                        },
+                                                        {
+                                                            "type": "SHA256",
+                                                            "hash": "E91F4A528578921540A1DBCD802BB5CA8F7F51CB30309CCADAE6E20B802080BC"
+                                                        },
+                                                        {
+                                                            "type": "CRC32",
+                                                            "hash": "D74F521B"
+                                                        },
+                                                        {
+                                                            "type": "BLAKE3",
+                                                            "hash": "5E90307564E5EA41506B27FFA0D85FF9B48FBFB319CBEE361BB24A3E1F5A78D6"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "generationCoverage": null,
+                                            "recommendedResources": [],
+                                            "posts": [
+                                                {
+                                                    "id": 57486
+                                                }
+                                            ],
+                                            "hashes": [
+                                                "e91f4a528578921540a1dbcd802bb5ca8f7f51cb30309ccadae6e20b802080bc"
+                                            ],
+                                            "earlyAccessDeadline": null,
+                                            "canDownload": true,
+                                            "canGenerate": false
+                                        }
+                                    ],
+                                    "rank": {
+                                        "downloadCountAllTime": 17995,
+                                        "ratingCountAllTime": 24,
+                                        "ratingAllTime": 5,
+                                        "favoriteCountAllTime": 3845,
+                                        "imageCountAllTime": 86,
+                                        "collectedCountAllTime": 75,
+                                        "tippedAmountCountAllTime": 1,
+                                        "generationCountAllTime": 0,
+                                        "commentCountAllTime": 7
+                                    },
+                                    "tagsOnModels": [
+                                        {
+                                            "tag": {
+                                                "id": 3673,
+                                                "name": "style",
+                                                "isCategory": true
+                                            }
+                                        }
+                                    ],
+                                    "canGenerate": false,
+                                    "hasSuggestedResources": false
+                                },
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707199475342,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "model",
+                                    "getById"
+                                ],
+                                {
+                                    "input": {
+                                        "id": 6433
+                                    },
+                                    "type": "query"
+                                }
+                            ],
+                            "queryHash": "[[\"model\",\"getById\"],{\"input\":{\"id\":6433},\"type\":\"query\"}]"
+                        }
+                    ]
+                },
+                "meta": {
+                    "values": {
+                        "queries.0.state.data.pages.0.nextCursor": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pages.0.items.0.createdAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.0.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.0.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.0.tags": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pages.0.items.1.createdAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.1.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.1.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.1.tags": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pages.0.items.2.createdAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.2.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.2.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.2.tags": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pages.0.items.3.createdAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.3.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.3.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.3.tags": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pages.0.items.4.createdAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.4.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.4.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.0.state.data.pages.0.items.4.tags": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pageParams.0": [
+                            "undefined"
+                        ],
+                        "queries.3.state.data.updatedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.createdAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.updatedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.files.0.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.earlyAccessDeadline": [
+                            "undefined"
+                        ]
+                    }
+                }
+            }
+        },
+        "__N_SSP": true
+    },
+    "page": "/models/[id]/[[...slug]]",
+    "query": {
+        "id": "6433",
+        "slug": [
+            "loraflatcolor"
+        ]
+    },
+    "buildId": "igdux8AEbwM7nHtp3Xhw4",
+    "isFallback": false,
+    "gssp": true,
+    "appGip": true,
+    "locale": "en",
+    "locales": [
+        "en"
+    ],
+    "defaultLocale": "en",
+    "scriptLoader": []
+}
