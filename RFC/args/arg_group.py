@@ -9,6 +9,7 @@ from ..utils.defs import (
     VISITING,
     VISITED,
     RobustOptionalFuncArgsTuple,
+    ArgGroup_logger_enable_file_handler,
 )
 from ..utils.log import get_logger
 
@@ -105,7 +106,7 @@ class ArgGroup(RootType):
         """
         super().__init__()
         self._args = {}  # must set `eslf._args` before calling `self._get_logger` because the latter will call `self.__getattr__` to get `self._name` args
-        ArgGroup._get_logger(__name__, level='debug', propagate=False)
+        ArgGroup._get_logger(__name__, level='debug', propagate=False, add_file_handler=ArgGroup_logger_enable_file_handler)
         for arg in args:
             if arg not in self._defined_args:
                 self._logger.warning(f"arg {repr(arg)} not defined in {repr(self)}")

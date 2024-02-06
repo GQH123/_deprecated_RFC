@@ -10,6 +10,15 @@ RecursiveDictStr2Callable = Dict[str, Callable | 'RecursiveDictStr2Callable']
 # FuncArgsTuple = Tuple[Func, Args]
 # RobustFuncArgsTuple = Func | Tuple[Func] | FuncArgsTuple
 
+RotatingFileHandler_config = dict(
+    backupCount=5,
+    maxBytes=10*1024*1024,
+)
+
+ArgGroup_logger_enable_file_handler = False
+Requestor_logger_enable_file_handler = False
+RFC_logger_enable_file_handler = False
+
 # Visit Status of ArgSetters
 
 UNVISITED = 0

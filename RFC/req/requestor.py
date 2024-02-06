@@ -13,6 +13,7 @@ from ..utils.defs import (
     FINISHED,
     FAILED,
     RFC_GLOBAL_MANAGER,
+    Requestor_logger_enable_file_handler,
 )
 from ..utils.func import (
     load_object,
@@ -71,7 +72,7 @@ class Requestor(AttrDict, RootType):
         requestor_args: RequestorArgs,
     ):
         super().__init__(requestor_args)
-        self._get_logger_self(__name__, add_file_handler=True, level='info')  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
+        self._get_logger_self(__name__, add_file_handler=Requestor_logger_enable_file_handler, level='info')  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
         self._session = session
         self._middleware = middleware
         self._failed_items = []
@@ -217,15 +218,22 @@ class Requestor(AttrDict, RootType):
         st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
-            if item is None:
-                if st_wait_time is None:
-                    st_wait_time = time.time()
-                if time.time() - st_wait_time > self.wait_timeout:
-                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
-                    break
+            # if item is None:
+            #     if st_wait_time is None:
+            #         st_wait_time = time.time()
+            #     if time.time() - st_wait_time > self.wait_timeout:
+            #         self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
+            #         break
+            #     time.sleep(self.wait_sleep)
+            #     continue
+            # st_wait_time = None
+            if item == 'QUIT':
+                self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
+                break
+            if item == 'WAIT':
+                self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
                 time.sleep(self.wait_sleep)
                 continue
-            st_wait_time = None
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             self._fetch_single_sync(item)
         self._finish_sync()
@@ -239,15 +247,22 @@ class Requestor(AttrDict, RootType):
         st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
-            if item is None:
-                if st_wait_time is None:
-                    st_wait_time = time.time()
-                if time.time() - st_wait_time > self.wait_timeout:
-                    self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
-                    break
-                await asyncio.sleep(self.wait_sleep)
+            # if item is None:
+            #     if st_wait_time is None:
+            #         st_wait_time = time.time()
+            #     if time.time() - st_wait_time > self.wait_timeout:
+            #         self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
+            #         break
+            #     await asyncio.sleep(self.wait_sleep)
+            #     continue
+            # st_wait_time = None
+            if item == 'QUIT':
+                self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
+                break
+            if item == 'WAIT':
+                self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
+                time.sleep(self.wait_sleep)
                 continue
-            st_wait_time = None
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             await sema.acquire()
             task_name = f'async-{len(tasks)}'
@@ -265,15 +280,22 @@ class Requestor(AttrDict, RootType):
         async with trio.open_nursery() as nursery:
             while True:
                 item = self._get_item_from_root_queue()
-                if item is None:
-                    if st_wait_time is None:
-                        st_wait_time = time.time()
-                    if time.time() - st_wait_time > self.wait_timeout:
-                        self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
-                        break
-                    await trio.sleep(self.wait_sleep)
+                # if item is None:
+                #     if st_wait_time is None:
+                #         st_wait_time = time.time()
+                #     if time.time() - st_wait_time > self.wait_timeout:
+                #         self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
+                #         break
+                #     await trio.sleep(self.wait_sleep)
+                #     continue
+                # st_wait_time = None
+                if item == 'QUIT':
+                    self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
+                    break
+                if item == 'WAIT':
+                    self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
+                    time.sleep(self.wait_sleep)
                     continue
-                st_wait_time = None
                 self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
                 await sema.acquire()
                 nursery.start_soon(self._fetch_single_async, item, trio.sleep, sema)

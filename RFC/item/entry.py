@@ -39,7 +39,7 @@ class Entry(RootType):
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
             cls._logger.error(f"{repr(cls)} failed to start, caught error {error_report}")
             raise e
-        cls._lazy_init()
+        cls.lazy_init()
         cls._add_items(ids, *extra_args, **extra_kwargs)
         cls._started = True
         cls._logger.info(f"{repr(cls)} started")

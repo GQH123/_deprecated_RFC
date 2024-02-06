@@ -17,6 +17,8 @@ class RootQueue(RootType):
     _name: str = 'rootqueue'
     
     _root_item_queue = None  # : ListProxy[Item], queue of items to be processed
+    _active_item_count = None  # : ValueProxy, number of active items
+    _active_adder_count = None
     _step = None
 
     def __init__(self):
@@ -26,35 +28,40 @@ class RootQueue(RootType):
         raise ValueError(f"{repr(self)} should never be called")
     
     @classmethod
-    def _lazy_init(cls):  # lazy init for pickle error, must be called after any custom `ItemType` definition
+    def lazy_init(cls):  # lazy init for pickle error, must be called after any custom `ItemType` definition
         manager = get_global_manager()
         RootQueue._root_item_queue = manager.list()
         RootQueue._step = manager.Value('i', 0)
+        RootQueue._active_item_count = manager.Value('i', 0)
+        RootQueue._active_adder_count = manager.Value('i', 0)
     
     @classmethod
-    def _add(cls, item) -> None:
+    def add(cls, item) -> None:
         """
             Add a new item to `RootQueue`.
         """
-        lock = get_global_lock()
-        with lock:
+        with get_global_lock():
             RootQueue._step.value += 1
             RootQueue._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
             if RootQueue._step.value & 1023 == 0:
-                RootQueue._logger.info(f"{RootQueue._step.value} items added")
+                RootQueue._logger.info(f"{RootQueue._step.value} items added, active items count = {RootQueue._active_item_count.value}, active adders count = {RootQueue._active_adder_count.value}")
                 RootQueue._logger.info(f"{repr(item)} added")
                 cls._logger.info(f"{RootQueue._step.value} items added")
                 cls._logger.info(f"{repr(item)} added")
         
     @classmethod
     def fetch(cls):  # cls must be RootQueue in this case
-        lock = get_global_lock()
-        with lock:
+        with get_global_lock():
             if not RootQueue._root_item_queue:
-                return None
+                assert RootQueue._active_item_count.value >= 0 and RootQueue._active_adder_count.value >= 0, f"error occurs in RootQueue, remain_active_items={RootQueue._active_item_count.value}, remain_active_adders={RootQueue._active_adder_count.value}"
+                if RootQueue._active_item_count.value == 0 and RootQueue._active_adder_count.value == 0:
+                    return 'QUIT'
+                else:
+                    return 'WAIT'
             item = RootQueue._root_item_queue.pop()
+            RootQueue._active_item_count.value += 1  # this will be reduced in item.finish()
         item.pend()
-        RootQueue._logger.info(f"{repr(item)} fetched")  
+        # RootQueue._logger.info(f"{repr(item)} fetched")  
         return item
 
 

@@ -13,6 +13,7 @@ from ..utils.defs import (
     GENERATING,
     _itemStatusToName,
     Process,
+    get_global_lock,
 )
 from ..args.arg_group import (
     # ArgGroup,
@@ -94,20 +95,29 @@ class Item(AttrDict, RootType):
         self._update_status(PROCESSING)
         
     def finish(self, is_ok: bool, result: Any=None):
+        
+        def _reduce_active_item_count():
+            with get_global_lock():
+                RootQueue._active_item_count.value -= 1  # item finished
+                
         if not is_ok:
             self._update_status(FAILED)
+            _reduce_active_item_count()
             return
         if self.is_leaf:
             self._update_status(FINISHED)
+            _reduce_active_item_count()
             return
         self._update_status(GENERATING)
         try:
             self._generate(item=self, result=result)
         except Exception as e:
             self._update_status(FAILED)
+            _reduce_active_item_count()  # must be placed after generating new items
             raise e
         else:
             self._update_status(FINISHED)
+        _reduce_active_item_count()
 
 
 class ItemTypeMeta(type):
@@ -173,11 +183,21 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
     
     @classmethod
     def _add_items_sinle_process(cls, ids, extra_args, extra_kwargs) -> None:
-        for id in ids[::-1]:  # add new items in reversed order
-            cls._add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
+
+        def _reduce_active_adder_count():
+            with get_global_lock():
+                RootQueue._active_adder_count.value -= 1  # item finished
+        
+        try:
+            for id in ids[::-1]:  # add new items in reversed order
+                cls.add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
+        except Exception as e:
+            _reduce_active_adder_count()
+            raise e
+        _reduce_active_adder_count()
 
     @classmethod
-    def _add_items(cls, ids, *extra_args, **extra_kwargs) -> None:
+    def _add_items(cls, ids, *extra_args, **extra_kwargs) -> None:  # must be executed after starting RootQueue
         """
             Add new items to `RootQueue`.
         """
@@ -191,6 +211,8 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         processes = []
         nproc = min(1, cls.requestor_args['nproc'])
         n_ids = len(ids)
+        with get_global_lock():
+            RootQueue._active_adder_count.value += nproc  # must add this value in advance
         for i in range(nproc):
             lower_n_ids = n_ids * i // nproc
             upper_n_ids = n_ids * (i + 1) // nproc

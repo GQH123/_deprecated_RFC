@@ -25,11 +25,11 @@ parse_config = {
 
 
 def get_request_soup(r: requests.Response) -> BeautifulSoup:
-    return BeautifulSoup(r.text, features="lxml")
+    return BeautifulSoup(r.text, features="lxml")  # if error occurs, run `pip install lxml`
 
 
 def get_html_soup(s: str) -> BeautifulSoup:
-    return BeautifulSoup(s, features="lxml")
+    return BeautifulSoup(s, features="lxml")  # if error occurs, run `pip install lxml`
 
 
 def find_element_by_attr(soup: BeautifulSoup, element_tp: str, attr_key: str, attr_value: str) -> bs4.element.ResultSet:
@@ -56,7 +56,7 @@ def get_shortened_str(s: str, length: int = 100) -> str:
     return s[:length] + ('...' if len(s) > length else '')
 
 
-def parse(soup: BeautifulSoup, parses: dict, get_str=False, debug=False) -> Sequence[str]:
+def parse(soup: BeautifulSoup, parses: dict, return_str=False, debug=False) -> Sequence[str]:
     def _parse_element_by_type(soup: BeautifulSoup, element_tp: str) -> BeautifulSoup:
         try:
             return find_element_by_type(soup, element_tp)
@@ -73,10 +73,7 @@ def parse(soup: BeautifulSoup, parses: dict, get_str=False, debug=False) -> Sequ
         return ''.join([''.join(_soup.split()) for _soup in extract_all_text(soup)])
 
     def _parse_element_by_attr(soup: BeautifulSoup, element_tp: str, attr_key: str, attr_value: str) -> BeautifulSoup:
-        try:
-            return find_element_by_attr(soup, element_tp, attr_key, attr_value)
-        except IndexError:
-            return None
+        return find_element_by_attr(soup, element_tp, attr_key, attr_value)
     
     def _parse(soup: BeautifulSoup, parses: dict, element_id: Sequence[int] = [], element_ns: Sequence[int] = []):
         if debug:
@@ -94,7 +91,7 @@ def parse(soup: BeautifulSoup, parses: dict, get_str=False, debug=False) -> Sequ
             print(get_shortened_str(str(soup)))
 
         if parses == {}:
-            return [str(soup) if get_str else soup]
+            return [str(soup) if return_str else soup]
 
         if soup is None:
             print('warning: soup is guided to None, please debug your parse')
@@ -105,10 +102,18 @@ def parse(soup: BeautifulSoup, parses: dict, get_str=False, debug=False) -> Sequ
         for parse in parses:
             soup = __soup
             parse_type = parse[0]
-            index = slice(*parse[-1])
+            parse_index = parse[-1]
+            if isinstance(parse_index, int) or isinstance(parse_index, slice):
+                index = parse_index
+            elif isinstance(parse_index, tuple):
+                index = slice(*parse_index)
+            elif parse_index is None:
+                index = slice(None)
+            else:
+                raise ValueError(f"unidentified index type of {repr(parse_index)}")
             if parse_type == 'type':
                 # ('type', <type>, <index>)
-                soup = _parse_element_by_type(soup, parse[1], index)
+                soup = _parse_element_by_type(soup, parse[1])
             elif parse_type == 'result':
                 attr_type = parse[1]
                 if attr_type == 'contents':
@@ -125,7 +130,7 @@ def parse(soup: BeautifulSoup, parses: dict, get_str=False, debug=False) -> Sequ
                     soup = None
             elif parse_type == 'attr':
                 # ('attr', <element_type>, <attr_key>, <attr_value>, <index>)
-                _parse_element_by_attr(soup, parse[1], parse[2], parse[3])
+                soup = _parse_element_by_attr(soup, parse[1], parse[2], parse[3])
             else:
                 raise NotImplementedError
             if soup is not None:
@@ -135,11 +140,12 @@ def parse(soup: BeautifulSoup, parses: dict, get_str=False, debug=False) -> Sequ
                     soup = soup[index]
                 except (IndexError, KeyError):
                     soup = [None]
-            full_soup += list(zip([parses[parse]] * len(soup), soup))
-        nsoup = len(soup)
+                if not isinstance(soup, list):
+                    soup = [soup]
+                full_soup += list(zip([parses[parse]] * len(soup), soup))
+        nsoup = len(full_soup)
         result = []
         for i, _soup in enumerate(full_soup):
             result += _parse(_soup[1], _soup[0], element_id=element_id+[i], element_ns=element_ns+[nsoup])
         return result
-
     return _parse(soup, parses)

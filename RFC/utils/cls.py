@@ -1,5 +1,5 @@
 import os
-from logging import FileHandler
+from logging.handlers import RotatingFileHandler
 from typing import Callable, Iterable
 
 from .log import (
@@ -12,7 +12,8 @@ from .log import (
 from .defs import (
     RecursiveDictStr2Callable,
     RobustOptionalFuncArgsTuple,
-    OptionalFuncArgsTuple
+    OptionalFuncArgsTuple,
+    RotatingFileHandler_config,
 )
 
 __all__ = [
@@ -99,7 +100,7 @@ class RootType():
             log_dir = os.path.dirname(log_path)
             if not os.path.exists(log_dir):
                 os.makedirs(log_dir)
-            cls._logger.addHandler(FileHandler(log_path, mode='w', encoding='utf-8', delay=True))
+            cls._logger.addHandler(RotatingFileHandler(log_path, mode='w', encoding='utf-8', delay=True, **RotatingFileHandler_config))
         if enable_format:
             enable_explicit_format(cls._logger)
         cls._logger.propagate = propagate
@@ -137,7 +138,7 @@ class RootType():
             log_dir = os.path.dirname(log_path)
             if not os.path.exists(log_dir):
                 os.makedirs(log_dir)
-            self._logger.addHandler(FileHandler(log_path, mode='w', encoding='utf-8', delay=True))
+            self._logger.addHandler(RotatingFileHandler(log_path, mode='w', encoding='utf-8', delay=True, **RotatingFileHandler_config))
         if enable_format:
             enable_explicit_format(self._logger)
         self._logger.propagate = propagate

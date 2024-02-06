@@ -17,6 +17,11 @@ from logging import (
 )
 from typing import Optional
 
+from .defs import (
+    RotatingFileHandler_config,
+    RFC_logger_enable_file_handler,
+)
+
 
 _lock = threading.Lock()
 _default_handler: Optional[logging.Handler] = None
@@ -346,13 +351,14 @@ def _add_file_handler_to_root_logger(
     log_dir = os.path.dirname(log_path)
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
-    logger.addHandler(logging.FileHandler(log_path, mode='w', encoding='utf-8', delay=True))
+    logger.addHandler(logging.handlers.RotatingFileHandler(log_path, mode='w', encoding='utf-8', delay=True, **RotatingFileHandler_config))
     if enable_format:
         enable_explicit_format(logger)
 
 
 logging.Logger.warning_advice = warning_advice
 _configure_library_root_logger()
-_add_file_handler_to_root_logger()
+if RFC_logger_enable_file_handler:
+    _add_file_handler_to_root_logger()
 enable_explicit_format()
 # print(_get_library_root_logger().handlers)
