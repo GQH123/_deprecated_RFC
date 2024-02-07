@@ -217,7 +217,6 @@ class Requestor(AttrDict, RootType):
     def _fetch_all_sync(
         self,
     ):
-        st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
             if item == 'QUIT':
@@ -237,7 +236,6 @@ class Requestor(AttrDict, RootType):
     ):
         sema = asyncio.Semaphore(async_sema)
         tasks = []
-        st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
             if item == 'QUIT':
@@ -245,7 +243,7 @@ class Requestor(AttrDict, RootType):
                 break
             if item == 'WAIT':
                 self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
-                time.sleep(self.wait_sleep)
+                await asyncio.sleep(self.wait_sleep)  # DO NOT use time.sleep otherwise the whole event loop will be blocked
                 continue
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             await sema.acquire()
@@ -260,7 +258,6 @@ class Requestor(AttrDict, RootType):
         async_sema: int,
     ):
         sema = trio.Semaphore(async_sema, max_value=async_sema)
-        st_wait_time = None
         async with trio.open_nursery() as nursery:
             while True:
                 item = self._get_item_from_root_queue()
@@ -269,7 +266,7 @@ class Requestor(AttrDict, RootType):
                     break
                 if item == 'WAIT':
                     self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
-                    time.sleep(self.wait_sleep)
+                    await trio.sleep(self.wait_sleep)  # DO NOT use time.sleep otherwise the whole event loop will be blocked
                     continue
                 self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
                 await sema.acquire()
