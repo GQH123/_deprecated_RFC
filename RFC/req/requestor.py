@@ -73,6 +73,8 @@ class Requestor(AttrDict, RootType):
     ):
         super().__init__(requestor_args)
         self._get_logger_self(__name__, add_file_handler=Requestor_logger_enable_file_handler, level='info')  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
+        self._logger_fail = self._get_logger_self(__name__, name='requestor_failed', add_file_handler=True, level='warning', return_logger=True)  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
+        
         self._session = session
         self._middleware = middleware
         self._failed_items = []
@@ -90,12 +92,12 @@ class Requestor(AttrDict, RootType):
         item,
         result: Any,
     ):
-        save_object(item, os.path.join(item.save_dir, '_item.pkl'), 'pkl', item._logger)
+        save_object(item, os.path.join(item.save_dir, '_item.pkl'), 'pkl', self._logger_fail)
         item.finish(False)
-        self._failed_items.append((repr(item), error_report, item._timestamp[FAILED]))
         error_report = f'[{repr(type(error).__name__)}] {repr(error)}'
-        item._logger.error(f"failed on {repr(item)}, caught error {repr(error_report)}")
-        item._logger.error(traceback.format_exc())
+        self._failed_items.append((repr(item), error_report, item._timestamp[FAILED]))
+        self._logger_fail.error(f"failed on {repr(item)}, caught error {repr(error_report)}")
+        self._logger_fail.error(traceback.format_exc())
 
     def _get_item_from_root_queue(
         self,
@@ -110,14 +112,14 @@ class Requestor(AttrDict, RootType):
             return None
         try:
             self._logger.info(f"process {self._logger._process_name} saved result found for {repr(item)}")
-            item._logger.info(f"saved result found for {repr(item)}")
+            # item._wrapped_logger.info(f"saved result found for {repr(item)}")
             if item.is_leaf:
                 return 'SKIPPED'
             return load_object(os.path.join(item.save_dir, '_result.pkl'), raise_exception=True, logger=self._logger)
         except Exception as e:
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}\n{traceback.format_exc()}'
             self._logger.info(f"process {self._logger._process_name} failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
-            item._logger.info(f"failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
+            # item._wrapped_logger.info(f"failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
             return None
         
     def _fetch_single_finally_sync(
@@ -155,7 +157,7 @@ class Requestor(AttrDict, RootType):
                 break
             except Exception as e:
                 error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
-                self._logger.warning(f"process {self._logger._process_name} failed on {repr(item)}, remaining retries {retry_times}, caught error {repr(error_report)}")
+                self._logger.error(f"process {self._logger._process_name} failed on {repr(item)}, remaining retries {retry_times}, caught error {repr(error_report)}")
                 retry_times -= 1
                 if retry_times < 0:
                     self._handle_error(e, item, result)
@@ -204,7 +206,7 @@ class Requestor(AttrDict, RootType):
                 break
             except Exception as e:
                 error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
-                self._logger.warning(f"process {self._logger._process_name} failed on {repr(item)}, remaining retries {retry_times}, caught error {repr(error_report)}")
+                self._logger.error(f"process {self._logger._process_name} failed on {repr(item)}, remaining retries {retry_times}, caught error {repr(error_report)}")
                 retry_times -= 1
                 if retry_times < 0:
                     self._handle_error(e, item, result)
@@ -218,15 +220,6 @@ class Requestor(AttrDict, RootType):
         st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
-            # if item is None:
-            #     if st_wait_time is None:
-            #         st_wait_time = time.time()
-            #     if time.time() - st_wait_time > self.wait_timeout:
-            #         self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
-            #         break
-            #     time.sleep(self.wait_sleep)
-            #     continue
-            # st_wait_time = None
             if item == 'QUIT':
                 self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
                 break
@@ -247,15 +240,6 @@ class Requestor(AttrDict, RootType):
         st_wait_time = None
         while True:
             item = self._get_item_from_root_queue()
-            # if item is None:
-            #     if st_wait_time is None:
-            #         st_wait_time = time.time()
-            #     if time.time() - st_wait_time > self.wait_timeout:
-            #         self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
-            #         break
-            #     await asyncio.sleep(self.wait_sleep)
-            #     continue
-            # st_wait_time = None
             if item == 'QUIT':
                 self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
                 break
@@ -280,15 +264,6 @@ class Requestor(AttrDict, RootType):
         async with trio.open_nursery() as nursery:
             while True:
                 item = self._get_item_from_root_queue()
-                # if item is None:
-                #     if st_wait_time is None:
-                #         st_wait_time = time.time()
-                #     if time.time() - st_wait_time > self.wait_timeout:
-                #         self._logger.info(f"process {self._logger._process_name} got None from root queue, and has waited for {self.wait_timeout} seconds, QUIT")
-                #         break
-                #     await trio.sleep(self.wait_sleep)
-                #     continue
-                # st_wait_time = None
                 if item == 'QUIT':
                     self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
                     break
