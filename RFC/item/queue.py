@@ -44,10 +44,10 @@ class RootQueue(RootType):
             RootQueue._step.value += 1
             RootQueue._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
             if RootQueue._step.value & 1023 == 0:
-                RootQueue._logger.info(f"{RootQueue._step.value} items added, active items count = {RootQueue._active_item_count.value}, active adders count = {RootQueue._active_adder_count.value}")
+                RootQueue._logger.info(f"{RootQueue._step.value} items added, qic = {len(RootQueue._root_item_queue)}, aic = {RootQueue._active_item_count.value}, aac = {RootQueue._active_adder_count.value}")
                 RootQueue._logger.info(f"{repr(item)} added")
-                cls._logger.info(f"{RootQueue._step.value} items added")
-                cls._logger.info(f"{repr(item)} added")
+                # cls._logger.info(f"{RootQueue._step.value} items added")
+                # cls._logger.info(f"{repr(item)} added")
         
     @classmethod
     def fetch(cls):  # cls must be RootQueue in this case
