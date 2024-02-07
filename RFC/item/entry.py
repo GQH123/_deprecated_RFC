@@ -1,4 +1,4 @@
-import random
+import multiprocessing as mp
 
 from ..utils.cls import RootType
 from ..args.arg_group import (
@@ -9,6 +9,8 @@ from ..req.middleware import get_middleware
 from ..req.session import get_session
 from ..req.requestor import Requestor
 from ..utils.log import get_logger
+
+from .queue import RootQueue
 
 logger = get_logger(__name__)
 logger.info(f"importing module {__name__}")
@@ -43,7 +45,9 @@ class Entry(RootType):
         cls._add_items(ids, *extra_args, **extra_kwargs)
         cls._started = True
         cls._logger.info(f"{repr(cls)} started")
-        cls._requestor.run()
+        RootQueue_reporter = mp.Process(target=RootQueue.report)
+        RootQueue_reporter.start()
+        cls._requestor.run()  # blocked until all items finished
 
 
 # ------------------------------------ Module Postprocess ------------------------------------ #

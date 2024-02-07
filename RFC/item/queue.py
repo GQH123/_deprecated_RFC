@@ -1,3 +1,4 @@
+import time
 from typing import Any
 # from multiprocessing.managers import ListProxy
 
@@ -20,6 +21,8 @@ class RootQueue(RootType):
     _active_item_count = None  # : ValueProxy, number of active items
     _active_adder_count = None
     _step = None
+    
+    _report_wait_time = 10  # seconds
 
     def __init__(self):
         """
@@ -44,16 +47,25 @@ class RootQueue(RootType):
             RootQueue._step.value += 1
             RootQueue._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
             if RootQueue._step.value & 1023 == 0:
-                RootQueue._logger.info(f"{RootQueue._step.value} items added, qic = {len(RootQueue._root_item_queue)}, aic = {RootQueue._active_item_count.value}, aac = {RootQueue._active_adder_count.value}")
                 RootQueue._logger.info(f"{repr(item)} added")
                 # cls._logger.info(f"{RootQueue._step.value} items added")
                 # cls._logger.info(f"{repr(item)} added")
-        
+    
+    @classmethod
+    def report(cls):
+        while True:
+            time.sleep(RootQueue._report_wait_time)
+            with get_global_lock():
+                if not RootQueue._root_item_queue and RootQueue._active_item_count.value == 0 and RootQueue._active_adder_count.value == 0:
+                    RootQueue._logger.info(f"all items finished, RootQueue will be closed")
+                    break
+                RootQueue._logger.info(f"{RootQueue._step.value} items added, qic = {len(RootQueue._root_item_queue)}, aic = {RootQueue._active_item_count.value}, aac = {RootQueue._active_adder_count.value}")
+
     @classmethod
     def fetch(cls):  # cls must be RootQueue in this case
         with get_global_lock():
             if not RootQueue._root_item_queue:
-                assert RootQueue._active_item_count.value >= 0 and RootQueue._active_adder_count.value >= 0, f"error occurs in RootQueue, remain_active_items={RootQueue._active_item_count.value}, remain_active_adders={RootQueue._active_adder_count.value}"
+                # assert RootQueue._active_item_count.value >= 0 and RootQueue._active_adder_count.value >= 0, f"error occurs in RootQueue, remain_active_items={RootQueue._active_item_count.value}, remain_active_adders={RootQueue._active_adder_count.value}"
                 if RootQueue._active_item_count.value == 0 and RootQueue._active_adder_count.value == 0:
                     return 'QUIT'
                 else:
