@@ -16,7 +16,7 @@ RotatingFileHandler_config = dict(
 )
 
 ArgGroup_logger_enable_file_handler = False
-Requestor_logger_enable_file_handler = False
+Requestor_logger_enable_file_handler = True
 RFC_logger_enable_file_handler = False
 
 # Visit Status of ArgSetters
