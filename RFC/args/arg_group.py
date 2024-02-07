@@ -268,7 +268,7 @@ class RequestArgGroup(ArgGroup):
         'headers': HeadersSetter('switch'),         # `headers`     can switch to different headers templates
         'stream': StreamSetter(('fixed', False)),     # `stream`      default to False
         'is_leaf': IsLeafSetter(('fixed', False)),
-        'retry_limit': RetryLimitSetter(('fixed', 3)),
+        'retry_limit': RetryLimitSetter(('fixed', 0)),
     }
 
 
