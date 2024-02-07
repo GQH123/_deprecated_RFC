@@ -91,14 +91,14 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
     ):
         try:
             self._logger.info(f"applying on {repr(item)}, received")
-            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
+            # item._wrapped_logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
             _result = self._apply_sync(item, result, request_lib)
             self._logger.info(f"applied on {repr(item)}, sent")
-            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
+            # item._wrapped_logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
             return _result
         except Exception as e:
-            self._logger.info(f"failed on {repr(item)}, caught error {repr(e)}")
-            item._logger.info(f"failed middleware {repr(self)} on {repr(item)}, caught error {repr(e)}")
+            self._logger.error(f"failed on {repr(item)}, caught error {repr(e)}")
+            # item._wrapped_logger.info(f"failed middleware {repr(self)} on {repr(item)}, caught error {repr(e)}")
             self._handle_error(e, item, result)
 
     async def apply_async(
@@ -110,14 +110,14 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
     ):
         try:
             self._logger.info(f"applying on {repr(item)}, received")
-            item._logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
+            # item._wrapped_logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
             _result = await self._apply_async(item, result, request_lib, async_lib)
             self._logger.info(f"applied on {repr(item)}, sent")
-            item._logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
+            # item._wrapped_logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
             return _result
         except Exception as e:
-            self._logger.info(f"failed on {repr(item)}, caught error {repr(e)}")
-            item._logger.info(f"failed middleware {repr(self)} on {repr(item)}, caught error {repr(e)}")
+            self._logger.error(f"failed on {repr(item)}, caught error {repr(e)}")
+            # item._wrapped_logger.info(f"failed middleware {repr(self)} on {repr(item)}, caught error {repr(e)}")
             self._handle_error(e, item, result)
     
     def __repr__(self):
@@ -215,7 +215,7 @@ class TextSaverMiddleware(Middleware):
     def _save(self, item, result):
         if 'save_path' not in result:
             self._logger.warning(f"no save_path found, skipped save, use BasicMiddleware before saving")
-            item._logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
+            # item._wrapped_logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
             return
         save_object(result.text, result.save_path, 'text', self._logger)
 
@@ -250,7 +250,7 @@ class JSONSaverMiddleware(Middleware):
     def _save(self, item, result):
         if 'save_path' not in result:
             self._logger.warning(f"no save_path found, skipped save, use BasicMiddleware before saving")
-            item._logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
+            # item._wrapped_logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
             return
         save_object(result.json, result.save_path, 'json', self._logger)
 
@@ -285,7 +285,7 @@ class ContentSaverMiddleware(Middleware):
     def _save(self, item, result):
         if 'save_path' not in result:
             self._logger.warning(f"no save_path found, skipped save, use BasicMiddleware before saving")
-            item._logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
+            # item._wrapped_logger.warning(f"no save_path found, skipped save in {repr(self)}, use BasicMiddleware before saving")
             return
         save_object(result.content, result.save_path, 'auto', self._logger)
     
