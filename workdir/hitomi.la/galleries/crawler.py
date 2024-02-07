@@ -22,7 +22,7 @@ class HitomiGallery(ItemType):
         ),
     }
     item_arg_group = {
-        'save_dir': ('auto', 'saves', 'subs'),
+        'save_dir': ('auto', 'saves_2', 'subs'),
     }
     session_args = {
         'no_session': False,
