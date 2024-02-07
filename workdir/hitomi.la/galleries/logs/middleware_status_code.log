@@ -1,3 +1,3 @@
-2024-02-06 21:36:32,426 <MainProcess:2146763, MainThread:140668168218432> (middleware.py:get_middleware:394 -> middleware.py:__init__:55) from logger `RFC.middleware_status_code`
+2024-02-07 11:58:32,840 <MainProcess:2208597, MainThread:139782363461440> (middleware.py:get_middleware:394 -> middleware.py:__init__:55) from logger `RFC.middleware_status_code`
 [INFO] initialized
 

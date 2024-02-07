@@ -1,144 +1,366 @@
-2024-02-06 21:50:41,464 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 49152 items added
+2024-02-07 11:58:40,878 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 1024 items added, qic = 12, aic = 158, aac = 1
 
-2024-02-06 21:50:41,581 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 11:58:40,880 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2813976) added
+
+2024-02-07 11:58:49,303 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 2048 items added, qic = 26, aic = 222, aac = 1
+
+2024-02-07 11:58:49,304 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2812952) added
+
+2024-02-07 11:58:57,690 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 3072 items added, qic = 66, aic = 130, aac = 1
+
+2024-02-07 11:58:57,690 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2811928) added
+
+2024-02-07 11:59:06,151 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 4096 items added, qic = 9, aic = 255, aac = 1
+
+2024-02-07 11:59:06,152 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2810904) added
+
+2024-02-07 11:59:13,851 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 5120 items added, qic = 53, aic = 207, aac = 1
+
+2024-02-07 11:59:13,852 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2809880) added
+
+2024-02-07 11:59:22,062 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 6144 items added, qic = 58, aic = 116, aac = 1
+
+2024-02-07 11:59:22,063 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2808856) added
+
+2024-02-07 11:59:30,251 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 7168 items added, qic = 5, aic = 179, aac = 1
+
+2024-02-07 11:59:30,252 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2807832) added
+
+2024-02-07 11:59:38,299 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 8192 items added, qic = 4, aic = 288, aac = 1
+
+2024-02-07 11:59:38,301 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2806808) added
+
+2024-02-07 11:59:46,157 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 9216 items added, qic = 1, aic = 226, aac = 1
+
+2024-02-07 11:59:46,158 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2805784) added
+
+2024-02-07 11:59:54,012 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 10240 items added, qic = 244, aic = 151, aac = 1
+
+2024-02-07 11:59:54,013 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2804760) added
+
+2024-02-07 12:00:02,780 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 11264 items added, qic = 67, aic = 97, aac = 1
+
+2024-02-07 12:00:02,781 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2803736) added
+
+2024-02-07 12:00:10,578 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 12288 items added, qic = 276, aic = 182, aac = 1
+
+2024-02-07 12:00:10,578 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2802712) added
+
+2024-02-07 12:00:18,268 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 13312 items added, qic = 32, aic = 170, aac = 1
+
+2024-02-07 12:00:18,269 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2801688) added
+
+2024-02-07 12:00:26,068 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 14336 items added, qic = 79, aic = 150, aac = 1
+
+2024-02-07 12:00:26,069 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2800664) added
+
+2024-02-07 12:00:34,859 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 15360 items added, qic = 69, aic = 111, aac = 1
+
+2024-02-07 12:00:34,859 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2799640) added
+
+2024-02-07 12:00:43,267 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 16384 items added, qic = 1, aic = 189, aac = 1
+
+2024-02-07 12:00:43,268 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2798616) added
+
+2024-02-07 12:00:52,068 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 17408 items added, qic = 67, aic = 121, aac = 1
+
+2024-02-07 12:00:52,070 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2797592) added
+
+2024-02-07 12:01:00,081 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 18432 items added, qic = 6, aic = 156, aac = 1
+
+2024-02-07 12:01:00,082 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2796568) added
+
+2024-02-07 12:01:08,249 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 19456 items added, qic = 10, aic = 186, aac = 1
+
+2024-02-07 12:01:08,250 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2795544) added
+
+2024-02-07 12:01:16,496 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 20480 items added, qic = 26, aic = 247, aac = 1
+
+2024-02-07 12:01:16,496 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2794520) added
+
+2024-02-07 12:01:24,492 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 21504 items added, qic = 54, aic = 152, aac = 1
+
+2024-02-07 12:01:24,493 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2793496) added
+
+2024-02-07 12:01:32,922 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 22528 items added, qic = 2, aic = 86, aac = 1
+
+2024-02-07 12:01:32,923 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2792472) added
+
+2024-02-07 12:01:40,940 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 23552 items added, qic = 5, aic = 219, aac = 1
+
+2024-02-07 12:01:40,940 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2791448) added
+
+2024-02-07 12:01:49,090 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 24576 items added, qic = 1, aic = 142, aac = 1
+
+2024-02-07 12:01:49,091 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2790424) added
+
+2024-02-07 12:01:57,467 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 25600 items added, qic = 7, aic = 123, aac = 1
+
+2024-02-07 12:01:57,468 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2789400) added
+
+2024-02-07 12:02:05,514 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 26624 items added, qic = 5, aic = 83, aac = 1
+
+2024-02-07 12:02:05,514 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2788376) added
+
+2024-02-07 12:02:13,637 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 27648 items added, qic = 5, aic = 260, aac = 1
+
+2024-02-07 12:02:13,638 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2787352) added
+
+2024-02-07 12:02:22,045 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 28672 items added, qic = 12, aic = 132, aac = 1
+
+2024-02-07 12:02:22,045 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2786328) added
+
+2024-02-07 12:02:30,153 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 29696 items added, qic = 18, aic = 128, aac = 1
+
+2024-02-07 12:02:30,154 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2785304) added
+
+2024-02-07 12:02:38,260 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 30720 items added, qic = 17, aic = 133, aac = 1
+
+2024-02-07 12:02:38,261 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2784280) added
+
+2024-02-07 12:02:46,202 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 31744 items added, qic = 2, aic = 186, aac = 1
+
+2024-02-07 12:02:46,203 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2783256) added
+
+2024-02-07 12:02:53,957 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 32768 items added, qic = 103, aic = 145, aac = 1
+
+2024-02-07 12:02:53,958 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2782232) added
+
+2024-02-07 12:03:02,203 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 33792 items added, qic = 69, aic = 117, aac = 1
+
+2024-02-07 12:03:02,204 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2781208) added
+
+2024-02-07 12:03:10,166 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 34816 items added, qic = 65, aic = 90, aac = 1
+
+2024-02-07 12:03:10,167 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2780184) added
+
+2024-02-07 12:03:18,325 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 35840 items added, qic = 1, aic = 109, aac = 1
+
+2024-02-07 12:03:18,326 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2779160) added
+
+2024-02-07 12:03:26,365 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 36864 items added, qic = 8, aic = 106, aac = 1
+
+2024-02-07 12:03:26,365 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2778136) added
+
+2024-02-07 12:03:34,143 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 37888 items added, qic = 5, aic = 162, aac = 1
+
+2024-02-07 12:03:34,144 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2777112) added
+
+2024-02-07 12:03:41,665 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 38912 items added, qic = 66, aic = 86, aac = 1
+
+2024-02-07 12:03:41,666 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2776088) added
+
+2024-02-07 12:03:49,181 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 39936 items added, qic = 92, aic = 64, aac = 1
+
+2024-02-07 12:03:49,181 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2775064) added
+
+2024-02-07 12:03:56,960 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 40960 items added, qic = 18, aic = 172, aac = 1
+
+2024-02-07 12:03:56,960 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2774040) added
+
+2024-02-07 12:04:04,362 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 41984 items added, qic = 78, aic = 86, aac = 1
+
+2024-02-07 12:04:04,362 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2773016) added
+
+2024-02-07 12:04:12,295 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 43008 items added, qic = 8, aic = 122, aac = 1
+
+2024-02-07 12:04:12,295 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2771992) added
+
+2024-02-07 12:04:19,735 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 44032 items added, qic = 75, aic = 127, aac = 1
+
+2024-02-07 12:04:19,736 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2770968) added
+
+2024-02-07 12:04:27,366 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 45056 items added, qic = 10, aic = 166, aac = 1
+
+2024-02-07 12:04:27,367 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2769944) added
+
+2024-02-07 12:04:35,707 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 46080 items added, qic = 43, aic = 227, aac = 1
+
+2024-02-07 12:04:35,709 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2768920) added
+
+2024-02-07 12:04:43,458 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 47104 items added, qic = 3, aic = 128, aac = 1
+
+2024-02-07 12:04:43,458 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2767896) added
+
+2024-02-07 12:04:52,644 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 48128 items added, qic = 17, aic = 111, aac = 1
+
+2024-02-07 12:04:52,645 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
+[INFO] HitomiGallery(2766872) added
+
+2024-02-07 12:05:00,151 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 49152 items added, qic = 109, aic = 83, aac = 1
+
+2024-02-07 12:05:00,151 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2765848) added
 
-2024-02-06 21:51:09,942 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 50176 items added
+2024-02-07 12:05:07,760 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 50176 items added, qic = 3, aic = 193, aac = 1
 
-2024-02-06 21:51:09,942 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:07,760 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2764824) added
 
-2024-02-06 21:51:37,991 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 51200 items added
+2024-02-07 12:05:15,455 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 51200 items added, qic = 83, aic = 237, aac = 1
 
-2024-02-06 21:51:37,991 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:15,456 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2763800) added
 
-2024-02-06 21:52:08,515 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 52224 items added
+2024-02-07 12:05:23,289 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 52224 items added, qic = 65, aic = 141, aac = 1
 
-2024-02-06 21:52:08,516 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:23,290 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2762776) added
 
-2024-02-06 21:52:39,781 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 53248 items added
+2024-02-07 12:05:31,143 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 53248 items added, qic = 27, aic = 121, aac = 1
 
-2024-02-06 21:52:39,782 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:31,143 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2761752) added
 
-2024-02-06 21:53:11,145 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 54272 items added
+2024-02-07 12:05:38,643 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 54272 items added, qic = 65, aic = 139, aac = 1
 
-2024-02-06 21:53:11,146 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:38,644 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2760728) added
 
-2024-02-06 21:53:41,660 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 55296 items added
+2024-02-07 12:05:46,344 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 55296 items added, qic = 46, aic = 170, aac = 1
 
-2024-02-06 21:53:41,661 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:46,345 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2759704) added
 
-2024-02-06 21:54:12,595 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 56320 items added
+2024-02-07 12:05:53,759 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 56320 items added, qic = 105, aic = 163, aac = 1
 
-2024-02-06 21:54:12,596 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:05:53,760 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2758680) added
 
-2024-02-06 21:54:45,382 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 57344 items added
+2024-02-07 12:06:01,656 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 57344 items added, qic = 35, aic = 189, aac = 1
 
-2024-02-06 21:54:45,383 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:06:01,656 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2757656) added
 
-2024-02-06 21:55:18,409 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 58368 items added
+2024-02-07 12:06:09,482 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 58368 items added, qic = 41, aic = 193, aac = 1
 
-2024-02-06 21:55:18,409 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:06:09,483 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2756632) added
 
-2024-02-06 21:55:51,333 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 59392 items added
+2024-02-07 12:06:17,040 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 59392 items added, qic = 106, aic = 126, aac = 1
 
-2024-02-06 21:55:51,335 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:06:17,040 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2755608) added
 
-2024-02-06 21:56:24,081 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 60416 items added
+2024-02-07 12:06:24,747 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 60416 items added, qic = 9, aic = 247, aac = 1
 
-2024-02-06 21:56:24,082 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:06:24,747 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2754584) added
 
-2024-02-06 21:56:58,239 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 61440 items added
+2024-02-07 12:06:32,769 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 61440 items added, qic = 13, aic = 167, aac = 1
 
-2024-02-06 21:56:58,239 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:06:32,770 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2753560) added
 
-2024-02-06 21:57:32,877 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 62464 items added
+2024-02-07 12:06:40,428 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:47) from logger `RFC.rootqueue`
+[INFO] 62464 items added, qic = 53, aic = 105, aac = 1
 
-2024-02-06 21:57:32,878 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
+2024-02-07 12:06:40,429 <Process-2:2208631, MainThread:139782363461440> (item.py:_add_items_sinle_process:208 -> queue.py:add:48) from logger `RFC.rootqueue`
 [INFO] HitomiGallery(2752536) added
-
-2024-02-06 21:58:07,988 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 63488 items added
-
-2024-02-06 21:58:07,989 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2751512) added
-
-2024-02-06 21:58:43,839 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 64512 items added
-
-2024-02-06 21:58:43,840 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2750488) added
-
-2024-02-06 21:59:21,668 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 65536 items added
-
-2024-02-06 21:59:21,669 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2749464) added
-
-2024-02-06 21:59:58,472 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 66560 items added
-
-2024-02-06 21:59:58,473 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2748440) added
-
-2024-02-06 22:00:35,047 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 67584 items added
-
-2024-02-06 22:00:35,047 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2747416) added
-
-2024-02-06 22:01:12,760 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 68608 items added
-
-2024-02-06 22:01:12,760 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2746392) added
-
-2024-02-06 22:01:50,650 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 69632 items added
-
-2024-02-06 22:01:50,650 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2745368) added
-
-2024-02-06 22:02:29,727 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 70656 items added
-
-2024-02-06 22:02:29,727 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2744344) added
-
-2024-02-06 22:03:09,478 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 71680 items added
-
-2024-02-06 22:03:09,479 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2743320) added
-
-2024-02-06 22:03:50,094 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:47) from logger `RFC.rootqueue`
-[INFO] 72704 items added
-
-2024-02-06 22:03:50,095 <Process-2:2146813, MainThread:140668168218432> (item.py:_add_items_sinle_process:193 -> queue.py:add:48) from logger `RFC.rootqueue`
-[INFO] HitomiGallery(2742296) added
 
