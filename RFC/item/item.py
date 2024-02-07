@@ -4,7 +4,10 @@ from time import time
 from typing import Any, Callable, Dict
 
 from ..utils.ds import AttrDict
-from ..utils.cls import RootType
+from ..utils.cls import (
+    RootType,
+    LoggerWrapper
+)
 from ..utils.defs import (
     PENDING,
     PROCESSING,
@@ -53,7 +56,11 @@ class Item(AttrDict, RootType):
         if 'save_dir' not in args:
             raise ValueError(f"no save_dir in {repr(args)}, which is required for items")
         super().__init__(args)
-        self._get_logger_self(name=f"{self.bloodline[-1][0]}({repr(self.bloodline[-1][1])})", log_path=self.save_dir, level='info')  # type: ignore
+        # self._get_logger_self(name=f"{self.bloodline[-1][0]}({repr(self.bloodline[-1][1])})", log_path=self.save_dir, level='info', delay=False)  # type: ignore
+        # Item._get_logger(__name__, level='debug', propagate=False, add_file_handler=True)  # handlers will be lost after adding to mp.manager.list()
+        # self._wrapped_logger = LoggerWrapper(logger=Item._logger, name=f"{self.bloodline[-1][0]}({repr(self.bloodline[-1][1])})", log_path=self.save_dir)
+        # self._wrapped_logger = Item._logger
+        # self._wrapped_logger = self._logger
         self._status = None     
         self._timestamp = {}                        # Dict[str, int | str], timestamp of each status
         self._generate = generate
@@ -85,10 +92,14 @@ class Item(AttrDict, RootType):
         if check_status:
             self._status_check(status)
         self._timestamp[status] = time()
-        self._logger.info(f"status updated from {repr(_itemStatusToName[self._status] if self._status is not None else None)} to {repr(_itemStatusToName[status])}")  
+        # self._wrapped_logger.info(f"status updated from {repr(_itemStatusToName[self._status] if self._status is not None else None)} to {repr(_itemStatusToName[status])}")  
         self._status = status
         
+    # def _lazy_init(self):
+    #     self._wrapped_logger.lazy_init()
+        
     def pend(self):
+        # self._lazy_init()
         self._update_status(PENDING)
         
     def process(self):
@@ -99,25 +110,29 @@ class Item(AttrDict, RootType):
         def _reduce_active_item_count():
             with get_global_lock():
                 RootQueue._active_item_count.value -= 1  # item finished
+        
+        def _quit():
+            # self._wrapped_logger.close()
+            _reduce_active_item_count()
                 
         if not is_ok:
             self._update_status(FAILED)
-            _reduce_active_item_count()
+            _quit()
             return
         if self.is_leaf:
             self._update_status(FINISHED)
-            _reduce_active_item_count()
+            _quit()
             return
         self._update_status(GENERATING)
         try:
             self._generate(item=self, result=result)
         except Exception as e:
             self._update_status(FAILED)
-            _reduce_active_item_count()  # must be placed after generating new items
+            _quit()  # must be placed after generating new items
             raise e
         else:
             self._update_status(FINISHED)
-        _reduce_active_item_count()
+        _quit()
 
 
 class ItemTypeMeta(type):
@@ -190,7 +205,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         
         try:
             for id in ids[::-1]:  # add new items in reversed order
-                cls.add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
+                RootQueue.add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
         except Exception as e:
             _reduce_active_adder_count()
             raise e
