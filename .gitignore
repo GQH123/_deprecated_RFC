@@ -1,6 +1,7 @@
 .vscode
 saves/
 saves_*/
+saves.zip
 RFC.log
 RFC_stderr.log
 
