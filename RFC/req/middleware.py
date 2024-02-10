@@ -166,6 +166,7 @@ class StatusCodeMiddleware(Middleware):
         status_code = get_status_code(result.response, request_lib)     # type: ignore
         if status_code not in self.expected_status_codes:               # type: ignore
             raise ValueError(f"unexpected status code {repr(status_code)} in response of {repr(item)}")
+        self._logger.info(f"status code {repr(status_code)} in response of {repr(item)}")
         result.status_code = status_code
         return result
 
@@ -183,6 +184,7 @@ class BasicMiddleware(Middleware):
     _name: str = 'middleware_basic'
     
     _defined_args = {
+        'reject_types': [],
     }
     
     def _apply_sync(
@@ -193,7 +195,12 @@ class BasicMiddleware(Middleware):
     ):
         result.filename = get_filename(result.response, request_lib, str(item.id))         # type: ignore
         result.fileext = get_fileext(result.response, request_lib)                         # type: ignore
+        if result.fileext and result.filename.endswith(result.fileext):
+            result.filename = result.filename[:-len(result.fileext)]
         result.save_path = os.path.join(item.save_dir, result.filename + result.fileext)   # type: ignore
+        # file_type = result.
+        if result.fileext in self.reject_types:               # type: ignore
+            raise ValueError(f"rejected type {repr(result.fileext)} in response of {repr(item)}")
         return result
 
     async def _apply_async(
