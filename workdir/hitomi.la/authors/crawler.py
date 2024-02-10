@@ -37,11 +37,11 @@ class HitomiAuthor(ItemType):
         'result_saver': {},
     }
     requestor_args = {
-        'nproc': 1,
+        'nproc': 12,
         'async_sema': 24,
         'wait_timeout': 20,
         'wait_sleep': 1,
-        'report_step': 10,
+        'report_step': 1,
     }
     
     @classmethod
@@ -127,6 +127,7 @@ class HitomiImage(HitomiGallery):
         ),
         'headers': ('switch', 'none'),
         'is_leaf': ('fixed', True),
+        'retry_limit': ('fixed', 100),
     }
     
     @classmethod
@@ -134,6 +135,6 @@ class HitomiImage(HitomiGallery):
         pass
 
 
-ids = ['mutou mato']
+# ids = ['mutou mato', 'as109', 'mankai kaika', 'syokuyou-mogura', 'haguhagu', 'rubi-sama', 'sorairo len']
 # ids = [urllib.parse.quote_plus(id) for id in ids]
-HitomiAuthor.start(ids)
+HitomiAuthor.start('rubi-sama')

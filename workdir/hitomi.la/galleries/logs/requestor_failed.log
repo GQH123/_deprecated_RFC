@@ -1,0 +1,18 @@
+2024-02-07 17:31:59,680 <requestor-worker-4:2208645, MainThread:139782363461440> (requestor.py:_fetch_single_async:212 -> requestor.py:_handle_error:99) from logger `RFC.requestor_failed`
+[ERROR] failed on HitomiGallery(151148), caught error "['ServerDisconnectedError'] ServerDisconnectedError('Server disconnected')"
+
+2024-02-07 17:31:59,759 <requestor-worker-4:2208645, MainThread:139782363461440> (requestor.py:_fetch_single_async:212 -> requestor.py:_handle_error:100) from logger `RFC.requestor_failed`
+[ERROR] Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/requestor.py", line 197, in _fetch_single_async
+    resp = await self._session.request(item)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/session.py", line 296, in request
+    return await self._session.request(**request_args)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+
+

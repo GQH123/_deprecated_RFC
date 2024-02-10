@@ -57,7 +57,7 @@
         "headers": "HeadersSetter(HeadersSetter._switch())",
         "stream": "StreamSetter(ArgSetter._fixed(False))",
         "is_leaf": "IsLeafSetter(ArgSetter._fixed(False))",
-        "retry_limit": "RetryLimitSetter(ArgSetter._fixed(3))"
+        "retry_limit": "RetryLimitSetter(ArgSetter._fixed(0))"
     },
     "'ItemArgGroup'": {
         "save_dir": "SaveDirSetter(ArgSetter._not_set())",
