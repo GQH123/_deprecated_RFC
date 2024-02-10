@@ -65,9 +65,9 @@ def get_fileext(resp, request_lib):
 
 def get_content_type(resp, request_lib):
     if request_lib == 'requests':
-        return resp.headers['content-type']  # 'text/html; charset=UTF-8'
+        return resp.headers.get('content-type', None)  # 'text/html; charset=UTF-8'
     elif request_lib == 'aiohttp':
-        return resp.headers['CONTENT-TYPE']
+        return resp.headers.get('CONTENT-TYPE', None)
     elif request_lib == 'asks':
         return resp.headers['Content-Type']
     else:
