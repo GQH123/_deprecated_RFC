@@ -1,0 +1,66 @@
+{
+    "'StatusCodeMiddlewareArgs'": {
+        "expected_status_codes": "[200]"
+    },
+    "'BasicMiddlewareArgs'": {},
+    "'JSONSaverMiddlewareArgs'": {},
+    "'TextSaverMiddlewareArgs'": {},
+    "'StreamDownloaderMiddlewareArgs'": {},
+    "'ResultSaverMiddlewareArgs'": {},
+    "'ContentSaverMiddlewareArgs'": {},
+    "'SessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}"
+    },
+    "'RequestsSessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}",
+        "stream": "False"
+    },
+    "'AioHTTPSessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}",
+        "chunked_size": "None"
+    },
+    "'AsksSessionArgs'": {
+        "lib": "None",
+        "no_session": "False",
+        "cookies": "{}",
+        "proxies": "{}",
+        "headers": "{}"
+    },
+    "'RequestorArgs'": {
+        "nproc": "1",
+        "async_sema": "1",
+        "report_step": "100",
+        "wait_timeout": "20",
+        "wait_sleep": "2"
+    },
+    "'RequestArgGroup'": {
+        "method": "MethodSetter(ArgSetter._fixed('get'))",
+        "url": "URLSetter(ArgSetter._not_set())",
+        "referer": "RefererSetter(RefererSetter._host())",
+        "cookies": "CookiesSetter(ArgSetter._fixed({}))",
+        "params": "ParamsSetter(ArgSetter._none())",
+        "payload": "PayloadSetter(ArgSetter._none())",
+        "proxies": "ProxiesSetter(ArgSetter._fixed({}))",
+        "user_agent": "UserAgentSetter(UserAgentSetter._random())",
+        "headers": "HeadersSetter(HeadersSetter._switch())",
+        "stream": "StreamSetter(ArgSetter._fixed(False))",
+        "is_leaf": "IsLeafSetter(ArgSetter._fixed(False))",
+        "retry_limit": "RetryLimitSetter(ArgSetter._fixed(0))"
+    },
+    "'ItemArgGroup'": {
+        "save_dir": "SaveDirSetter(ArgSetter._not_set())",
+        "bloodline": "BloodlineSetter(BloodlineSetter._inherit())"
+    }
+}

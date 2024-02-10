@@ -1,0 +1,70 @@
+Request URL:
+https://api.fanbox.cc/post.info?postId=7305540
+Request Method:
+GET
+Status Code:
+400 Bad Request
+Remote Address:
+127.0.0.1:7890
+Referrer Policy:
+strict-origin-when-cross-origin
+
+
+
+Content-Length:
+25
+Content-Security-Policy:
+frame-ancestors 'self' https://*.fanbox.cc
+Content-Type:
+application/json; charset=utf-8
+Date:
+Wed, 07 Feb 2024 19:51:44 GMT
+Server:
+nginx
+Vary:
+Origin
+X-Content-Type-Options:
+nosniff
+X-Frame-Options:
+SAMEORIGIN
+X-Host-Time:
+073
+
+
+
+:authority:
+api.fanbox.cc
+:method:
+GET
+:path:
+/post.info?postId=7305540
+:scheme:
+https
+Accept:
+text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding:
+gzip, deflate, br
+Accept-Language:
+en-US,en;q=0.9
+Cache-Control:
+no-cache
+Pragma:
+no-cache
+Sec-Ch-Ua:
+"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Mobile:
+?0
+Sec-Ch-Ua-Platform:
+"Windows"
+Sec-Fetch-Dest:
+document
+Sec-Fetch-Mode:
+navigate
+Sec-Fetch-Site:
+none
+Sec-Fetch-User:
+?1
+Upgrade-Insecure-Requests:
+1
+User-Agent:
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36

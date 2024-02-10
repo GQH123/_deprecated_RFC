@@ -1,0 +1,6 @@
+2024-02-08 14:45:16,950 <MainProcess:1216475, MainThread:140341876229952> (middleware.py:get_middleware:394 -> middleware.py:__init__:55) from logger `RFC.middleware_json_saver`
+[INFO] initialized
+
+2024-02-09 00:15:22,408 <MainProcess:2014158, MainThread:140684423763776> (middleware.py:get_middleware:394 -> middleware.py:__init__:55) from logger `RFC.middleware_json_saver`
+[INFO] initialized
+

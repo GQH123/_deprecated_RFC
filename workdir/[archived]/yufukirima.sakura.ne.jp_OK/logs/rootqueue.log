@@ -1,0 +1,498 @@
+2024-02-08 14:45:26,997 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 26 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:45:37,016 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 54 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:45:47,028 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 84 items added, qic = 2, aic = 0, aac = 0
+
+2024-02-08 14:45:57,036 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 117 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:46:07,049 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 149 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:46:17,060 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 184 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:46:27,072 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 214 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:46:37,084 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 245 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:46:47,090 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 282 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:46:57,100 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 319 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:47:07,107 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 358 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:47:17,119 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 398 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:47:27,132 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 433 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:47:37,137 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 508 items added, qic = 0, aic = 1, aac = 0
+
+2024-02-08 14:47:47,149 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 615 items added, qic = 2, aic = 0, aac = 0
+
+2024-02-08 14:47:57,162 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 725 items added, qic = 2, aic = 0, aac = 0
+
+2024-02-08 14:48:07,175 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 806 items added, qic = 2, aic = 0, aac = 0
+
+2024-02-08 14:48:17,188 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 929 items added, qic = 13, aic = 0, aac = 0
+
+2024-02-08 14:48:27,200 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1021 items added, qic = 15, aic = 0, aac = 0
+
+2024-02-08 14:48:27,736 <Process-4:1023:1229604, MainThread:140341876229952> (item.py:_add_items_sinle_process:207 -> queue.py:add:50) from logger `RFC.rootqueue`
+[INFO] FanboxPost(2582932).FanboxPostImage(share) added
+
+2024-02-08 14:48:37,207 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1116 items added, qic = 15, aic = 0, aac = 0
+
+2024-02-08 14:48:47,220 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1204 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:48:57,225 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1285 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:49:07,231 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1365 items added, qic = 10, aic = 0, aac = 0
+
+2024-02-08 14:49:17,242 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1421 items added, qic = 2, aic = 0, aac = 0
+
+2024-02-08 14:49:27,245 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1473 items added, qic = 2, aic = 0, aac = 0
+
+2024-02-08 14:49:37,256 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1516 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:49:47,268 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1561 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:49:57,280 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1607 items added, qic = 7, aic = 0, aac = 0
+
+2024-02-08 14:50:07,292 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1652 items added, qic = 4, aic = 0, aac = 0
+
+2024-02-08 14:50:17,304 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1695 items added, qic = 5, aic = 0, aac = 0
+
+2024-02-08 14:50:27,316 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1734 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:50:37,328 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1765 items added, qic = 0, aic = 4, aac = 0
+
+2024-02-08 14:50:47,340 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1796 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:50:57,352 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1834 items added, qic = 5, aic = 0, aac = 0
+
+2024-02-08 14:51:07,364 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1868 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-08 14:51:17,376 <Process-3:1216506, MainThread:140341876229952> (process.py:run:108 -> queue.py:report:62) from logger `RFC.rootqueue`
+[INFO] 1905 items added, qic = 3, aic = 0, aac = 0
+
+2024-02-09 00:13:24,824 <Process-1028:2008017, MainThread:140033902774080> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] FanboxPost(5959625).YufukirimaGalleryImage(gallery_12) added
+
+2024-02-09 00:15:19,542 <Process-1025:2026004, MainThread:140684423763776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] FanboxPost(5959625).YufukirimaGalleryImage(gallery_9) added
+
+2024-02-09 00:15:32,769 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1153, aic = 300, aac = 0
+
+2024-02-09 00:15:42,789 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1151, aic = 300, aac = 0
+
+2024-02-09 00:15:52,800 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1149, aic = 300, aac = 0
+
+2024-02-09 00:16:02,812 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1147, aic = 300, aac = 0
+
+2024-02-09 00:16:12,824 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1145, aic = 300, aac = 0
+
+2024-02-09 00:16:22,836 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1143, aic = 300, aac = 0
+
+2024-02-09 00:16:32,840 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1133, aic = 300, aac = 0
+
+2024-02-09 00:16:42,853 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1126, aic = 300, aac = 0
+
+2024-02-09 00:16:52,865 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1120, aic = 300, aac = 0
+
+2024-02-09 00:17:02,876 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1111, aic = 300, aac = 0
+
+2024-02-09 00:17:12,884 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1098, aic = 300, aac = 0
+
+2024-02-09 00:17:22,896 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1088, aic = 300, aac = 0
+
+2024-02-09 00:17:32,908 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1082, aic = 300, aac = 0
+
+2024-02-09 00:17:42,921 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1072, aic = 300, aac = 0
+
+2024-02-09 00:17:52,934 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1056, aic = 300, aac = 0
+
+2024-02-09 00:18:02,945 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1042, aic = 300, aac = 0
+
+2024-02-09 00:18:12,952 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1028, aic = 300, aac = 0
+
+2024-02-09 00:18:22,964 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1013, aic = 300, aac = 0
+
+2024-02-09 00:18:32,976 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 1000, aic = 300, aac = 0
+
+2024-02-09 00:18:42,988 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 985, aic = 300, aac = 0
+
+2024-02-09 00:18:53,000 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 972, aic = 300, aac = 0
+
+2024-02-09 00:19:03,012 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 958, aic = 300, aac = 0
+
+2024-02-09 00:19:13,016 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 942, aic = 300, aac = 0
+
+2024-02-09 00:19:23,028 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 921, aic = 300, aac = 0
+
+2024-02-09 00:19:33,035 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 906, aic = 300, aac = 0
+
+2024-02-09 00:19:43,044 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 894, aic = 300, aac = 0
+
+2024-02-09 00:19:53,056 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 877, aic = 300, aac = 0
+
+2024-02-09 00:20:03,059 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 871, aic = 300, aac = 0
+
+2024-02-09 00:20:13,068 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 859, aic = 300, aac = 0
+
+2024-02-09 00:20:23,080 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 843, aic = 300, aac = 0
+
+2024-02-09 00:20:33,092 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 839, aic = 300, aac = 0
+
+2024-02-09 00:20:43,104 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 834, aic = 300, aac = 0
+
+2024-02-09 00:20:53,116 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 827, aic = 300, aac = 0
+
+2024-02-09 00:21:03,128 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 818, aic = 300, aac = 0
+
+2024-02-09 00:21:13,133 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 810, aic = 300, aac = 0
+
+2024-02-09 00:21:23,146 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 802, aic = 300, aac = 0
+
+2024-02-09 00:21:33,156 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 794, aic = 300, aac = 0
+
+2024-02-09 00:21:43,169 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 785, aic = 300, aac = 0
+
+2024-02-09 00:21:53,180 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 777, aic = 300, aac = 0
+
+2024-02-09 00:22:03,192 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 769, aic = 300, aac = 0
+
+2024-02-09 00:22:13,204 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 763, aic = 300, aac = 0
+
+2024-02-09 00:22:23,216 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 754, aic = 300, aac = 0
+
+2024-02-09 00:22:33,220 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 749, aic = 300, aac = 0
+
+2024-02-09 00:22:43,232 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 741, aic = 300, aac = 0
+
+2024-02-09 00:22:53,236 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 724, aic = 300, aac = 0
+
+2024-02-09 00:23:03,248 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 714, aic = 300, aac = 0
+
+2024-02-09 00:23:13,260 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 692, aic = 300, aac = 0
+
+2024-02-09 00:23:23,273 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 686, aic = 300, aac = 0
+
+2024-02-09 00:23:33,286 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 671, aic = 300, aac = 0
+
+2024-02-09 00:23:43,298 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 658, aic = 300, aac = 0
+
+2024-02-09 00:23:53,304 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 650, aic = 300, aac = 0
+
+2024-02-09 00:24:03,316 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 637, aic = 300, aac = 0
+
+2024-02-09 00:24:13,328 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 632, aic = 300, aac = 0
+
+2024-02-09 00:24:23,340 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 615, aic = 300, aac = 0
+
+2024-02-09 00:24:33,352 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 604, aic = 300, aac = 0
+
+2024-02-09 00:24:43,364 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 593, aic = 300, aac = 0
+
+2024-02-09 00:24:53,376 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 579, aic = 300, aac = 0
+
+2024-02-09 00:25:03,388 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 570, aic = 300, aac = 0
+
+2024-02-09 00:25:13,400 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 555, aic = 300, aac = 0
+
+2024-02-09 00:25:23,412 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 547, aic = 300, aac = 0
+
+2024-02-09 00:25:33,424 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 536, aic = 300, aac = 0
+
+2024-02-09 00:25:43,436 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 528, aic = 300, aac = 0
+
+2024-02-09 00:25:53,441 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 521, aic = 300, aac = 0
+
+2024-02-09 00:26:03,455 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 514, aic = 300, aac = 0
+
+2024-02-09 00:26:13,464 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 501, aic = 300, aac = 0
+
+2024-02-09 00:26:23,476 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 489, aic = 300, aac = 0
+
+2024-02-09 00:26:33,488 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 475, aic = 300, aac = 0
+
+2024-02-09 00:26:43,500 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 460, aic = 300, aac = 0
+
+2024-02-09 00:26:53,512 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 444, aic = 300, aac = 0
+
+2024-02-09 00:27:03,524 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 429, aic = 300, aac = 0
+
+2024-02-09 00:27:13,536 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 417, aic = 300, aac = 0
+
+2024-02-09 00:27:23,548 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 402, aic = 300, aac = 0
+
+2024-02-09 00:27:33,560 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 387, aic = 300, aac = 0
+
+2024-02-09 00:27:43,572 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 371, aic = 300, aac = 0
+
+2024-02-09 00:27:53,584 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 366, aic = 300, aac = 0
+
+2024-02-09 00:28:03,596 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 354, aic = 300, aac = 0
+
+2024-02-09 00:28:13,608 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 337, aic = 300, aac = 0
+
+2024-02-09 00:28:23,620 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 328, aic = 300, aac = 0
+
+2024-02-09 00:28:33,632 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 316, aic = 300, aac = 0
+
+2024-02-09 00:28:43,644 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 311, aic = 300, aac = 0
+
+2024-02-09 00:28:53,649 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 299, aic = 300, aac = 0
+
+2024-02-09 00:29:03,660 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 288, aic = 300, aac = 0
+
+2024-02-09 00:29:13,673 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 282, aic = 300, aac = 0
+
+2024-02-09 00:29:23,679 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 273, aic = 300, aac = 0
+
+2024-02-09 00:29:33,692 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 261, aic = 300, aac = 0
+
+2024-02-09 00:29:43,704 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 250, aic = 300, aac = 0
+
+2024-02-09 00:29:53,707 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 241, aic = 300, aac = 0
+
+2024-02-09 00:30:03,720 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 232, aic = 300, aac = 0
+
+2024-02-09 00:30:13,723 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 227, aic = 300, aac = 0
+
+2024-02-09 00:30:23,734 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 218, aic = 300, aac = 0
+
+2024-02-09 00:30:33,747 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 208, aic = 300, aac = 0
+
+2024-02-09 00:30:43,753 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 199, aic = 300, aac = 0
+
+2024-02-09 00:30:53,765 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 192, aic = 300, aac = 0
+
+2024-02-09 00:31:03,778 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 187, aic = 300, aac = 0
+
+2024-02-09 00:31:13,788 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 179, aic = 300, aac = 0
+
+2024-02-09 00:31:23,800 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 168, aic = 300, aac = 0
+
+2024-02-09 00:31:33,812 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 158, aic = 300, aac = 0
+
+2024-02-09 00:31:43,816 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 136, aic = 300, aac = 0
+
+2024-02-09 00:31:53,828 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 126, aic = 300, aac = 0
+
+2024-02-09 00:32:03,840 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 116, aic = 300, aac = 0
+
+2024-02-09 00:32:13,852 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 102, aic = 300, aac = 0
+
+2024-02-09 00:32:23,864 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 94, aic = 300, aac = 0
+
+2024-02-09 00:32:33,868 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 77, aic = 300, aac = 0
+
+2024-02-09 00:32:43,876 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 73, aic = 300, aac = 0
+
+2024-02-09 00:32:53,889 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 64, aic = 300, aac = 0
+
+2024-02-09 00:33:03,901 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 47, aic = 300, aac = 0
+
+2024-02-09 00:33:13,912 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 38, aic = 300, aac = 0
+
+2024-02-09 00:33:23,924 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 21, aic = 300, aac = 0
+
+2024-02-09 00:33:33,936 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 4, aic = 300, aac = 0
+
+2024-02-09 00:33:43,948 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 292, aac = 0
+
+2024-02-09 00:33:53,960 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 277, aac = 0
+
+2024-02-09 00:34:03,972 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 265, aac = 0
+
+2024-02-09 00:34:13,984 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 254, aac = 0
+
+2024-02-09 00:34:23,996 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 247, aac = 0
+
+2024-02-09 00:34:34,008 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 236, aac = 0
+
+2024-02-09 00:34:44,021 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 226, aac = 0
+
+2024-02-09 00:34:54,032 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 207, aac = 0
+
+2024-02-09 00:35:04,044 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 189, aac = 0
+
+2024-02-09 00:35:14,056 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 163, aac = 0
+
+2024-02-09 00:35:24,068 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 140, aac = 0
+
+2024-02-09 00:35:34,080 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 116, aac = 0
+
+2024-02-09 00:35:44,092 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 86, aac = 0
+
+2024-02-09 00:35:54,104 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 52, aac = 0
+
+2024-02-09 00:36:04,117 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 29, aac = 0
+
+2024-02-09 00:36:14,128 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 4, aac = 0
+
+2024-02-09 00:36:24,141 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1456 items added, qic = 0, aic = 1, aac = 0
+
+2024-02-09 00:36:34,152 <Process-1459:2031520, MainThread:140684423763776> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+

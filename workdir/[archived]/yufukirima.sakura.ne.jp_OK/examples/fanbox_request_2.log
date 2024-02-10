@@ -1,0 +1,88 @@
+Request URL:
+https://api.fanbox.cc/post.info?postId=7305540
+Request Method:
+GET
+Status Code:
+200 OK
+Remote Address:
+127.0.0.1:7890
+Referrer Policy:
+origin-when-cross-origin
+
+
+
+Access-Control-Allow-Credentials:
+true
+Access-Control-Allow-Headers:
+Content-Type, X-CSRF-Token
+Access-Control-Allow-Origin:
+https://www.fanbox.cc
+Cache-Control:
+no-store, no-cache, must-revalidate
+Content-Encoding:
+gzip
+Content-Length:
+1651
+Content-Security-Policy:
+frame-ancestors 'self' https://*.fanbox.cc
+Content-Type:
+application/json; charset=utf-8
+Date:
+Wed, 07 Feb 2024 19:47:14 GMT
+Expires:
+Thu, 19 Nov 1981 08:52:00 GMT
+Pragma:
+no-cache
+Server:
+nginx
+Vary:
+X-UserId,Accept-Encoding
+X-Content-Type-Options:
+nosniff
+X-Frame-Options:
+SAMEORIGIN
+X-Host-Time:
+070
+X-Userid:
+89975465
+
+
+
+:authority:
+api.fanbox.cc
+:method:
+GET
+:path:
+/post.info?postId=7305540
+:scheme:
+https
+Accept:
+application/json, text/plain, */*
+Accept-Encoding:
+gzip, deflate, br
+Accept-Language:
+en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+Cache-Control:
+no-cache
+Cookie:
+p_ab_id=6; p_ab_id_2=8; p_ab_d_id=1921126919; privacy_policy_agreement=6; privacy_policy_notification=0; FANBOXSESSID=89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1
+Origin:
+https://www.fanbox.cc
+Pragma:
+no-cache
+Referer:
+https://www.fanbox.cc/
+Sec-Ch-Ua:
+"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"
+Sec-Ch-Ua-Mobile:
+?0
+Sec-Ch-Ua-Platform:
+"Windows"
+Sec-Fetch-Dest:
+empty
+Sec-Fetch-Mode:
+cors
+Sec-Fetch-Site:
+same-site
+User-Agent:
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
