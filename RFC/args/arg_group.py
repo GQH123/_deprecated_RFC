@@ -187,7 +187,10 @@ class StatusCodeMiddlewareArgs(MiddlewareArgs):
 
 
 class BasicMiddlewareArgs(MiddlewareArgs):
-    pass
+    _defined_args: AttrDict = AttrDict({
+        'reject_types': [],
+    })
+    _required_args: List[str] = []
 
 
 class JSONSaverMiddlewareArgs(MiddlewareArgs):
@@ -217,6 +220,7 @@ class SessionArgs(Args):
         'cookies': {},
         'proxies': {},  # example: {'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}
         'headers': {},
+        'timeout': None,
     })
     _required_args: List[str] = ['lib']
 
@@ -269,6 +273,7 @@ class RequestArgGroup(ArgGroup):
         'stream': StreamSetter(('fixed', False)),     # `stream`      default to False
         'is_leaf': IsLeafSetter(('fixed', False)),
         'retry_limit': RetryLimitSetter(('fixed', 0)),
+        'timeout': TimeoutSetter('none'),
     }
 
 

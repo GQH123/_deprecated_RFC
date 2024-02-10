@@ -161,6 +161,7 @@ class RequestsSession(Session):
         'proxies': None,  # example: {'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}
         'headers': {},
         'stream': False,
+        'timeout': None,
     }
 
     def _get_session(
@@ -246,6 +247,7 @@ class AioHTTPSession(Session):
         'proxies': None,
         'headers': {},
         'chunked_size': None,
+        'timeout': None,
     }
 
     def _get_session(
@@ -258,11 +260,12 @@ class AioHTTPSession(Session):
     ):
         if self.no_session:
             s = AttrDict()
-            s.request = aiohttp.request  # request method is the key method of requests.Session
+            s.request = aiohttp.request
         else:
             if aiohttp is None:
                 raise ValueError(f"request_lib {repr(self._request_lib)} is not supported")
-            s = aiohttp.ClientSession(cookies=self.cookies or {}, headers=self.headers or {})
+            timeout = aiohttp.ClientTimeout(total=self.timeout)
+            s = aiohttp.ClientSession(cookies=self.cookies or {}, headers=self.headers or {}, timeout=timeout)
         return s
     
     async def request(
@@ -291,6 +294,7 @@ class AioHTTPSession(Session):
             cookies=_cookies,
             proxy=_proxies,
             chunked=self.chunked_size,
+            timeout=aiohttp.ClientTimeout(total=item.timeout),
         )
         # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
         return await self._session.request(**request_args)
@@ -298,7 +302,8 @@ class AioHTTPSession(Session):
     async def close(
         self,
     ):
-        await self._session.close()
+        if self._session is not None:  # lazy init
+            await self._session.close()
     
     
 class AsksSession(Session):

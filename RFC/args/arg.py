@@ -31,6 +31,7 @@ __all__ = [
     'BloodlineSetter',
     'IsLeafSetter',
     'RetryLimitSetter',
+    'TimeoutSetter',
 ]
 
 logger = get_logger(__name__)
@@ -202,6 +203,10 @@ class RetryLimitSetter(ArgSetter):
     pass
 
 
+class TimeoutSetter(ArgSetter):
+    pass
+
+
 class UserAgentSetter(ArgSetter):
     @staticmethod
     def _random(id, arg_group, type='random', **kwargs):
@@ -227,7 +232,7 @@ class HeadersSetter(ArgSetter):
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                 'Sec-Fetch-Site': 'same-site',
                 'Sec-Fetch-Mode': 'navigate',
-                'Accept-Encoding': 'gzip, deflate, br',
+                # 'Accept-Encoding': 'gzip, deflate, br',
                 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7,en-GB;q=0.6,ru;q=0.5',
             },
             'none': {},
