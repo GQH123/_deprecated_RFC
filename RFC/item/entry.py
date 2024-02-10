@@ -20,34 +20,46 @@ class Entry(RootType):
     _name: str = 'entry'
     
     _started: bool = False
+    _registered_itemtypes = {}
+    _logger = None
     
     @classmethod
-    def start(cls, ids=[], *extra_args, **extra_kwargs) -> None:
+    def register(item_type, middleware_args):  # now only `middleware_args` is required
+        # no item_type type checking due to circular importing
+        Entry._registered_itemtypes[item_type.__name__] = (middleware_args, item_type._logger)
+
+    @classmethod
+    def start(item_type, ids=[], *extra_args, **extra_kwargs) -> None:
         """
             Start crawling with given `ids`. This is the MAIN ENTRY of the RFC, which I decided to place in `ItemType`. So in fact `ItemType` is the most important class in RFC. With such design, you could only import `ItemType`, subclass it to make your new `ItemType`s, and call its `start` method to start crawling, without accessing to any other RFC modules.
             
             `ItemType` can only be started once. You should call `start` method only on your entry `ItemType`.
         """
-        if cls._logger is None:
-            cls._get_logger(__name__, level='info')
-        if cls._started:
-            cls._logger.warning(f"{repr(cls)} has already been started, cannot start again")
+        if Entry._logger is None:
+            Entry._get_logger(__name__, level='info')
+        if Entry._started:
+            Entry._logger.warning(f"{repr(item_type)} has already been started, cannot start again")
             return
         try:
-            cls._session = get_session(SessionArgs(cls.session_args), cls._logger)
-            cls._middleware = get_middleware(cls.middleware_args, cls._logger)
-            cls._requestor = Requestor(cls._session, cls._middleware, RequestorArgs(cls.requestor_args))
+            _middlewares = {}
+            _session = get_session(SessionArgs(item_type.session_args), item_type._logger)
+            for item_type_name, (middleware_args, _logger) in Entry._registered_itemtypes.items():
+                _middlewares[item_type_name] = get_middleware(middleware_args, _logger)
+            Entry._requestor = Requestor(_session, _middlewares, RequestorArgs(item_type.requestor_args))
         except Exception as e:
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
-            cls._logger.error(f"{repr(cls)} failed to start, caught error {error_report}")
+            item_type._logger.error(f"{repr(item_type)} failed to start, caught error {error_report}")
             raise e
-        cls.lazy_init()
-        cls._add_items(ids, *extra_args, **extra_kwargs)
-        cls._started = True
-        cls._logger.info(f"{repr(cls)} started")
+        if not RootQueue._initialized:
+            RootQueue.lazy_init()
+        item_type._add_items(ids, *extra_args, **extra_kwargs)
+        Entry._started = True
+        item_type._logger.info(f"{repr(item_type)} started")
         RootQueue_reporter = mp.Process(target=RootQueue.report)
         RootQueue_reporter.start()
-        cls._requestor.run()  # blocked until all items finished
+        Entry._requestor.run()  # blocked until all items finished
+        RootQueue_reporter.join()
+        Entry._logger.info(f"FINISHED")
 
 
 # ------------------------------------ Module Postprocess ------------------------------------ #
