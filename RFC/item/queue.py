@@ -17,6 +17,8 @@ logger.info(f"importing module {__name__}")
 class RootQueue(RootType):
     _name: str = 'rootqueue'
     
+    _initialized: bool = False
+    
     _root_item_queue = None  # : ListProxy[Item], queue of items to be processed
     _active_item_count = None  # : ValueProxy, number of active items
     _active_adder_count = None
@@ -37,6 +39,7 @@ class RootQueue(RootType):
         RootQueue._step = manager.Value('i', 0)
         RootQueue._active_item_count = manager.Value('i', 0)
         RootQueue._active_adder_count = manager.Value('i', 0)
+        RootQueue._initialized = True
     
     @classmethod
     def add(cls, item) -> None:

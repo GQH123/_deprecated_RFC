@@ -136,20 +136,19 @@ class Item(AttrDict, RootType):
 
 
 class ItemTypeMeta(type):
-    keyword = ['_defined_args']
-
     def __new__(cls, clsname, bases, attrs):
-        for name, val in attrs.items():
-            if not isinstance(val, dict) or name not in cls.keyword:
-                continue
-            inherited_dict = {}
-            for base in bases:
-                if hasattr(base, name):
-                    inherited_dict.update(getattr(base, name))
-            inherited_dict.update(val)
-            attrs[name] = inherited_dict
+        # for name, val in attrs.items():
+        #     if not isinstance(val, dict) or name not in cls.keyword:
+        #         continue
+        #     inherited_dict = {}
+        #     for base in bases:
+        #         if hasattr(base, name):
+        #             inherited_dict.update(getattr(base, name))
+        #     inherited_dict.update(val)
+        #     attrs[name] = inherited_dict
         new_cls = super().__new__(cls, clsname, bases, attrs)
         new_cls._get_logger(__name__, level='info')
+        new_cls.register(new_cls.middleware_args)
         return new_cls
 
 
@@ -216,10 +215,22 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         """
             Add new items to `RootQueue`.
         """
+        def _isiterable(x):
+            try:
+                iter(x)
+                return True
+            except TypeError:
+                return False
+            
         if not isinstance(ids, list):
-            if isinstance(ids, str):
+            if _isiterable(ids):
+                if isinstance(ids, str):
+                    ids = [ids]
+                else:
+                    ids = list(ids)
+            else:
                 ids = [ids]
-            ids = list(ids)
+
         if 'bloodline' not in extra_kwargs:
            cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items")
     
@@ -227,6 +238,8 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         nproc = min(1, cls.requestor_args['nproc'])
         n_ids = len(ids)
         with get_global_lock():
+            if not RootQueue._initialized:
+                RootQueue.lazy_init()
             RootQueue._active_adder_count.value += nproc  # must add this value in advance
         for i in range(nproc):
             lower_n_ids = n_ids * i // nproc
