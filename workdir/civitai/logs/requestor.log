@@ -1,0 +1,606 @@
+2024-02-10 12:34:56,687 <MainProcess:4075165, MainThread:140606509942592> (entry.py:start:60 -> requestor.py:run:341) from logger `RFC.requestor`
+[INFO] start fetching with 6 processes and None async semaphores
+
+2024-02-10 12:34:56,715 <requestor-worker-0:4075223, MainThread:140606509942592> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 start fetching with sync
+
+2024-02-10 12:34:56,733 <requestor-worker-0:4075223, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(107896_v1.0) from root queue
+
+2024-02-10 12:34:56,720 <requestor-worker-1:4075225, MainThread:140606509942592> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 start fetching with sync
+
+2024-02-10 12:34:56,737 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:56,725 <requestor-worker-4:4075230, MainThread:140606509942592> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 start fetching with sync
+
+2024-02-10 12:34:56,725 <requestor-worker-3:4075228, MainThread:140606509942592> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 start fetching with sync
+
+2024-02-10 12:34:56,725 <requestor-worker-2:4075226, MainThread:140606509942592> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 start fetching with sync
+
+2024-02-10 12:34:56,726 <requestor-worker-5:4075233, MainThread:140606509942592> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 start fetching with sync
+
+2024-02-10 12:34:56,745 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:56,745 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:56,745 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:56,746 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:57,740 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:57,748 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:57,748 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:57,749 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:57,749 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:58,744 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:58,751 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:58,753 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:58,753 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:58,754 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:59,747 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:59,755 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:59,757 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:59,757 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:34:59,758 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:00,751 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:00,759 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:00,760 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:00,760 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:00,761 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:01,754 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:01,762 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:01,763 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:01,764 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:01,765 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:02,758 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:02,766 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:02,767 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:02,768 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:02,768 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:03,762 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:03,770 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:03,771 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:03,771 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:03,772 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:228) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'WAIT' from root queue, WAIT
+
+2024-02-10 12:35:03,776 <requestor-worker-0:4075223, MainThread:140606509942592> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(107896_v1.0)
+
+2024-02-10 12:35:03,779 <requestor-worker-0:4075223, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:225) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got 'QUIT' from root queue, QUIT
+
+2024-02-10 12:35:04,766 <requestor-worker-1:4075225, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:225) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got 'QUIT' from root queue, QUIT
+
+2024-02-10 12:35:04,774 <requestor-worker-5:4075233, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:225) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got 'QUIT' from root queue, QUIT
+
+2024-02-10 12:35:04,774 <requestor-worker-4:4075230, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:225) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got 'QUIT' from root queue, QUIT
+
+2024-02-10 12:35:04,775 <requestor-worker-2:4075226, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:225) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got 'QUIT' from root queue, QUIT
+
+2024-02-10 12:35:04,776 <requestor-worker-3:4075228, MainThread:140606509942592> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:225) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got 'QUIT' from root queue, QUIT
+
+2024-02-10 12:58:45,014 <MainProcess:4077276, MainThread:139850448979776> (entry.py:start:60 -> requestor.py:run:341) from logger `RFC.requestor`
+[INFO] start fetching with 6 processes and None async semaphores
+
+2024-02-10 12:58:45,067 <requestor-worker-0:1327330, MainThread:139850448979776> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 start fetching with sync
+
+2024-02-10 12:58:45,070 <requestor-worker-1:1327332, MainThread:139850448979776> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 start fetching with sync
+
+2024-02-10 12:58:45,084 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(218814_LoCon_IMPROVED_DATASET) from root queue
+
+2024-02-10 12:58:45,087 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(325610_v1.0) from root queue
+
+2024-02-10 12:58:45,073 <requestor-worker-2:1327338, MainThread:139850448979776> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 start fetching with sync
+
+2024-02-10 12:58:45,076 <requestor-worker-3:1327344, MainThread:139850448979776> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 start fetching with sync
+
+2024-02-10 12:58:45,090 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(39161_v1.0) from root queue
+
+2024-02-10 12:58:45,092 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(325555_v1.0) from root queue
+
+2024-02-10 12:58:45,080 <requestor-worker-4:1327350, MainThread:139850448979776> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 start fetching with sync
+
+2024-02-10 12:58:45,083 <requestor-worker-5:1327356, MainThread:139850448979776> (process.py:run:108 -> requestor.py:_fetch_all_single_process:292) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 start fetching with sync
+
+2024-02-10 12:58:45,111 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(60353_v1) from root queue
+
+2024-02-10 12:58:45,112 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(35613_v1.0) from root queue
+
+2024-02-10 12:58:54,021 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(325555_v1.0)
+
+2024-02-10 12:58:54,027 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(139730_v1.0) from root queue
+
+2024-02-10 12:58:57,569 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(325610_v1.0)
+
+2024-02-10 12:58:57,575 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(140034_v1.17epoch) from root queue
+
+2024-02-10 12:59:08,367 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(35613_v1.0)
+
+2024-02-10 12:59:08,371 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(140319_v1.111epoch) from root queue
+
+2024-02-10 12:59:08,749 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(139730_v1.0)
+
+2024-02-10 12:59:08,755 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(111213_V0) from root queue
+
+2024-02-10 12:59:14,883 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(140034_v1.17epoch)
+
+2024-02-10 12:59:14,893 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(54137_v2.0) from root queue
+
+2024-02-10 12:59:17,461 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(60353_v1)
+
+2024-02-10 12:59:17,474 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(291099_v1.0) from root queue
+
+2024-02-10 12:59:19,122 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(54137_v2.0)
+
+2024-02-10 12:59:19,125 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(23562_Utaha_Kasumigaoka) from root queue
+
+2024-02-10 12:59:47,887 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(140319_v1.111epoch)
+
+2024-02-10 12:59:47,896 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(325863_v1.0) from root queue
+
+2024-02-10 12:59:50,808 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(111213_V0)
+
+2024-02-10 12:59:50,825 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(62338_v1.0) from root queue
+
+2024-02-10 13:00:04,450 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(325863_v1.0)
+
+2024-02-10 13:00:04,453 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(204157_v810) from root queue
+
+2024-02-10 13:00:11,528 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(23562_Utaha_Kasumigaoka)
+
+2024-02-10 13:00:11,542 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(23127_alpha_kagejitsu) from root queue
+
+2024-02-10 13:00:28,749 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(291099_v1.0)
+
+2024-02-10 13:00:28,767 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(253132_v1.0) from root queue
+
+2024-02-10 13:00:30,768 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(23127_alpha_kagejitsu)
+
+2024-02-10 13:00:30,790 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(252090_v1.0) from root queue
+
+2024-02-10 13:00:36,833 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(62338_v1.0)
+
+2024-02-10 13:00:36,855 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(19135_v1) from root queue
+
+2024-02-10 13:00:37,037 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(204157_v810)
+
+2024-02-10 13:00:37,044 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(292493_v1.0) from root queue
+
+2024-02-10 13:01:03,235 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(253132_v1.0)
+
+2024-02-10 13:01:03,243 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(307859_v1.0) from root queue
+
+2024-02-10 13:01:04,257 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(39161_v1.0)
+
+2024-02-10 13:01:04,266 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(265516_v1.0) from root queue
+
+2024-02-10 13:01:18,226 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(307859_v1.0)
+
+2024-02-10 13:01:18,229 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(325304_v1.0) from root queue
+
+2024-02-10 13:01:30,946 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(265516_v1.0)
+
+2024-02-10 13:01:30,958 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(127657_v1.0(alpha)|Lora) from root queue
+
+2024-02-10 13:01:36,548 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(127657_v1.0(alpha)|Lora)
+
+2024-02-10 13:01:36,551 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(148275_v1.1locon) from root queue
+
+2024-02-10 13:01:38,492 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(325304_v1.0)
+
+2024-02-10 13:01:38,503 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(148272_v1.1Loha) from root queue
+
+2024-02-10 13:01:57,903 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(148275_v1.1locon)
+
+2024-02-10 13:01:57,916 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(87688_v1.0) from root queue
+
+2024-02-10 13:02:03,682 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(218814_LoCon_IMPROVED_DATASET)
+
+2024-02-10 13:02:03,693 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(116452_超大版) from root queue
+
+2024-02-10 13:02:27,074 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(252090_v1.0)
+
+2024-02-10 13:02:27,085 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(257604_v1.0) from root queue
+
+2024-02-10 13:03:00,696 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(257604_v1.0)
+
+2024-02-10 13:03:00,714 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(114514_v1.15) from root queue
+
+2024-02-10 13:03:28,893 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(148272_v1.1Loha)
+
+2024-02-10 13:03:28,914 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(53132_v1.0) from root queue
+
+2024-02-10 13:03:31,068 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(87688_v1.0)
+
+2024-02-10 13:03:31,081 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(158132_v1.0) from root queue
+
+2024-02-10 13:03:46,798 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(53132_v1.0)
+
+2024-02-10 13:03:46,805 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(314689_中之人あめちゃん) from root queue
+
+2024-02-10 13:03:48,383 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(114514_v1.15)
+
+2024-02-10 13:03:48,397 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(314682_超天酱KAngel) from root queue
+
+2024-02-10 13:03:53,662 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(314689_中之人あめちゃん)
+
+2024-02-10 13:03:53,664 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(134756_v1.0) from root queue
+
+2024-02-10 13:03:57,354 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(314682_超天酱KAngel)
+
+2024-02-10 13:03:57,357 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(187698_v1.0) from root queue
+
+2024-02-10 13:04:11,951 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(134756_v1.0)
+
+2024-02-10 13:04:11,958 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(70987_v1.0) from root queue
+
+2024-02-10 13:05:19,257 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(19135_v1)
+
+2024-02-10 13:05:19,285 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(41702_v1.0) from root queue
+
+2024-02-10 13:06:22,725 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(41702_v1.0)
+
+2024-02-10 13:06:22,745 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(304803_v1.0) from root queue
+
+2024-02-10 13:06:28,982 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(158132_v1.0)
+
+2024-02-10 13:06:29,012 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(32499_v1.0) from root queue
+
+2024-02-10 13:06:34,805 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(304803_v1.0)
+
+2024-02-10 13:06:34,806 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(303888_v1.0) from root queue
+
+2024-02-10 13:06:36,363 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(32499_v1.0)
+
+2024-02-10 13:06:36,366 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(33204_Sasha_Necron_bf16) from root queue
+
+2024-02-10 13:06:44,851 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(303888_v1.0)
+
+2024-02-10 13:06:44,852 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(307209_v1.0) from root queue
+
+2024-02-10 13:06:45,503 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(33204_Sasha_Necron_bf16)
+
+2024-02-10 13:06:45,508 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(33546_resident_evil_ada_wong_lycoris_v1.0) from root queue
+
+2024-02-10 13:06:55,111 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(292493_v1.0)
+
+2024-02-10 13:06:55,167 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(272625_v1.0) from root queue
+
+2024-02-10 13:07:02,572 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(307209_v1.0)
+
+2024-02-10 13:07:02,575 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(164134_v1.0) from root queue
+
+2024-02-10 13:07:07,407 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(187698_v1.0)
+
+2024-02-10 13:07:07,768 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(32352_Ariane_Glenys_Maple_bf16) from root queue
+
+2024-02-10 13:07:09,318 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(272625_v1.0)
+
+2024-02-10 13:07:09,321 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(213898_v2.0) from root queue
+
+2024-02-10 13:07:21,967 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(33546_resident_evil_ada_wong_lycoris_v1.0)
+
+2024-02-10 13:07:22,776 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(200512_v1.0) from root queue
+
+2024-02-10 13:07:42,411 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 fetched CivitaiModelDownload(32352_Ariane_Glenys_Maple_bf16)
+
+2024-02-10 13:07:42,421 <requestor-worker-1:1327332, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-1 got CivitaiModelDownload(193346_v2.0) from root queue
+
+2024-02-10 13:08:06,953 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(116452_超大版)
+
+2024-02-10 13:08:06,980 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(205917_v1.0) from root queue
+
+2024-02-10 13:08:26,186 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(213898_v2.0)
+
+2024-02-10 13:08:26,215 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(224143_v1.0) from root queue
+
+2024-02-10 13:09:07,028 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(205917_v1.0)
+
+2024-02-10 13:09:07,048 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(218902_v1.0) from root queue
+
+2024-02-10 13:09:37,037 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(70987_v1.0)
+
+2024-02-10 13:09:37,039 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(332176_v1.0) from root queue
+
+2024-02-10 13:09:42,890 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(224143_v1.0)
+
+2024-02-10 13:09:42,918 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(27836_Ayatsuji_Tsukasa) from root queue
+
+2024-02-10 13:09:49,302 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(27836_Ayatsuji_Tsukasa)
+
+2024-02-10 13:09:49,305 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(33662_Misha_Necron_bf16) from root queue
+
+2024-02-10 13:09:58,652 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(332176_v1.0)
+
+2024-02-10 13:09:58,653 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(236472_v1.0) from root queue
+
+2024-02-10 13:10:04,140 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(164134_v1.0)
+
+2024-02-10 13:10:04,169 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(52197_v1.0) from root queue
+
+2024-02-10 13:10:12,700 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(33662_Misha_Necron_bf16)
+
+2024-02-10 13:10:12,711 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(174146_v1.0) from root queue
+
+2024-02-10 13:10:13,687 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(236472_v1.0)
+
+2024-02-10 13:10:13,690 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(175201_v1.0) from root queue
+
+2024-02-10 13:10:14,687 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 fetched CivitaiModelDownload(52197_v1.0)
+
+2024-02-10 13:10:14,692 <requestor-worker-3:1327344, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-3 got CivitaiModelDownload(176837_v1.0) from root queue
+
+2024-02-10 13:11:04,652 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 fetched CivitaiModelDownload(200512_v1.0)
+
+2024-02-10 13:11:04,683 <requestor-worker-2:1327338, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-2 got CivitaiModelDownload(181318_v2.0) from root queue
+
+2024-02-10 13:11:21,888 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(218902_v1.0)
+
+2024-02-10 13:11:21,917 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(308716_v1.0) from root queue
+
+2024-02-10 13:11:39,995 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(308716_v1.0)
+
+2024-02-10 13:11:39,999 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(176034_v2.0) from root queue
+
+2024-02-10 13:12:10,516 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(174146_v1.0)
+
+2024-02-10 13:12:10,544 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(309843_v1.0) from root queue
+
+2024-02-10 13:12:18,960 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(309843_v1.0)
+
+2024-02-10 13:12:18,962 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(309935_v1.0) from root queue
+
+2024-02-10 13:12:30,400 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(175201_v1.0)
+
+2024-02-10 13:12:30,430 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(68605_v2.0) from root queue
+
+2024-02-10 13:12:30,769 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(309935_v1.0)
+
+2024-02-10 13:12:30,774 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(55678_v1.0) from root queue
+
+2024-02-10 13:12:50,593 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(55678_v1.0)
+
+2024-02-10 13:12:50,598 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(52900_v1.0) from root queue
+
+2024-02-10 13:13:08,299 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 fetched CivitaiModelDownload(176034_v2.0)
+
+2024-02-10 13:13:08,331 <requestor-worker-0:1327330, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-0 got CivitaiModelDownload(114917_v1.0) from root queue
+
+2024-02-10 13:13:09,182 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 fetched CivitaiModelDownload(68605_v2.0)
+
+2024-02-10 13:13:09,195 <requestor-worker-4:1327350, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-4 got CivitaiModelDownload(22631_V1.0) from root queue
+
+2024-02-10 13:13:10,205 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_sync:232 -> requestor.py:_fetch_single_sync:157) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 fetched CivitaiModelDownload(52900_v1.0)
+
+2024-02-10 13:13:11,738 <requestor-worker-5:1327356, MainThread:139850448979776> (requestor.py:_fetch_all_single_process:293 -> requestor.py:_fetch_all_sync:231) from logger `RFC.requestor`
+[INFO] process requestor-worker-5 got CivitaiModelDownload(28012_v1.0) from root queue
+

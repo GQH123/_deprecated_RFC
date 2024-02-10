@@ -1,0 +1,618 @@
+2024-02-10 12:35:06,725 <Process-3:4075218, MainThread:140606509942592> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-02-10 12:44:37,995 <Process-1025:4089609, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(288531_v1.0) added
+
+2024-02-10 12:44:44,894 <Process-2049:4101934, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(54655_v1.0) added
+
+2024-02-10 12:44:52,158 <Process-3073:4114239, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(276131_v1.0) added
+
+2024-02-10 12:44:59,511 <Process-4098:4126560, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(40265_v1.0) added
+
+2024-02-10 12:45:06,802 <Process-5121:4138867, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(28555_v1.0fullmodel) added
+
+2024-02-10 12:45:13,997 <Process-6145:4151170, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(283049_animes1) added
+
+2024-02-10 12:45:21,060 <Process-7169:4163483, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(213498_v1.0) added
+
+2024-02-10 12:45:28,257 <Process-8193:4175778, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(256860_v1) added
+
+2024-02-10 12:45:35,485 <Process-9217:4188101, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(250179_BarbieDollSDXL) added
+
+2024-02-10 12:45:42,757 <Process-10241:6408, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(167476_BigTroubleinLittleLoRAXL) added
+
+2024-02-10 12:45:50,073 <Process-11265:18714, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(149646_v1.0) added
+
+2024-02-10 12:45:57,489 <Process-12289:31022, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(16609_Bustysisterinredsweater) added
+
+2024-02-10 12:46:04,776 <Process-13313:43336, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(141234_v1.0) added
+
+2024-02-10 12:46:12,276 <Process-14337:55652, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(11948_CheshireGirl_revampedV3) added
+
+2024-02-10 12:46:19,632 <Process-15361:67986, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(302711_v1.0-Season3) added
+
+2024-02-10 12:46:26,766 <Process-16384:80266, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(148792_Type6) added
+
+2024-02-10 12:46:33,962 <Process-17409:92591, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(244101_v1.0) added
+
+2024-02-10 12:46:41,413 <Process-18433:104912, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(260350_v1.0) added
+
+2024-02-10 12:46:49,053 <Process-19457:117215, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(253826_v1.0) added
+
+2024-02-10 12:46:56,928 <Process-20481:129565, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(287461_moon_v1.5) added
+
+2024-02-10 12:47:04,482 <Process-21505:141891, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(202249_v1.0) added
+
+2024-02-10 12:47:12,514 <Process-22529:154205, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(119060_v1.0) added
+
+2024-02-10 12:47:20,317 <Process-23553:166546, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(76513_ErectHorsePenisv3) added
+
+2024-02-10 12:47:28,201 <Process-24577:178829, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(206290_Week3:"RISING"-LoRA) added
+
+2024-02-10 12:47:35,789 <Process-25601:191175, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(29105_FerrariTestarossa) added
+
+2024-02-10 12:47:43,341 <Process-26625:203484, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(275048_v1.0) added
+
+2024-02-10 12:47:51,307 <Process-27649:215801, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(292923_v1.0) added
+
+2024-02-10 12:47:59,079 <Process-28672:228124, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(189798_v1.0) added
+
+2024-02-10 12:48:06,946 <Process-29697:240417, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(103661_SDv1.5) added
+
+2024-02-10 12:48:14,825 <Process-30721:252741, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(11382_V1.0) added
+
+2024-02-10 12:48:22,819 <Process-31745:265054, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(164969_v01) added
+
+2024-02-10 12:48:30,761 <Process-32769:277385, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(198240_v1.0) added
+
+2024-02-10 12:48:38,583 <Process-33794:289658, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(328513_HootersV1) added
+
+2024-02-10 12:48:46,443 <Process-34818:301999, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(76005_v1.0) added
+
+2024-02-10 12:48:54,308 <Process-35841:314299, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(235822_v1.0) added
+
+2024-02-10 12:49:02,072 <Process-36865:326620, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(46976_v1.0) added
+
+2024-02-10 12:49:09,820 <Process-37889:338931, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(108578_v13) added
+
+2024-02-10 12:49:17,383 <Process-38913:351235, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(15290_V1) added
+
+2024-02-10 12:49:25,331 <Process-39939:363545, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(156651_v1.0) added
+
+2024-02-10 12:49:32,334 <Process-40962:375881, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(8490_v1.0) added
+
+2024-02-10 12:49:39,429 <Process-41985:388181, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(77080_v1.0) added
+
+2024-02-10 12:49:46,494 <Process-43009:400493, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(209001_v1.0) added
+
+2024-02-10 12:49:53,597 <Process-44033:412793, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(268709_v1.0) added
+
+2024-02-10 12:50:00,630 <Process-45057:425133, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(124635_SiestaOVABikini) added
+
+2024-02-10 12:50:07,622 <Process-46081:437459, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(51754_v1.0) added
+
+2024-02-10 12:50:15,856 <Process-47105:449647, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(15884_v2e6) added
+
+2024-02-10 12:50:23,021 <Process-48128:462081, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(262945_mjtoutfitv1.) added
+
+2024-02-10 12:50:30,905 <Process-49153:474403, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(163437_v1.0) added
+
+2024-02-10 12:50:38,309 <Process-50177:486689, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(332715_v1.0) added
+
+2024-02-10 12:50:45,427 <Process-51201:499029, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(137739_v1.1r16) added
+
+2024-02-10 12:50:52,616 <Process-52225:511325, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(280621_v1.0) added
+
+2024-02-10 12:50:59,675 <Process-53249:523650, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(22284_V2-trainedonmoreimagesandmorecompatible) added
+
+2024-02-10 12:51:06,757 <Process-54274:535963, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(128726_Yozora) added
+
+2024-02-10 12:51:14,027 <Process-55297:548266, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(147014_v0.9) added
+
+2024-02-10 12:51:20,992 <Process-56321:560562, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(164493_Smash) added
+
+2024-02-10 12:51:28,472 <Process-57345:572864, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(118928_v0.2) added
+
+2024-02-10 12:51:35,372 <Process-58369:585190, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(25826_No-one30) added
+
+2024-02-10 12:51:42,272 <Process-59392:597477, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(167223_v1.0) added
+
+2024-02-10 12:51:49,202 <Process-60418:609820, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(7248_v1_DreamLike) added
+
+2024-02-10 12:51:56,391 <Process-61441:622115, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(320486_v1.0) added
+
+2024-02-10 12:52:03,391 <Process-62464:634411, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(95123_v1.0) added
+
+2024-02-10 12:52:10,391 <Process-63489:646745, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(40773_v1.0) added
+
+2024-02-10 12:52:17,400 <Process-64512:659019, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(271132_pyra-xb-richy-v1) added
+
+2024-02-10 12:52:24,374 <Process-65538:671368, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(294345_RainbowPlainsofUnion) added
+
+2024-02-10 12:52:31,309 <Process-66561:683666, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(163479_v1.0) added
+
+2024-02-10 12:52:38,193 <Process-67585:695968, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(306977_animes2) added
+
+2024-02-10 12:52:45,220 <Process-68609:708272, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(292671_v2) added
+
+2024-02-10 12:52:52,758 <Process-69633:720593, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(27326_MinamiYumev1) added
+
+2024-02-10 12:52:59,501 <Process-70657:732902, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(90420_v1.0) added
+
+2024-02-10 12:53:06,526 <Process-71681:745212, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(307784_v1.0) added
+
+2024-02-10 12:53:13,601 <Process-72705:757513, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(52333_v1.0) added
+
+2024-02-10 12:53:20,523 <Process-73729:769835, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(167104_v1.0) added
+
+2024-02-10 12:53:27,897 <Process-74753:782138, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(273855_v7.3) added
+
+2024-02-10 12:53:34,965 <Process-75777:794465, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(270324_v1.0) added
+
+2024-02-10 12:53:42,101 <Process-76801:806756, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(213144_v1.0) added
+
+2024-02-10 12:53:48,920 <Process-77825:819076, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(195967_v1) added
+
+2024-02-10 12:53:56,372 <Process-78849:831362, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(294021_v1.0) added
+
+2024-02-10 12:54:03,657 <Process-79874:843696, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(14044_v1.0) added
+
+2024-02-10 12:54:10,790 <Process-80897:856009, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(267945_v1.0) added
+
+2024-02-10 12:54:18,088 <Process-81921:868290, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(102273_v1.0) added
+
+2024-02-10 12:54:25,202 <Process-82944:880628, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(69803_v1) added
+
+2024-02-10 12:54:32,086 <Process-83969:892947, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(20382_V1) added
+
+2024-02-10 12:54:39,259 <Process-84993:905256, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(271774_xl_v1) added
+
+2024-02-10 12:54:46,418 <Process-86016:917558, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(292393_v3.0-LCM) added
+
+2024-02-10 12:54:53,481 <Process-87041:929870, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(126736_v1.6) added
+
+2024-02-10 12:55:00,673 <Process-88065:942179, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(40257_v1.0) added
+
+2024-02-10 12:55:07,862 <Process-89089:954497, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(51499_v1.0) added
+
+2024-02-10 12:55:14,964 <Process-90113:966803, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(60973_v1.0) added
+
+2024-02-10 12:55:21,991 <Process-91137:979112, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(149016_v1.0(Yukata/Costume2)) added
+
+2024-02-10 12:55:28,844 <Process-92161:991416, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(330159_v1.1(Animagine_XL_V3)) added
+
+2024-02-10 12:55:36,028 <Process-93185:1003729, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(16702_20230228) added
+
+2024-02-10 12:55:43,126 <Process-94209:1016040, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(48031_v3) added
+
+2024-02-10 12:55:50,414 <Process-95233:1028240, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(263400_v1.0) added
+
+2024-02-10 12:55:57,462 <Process-96256:1040647, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(299953_v1.0) added
+
+2024-02-10 12:56:05,243 <Process-97281:1052980, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(247915_v1.0) added
+
+2024-02-10 12:56:12,295 <Process-98305:1065273, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(58451_milkingtable_v1.0) added
+
+2024-02-10 12:56:19,322 <Process-99329:1077594, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(126053_black) added
+
+2024-02-10 12:56:26,388 <Process-100353:1089849, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(112748_v1.0) added
+
+2024-02-10 12:56:33,562 <Process-101377:1102191, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(274142_V.1) added
+
+2024-02-10 12:56:40,875 <Process-102403:1114520, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(39794_v1.0) added
+
+2024-02-10 12:56:47,819 <Process-103426:1126815, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(54071_v1.0) added
+
+2024-02-10 12:56:55,098 <Process-104449:1139133, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(205676_v1.0) added
+
+2024-02-10 12:57:02,161 <Process-105473:1151432, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(170615_v1.0) added
+
+2024-02-10 12:57:09,247 <Process-106497:1163754, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(139422_jizi_character_v1.0) added
+
+2024-02-10 12:57:16,704 <Process-107521:1176063, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(145990_1v2) added
+
+2024-02-10 12:57:23,754 <Process-108545:1188367, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(190986_v1.0) added
+
+2024-02-10 12:57:31,270 <Process-109569:1200683, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(280642_v1.0) added
+
+2024-02-10 12:57:38,520 <Process-110594:1212990, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(100495_v1.0) added
+
+2024-02-10 12:57:45,804 <Process-111617:1225302, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(244322_v1.0) added
+
+2024-02-10 12:57:53,144 <Process-112641:1237615, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(41882_v1.0) added
+
+2024-02-10 12:58:00,131 <Process-113664:1249911, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(18178_v1.20-NormalLoRA) added
+
+2024-02-10 12:58:07,146 <Process-114689:1262233, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(32737_v3.20) added
+
+2024-02-10 12:58:14,273 <Process-115712:1274529, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(116748_v1.0) added
+
+2024-02-10 12:58:21,562 <Process-116738:1286854, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(125716_v10.0) added
+
+2024-02-10 12:58:28,634 <Process-117760:1299078, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(122079_v1.0) added
+
+2024-02-10 12:58:35,690 <Process-118785:1311461, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(87885_LoHa-v1.0) added
+
+2024-02-10 12:58:42,991 <Process-119809:1323781, MainThread:139850448979776> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] CivitaiModelDownload(129377_v1.0) added
+
+2024-02-10 12:58:55,029 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120091, aic = 6, aac = 0
+
+2024-02-10 12:59:05,052 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120090, aic = 6, aac = 0
+
+2024-02-10 12:59:15,064 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120087, aic = 6, aac = 0
+
+2024-02-10 12:59:25,076 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120085, aic = 6, aac = 0
+
+2024-02-10 12:59:35,085 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120085, aic = 6, aac = 0
+
+2024-02-10 12:59:45,096 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120085, aic = 6, aac = 0
+
+2024-02-10 12:59:55,108 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120083, aic = 6, aac = 0
+
+2024-02-10 13:00:05,120 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120082, aic = 6, aac = 0
+
+2024-02-10 13:00:15,132 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120081, aic = 6, aac = 0
+
+2024-02-10 13:00:25,144 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120081, aic = 6, aac = 0
+
+2024-02-10 13:00:35,157 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120079, aic = 6, aac = 0
+
+2024-02-10 13:00:45,168 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120077, aic = 6, aac = 0
+
+2024-02-10 13:00:55,181 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120077, aic = 6, aac = 0
+
+2024-02-10 13:01:05,194 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120075, aic = 6, aac = 0
+
+2024-02-10 13:01:16,184 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120075, aic = 6, aac = 0
+
+2024-02-10 13:01:26,196 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120074, aic = 6, aac = 0
+
+2024-02-10 13:01:36,209 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120073, aic = 6, aac = 0
+
+2024-02-10 13:01:46,220 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120071, aic = 6, aac = 0
+
+2024-02-10 13:01:56,232 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120071, aic = 6, aac = 0
+
+2024-02-10 13:02:06,242 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120069, aic = 6, aac = 0
+
+2024-02-10 13:02:16,252 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120069, aic = 6, aac = 0
+
+2024-02-10 13:02:26,264 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120069, aic = 6, aac = 0
+
+2024-02-10 13:02:36,276 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120068, aic = 6, aac = 0
+
+2024-02-10 13:02:46,280 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120068, aic = 6, aac = 0
+
+2024-02-10 13:02:56,292 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120068, aic = 6, aac = 0
+
+2024-02-10 13:03:06,298 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120067, aic = 6, aac = 0
+
+2024-02-10 13:03:16,311 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120067, aic = 6, aac = 0
+
+2024-02-10 13:03:26,324 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120067, aic = 6, aac = 0
+
+2024-02-10 13:03:36,336 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120065, aic = 6, aac = 0
+
+2024-02-10 13:03:46,340 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120065, aic = 6, aac = 0
+
+2024-02-10 13:03:56,356 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120062, aic = 6, aac = 0
+
+2024-02-10 13:04:06,369 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120061, aic = 6, aac = 0
+
+2024-02-10 13:04:16,372 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:04:26,384 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:04:36,396 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:04:46,409 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:04:56,421 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:05:06,427 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:05:16,440 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120060, aic = 6, aac = 0
+
+2024-02-10 13:05:26,452 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120059, aic = 6, aac = 0
+
+2024-02-10 13:05:36,464 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120059, aic = 6, aac = 0
+
+2024-02-10 13:05:46,468 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120059, aic = 6, aac = 0
+
+2024-02-10 13:05:56,480 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120059, aic = 6, aac = 0
+
+2024-02-10 13:06:06,492 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120059, aic = 6, aac = 0
+
+2024-02-10 13:06:16,504 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120059, aic = 6, aac = 0
+
+2024-02-10 13:06:26,508 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120058, aic = 6, aac = 0
+
+2024-02-10 13:06:38,992 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120055, aic = 6, aac = 0
+
+2024-02-10 13:06:49,004 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120053, aic = 6, aac = 0
+
+2024-02-10 13:06:59,016 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120052, aic = 6, aac = 0
+
+2024-02-10 13:07:11,793 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120049, aic = 6, aac = 0
+
+2024-02-10 13:07:21,804 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120049, aic = 6, aac = 0
+
+2024-02-10 13:07:31,816 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120048, aic = 6, aac = 0
+
+2024-02-10 13:07:41,828 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120048, aic = 6, aac = 0
+
+2024-02-10 13:07:51,832 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120047, aic = 6, aac = 0
+
+2024-02-10 13:08:01,844 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120047, aic = 6, aac = 0
+
+2024-02-10 13:08:11,856 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120046, aic = 6, aac = 0
+
+2024-02-10 13:08:21,860 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120046, aic = 6, aac = 0
+
+2024-02-10 13:08:31,872 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120045, aic = 6, aac = 0
+
+2024-02-10 13:08:41,885 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120045, aic = 6, aac = 0
+
+2024-02-10 13:08:51,896 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120045, aic = 6, aac = 0
+
+2024-02-10 13:09:01,908 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120045, aic = 6, aac = 0
+
+2024-02-10 13:09:11,920 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120044, aic = 6, aac = 0
+
+2024-02-10 13:09:21,932 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120044, aic = 6, aac = 0
+
+2024-02-10 13:09:31,944 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120044, aic = 6, aac = 0
+
+2024-02-10 13:09:41,957 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120043, aic = 6, aac = 0
+
+2024-02-10 13:09:51,960 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120041, aic = 6, aac = 0
+
+2024-02-10 13:10:01,973 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120040, aic = 6, aac = 0
+
+2024-02-10 13:10:11,984 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120039, aic = 6, aac = 0
+
+2024-02-10 13:10:21,996 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120036, aic = 6, aac = 0
+
+2024-02-10 13:10:32,009 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120036, aic = 6, aac = 0
+
+2024-02-10 13:10:42,025 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120036, aic = 6, aac = 0
+
+2024-02-10 13:10:52,035 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120036, aic = 6, aac = 0
+
+2024-02-10 13:11:02,047 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120036, aic = 6, aac = 0
+
+2024-02-10 13:11:12,060 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120035, aic = 6, aac = 0
+
+2024-02-10 13:11:22,072 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120034, aic = 6, aac = 0
+
+2024-02-10 13:11:32,081 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120034, aic = 6, aac = 0
+
+2024-02-10 13:11:42,085 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120033, aic = 6, aac = 0
+
+2024-02-10 13:11:52,096 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120033, aic = 6, aac = 0
+
+2024-02-10 13:12:02,110 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120033, aic = 6, aac = 0
+
+2024-02-10 13:12:12,121 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120032, aic = 6, aac = 0
+
+2024-02-10 13:12:22,132 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120031, aic = 6, aac = 0
+
+2024-02-10 13:12:32,144 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120029, aic = 6, aac = 0
+
+2024-02-10 13:12:42,157 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120029, aic = 6, aac = 0
+
+2024-02-10 13:12:52,168 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120028, aic = 6, aac = 0
+
+2024-02-10 13:13:02,173 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120028, aic = 6, aac = 0
+
+2024-02-10 13:13:12,186 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120025, aic = 6, aac = 0
+
+2024-02-10 13:13:22,196 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120025, aic = 6, aac = 0
+
+2024-02-10 13:13:32,210 <Process-120101:1327318, MainThread:139850448979776> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 120098 items added, qic = 120025, aic = 6, aac = 0
+

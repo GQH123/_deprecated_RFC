@@ -1,0 +1,225 @@
+{
+    "data": {
+        "id": 58390,
+        "name": "DetailTweakerLoRA(细节调整LoRA)",
+        "description": "<p>HF:<atarget=\"_blank\"rel=\"ugc\"href=\"https://huggingface.co/OedoSoldier/detail-tweaker-lora\">https://huggingface.co/OedoSoldier/detail-tweaker-lora</a></p><p>ThisisaLoRAforenhancing/diminishingdetailwhilekeepingtheoverallstyle/character;itworkswellwithallkindsofbasemodels(inclanime&amp;realisticmodels)/styleLoRA/characterLoRA,etc.</p><p>Applyyourownweight;thisLoRAcanbeutilizedforanyweightup/downto2/-2!</p><p><strong>Note:useanegativeweighttoreducedetails!</strong></p>",
+        "poi": false,
+        "nsfw": false,
+        "type": "LORA",
+        "uploadType": "Created",
+        "updatedAt": "2023-05-05T08:19:14.778Z",
+        "deletedAt": null,
+        "deletedBy": null,
+        "status": "Published",
+        "checkpointType": null,
+        "allowNoCredit": true,
+        "allowCommercialUse": "None",
+        "allowDerivatives": true,
+        "allowDifferentLicense": true,
+        "licenses": [],
+        "publishedAt": "2023-05-05T07:28:19.122Z",
+        "locked": false,
+        "meta": {
+            "imageNsfw": "None"
+        },
+        "earlyAccessDeadline": null,
+        "mode": null,
+        "availability": "Public",
+        "reportStats": null,
+        "user": {
+            "id": 275939,
+            "image": "https://lh3.googleusercontent.com/a/AEdFTp7wdMG_twkGoSPl9QFSRrBhaXvnEmP_l69xiJbH6g=s96-c",
+            "username": "CyberAIchemist",
+            "deletedAt": null,
+            "rank": {
+                "leaderboardRank": null
+            },
+            "profilePicture": null,
+            "cosmetics": [
+                {
+                    "data": null,
+                    "cosmetic": {
+                        "id": 3,
+                        "data": {
+                            "url": "ab3e161b-7c66-4412-9573-ca16dde9f900"
+                        },
+                        "type": "Badge",
+                        "source": "Purchase",
+                        "name": "DonatorBadge"
+                    }
+                },
+                {
+                    "data": null,
+                    "cosmetic": {
+                        "id": 4,
+                        "data": {
+                            "variant": "gradient",
+                            "gradient": {
+                                "to": "#ffa1c1",
+                                "deg": 180,
+                                "from": "#ff90b6"
+                            }
+                        },
+                        "type": "NamePlate",
+                        "source": "Purchase",
+                        "name": "DonatorNameplate"
+                    }
+                }
+            ]
+        },
+        "modelVersions": [
+            {
+                "id": 62833,
+                "modelId": 58390,
+                "name": "v1.0",
+                "description": null,
+                "steps": null,
+                "epochs": null,
+                "clipSkip": null,
+                "createdAt": "2023-05-05T06:46:05.656Z",
+                "updatedAt": "2023-05-05T07:28:19.115Z",
+                "trainedWords": [],
+                "trainingStatus": null,
+                "trainingDetails": null,
+                "inaccurate": false,
+                "baseModel": "SD1.5",
+                "baseModelType": "Standard",
+                "earlyAccessTimeFrame": 0,
+                "status": "Published",
+                "publishedAt": "2023-05-05T07:28:19.122Z",
+                "meta": {},
+                "vaeId": null,
+                "settings": null,
+                "rank": {
+                    "downloadCountAllTime": 333469,
+                    "generationCountAllTime": 5983,
+                    "ratingCountAllTime": 900,
+                    "ratingAllTime": 4.955555555555556
+                },
+                "files": [
+                    {
+                        "id": 44319,
+                        "url": "https://civitai-delivery-worker-prod-2023-05-01.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/275939/model/addDetail.JO09.safetensors",
+                        "sizeKB": 36973.8046875,
+                        "name": "add_detail.safetensors",
+                        "type": "Model",
+                        "visibility": "Public",
+                        "metadata": {
+                            "fp": null,
+                            "size": null,
+                            "format": "SafeTensor"
+                        },
+                        "pickleScanResult": "Success",
+                        "pickleScanMessage": "NoPickleimports",
+                        "virusScanResult": "Success",
+                        "virusScanMessage": null,
+                        "scannedAt": "2023-05-05T06:50:46.007Z",
+                        "hashes": [
+                            {
+                                "type": "AutoV1",
+                                "hash": "2DAE719F"
+                            },
+                            {
+                                "type": "AutoV2",
+                                "hash": "47AAAF0D29"
+                            },
+                            {
+                                "type": "SHA256",
+                                "hash": "47AAAF0D2945CA937151D61304946DD229B3F072140B85484BC93E38F2A6E2F7"
+                            },
+                            {
+                                "type": "CRC32",
+                                "hash": "F1D60397"
+                            },
+                            {
+                                "type": "BLAKE3",
+                                "hash": "5664139789418CE9328FB4E71FF9380FFDBBA2268747A40C428ED9D35501C047"
+                            }
+                        ]
+                    }
+                ],
+                "generationCoverage": null,
+                "recommendedResources": [],
+                "posts": [
+                    {
+                        "id": 189786
+                    }
+                ],
+                "hashes": [
+                    "47aaaf0d2945ca937151d61304946dd229b3f072140b85484bc93e38f2a6e2f7"
+                ],
+                "earlyAccessDeadline": null,
+                "canDownload": true,
+                "canGenerate": false
+            }
+        ],
+        "rank": {
+            "downloadCountAllTime": 333449,
+            "ratingCountAllTime": 900,
+            "ratingAllTime": 4.955555555555556,
+            "favoriteCountAllTime": 25416,
+            "imageCountAllTime": 60076,
+            "collectedCountAllTime": 1344,
+            "tippedAmountCountAllTime": 1098,
+            "generationCountAllTime": 5983,
+            "commentCountAllTime": 126
+        },
+        "tagsOnModels": [
+            {
+                "tag": {
+                    "id": 4,
+                    "name": "anime",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 172,
+                    "name": "photorealistic",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 195,
+                    "name": "concept",
+                    "isCategory": true
+                }
+            },
+            {
+                "tag": {
+                    "id": 5199,
+                    "name": "detailed",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 113937,
+                    "name": "lora",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 126360,
+                    "name": "undetailed",
+                    "isCategory": false
+                }
+            }
+        ],
+        "canGenerate": false,
+        "hasSuggestedResources": false
+    },
+    "dataUpdateCount": 1,
+    "dataUpdatedAt": 1707378204059,
+    "error": null,
+    "errorUpdateCount": 0,
+    "errorUpdatedAt": 0,
+    "fetchFailureCount": 0,
+    "fetchFailureReason": null,
+    "fetchMeta": null,
+    "isInvalidated": false,
+    "status": "success",
+    "fetchStatus": "idle"
+}

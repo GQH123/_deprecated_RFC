@@ -1,0 +1,80 @@
+{
+    "props": {
+        "pageProps": {
+            "colorScheme": "dark",
+            "cookies": {
+                "models": {
+                    "types": [],
+                    "baseModels": [],
+                    "status": [],
+                    "earlyAccess": false,
+                    "supportsGeneration": false
+                },
+                "questions": {},
+                "gallery": {
+                    "singleImageModel": false,
+                    "singleImageAlbum": false,
+                    "types": [],
+                    "resources": [],
+                    "tags": [],
+                    "excludedTags": []
+                },
+                "referrals": {}
+            },
+            "session": null,
+            "flags": {
+                "earlyAccessModel": true,
+                "apiKeys": true,
+                "ambientCard": true,
+                "gallery": true,
+                "posts": false,
+                "articles": true,
+                "articleCreate": true,
+                "adminTags": false,
+                "civitaiLink": false,
+                "stripe": false,
+                "imageTraining": false,
+                "imageTrainingResults": false,
+                "sdxlGeneration": true,
+                "imageGeneration": true,
+                "enhancedSearch": true,
+                "alternateHome": true,
+                "collections": true,
+                "air": false,
+                "modelCardV2": true,
+                "profileCollections": true,
+                "imageSearch": true,
+                "buzz": true,
+                "signal": false,
+                "assistant": false,
+                "bounties": true,
+                "newsroom": true,
+                "safety": true,
+                "profileOverhaul": true,
+                "csamReports": false,
+                "clubs": true,
+                "createClubs": false,
+                "moderateTags": false,
+                "chat": false,
+                "creatorsProgram": false,
+                "buzzWithdrawalTransfer": false
+            },
+            "filters": {
+                "browsingMode": "NSFW"
+            }
+        }
+    },
+    "page": "/404",
+    "query": {
+        "id": "1000000"
+    },
+    "buildId": "hs2gW-fMEsOrhEQB0DGDD",
+    "isFallback": false,
+    "appGip": true,
+    "locale": "en",
+    "locales": [
+        "en"
+    ],
+    "defaultLocale": "en",
+    "scriptLoader": []
+}

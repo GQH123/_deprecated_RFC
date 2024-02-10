@@ -1,0 +1,242 @@
+{
+    "data": {
+        "id": 295150,
+        "name": "EnvyArcticXL01",
+        "description": "<p>Whetheryou'relookingforbeautifularcticsceneryorcutewaifusinwinterjackets,thislorahasyoucovered.:)</p>",
+        "poi": false,
+        "nsfw": false,
+        "type": "LoCon",
+        "uploadType": "Created",
+        "updatedAt": "2024-02-06T16:05:01.599Z",
+        "deletedAt": null,
+        "deletedBy": null,
+        "status": "Published",
+        "checkpointType": null,
+        "allowNoCredit": true,
+        "allowCommercialUse": "Sell",
+        "allowDerivatives": true,
+        "allowDifferentLicense": true,
+        "licenses": [],
+        "publishedAt": "2024-02-06T16:05:00.861Z",
+        "locked": false,
+        "meta": {
+            "imageNsfw": "Mature"
+        },
+        "earlyAccessDeadline": null,
+        "mode": null,
+        "availability": "Public",
+        "reportStats": null,
+        "user": {
+            "id": 5628,
+            "image": "1a70717c-ac41-4ed6-97da-eb8a96757095",
+            "username": "_Envy_",
+            "deletedAt": null,
+            "rank": {
+                "leaderboardRank": 45
+            },
+            "profilePicture": {
+                "id": 4501625,
+                "name": null,
+                "url": "1a70717c-ac41-4ed6-97da-eb8a96757095",
+                "nsfw": "Soft",
+                "hash": null,
+                "userId": 5628,
+                "ingestion": "Scanned",
+                "type": "image",
+                "width": null,
+                "height": null,
+                "metadata": {
+                    "userId": 5628,
+                    "profilePicture": true
+                }
+            },
+            "cosmetics": [
+                {
+                    "data": null,
+                    "cosmetic": {
+                        "id": 2,
+                        "data": {
+                            "variant": "gradient",
+                            "gradient": {
+                                "to": "#25c54d",
+                                "deg": 180,
+                                "from": "#177e31"
+                            }
+                        },
+                        "type": "NamePlate",
+                        "source": "Membership",
+                        "name": "SupportNameplate"
+                    }
+                },
+                {
+                    "data": null,
+                    "cosmetic": {
+                        "id": 166,
+                        "data": {
+                            "url": "d176966a-f85a-4c85-baeb-590b06848f6f"
+                        },
+                        "type": "Badge",
+                        "source": "Trophy",
+                        "name": "BronzeSDXLBadge"
+                    }
+                }
+            ]
+        },
+        "modelVersions": [
+            {
+                "id": 331646,
+                "modelId": 295150,
+                "name": "v1.0",
+                "description": null,
+                "steps": null,
+                "epochs": null,
+                "clipSkip": null,
+                "createdAt": "2024-02-06T15:27:54.981Z",
+                "updatedAt": "2024-02-06T16:05:00.864Z",
+                "trainedWords": [],
+                "trainingStatus": null,
+                "trainingDetails": null,
+                "inaccurate": false,
+                "baseModel": "SDXL1.0",
+                "baseModelType": null,
+                "earlyAccessTimeFrame": 0,
+                "status": "Published",
+                "publishedAt": "2024-02-06T16:05:00.861Z",
+                "meta": {},
+                "vaeId": null,
+                "settings": {
+                    "strength": 1,
+                    "minStrength": 0.6
+                },
+                "rank": {
+                    "downloadCountAllTime": 85,
+                    "generationCountAllTime": 0,
+                    "ratingCountAllTime": 0,
+                    "ratingAllTime": 0
+                },
+                "files": [
+                    {
+                        "id": 262904,
+                        "url": "https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/model/5628/arcticPunkALast.cQIu.safetensors",
+                        "sizeKB": 45607.375,
+                        "name": "arctic_punk_a_last.safetensors",
+                        "type": "Model",
+                        "visibility": "Public",
+                        "metadata": {
+                            "fp": null,
+                            "size": null,
+                            "format": "SafeTensor"
+                        },
+                        "pickleScanResult": "Success",
+                        "pickleScanMessage": "NoPickleimports",
+                        "virusScanResult": "Success",
+                        "virusScanMessage": null,
+                        "scannedAt": "2024-02-06T15:31:14.310Z",
+                        "hashes": [
+                            {
+                                "type": "AutoV1",
+                                "hash": "E4C21C1E"
+                            },
+                            {
+                                "type": "AutoV2",
+                                "hash": "64C2BBA4A4"
+                            },
+                            {
+                                "type": "SHA256",
+                                "hash": "64C2BBA4A4C6BB7B65C35E945296C396A237091BCF8F914D72BC518516D3B89B"
+                            },
+                            {
+                                "type": "CRC32",
+                                "hash": "70EEAAB4"
+                            },
+                            {
+                                "type": "BLAKE3",
+                                "hash": "982ACCD27EE4C9A5DD90A9D6B82DC1F0479266026259C41D95537646F59C4F13"
+                            },
+                            {
+                                "type": "AutoV3",
+                                "hash": "CD79D1BE18EA92C9F492292355B1F396609516F56D7FC37B4C9E22A5729C64A9"
+                            }
+                        ]
+                    }
+                ],
+                "generationCoverage": {
+                    "covered": true
+                },
+                "recommendedResources": [],
+                "posts": [
+                    {
+                        "id": 1367828
+                    }
+                ],
+                "hashes": [
+                    "64c2bba4a4c6bb7b65c35e945296c396a237091bcf8f914d72bc518516d3b89b"
+                ],
+                "earlyAccessDeadline": null,
+                "canDownload": true,
+                "canGenerate": true
+            }
+        ],
+        "rank": {
+            "downloadCountAllTime": 85,
+            "ratingCountAllTime": 0,
+            "ratingAllTime": 0,
+            "favoriteCountAllTime": 20,
+            "imageCountAllTime": 0,
+            "collectedCountAllTime": 4,
+            "tippedAmountCountAllTime": 0,
+            "generationCountAllTime": 0,
+            "commentCountAllTime": 0
+        },
+        "tagsOnModels": [
+            {
+                "tag": {
+                    "id": 195,
+                    "name": "concept",
+                    "isCategory": true
+                }
+            },
+            {
+                "tag": {
+                    "id": 2688,
+                    "name": "clothes",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 3080,
+                    "name": "cold",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 16188,
+                    "name": "snow",
+                    "isCategory": false
+                }
+            },
+            {
+                "tag": {
+                    "id": 146264,
+                    "name": "arctic",
+                    "isCategory": false
+                }
+            }
+        ],
+        "canGenerate": true,
+        "hasSuggestedResources": false
+    },
+    "dataUpdateCount": 1,
+    "dataUpdatedAt": 1707375824260,
+    "error": null,
+    "errorUpdateCount": 0,
+    "errorUpdatedAt": 0,
+    "fetchFailureCount": 0,
+    "fetchFailureReason": null,
+    "fetchMeta": null,
+    "isInvalidated": false,
+    "status": "success",
+    "fetchStatus": "idle"
+}

@@ -1,0 +1,12 @@
+2024-02-10 12:34:56,556 <MainProcess:4075165, MainThread:140606509942592> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_requests`
+[INFO] initialized
+
+2024-02-10 12:34:56,557 <MainProcess:4075165, MainThread:140606509942592> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_requests`
+[INFO] session created, 'RequestsSession'({'lib': 'requests', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'stream': False, 'timeout': None})
+
+2024-02-10 12:58:44,956 <MainProcess:4077276, MainThread:139850448979776> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_requests`
+[INFO] initialized
+
+2024-02-10 12:58:44,961 <MainProcess:4077276, MainThread:139850448979776> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_requests`
+[INFO] session created, 'RequestsSession'({'lib': 'requests', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'stream': False, 'timeout': None})
+

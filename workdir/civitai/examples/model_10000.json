@@ -1,0 +1,413 @@
+{
+    "props": {
+        "pageProps": {
+            "colorScheme": "dark",
+            "cookies": {
+                "models": {
+                    "types": [],
+                    "baseModels": [],
+                    "status": [],
+                    "earlyAccess": false,
+                    "supportsGeneration": false
+                },
+                "questions": {},
+                "gallery": {
+                    "singleImageModel": false,
+                    "singleImageAlbum": false,
+                    "types": [],
+                    "resources": [],
+                    "tags": [],
+                    "excludedTags": []
+                },
+                "referrals": {}
+            },
+            "session": null,
+            "flags": {
+                "earlyAccessModel": true,
+                "apiKeys": true,
+                "ambientCard": true,
+                "gallery": true,
+                "posts": false,
+                "articles": true,
+                "articleCreate": true,
+                "adminTags": false,
+                "civitaiLink": false,
+                "stripe": false,
+                "imageTraining": false,
+                "imageTrainingResults": false,
+                "sdxlGeneration": true,
+                "imageGeneration": true,
+                "enhancedSearch": true,
+                "alternateHome": true,
+                "collections": true,
+                "air": false,
+                "modelCardV2": true,
+                "profileCollections": true,
+                "imageSearch": true,
+                "buzz": true,
+                "signal": false,
+                "assistant": false,
+                "bounties": true,
+                "newsroom": true,
+                "safety": true,
+                "profileOverhaul": true,
+                "csamReports": false,
+                "clubs": true,
+                "createClubs": false,
+                "moderateTags": false,
+                "chat": false,
+                "creatorsProgram": false,
+                "buzzWithdrawalTransfer": false
+            },
+            "filters": {
+                "browsingMode": "NSFW"
+            },
+            "id": 10000,
+            "trpcState": {
+                "json": {
+                    "mutations": [],
+                    "queries": [
+                        {
+                            "state": {
+                                "data": {
+                                    "pages": [
+                                        {
+                                            "nextCursor": null,
+                                            "items": []
+                                        }
+                                    ],
+                                    "pageParams": [
+                                        null
+                                    ]
+                                },
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707372889729,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "image",
+                                    "getInfinite"
+                                ],
+                                {
+                                    "input": {
+                                        "modelVersionId": 11890,
+                                        "prioritizedUserIds": [
+                                            136836
+                                        ],
+                                        "period": "AllTime",
+                                        "sort": "MostReactions",
+                                        "limit": 20
+                                    },
+                                    "type": "infinite"
+                                }
+                            ],
+                            "queryHash": "[[\"image\",\"getInfinite\"],{\"input\":{\"limit\":20,\"modelVersionId\":11890,\"period\":\"AllTime\",\"prioritizedUserIds\":[136836],\"sort\":\"MostReactions\"},\"type\":\"infinite\"}]"
+                        },
+                        {
+                            "state": {
+                                "data": [
+                                    {
+                                        "entityId": 11890,
+                                        "entityType": "ModelVersion",
+                                        "hasAccess": true,
+                                        "availability": "Public"
+                                    }
+                                ],
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707372889732,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "common",
+                                    "getEntityAccess"
+                                ],
+                                {
+                                    "input": {
+                                        "entityId": 11890,
+                                        "entityType": "ModelVersion"
+                                    },
+                                    "type": "query"
+                                }
+                            ],
+                            "queryHash": "[[\"common\",\"getEntityAccess\"],{\"input\":{\"entityId\":11890,\"entityType\":\"ModelVersion\"},\"type\":\"query\"}]"
+                        },
+                        {
+                            "state": {
+                                "data": [
+                                    {
+                                        "entityType": "ModelVersion",
+                                        "entityId": 11890,
+                                        "requiresClub": false,
+                                        "clubs": [],
+                                        "availability": "Public"
+                                    }
+                                ],
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707372889736,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "common",
+                                    "getEntityClubRequirement"
+                                ],
+                                {
+                                    "input": {
+                                        "entityId": 11890,
+                                        "entityType": "ModelVersion"
+                                    },
+                                    "type": "query"
+                                }
+                            ],
+                            "queryHash": "[[\"common\",\"getEntityClubRequirement\"],{\"input\":{\"entityId\":11890,\"entityType\":\"ModelVersion\"},\"type\":\"query\"}]"
+                        },
+                        {
+                            "state": {
+                                "data": {
+                                    "id": 10000,
+                                    "name": "HPSC-1",
+                                    "description": null,
+                                    "poi": false,
+                                    "nsfw": false,
+                                    "type": "Checkpoint",
+                                    "uploadType": "Created",
+                                    "updatedAt": "2023-03-26T19:44:57.721Z",
+                                    "deletedAt": "2023-03-26T19:44:57.720Z",
+                                    "deletedBy": 136836,
+                                    "status": "Deleted",
+                                    "checkpointType": "Trained",
+                                    "allowNoCredit": true,
+                                    "allowCommercialUse": "Sell",
+                                    "allowDerivatives": true,
+                                    "allowDifferentLicense": true,
+                                    "licenses": [],
+                                    "publishedAt": "2023-02-18T05:12:08.987Z",
+                                    "locked": false,
+                                    "meta": {
+                                        "imageNsfw": "None"
+                                    },
+                                    "earlyAccessDeadline": null,
+                                    "mode": null,
+                                    "availability": "Public",
+                                    "reportStats": {
+                                        "ownershipProcessing": 0
+                                    },
+                                    "user": {
+                                        "id": 136836,
+                                        "image": "https://lh3.googleusercontent.com/a/AEdFTp6OJZIk4QC39DBQltFAoeSTm6yJiGdO28-dLz7O=s96-c",
+                                        "username": "frostyboi11",
+                                        "deletedAt": null,
+                                        "rank": {
+                                            "leaderboardRank": null
+                                        },
+                                        "profilePicture": null,
+                                        "cosmetics": []
+                                    },
+                                    "modelVersions": [
+                                        {
+                                            "id": 11890,
+                                            "modelId": 10000,
+                                            "name": "HPSC-1",
+                                            "description": null,
+                                            "steps": null,
+                                            "epochs": null,
+                                            "clipSkip": null,
+                                            "createdAt": "2023-02-17T23:43:15.529Z",
+                                            "updatedAt": "2023-02-18T05:12:08.991Z",
+                                            "trainedWords": [],
+                                            "trainingStatus": null,
+                                            "trainingDetails": null,
+                                            "inaccurate": false,
+                                            "baseModel": "SD1.5",
+                                            "baseModelType": "Standard",
+                                            "earlyAccessTimeFrame": 0,
+                                            "status": "Published",
+                                            "publishedAt": "2023-02-17T23:43:15.529Z",
+                                            "meta": {},
+                                            "vaeId": null,
+                                            "settings": null,
+                                            "rank": {
+                                                "downloadCountAllTime": 15,
+                                                "generationCountAllTime": 0,
+                                                "ratingCountAllTime": 2,
+                                                "ratingAllTime": 1
+                                            },
+                                            "files": [
+                                                {
+                                                    "id": 10961,
+                                                    "url": "https://5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/civitai-prod-settled/136836/model/aeda.TJX7.ckpt",
+                                                    "sizeKB": 2082794.850585938,
+                                                    "name": "Aeda.ckpt",
+                                                    "type": "Model",
+                                                    "visibility": "Public",
+                                                    "metadata": {
+                                                        "fp": "fp16",
+                                                        "size": "full",
+                                                        "format": "PickleTensor"
+                                                    },
+                                                    "pickleScanResult": "Success",
+                                                    "pickleScanMessage": "NoPickleimports",
+                                                    "virusScanResult": "Success",
+                                                    "virusScanMessage": null,
+                                                    "scannedAt": "2023-02-18T00:13:23.682Z",
+                                                    "hashes": [
+                                                        {
+                                                            "type": "AutoV1",
+                                                            "hash": "D634B8CB"
+                                                        },
+                                                        {
+                                                            "type": "AutoV2",
+                                                            "hash": "0532F06A9E"
+                                                        },
+                                                        {
+                                                            "type": "SHA256",
+                                                            "hash": "0532F06A9EC3211B2C43401826F63A88B6409FE541AB8EF0F0310CEC9D557D43"
+                                                        },
+                                                        {
+                                                            "type": "CRC32",
+                                                            "hash": "96118578"
+                                                        },
+                                                        {
+                                                            "type": "BLAKE3",
+                                                            "hash": "816855556BDB78E039064E89BE4AE1366F52FC19444DBAE6F87A67723B326F42"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "generationCoverage": null,
+                                            "recommendedResources": [],
+                                            "posts": [
+                                                {
+                                                    "id": 64881
+                                                }
+                                            ],
+                                            "hashes": [
+                                                "0532f06a9ec3211b2c43401826f63a88b6409fe541ab8ef0f0310cec9d557d43"
+                                            ],
+                                            "earlyAccessDeadline": null,
+                                            "canDownload": true,
+                                            "canGenerate": false
+                                        }
+                                    ],
+                                    "rank": {
+                                        "downloadCountAllTime": 15,
+                                        "ratingCountAllTime": 2,
+                                        "ratingAllTime": 1,
+                                        "favoriteCountAllTime": 2,
+                                        "imageCountAllTime": 0,
+                                        "collectedCountAllTime": 0,
+                                        "tippedAmountCountAllTime": 0,
+                                        "generationCountAllTime": 0,
+                                        "commentCountAllTime": 6
+                                    },
+                                    "tagsOnModels": [],
+                                    "canGenerate": false,
+                                    "hasSuggestedResources": false
+                                },
+                                "dataUpdateCount": 1,
+                                "dataUpdatedAt": 1707372889792,
+                                "error": null,
+                                "errorUpdateCount": 0,
+                                "errorUpdatedAt": 0,
+                                "fetchFailureCount": 0,
+                                "fetchFailureReason": null,
+                                "fetchMeta": null,
+                                "isInvalidated": false,
+                                "status": "success",
+                                "fetchStatus": "idle"
+                            },
+                            "queryKey": [
+                                [
+                                    "model",
+                                    "getById"
+                                ],
+                                {
+                                    "input": {
+                                        "id": 10000
+                                    },
+                                    "type": "query"
+                                }
+                            ],
+                            "queryHash": "[[\"model\",\"getById\"],{\"input\":{\"id\":10000},\"type\":\"query\"}]"
+                        }
+                    ]
+                },
+                "meta": {
+                    "values": {
+                        "queries.0.state.data.pages.0.nextCursor": [
+                            "undefined"
+                        ],
+                        "queries.0.state.data.pageParams.0": [
+                            "undefined"
+                        ],
+                        "queries.3.state.data.updatedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.deletedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.createdAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.updatedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.publishedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.files.0.scannedAt": [
+                            "Date"
+                        ],
+                        "queries.3.state.data.modelVersions.0.earlyAccessDeadline": [
+                            "undefined"
+                        ]
+                    }
+                }
+            }
+        },
+        "__N_SSP": true
+    },
+    "page": "/models/[id]/[[...slug]]",
+    "query": {
+        "id": "10000"
+    },
+    "buildId": "hs2gW-fMEsOrhEQB0DGDD",
+    "isFallback": false,
+    "gssp": true,
+    "appGip": true,
+    "locale": "en",
+    "locales": [
+        "en"
+    ],
+    "defaultLocale": "en",
+    "scriptLoader": []
+}
