@@ -2,7 +2,7 @@ import os
 import time
 import datetime
 import traceback
-from typing import Any, List, Optional
+from typing import Any, List, Optional, Dict
 from multiprocessing import Process
 
 from ..args.arg_group import RequestorArgs
@@ -68,7 +68,7 @@ class Requestor(AttrDict, RootType):
     def __init__(
         self,
         session: Session,
-        middleware: List[Middleware],
+        middlewares: Dict[str, List[Middleware]],
         requestor_args: RequestorArgs,
     ):
         super().__init__(requestor_args)
@@ -76,7 +76,7 @@ class Requestor(AttrDict, RootType):
         self._logger_fail = self._get_logger_self(__name__, name='requestor_failed', add_file_handler=True, level='warning', return_logger=True)  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
         
         self._session = session
-        self._middleware = middleware
+        self._middlewares = middlewares
         self._failed_items = []
         self._finished_items = []
         self._step = 0
@@ -149,7 +149,8 @@ class Requestor(AttrDict, RootType):
                 result = AttrDict({
                     'response': resp,
                 })
-                for middleware in self._middleware:
+                _middleware = self._middlewares[item.bloodline[-1][0]]
+                for middleware in _middleware:
                     result = middleware.apply_sync(item, result, self._session._request_lib)
                 item.finish(True, result)
                 self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
@@ -198,7 +199,8 @@ class Requestor(AttrDict, RootType):
                 result = AttrDict({
                     'response': resp,
                 })
-                for middleware in self._middleware:
+                _middleware = self._middlewares[item.bloodline[-1][0]]
+                for middleware in _middleware:
                     result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
                 item.finish(True, result)
                 self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
@@ -237,16 +239,18 @@ class Requestor(AttrDict, RootType):
         sema = asyncio.Semaphore(async_sema)
         tasks = []
         while True:
+            await sema.acquire()
             item = self._get_item_from_root_queue()
             if item == 'QUIT':
                 self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
+                sema.release()
                 break
             if item == 'WAIT':
                 self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
+                sema.release()
                 await asyncio.sleep(self.wait_sleep)  # DO NOT use time.sleep otherwise the whole event loop will be blocked
                 continue
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
-            await sema.acquire()
             task_name = f'async-{len(tasks)}'
             tasks.append(asyncio.create_task(self._fetch_single_async(item, asyncio.sleep, sema, task_name), name=task_name))
         for task in tasks:
@@ -260,16 +264,18 @@ class Requestor(AttrDict, RootType):
         sema = trio.Semaphore(async_sema, max_value=async_sema)
         async with trio.open_nursery() as nursery:
             while True:
+                await sema.acquire()
                 item = self._get_item_from_root_queue()
                 if item == 'QUIT':
                     self._logger.info(f"process {self._logger._process_name} got 'QUIT' from root queue, QUIT")
+                    sema.release()
                     break
                 if item == 'WAIT':
                     self._logger.info(f"process {self._logger._process_name} got 'WAIT' from root queue, WAIT")
+                    sema.release()
                     await trio.sleep(self.wait_sleep)  # DO NOT use time.sleep otherwise the whole event loop will be blocked
                     continue
                 self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
-                await sema.acquire()
                 nursery.start_soon(self._fetch_single_async, item, trio.sleep, sema)
         await self._finish_async()
         
