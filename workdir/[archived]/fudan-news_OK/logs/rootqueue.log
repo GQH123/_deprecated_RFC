@@ -1,0 +1,87 @@
+2024-03-20 22:04:21,067 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 840 items added, qic = 784, aic = 17, aac = 0
+
+2024-03-20 22:04:31,093 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 840 items added, qic = 615, aic = 23, aac = 0
+
+2024-03-20 22:04:41,107 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 840 items added, qic = 458, aic = 15, aac = 0
+
+2024-03-20 22:04:51,120 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 840 items added, qic = 284, aic = 24, aac = 0
+
+2024-03-20 22:05:01,129 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 840 items added, qic = 120, aic = 24, aac = 0
+
+2024-03-20 22:05:05,692 <Process-4:905:121057, MainThread:140684847408960> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] FudanNewsList(33).FudanNews(c1247a131534) added
+
+2024-03-20 22:05:11,141 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1350 items added, qic = 523, aic = 24, aac = 0
+
+2024-03-20 22:05:21,153 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1350 items added, qic = 371, aic = 15, aac = 0
+
+2024-03-20 22:05:31,165 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1350 items added, qic = 201, aic = 23, aac = 0
+
+2024-03-20 22:05:41,184 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 1424 items added, qic = 128, aic = 22, aac = 18
+
+2024-03-20 22:05:51,194 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2040 items added, qic = 653, aic = 23, aac = 0
+
+2024-03-20 22:06:01,206 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2040 items added, qic = 487, aic = 23, aac = 0
+
+2024-03-20 22:06:11,219 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2040 items added, qic = 327, aic = 13, aac = 0
+
+2024-03-20 22:06:21,230 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2040 items added, qic = 172, aic = 17, aac = 0
+
+2024-03-20 22:06:30,637 <Process-4:1929:134719, MainThread:140684847408960> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] FudanNewsList(65).FudanNews(c1247a108199) added
+
+2024-03-20 22:06:31,243 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2116 items added, qic = 112, aic = 20, aac = 14
+
+2024-03-20 22:06:41,256 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2640 items added, qic = 538, aic = 19, aac = 0
+
+2024-03-20 22:06:51,269 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2640 items added, qic = 373, aic = 19, aac = 0
+
+2024-03-20 22:07:01,281 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2640 items added, qic = 201, aic = 24, aac = 0
+
+2024-03-20 22:07:11,293 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 2640 items added, qic = 47, aic = 20, aac = 0
+
+2024-03-20 22:07:21,310 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3060 items added, qic = 354, aic = 23, aac = 0
+
+2024-03-20 22:07:31,321 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3060 items added, qic = 187, aic = 20, aac = 0
+
+2024-03-20 22:07:41,333 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3060 items added, qic = 22, aic = 22, aac = 0
+
+2024-03-20 22:07:42,612 <Process-4:2955:147907, MainThread:140684847408960> (item.py:_add_items_sinle_process:207 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] FudanNewsList(105).FudanNews(c1247a103938) added
+
+2024-03-20 22:07:51,346 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3630 items added, qic = 492, aic = 21, aac = 0
+
+2024-03-20 22:08:01,357 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3630 items added, qic = 338, aic = 8, aac = 0
+
+2024-03-20 22:08:11,369 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3630 items added, qic = 160, aic = 14, aac = 0
+
+2024-03-20 22:08:21,382 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3630 items added, qic = 0, aic = 12, aac = 0
+
+2024-03-20 22:08:31,394 <Process-3:109624, MainThread:140684847408960> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
