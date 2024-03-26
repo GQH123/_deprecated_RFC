@@ -1,0 +1,12 @@
+2024-03-23 23:18:08,776 <Process-3:162583, MainThread:140300193920832> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 3 items added, qic = 0, aic = 1, aac = 0
+
+2024-03-23 23:18:18,799 <Process-3:162583, MainThread:140300193920832> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 5 items added, qic = 0, aic = 1, aac = 0
+
+2024-03-23 23:18:28,812 <Process-3:162583, MainThread:140300193920832> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 9 items added, qic = 1, aic = 0, aac = 0
+
+2024-03-23 23:18:38,824 <Process-3:162583, MainThread:140300193920832> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+

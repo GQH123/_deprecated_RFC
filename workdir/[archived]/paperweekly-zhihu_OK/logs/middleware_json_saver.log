@@ -1,0 +1,57 @@
+2024-03-23 23:17:58,728 <MainProcess:162562, MainThread:140300193920832> (middleware.py:get_middleware:401 -> middleware.py:__init__:55) from logger `RFC.middleware_json_saver`
+[INFO] initialized
+
+2024-03-23 23:18:02,642 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(0), received
+
+2024-03-23 23:18:02,753 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(0), sent
+
+2024-03-23 23:18:06,109 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(1), received
+
+2024-03-23 23:18:06,221 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(1), sent
+
+2024-03-23 23:18:10,126 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(2), received
+
+2024-03-23 23:18:10,206 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(2), sent
+
+2024-03-23 23:18:13,774 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(3), received
+
+2024-03-23 23:18:13,880 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(3), sent
+
+2024-03-23 23:18:18,807 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(4), received
+
+2024-03-23 23:18:18,866 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(4), sent
+
+2024-03-23 23:18:21,831 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(5), received
+
+2024-03-23 23:18:21,983 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(5), sent
+
+2024-03-23 23:18:25,317 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(6), received
+
+2024-03-23 23:18:25,343 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(6), sent
+
+2024-03-23 23:18:28,247 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(7), received
+
+2024-03-23 23:18:28,270 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(7), sent
+
+2024-03-23 23:18:30,178 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:112) from logger `RFC.middleware_json_saver`
+[INFO] applying on PaperWeeklyZhihuArticlePage(8), received
+
+2024-03-23 23:18:30,188 <requestor-worker-0:162590, MainThread:140300193920832> (requestor.py:_fetch_single_async:204 -> middleware.py:apply_async:115) from logger `RFC.middleware_json_saver`
+[INFO] applied on PaperWeeklyZhihuArticlePage(8), sent
+
