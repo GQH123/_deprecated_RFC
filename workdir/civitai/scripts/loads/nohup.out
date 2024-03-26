@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/workdir/civitai/scripts/loads/check_file.py", line 4, in <module>
+    from safetensors.torch import load_file
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/safetensors/torch.py", line 6, in <module>
+    import torch
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/torch/__init__.py", line 228, in <module>
+    _load_global_deps()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/torch/__init__.py", line 168, in _load_global_deps
+    ctypes.CDLL(lib_path, mode=ctypes.RTLD_GLOBAL)
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+KeyboardInterrupt

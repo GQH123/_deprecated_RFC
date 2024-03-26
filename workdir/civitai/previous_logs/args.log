@@ -1,0 +1,18 @@
+2024-02-14 00:11:30,483 <MainProcess:3694559, MainThread:139705137784640> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-02-14 00:11:30,486 <MainProcess:3694559, MainThread:139705137784640> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-02-14 00:11:30,487 <MainProcess:3694559, MainThread:139705137784640> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-02-14 00:11:30,488 <MainProcess:3694559, MainThread:139705137784640> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default None
+
+2024-02-14 00:11:30,489 <MainProcess:3694559, MainThread:139705137784640> (session.py:get_session:349 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'stream' not set, using default False
+
+2024-02-14 00:11:30,497 <MainProcess:3694559, MainThread:139705137784640> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+

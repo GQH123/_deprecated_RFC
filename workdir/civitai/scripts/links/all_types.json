@@ -1,0 +1,16 @@
+[
+    "LORA",
+    "Wildcards",
+    "Upscaler",
+    "Workflows",
+    "Checkpoint",
+    "AestheticGradient",
+    "Poses",
+    "MotionModule",
+    "VAE",
+    "Controlnet",
+    "Hypernetwork",
+    "LoCon",
+    "Other",
+    "TextualInversion"
+]
