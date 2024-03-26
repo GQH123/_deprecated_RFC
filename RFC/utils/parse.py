@@ -24,13 +24,22 @@ parse_config = {
 """
 
 
-def get_request_soup(r: requests.Response) -> BeautifulSoup:
-    return BeautifulSoup(r.text, features="lxml")  # if error occurs, run `pip install lxml`
+def remove_comment_tag_from_soup(soup):
+    for element in soup(text=lambda text: isinstance(text, bs4.Comment)):
+        element.extract()
+    return soup
 
+def get_request_soup(r: requests.Response, remove_comments: bool = True) -> BeautifulSoup:
+    soup = BeautifulSoup(r.text, features="lxml")  # if error occurs, run `pip install lxml`
+    if remove_comments:
+        soup = remove_comment_tag_from_soup(soup)
+    return soup
 
-def get_html_soup(s: str) -> BeautifulSoup:
-    return BeautifulSoup(s, features="lxml")  # if error occurs, run `pip install lxml`
-
+def get_html_soup(s: str, remove_comments: bool = True) -> BeautifulSoup:
+    soup = BeautifulSoup(s, features="lxml")  # if error occurs, run `pip install lxml` 
+    if remove_comments:
+        soup = remove_comment_tag_from_soup(soup)
+    return soup
 
 def find_element_by_attr(soup: BeautifulSoup, element_tp: str, attr_key: str, attr_value: str) -> bs4.element.ResultSet:
     # https://stackoverflow.com/questions/5041008/how-to-find-elements-by-class
