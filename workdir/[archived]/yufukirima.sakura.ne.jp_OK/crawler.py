@@ -32,9 +32,9 @@ class FanboxPost(ItemType):
             p_ab_d_id='1921126919',
             privacy_policy_agreement='6',
             privacy_policy_notification='0',
-            FANBOXSESSID='89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1',
+            FANBOXSESSID='89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ',
         )),
-        'retry_limit': ('fixed', 100),  # this is the key series path, so failure will end the whole process
+        'retry_limit': ('fixed', 3),  # this is the key series path, so failure will end the whole process, you can set this to be larger
     }
     item_arg_group = {
         'save_dir': ('auto', 'saves/posts/', 'subs'),
@@ -56,7 +56,7 @@ class FanboxPost(ItemType):
         'async_sema': 24,
         'wait_timeout': 20,
         'wait_sleep': 1,
-        'report_step': 10,
+        'report_step': 1,
     }
     
     @classmethod
@@ -64,6 +64,8 @@ class FanboxPost(ItemType):
         _json = result['json']['body']
         if _json['prevPost'] is not None:
             next_id = _json['prevPost']['id']
+            if int(next_id) <= 7305540:
+                return
             FanboxPost._add_items(next_id)  # next post, same level, no bloodline
         if 'coverImageUrl' in _json and _json['coverImageUrl'] is not None:
             FanboxPostImage._add_items(ids='cover', imageURL=_json['coverImageUrl'], ancestor_id=item.id, bloodline=item.bloodline)
@@ -97,7 +99,7 @@ class FanboxPostImage(FanboxPost):
             p_ab_d_id='1921126919',
             privacy_policy_agreement='6',
             privacy_policy_notification='0',
-            FANBOXSESSID='89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1',
+            FANBOXSESSID='89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ',
         )),
     }
     middleware_args = {
@@ -146,11 +148,18 @@ class YufukirimaGalleryImage(FanboxPost):
         pass
 
 
-# newest_post_id = 7361734
+# newest_post_id = 7524520
 # FanboxPost.start(newest_post_id)
 
+# galleries = json.load(open('scripts/galleries.json', 'r'))
+# for post in galleries:
+#     print(post)
+#     for i, link in enumerate(galleries[post]):
+#         print(i, link)
+#         YufukirimaGalleryImage._add_items(ids=f'gallery_{i}', imageURL=link, bloodline=[(FanboxPost.__name__, post)])
+# YufukirimaGalleryImage.start()
 
-galleries = json.load(open('scripts/galleries.json', 'r'))
+galleries = json.load(open('scripts/galleries_extra.json', 'r'))
 for post in galleries:
     print(post)
     for i, link in enumerate(galleries[post]):

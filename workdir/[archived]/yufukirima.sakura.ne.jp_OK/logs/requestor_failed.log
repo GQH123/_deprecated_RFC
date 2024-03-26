@@ -1,0 +1,82 @@
+2024-03-01 22:01:25,662 <requestor-worker-0:3384548, MainThread:139730811811648> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:99) from logger `RFC.requestor_failed`
+[ERROR] failed on FanboxPost(7524520), caught error "['ValueError'] ValueError('unexpected status code 401 in response of FanboxPost(7524520)')"
+
+2024-03-01 22:01:25,666 <requestor-worker-0:3384548, MainThread:139730811811648> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:100) from logger `RFC.requestor_failed`
+[ERROR] Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/requestor.py", line 204, in _fetch_single_async
+    result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 121, in apply_async
+    self._handle_error(e, item, result)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 83, in _handle_error
+    raise error
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 114, in apply_async
+    _result = await self._apply_async(item, result, request_lib, async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 180, in _apply_async
+    return self._apply_sync(item, result, request_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 168, in _apply_sync
+    raise ValueError(f"unexpected status code {repr(status_code)} in response of {repr(item)}")
+ValueError: unexpected status code 401 in response of FanboxPost(7524520)
+
+
+2024-03-01 22:06:16,937 <requestor-worker-0:3385252, MainThread:139749688543040> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:99) from logger `RFC.requestor_failed`
+[ERROR] failed on FanboxPost(7524520), caught error "['ValueError'] ValueError('unexpected status code 401 in response of FanboxPost(7524520)')"
+
+2024-03-01 22:06:16,940 <requestor-worker-0:3385252, MainThread:139749688543040> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:100) from logger `RFC.requestor_failed`
+[ERROR] Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/requestor.py", line 204, in _fetch_single_async
+    result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 121, in apply_async
+    self._handle_error(e, item, result)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 83, in _handle_error
+    raise error
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 114, in apply_async
+    _result = await self._apply_async(item, result, request_lib, async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 180, in _apply_async
+    return self._apply_sync(item, result, request_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 168, in _apply_sync
+    raise ValueError(f"unexpected status code {repr(status_code)} in response of {repr(item)}")
+ValueError: unexpected status code 401 in response of FanboxPost(7524520)
+
+
+2024-03-01 22:06:30,975 <requestor-worker-0:3386978, MainThread:140584152094528> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:99) from logger `RFC.requestor_failed`
+[ERROR] failed on FanboxPost(7524520), caught error "['ValueError'] ValueError('unexpected status code 401 in response of FanboxPost(7524520)')"
+
+2024-03-01 22:06:30,977 <requestor-worker-0:3386978, MainThread:140584152094528> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:100) from logger `RFC.requestor_failed`
+[ERROR] Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/requestor.py", line 204, in _fetch_single_async
+    result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 121, in apply_async
+    self._handle_error(e, item, result)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 83, in _handle_error
+    raise error
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 114, in apply_async
+    _result = await self._apply_async(item, result, request_lib, async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 180, in _apply_async
+    return self._apply_sync(item, result, request_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 168, in _apply_sync
+    raise ValueError(f"unexpected status code {repr(status_code)} in response of {repr(item)}")
+ValueError: unexpected status code 401 in response of FanboxPost(7524520)
+
+
+2024-03-01 22:06:41,299 <requestor-worker-0:3387242, MainThread:140397429675840> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:99) from logger `RFC.requestor_failed`
+[ERROR] failed on FanboxPost(7442068), caught error '[\'ContentTypeError\'] ContentTypeError(RequestInfo(url=URL(\'https://api.fanbox.cc/post.info?postId=7442068\'), method=\'GET\', headers=<CIMultiDictProxy(\'Host\': \'api.fanbox.cc\', \'origin\': \'https://www.fanbox.cc\', \'user-agent\': \'Mozilla/4.0(compatible; MSIE 5.0; Windows 98; DigExt)\', \'referer\': \'https://api.fanbox.cc/\', \'Accept\': \'*/*\', \'Accept-Encoding\': \'gzip, deflate\', \'Cookie\': \'FANBOXSESSID=89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ; p_ab_d_id=1921126919; p_ab_id=6; p_ab_id_2=8; privacy_policy_agreement=6; privacy_policy_notification=0\')>, real_url=URL(\'https://api.fanbox.cc/post.info?postId=7442068\')), (), message=\'Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8\', headers=<CIMultiDictProxy(\'Server\': \'nginx\', \'Date\': \'Fri, 01 Mar 2024 14:06:41 GMT\', \'Content-Type\': \'text/plain; charset=utf-8\', \'Content-Length\': \'1459\', \'Connection\': \'keep-alive\', \'X-Host-Time\': \'103\', \'Content-Security-Policy\': "frame-ancestors \'self\' https://*.fanbox.cc", \'Vary\': \'X-UserId,Accept-Encoding\', \'Access-Control-Allow-Origin\': \'https://www.fanbox.cc\', \'Access-Control-Allow-Headers\': \'Content-Type, X-CSRF-Token\', \'Access-Control-Allow-Credentials\': \'true\', \'Expires\': \'Thu, 19 Nov 1981 08:52:00 GMT\', \'Cache-Control\': \'no-store, no-cache, must-revalidate\', \'Pragma\': \'no-cache\', \'X-UserId\': \'89975465\', \'X-Content-Type-Options\': \'nosniff\', \'Content-Encoding\': \'gzip\', \'X-Frame-Options\': \'SAMEORIGIN\')>)'
+
+2024-03-01 22:06:41,313 <requestor-worker-0:3387242, MainThread:140397429675840> (requestor.py:_fetch_single_async:214 -> requestor.py:_handle_error:100) from logger `RFC.requestor_failed`
+[ERROR] Traceback (most recent call last):
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/requestor.py", line 204, in _fetch_single_async
+    result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 121, in apply_async
+    self._handle_error(e, item, result)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 83, in _handle_error
+    raise error
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 114, in apply_async
+    _result = await self._apply_async(item, result, request_lib, async_lib)
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware.py", line 281, in _apply_async
+    result.json = await get_json_async(result.response, request_lib)     # type: ignore
+  File "/remote-home/qhgao/Workspace/Projects/RFC-crawlers/RFC-dev/RFC/req/middleware_func.py", line 104, in get_json_async
+    return await resp.json()
+  File "/remote-home/qhgao/Workspace/Applications/anaconda3/envs/share_py310/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 1104, in json
+    raise ContentTypeError(
+aiohttp.client_exceptions.ContentTypeError: 0, message='Attempt to decode JSON with unexpected mimetype: text/plain; charset=utf-8', url=URL('https://api.fanbox.cc/post.info?postId=7442068')
+
+

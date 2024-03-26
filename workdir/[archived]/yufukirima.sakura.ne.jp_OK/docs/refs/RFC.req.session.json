@@ -5,7 +5,8 @@
         "cookies": "{}",
         "proxies": "None",
         "headers": "{}",
-        "stream": "False"
+        "stream": "False",
+        "timeout": "None"
     },
     "'AioHTTPSession'": {
         "lib": "'not_set'",
@@ -13,7 +14,8 @@
         "cookies": "{}",
         "proxies": "None",
         "headers": "{}",
-        "chunked_size": "None"
+        "chunked_size": "None",
+        "timeout": "None"
     },
     "'AsksSession'": {
         "lib": "'not_set'",

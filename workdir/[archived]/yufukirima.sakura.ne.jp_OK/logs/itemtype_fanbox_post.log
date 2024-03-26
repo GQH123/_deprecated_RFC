@@ -2521,3 +2521,132 @@
 [INFO] item created with args:
 {'url': 'https://api.fanbox.cc/post.info?postId=233455', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 100, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10', 'stream': False, 'is_leaf': False, 'bloodline': [('FanboxPost', '233455')], 'save_dir': 'saves/posts/233455', 'id': '233455'}
 
+2024-03-01 21:54:42,219 <MainProcess:3381808, MainThread:140404398061376> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 21:54:42,387 <MainProcess:3381808, MainThread:140404398061376> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 21:54:43,108 <Process-2:3381974, MainThread:140404398061376> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 100, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 21:59:48,238 <MainProcess:3383195, MainThread:139994761180992> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 21:59:48,314 <MainProcess:3383195, MainThread:139994761180992> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 21:59:48,339 <Process-2:3383259, MainThread:139994761180992> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 100, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/4.0.206.1 Safari/532.0', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:01:19,601 <MainProcess:3384474, MainThread:139730811811648> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:01:19,937 <MainProcess:3384474, MainThread:139730811811648> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 22:01:19,959 <Process-2:3384537, MainThread:139730811811648> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14931', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:01:59,591 <MainProcess:3384821, MainThread:140300265518912> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:01:59,598 <MainProcess:3384821, MainThread:140300265518912> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 22:01:59,623 <Process-2:3384870, MainThread:140300265518912> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 100, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.6) Gecko/20050317 Firefox/1.0.1', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:04:10,218 <MainProcess:3385191, MainThread:139749688543040> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:04:10,223 <MainProcess:3385191, MainThread:139749688543040> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 22:04:10,250 <Process-2:3385240, MainThread:139749688543040> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 100, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.60 Safari/537.17', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:06:25,760 <MainProcess:3386919, MainThread:140584152094528> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:06:25,767 <MainProcess:3386919, MainThread:140584152094528> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 22:06:25,792 <Process-2:3386968, MainThread:140584152094528> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_Kd3hIvuCIDoJRSkYKLMoJwUmP204bLi1'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Ubuntu/10.10 Chromium/10.0.648.133 Chrome/10.0.648.133 Safari/534.16', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:06:35,128 <MainProcess:3387204, MainThread:140397429675840> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:06:35,134 <MainProcess:3387204, MainThread:140397429675840> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 22:06:35,162 <Process-2:3387233, MainThread:140397429675840> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:06:35,841 <requestor-worker-0:3387242, MainThread:140397429675840> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:06:35,876 <Process-4:1:3387340, MainThread:140397429675840> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7474505', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.197.11 Safari/532.0', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7474505')], 'save_dir': 'saves/posts/7474505', 'id': '7474505'}
+
+2024-03-01 22:06:36,971 <requestor-worker-1:3387246, MainThread:140397429675840> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:06:37,006 <Process-5:1:3387364, MainThread:140397429675840> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7442068', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/4.0(compatible; MSIE 5.0; Windows 98; DigExt)', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7442068')], 'save_dir': 'saves/posts/7442068', 'id': '7442068'}
+
+2024-03-01 22:10:39,335 <MainProcess:3387616, MainThread:140219348305728> (entry.py:start:55 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:10:39,760 <MainProcess:3387616, MainThread:140219348305728> (crawler.py:<module>:152 -> entry.py:start:57) from logger `RFC.itemtype_fanbox_post`
+[INFO] <class '__main__.FanboxPost'> started
+
+2024-03-01 22:10:39,787 <Process-2:3387651, MainThread:140219348305728> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7524520', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_8; ja-jp) AppleWebKit/530.19.2 (KHTML, like Gecko) Version/3.2.3 Safari/525.28.3', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', 7524520)], 'save_dir': 'saves/posts/7524520', 'id': 7524520}
+
+2024-03-01 22:10:40,161 <requestor-worker-0:3387669, MainThread:140219348305728> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:10:40,197 <Process-4:1:3387749, MainThread:140219348305728> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7474505', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; Wanadoo 5.6)', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7474505')], 'save_dir': 'saves/posts/7474505', 'id': '7474505'}
+
+2024-03-01 22:10:41,078 <requestor-worker-0:3387669, MainThread:140219348305728> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:10:41,150 <Process-4:3:3387777, MainThread:140219348305728> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7442068', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Opera/9.02 (Windows NT 5.1; U; nb)', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7442068')], 'save_dir': 'saves/posts/7442068', 'id': '7442068'}
+
+2024-03-01 22:10:42,381 <requestor-worker-6:3387693, MainThread:140219348305728> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:10:42,414 <Process-10:1:3387842, MainThread:140219348305728> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7442045', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.0; pl; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 GTB7.1 ( .NET CLR 3.5.30729)', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7442045')], 'save_dir': 'saves/posts/7442045', 'id': '7442045'}
+
+2024-03-01 22:10:43,947 <requestor-worker-2:3387676, MainThread:140219348305728> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:10:43,982 <Process-6:1:3387931, MainThread:140219348305728> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7442002', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/85.8.5 (KHTML, like Gecko) Safari/85.8.1', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7442002')], 'save_dir': 'saves/posts/7442002', 'id': '7442002'}
+
+2024-03-01 22:10:44,775 <requestor-worker-1:3387672, MainThread:140219348305728> (crawler.py:_generate:69 -> item.py:_add_items:235) from logger `RFC.itemtype_fanbox_post`
+[WARNING] no bloodline found in {}, which is required for items
+
+2024-03-01 22:10:44,811 <Process-5:1:3387979, MainThread:140219348305728> (item.py:_add_items_sinle_process:207 -> item.py:__new__:183) from logger `RFC.itemtype_fanbox_post`
+[INFO] item created with args:
+{'url': 'https://api.fanbox.cc/post.info?postId=7361734', 'proxies': {'http': 'http://127.0.0.1:7890', 'https': 'http://127.0.0.1:7890'}, 'headers': {'origin': 'https://www.fanbox.cc'}, 'cookies': {'p_ab_id': '6', 'p_ab_id_2': '8', 'p_ab_d_id': '1921126919', 'privacy_policy_agreement': '6', 'privacy_policy_notification': '0', 'FANBOXSESSID': '89975465_xSHr75TnOTiMsHaT6unE3UMXJNd8axyZ'}, 'retry_limit': 3, 'method': 'get', 'referer': 'https://api.fanbox.cc/', 'params': None, 'payload': None, 'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19577', 'stream': False, 'is_leaf': False, 'timeout': None, 'bloodline': [('FanboxPost', '7361734')], 'save_dir': 'saves/posts/7361734', 'id': '7361734'}
+

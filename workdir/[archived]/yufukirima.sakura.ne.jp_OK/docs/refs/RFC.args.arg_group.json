@@ -2,7 +2,9 @@
     "'StatusCodeMiddlewareArgs'": {
         "expected_status_codes": "[200]"
     },
-    "'BasicMiddlewareArgs'": {},
+    "'BasicMiddlewareArgs'": {
+        "reject_types": "[]"
+    },
     "'JSONSaverMiddlewareArgs'": {},
     "'TextSaverMiddlewareArgs'": {},
     "'StreamDownloaderMiddlewareArgs'": {},
@@ -13,7 +15,8 @@
         "no_session": "False",
         "cookies": "{}",
         "proxies": "{}",
-        "headers": "{}"
+        "headers": "{}",
+        "timeout": "None"
     },
     "'RequestsSessionArgs'": {
         "lib": "None",
@@ -21,6 +24,7 @@
         "cookies": "{}",
         "proxies": "{}",
         "headers": "{}",
+        "timeout": "None",
         "stream": "False"
     },
     "'AioHTTPSessionArgs'": {
@@ -29,6 +33,7 @@
         "cookies": "{}",
         "proxies": "{}",
         "headers": "{}",
+        "timeout": "None",
         "chunked_size": "None"
     },
     "'AsksSessionArgs'": {
@@ -36,7 +41,8 @@
         "no_session": "False",
         "cookies": "{}",
         "proxies": "{}",
-        "headers": "{}"
+        "headers": "{}",
+        "timeout": "None"
     },
     "'RequestorArgs'": {
         "nproc": "1",
@@ -57,7 +63,8 @@
         "headers": "HeadersSetter(HeadersSetter._switch())",
         "stream": "StreamSetter(ArgSetter._fixed(False))",
         "is_leaf": "IsLeafSetter(ArgSetter._fixed(False))",
-        "retry_limit": "RetryLimitSetter(ArgSetter._fixed(0))"
+        "retry_limit": "RetryLimitSetter(ArgSetter._fixed(0))",
+        "timeout": "TimeoutSetter(ArgSetter._none())"
     },
     "'ItemArgGroup'": {
         "save_dir": "SaveDirSetter(ArgSetter._not_set())",

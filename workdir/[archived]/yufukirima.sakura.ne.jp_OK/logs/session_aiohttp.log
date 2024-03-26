@@ -10,3 +10,63 @@
 2024-02-09 00:15:22,399 <MainProcess:2014158, MainThread:140684423763776> (session.py:get_session:345 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
 [INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None})
 
+2024-03-01 21:54:38,740 <MainProcess:3381808, MainThread:140404398061376> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 21:54:39,166 <MainProcess:3381808, MainThread:140404398061376> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 21:59:47,562 <MainProcess:3383195, MainThread:139994761180992> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 21:59:47,563 <MainProcess:3383195, MainThread:139994761180992> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:01:19,528 <MainProcess:3384474, MainThread:139730811811648> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:01:19,529 <MainProcess:3384474, MainThread:139730811811648> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:01:59,099 <MainProcess:3384821, MainThread:140300265518912> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:01:59,099 <MainProcess:3384821, MainThread:140300265518912> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:04:09,892 <MainProcess:3385191, MainThread:139749688543040> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:04:09,892 <MainProcess:3385191, MainThread:139749688543040> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:06:24,747 <MainProcess:3386919, MainThread:140584152094528> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:06:24,747 <MainProcess:3386919, MainThread:140584152094528> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:06:34,658 <MainProcess:3387204, MainThread:140397429675840> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:06:34,659 <MainProcess:3387204, MainThread:140397429675840> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:10:38,037 <MainProcess:3387616, MainThread:140219348305728> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:10:38,038 <MainProcess:3387616, MainThread:140219348305728> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 22:24:31,016 <MainProcess:3389070, MainThread:140069523859264> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 22:24:31,080 <MainProcess:3389070, MainThread:140069523859264> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-01 23:02:50,282 <MainProcess:3403911, MainThread:140238995707712> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-01 23:02:50,294 <MainProcess:3403911, MainThread:140238995707712> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+

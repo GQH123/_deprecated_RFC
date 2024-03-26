@@ -20,4 +20,4 @@ def parse():
 
 
 result = parse()
-json.dump(result, open('galleries.json', 'w'), indent=4, ensure_ascii=False, sort_keys=True)
+json.dump(result, open('galleries_extra.json', 'w'), indent=4, ensure_ascii=False, sort_keys=True)

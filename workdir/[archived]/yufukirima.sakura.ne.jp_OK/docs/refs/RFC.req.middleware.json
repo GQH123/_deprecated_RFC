@@ -2,7 +2,9 @@
     "'StatusCodeMiddleware'": {
         "expected_status_codes": "[200]"
     },
-    "'BasicMiddleware'": {},
+    "'BasicMiddleware'": {
+        "reject_types": "[]"
+    },
     "'TextSaverMiddleware'": {},
     "'JSONSaverMiddleware'": {},
     "'ContentSaverMiddleware'": {},
