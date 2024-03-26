@@ -4,6 +4,8 @@ saves_*/
 saves.zip
 RFC.log
 RFC_stderr.log
+misc/
+RFC.egg-info/
 
 
 # Byte-compiled / optimized / DLL files
