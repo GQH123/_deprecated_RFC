@@ -7,6 +7,7 @@ from ..utils.cls import RootType
 from ..utils.ds import AttrDict
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
 from ..args.arg_group import *
+from .proxy_api import get_proxy_api
 
 __all__ = [
     'RequestsSession',
@@ -86,7 +87,20 @@ class Session(AttrDict, RootType, metaclass=SessionMeta):
         super().__init__(_args)
         self._logger.info("initialized")
         self._session = self._get_session()
+        self._proxy_api = None
         self._logger.info(f"session created, {repr(self)}")
+        
+    def _request_proxy_api(self, proxy_api_info: Dict[str, str]) -> Any:
+        if self._proxy_api is None:
+            proxy_api_type = proxy_api_info['api_type']
+            proxy_api_key = proxy_api_info['api_key']
+            proxy_api_passwd = proxy_api_info['api_passwd']
+            proxy_api_info = {
+                'proxy_api_key': proxy_api_key,
+                'proxy_api_passwd': proxy_api_passwd,
+            }
+            self._proxy_api = get_proxy_api(proxy_api_type, proxy_api_info)
+        return self._proxy_api.apply()
 
     def _get_session(
         self,
@@ -216,6 +230,8 @@ class RequestsSession(Session):
             _headers['referer'] = item.referer
         _headers = _headers or None
         _proxies = item.proxies or None
+        if 'api_type' in _proxies:
+            _proxies = self._request_proxy_api(_proxies)
         _cookies = item.cookies or None
         request_args = dict(
             method=item.method,
@@ -281,6 +297,8 @@ class AioHTTPSession(Session):
             _headers['referer'] = item.referer
         _headers = _headers or None
         _proxies = item.proxies or self._proxies or None
+        if 'api_type' in _proxies:
+            _proxies = self._request_proxy_api(_proxies)
         if isinstance(_proxies, dict):
             _proxies = list(_proxies.values())[0]
         _cookies = item.cookies or None

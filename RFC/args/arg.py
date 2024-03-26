@@ -188,7 +188,17 @@ class PayloadSetter(ArgSetter):
 
 
 class ProxiesSetter(ArgSetter):
-    pass
+    @staticmethod
+    def _set_api_info(id, arg_group, api_type, api_key, api_passwd, **kwargs):
+        return {
+            'api_type': api_type,
+            'api_key': api_key,
+            'api_passwd': api_passwd,
+        }
+
+    _all_supported_setters = {
+        'api': _set_api_info,
+    }
 
 
 class StreamSetter(ArgSetter):
