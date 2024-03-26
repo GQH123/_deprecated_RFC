@@ -1,0 +1,6 @@
+2024-03-26 17:40:33,757 <MainProcess:188428, MainThread:140257767700288> (crawler.py:<module>:111 -> entry.py:start:62) from logger `RFC.entry`
+[INFO] FINISHED
+
+2024-03-26 17:43:25,878 <MainProcess:189415, MainThread:140192358774592> (crawler.py:<module>:112 -> entry.py:start:62) from logger `RFC.entry`
+[INFO] FINISHED
+

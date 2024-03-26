@@ -1,0 +1,48 @@
+2024-03-26 17:37:58,301 <MainProcess:187666, MainThread:140484423059264> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 17:37:58,302 <MainProcess:187666, MainThread:140484423059264> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 17:40:21,744 <MainProcess:188428, MainThread:140257767700288> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 17:40:21,768 <MainProcess:188428, MainThread:140257767700288> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 17:43:05,532 <MainProcess:189415, MainThread:140192358774592> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 17:43:05,535 <MainProcess:189415, MainThread:140192358774592> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 17:45:53,036 <MainProcess:190397, MainThread:140188452337472> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 17:45:53,038 <MainProcess:190397, MainThread:140188452337472> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 17:50:44,503 <MainProcess:213733, MainThread:140638491178816> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 17:50:44,505 <MainProcess:213733, MainThread:140638491178816> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 18:53:37,162 <MainProcess:714722, MainThread:140224260323136> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 18:53:37,165 <MainProcess:714722, MainThread:140224260323136> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 20:16:09,548 <MainProcess:737085, MainThread:140276089050944> (session.py:get_session:367 -> session.py:__init__:88) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 20:16:09,551 <MainProcess:737085, MainThread:140276089050944> (session.py:get_session:367 -> session.py:__init__:91) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
+2024-03-26 20:19:58,736 <MainProcess:750462, MainThread:139634641291072> (session.py:get_session:367 -> session.py:__init__:88) from logger `RFC.session_aiohttp`
+[INFO] initialized
+
+2024-03-26 20:19:58,738 <MainProcess:750462, MainThread:139634641291072> (session.py:get_session:367 -> session.py:__init__:91) from logger `RFC.session_aiohttp`
+[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None, 'timeout': None})
+
