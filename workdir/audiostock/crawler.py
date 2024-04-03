@@ -26,6 +26,7 @@ class AudioBookAudioPage(ItemType):
         'url': ('field', 'https://audiostock.jp/audio/{id}'),
         # 'proxies': ('fixed', default_proxy_config),
         'proxies': ('api', 'qgnet', 'D6FL1CJ8', '9FC1ADB88090'),
+        'timeout': ('fixed', 20),  # remember to set timeout when using proxy api
     }
     item_arg_group = {
         'save_dir': ('auto', 'saves', 'subs'),
@@ -33,6 +34,7 @@ class AudioBookAudioPage(ItemType):
     session_args = {
         'no_session': False,
         'lib': 'aiohttp',
+        'timeout': 60,  # remember to set timeout when using proxy api
     }
     middleware_args = {
         'status_code': {
@@ -44,7 +46,7 @@ class AudioBookAudioPage(ItemType):
     }
     requestor_args = {
         'nproc': 6,
-        'async_sema': 24,
+        'async_sema': 12,
         'wait_timeout': 20,
         'wait_sleep': 1,
         'report_step': 10,
@@ -101,8 +103,11 @@ class AudioBookAudioFile(AudioBookAudioPage):
     _logger = None
     request_arg_group = {
         'url': ('field', '{url}'),
-        'proxies': ('fixed', default_proxy_config),
+        # 'proxies': ('fixed', default_proxy_config),
+        'proxies': ('api', 'qgnet', 'D6FL1CJ8', '9FC1ADB88090'),  # do not forget to set proxy_api for all item types
         'is_leaf': ('fixed', True),  # in case the binary data is saved twice
+        'timeout': ('fixed', 60),  # remember to set timeout when using proxy api
+        'retry_limit': ('fixed', 3),  # give more chance to retry in the setting of proxy api
     }
     
     @classmethod
