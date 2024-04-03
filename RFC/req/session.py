@@ -244,6 +244,7 @@ class RequestsSession(Session):
             proxies=_proxies,
             stream=self.stream,  # is you want to use StreamDownloadersession, this must be True
         )
+        self._logger.info(f"session requesting {repr(item)}")
         # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
         return self._session.request(**request_args)
     
@@ -314,12 +315,15 @@ class AioHTTPSession(Session):
             chunked=self.chunked_size,
             timeout=aiohttp.ClientTimeout(total=item.timeout),
         )
+        self._logger.info(f"session requesting {repr(item)}")
         # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
         return await self._session.request(**request_args)
     
     async def close(
         self,
     ):
+        if self.no_session:
+            return
         if self._session is not None:  # lazy init
             await self._session.close()
     
