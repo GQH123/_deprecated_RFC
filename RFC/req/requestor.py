@@ -150,6 +150,7 @@ class Requestor(AttrDict, RootType):
                     'response': resp,
                 })
                 _middleware = self._middlewares[item.bloodline[-1][0]]
+                self._logger.info(f"process {self._logger._process_name} sending {repr(item)} to middlewares")
                 for middleware in _middleware:
                     result = middleware.apply_sync(item, result, self._session._request_lib)
                 item.finish(True, result)
@@ -200,6 +201,7 @@ class Requestor(AttrDict, RootType):
                     'response': resp,
                 })
                 _middleware = self._middlewares[item.bloodline[-1][0]]
+                self._logger.info(f"process {self._logger._process_name} task {task_name} sending {repr(item)} to middlewares")
                 for middleware in _middleware:
                     result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
                 item.finish(True, result)
