@@ -1,0 +1,294 @@
+2024-04-03 23:19:33,038 <MainProcess:4119851, MainThread:139921887778624> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:19:33,041 <MainProcess:4119851, MainThread:139921887778624> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:19:33,041 <MainProcess:4119851, MainThread:139921887778624> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:19:33,042 <MainProcess:4119851, MainThread:139921887778624> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:19:33,043 <MainProcess:4119851, MainThread:139921887778624> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:19:33,047 <MainProcess:4119851, MainThread:139921887778624> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:19:33,052 <MainProcess:4119851, MainThread:139921887778624> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:19:37,700 <MainProcess:4120076, MainThread:140039319095104> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:19:37,701 <MainProcess:4120076, MainThread:140039319095104> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:19:37,702 <MainProcess:4120076, MainThread:140039319095104> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:19:37,702 <MainProcess:4120076, MainThread:140039319095104> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:19:37,702 <MainProcess:4120076, MainThread:140039319095104> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:19:37,705 <MainProcess:4120076, MainThread:140039319095104> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:19:37,708 <MainProcess:4120076, MainThread:140039319095104> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:19:42,773 <MainProcess:4120358, MainThread:140348683499328> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:19:42,774 <MainProcess:4120358, MainThread:140348683499328> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:19:42,774 <MainProcess:4120358, MainThread:140348683499328> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:19:42,774 <MainProcess:4120358, MainThread:140348683499328> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:19:42,774 <MainProcess:4120358, MainThread:140348683499328> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:19:42,776 <MainProcess:4120358, MainThread:140348683499328> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:19:42,780 <MainProcess:4120358, MainThread:140348683499328> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:20:27,323 <MainProcess:4121208, MainThread:139636956366656> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:20:27,325 <MainProcess:4121208, MainThread:139636956366656> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:20:27,325 <MainProcess:4121208, MainThread:139636956366656> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:20:27,326 <MainProcess:4121208, MainThread:139636956366656> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:20:27,326 <MainProcess:4121208, MainThread:139636956366656> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:20:27,329 <MainProcess:4121208, MainThread:139636956366656> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:20:27,332 <MainProcess:4121208, MainThread:139636956366656> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:24:23,761 <MainProcess:4123395, MainThread:139975978067776> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:24:23,784 <MainProcess:4123395, MainThread:139975978067776> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:24:23,784 <MainProcess:4123395, MainThread:139975978067776> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:24:23,784 <MainProcess:4123395, MainThread:139975978067776> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:24:23,785 <MainProcess:4123395, MainThread:139975978067776> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:24:23,796 <MainProcess:4123395, MainThread:139975978067776> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:24:23,807 <MainProcess:4123395, MainThread:139975978067776> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:24:34,805 <MainProcess:4124333, MainThread:139842099423040> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:24:34,807 <MainProcess:4124333, MainThread:139842099423040> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:24:34,807 <MainProcess:4124333, MainThread:139842099423040> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:24:34,808 <MainProcess:4124333, MainThread:139842099423040> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:24:34,809 <MainProcess:4124333, MainThread:139842099423040> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:24:34,812 <MainProcess:4124333, MainThread:139842099423040> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:24:34,836 <MainProcess:4124333, MainThread:139842099423040> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:25:56,906 <MainProcess:4125162, MainThread:140494333126464> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:25:56,923 <MainProcess:4125162, MainThread:140494333126464> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:25:56,924 <MainProcess:4125162, MainThread:140494333126464> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:25:56,925 <MainProcess:4125162, MainThread:140494333126464> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:25:56,926 <MainProcess:4125162, MainThread:140494333126464> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:25:56,957 <MainProcess:4125162, MainThread:140494333126464> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:25:57,009 <MainProcess:4125162, MainThread:140494333126464> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:27:06,460 <MainProcess:4125916, MainThread:139693381392192> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:27:06,470 <MainProcess:4125916, MainThread:139693381392192> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:27:06,471 <MainProcess:4125916, MainThread:139693381392192> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:27:06,471 <MainProcess:4125916, MainThread:139693381392192> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:27:06,472 <MainProcess:4125916, MainThread:139693381392192> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:27:06,512 <MainProcess:4125916, MainThread:139693381392192> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:27:06,564 <MainProcess:4125916, MainThread:139693381392192> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:27:31,933 <MainProcess:4126372, MainThread:140412336265024> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:27:31,946 <MainProcess:4126372, MainThread:140412336265024> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:27:31,947 <MainProcess:4126372, MainThread:140412336265024> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:27:31,948 <MainProcess:4126372, MainThread:140412336265024> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:27:31,949 <MainProcess:4126372, MainThread:140412336265024> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:27:31,977 <MainProcess:4126372, MainThread:140412336265024> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:27:32,044 <MainProcess:4126372, MainThread:140412336265024> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:29:10,251 <MainProcess:4128109, MainThread:140251529443136> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:29:10,269 <MainProcess:4128109, MainThread:140251529443136> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:29:10,270 <MainProcess:4128109, MainThread:140251529443136> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:29:10,271 <MainProcess:4128109, MainThread:140251529443136> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:29:10,272 <MainProcess:4128109, MainThread:140251529443136> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:29:10,278 <MainProcess:4128109, MainThread:140251529443136> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:29:10,297 <MainProcess:4128109, MainThread:140251529443136> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:34:25,168 <MainProcess:4131239, MainThread:139832427738944> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:34:25,173 <MainProcess:4131239, MainThread:139832427738944> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:34:25,174 <MainProcess:4131239, MainThread:139832427738944> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:34:25,175 <MainProcess:4131239, MainThread:139832427738944> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:34:25,176 <MainProcess:4131239, MainThread:139832427738944> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:34:25,213 <MainProcess:4131239, MainThread:139832427738944> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:34:25,266 <MainProcess:4131239, MainThread:139832427738944> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:36:52,378 <MainProcess:4133753, MainThread:139697505662784> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:36:52,398 <MainProcess:4133753, MainThread:139697505662784> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:36:52,399 <MainProcess:4133753, MainThread:139697505662784> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:36:52,400 <MainProcess:4133753, MainThread:139697505662784> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:36:52,401 <MainProcess:4133753, MainThread:139697505662784> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:36:52,448 <MainProcess:4133753, MainThread:139697505662784> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:36:52,498 <MainProcess:4133753, MainThread:139697505662784> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:42:07,566 <MainProcess:4140682, MainThread:140046854821696> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-03 23:42:07,567 <MainProcess:4140682, MainThread:140046854821696> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-03 23:42:07,567 <MainProcess:4140682, MainThread:140046854821696> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-03 23:42:07,568 <MainProcess:4140682, MainThread:140046854821696> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-03 23:42:07,568 <MainProcess:4140682, MainThread:140046854821696> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-03 23:42:07,571 <MainProcess:4140682, MainThread:140046854821696> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-03 23:42:07,574 <MainProcess:4140682, MainThread:140046854821696> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-04 01:44:18,594 <MainProcess:21102, MainThread:139697072588608> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-04-04 01:44:18,612 <MainProcess:21102, MainThread:139697072588608> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-04-04 01:44:18,613 <MainProcess:21102, MainThread:139697072588608> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-04-04 01:44:18,613 <MainProcess:21102, MainThread:139697072588608> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-04-04 01:44:18,614 <MainProcess:21102, MainThread:139697072588608> (session.py:get_session:371 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'chunked_size' not set, using default None
+
+2024-04-04 01:44:18,644 <MainProcess:21102, MainThread:139697072588608> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-04-04 01:44:18,691 <MainProcess:21102, MainThread:139697072588608> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+

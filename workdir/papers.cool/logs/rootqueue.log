@@ -1,0 +1,1476 @@
+2024-04-03 23:19:52,825 <Process-4:4120390, MainThread:140348683499328> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 16, aac = 0
+
+2024-04-03 23:20:02,843 <Process-4:4120390, MainThread:140348683499328> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 2, aac = 0
+
+2024-04-03 23:20:12,853 <Process-4:4120390, MainThread:140348683499328> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:20:37,372 <Process-4:4121258, MainThread:139636956366656> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 62, aac = 0
+
+2024-04-03 23:20:47,397 <Process-4:4121258, MainThread:139636956366656> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 39, aac = 0
+
+2024-04-03 23:20:57,409 <Process-4:4121258, MainThread:139636956366656> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 20, aac = 0
+
+2024-04-03 23:21:07,418 <Process-4:4121258, MainThread:139636956366656> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 12, aac = 0
+
+2024-04-03 23:21:17,429 <Process-4:4121258, MainThread:139636956366656> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 2, aac = 0
+
+2024-04-03 23:21:27,437 <Process-4:4121258, MainThread:139636956366656> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:24:26,297 <Process-11:1:4123679, MainThread:139975978067776> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=bTidcHIK2t@OpenReview) added
+
+2024-04-03 23:24:28,420 <Process-11:1:4123679, MainThread:139975978067776> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=JIYdbHDonF@OpenReview) added
+
+2024-04-03 23:24:30,162 <Process-5:1:4123656, MainThread:139975978067776> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2021).PapersCoolPaperKimiSection(venue_ICML.2021_=cohen21c@v139@PMLR) added
+
+2024-04-03 23:24:44,866 <Process-4:4124360, MainThread:139842099423040> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:26:07,048 <Process-4:4125253, MainThread:140494333126464> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:27:16,622 <Process-4:4126040, MainThread:139693381392192> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:27:42,083 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 75, aac = 0
+
+2024-04-03 23:27:52,169 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 55, aac = 0
+
+2024-04-03 23:28:02,181 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 24, aac = 0
+
+2024-04-03 23:28:12,193 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 16, aac = 0
+
+2024-04-03 23:28:22,206 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 9, aac = 0
+
+2024-04-03 23:28:32,217 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 3, aac = 0
+
+2024-04-03 23:28:42,229 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 2, aac = 0
+
+2024-04-03 23:28:52,241 <Process-4:4126428, MainThread:140412336265024> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:29:20,334 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 77, aac = 0
+
+2024-04-03 23:29:30,361 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 42, aac = 0
+
+2024-04-03 23:29:40,369 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 26, aac = 0
+
+2024-04-03 23:29:50,377 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 13, aac = 0
+
+2024-04-03 23:30:00,389 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 4, aac = 0
+
+2024-04-03 23:30:10,402 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 2, aac = 0
+
+2024-04-03 23:30:20,414 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 1, aac = 0
+
+2024-04-03 23:30:30,425 <Process-4:4128370, MainThread:140251529443136> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:34:35,340 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 19, aic = 65, aac = 0
+
+2024-04-03 23:34:45,393 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 42, aac = 0
+
+2024-04-03 23:34:55,406 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 30, aac = 0
+
+2024-04-03 23:35:05,417 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 26, aac = 0
+
+2024-04-03 23:35:15,429 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 22, aac = 0
+
+2024-04-03 23:35:25,441 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 19, aac = 0
+
+2024-04-03 23:35:35,454 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 12, aac = 0
+
+2024-04-03 23:35:45,465 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 8, aac = 0
+
+2024-04-03 23:35:55,474 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 6, aac = 0
+
+2024-04-03 23:36:05,485 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 92 items added, qic = 0, aic = 5, aac = 0
+
+2024-04-03 23:36:15,501 <Process-4:4131334, MainThread:139832427738944> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-03 23:36:54,665 <Process-9:2:4133975, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=_i0-12XqVJZ@OpenReview) added
+
+2024-04-03 23:36:56,348 <Process-9:2:4133975, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=_nF5imFKQI@OpenReview) added
+
+2024-04-03 23:36:58,095 <Process-6:1:4133941, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2022).PapersCoolPaperKimiSection(venue_ICML.2022_=sclar22a@v162@PMLR) added
+
+2024-04-03 23:37:00,062 <Process-7:6:4134045, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2021).PapersCoolPaperKimiSection(venue_NeurIPS.2021_=jgMyg3KkDb@OpenReview) added
+
+2024-04-03 23:37:01,883 <Process-7:3:4134024, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2024).PapersCoolPaperKimiSection(venue_ICLR.2024_=PsDFgTosqb@OpenReview) added
+
+2024-04-03 23:37:02,546 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 5476 items added, qic = 5115, aic = 288, aac = 12
+
+2024-04-03 23:37:04,166 <Process-9:2:4133975, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=Hu4r-dedqR0@OpenReview) added
+
+2024-04-03 23:37:06,009 <Process-7:6:4134045, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2021).PapersCoolPaperKimiSection(venue_NeurIPS.2021_=DKRcikndMGC@OpenReview) added
+
+2024-04-03 23:37:07,819 <Process-10:1:4133949, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=20-944@v23@JMLR) added
+
+2024-04-03 23:37:09,627 <Process-5:1:4133956, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2021).PapersCoolPaperKimiSection(venue_ICML.2021_=hao21c@v139@PMLR) added
+
+2024-04-03 23:37:11,390 <Process-6:2:4134010, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=cANkPsVtsw@OpenReview) added
+
+2024-04-03 23:37:12,857 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 11087 items added, qic = 10726, aic = 288, aac = 11
+
+2024-04-03 23:37:13,248 <Process-7:1:4133968, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2023).PapersCoolPaperKimiSection(venue_ICML.2023_=slumbers23a@v202@PMLR) added
+
+2024-04-03 23:37:15,779 <Process-10:2:4133995, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Kong_Indescribable_Multi-Modal_Spatial_Evaluator@CVPR2023@CVF) added
+
+2024-04-03 23:37:18,211 <Process-9:2:4133975, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=WE_vluYUL-X@OpenReview) added
+
+2024-04-03 23:37:21,089 <Process-7:6:4134045, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2021).PapersCoolPaperKimiSection(venue_NeurIPS.2021_=Mfi0LZmFB5a@OpenReview) added
+
+2024-04-03 23:37:22,866 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 14956 items added, qic = 14595, aic = 288, aac = 8
+
+2024-04-03 23:37:24,294 <Process-7:5:4134038, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2022).PapersCoolPaperKimiSection(venue_CVPR.2022_=Wang_Revisiting_the_Transferability_of_Supervised_Pretraining_An_MLP_Perspective@CVPR2022@CVF) added
+
+2024-04-03 23:37:27,893 <Process-10:2:4133995, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Weber_Power_Bundle_Adjustment_for_Large-Scale_3D_Reconstruction@CVPR2023@CVF) added
+
+2024-04-03 23:37:31,741 <Process-6:2:4134010, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=wFH5hZAwYz@OpenReview) added
+
+2024-04-03 23:37:32,878 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 17627 items added, qic = 17266, aic = 288, aac = 4
+
+2024-04-03 23:37:37,532 <Process-6:2:4134010, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=J8McuwS3zY@OpenReview) added
+
+2024-04-03 23:37:42,889 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 19267 items added, qic = 18906, aic = 288, aac = 3
+
+2024-04-03 23:37:44,193 <Process-6:2:4134010, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=iAcEmyhwk2@OpenReview) added
+
+2024-04-03 23:37:50,704 <Process-7:5:4134038, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2022).PapersCoolPaperKimiSection(venue_CVPR.2022_=Yang_Audio-Visual_Speech_Codecs_Rethinking_Audio-Visual_Speech_Enhancement_by_Re-Synthesis@CVPR2022@CVF) added
+
+2024-04-03 23:37:52,901 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 20815 items added, qic = 20454, aic = 288, aac = 3
+
+2024-04-03 23:37:58,151 <Process-6:2:4134010, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=81snFfE3vR@OpenReview) added
+
+2024-04-03 23:38:02,909 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 22106 items added, qic = 21745, aic = 288, aac = 3
+
+2024-04-03 23:38:09,526 <Process-7:5:4134038, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2022).PapersCoolPaperKimiSection(venue_CVPR.2022_=Pan_Distribution_Consistent_Neural_Architecture_Search@CVPR2022@CVF) added
+
+2024-04-03 23:38:12,921 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 22721 items added, qic = 22360, aic = 288, aac = 2
+
+2024-04-03 23:38:22,937 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23496 items added, qic = 23135, aic = 288, aac = 1
+
+2024-04-03 23:38:23,543 <Process-10:1:4133949, MainThread:139697505662784> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=LfHwpvDPGpx@OpenReview) added
+
+2024-04-03 23:38:32,949 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23392, aic = 288, aac = 0
+
+2024-04-03 23:38:42,961 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23392, aic = 288, aac = 0
+
+2024-04-03 23:38:52,969 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23392, aic = 288, aac = 0
+
+2024-04-03 23:39:02,981 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23392, aic = 288, aac = 0
+
+2024-04-03 23:39:12,993 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23392, aic = 288, aac = 0
+
+2024-04-03 23:39:23,005 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23391, aic = 288, aac = 0
+
+2024-04-03 23:39:33,013 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23389, aic = 288, aac = 0
+
+2024-04-03 23:39:43,025 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23389, aic = 288, aac = 0
+
+2024-04-03 23:39:53,033 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23389, aic = 288, aac = 0
+
+2024-04-03 23:40:03,046 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23388, aic = 288, aac = 0
+
+2024-04-03 23:40:13,059 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23388, aic = 288, aac = 0
+
+2024-04-03 23:40:23,069 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23388, aic = 288, aac = 0
+
+2024-04-03 23:40:33,077 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23388, aic = 288, aac = 0
+
+2024-04-03 23:40:43,085 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23387, aic = 288, aac = 0
+
+2024-04-03 23:40:53,097 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23387, aic = 288, aac = 0
+
+2024-04-03 23:41:03,106 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23387, aic = 288, aac = 0
+
+2024-04-03 23:41:13,117 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23387, aic = 288, aac = 0
+
+2024-04-03 23:41:23,130 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23387, aic = 288, aac = 0
+
+2024-04-03 23:41:33,141 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23386, aic = 288, aac = 0
+
+2024-04-03 23:41:43,153 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23385, aic = 288, aac = 0
+
+2024-04-03 23:41:53,167 <Process-4:4133822, MainThread:139697505662784> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23757 items added, qic = 23385, aic = 288, aac = 0
+
+2024-04-03 23:42:09,873 <Process-5:1:4140954, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01882) added
+
+2024-04-03 23:42:11,231 <Process-12:2:4141044, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2008).PapersCoolPaperKimiSection(venue_INTERSPEECH.2008_=toth08b@interspeech_2008@ISCA) added
+
+2024-04-03 23:42:12,655 <Process-6:3:4141091, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2011).PapersCoolPaperKimiSection(venue_INTERSPEECH.2011_=vanek11@interspeech_2011@ISCA) added
+
+2024-04-03 23:42:14,034 <Process-7:1:4140978, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2022).PapersCoolPaperKimiSection(venue_ICLR.2022_=2bO2x8NAIMB@OpenReview) added
+
+2024-04-03 23:42:15,508 <Process-14:2:4141022, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2005).PapersCoolPaperKimiSection(venue_INTERSPEECH.2005_=solewicz05@interspeech_2005@ISCA) added
+
+2024-04-03 23:42:17,301 <Process-8:1:4140989, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=5cAI0qXxyv@OpenReview) added
+
+2024-04-03 23:42:17,666 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 6376 items added, qic = 6008, aic = 288, aac = 19
+
+2024-04-03 23:42:18,736 <Process-9:2:4141029, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2012).PapersCoolPaperKimiSection(venue_INTERSPEECH.2012_=ziegler12@interspeech_2012@ISCA) added
+
+2024-04-03 23:42:20,145 <Process-6:2:4141061, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2006).PapersCoolPaperKimiSection(venue_INTERSPEECH.2006_=li06c@interspeech_2006@ISCA) added
+
+2024-04-03 23:42:21,889 <Process-9:3:4141069, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2013).PapersCoolPaperKimiSection(venue_INTERSPEECH.2013_=brackhane13@interspeech_2013@ISCA) added
+
+2024-04-03 23:42:23,258 <Process-6:2:4141061, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2006).PapersCoolPaperKimiSection(venue_INTERSPEECH.2006_=biatov06@interspeech_2006@ISCA) added
+
+2024-04-03 23:42:24,779 <Process-16:2:4141085, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2015).PapersCoolPaperKimiSection(venue_INTERSPEECH.2015_=cao15@interspeech_2015@ISCA) added
+
+2024-04-03 23:42:26,186 <Process-9:1:4141008, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2024).PapersCoolPaperKimiSection(venue_ICLR.2024_=E34AlVLN0v@OpenReview) added
+
+2024-04-03 23:42:27,501 <Process-7:3:4141077, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2007).PapersCoolPaperKimiSection(venue_INTERSPEECH.2007_=rangarajan07@interspeech_2007@ISCA) added
+
+2024-04-03 23:42:27,686 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 13461 items added, qic = 13093, aic = 288, aac = 17
+
+2024-04-03 23:42:28,839 <Process-8:1:4140989, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=OysfLgrk8mk@OpenReview) added
+
+2024-04-03 23:42:30,723 <Process-8:1:4140989, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=8oJHwb3Sgp@OpenReview) added
+
+2024-04-03 23:42:33,925 <Process-8:1:4140989, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=PQOlkgsBsik@OpenReview) added
+
+2024-04-03 23:42:37,697 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 17161 items added, qic = 16793, aic = 288, aac = 3
+
+2024-04-03 23:42:39,034 <Process-8:1:4140989, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2023).PapersCoolPaperKimiSection(venue_ICLR.2023_=Zy350cRstc6@OpenReview) added
+
+2024-04-03 23:42:46,087 <Process-9:1:4141008, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2024).PapersCoolPaperKimiSection(venue_ICLR.2024_=wcaE4Dfgt8@OpenReview) added
+
+2024-04-03 23:42:47,705 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18673 items added, qic = 18301, aic = 288, aac = 1
+
+2024-04-03 23:42:57,713 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18577, aic = 288, aac = 0
+
+2024-04-03 23:43:07,725 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18543, aic = 288, aac = 0
+
+2024-04-03 23:43:17,734 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18487, aic = 288, aac = 0
+
+2024-04-03 23:43:27,746 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18453, aic = 288, aac = 0
+
+2024-04-03 23:43:37,758 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18440, aic = 288, aac = 0
+
+2024-04-03 23:43:47,769 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18424, aic = 288, aac = 0
+
+2024-04-03 23:43:57,777 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18422, aic = 288, aac = 0
+
+2024-04-03 23:44:07,789 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18415, aic = 288, aac = 0
+
+2024-04-03 23:44:17,801 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18415, aic = 288, aac = 0
+
+2024-04-03 23:44:27,813 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18399, aic = 288, aac = 0
+
+2024-04-03 23:44:37,825 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18399, aic = 288, aac = 0
+
+2024-04-03 23:44:47,837 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18399, aic = 288, aac = 0
+
+2024-04-03 23:44:57,849 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18399, aic = 288, aac = 0
+
+2024-04-03 23:45:07,861 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18396, aic = 288, aac = 0
+
+2024-04-03 23:45:17,874 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18396, aic = 288, aac = 0
+
+2024-04-03 23:45:27,885 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18396, aic = 288, aac = 0
+
+2024-04-03 23:45:37,893 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18392, aic = 288, aac = 0
+
+2024-04-03 23:45:47,905 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18389, aic = 288, aac = 0
+
+2024-04-03 23:45:57,917 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18384, aic = 288, aac = 0
+
+2024-04-03 23:46:07,925 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18374, aic = 288, aac = 0
+
+2024-04-03 23:46:17,937 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18371, aic = 288, aac = 0
+
+2024-04-03 23:46:27,950 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18364, aic = 288, aac = 0
+
+2024-04-03 23:46:37,961 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18356, aic = 288, aac = 0
+
+2024-04-03 23:46:47,973 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18354, aic = 288, aac = 0
+
+2024-04-03 23:46:57,985 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18353, aic = 288, aac = 0
+
+2024-04-03 23:47:07,993 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18347, aic = 288, aac = 0
+
+2024-04-03 23:47:18,001 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18345, aic = 288, aac = 0
+
+2024-04-03 23:47:28,013 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18344, aic = 288, aac = 0
+
+2024-04-03 23:47:38,025 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18344, aic = 288, aac = 0
+
+2024-04-03 23:47:48,033 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18342, aic = 288, aac = 0
+
+2024-04-03 23:47:58,042 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18339, aic = 288, aac = 0
+
+2024-04-03 23:48:08,054 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18339, aic = 288, aac = 0
+
+2024-04-03 23:48:18,067 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18338, aic = 288, aac = 0
+
+2024-04-03 23:48:28,077 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18336, aic = 288, aac = 0
+
+2024-04-03 23:48:38,089 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18333, aic = 288, aac = 0
+
+2024-04-03 23:48:48,101 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18333, aic = 288, aac = 0
+
+2024-04-03 23:48:58,115 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18331, aic = 288, aac = 0
+
+2024-04-03 23:49:08,125 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18330, aic = 288, aac = 0
+
+2024-04-03 23:49:18,138 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18330, aic = 288, aac = 0
+
+2024-04-03 23:49:28,149 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18329, aic = 288, aac = 0
+
+2024-04-03 23:49:38,162 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18326, aic = 288, aac = 0
+
+2024-04-03 23:49:48,173 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18325, aic = 288, aac = 0
+
+2024-04-03 23:49:58,185 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18325, aic = 288, aac = 0
+
+2024-04-03 23:50:08,193 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18324, aic = 288, aac = 0
+
+2024-04-03 23:50:18,205 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18322, aic = 288, aac = 0
+
+2024-04-03 23:50:28,218 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18322, aic = 288, aac = 0
+
+2024-04-03 23:50:38,229 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18321, aic = 288, aac = 0
+
+2024-04-03 23:50:48,241 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18321, aic = 288, aac = 0
+
+2024-04-03 23:50:58,253 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18321, aic = 288, aac = 0
+
+2024-04-03 23:51:08,265 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18321, aic = 288, aac = 0
+
+2024-04-03 23:51:18,277 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18319, aic = 288, aac = 0
+
+2024-04-03 23:51:28,290 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18318, aic = 288, aac = 0
+
+2024-04-03 23:51:38,303 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18318, aic = 288, aac = 0
+
+2024-04-03 23:51:48,313 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18318, aic = 288, aac = 0
+
+2024-04-03 23:51:58,326 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18316, aic = 288, aac = 0
+
+2024-04-03 23:52:08,337 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18316, aic = 288, aac = 0
+
+2024-04-03 23:52:18,349 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18314, aic = 288, aac = 0
+
+2024-04-03 23:52:28,361 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18314, aic = 288, aac = 0
+
+2024-04-03 23:52:38,373 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18313, aic = 288, aac = 0
+
+2024-04-03 23:52:48,385 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18313, aic = 288, aac = 0
+
+2024-04-03 23:52:58,397 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18313, aic = 288, aac = 0
+
+2024-04-03 23:53:08,405 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18313, aic = 288, aac = 0
+
+2024-04-03 23:53:18,416 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18313, aic = 288, aac = 0
+
+2024-04-03 23:53:28,425 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18313, aic = 288, aac = 0
+
+2024-04-03 23:53:38,433 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18310, aic = 288, aac = 0
+
+2024-04-03 23:53:48,445 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18309, aic = 288, aac = 0
+
+2024-04-03 23:53:58,457 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18309, aic = 288, aac = 0
+
+2024-04-03 23:54:08,469 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18309, aic = 288, aac = 0
+
+2024-04-03 23:54:18,481 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18306, aic = 288, aac = 0
+
+2024-04-03 23:54:28,493 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18306, aic = 288, aac = 0
+
+2024-04-03 23:54:38,506 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:54:48,517 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:54:58,529 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:55:08,541 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:55:18,554 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:55:28,565 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:55:38,573 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:55:48,585 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:55:58,597 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:56:08,605 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:56:18,617 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:56:28,625 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:56:38,636 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:56:48,645 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:56:58,657 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:57:08,669 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:57:18,677 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:57:28,689 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:57:38,697 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:57:48,709 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:57:58,721 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:58:08,733 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:58:18,745 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:58:28,754 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:58:38,766 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:58:48,777 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:58:58,785 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:59:08,797 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:59:18,810 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:59:28,821 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:59:38,833 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:59:48,845 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-03 23:59:58,854 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-04 00:00:08,865 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-04 00:00:18,874 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-04 00:00:28,885 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18304, aic = 288, aac = 0
+
+2024-04-04 00:00:38,897 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18303, aic = 288, aac = 0
+
+2024-04-04 00:00:48,909 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18300, aic = 288, aac = 0
+
+2024-04-04 00:00:58,921 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18298, aic = 288, aac = 0
+
+2024-04-04 00:01:08,933 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18298, aic = 288, aac = 0
+
+2024-04-04 00:01:18,945 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18298, aic = 288, aac = 0
+
+2024-04-04 00:01:28,957 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18297, aic = 288, aac = 0
+
+2024-04-04 00:01:38,969 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18297, aic = 288, aac = 0
+
+2024-04-04 00:01:48,982 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18297, aic = 288, aac = 0
+
+2024-04-04 00:01:58,994 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18293, aic = 288, aac = 0
+
+2024-04-04 00:02:09,005 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18293, aic = 288, aac = 0
+
+2024-04-04 00:02:19,021 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18293, aic = 288, aac = 0
+
+2024-04-04 00:02:29,029 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18293, aic = 288, aac = 0
+
+2024-04-04 00:02:39,041 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18291, aic = 288, aac = 0
+
+2024-04-04 00:02:49,049 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18291, aic = 288, aac = 0
+
+2024-04-04 00:02:59,061 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18291, aic = 288, aac = 0
+
+2024-04-04 00:03:09,069 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18290, aic = 288, aac = 0
+
+2024-04-04 00:03:19,081 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18290, aic = 288, aac = 0
+
+2024-04-04 00:03:29,093 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18290, aic = 288, aac = 0
+
+2024-04-04 00:03:39,105 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18290, aic = 288, aac = 0
+
+2024-04-04 00:03:49,117 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18289, aic = 288, aac = 0
+
+2024-04-04 00:03:59,125 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18289, aic = 288, aac = 0
+
+2024-04-04 00:04:09,137 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18289, aic = 288, aac = 0
+
+2024-04-04 00:04:19,150 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18282, aic = 288, aac = 0
+
+2024-04-04 00:04:29,161 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18282, aic = 288, aac = 0
+
+2024-04-04 00:04:39,173 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18282, aic = 288, aac = 0
+
+2024-04-04 00:04:49,181 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18282, aic = 288, aac = 0
+
+2024-04-04 00:04:59,193 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18282, aic = 288, aac = 0
+
+2024-04-04 00:05:09,205 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18281, aic = 288, aac = 0
+
+2024-04-04 00:05:19,219 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18280, aic = 288, aac = 0
+
+2024-04-04 00:05:29,229 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18280, aic = 288, aac = 0
+
+2024-04-04 00:05:39,237 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18280, aic = 288, aac = 0
+
+2024-04-04 00:05:49,249 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18280, aic = 288, aac = 0
+
+2024-04-04 00:05:59,257 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18280, aic = 288, aac = 0
+
+2024-04-04 00:06:09,270 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18280, aic = 288, aac = 0
+
+2024-04-04 00:06:19,281 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:06:29,290 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:06:39,302 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:06:49,333 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:06:59,345 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:07:09,353 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:07:19,367 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18278, aic = 288, aac = 0
+
+2024-04-04 00:07:29,377 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:07:39,385 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:07:49,397 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:07:59,409 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:08:09,422 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:08:19,433 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:08:29,445 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:08:39,458 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18276, aic = 288, aac = 0
+
+2024-04-04 00:08:49,469 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 18275, aic = 288, aac = 0
+
+2024-04-04 00:08:59,477 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 14715, aic = 246, aac = 0
+
+2024-04-04 00:09:09,485 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 10696, aic = 230, aac = 0
+
+2024-04-04 00:09:19,493 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 7195, aic = 217, aac = 0
+
+2024-04-04 00:09:29,501 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 18949 items added, qic = 3247, aic = 223, aac = 0
+
+2024-04-04 00:09:38,290 <Process-7:5:4152598, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=zhang19b@interspeech_2019@ISCA) added
+
+2024-04-04 00:09:39,522 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 20056 items added, qic = 657, aic = 244, aac = 10
+
+2024-04-04 00:09:40,609 <Process-13:1:4152580, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=tyagi20@interspeech_2020@ISCA) added
+
+2024-04-04 00:09:44,170 <Process-16:3:4152581, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2021).PapersCoolPaperKimiSection(venue_INTERSPEECH.2021_=wang21ba@interspeech_2021@ISCA) added
+
+2024-04-04 00:09:47,486 <Process-16:3:4152581, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2021).PapersCoolPaperKimiSection(venue_INTERSPEECH.2021_=haider21@interspeech_2021@ISCA) added
+
+2024-04-04 00:09:49,533 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 23136 items added, qic = 469, aic = 242, aac = 7
+
+2024-04-04 00:09:50,832 <Process-16:4:4152638, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=hu22b@interspeech_2022@ISCA) added
+
+2024-04-04 00:09:54,872 <Process-16:3:4152581, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2021).PapersCoolPaperKimiSection(venue_INTERSPEECH.2021_=bhati21@interspeech_2021@ISCA) added
+
+2024-04-04 00:09:57,947 <Process-7:9:4152923, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_IWSLT.2015).PapersCoolPaperKimiSection(venue_IWSLT.2015_=2015.iwslt-papers.7@ACL) added
+
+2024-04-04 00:09:59,558 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 25990 items added, qic = 213, aic = 189, aac = 21
+
+2024-04-04 00:10:00,565 <Process-16:11:4153176, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2022).PapersCoolPaperKimiSection(venue_ACL.2022_=2022.findings-acl.320@ACL) added
+
+2024-04-04 00:10:02,208 <Process-16:4:4152638, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=horii22@interspeech_2022@ISCA) added
+
+2024-04-04 00:10:04,087 <Process-12:7:4153144, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2023).PapersCoolPaperKimiSection(venue_ICCV.2023_=Ma_Rethinking_Safe_Semi-supervised_Learning_Transferring_the_Open-set_Problem_to_A@ICCV2023@CVF) added
+
+2024-04-04 00:10:05,990 <Process-8:8:4153220, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2005@ACL) added
+
+2024-04-04 00:10:07,760 <Process-16:13:4153253, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2021).PapersCoolPaperKimiSection(venue_ICCV.2021_=Zhang_Exploration_and_Estimation_for_Model_Compression@ICCV2021@CVF) added
+
+2024-04-04 00:10:09,647 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 31693 items added, qic = 4810, aic = 236, aac = 35
+
+2024-04-04 00:10:09,722 <Process-16:6:4153038, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2018).PapersCoolPaperKimiSection(venue_EMNLP.2018_=D18-1400@ACL) added
+
+2024-04-04 00:10:11,457 <Process-15:12:4153166, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2021).PapersCoolPaperKimiSection(venue_EMNLP.2021_=2021.findings-emnlp.221@ACL) added
+
+2024-04-04 00:10:13,173 <Process-16:4:4152638, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=lehecka22@interspeech_2022@ISCA) added
+
+2024-04-04 00:10:15,131 <Process-8:6:4153173, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2013).PapersCoolPaperKimiSection(venue_ACL.2013_=P13-1130@ACL) added
+
+2024-04-04 00:10:16,832 <Process-16:16:4153307, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=ue4gP8ZKiWb@OpenReview) added
+
+2024-04-04 00:10:18,646 <Process-16:15:4153300, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Han_Clothing-Change_Feature_Augmentation_for_Person_Re-Identification@CVPR2023@CVF) added
+
+2024-04-04 00:10:19,657 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 37524 items added, qic = 9506, aic = 229, aac = 27
+
+2024-04-04 00:10:20,155 <Process-16:17:4153314, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2021).PapersCoolPaperKimiSection(venue_ICML.2021_=tan21a@v139@PMLR) added
+
+2024-04-04 00:10:22,065 <Process-15:13:4153203, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2023).PapersCoolPaperKimiSection(venue_EMNLP.2023_=2023.findings-emnlp.638@ACL) added
+
+2024-04-04 00:10:23,882 <Process-16:12:4153204, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2019).PapersCoolPaperKimiSection(venue_ICCV.2019_=Ryou_Anchor_Loss_Modulating_Loss_Scale_Based_on_Prediction_Difficulty@ICCV2019@CVF) added
+
+2024-04-04 00:10:25,703 <Process-15:12:4153166, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2021).PapersCoolPaperKimiSection(venue_EMNLP.2021_=2021.emnlp-main.778@ACL) added
+
+2024-04-04 00:10:27,822 <Process-15:12:4153166, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2021).PapersCoolPaperKimiSection(venue_EMNLP.2021_=2021.emnlp-main.729@ACL) added
+
+2024-04-04 00:10:29,686 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 43002 items added, qic = 13555, aic = 248, aac = 23
+
+2024-04-04 00:10:29,693 <Process-12:11:4153293, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2022).PapersCoolPaperKimiSection(venue_ICML.2022_=sharma22c@v162@PMLR) added
+
+2024-04-04 00:10:31,727 <Process-8:5:4153142, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2022).PapersCoolPaperKimiSection(venue_EMNLP.2022_=2022.emnlp-main.809@ACL) added
+
+2024-04-04 00:10:33,722 <Process-8:4:4153096, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2020).PapersCoolPaperKimiSection(venue_EMNLP.2020_=2020.emnlp-main.427@ACL) added
+
+2024-04-04 00:10:35,788 <Process-8:5:4153142, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2022).PapersCoolPaperKimiSection(venue_EMNLP.2022_=2022.emnlp-main.704@ACL) added
+
+2024-04-04 00:10:37,917 <Process-8:5:4153142, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2022).PapersCoolPaperKimiSection(venue_EMNLP.2022_=2022.emnlp-main.645@ACL) added
+
+2024-04-04 00:10:39,707 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 48024 items added, qic = 16944, aic = 218, aac = 20
+
+2024-04-04 00:10:39,911 <Process-16:14:4153286, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2021).PapersCoolPaperKimiSection(venue_CVPR.2021_=Bahat_Whats_in_the_Image_Explorable_Decoding_of_Compressed_Images@CVPR2021@CVF) added
+
+2024-04-04 00:10:41,807 <Process-15:12:4153166, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2021).PapersCoolPaperKimiSection(venue_EMNLP.2021_=2021.emnlp-main.341@ACL) added
+
+2024-04-04 00:10:44,050 <Process-16:16:4153307, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=Xg-yZos9qJQ@OpenReview) added
+
+2024-04-04 00:10:46,056 <Process-8:5:4153142, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2022).PapersCoolPaperKimiSection(venue_EMNLP.2022_=2022.emnlp-main.411@ACL) added
+
+2024-04-04 00:10:48,121 <Process-8:4:4153096, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2020).PapersCoolPaperKimiSection(venue_EMNLP.2020_=2020.emnlp-main.3@ACL) added
+
+2024-04-04 00:10:49,727 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 52970 items added, qic = 20031, aic = 222, aac = 17
+
+2024-04-04 00:10:50,359 <Process-16:16:4153307, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=vjKIKdXijK@OpenReview) added
+
+2024-04-04 00:10:52,598 <Process-16:11:4153176, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2022).PapersCoolPaperKimiSection(venue_ACL.2022_=2022.acl-long.140@ACL) added
+
+2024-04-04 00:10:54,987 <Process-16:15:4153300, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Zuo_Natural_Language-Assisted_Sign_Language_Recognition@CVPR2023@CVF) added
+
+2024-04-04 00:10:57,427 <Process-16:11:4153176, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2022).PapersCoolPaperKimiSection(venue_ACL.2022_=2022.acl-long.31@ACL) added
+
+2024-04-04 00:10:59,742 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 57230 items added, qic = 21935, aic = 209, aac = 11
+
+2024-04-04 00:11:00,029 <Process-12:8:4153198, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2022).PapersCoolPaperKimiSection(venue_CVPR.2022_=Khakhulin_Stereo_Magnification_With_Multi-Layer_Images@CVPR2022@CVF) added
+
+2024-04-04 00:11:02,755 <Process-16:16:4153307, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=lgj33-O1Ely@OpenReview) added
+
+2024-04-04 00:11:05,674 <Process-15:13:4153203, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_EMNLP.2023).PapersCoolPaperKimiSection(venue_EMNLP.2023_=2023.emnlp-main.362@ACL) added
+
+2024-04-04 00:11:08,735 <Process-12:9:4153227, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2021).PapersCoolPaperKimiSection(venue_NeurIPS.2021_=lZJHxMxUhV_@OpenReview) added
+
+2024-04-04 00:11:09,753 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 60768 items added, qic = 22088, aic = 238, aac = 8
+
+2024-04-04 00:11:12,120 <Process-12:10:4153279, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=OlSTwlz96r@OpenReview) added
+
+2024-04-04 00:11:17,711 <Process-16:15:4153300, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Foo_System-Status-Aware_Adaptive_Network_for_Online_Streaming_Video_Understanding@CVPR2023@CVF) added
+
+2024-04-04 00:11:19,775 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 62740 items added, qic = 20394, aic = 188, aac = 5
+
+2024-04-04 00:11:23,830 <Process-8:10:4153272, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2023).PapersCoolPaperKimiSection(venue_ACL.2023_=2023.acl-long.559@ACL) added
+
+2024-04-04 00:11:29,785 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 64258 items added, qic = 17709, aic = 247, aac = 4
+
+2024-04-04 00:11:31,668 <Process-12:10:4153279, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=xtADRDRsM2@OpenReview) added
+
+2024-04-04 00:11:39,797 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 65200 items added, qic = 16060, aic = 237, aac = 3
+
+2024-04-04 00:11:47,392 <Process-16:15:4153300, MainThread:140046854821696> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Dong_Implicit_Identity_Leakage_The_Stumbling_Block_to_Improving_Deepfake_Detection@CVPR2023@CVF) added
+
+2024-04-04 00:11:49,805 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 65613 items added, qic = 12432, aic = 228, aac = 2
+
+2024-04-04 00:11:59,817 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 65977 items added, qic = 8488, aic = 237, aac = 2
+
+2024-04-04 00:12:09,841 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 66381 items added, qic = 2591, aic = 240, aac = 1
+
+2024-04-04 00:12:19,849 <Process-4:4140854, MainThread:140046854821696> (process.py:run:108 -> queue.py:report:63) from logger `RFC.rootqueue`
+[INFO] all items finished, RootQueue will be closed
+
+2024-04-04 01:44:21,482 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=20-021@v23@JMLR) added
+
+2024-04-04 01:44:22,942 <Process-16:2:21365, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2019).PapersCoolPaperKimiSection(venue_ICCV.2019_=Gao_C-MIDN_Coupled_Multiple_Instance_Detection_Network_With_Segmentation_Guidance_for@ICCV2019@CVF) added
+
+2024-04-04 01:44:24,461 <Process-10:1:21322, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2023).PapersCoolPaperKimiSection(venue_ICML.2023_=wagenmaker23a@v202@PMLR) added
+
+2024-04-04 01:44:25,803 <Process-16:1:21285, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2022).PapersCoolPaperKimiSection(venue_ICLR.2022_=JPkQwEdYn8@OpenReview) added
+
+2024-04-04 01:44:27,399 <Process-8:1:21292, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2021).PapersCoolPaperKimiSection(venue_NeurIPS.2021_=U8xJty6RHH@OpenReview) added
+
+2024-04-04 01:44:28,783 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 6121 items added, qic = 5765, aic = 288, aac = 17
+
+2024-04-04 01:44:28,820 <Process-15:2:21384, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2021).PapersCoolPaperKimiSection(venue_ICCV.2021_=Wang_Sub-Bit_Neural_Networks_Learning_To_Compress_and_Accelerate_Binary_Neural@ICCV2021@CVF) added
+
+2024-04-04 01:44:30,110 <Process-16:2:21365, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2019).PapersCoolPaperKimiSection(venue_ICCV.2019_=Duan_CenterNet_Keypoint_Triplets_for_Object_Detection@ICCV2019@CVF) added
+
+2024-04-04 01:44:31,393 <Process-8:1:21292, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2021).PapersCoolPaperKimiSection(venue_NeurIPS.2021_=dZ33IBX-uRm@OpenReview) added
+
+2024-04-04 01:44:32,912 <Process-12:1:21319, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2021).PapersCoolPaperKimiSection(venue_ICLR.2021_=L7WD8ZdscQ5@OpenReview) added
+
+2024-04-04 01:44:34,241 <Process-11:3:21407, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2022).PapersCoolPaperKimiSection(venue_CVPR.2022_=Wang_Remember_the_Difference_Cross-Domain_Few-Shot_Semantic_Segmentation_via_Meta-Memory_Transfer@CVPR2022@CVF) added
+
+2024-04-04 01:44:35,503 <Process-14:2:21371, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2021).PapersCoolPaperKimiSection(venue_CVPR.2021_=Tan_Practical_Wide-Angle_Portraits_Correction_With_Deep_Structured_Models@CVPR2021@CVF) added
+
+2024-04-04 01:44:36,850 <Process-7:1:21318, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2022).PapersCoolPaperKimiSection(venue_ICML.2022_=tran22b@v162@PMLR) added
+
+2024-04-04 01:44:38,229 <Process-12:1:21319, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICLR.2021).PapersCoolPaperKimiSection(venue_ICLR.2021_=US-TP-xnXI@OpenReview) added
+
+2024-04-04 01:44:38,801 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 13750 items added, qic = 13394, aic = 288, aac = 17
+
+2024-04-04 01:44:39,581 <Process-11:4:21414, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2023).PapersCoolPaperKimiSection(venue_ACL.2023_=2023.findings-acl.24@ACL) added
+
+2024-04-04 01:44:40,950 <Process-12:2:21400, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2023).PapersCoolPaperKimiSection(venue_CVPR.2023_=Yang_ReCo_Region-Controlled_Text-to-Image_Generation@CVPR2023@CVF) added
+
+2024-04-04 01:44:42,525 <Process-10:1:21322, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2023).PapersCoolPaperKimiSection(venue_ICML.2023_=li23al@v202@PMLR) added
+
+2024-04-04 01:44:43,947 <Process-7:1:21318, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2022).PapersCoolPaperKimiSection(venue_ICML.2022_=vial22a@v162@PMLR) added
+
+2024-04-04 01:44:45,392 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=JkEz1fqN3hX@OpenReview) added
+
+2024-04-04 01:44:47,005 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=LqGA2JMLwBw@OpenReview) added
+
+2024-04-04 01:44:48,814 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 20396 items added, qic = 20040, aic = 288, aac = 12
+
+2024-04-04 01:44:48,941 <Process-13:2:21383, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICCV.2023).PapersCoolPaperKimiSection(venue_ICCV.2023_=Hui_Efficient_LiDAR_Point_Cloud_Oversegmentation_Network@ICCV2023@CVF) added
+
+2024-04-04 01:44:50,569 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=mhp4wLwiAI-@OpenReview) added
+
+2024-04-04 01:44:52,231 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=6Nh0D44tRAz@OpenReview) added
+
+2024-04-04 01:44:54,174 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=lWq3KDEIXIE@OpenReview) added
+
+2024-04-04 01:44:56,360 <Process-10:1:21322, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ICML.2023).PapersCoolPaperKimiSection(venue_ICML.2023_=defazio23a@v202@PMLR) added
+
+2024-04-04 01:44:58,722 <Process-11:3:21407, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2022).PapersCoolPaperKimiSection(venue_CVPR.2022_=Dong_Node_Representation_Learning_in_Graph_via_Node-to-Neighbourhood_Mutual_Information_Maximization@CVPR2022@CVF) added
+
+2024-04-04 01:44:58,825 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 25644 items added, qic = 25288, aic = 288, aac = 9
+
+2024-04-04 01:45:00,994 <Process-11:4:21414, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_ACL.2023).PapersCoolPaperKimiSection(venue_ACL.2023_=2023.acl-long.69@ACL) added
+
+2024-04-04 01:45:03,527 <Process-14:2:21371, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_CVPR.2021).PapersCoolPaperKimiSection(venue_CVPR.2021_=Liu_Rank-One_Prior_Toward_Real-Time_Scene_Recovery@CVPR2021@CVF) added
+
+2024-04-04 01:45:08,362 <Process-11:1:21306, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2022).PapersCoolPaperKimiSection(venue_NeurIPS.2022_=IPcgkUgw3t1@OpenReview) added
+
+2024-04-04 01:45:08,837 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 28756 items added, qic = 28400, aic = 288, aac = 4
+
+2024-04-04 01:45:18,845 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 29564 items added, qic = 29208, aic = 288, aac = 2
+
+2024-04-04 01:45:21,238 <Process-6:1:21312, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=qi0Zrm6E5E@OpenReview) added
+
+2024-04-04 01:45:28,857 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 30201 items added, qic = 29845, aic = 288, aac = 2
+
+2024-04-04 01:45:36,602 <Process-6:1:21312, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=AKAMNDe2Sw@OpenReview) added
+
+2024-04-04 01:45:38,865 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 30924 items added, qic = 30568, aic = 288, aac = 1
+
+2024-04-04 01:45:47,929 <Process-6:1:21312, MainThread:139697072588608> (item.py:_add_items_sinle_process:209 -> queue.py:add:53) from logger `RFC.rootqueue`
+[INFO] PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=7blSUMwe7R@OpenReview) added
+
+2024-04-04 01:45:48,877 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 31814 items added, qic = 31458, aic = 288, aac = 1
+
+2024-04-04 01:45:58,889 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 32054, aic = 288, aac = 0
+
+2024-04-04 01:46:08,900 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 32015, aic = 288, aac = 0
+
+2024-04-04 01:46:18,913 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 32015, aic = 288, aac = 0
+
+2024-04-04 01:46:28,922 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 32013, aic = 288, aac = 0
+
+2024-04-04 01:46:38,933 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 32009, aic = 288, aac = 0
+
+2024-04-04 01:46:48,945 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 32005, aic = 288, aac = 0
+
+2024-04-04 01:46:58,955 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31996, aic = 288, aac = 0
+
+2024-04-04 01:47:08,965 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31996, aic = 288, aac = 0
+
+2024-04-04 01:47:18,977 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31995, aic = 288, aac = 0
+
+2024-04-04 01:47:28,990 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31989, aic = 288, aac = 0
+
+2024-04-04 01:47:39,001 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31989, aic = 288, aac = 0
+
+2024-04-04 01:47:49,014 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31982, aic = 288, aac = 0
+
+2024-04-04 01:47:59,026 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31982, aic = 288, aac = 0
+
+2024-04-04 01:48:09,038 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:48:19,049 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:48:29,058 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:48:39,071 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:48:49,081 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:48:59,093 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:49:09,105 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:49:19,117 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:49:29,129 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:49:39,141 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:49:49,153 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:49:59,157 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:50:09,169 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:50:19,181 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:50:29,193 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:50:39,206 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:50:49,218 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:50:59,229 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:51:09,237 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:51:19,246 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:51:29,257 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:51:39,269 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:51:49,277 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:51:59,285 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:52:09,298 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:52:19,309 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:52:29,322 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:52:39,334 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:52:49,345 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:52:59,357 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:53:09,369 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:53:19,381 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:53:29,393 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:53:39,405 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:53:49,413 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31978, aic = 288, aac = 0
+
+2024-04-04 01:53:59,425 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:54:09,434 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:54:19,445 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:54:29,457 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:54:39,469 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:54:49,477 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:54:59,489 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:55:09,497 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:55:19,505 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:55:29,513 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:55:39,521 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:55:49,533 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:55:59,545 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:56:09,553 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:56:19,561 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:56:29,574 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:56:39,585 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:56:49,594 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:56:59,605 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:57:09,617 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:57:19,625 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:57:29,637 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:57:39,645 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:57:49,657 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:57:59,669 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:58:09,680 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:58:19,693 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:58:29,706 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:58:39,718 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:58:49,737 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:58:59,746 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:59:09,757 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:59:19,774 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:59:29,789 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:59:39,821 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:59:49,833 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 01:59:59,845 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:00:09,854 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:00:19,866 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:00:29,877 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:00:39,889 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:00:49,901 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:00:59,909 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:01:09,917 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:01:19,925 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:01:29,936 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:01:39,945 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:01:49,959 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:01:59,970 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:02:09,981 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:02:20,073 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31974, aic = 288, aac = 0
+
+2024-04-04 02:02:30,085 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31972, aic = 288, aac = 0
+
+2024-04-04 02:02:40,099 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31972, aic = 288, aac = 0
+
+2024-04-04 02:02:50,109 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31969, aic = 288, aac = 0
+
+2024-04-04 02:03:00,117 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31969, aic = 288, aac = 0
+
+2024-04-04 02:03:10,129 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31968, aic = 288, aac = 0
+
+2024-04-04 02:03:20,141 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31968, aic = 288, aac = 0
+
+2024-04-04 02:03:30,149 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31968, aic = 288, aac = 0
+
+2024-04-04 02:03:40,157 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31968, aic = 288, aac = 0
+
+2024-04-04 02:03:50,169 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31960, aic = 288, aac = 0
+
+2024-04-04 02:04:00,193 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31960, aic = 288, aac = 0
+
+2024-04-04 02:04:10,229 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31960, aic = 288, aac = 0
+
+2024-04-04 02:04:20,241 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31957, aic = 288, aac = 0
+
+2024-04-04 02:04:30,249 <Process-4:21161, MainThread:139697072588608> (process.py:run:108 -> queue.py:report:65) from logger `RFC.rootqueue`
+[INFO] 32410 items added, qic = 31956, aic = 288, aac = 0
+

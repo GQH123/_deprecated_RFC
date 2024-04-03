@@ -1,0 +1,100 @@
+{
+    "'MethodSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'URLSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'RefererSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "url": "RefererSetter._url({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "host": "RefererSetter._host({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'CookiesSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "file": "CookiesSetter._read_from_file({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'path': <Parameter \"path\">, 'type': <Parameter \"type='text'\">, 'sep': <Parameter \"sep='; '\">, 'cont': <Parameter \"cont='='\">, 'id2rank': <Parameter \"id2rank: Optional[Callable[[Any], int]] = None\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'ParamsSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'PayloadSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'ProxiesSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "api": "ProxiesSetter._set_api_info({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'api_type': <Parameter \"api_type\">, 'api_key': <Parameter \"api_key\">, 'api_passwd': <Parameter \"api_passwd\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'StreamSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'IsLeafSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'RetryLimitSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'TimeoutSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'UserAgentSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "random": "UserAgentSetter._random({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'type': <Parameter \"type='random'\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'HeadersSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "switch": "HeadersSetter._switch({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'type': <Parameter \"type='default'\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'SaveDirSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "auto": "SaveDirSetter._auto({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'prefix': <Parameter \"prefix\">, 'sep': <Parameter \"sep\">, 'kwargs': <Parameter \"**kwargs\">})"
+    },
+    "'BloodlineSetter'": {
+        "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "inherit": "BloodlineSetter._inherit({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, '_bld': <Parameter \"_bld=None\">, 'kwargs': <Parameter \"**kwargs\">})"
+    }
+}
