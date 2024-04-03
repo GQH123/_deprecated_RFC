@@ -196,7 +196,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
     # SUBCLASS
     
     @classmethod
-    def _add_items_sinle_process(cls, ids, extra_args, extra_kwargs) -> None:
+    def _add_items_sinle_process(cls, ids, items_kwargs, extra_args, extra_kwargs) -> None:
 
         def _reduce_active_adder_count():
             with get_global_lock():
@@ -204,14 +204,16 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         
         try:
             for id in ids[::-1]:  # add new items in reversed order
-                RootQueue.add(cls(id, *extra_args, **extra_kwargs))  # add items to root queue
+                _extra_kwargs = items_kwargs.pop(-1) if items_kwargs is not None else {}
+                _extra_kwargs.update(extra_kwargs)
+                RootQueue.add(cls(id, *extra_args, **_extra_kwargs))  # add items to root queue
         except Exception as e:
             _reduce_active_adder_count()
             raise e
         _reduce_active_adder_count()
 
     @classmethod
-    def _add_items(cls, ids, *extra_args, **extra_kwargs) -> None:  # must be executed after starting RootQueue
+    def _add_items(cls, ids, items_kwargs=None, *extra_args, **extra_kwargs) -> None:  # must be executed after starting RootQueue
         """
             Add new items to `RootQueue`.
         """
@@ -233,6 +235,11 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
 
         if 'bloodline' not in extra_kwargs:
            cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items")
+           
+        if items_kwargs is not None:
+            if len(items_kwargs) != len(ids):
+                cls._logger.error(f"length of items_kwargs {len(items_kwargs)} not equal to length of ids {len(ids)}")
+                assert False
     
         processes = []
         nproc = min(1, cls.requestor_args['nproc'])
@@ -244,7 +251,8 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         for i in range(nproc):
             lower_n_ids = n_ids * i // nproc
             upper_n_ids = n_ids * (i + 1) // nproc
-            processes.append(Process(target=cls._add_items_sinle_process, args=(ids[lower_n_ids:upper_n_ids], extra_args, extra_kwargs)))
+            items_kwargs = items_kwargs[lower_n_ids:upper_n_ids] if items_kwargs is not None else None
+            processes.append(Process(target=cls._add_items_sinle_process, args=(ids[lower_n_ids:upper_n_ids], items_kwargs, extra_args, extra_kwargs)))
             processes[i].start()
         
     @classmethod
