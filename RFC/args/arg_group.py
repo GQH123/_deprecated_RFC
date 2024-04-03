@@ -220,7 +220,7 @@ class SessionArgs(Args):
         'cookies': {},
         'proxies': {},  # example: {'http': 'foo.bar:3128', 'http://host.name': 'foo.bar:4012'}
         'headers': {},
-        'timeout': None,
+        'timeout': 60,
     })
     _required_args: List[str] = ['lib']
 
@@ -273,7 +273,7 @@ class RequestArgGroup(ArgGroup):
         'stream': StreamSetter(('fixed', False)),     # `stream`      default to False
         'is_leaf': IsLeafSetter(('fixed', False)),
         'retry_limit': RetryLimitSetter(('fixed', 0)),
-        'timeout': TimeoutSetter('none'),
+        'timeout': TimeoutSetter(('fixed', 60)),
     }
 
 
