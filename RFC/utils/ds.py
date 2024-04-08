@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from typing import Any
+from functools import partial
 
 from .attr import get_attr_shadowed_name
 
@@ -85,3 +86,16 @@ class FrozenAttrDict(FrozenDict, AttrDict):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.__dict__ = self
+        
+
+class LazyAttrFunc():
+    def __init__(self, func, *args, **kwargs):
+        self.func = partial(func, *args, **kwargs)
+        self._called = False
+        self._cache = None
+    
+    def __call__(self):
+        if not self._called:
+            self._cache = self.func()
+            self._called = True
+        return self._cache

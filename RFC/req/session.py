@@ -4,7 +4,10 @@ from typing import Callable, Dict, Any
 
 from ..utils.log import get_logger
 from ..utils.cls import RootType
-from ..utils.ds import AttrDict
+from ..utils.ds import (
+    AttrDict,
+    LazyAttrFunc
+)
 # from ..item.item import Item  # for circular import issue we cannot import `Item` for typing
 from ..args.arg_group import *
 from .proxy_api import get_proxy_api
@@ -93,12 +96,15 @@ class Session(AttrDict, RootType, metaclass=SessionMeta):
     def _request_proxy_api(self, proxy_api_info: Dict[str, str]) -> Any:
         if self._proxy_api is None:
             proxy_api_type = proxy_api_info['api_type']
-            proxy_api_key = proxy_api_info['api_key']
-            proxy_api_passwd = proxy_api_info['api_passwd']
-            proxy_api_info = {
-                'proxy_api_key': proxy_api_key,
-                'proxy_api_passwd': proxy_api_passwd,
-            }
+            if proxy_api_type == 'qgnet':
+                proxy_api_info = {
+                    'proxy_api_key': proxy_api_info['api_key'],
+                    'proxy_api_passwd': proxy_api_info['api_passwd'],
+                }
+            elif proxy_api_type == 'pool':
+                proxy_api_info = {
+                    'proxy_pool': proxy_api_info['pool'],
+                }
             self._proxy_api = get_proxy_api(proxy_api_type, proxy_api_info)
         return self._proxy_api.apply()
 
@@ -233,6 +239,8 @@ class RequestsSession(Session):
         if 'api_type' in _proxies:
             _proxies = self._request_proxy_api(_proxies)
         _cookies = item.cookies or None
+        if isinstance(_cookies, LazyAttrFunc):
+            _cookies = _cookies()
         request_args = dict(
             method=item.method,
             url=item.url,
@@ -245,7 +253,7 @@ class RequestsSession(Session):
             stream=self.stream,  # is you want to use StreamDownloadersession, this must be True
         )
         self._logger.info(f"session requesting {repr(item)}")
-        # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
+        self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
         return self._session.request(**request_args)
     
     def close(
@@ -303,6 +311,8 @@ class AioHTTPSession(Session):
         if isinstance(_proxies, dict):
             _proxies = list(_proxies.values())[0]
         _cookies = item.cookies or None
+        if isinstance(_cookies, LazyAttrFunc):
+            _cookies = _cookies()
         request_args = dict(
             method=item.method,
             url=item.url,

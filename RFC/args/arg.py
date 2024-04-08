@@ -8,6 +8,7 @@ ua = UserAgent()
 from typing import Callable, Any, Optional
 
 from ..utils.cls import RootType
+from ..utils.ds import LazyAttrFunc
 from ..utils.defs import (
     OptionalFunc,
     RobustOptionalFuncArgsTuple,
@@ -83,18 +84,23 @@ class ArgSetter(ArgRootType):
 
     @staticmethod
     def _not_set(id, arg_group, **kwargs):
-        raise ValueError(f"arg {repr(kwargs['self'])} not set in {repr(arg_group)}")
+        raise ValueError(f"arg {repr(kwargs['_setter_name'])} not set in {repr(arg_group)}")
     
     @staticmethod
     def _field(id, arg_group, template, **kwargs):
         kwargs['id'] = id
         return template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
+    
+    @staticmethod
+    def _func(id, arg_group, func, **kwargs):
+        return func(**kwargs)  # do not contain `arg_group` arg, otherwise ArgSetter will have to be pickled, but this is impossible
         
     _all_supported_setters = {
         'fixed': lambda id, arg_group, value, **kwargs: value,
         'none': lambda id, arg_group, **kwargs: None,
         'not_set': _not_set,
         'field': _field,
+        'func': _func,
     }
     # SUBCLASS
 
@@ -122,7 +128,7 @@ class ArgSetter(ArgRootType):
         """
             This is used in `ArgGroup` for generating args for that group. Should not be called by user.
         """
-        result = self.setter(id, arg_group, *self.setter_args, *extra_args, self=self, **extra_kwargs)
+        result = self.setter(id, arg_group, *self.setter_args, *extra_args, _setter_name=self.__class__.__name__, **extra_kwargs)
         self._logger.debug(f"{repr(self)} called, result: {repr(result)}.")
         return result
 
@@ -173,9 +179,14 @@ class CookiesSetter(ArgSetter):
             raise ValueError(f"cookies file type {repr(type)} not supported, supported types are {repr(_supported_file_types)}.")
         cookies = cookies[id2rank(id)]
         return cookies
+    
+    @staticmethod
+    def _lazy_func(id, arg_group, func, **kwargs):
+        return LazyAttrFunc(func, **kwargs)  # do not contain `arg_group` arg, otherwise ArgSetter will have to be pickled, but this is impossible
 
     _all_supported_setters = {
         'file': _read_from_file,
+        'lazy_func': _lazy_func,
     }
 
 
@@ -189,15 +200,23 @@ class PayloadSetter(ArgSetter):
 
 class ProxiesSetter(ArgSetter):
     @staticmethod
-    def _set_api_info(id, arg_group, api_type, api_key, api_passwd, **kwargs):
+    def _set_qgnet_api_info(id, arg_group, api_key, api_passwd, **kwargs):
         return {
-            'api_type': api_type,
+            'api_type': 'qgnet',
             'api_key': api_key,
             'api_passwd': api_passwd,
         }
+    
+    @staticmethod
+    def _set_pool_api_info(id, arg_group, pool, **kwargs):
+        return {
+            'api_type': 'pool',
+            'pool': pool
+        }
 
     _all_supported_setters = {
-        'api': _set_api_info,
+        'qgnet': _set_qgnet_api_info,
+        'pool': _set_pool_api_info,
     }
 
 
