@@ -13,6 +13,22 @@ def _parse_exception_type(exception, item_id):
         return 'StatusCode 404 Error'
     if 'TimeoutError' in exception:
         return 'TimeoutError'
+    if 'ClientProxyConnectionError' in exception:
+        return 'ClientProxyConnectionError'
+    if 'ClientConnectorCertificateError' in exception:
+        return 'ClientConnectorCertificateError'
+    if 'ClientOSError' in exception:
+        return 'ClientOSError'
+    if 'unexpected status code 403' in exception:
+        return 'StatusCode 403 Error'
+    if 'unexpected status code 502' in exception:
+        return 'StatusCode 502 Error'
+    if 'unexpected status code 500' in exception:
+        return 'StatusCode 500 Error'
+    if 'ServerDisconnectedError' in exception:
+        return 'ServerDisconnectedError'
+    if 'ClientPayloadError' in exception:
+        return 'ClientPayloadError'
     exception = exception.strip()
     return exception.replace(item_id, '')
 
@@ -114,8 +130,8 @@ def extract_saves():
     ...
 
 
-extract_fail_exceptions(with_id=True, savepath='logs/statistics_failed_exceptions.json')
-extract_fail_exceptions()
-extract_finished_status(with_id=True, savepath='logs/statistics_finished_status.json')
-extract_finished_status()
+extract_fail_exceptions(with_id=True, savepath='saved_logs/statistics_failed_exceptions_details.json')
+extract_fail_exceptions(with_id=False, savepath='saved_logs/statistics_failed_exceptions.json')
+extract_finished_status(with_id=True, savepath='saved_logs/statistics_finished_status_details.json')
+extract_finished_status(with_id=False, savepath='saved_logs/statistics_finished_status.json')
 extract_counts()
