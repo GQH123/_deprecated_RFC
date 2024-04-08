@@ -40,7 +40,10 @@ def get_filename(resp, request_lib, default_filename=None):
     if contentdisposition is None:
         return default_filename
     _, params = cgi.parse_header(contentdisposition)
-    filename = params["filename"]
+    try:
+        filename = params["filename"]
+    except Exception:
+        filename = None
     if filename is None:
         return default_filename
     return filename
