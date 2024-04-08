@@ -1,6 +1,0 @@
-2024-02-08 21:22:24,825 <MainProcess:1485619, MainThread:139827601966912> (session.py:get_session:345 -> session.py:__init__:87) from logger `RFC.session_aiohttp`
-[INFO] initialized
-
-2024-02-08 21:22:24,826 <MainProcess:1485619, MainThread:139827601966912> (session.py:get_session:345 -> session.py:__init__:89) from logger `RFC.session_aiohttp`
-[INFO] session created, 'AioHTTPSession'({'lib': 'aiohttp', 'no_session': False, 'cookies': {}, 'proxies': {}, 'headers': {}, 'chunked_size': None})
-
