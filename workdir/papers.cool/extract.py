@@ -1,5 +1,6 @@
 import os
 import json
+from tqdm import tqdm
 
 
 def extract_fail_exceptions(with_id=False, savepath=None, show=True):
@@ -58,10 +59,6 @@ def extract_counts():
     print(json.dumps(count, indent=4, ensure_ascii=False))
 
 
-def extract_saves():
-    ...
-
-
 # extract_fail_exceptions(with_id=True, savepath='logs/exceptions.json')
 # extract_fail_exceptions()
-extract_counts()
+# extract_counts()
