@@ -1,0 +1,2808 @@
+2024-04-08 17:01:16,914 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:01:16,918 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:01:17,364 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:01:17,414 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:01:29,604 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:01:29,606 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:01:29,987 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:01:30,004 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:01:58,380 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:00,372 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:00,829 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:00,830 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:02:00,838 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:00,839 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:02:01,248 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,271 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:02:01,276 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,288 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,286 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,289 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:02:01,296 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,405 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,455 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,456 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:02:01,586 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,599 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,621 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,653 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,659 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:02:01,752 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,761 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,769 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,838 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,844 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:02:01,918 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,931 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:01,970 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ReadTimeout'] ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Read timed out. (read timeout=1)"))
+
+2024-04-08 17:02:02,045 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,079 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,087 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,117 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,145 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,320 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,347 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:02,384 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:02:06,379 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:06,544 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:07,108 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:07,184 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:07,587 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:09,951 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:11,435 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:12,511 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:17,533 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:20,852 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:38,565 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:43,021 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:43,380 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,215 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,220 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:02:59,516 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,566 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,570 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:02:59,597 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,622 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:02:59,639 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,995 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:02:59,998 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:03:10,143 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:03:10,146 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:03:10,526 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:03:10,533 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:04:03,487 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:04:03,508 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:04:04,523 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ConnectTimeout'] ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Max retries exceeded with url: /get?key=D6FL1CJ8&distinct=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdd7d79b190>, 'Connection to share.proxy.qg.net timed out. (connect timeout=1)'))"))
+
+2024-04-08 17:04:04,914 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:04:04,960 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:04:15,490 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:04:15,493 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:04:15,955 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:04:15,958 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:05:16,112 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:05:16,115 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:05:16,507 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:05:16,511 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:05:16,956 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:05:16,959 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:05:17,349 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:05:17,353 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:05:40,018 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:05:40,022 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:05:40,600 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:05:42,475 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:40,823 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:40,829 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:06:41,040 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:41,043 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:06:41,208 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:41,226 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:41,409 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:41,410 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:42,753 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:45,072 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:45,074 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:06:45,479 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:45,483 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:46,381 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:46,385 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:06:46,654 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:46,655 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:06:46,759 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:46,762 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:47,072 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:47,075 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:51,089 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:51,090 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:06:52,213 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ReadTimeout'] ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Read timed out. (read timeout=1)"))
+
+2024-04-08 17:06:52,607 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:52,610 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:06:54,094 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:54,363 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:56,789 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:59,138 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:06:59,288 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:03,751 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:10,463 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:11,139 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:13,867 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:14,322 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:16,059 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:17,946 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:34,784 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:40,398 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:40,401 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:07:40,807 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:40,825 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:07:45,314 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:45,323 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:07:45,731 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:45,738 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:07:50,557 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:07:50,607 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:08:33,161 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:08:33,178 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:08:33,562 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:08:33,612 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:08:51,809 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:08:51,812 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:08:52,200 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:08:52,202 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:10:29,171 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:10:29,173 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:10:29,620 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:10:29,737 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:11:30,235 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:30,237 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:11:30,503 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:30,516 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:11:30,600 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:30,623 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:11:30,922 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:30,924 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:11:31,533 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:31,536 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:11:31,890 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:31,892 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:11:39,303 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:39,304 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:11:39,696 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:11:39,700 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:11:51,409 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:12:26,777 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:12:51,365 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:12:51,369 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:12:51,737 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:12:51,751 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:13:00,328 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:00,348 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:13:00,725 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:00,728 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:13:12,557 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:12,558 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:13:12,916 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:12,921 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:13:13,670 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:29,548 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:29,550 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:13:29,694 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:29,695 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:13:29,964 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:29,970 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:13:30,061 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:30,064 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:13:32,291 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:37,376 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:39,053 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:41,911 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:41,981 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:43,861 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:44,768 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:44,770 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:13:45,160 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:13:45,163 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:02,241 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:02,682 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:02,684 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:14:03,081 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:03,542 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:05,500 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:05,501 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:14:05,628 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:05,911 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:05,913 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:09,584 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:28,990 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:29,383 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:29,485 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:29,497 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:14:29,918 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:29,926 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:34,768 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:39,614 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:39,617 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:14:39,974 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:40,007 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:41,711 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:42,749 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:47,160 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:47,433 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:47,435 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:14:47,887 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:47,989 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:48,448 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ConnectTimeout'] ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Max retries exceeded with url: /get?key=D6FL1CJ8&distinct=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdd7e0cca60>, 'Connection to share.proxy.qg.net timed out. (connect timeout=1)'))"))
+
+2024-04-08 17:14:48,801 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:48,804 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:50,831 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:50,833 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:14:51,208 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:51,211 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:14:52,595 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:54,187 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:55,760 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:56,845 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:56,922 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:14:59,320 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:00,225 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:01,185 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:01,424 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:02,401 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:02,587 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:03,016 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:03,079 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:05,970 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:05,972 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:15:06,346 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:06,350 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:15:06,828 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:11,445 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:11,505 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:11,511 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:12,482 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:12,483 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:15:12,846 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:12,851 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:15:12,981 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:16,280 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:16,328 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:17,047 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:17,310 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:17,820 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:17,896 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:18,639 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:18,947 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:20,474 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:20,480 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:23,459 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:23,967 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:24,106 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:25,363 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:25,376 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:25,484 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:25,735 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:26,635 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:29,687 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:29,920 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:30,632 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:31,982 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:32,175 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:32,208 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:32,330 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:32,502 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:38,835 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:42,825 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:45,655 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:53,416 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:54,825 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:54,827 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:15:55,183 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:55,190 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:15:57,122 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:57,125 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:15:57,507 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:15:57,509 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:16:08,885 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:08,889 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:16:09,282 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:09,287 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:16:17,692 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:17,694 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:16:18,056 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:18,059 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:16:26,534 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:42,895 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:44,531 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:16:58,459 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:03,021 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:09,821 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:09,824 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:17:10,200 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:10,205 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:10,207 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:17:10,223 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:17:10,594 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:10,596 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:17:20,281 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:20,282 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:17:21,399 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ReadTimeout'] ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Read timed out. (read timeout=1)"))
+
+2024-04-08 17:17:21,759 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:21,763 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:17:38,710 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:38,713 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:17:39,126 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:39,133 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:17:41,565 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:41,569 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:17:41,981 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:41,983 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:17:42,457 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:45,692 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:45,791 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:17:58,571 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:02,744 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:27,059 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:33,936 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:33,938 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:18:34,383 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:34,402 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:18:34,779 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:45,699 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:45,702 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:18:46,006 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:46,073 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:46,078 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:18:46,998 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:46,999 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:18:47,409 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:47,413 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:18:51,248 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:51,250 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:18:51,620 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:51,623 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:18:52,700 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:54,226 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:54,228 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:18:54,359 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:54,360 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:18:54,613 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:54,616 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:18:54,786 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:18:54,790 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:19:34,303 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:34,308 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:34,311 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:19:34,706 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:34,711 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:19:38,314 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:40,003 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:41,060 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:41,297 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:42,589 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:44,701 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:46,163 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:46,166 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:19:46,530 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:46,532 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:19:46,667 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:47,610 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:49,294 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:49,365 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:50,541 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:50,588 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:50,757 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:50,759 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:19:50,822 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:50,833 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:51,031 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:51,050 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:51,123 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:51,125 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:19:51,760 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:52,262 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:52,264 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:19:52,356 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:52,382 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:52,640 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:52,642 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:19:52,960 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:53,338 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:53,345 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:53,438 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:55,120 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:55,281 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:55,312 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:55,314 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:19:55,676 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:55,680 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:19:56,711 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:56,743 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:56,836 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:59,632 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:59,709 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:59,728 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:19:59,730 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:19:59,756 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:00,090 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:00,093 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:20:02,569 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:02,593 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:04,800 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:04,918 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:05,054 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:20,519 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:22,272 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:22,286 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:22,291 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:22,492 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:23,901 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:24,056 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:24,067 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:24,194 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:25,860 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:43,093 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:43,178 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:44,721 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:47,357 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:52,578 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:52,579 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:20:52,669 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:52,954 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:52,971 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:20:53,518 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:53,580 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:53,582 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:20:53,798 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:53,804 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:53,965 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:53,968 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:20:54,192 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:54,701 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:54,817 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:54,819 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:20:54,837 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:55,186 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:55,189 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:20:55,336 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:55,338 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:20:55,402 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:55,660 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:55,719 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:55,732 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:20:56,051 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:20:57,635 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:08,946 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:09,030 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:11,102 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:11,104 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:21:11,485 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:11,490 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:21:15,862 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:26,422 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:32,923 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:39,205 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:41,824 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:45,635 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:51,676 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:52,213 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:52,260 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:52,527 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:53,360 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:53,363 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:21:53,558 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:53,561 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:21:53,769 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:53,776 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:21:53,950 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:53,985 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:21:56,009 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:56,012 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:21:56,376 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:56,380 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:21:57,713 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:58,291 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:58,424 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:21:58,769 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:00,172 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:00,175 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:22:00,456 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:00,459 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:22:00,553 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:00,556 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:22:00,816 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:00,819 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:22:01,927 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:03,269 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:03,365 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:05,022 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:05,074 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:05,192 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:10,963 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:14,043 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:14,792 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:16,441 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:18,059 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:18,072 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:27,451 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:27,489 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:27,492 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:22:27,637 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:27,893 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:27,900 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:22:27,988 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:32,229 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:32,246 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:32,374 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:33,819 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:33,826 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:33,837 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:33,871 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:34,403 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:35,309 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:35,516 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:35,536 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:37,303 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:39,017 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:39,321 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:40,064 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:40,283 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,361 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,586 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,589 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,623 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,800 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,813 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,888 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,891 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,974 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:41,983 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:42,109 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:42,995 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:43,001 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:43,039 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:44,340 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:46,269 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:46,443 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:46,769 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:46,885 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:47,115 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:50,352 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:50,510 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:50,651 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:50,652 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:51,775 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:52,071 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:22:57,183 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:00,299 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:00,302 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:23:01,311 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ConnectTimeout'] ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Max retries exceeded with url: /get?key=D6FL1CJ8&distinct=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdd7df51a50>, 'Connection to share.proxy.qg.net timed out. (connect timeout=1)'))"))
+
+2024-04-08 17:23:02,111 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:02,112 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:23:02,321 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ConnectTimeout'] ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Max retries exceeded with url: /get?key=D6FL1CJ8&distinct=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdd7df50af0>, 'Connection to share.proxy.qg.net timed out. (connect timeout=1)'))"))
+
+2024-04-08 17:23:02,468 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:02,477 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:23:02,492 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:02,702 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:02,704 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:23:04,198 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:06,488 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:37,852 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:37,856 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:23:38,286 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:38,306 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:23:44,446 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:44,449 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:23:44,499 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:44,501 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:23:44,859 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:44,863 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:23:44,872 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:45,612 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ReadTimeout'] ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Read timed out. (read timeout=1)"))
+
+2024-04-08 17:23:45,998 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:46,000 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:23:47,299 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:23:54,343 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:06,900 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:26,223 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:26,245 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:55,171 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:55,173 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:24:55,584 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:55,604 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:24:59,952 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:24:59,954 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:25:00,319 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:00,322 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:25:10,380 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:10,382 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:25:10,759 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:10,764 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:25:14,812 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:14,926 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:23,067 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:24,685 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:24,686 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:25:25,081 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:25,103 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:25:27,112 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:35,973 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:41,125 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:41,128 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:25:41,483 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:41,489 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:25:42,389 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:43,800 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:52,682 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:54,563 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:54,566 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:25:54,937 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:25:54,944 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:26:13,428 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:13,430 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:26:13,793 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:13,819 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:26:13,825 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:15,625 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:33,341 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:33,343 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:26:33,721 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:33,726 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:26:37,752 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:37,761 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:46,442 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:46,445 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:26:46,796 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:46,805 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:26:47,343 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:51,235 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:26:56,121 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:13,350 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:13,351 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:27:13,725 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:13,740 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:27:18,930 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:18,932 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:27:19,350 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:19,365 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:27:23,136 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:31,757 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:32,375 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:38,420 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:41,820 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:45,016 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:45,018 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:27:45,423 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:45,429 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:27:51,967 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:56,682 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:56,685 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:27:57,328 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:27:57,332 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:28:28,398 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:28,474 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:28,475 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:28:28,853 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:28,872 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:28:29,653 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:29,745 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:29,746 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:28:30,753 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ConnectTimeout'] ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Max retries exceeded with url: /get?key=D6FL1CJ8&distinct=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdd7e9c6080>, 'Connection to share.proxy.qg.net timed out. (connect timeout=1)'))"))
+
+2024-04-08 17:28:31,122 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:31,124 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:28:31,659 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:33,348 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:33,351 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:28:33,693 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:33,732 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:28:33,733 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:28:34,247 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:02,747 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:02,748 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:29:03,119 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:03,144 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:29:05,392 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:05,412 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:29:05,801 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:05,805 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:29:13,389 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:13,390 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:29:13,790 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:13,791 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:29:19,029 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:20,496 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:21,539 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:28,925 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:30,942 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:32,727 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:32,729 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:29:32,777 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:32,844 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:33,100 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:33,106 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:29:38,780 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:29:49,065 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:17,195 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:17,196 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:30:17,379 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:17,382 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:30:17,585 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:17,613 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:30:17,761 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:17,764 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:30:19,303 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:19,615 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:19,981 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:20,077 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:23,877 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:27,430 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:27,433 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:30:27,810 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:27,851 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:30:36,154 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:36,629 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:41,594 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:41,637 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:41,640 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:30:42,000 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:42,003 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:30:47,097 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:47,099 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:30:47,487 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:30:47,490 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:31:00,508 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:07,088 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:09,979 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:16,337 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:45,619 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:49,868 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:49,869 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:31:50,059 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:50,060 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:31:50,250 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:50,268 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:31:50,427 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:31:50,429 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:31:59,642 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:32:01,301 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:32:08,173 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:32:20,486 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:14,670 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:14,672 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:33:15,025 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:15,027 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:33:15,048 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:15,097 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:33:15,404 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:15,407 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:33:24,111 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:24,114 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:33:24,488 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:24,491 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:33:32,978 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:32,979 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:33:33,352 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:33:33,353 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:33:40,879 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:18,425 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:42,599 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:42,600 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:34:42,799 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:42,800 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:34:42,996 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:43,015 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:34:43,174 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:43,177 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:34:45,160 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:45,162 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:34:45,550 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:45,552 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:34:47,482 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:47,485 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:34:47,874 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:47,876 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:34:57,195 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:57,196 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:34:57,558 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:34:57,562 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:34:58,524 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:03,007 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:04,098 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:04,245 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:04,350 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:04,484 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:07,221 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:08,227 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:09,972 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:10,018 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:10,181 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:10,302 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:10,325 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:11,600 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:11,706 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:11,707 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:35:11,744 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:11,788 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:12,076 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:12,082 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:35:13,048 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,130 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,141 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,203 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,304 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,415 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,491 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,570 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,857 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:14,929 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:15,024 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:15,056 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:15,093 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:15,131 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:16,510 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:16,523 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:16,528 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:16,565 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:18,992 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:19,087 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:19,113 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:19,145 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:19,268 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:20,605 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:20,612 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:20,725 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:21,918 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:23,372 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:23,389 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:23,594 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:23,778 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:25,334 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:25,412 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:25,921 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:25,977 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:27,586 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:30,029 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:37,577 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:39,557 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:50,305 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:50,309 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:35:50,718 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:35:50,739 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:36:17,935 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:36:26,943 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:36:26,945 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:36:27,317 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:36:27,338 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:36:45,686 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:36:45,687 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:36:46,048 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:36:46,055 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:37:24,473 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:24,499 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:24,504 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:24,697 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:24,700 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:37:25,711 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_update:82 -> proxy_api.py:_request:76) from logger `RFC.proxy_api`
+[ERROR] failed to request proxy info, caught error ['ConnectTimeout'] ConnectTimeout(MaxRetryError("HTTPSConnectionPool(host='share.proxy.qg.net', port=443): Max retries exceeded with url: /get?key=D6FL1CJ8&distinct=true (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdd7df52e30>, 'Connection to share.proxy.qg.net timed out. (connect timeout=1)'))"))
+
+2024-04-08 17:37:25,943 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:25,944 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:37:26,071 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:26,090 <requestor-worker-1:4075847, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:37:26,203 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:26,206 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:37:26,294 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:26,296 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:37:26,583 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:26,586 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:37:26,971 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:48,066 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:48,067 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:37:48,431 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:48,435 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:37:49,074 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:37:49,172 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:17,536 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:31,839 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:31,841 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:38:31,984 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:32,211 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:32,231 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:38:33,247 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:33,249 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:38:33,619 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:38:33,621 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:38:56,751 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:06,287 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:26,445 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:26,915 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:26,918 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:39:27,300 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:27,328 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:39:27,468 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:27,469 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:39:27,824 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:27,825 <requestor-worker-2:4075853, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:39:30,853 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:30,856 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:39:31,221 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:39:31,225 <requestor-worker-0:4075840, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:39:34,596 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:40:01,455 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:40:01,458 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:40:01,848 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:40:01,868 <requestor-worker-4:4075863, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:40:08,160 <requestor-worker-5:4075868, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:40:37,761 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:40:37,764 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:81) from logger `RFC.proxy_api`
+[INFO] updating proxy
+
+2024-04-08 17:40:38,133 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:_request:67 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
+2024-04-08 17:40:38,148 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:128 -> proxy_api.py:_update:83) from logger `RFC.proxy_api`
+[INFO] proxy updated successfully
+
+2024-04-08 17:40:38,243 <requestor-worker-3:4075859, MainThread:140589325879104> (proxy_api.py:apply:127 -> proxy_api.py:_check_update:120) from logger `RFC.proxy_api`
+[INFO] checking if proxy need to be updated
+
