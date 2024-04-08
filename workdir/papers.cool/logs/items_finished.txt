@@ -1,360 +1,304 @@
-PapersCoolPaperPage(venue_NeurIPS.2022)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-04-07)
 	status: SKIPPED
-timestamp: 2024-04-04 01:44:19.723971
+timestamp: 2024-04-08 17:22:42.398956
 
-PapersCoolPaperPage(arxiv_cs.CL)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-04-08)
 	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.037923
+timestamp: 2024-04-08 17:22:42.407861
 
-PapersCoolPaperPage(venue_CVPR.2022)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-04-03)
 	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.566854
+timestamp: 2024-04-08 17:22:42.445047
 
-PapersCoolPaperPage(venue_ACL.2023)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-04-04)
 	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.818244
+timestamp: 2024-04-08 17:22:42.472805
 
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01557)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-03-28)
 	status: SKIPPED
-timestamp: 2024-04-04 01:44:21.235733
+timestamp: 2024-04-08 17:22:42.527478
 
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01492)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-03-22)
 	status: SKIPPED
-timestamp: 2024-04-04 01:44:21.256077
+timestamp: 2024-04-08 17:22:42.582637
 
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01569)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:21.273753
-
-PapersCoolPaperPage(arxiv_cs.LG).PapersCoolPaperKimiSection(arxiv_cs.LG_=2404.01459)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:21.282436
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01588)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:21.348562
-
-PapersCoolPaperPage(arxiv_cs.CL).PapersCoolPaperKimiSection(arxiv_cs.CL_=2404.01430)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:21.542241
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01464)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.316769
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01358)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.321840
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01364)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.491480
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01365)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.540003
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01464)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.639202
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01657)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-03-28).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-03-28_=2403.17982)
 	status: OK
-timestamp: 2024-04-04 01:46:00.666309
+timestamp: 2024-04-08 17:22:44.113715
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=ErBe4MnsVD@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.672589
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=zKBJw4Ht8s@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.678254
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=KvPwXVcslY@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.686244
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=Lr2swAfwff@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.691622
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=MFWgLCWgUB@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.697748
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=NnMEadcdyD@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.704387
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=O0Lz8XZT2b@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.712489
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=OUIFPHEgJU@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.718157
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=PITeSdYQkv@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.723310
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=Pe9WxkN8Ff@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.728166
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=QDByreuQyk@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.732788
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=QIFoCI7ca1@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.737827
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=QzcZb3fWmW@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.743039
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=R6KJN1AUAR@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.748547
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=RSGNGiB1q4@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.755242
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=S5wmbQc1We@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.761071
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=Vota6rFhBQ@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.767824
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=Yacmpz84TH@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.774327
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=cB0BImqSS9@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.781291
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=dVnhdm9MIg@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.788390
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=eD534mPhAg@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.794912
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=eTHawKFT4h@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.801443
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=f38EY21lBw@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.809890
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=fHyLsfMDIs@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.819960
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=fg7iyNK81W@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.834732
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=gI1SOgW3kw@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.844959
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=i913TUOvTK@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.855224
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=jA235JGM09@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.862340
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=jDIlzSU8wJ@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.868772
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=kMueEV8Eyy@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.874350
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=liMSqUuVg9@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.879818
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=mayAyPrhJI@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.884755
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=mmTy1iyU5G@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.889658
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=n84bzMrGUD@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.894850
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=oML3v2cFg2@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.900178
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=q131tA7HCT@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.905890
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=qHrADgAdYu@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.911203
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=rcXXNFVlEn@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:00.918099
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01352)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-03-22).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-03-22_=2403.14593)
 	status: OK
-timestamp: 2024-04-04 01:46:54.368443
+timestamp: 2024-04-08 17:22:44.392511
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=dVaWCDMBof@OpenReview)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12)
 	status: SKIPPED
-timestamp: 2024-04-04 01:46:54.375593
+timestamp: 2024-04-08 17:22:44.447522
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=g7OX2sOJtn@OpenReview)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-06)
 	status: SKIPPED
-timestamp: 2024-04-04 01:46:54.382337
+timestamp: 2024-04-08 17:22:44.496522
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=j2wasUypqN@OpenReview)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-02-29)
 	status: SKIPPED
-timestamp: 2024-04-04 01:46:54.407875
+timestamp: 2024-04-08 17:22:44.543312
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=kaHpo8OZw2@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:54.423139
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=A7feCufBhL@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:54.432082
-
-PapersCoolPaperPage(venue_ICML.2023)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:19.765717
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01563)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.441539
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01714)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.506586
-
-PapersCoolPaperPage(arxiv_cs.CL).PapersCoolPaperKimiSection(arxiv_cs.CL_=2404.01677)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.597696
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01330)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.677646
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01402)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-04-08).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-04-08_=2404.04240)
 	status: OK
-timestamp: 2024-04-04 01:47:21.530129
+timestamp: 2024-04-08 17:22:44.876553
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=1zo4iioUEs@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:21.535334
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=FtNruwFEs3@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:21.540370
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=w0H2xGHlkw@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:21.550062
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=0A9f2jZDGW@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:21.555285
-
-PapersCoolPaperPage(venue_ICLR.2023)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:19.671617
-
-PapersCoolPaperPage(venue_ICCV.2023)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.381466
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01343)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.778885
-
-PapersCoolPaperPage(arxiv_cs.LG).PapersCoolPaperKimiSection(arxiv_cs.LG_=2404.01345)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.05696)
 	status: OK
-timestamp: 2024-04-04 01:47:47.081290
+timestamp: 2024-04-08 17:22:44.919489
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=AOKU4nRw1W@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:47.089751
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=APGXBNkt6h@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:47.097205
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=BHXsb69bSx@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:47.109020
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=Dkmpa6wCIx@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:47.119519
-
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=HV85SiyrsV@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:47:47.128312
-
-PapersCoolPaperPage(arxiv_cs.LG).PapersCoolPaperKimiSection(arxiv_cs.LG_=2404.01327)
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-04-08).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-04-08_=2404.03017)
 	status: OK
-timestamp: 2024-04-04 01:48:09.006750
+timestamp: 2024-04-08 17:24:55.165888
 
-PapersCoolPaperPage(venue_NeurIPS.2021)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:19.650831
-
-PapersCoolPaperPage(arxiv_cs.CV)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:19.768908
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01359)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.316893
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01353)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.503816
-
-PapersCoolPaperPage(arxiv_cs.AI).PapersCoolPaperKimiSection(arxiv_cs.AI_=2404.01352)
-	status: SKIPPED
-timestamp: 2024-04-04 01:44:20.541713
-
-PapersCoolPaperPage(arxiv_cs.CV).PapersCoolPaperKimiSection(arxiv_cs.CV_=2404.01723)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06978)
 	status: OK
-timestamp: 2024-04-04 01:46:28.592117
+timestamp: 2024-04-08 17:24:55.476127
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=sPLTQSf6GI@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 01:46:28.600513
-
-PapersCoolPaperPage(venue_ICLR.2024).PapersCoolPaperKimiSection(venue_ICLR.2024_=ILYjDvUM6U@OpenReview)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06977)
 	status: OK
-timestamp: 2024-04-04 02:03:41.441862
+timestamp: 2024-04-08 17:24:55.763570
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=X6dEqXIsEW@OpenReview)
-	status: SKIPPED
-timestamp: 2024-04-04 02:03:41.486632
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06976)
+	status: OK
+timestamp: 2024-04-08 17:24:56.092349
 
-PapersCoolPaperPage(venue_NeurIPS.2023).PapersCoolPaperKimiSection(venue_NeurIPS.2023_=YMMlHBSQdC@OpenReview)
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06974)
+	status: OK
+timestamp: 2024-04-08 17:24:56.307809
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06973)
+	status: OK
+timestamp: 2024-04-08 17:24:56.801415
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06961)
+	status: OK
+timestamp: 2024-04-08 17:24:57.046387
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06953)
+	status: OK
+timestamp: 2024-04-08 17:24:57.309972
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06952)
+	status: OK
+timestamp: 2024-04-08 17:24:57.553979
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06951)
+	status: OK
+timestamp: 2024-04-08 17:24:57.793446
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-02-29).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-02-29_=2402.17960)
+	status: OK
+timestamp: 2024-04-08 17:29:49.811920
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06946)
+	status: OK
+timestamp: 2024-04-08 17:29:50.112472
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06912)
+	status: OK
+timestamp: 2024-04-08 17:29:50.337800
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06908)
+	status: OK
+timestamp: 2024-04-08 17:29:50.584778
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06904)
+	status: OK
+timestamp: 2024-04-08 17:29:51.224536
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06797)
+	status: OK
+timestamp: 2024-04-08 17:30:31.604549
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06895)
+	status: OK
+timestamp: 2024-04-08 17:30:31.880589
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06892)
+	status: OK
+timestamp: 2024-04-08 17:30:32.115778
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06884)
+	status: OK
+timestamp: 2024-04-08 17:30:32.384437
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06902)
+	status: OK
+timestamp: 2024-04-08 17:32:31.591780
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06866)
+	status: OK
+timestamp: 2024-04-08 17:32:31.942043
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06862)
+	status: OK
+timestamp: 2024-04-08 17:32:32.221013
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06947)
+	status: OK
+timestamp: 2024-04-08 17:32:40.071930
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06845)
+	status: OK
+timestamp: 2024-04-08 17:32:40.316350
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06837)
+	status: OK
+timestamp: 2024-04-08 17:32:40.580731
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06835)
+	status: OK
+timestamp: 2024-04-08 17:32:40.854289
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06831)
+	status: OK
+timestamp: 2024-04-08 17:32:41.115991
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06874)
+	status: OK
+timestamp: 2024-04-08 17:34:35.409530
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06810)
+	status: OK
+timestamp: 2024-04-08 17:34:35.704638
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06846)
+	status: OK
+timestamp: 2024-04-08 17:34:41.276474
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06804)
+	status: OK
+timestamp: 2024-04-08 17:36:20.043652
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06800)
+	status: OK
+timestamp: 2024-04-08 17:36:20.286344
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06793)
+	status: OK
+timestamp: 2024-04-08 17:36:20.495140
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004)
 	status: SKIPPED
-timestamp: 2024-04-04 02:03:41.500204
+timestamp: 2024-04-08 17:36:20.594211
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06786)
+	status: OK
+timestamp: 2024-04-08 17:36:20.802227
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06813)
+	status: OK
+timestamp: 2024-04-08 17:36:21.419868
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-03-12).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-03-12_=2403.06803)
+	status: OK
+timestamp: 2024-04-08 17:36:26.962580
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=tadj04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:38:02.839092
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=angkititrakul04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:38:11.738830
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=kim04t@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:39:14.216369
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=lee04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:39:28.599333
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=lee04b@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:40:00.384897
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=noiray04@interspeech_2004@ISCA)
+	status: SKIPPED
+timestamp: 2024-04-08 17:40:00.393951
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=kim04c@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:40:57.931116
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=vaissiere04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:41:04.569671
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=hunt04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:42:27.263294
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=tian04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:42:35.592122
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=broersma04@interspeech_2004@ISCA)
+	status: SKIPPED
+timestamp: 2024-04-08 17:42:35.598760
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=cutler04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:44:08.637540
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=lee04d@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:44:32.877048
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=dusan04@interspeech_2004@ISCA)
+	status: SKIPPED
+timestamp: 2024-04-08 17:44:32.886466
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=maskey04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:44:44.744798
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=fang04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:45:55.757222
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=jian04b@interspeech_2004@ISCA)
+	status: SKIPPED
+timestamp: 2024-04-08 17:45:55.787749
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=murano04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:46:07.748006
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=jian04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:46:15.007332
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=son04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:47:21.317542
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=park04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:47:31.172638
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=abresch04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:48:46.073640
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=kim04d@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:48:58.795702
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=tsukada04@interspeech_2004@ISCA)
+	status: SKIPPED
+timestamp: 2024-04-08 17:48:58.847195
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=kim04e@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:49:33.819948
+
+PapersCoolPaperPage(venue_INTERSPEECH.2004).PapersCoolPaperKimiSection(venue_INTERSPEECH.2004_=cho04@interspeech_2004@ISCA)
+	status: OK
+timestamp: 2024-04-08 17:50:14.126611
 
