@@ -43,7 +43,8 @@
         "none": "ArgSetter._none({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
         "not_set": "ArgSetter._not_set({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'kwargs': <Parameter \"**kwargs\">})",
         "field": "ArgSetter._field({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'template': <Parameter \"template\">, 'kwargs': <Parameter \"**kwargs\">})",
-        "api": "ProxiesSetter._set_api_info({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'api_type': <Parameter \"api_type\">, 'api_key': <Parameter \"api_key\">, 'api_passwd': <Parameter \"api_passwd\">, 'kwargs': <Parameter \"**kwargs\">})"
+        "qgnet": "ProxiesSetter._set_qgnet_api_info({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'api_key': <Parameter \"api_key\">, 'api_passwd': <Parameter \"api_passwd\">, 'kwargs': <Parameter \"**kwargs\">})",
+        "pool": "ProxiesSetter._set_pool_api_info({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'pool': <Parameter \"pool\">, 'kwargs': <Parameter \"**kwargs\">})"
     },
     "'StreamSetter'": {
         "fixed": "ArgSetter._fixed({'id': <Parameter \"id\">, 'arg_group': <Parameter \"arg_group\">, 'value': <Parameter \"value\">, 'kwargs': <Parameter \"**kwargs\">})",
