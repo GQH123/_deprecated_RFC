@@ -25,7 +25,8 @@ class AudioBookAudioPage(ItemType):
     request_arg_group = {
         'url': ('field', 'https://audiostock.jp/audio/{id}'),
         # 'proxies': ('fixed', default_proxy_config),
-        'proxies': ('api', 'qgnet', 'D6FL1CJ8', '9FC1ADB88090'),
+        # 'proxies': ('api', 'qgnet', 'D6FL1CJ8', '9FC1ADB88090'),
+        'proxies': ('qgnet', 'D6FL1CJ8', '9FC1ADB88090'), # interface of RFC is changed
         'timeout': ('fixed', 20),  # remember to set timeout when using proxy api
     }
     item_arg_group = {
@@ -104,7 +105,8 @@ class AudioBookAudioFile(AudioBookAudioPage):
     request_arg_group = {
         'url': ('field', '{url}'),
         # 'proxies': ('fixed', default_proxy_config),
-        'proxies': ('api', 'qgnet', 'D6FL1CJ8', '9FC1ADB88090'),  # do not forget to set proxy_api for all item types
+        # 'proxies': ('api', 'qgnet', 'D6FL1CJ8', '9FC1ADB88090'),  # do not forget to set proxy_api for all item types
+        'proxies': ('qgnet', 'D6FL1CJ8', '9FC1ADB88090'), # interface of RFC is changed
         'is_leaf': ('fixed', True),  # in case the binary data is saved twice
         'timeout': ('fixed', 60),  # remember to set timeout when using proxy api
         'retry_limit': ('fixed', 3),  # give more chance to retry in the setting of proxy api
@@ -116,4 +118,12 @@ class AudioBookAudioFile(AudioBookAudioPage):
 
 
 # AudioBookAudioPage.start(ids=list(range(1000, 1100)))
-AudioBookAudioPage.start(ids=list(range(1540000)))
+
+already_detected_404_ids = (json.load(open('saved_logs/404_ids.json')) if os.path.exists('saved_logs/404_ids.json') else [])+(json.load(open('saved_logs/statistics_failed_exceptions_details.json'))['StatusCode 404 Error']['type']['AudioBookAudioPage'] if os.path.exists('saved_logs/statistics_failed_exceptions_details.json') else [])
+already_detected_404_ids = set([int(i) for i in already_detected_404_ids])
+ids_to_added = [i for i in range(1540000) if i not in already_detected_404_ids]
+already_detected_404_ids = list(already_detected_404_ids)
+json.dump(already_detected_404_ids, open('saved_logs/404_ids.json', 'w'), indent=4, ensure_ascii=False)
+# print(len(ids_to_added))
+# AudioBookAudioPage.start(ids=list(range(1540000)))
+AudioBookAudioPage.start(ids=ids_to_added)
