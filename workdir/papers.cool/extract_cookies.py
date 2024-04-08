@@ -14,7 +14,9 @@ async def extract_cookies_single_task(id, n_reqs, sema):
     cookies = []
     for i in range(n_reqs):
         try:
-            async with aiohttp.request('get', "https://papers.cool", proxy='http://10.176.52.116:7890') as resp:
+            # async with aiohttp.request('get', "https://papers.cool", proxy='http://10.176.52.116:7890') as resp:
+            #     cookies.append({'client_id': dict(resp.cookies)['client_id'].value})
+            async with aiohttp.request('post', "https://papers.cool/venue/star?key=kimi&paper=P16-1019@ACL", proxy='http://10.176.52.116:7890') as resp:
                 cookies.append({'client_id': dict(resp.cookies)['client_id'].value})
                 # print(f'extracted one cookies, id {id}', flush=True)
         except Exception as e:
@@ -64,15 +66,13 @@ def merge_cookies_to_json_file():
             result.append(item['client_id'])
     json.dump(result, open('cookies.json', 'w'), indent=4)
     return result
-                
-
-# extract_cookies(
-#     n_runs=100,
-#     n_proc=24,
-#     n_task=100,
-#     n_sema=24,
-#     n_reqs=10,
-# )
 
 
+extract_cookies(
+    n_runs=10,
+    n_proc=24,
+    n_task=100,
+    n_sema=24,
+    n_reqs=10,
+)
 merge_cookies_to_json_file()
