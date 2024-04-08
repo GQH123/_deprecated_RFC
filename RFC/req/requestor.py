@@ -92,7 +92,8 @@ class Requestor(AttrDict, RootType):
         item,
         result: Any,
     ):
-        save_object(item, os.path.join(item.save_dir, '_item.pkl'), 'pkl', self._logger_fail)
+        # make sure item id contains no '/', and item.save_dir must be a valid path
+        save_object(item, os.path.join(item.save_dir, '_item.pkl'), 'pkl', self._logger_fail)  # if item id contains '/' and leads the item.savedir to a permission denied path such as root, then this will raise error but no except block to catch it, and eventually terminate the whole process
         item.finish(False)
         error_report = f'[{repr(type(error).__name__)}] {repr(error)}'
         self._failed_items.append((repr(item), error_report, item._timestamp[FAILED]))
