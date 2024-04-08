@@ -158,12 +158,11 @@ def save_object(obj, path, mode='auto', logger=None, raise_exception=False):
         with open(path, 'wb') as f:
             f.write(obj)
 
-    dir_path = os.path.split(path)[0]
-    if dir_path and not os.path.exists(dir_path):
-        os.makedirs(dir_path)
-    mode = _parse_mode(obj, path, mode, logger)
-
     try:
+        dir_path = os.path.split(path)[0]
+        if dir_path and not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+        mode = _parse_mode(obj, path, mode, logger)
         if mode == 'json':
             save_json()
         elif mode == 'pickle' or mode == 'pkl':
@@ -203,9 +202,8 @@ def load_object(path, mode='auto', logger=None, default_return=None, raise_excep
         with open(path, 'rb') as f:
             return f.read()
 
-    mode = _parse_mode(None, path, mode, logger)
-
     try:
+        mode = _parse_mode(None, path, mode, logger)
         if mode == 'json':
             return load_json()
         elif mode == 'pickle' or mode == 'pkl':
