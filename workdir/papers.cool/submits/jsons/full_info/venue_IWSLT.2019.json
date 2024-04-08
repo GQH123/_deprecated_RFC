@@ -1,0 +1,290 @@
+{
+    "=2019.iwslt-1.2@ACL": {
+        "meta": {
+            "title": "OPPO NMT System for IWSLT 2019",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.2@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.2.pdf"
+        }
+    },
+    "=2019.iwslt-1.3@ACL": {
+        "meta": {
+            "title": "The IWSLT 2019 KIT Speech Translation System",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.3@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.3.pdf"
+        }
+    },
+    "=2019.iwslt-1.4@ACL": {
+        "meta": {
+            "title": "ESPnet How2 Speech Translation System for IWSLT 2019: Pre-training, Knowledge Distillation, and Going Deeper",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.4@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.4.pdf"
+        }
+    },
+    "=2019.iwslt-1.5@ACL": {
+        "meta": {
+            "title": "ON-TRAC Consortium End-to-End Speech Translation Systems for the IWSLT 2019 Shared Task",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.5@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.5.pdf"
+        }
+    },
+    "=2019.iwslt-1.6@ACL": {
+        "meta": {
+            "title": "Transformer-based Cascaded Multimodal Speech Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.6@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.6.pdf"
+        }
+    },
+    "=2019.iwslt-1.7@ACL": {
+        "meta": {
+            "title": "End-to-end Speech Translation System Description of LIT for IWSLT 2019",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.7@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.7.pdf"
+        }
+    },
+    "=2019.iwslt-1.8@ACL": {
+        "meta": {
+            "title": "Domain Adaptation of Document-Level NMT in IWSLT19",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.8@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.8.pdf"
+        }
+    },
+    "=2019.iwslt-1.9@ACL": {
+        "meta": {
+            "title": "Samsung and University of Edinburgh’s System for the IWSLT 2019",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.9@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.9.pdf"
+        }
+    },
+    "=2019.iwslt-1.10@ACL": {
+        "meta": {
+            "title": "CMU’s Machine Translation System for IWSLT 2019",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.10@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.10.pdf"
+        }
+    },
+    "=2019.iwslt-1.11@ACL": {
+        "meta": {
+            "title": "The LIG system for the English-Czech Text Translation Task of IWSLT 2019",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.11@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.11.pdf"
+        }
+    },
+    "=2019.iwslt-1.12@ACL": {
+        "meta": {
+            "title": "Samsung’s System for the IWSLT 2019 End-to-End Speech Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.12@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.12.pdf"
+        }
+    },
+    "=2019.iwslt-1.13@ACL": {
+        "meta": {
+            "title": "KIT’s Submission to the IWSLT 2019 Shared Task on Text Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.13@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.13.pdf"
+        }
+    },
+    "=2019.iwslt-1.14@ACL": {
+        "meta": {
+            "title": "Data Augmentation for End-to-End Speech Translation: FBK@IWSLT ‘19",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.14@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.14.pdf"
+        }
+    },
+    "=2019.iwslt-1.15@ACL": {
+        "meta": {
+            "title": "How Transformer Revitalizes Character-based Neural Machine Translation: An Investigation on Japanese-Vietnamese Translation Systems",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.15@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.15.pdf"
+        }
+    },
+    "=2019.iwslt-1.16@ACL": {
+        "meta": {
+            "title": "Adapting Multilingual Neural Machine Translation to Unseen Languages",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.16@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.16.pdf"
+        }
+    },
+    "=2019.iwslt-1.17@ACL": {
+        "meta": {
+            "title": "Transformers without Tears: Improving the Normalization of Self-Attention",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.17@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.17.pdf"
+        }
+    },
+    "=2019.iwslt-1.18@ACL": {
+        "meta": {
+            "title": "Harnessing Indirect Training Data for End-to-End Automatic Speech Translation: Tricks of the Trade",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.18@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.18.pdf"
+        }
+    },
+    "=2019.iwslt-1.19@ACL": {
+        "meta": {
+            "title": "Neural Baselines for Word Alignment",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.19@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.19.pdf"
+        }
+    },
+    "=2019.iwslt-1.20@ACL": {
+        "meta": {
+            "title": "Analysis of Positional Encodings for Neural Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.20@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.20.pdf"
+        }
+    },
+    "=2019.iwslt-1.21@ACL": {
+        "meta": {
+            "title": "Using Whole Document Context in Neural Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.21@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.21.pdf"
+        }
+    },
+    "=2019.iwslt-1.22@ACL": {
+        "meta": {
+            "title": "On Using SpecAugment for End-to-End Speech Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.22@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.22.pdf"
+        }
+    },
+    "=2019.iwslt-1.23@ACL": {
+        "meta": {
+            "title": "Estimating post-editing effort: a study on human judgements, task-based and reference-based metrics of MT quality",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.23@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.23.pdf"
+        }
+    },
+    "=2019.iwslt-1.24@ACL": {
+        "meta": {
+            "title": "Exploring Kernel Functions in the Softmax Layer for Contextual Word Classification",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.24@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.24.pdf"
+        }
+    },
+    "=2019.iwslt-1.25@ACL": {
+        "meta": {
+            "title": "Multitask Learning For Different Subword Segmentations In Neural Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.25@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.25.pdf"
+        }
+    },
+    "=2019.iwslt-1.26@ACL": {
+        "meta": {
+            "title": "Generic and Specialized Word Embeddings for Multi-Domain Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.26@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.26.pdf"
+        }
+    },
+    "=2019.iwslt-1.27@ACL": {
+        "meta": {
+            "title": "Lexical Micro-adaptation for Neural Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.27@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.27.pdf"
+        }
+    },
+    "=2019.iwslt-1.28@ACL": {
+        "meta": {
+            "title": "Efficient Bilingual Generalization from Neural Transduction Grammar Induction",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.28@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.28.pdf"
+        }
+    },
+    "=2019.iwslt-1.29@ACL": {
+        "meta": {
+            "title": "Breaking the Data Barrier: Towards Robust Speech Translation via Adversarial Stability Training",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.29@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.29.pdf"
+        }
+    },
+    "=2019.iwslt-1.30@ACL": {
+        "meta": {
+            "title": "Controlling Utterance Length in NMT-based Word Segmentation with Attention",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.30@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.30.pdf"
+        }
+    },
+    "=2019.iwslt-1.31@ACL": {
+        "meta": {
+            "title": "Controlling the Output Length of Neural Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.31@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.31.pdf"
+        }
+    },
+    "=2019.iwslt-1.32@ACL": {
+        "meta": {
+            "title": "Robust Neural Machine Translation for Clean and Noisy Speech Transcripts",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.32@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.32.pdf"
+        }
+    },
+    "=2019.iwslt-1.33@ACL": {
+        "meta": {
+            "title": "Multi-Task Modeling of Phonographic Languages: Translating Middle Egyptian Hieroglyphs",
+            "type": "venue",
+            "source": "IWSLT.2019",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2019.iwslt-1.33@ACL",
+            "pdf_link": "https://aclanthology.org/2019.iwslt-1.33.pdf"
+        }
+    }
+}

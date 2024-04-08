@@ -1,0 +1,309 @@
+{
+    "=2020.iwslt-1.1@ACL": {
+        "meta": {
+            "title": "FINDINGS OF THE IWSLT 2020 EVALUATION CAMPAIGN",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.1@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.1.pdf"
+        }
+    },
+    "=2020.iwslt-1.2@ACL": {
+        "meta": {
+            "title": "ON-TRAC Consortium for End-to-End and Simultaneous Speech Translation Challenge Tasks at IWSLT 2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.2@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.2.pdf"
+        }
+    },
+    "=2020.iwslt-1.3@ACL": {
+        "meta": {
+            "title": "Start-Before-End and End-to-End: Neural Speech Translation by AppTek and RWTH Aachen University",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.3@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.3.pdf"
+        }
+    },
+    "=2020.iwslt-1.4@ACL": {
+        "meta": {
+            "title": "KIT’s IWSLT 2020 SLT Translation System",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.4@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.4.pdf"
+        }
+    },
+    "=2020.iwslt-1.5@ACL": {
+        "meta": {
+            "title": "End-to-End Simultaneous Translation System for IWSLT2020 Using Modality Agnostic Meta-Learning",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.5@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.5.pdf"
+        }
+    },
+    "=2020.iwslt-1.6@ACL": {
+        "meta": {
+            "title": "DiDi Labs’ End-to-end System for the IWSLT 2020 Offline Speech TranslationTask",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.6@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.6.pdf"
+        }
+    },
+    "=2020.iwslt-1.7@ACL": {
+        "meta": {
+            "title": "End-to-End Offline Speech Translation System for IWSLT 2020 using Modality Agnostic Meta-Learning",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.7@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.7.pdf"
+        }
+    },
+    "=2020.iwslt-1.8@ACL": {
+        "meta": {
+            "title": "End-to-End Speech-Translation with Knowledge Distillation: FBK@IWSLT2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.8@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.8.pdf"
+        }
+    },
+    "=2020.iwslt-1.9@ACL": {
+        "meta": {
+            "title": "SRPOL’s System for the IWSLT 2020 End-to-End Speech Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.9@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.9.pdf"
+        }
+    },
+    "=2020.iwslt-1.10@ACL": {
+        "meta": {
+            "title": "The University of Helsinki Submission to the IWSLT2020 Offline SpeechTranslation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.10@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.10.pdf"
+        }
+    },
+    "=2020.iwslt-1.11@ACL": {
+        "meta": {
+            "title": "The AFRL IWSLT 2020 Systems: Work-From-Home Edition",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.11@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.11.pdf"
+        }
+    },
+    "=2020.iwslt-1.12@ACL": {
+        "meta": {
+            "title": "LIT Team’s System Description for Japanese-Chinese Machine Translation Task in IWSLT 2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.12@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.12.pdf"
+        }
+    },
+    "=2020.iwslt-1.13@ACL": {
+        "meta": {
+            "title": "OPPO’s Machine Translation System for the IWSLT 2020 Open Domain Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.13@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.13.pdf"
+        }
+    },
+    "=2020.iwslt-1.14@ACL": {
+        "meta": {
+            "title": "Character Mapping and Ad-hoc Adaptation: Edinburgh’s IWSLT 2020 Open Domain Translation System",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.14@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.14.pdf"
+        }
+    },
+    "=2020.iwslt-1.15@ACL": {
+        "meta": {
+            "title": "CASIA’s System for IWSLT 2020 Open Domain Translation",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.15@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.15.pdf"
+        }
+    },
+    "=2020.iwslt-1.16@ACL": {
+        "meta": {
+            "title": "Deep Blue Sonics’ Submission to IWSLT 2020 Open Domain Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.16@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.16.pdf"
+        }
+    },
+    "=2020.iwslt-1.17@ACL": {
+        "meta": {
+            "title": "University of Tsukuba’s Machine Translation System for IWSLT20 Open Domain Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.17@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.17.pdf"
+        }
+    },
+    "=2020.iwslt-1.18@ACL": {
+        "meta": {
+            "title": "Xiaomi’s Submissions for IWSLT 2020 Open Domain Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.18@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.18.pdf"
+        }
+    },
+    "=2020.iwslt-1.19@ACL": {
+        "meta": {
+            "title": "ISTIC’s Neural Machine Translation System for IWSLT’2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.19@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.19.pdf"
+        }
+    },
+    "=2020.iwslt-1.20@ACL": {
+        "meta": {
+            "title": "Octanove Labs’ Japanese-Chinese Open Domain Translation System",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.20@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.20.pdf"
+        }
+    },
+    "=2020.iwslt-1.21@ACL": {
+        "meta": {
+            "title": "NAIST’s Machine Translation Systems for IWSLT 2020 Conversational Speech Translation Task",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.21@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.21.pdf"
+        }
+    },
+    "=2020.iwslt-1.22@ACL": {
+        "meta": {
+            "title": "Generating Fluent Translations from Disfluent Text Without Access to Fluent References: IIT Bombay@IWSLT2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.22@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.22.pdf"
+        }
+    },
+    "=2020.iwslt-1.23@ACL": {
+        "meta": {
+            "title": "The HW-TSC Video Speech Translation System at IWSLT 2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.23@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.23.pdf"
+        }
+    },
+    "=2020.iwslt-1.24@ACL": {
+        "meta": {
+            "title": "CUNI Neural ASR with Phoneme-Level Intermediate Step for~Non-Native~SLT at IWSLT 2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.24@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.24.pdf"
+        }
+    },
+    "=2020.iwslt-1.25@ACL": {
+        "meta": {
+            "title": "ELITR Non-Native Speech Translation at IWSLT 2020",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.25@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.25.pdf"
+        }
+    },
+    "=2020.iwslt-1.26@ACL": {
+        "meta": {
+            "title": "Is 42 the Answer to Everything in Subtitling-oriented Speech Translation?",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.26@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.26.pdf"
+        }
+    },
+    "=2020.iwslt-1.27@ACL": {
+        "meta": {
+            "title": "Re-translation versus Streaming for Simultaneous Translation",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.27@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.27.pdf"
+        }
+    },
+    "=2020.iwslt-1.28@ACL": {
+        "meta": {
+            "title": "Towards Stream Translation: Adaptive Computation Time for Simultaneous Machine Translation",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.28@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.28.pdf"
+        }
+    },
+    "=2020.iwslt-1.29@ACL": {
+        "meta": {
+            "title": "Neural Simultaneous Speech Translation Using Alignment-Based Chunking",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.29@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.29.pdf"
+        }
+    },
+    "=2020.iwslt-1.30@ACL": {
+        "meta": {
+            "title": "Adapting End-to-End Speech Recognition for Readable Subtitles",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.30@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.30.pdf"
+        }
+    },
+    "=2020.iwslt-1.31@ACL": {
+        "meta": {
+            "title": "From Speech-to-Speech Translation to Automatic Dubbing",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.31@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.31.pdf"
+        }
+    },
+    "=2020.iwslt-1.32@ACL": {
+        "meta": {
+            "title": "Joint Translation and Unit Conversion for End-to-end Localization",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.32@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.32.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是如何在机器翻译（Machine Translation, MT）中实现端到端的本地化（localization）。本地化不仅仅是简单的翻译，它还涉及到将内容调整为特定目标受众的格式和习惯，例如日期、日历、货币单位和度量单位的转换。具体来说，论文关注于如何让神经网络模型学习同时处理翻译任务和单位转换任务，并能够在两者之间适当切换。\n\n论文中以英里到千米和华氏度到摄氏度的单位转换为例，探讨了以下几个问题：\n\n1. 标准的神经机器翻译（NMT）架构，如Transformer，是否能够学习与这两个单位转换任务相关的函数。\n2. 同样的架构是否能够训练出一个模型，既能进行机器翻译又能进行单位转换。\n\n为了解决这些问题，论文提出了一种数据增强技术，使得模型能够从符号表示的例子中学习这些函数，并通过小的输入表示变化和数据增强技术，产生能够在上下文中既翻译又适当转换度量单位的模型。论文的实验结果表明，单一的架构可以学习翻译和单位转换，并且在训练中使用少量的本地化数据时，能够适当地在两者之间切换。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了以下几个方面的相关研究：\n\n1. **深度学习模型的计算能力和表达能力**：包括对语言模型的理论研究，主要针对简单的乔姆斯基层次结构语法。例如，Hahn (2019) 证明了Transformer网络在没有随着输入长度增加深度或自注意力头的数量的情况下，对某些规则周期性语言和层级（上下文无关）结构的建模存在限制。Merrill (2019) 证明了LSTM网络能够识别周期性语言的一个子集。\n\n2. **神经网络在处理数字和算术表达式方面的研究**：包括专门设计用于处理二进制加法、评估算术表达式或其他数字操作任务的神经架构。相关工作包括Joulin和Mikolov (2015), Saxton等人 (2019), Trask等人 (2018), Chen等人 (2018) 等。\n\n3. **解决自然语言与形式语言混合问题的研究**：例如，Ravichander等人 (2019) 介绍了一个用于评估自然语言推理中定量推理的基准测试，Dua等人 (2019) 提出了一个用于阅读理解中符号操作（如加法或排序）的基准测试。\n\n4. **机器翻译中的单位转换**：当前的机器翻译方法处理这类子语言的方式主要有两种：一是不对子语言进行特殊处理，但如果数据中有足够的表示，它可以与主要任务一起学习；二是通过预处理/后处理技术将子语言从自然文本中分离出来，例如在翻译后再单独将英里表达式转换为千米。\n\n论文指出，尽管上述方法在捕获其他非语言现象（如世界知识或文化偏见）方面取得了成功，但它们在端到端解决方案方面并没有取得实质性进展，并且忽略了两种语言类型之间通常紧密的相互作用。论文的目标是通过数据增强和模型训练，使得机器翻译模型能够在翻译的同时处理单位转换，从而更接近端到端的本地化解决方案。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下步骤解决端到端本地化中翻译和单位转换的问题：\n\n1. **数据增强技术**：提出了一种数据增强方法，通过对训练数据中的单位转换进行符号表示，使得模型能够学习翻译和单位转换任务。\n\n2. **模型架构**：使用流行的MT Transformer架构，该架构包含4个编码器层和2个解码器层，用于训练模型。\n\n3. **输入表示的变化**：通过小的输入表示变化，例如使用子词嵌入（subword embeddings）和共享词汇表，以及在输入中使用特定的数值表示方法，使得模型能够更好地理解和处理数值。\n\n4. **训练数据的生成**：为了训练模型，生成了包含不同输入长度的平行数据集，这些数据集涵盖了从1到6位数字的输入，并均匀分布在整数与小数精度之间。\n\n5. **联合训练**：通过联合训练（joint training）的方式，同时学习翻译和单位转换任务，使用源因子（source factors）来促进不同任务之间的上下文切换。\n\n6. **实验验证**：进行了一系列实验，包括单独学习单位转换函数和在上下文中同时学习翻译和单位转换。实验结果表明，Transformer架构能够成功地学习这些函数，并且在适当的数据增强下，能够实现翻译和单位转换的联合学习。\n\n7. **性能评估**：通过在不同的数据集上评估模型性能，包括标准机器翻译数据集和包含单位转换的本地化数据集，来验证模型的有效性。\n\n论文的结论是，单一的神经网络架构可以学习翻译任务和单位转换任务，并且能够在两者之间适当切换，从而为实现端到端的本地化提供了一种可行的方法。未来的工作计划包括创建多样化的本地化测试套件，并进一步探索隐式学习自然数等低级概念的可能性，以及无监督预训练是否能促进这类学习。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了以下几类实验来验证提出方法的有效性：\n\n1. **单位转换学习**：\n   - 使用Transformer网络架构训练模型，分别学习两个单位转换任务：华氏度到摄氏度的温度转换（`°F` 到 `°C`）和英里到千米的距离转换（`mi` 到 `km`）。\n   - 生成了包含不同输入长度（1到6位数字）的训练数据，并在数据中进行了过采样以确保数据点的多样性。\n   - 通过改变训练数据中的单位转换示例数量，评估模型学习这些函数的能力。\n\n2. **联合机器翻译和单位转换**：\n   - 使用与上述实验相同的网络架构，但进行了轻微的修改，如使用共享词汇表的子词嵌入。\n   - 除了标准的机器翻译（MT）数据外，还创建了专门的单位转换（Conv）数据集和包含单位转换的本地化（Loc）数据。\n   - 通过改变训练中Conv和Loc数据的数量，评估模型在单位转换任务上的性能。\n   - 对比了使用源因子（source factors）和不使用源因子的模型，以评估源因子在促进任务间切换中的作用。\n\n3. **性能评估**：\n   - 在不同的测试集上评估模型的性能，包括标准的机器翻译测试集和包含单位转换的本地化测试集。\n   - 使用BLEU分数和准确率（accuracy）作为评估指标，衡量模型在翻译质量和单位转换准确性上的表现。\n   - 进行了额外的实验，以确定在没有Conv数据的情况下，仅使用Loc数据是否足以训练模型进行单位转换。\n\n这些实验的结果表明，Transformer架构能够成功地学习单位转换函数，并且在适当的数据增强和训练策略下，能够实现在翻译和单位转换任务之间的有效切换。此外，实验还发现，尽管两个单位转换函数在学习过程中存在差异，但联合训练有助于提高学习效率，并且使用源因子可以促进模型在不同任务之间的上下文切换。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了以下几个可以进一步探索的点：\n\n1. **多样化的本地化测试套件**：创建一个包含多种类型的单位和格式转换的测试套件，以更全面地评估模型在不同本地化场景下的性能。\n\n2. **隐式学习低级概念**：探索模型是否能够在无监督预训练阶段隐式学习自然数等低级概念，这可能有助于提高模型在单位转换等任务上的性能。\n\n3. **无监督预训练对学习的影响**：研究无监督预训练是否能促进模型对低级概念的学习，以及是否能够提高模型在翻译和单位转换任务上的泛化能力。\n\n4. **模型的泛化能力**：研究模型在面对训练数据中未出现过的数值范围时的泛化能力，例如测试集中的数值是否能够比训练集中的数值有更大的数量级。\n\n5. **不同神经网络架构的比较**：比较不同的神经网络架构（如LSTM、GRU等）在学习单位转换任务上的性能，以确定是否有更适合这类任务的架构。\n\n6. **更复杂的单位转换任务**：探索模型在处理更复杂的单位转换任务（如涉及复数、面积、体积等）时的表现和学习能力。\n\n7. **实际应用场景的测试**：将模型应用于实际的本地化项目中，评估其在真实世界场景下的表现和实用性。\n\n8. **模型解释性**：研究如何提高模型的可解释性，以便更好地理解模型是如何处理翻译和单位转换任务的，特别是在出现错误时能够提供直观的反馈。\n\n9. **数据集的质量和多样性**：研究如何改进数据集的质量和多样性，以便更好地捕捉到不同语言和文化中的本地化需求。\n\n通过这些进一步的研究，可以更好地理解和改进机器翻译模型在本地化任务中的性能，特别是在处理单位转换等与形式语言相关的任务时的能力。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **问题定义**：论文关注于机器翻译中的本地化问题，特别是如何处理文本中混合的自然语言和形式语言（如单位转换）。\n\n2. **研究目标**：提出一种数据增强技术，使得神经网络模型能够学习翻译任务和单位转换任务，并能够在两者之间适当切换，以实现端到端的本地化。\n\n3. **方法论**：\n   - 使用Transformer网络架构进行模型训练。\n   - 通过数据增强和小的输入表示变化，训练模型处理翻译和单位转换。\n   - 采用源因子（source factors）来促进不同任务间的上下文切换。\n\n4. **实验设计**：\n   - 分别对温度转换（华氏度到摄氏度）和距离转换（英里到千米）进行单独学习。\n   - 进行联合训练，同时学习翻译和单位转换任务。\n   - 使用标准机器翻译数据和专门创建的包含单位转换的本地化数据进行训练和测试。\n\n5. **实验结果**：\n   - Transformer架构能够成功学习两种单位转换函数。\n   - 联合训练可以提高学习效率，特别是在使用源因子时。\n   - 模型能够在翻译和单位转换任务之间适当切换。\n\n6. **未来工作**：\n   - 创建多样化的本地化测试套件。\n   - 探索无监督预训练对学习低级概念的影响。\n   - 研究模型在更复杂单位转换任务上的性能。\n\n7. **结论**：论文展示了单一架构可以同时学习翻译和单位转换，并在给定适当的训练数据时，在任务之间进行有效切换，为端到端的本地化提供了一种可能的解决方案。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是Joint Translation and Unit Conversion for End-to-end Localization，链接是 https://aclanthology.org/2020.iwslt-1.32.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=2020.iwslt-1.32@ACL 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=2020.iwslt-1.33@ACL": {
+        "meta": {
+            "title": "Efficient Automatic Punctuation Restoration Using Bidirectional Transformers with Robust Inference",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.33@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.33.pdf"
+        }
+    },
+    "=2020.iwslt-1.34@ACL": {
+        "meta": {
+            "title": "How Human is Machine Translationese? Comparing Human and Machine Translations of Text and Speech",
+            "type": "venue",
+            "source": "IWSLT.2020",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=2020.iwslt-1.34@ACL",
+            "pdf_link": "https://aclanthology.org/2020.iwslt-1.34.pdf"
+        }
+    }
+}

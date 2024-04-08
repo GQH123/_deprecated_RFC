@@ -1,0 +1,778 @@
+{
+    "=auto-draft-263@NDSS": {
+        "meta": {
+            "title": "Above and Beyond: Organizational Efforts to Complement U.S. Digital Security Compliance Mandates",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-263@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-107B-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文探讨了组织在实施数字安全合规程序时面临的挑战，特别是在美国的基本服务领域。尽管合规程序旨在帮助组织建立最低安全标准，但它们通常不足以解决所有潜在的安全威胁。论文通过调查安全专业人士，分析了组织如何通过补充措施来弥补合规程序的不足，以及这些措施的有效性和实施过程中遇到的挑战。具体来说，论文试图解决以下问题：\n\n1. 组织如何识别和补充合规程序未能覆盖的安全漏洞。\n2. 哪些补充措施被认为特别有效，以及为什么。\n3. 组织如何选择、优先考虑和评估他们采用的补充措施。\n4. 补充合规措施实施过程中遇到的常见问题和挑战。\n\n论文的目的是提供对实际组织中补充合规措施使用的深入了解，并为改进合规标准和组织实施这些措施的方式提供建议。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了与数字安全合规性和补充措施相关的多个研究领域。以下是一些相关的研究主题和具体工作：\n\n1. **合规程序和挑战**：\n   - 研究了合规程序文本中的法律义务理解与实施问题，特别是法律语言的模糊性和复杂性。\n   - 探讨了不同业务领域中合规的复杂性，例如金融领域的PCI DSS和医疗保健领域的合规性实施问题。\n   - 分析了工业控制系统中的合规问题，以及这些系统可能存在的已知关键漏洞。\n\n2. **人类因素在安全操作中的作用**：\n   - 研究了纽约市网络司令部的案例，发现通过威胁建模进行主动风险管理规划可以带来实际好处。\n   - 探讨了安全管理系统中的人类因素，如网络管理员定义政策集以覆盖计算机和网络资源的所有部分。\n   - 研究了开发者对软件安全实践和合规性的影响，以及组织行为和文化如何影响安全操作的有效性。\n\n3. **补充合规措施**：\n   - 分析了系统管理员采取超出合规要求的额外步骤来填补感知到的安全漏洞。\n   - 探讨了组织如何使用合规标准作为基线安全清单，以及组织可能因为“逐字遵循”合规标准而存在安全问题。\n\n4. **安全培训和意识**：\n   - 研究了基于理论的培训如何提高员工对信息安全政策的遵守情况。\n\n5. **安全配置错误**：\n   - 探讨了安全配置错误（某些合规程序涉及的问题），以及这些错误背后的人为因素。\n\n6. **漏洞披露程序**：\n   - 讨论了信任、沟通和资源配置的破裂如何抑制漏洞披露程序的有效性。\n\n7. **事件响应工具的可用性**：\n   - 识别了事件响应工具中的多个可用性问题，以及有时需要内部开发的定制工具。\n\n这些相关研究为论文提供了背景和理论基础，帮助理解组织在实施数字安全合规措施时面临的挑战，以及它们如何通过补充措施来提高安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下步骤来解决组织在实施数字安全合规程序时面临的问题：\n\n1. **调查研究**：\n   - 对来自六个美国基本服务领域的40名安全专业人士进行了调查，以了解他们如何补充合规程序来解决感知到的安全漏洞。\n\n2. **数据收集**：\n   - 设计了一个包含21个问题的调查问卷，包含开放式和封闭式问题，以收集关于参与者的专业经验、感知和背景信息。\n\n3. **分析补充措施**：\n   - 分析了组织采用的补充措施，包括它们的选择、实施和评估过程，以及这些措施的优先级和有效性。\n\n4. **识别挑战和问题**：\n   - 揭示了在实施补充措施时遇到的挑战，如管理不善、信息过载和保持措施更新的困难。\n\n5. **提供建议**：\n   - 基于调查结果，提出了改进合规标准和组织补充合规措施实施的建议。\n   - 建议合规标准应直接整合管理审计任何感知补充措施的指导，以及组织在实施这些措施之前应仔细规划端到端的部署和操作。\n\n6. **定量和定性分析**：\n   - 使用混合模型回归和Kendall等级相关系数等统计方法来分析参与者对补充措施的满意度和评估频率之间的关系。\n\n7. **案例研究和实例**：\n   - 通过真实世界的案例和实例来说明组织如何成功或不成功地实施补充措施，以及这些实例对安全实践的影响。\n\n通过这些方法，论文不仅识别了组织在合规性方面存在的具体问题，而且还提供了实际的见解和建议，以帮助组织更有效地管理数字安全风险。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文并没有进行实验性研究，而是采用了调查研究方法来收集和分析数据。具体来说，论文中的研究活动包括：\n\n1. **调查问卷设计**：\n   - 设计了一个包含多个问题的调查问卷，旨在收集安全专业人士对于补充合规措施的看法和经验。\n\n2. **参与者招募**：\n   - 通过个人联系、电子邮件列表和社交媒体等途径，从不同的业务领域招募了参与者。\n\n3. **数据收集**：\n   - 通过在线调查问卷收集了40名安全专业人士的回答，这些参与者来自多个美国基本服务领域。\n\n4. **定性分析**：\n   - 对参与者的开放式回答进行了迭代开放编码，创建了一个代码手册来对回答进行分类和主题聚合。\n\n5. **定量分析**：\n   - 对调查问卷中的Likert量表问题进行了统计分析，使用了序数逻辑回归模型和Kendall等级相关系数来分析数据。\n\n6. **结果验证**：\n   - 手动验证了报告的补充措施，以确保它们确实是补充性质的，而不是合规标准所要求的措施。\n\n7. **调查问卷试点测试**：\n   - 在广泛分发调查问卷之前，邀请了两名安全专业人士完成问卷并提供反馈，然后根据反馈更新了问卷。\n\n这些研究活动共同构成了论文的研究方法，旨在深入了解组织如何通过补充措施来弥补合规程序的不足，并评估这些措施的有效性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了几个可以进一步探索的点，这些点基于当前研究的发现和存在的知识空白：\n\n1. **合规标准的有效性**：\n   - 进一步研究特定领域的合规标准，如金融领域的标准，以了解它们是否提供了足够的安全保护，以及哪些特征使得某些标准更有效。\n\n2. **全球市场的合规性**：\n   - 将研究扩展到美国以外的组织，探索不同国家和地区的合规标准和实践，以及它们与美国标准的比较。\n\n3. **补充措施的长期效果**：\n   - 对组织采用的补充措施进行长期研究，以了解这些措施随时间的效果和持续性。\n\n4. **组织文化和安全实践**：\n   - 研究组织文化和结构如何影响安全措施的实施和有效性，以及如何通过改善组织文化来提高安全水平。\n\n5. **补充措施的成本效益分析**：\n   - 进行更深入的成本效益分析，以确定补充合规措施的经济可行性和投资回报。\n\n6. **技术和威胁的发展**：\n   - 随着技术和网络威胁的不断发展，研究合规标准和补充措施如何适应这些变化，以及如何保持其有效性。\n\n7. **用户行为和安全培训**：\n   - 探索用户行为对安全措施成功的影响，以及如何设计更有效的安全培训和意识提升计划。\n\n8. **自动化和机器学习在安全中的应用**：\n   - 研究自动化和机器学习技术在提高安全措施有效性方面的潜力，以及如何整合这些技术来增强合规性。\n\n9. **跨部门和跨组织的安全合作**：\n   - 研究不同组织和部门之间如何更有效地合作，共享安全最佳实践和威胁情报，以提高整体安全水平。\n\n这些潜在的研究方向可以帮助学术界和实践界更好地理解和提高组织在数字安全合规性和补充措施方面的实践。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **背景**：论文讨论了数字安全合规程序在保护组织免受网络攻击方面的局限性。尽管合规程序为组织提供了基本的安全标准，但它们往往不能覆盖所有潜在的安全威胁。\n\n2. **研究目的**：旨在了解组织如何通过补充措施来弥补合规程序的不足，以及这些措施的有效性和实施过程中遇到的挑战。\n\n3. **方法**：通过调查40名来自美国六个基本服务领域的安全专业人士，收集了关于组织补充合规措施的见解。\n\n4. **主要发现**：\n   - 大多数参与者认为合规程序不足以保护他们的组织免受攻击，因此实施了补充措施。\n   - 补充措施包括多因素认证、终端检测和响应工具、定期账户访问审查等。\n   - 参与者普遍对补充措施持积极态度，但也报告了管理不善、信息过载和保持措施更新的挑战。\n\n5. **建议**：\n   - 建议合规标准应整合管理审计任何补充措施的指导。\n   - 建议组织在实施补充措施前仔细规划端到端的部署和操作。\n\n6. **未来研究方向**：\n   - 进一步探索特定领域的合规标准的有效性。\n   - 研究组织文化和结构如何影响安全措施的实施。\n   - 进行补充措施的长期效果研究。\n\n论文的结论强调了合规程序的重要性，同时也指出了组织需要采取额外措施来提高安全性的必要性。通过提供实际的建议和未来研究的方向，论文旨在帮助组织更有效地管理数字安全风险。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是Above and Beyond: Organizational Efforts to Complement U.S. Digital Security Compliance Mandates，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-107B-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-263@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-224@NDSS": {
+        "meta": {
+            "title": "Binary Search in Secure Computation",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-224@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-106-paper.pdf"
+        }
+    },
+    "=auto-draft-213@NDSS": {
+        "meta": {
+            "title": "CFInsight: A Comprehensive Metric for CFI Policies",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-213@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-165-paper.pdf"
+        }
+    },
+    "=auto-draft-225@NDSS": {
+        "meta": {
+            "title": "Chunked-Cache: On-Demand and Scalable Cache Isolation for Security Architectures",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-225@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-110-paper.pdf"
+        }
+    },
+    "=auto-draft-205@NDSS": {
+        "meta": {
+            "title": "DeepSight: Mitigating Backdoor Attacks in Federated Learning Through Deep Model Inspection",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-205@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-156-paper.pdf"
+        }
+    },
+    "=auto-draft-201@NDSS": {
+        "meta": {
+            "title": "EMS: History-Driven Mutation for Coverage-based Fuzzing",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-201@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-162-paper.pdf"
+        }
+    },
+    "=auto-draft-197@NDSS": {
+        "meta": {
+            "title": "EqualNet: A Secure and Practical Defense for Long-term Network Topology Obfuscation",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-197@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-154-paper.pdf"
+        }
+    },
+    "=auto-draft-229@NDSS": {
+        "meta": {
+            "title": "FedCRI: Federated Mobile Cyber-Risk Intelligence",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-229@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-153-paper.pdf"
+        }
+    },
+    "=auto-draft-264@NDSS": {
+        "meta": {
+            "title": "Fighting Fake News in Encrypted Messaging with the Fuzzy Anonymous Complaint Tally System (FACTS)",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-264@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-109-paper.pdf"
+        }
+    },
+    "=auto-draft-200@NDSS": {
+        "meta": {
+            "title": "FirmWire: Transparent Dynamic Analysis for Cellular Baseband Firmware",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-200@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-136-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文介绍了FIRMWIRE，这是一个针对蜂窝基带处理器固件的全系统仿真平台。基带处理器负责实现复杂的蜂窝协议，并在智能手机中起着至关重要的作用。尽管基带固件具有广泛的空中攻击面，但它们在安全分析方面却鲜有关注。本文试图解决的问题包括：\n\n1. **缺乏全面的基带固件安全分析**：以前的研究主要依赖于手动静态分析或单一功能的模糊测试，这些方法耗时且难以扩展到大量设备模型和固件版本。\n\n2. **基带固件的复杂性和专有性**：基带固件通常非常复杂，且不公开源代码，这使得外部研究人员难以分析和测试其安全性。\n\n3. **基带固件执行环境的模拟挑战**：由于基带固件与硬件的紧密交互和实时操作系统（RTOS）的复杂性，模拟基带处理器的行为是一个挑战。\n\nFIRMWIRE通过提供一个能够执行未经修改的基带二进制固件的全系统仿真平台来解决这些问题。它提供了基带特定的API，便于添加对新供应商、固件映像和安全分析的支持。此外，FIRMWIRE能够自动发现和桥接内部基带API，轻松注入协议消息，从而提高了基带固件安全性测试的可扩展性和自动化程度。通过使用FIRMWIRE，研究人员能够对LTE和GSM协议进行模糊测试，并发现了多个可能导致远程代码执行的预认证内存损坏漏洞。论文还展示了FIRMWIRE在多个设备模型上的仿真准确性，并通过实际设备上的空中测试验证了发现的漏洞。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了与蜂窝协议安全和基带固件安全相关的一些研究工作，具体包括：\n\n1. **BaseSpec** [38]: 通过静态和符号执行分析基带固件，并与蜂窝标准进行比较以发现不一致性。与FIRMWIRE相比，BaseSpec主要关注NAS协议，并且没有考虑准确的基带状态。\n\n2. **LTEFuzz** [40]: 通过黑盒方式测试物理设备上的LTE NAS和RRC消息处理。LTEFuzz的方法侧重于通过反转协议决策树来分类无效测试用例，并突变LTE控制包。\n\n3. **DoLTEst** [55]: 提供了一种更系统的下行链路测试方法，但与LTEFuzz一样，也需要物理设备和启用的日志监控。\n\n4. **T-Fuzz** [34]: 使用基于TTCN-3的现有蜂窝测试套件作为负面测试（模糊测试）的基础。这项工作的具体测试设备和使用情况不清楚。\n\n5. **LTEInspector** [31]: 通过关注LTE协议的状态机和安全属性，发现了LTE中的多个漏洞。\n\n6. **5GReasoner** [32]: 对5G使用模型检查方法，发现了多个弱点和漏洞。\n\n7. **Atomic** [10]: 分析LTE规范文档的措辞，发现了LTE本身以及一些实现中的漏洞。\n\n8. **aLTEr攻击** [58]: 针对LTE MAC层的攻击，展示了加密漏洞和能够实现IP流量和设备指纹识别的密文攻击。\n\n9. **SigOver** [69] 和 **SigUnder** [44]: 分别针对LTE和5G NR物理信道的攻击，能够实现恶意广播消息、信号风暴、拒绝服务和降级攻击。\n\n10. **早期的基带攻击研究** [51, 50]: 展示了通过模糊测试本地设备生成无效SMS消息来揭示解析和协议漏洞的方法，并扩展了这项工作以证明远程SMS攻击的可能性。\n\n11. **BaseSAFE** [45]: 通过在Unicorn CPU模拟器中重新托管单个函数来模糊测试基带固件。\n\n此外，论文还提到了固件重托管和硬件无关动态分析的相关研究，如FIRM-AFL [71]、Jetset [35]、DICE [47] 等，这些研究提供了不同的方法来分析和测试嵌入式系统的固件，但没有一个能够直接应用于复杂的基带固件分析场景。\n\n这些相关工作为FIRMWIRE的开发提供了背景和动机，并且FIRMWIRE在这些研究的基础上提供了一个更为全面和系统的解决方案，用于动态分析基带处理器固件。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下方法解决了基带固件安全分析的问题：\n\n1. **全系统仿真平台（FIRMWIRE）**：开发了一个能够执行未经修改的基带二进制固件的仿真平台。这使得研究人员能够在一个受控的环境中分析基带固件，而无需物理设备。\n\n2. **基带特定的API**：提供了易于使用的API，允许研究人员轻松添加对新供应商、固件映像和安全分析的支持。这些API帮助模拟基带固件与硬件的交互，并提供了对内部状态和功能的访问。\n\n3. **自动化和可扩展性**：FIRMWIRE支持自动化的动态分析，如模糊测试，以及手动交互式分析。它能够自动发现和桥接内部基带API，从而简化了协议消息的注入过程。\n\n4. **跨不同ISA和设备模型的支持**：FIRMWIRE能够支持不同指令集架构（ISA）和多种设备模型的基带固件，展示了其架构无关性和可扩展性。\n\n5. **漏洞发现和验证**：使用FIRMWIRE对LTE和GSM协议进行模糊测试，发现了多个预认证内存损坏漏洞，其中一些是之前未知的。这证明了FIRMWIRE在实际安全测试中的有效性。\n\n6. **空中测试验证**：通过在空中对真实设备进行测试，验证了FIRMWIRE发现的漏洞的真实性，并证明了其仿真结果的准确性。\n\n7. **开源和社区支持**：FIRMWIRE作为一个可扩展的平台，被开源给社区，以便未来的研究者可以在此基础上进一步开发和扩展。\n\n通过这些方法，论文成功地提出了一个系统性的解决方案，用于自动化和可扩展的基带固件安全测试，这在以前的研究中是缺乏的。FIRMWIRE不仅提高了分析的效率和准确性，还为未来在这一领域的研究提供了一个强大的工具。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了以下实验来评估FIRMWIRE平台的性能和有效性：\n\n1. **基础仿真测试**：研究人员使用FIRMWIRE对来自两个不同供应商的213个基带固件映像进行了仿真，涉及6种不同的芯片组和9种手机型号。这展示了FIRMWIRE的可扩展性和对多种设备的兼容性。\n\n2. **自动化动态分析**：通过FIRMWIRE的ModKit开发了一个内置模块，用于实现基于覆盖引导的模糊测试。这结合了仿真核心的内置仪器和RTOS任务注入，从基带内部模糊测试协议实现。\n\n3. **性能评估**：研究人员针对LTE RRC、GSM CC和GSM SM协议开发了模糊测试任务，并在多个基带固件上执行了24小时的模糊测试。通过比较不同固件和硬件平台上的测试结果，评估了FIRMWIRE的性能和覆盖率。\n\n4. **漏洞发现**：通过模糊测试，研究人员发现了7个潜在的漏洞，其中4个是之前未知的。这些漏洞涉及LTE和GSM协议，并可能允许远程代码执行。\n\n5. **漏洞验证和重现**：研究人员在真实的设备上通过空中测试重现了这些漏洞，证明了FIRMWIRE仿真结果的准确性，并验证了这些漏洞在物理设备上的实际影响。\n\n6. **与现有技术的比较**：研究人员将FIRMWIRE的测试结果与现有的BaseSAFE工具进行了比较，展示了FIRMWIRE在自动化测试和代码覆盖率方面的优势。\n\n7. **扩展性测试**：研究人员通过添加新的硬件平台和固件映像来测试FIRMWIRE的扩展性，记录了所需时间和努力，并展示了FIRMWIRE的易用性和灵活性。\n\n8. **大规模漏洞分析**：研究人员对229个不同固件映像进行了大规模测试，以评估发现的漏洞在不同固件版本和设备模型中的普遍性。\n\n这些实验不仅证明了FIRMWIRE作为一个强大的基带固件分析平台的能力，而且还展示了其在实际安全研究和漏洞发现中的有效性。通过这些实验，研究人员能够更深入地了解基带固件的安全性，并为未来的研究和开发提供了宝贵的见解和数据。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出的FIRMWIRE平台为未来的研究提供了多个可以进一步探索的点：\n\n1. **支持更多供应商和设备**：虽然FIRMWIRE已经支持了两个主要的设备供应商，但全球还有更多的基带处理器供应商和设备型号。扩展FIRMWIRE以支持更多的供应商和设备将是一个有价值的研究方向。\n\n2. **自动化硬件建模**：论文提到了自动建模硬件接口的挑战，尤其是对于复杂的DMA交互和共享内存。研究如何改进自动化硬件建模技术，以更好地模拟基带固件的硬件环境，可以进一步提高仿真的准确性和效率。\n\n3. **集成更先进的分析技术**：FIRMWIRE目前集成了模糊测试和动态分析技术。未来的工作可以探索集成符号执行、静态分析或其他高级技术，以提高漏洞发现的深度和广度。\n\n4. **性能优化**：尽管FIRMWIRE已经展示了对多种设备的仿真能力，但对于更大规模的测试和分析，性能仍然是一个关键因素。研究如何优化仿真性能，减少资源消耗，可以使得FIRMWIRE适用于更复杂和长时间的分析任务。\n\n5. **5G和未来技术的分析**：随着5G和其他未来通信技术的发展，基带固件将变得更加复杂。研究如何适应这些新技术，并对5G NR实现和其他未来协议进行安全分析，将是一个重要的研究方向。\n\n6. **与操作系统和应用层的交互**：基带固件不仅处理无线电通信，还与操作系统和应用程序层交互。研究这些交互点的安全性，以及如何模拟和分析这些交互，可以揭示新的安全问题和攻击面。\n\n7. **社区驱动的研究和工具开发**：由于FIRMWIRE是开源的，鼓励社区参与和协作将是推动该领域发展的关键。研究人员可以共同开发新的工具、插件和分析模块，以扩展FIRMWIRE的功能。\n\n8. **教育和培训**：FIRMWIRE可以作为一个教育工具，帮助学生和研究人员学习基带固件和蜂窝协议的安全性。开发教育材料和培训课程，可以帮助培养下一代的安全研究人员。\n\n通过这些进一步的探索，FIRMWIRE平台和相关的研究可以继续推动基带固件安全分析领域的发展。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **问题陈述**：基带处理器在智能手机中负责执行复杂的蜂窝协议，但其固件由于缺乏公开的源代码和复杂的执行环境，使得安全分析变得非常困难。现有的安全分析方法主要依赖于手动静态分析或单一功能的模糊测试，这些方法效率低下且难以扩展。\n\n2. **FIRMWIRE平台**：为了解决上述问题，论文提出了FIRMWIRE，这是一个全系统仿真平台，能够执行未经修改的基带二进制固件。FIRMWIRE提供了基带特定的API，支持动态分析，如模糊测试，并能够自动发现和桥接内部基带API。\n\n3. **实验和评估**：研究人员使用FIRMWIRE对来自两个主要供应商的213个基带固件映像进行了测试，覆盖了6种不同的芯片组和9种手机型号。通过模糊测试，发现了7个预认证内存损坏漏洞，其中4个是之前未知的。此外，通过在真实设备上进行空中测试，验证了FIRMWIRE发现的漏洞的真实性。\n\n4. **贡献和影响**：FIRMWIRE作为一个可扩展的平台，被开源给社区，以便未来的研究者可以在此基础上进一步开发和扩展。论文的实验结果证明了FIRMWIRE在提高基带固件安全测试的效率和准确性方面的潜力。\n\n5. **未来工作**：论文提出了多个未来研究方向，包括支持更多供应商和设备、自动化硬件建模、集成更先进的分析技术、性能优化、5G和未来技术的安全分析、与操作系统和应用层的交互分析，以及社区驱动的研究和工具开发。\n\n总体而言，这篇论文介绍了一个创新的平台，旨在解决基带固件安全分析中的一些关键挑战，并通过一系列实验展示了其有效性和可扩展性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是FirmWire: Transparent Dynamic Analysis for Cellular Baseband Firmware，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-136-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-200@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-194@NDSS": {
+        "meta": {
+            "title": "Forensic Analysis of Configuration-based Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-194@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-57-paper.pdf"
+        }
+    },
+    "=auto-draft-241@NDSS": {
+        "meta": {
+            "title": "Get a Model! Model Hijacking Attack Against Machine Learning Models",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-241@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-64-paper.pdf"
+        }
+    },
+    "=auto-draft-209@NDSS": {
+        "meta": {
+            "title": "HARPO: Learning to Subvert Online Behavioral Advertising",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-209@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-62-paper.pdf"
+        }
+    },
+    "=auto-draft-245@NDSS": {
+        "meta": {
+            "title": "hbACSS: How to Robustly Share Many Secrets",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-245@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-120-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是如何在网络中实现鲁棒的多方计算（MPC），特别是在存在间歇性延迟的非同步网络环境中。尽管近年来在使MPC实用化方面取得了显著进展，但现有的MPC库并未提供完整的鲁棒性保证，即在包括离线阶段在内的任何情况下都能保证输出的可靠交付。论文指出，理论中的MPC构造已经能够确保这种鲁棒性，但实际应用中存在差距，主要原因是缺乏高效的可验证/完全秘密共享（VSS/CSS）构造。现有的CSS协议要么要求在实践中难以实现的广播通道，要么引入了至少与参与者数量平方成比例的计算和通信开销。\n\n为了解决这个问题，论文提出了hbACSS，一套具有最优容错性的异步完全秘密共享协议，这些协议在计算和通信开销上是（准）线性的。为了开发hbACSS，作者们开发了hbPolyCommit，一种高效的多项式承诺方案，它在多项式度数上具有（准）线性的计算和通信开销，且不需要信任设置。作者们实现了hbACSS协议，广泛分析了它们的实用性，并观察到这些协议随着参与方数量的增加而良好扩展。特别是，作者们使用hbACSS来生成MPC输入掩码，这是一个在实践中以前只能以非鲁棒方式计算的有用原语。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 相关研究主要集中在以下几个方面：\n\n1. **多方计算（MPC）**：MPC 是一种允许多个参与者共同计算一个函数，而不需要泄露各自输入的技术。它在隐私保护、安全拍卖和分布式系统等领域有着广泛的应用。相关研究包括如何提高MPC的效率、安全性和实用性。\n\n2. **可验证秘密共享（VSS）**：VSS 是一种允许参与者共享秘密，同时确保在一定条件下可以验证共享的正确性的方法。它在MPC中扮演着关键角色，因为需要确保所有诚实的参与者都能正确地重建秘密。\n\n3. **异步完全秘密共享（ACSS）**：ACSS 是VSS的一个扩展，它提供了更强的鲁棒性保证，即使在网络延迟或节点故障的情况下也能正常工作。相关研究探讨了如何在保持最优容错性的同时，降低ACSS的计算和通信开销。\n\n4. **多项式承诺（PolyCommit）**：多项式承诺是一种加密原语，允许参与者承诺一个多项式，而不需要立即揭示其值。在MPC和VSS中，PolyCommit用于确保共享的秘密值的正确性。研究者们致力于开发更高效的PolyCommit方案，以减少计算和通信成本。\n\n5. **信息分散（Information Dispersal）**：信息分散是一种确保数据在分布式系统中可靠存储的技术，即使在部分节点失败的情况下也能保证数据的完整性。在ACSS中，信息分散用于确保即使在异步网络中，所有诚实的节点也能得到他们应有的秘密份额。\n\n6. **零知识证明（Zero-Knowledge Proofs）**：零知识证明是一种允许一方（证明者）向另一方（验证者）证明某个陈述的真实性，而不泄露任何有关证明的具体信息。在MPC和VSS中，零知识证明用于增强隐私保护。\n\n7. **网络模型和容错性**：研究者们探讨了不同的网络模型（如同步和异步网络）对MPC和VSS协议的影响，以及如何在不同的容错模型下设计有效的协议。\n\n这些研究为论文提出的hbACSS协议提供了理论基础和实践指导，同时也展示了在这一领域内持续的创新和进步。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下主要方法解决了在非同步网络中实现鲁棒的多方计算（MPC）的问题：\n\n1. **开发hbACSS协议**：作者提出了一套名为hbACSS的异步完全秘密共享（ACSS）协议，这些协议在计算和通信开销上是（准）线性的。这意味着它们在处理大量参与者时能够保持良好的扩展性。\n\n2. **设计hbPolyCommit方案**：为了支持hbACSS协议，作者开发了hbPolyCommit，这是一种高效的多项式承诺（PolyCommit）方案。它在多项式度数上具有（准）线性的计算和通信开销，且不需要信任设置，这降低了部署分布式系统的复杂性。\n\n3. **实现和分析**：作者实现了hbACSS协议，并对其进行了广泛的实用性分析。他们观察到，随着参与方数量的增加，这些协议能够良好地扩展。\n\n4. **生成MPC输入掩码**：hbACSS协议被用来生成MPC输入掩码，这是一个在实践中以前只能以非鲁棒方式计算的有用原语。这表明hbACSS协议可以在实际的MPC应用中提供鲁棒性。\n\n5. **避免信任设置**：hbPolyCommit方案避免了需要进行困难的协调设置仪式的信任设置，这在实际部署分布式系统时是一个显著的障碍。\n\n6. **性能评估**：作者通过实证评估展示了hbPolyCommit与现有最先进的工作（如AMT）在性能上相当，同时消除了实践中信任设置的需要。当用于实例化hbACSS时，他们发现可以以较高的速率鲁棒地生成输入掩码。\n\n通过这些方法，论文不仅在理论上提出了解决方案，而且在实践中展示了这些方案的可行性和有效性，为实现鲁棒的MPC提供了一个坚实的基础。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了以下实验来评估hbACSS协议和hbPolyCommit方案的性能：\n\n1. **hbPolyCommit与AMT PolyCommit的性能比较**：作者比较了hbPolyCommit与现有的AMT（Authenticated Multipoint Evaluation Trees）PolyCommit方案在证明生成时间和证明验证时间上的性能。实验结果表明，尽管AMT在理论上具有更好的渐进性能，但在实际应用中，hbPolyCommit与AMT的性能差距较小。\n\n2. **hbACSS协议的端到端性能评估**：作者评估了在没有故障和存在最大允许故障（即t个故障）的情况下，hbACSS0和hbACSS2协议的端到端性能。这包括了在故障情况下的恢复过程，以及在最佳情况下的性能。\n\n3. **MPC输入掩码生成**：作者展示了如何使用hbACSS协议在异步设置中鲁棒地生成MPC输入掩码。他们评估了在不同数量的崩溃故障下，每节点生成输入掩码所需的计算工作量。\n\n4. **性能分析**：作者对hbACSS协议在不同网络规模（即参与者数量）下的性能进行了分析，包括在最佳情况下的带宽和计算开销，以及在存在Byzantine故障时的性能。\n\n5. **实际部署考虑**：作者讨论了在实际部署中可能需要考虑的因素，例如使用长期密钥以避免频繁刷新密钥，以及如何通过更大规模的批次来减轻潜在的拒绝服务（DoS）攻击。\n\n这些实验不仅展示了hbACSS协议和hbPolyCommit方案在理论上的优势，而且通过实证数据证明了它们在实际应用中的可行性和有效性。通过这些实验，作者能够展示他们的方案在处理大量参与者时的扩展性，以及在面对网络延迟和节点故障时的鲁棒性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中提出的hbACSS协议和hbPolyCommit方案为进一步的研究提供了多个潜在的探索点：\n\n1. **优化性能**：尽管hbACSS协议在性能上已经取得了显著的进步，但仍有可能通过算法优化、更高效的数据结构或并行计算技术来进一步提高性能。\n\n2. **减少信任假设**：hbPolyCommit方案虽然避免了信任设置，但仍然依赖于某些密码学假设。研究如何在不依赖这些假设的情况下实现类似的功能可能是一个有趣的方向。\n\n3. **跨平台兼容性**：探索如何使hbACSS协议与现有的MPC库和框架兼容，以便更容易地集成到现有的系统中。\n\n4. **安全性分析**：对hbACSS协议进行更深入的安全性分析，包括对潜在攻击的抵抗能力，以及在不同攻击模型下的表现。\n\n5. **实际部署和测试**：在真实的分布式系统中部署hbACSS协议，并在实际网络条件下进行测试，以评估其在现实世界中的性能和可靠性。\n\n6. **扩展到其他应用**：研究hbACSS协议在其他隐私保护应用中的潜在用途，例如匿名投票、安全拍卖或分布式账本技术。\n\n7. **改进容错机制**：探索更高效的容错和恢复机制，以应对更复杂的网络故障和恶意行为。\n\n8. **跨学科研究**：将密码学、分布式系统和网络工程等领域的知识结合起来，以解决MPC在实际部署中遇到的跨学科问题。\n\n9. **教育和培训**：开发教育材料和培训课程，帮助研究人员和实践者更好地理解和使用hbACSS协议。\n\n10. **开源社区贡献**：将hbACSS协议和相关工具开源，鼓励社区参与，以促进技术的迭代和创新。\n\n这些探索点不仅有助于提高现有协议的性能和安全性，而且有助于推动MPC技术在更广泛领域的应用。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **问题陈述**：论文指出，在非同步网络环境中，现有的多方计算（MPC）库缺乏完整的鲁棒性，特别是在保证输出交付方面。这主要是因为缺乏高效的可验证/完全秘密共享（VSS/CSS）构造。\n\n2. **主要贡献**：作者提出了hbACSS，一套具有最优容错性的异步完全秘密共享协议，这些协议在计算和通信开销上是（准）线性的。此外，他们还开发了hbPolyCommit，一种无需信任设置的高效多项式承诺方案。\n\n3. **协议设计**：hbACSS协议通过结合hbPolyCommit和异步可验证信息分散（AVID）技术，实现了在异步网络中的鲁棒性。这些协议允许在网络延迟或节点故障的情况下，仍然能够正确地共享和重建秘密。\n\n4. **实现与分析**：作者实现了hbACSS协议，并对其进行了广泛的实用性分析。他们展示了随着参与方数量的增加，这些协议能够良好地扩展。特别是，他们使用hbACSS来生成MPC输入掩码，这是一个在实践中以前只能以非鲁棒方式计算的有用原语。\n\n5. **性能评估**：通过实验，作者比较了hbPolyCommit与现有最先进的AMT PolyCommit方案的性能。他们发现hbPolyCommit在实践中与AMT性能相当，同时消除了信任设置的需要。当用于实例化hbACSS时，他们能够以较高的速率鲁棒地生成输入掩码。\n\n6. **应用场景**：论文讨论了hbACSS协议在MPC中的应用，特别是在生成输入掩码方面。此外，作者还提出了这些协议在其他潜在应用中的使用，如匿名广播和随机信标。\n\n7. **结论**：作者得出结论，他们的工作在理论和实践之间架起了一座桥梁，为实现鲁棒和异步的MPC提供了重要的一步。他们还指出了未来研究的潜在方向，包括进一步优化性能和探索新的应用场景。\n\n总的来说，这篇论文通过提出新的协议和方案，显著推进了在非同步网络环境中实现鲁棒MPC的研究。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是hbACSS: How to Robustly Share Many Secrets，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-120-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-245@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-236@NDSS": {
+        "meta": {
+            "title": "Interpretable Federated Transformer Log Learning for Cloud Threat Forensics",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-236@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-102-paper.pdf"
+        }
+    },
+    "=auto-draft-204@NDSS": {
+        "meta": {
+            "title": "Local and Central Differential Privacy for Robustness and Privacy in Federated Learning",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-204@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-54-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文探讨了在联邦学习（Federated Learning, FL）环境中，如何使用差分隐私（Differential Privacy, DP）技术来保护数据隐私和模型的鲁棒性。具体来说，论文试图解决以下问题：\n\n1. **隐私和鲁棒性漏洞**：联邦学习允许多个参与者在保持数据本地化的同时，通过仅交换模型更新来协作训练机器学习模型。然而，这种设置可能面临隐私和鲁棒性方面的攻击，例如成员推断攻击、属性推断攻击和后门攻击。\n\n2. **差分隐私在FL中的应用**：论文研究了差分隐私（特别是局部差分隐私（Local Differential Privacy, LDP）和中心差分隐私（Central Differential Privacy, CDP））在联邦学习中的应用，以评估它们在保护隐私和抵御攻击方面的可行性和有效性。\n\n3. **隐私与实用性的权衡**：论文旨在量化隐私保护和模型实用性之间的权衡，特别是在部署LDP和CDP防御机制时。\n\n4. **防御机制的比较**：论文比较了LDP和CDP与其他现有防御机制（如范数约束和弱DP）在抵御后门攻击和推断攻击方面的性能。\n\n5. **实证研究**：通过在多个数据集上的实验，论文提供了LDP和CDP在实际联邦学习环境中保护隐私和鲁棒性的实证分析。\n\n总结来说，论文的主要贡献在于提供了一个全面的、可复用的测量方法论，用于量化在差分私有的联邦学习中隐私、鲁棒性和实用性之间的权衡。同时，它也是首次实证展示了LDP和CDP可以有效抵御白盒成员推断攻击，并且在一定程度上保护了模型的实用性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了多个与联邦学习、差分隐私、以及针对机器学习模型的攻击和防御相关的研究。以下是一些相关的研究领域和具体工作：\n\n1. **联邦学习 (Federated Learning)**:\n   - [McMahan et al., 2017] 提出了一种通信高效的深度网络学习框架，这是联邦学习领域的开创性工作之一。\n   - [Hard et al., 2018] 研究了在移动键盘预测中应用联邦学习的方法。\n\n2. **差分隐私 (Differential Privacy)**:\n   - [Dwork et al., 2014] 是差分隐私领域的基础性工作，为后续的研究提供了理论和算法基础。\n   - [Abadi et al., 2016] 提出了在深度学习中应用差分隐私的方法，这对于保护数据隐私至关重要。\n\n3. **机器学习模型的鲁棒性**:\n   - [Biggio et al., 2012] 研究了对支持向量机的投毒攻击，这是机器学习鲁棒性研究的早期工作之一。\n   - [Chen et al., 2019] 分析了联邦学习中的鲁棒性问题，特别是通过对抗性视角。\n\n4. **隐私攻击**:\n   - [Shokri et al., 2017] 首次提出了针对机器学习模型的成员推断攻击（Membership Inference Attacks, MIAs）。\n   - [Melis et al., 2019] 研究了在协作学习中利用意外特征泄露的属性推断攻击。\n\n5. **攻击和防御机制**:\n   - [Sun et al., 2019] 提出了针对联邦学习的后门攻击，并探讨了可能的防御策略。\n   - [Geyer et al., 2017] 和 [Pihur et al., 2018] 研究了在联邦学习中应用差分隐私的方法，以提供客户端级别的隐私保护。\n\n6. **机器学习模型的安全性**:\n   - [Fredrikson et al., 2015] 和 [Papernot et al., 2016] 研究了机器学习模型逆向攻击的问题，并提出了一些防御策略。\n\n这些研究构成了论文所探讨问题的理论基础，并为论文的实验设计和分析提供了参考。论文通过结合这些相关领域的研究成果，提出了一种新的防御策略，并通过实验验证了其有效性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下步骤解决联邦学习中的隐私和鲁棒性问题：\n\n1. **问题分析**：首先，论文分析了联邦学习中的隐私和鲁棒性问题，特别是成员推断攻击、属性推断攻击和后门攻击。\n\n2. **差分隐私技术**：论文探讨了局部差分隐私（LDP）和中心差分隐私（CDP）技术在联邦学习中的应用。LDP通过在本地添加噪声来保护个体数据，而CDP则在服务器端聚合时添加噪声。\n\n3. **实验设计**：论文设计了一系列实验来评估LDP和CDP在不同攻击场景下的有效性。这些实验包括后门攻击、成员推断攻击和属性推断攻击。\n\n4. **实证分析**：通过在多个数据集上进行实验，论文提供了LDP和CDP在实际联邦学习环境中保护隐私和鲁棒性的实证分析。实验结果显示，LDP和CDP能够有效地防御后门攻击和成员推断攻击，但在属性推断攻击方面表现不佳。\n\n5. **权衡量化**：论文提供了一个全面的、可复用的测量方法论，用于量化在差分私有的联邦学习中隐私、鲁棒性和实用性之间的权衡。这包括了对攻击防御效果的量化评估，以及对模型性能影响的分析。\n\n6. **防御机制比较**：论文比较了LDP和CDP与其他现有防御机制（如范数约束和弱DP）在抵御后门攻击和推断攻击方面的性能，提供了不同防御策略之间的性能对比。\n\n7. **局限性与未来工作**：论文讨论了研究的局限性，并提出了未来工作的方向，如扩展实验到更多的任务和数据集，以及探索结合多种防御机制来同时解决多个鲁棒性和隐私问题。\n\n总体而言，论文通过结合理论分析和实证实验，提出了一种新的防御策略，并通过实验验证了其在联邦学习中保护隐私和鲁棒性的有效性。同时，论文也指出了现有方法的局限性，并为未来的研究方向提供了指导。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文进行了一系列实验来评估局部差分隐私（LDP）和中心差分隐私（CDP）在联邦学习（FL）中的效果，特别是在抵御后门攻击和推断攻击方面。以下是论文中进行的主要实验：\n\n1. **后门攻击实验**：\n   - 使用了EMNIST（手写数字）、CIFAR10（图像分类）、Reddit评论和Sentiment140（情感分析）等数据集。\n   - 设定了不同数量的参与者和攻击者比例，以模拟不同的联邦学习场景。\n   - 比较了LDP、CDP与其他防御机制（如范数约束和弱DP）在减少后门攻击成功率方面的有效性，并评估了它们对模型实用性的影响。\n\n2. **成员推断攻击实验**：\n   - 在CIFAR100、Purchase100和Texas100数据集上进行了实验，这些数据集包含了不同类别的图像和购物记录。\n   - 实施了白盒成员推断攻击，攻击者尝试确定特定数据点是否用于训练模型。\n   - 评估了LDP和CDP在降低攻击准确性方面的有效性，并与其他防御机制进行了比较。\n\n3. **属性推断攻击实验**：\n   - 使用了Labeled Faces in the Wild (LFW) 数据集，该数据集包含人脸图像和相关的属性标签（如性别、种族等）。\n   - 进行了属性推断攻击，攻击者试图从模型中推断出训练数据的属性信息。\n   - 评估了LDP和CDP在防御此类攻击方面的性能，并分析了它们对主要任务（如性别分类）准确性的影响。\n\n这些实验的目的是为了量化隐私保护和模型实用性之间的权衡，并提供一个全面的测量框架来理解LDP和CDP在保护联邦学习模型方面的有效性。实验结果表明，LDP和CDP都能在一定程度上防御后门攻击和成员推断攻击，但在属性推断攻击方面，LDP和CDP的效果有限。此外，实验还揭示了隐私保护和模型性能之间的复杂权衡关系。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了一些限制，并指出了未来可能的研究方向，以下是可以进一步探索的点：\n\n1. **更多攻击类型**：论文主要关注了后门攻击和成员推断攻击。未来研究可以探索其他类型的攻击，如模型逆向攻击、模型窃取攻击和数据重建攻击等。\n\n2. **更多数据集和任务**：实验是在特定的数据集和任务上进行的。未来的研究可以在更多样化的数据集和不同类型的机器学习任务上评估LDP和CDP的效果。\n\n3. **实际部署**：研究LDP和CDP在真实世界联邦学习部署中的性能，包括在不同网络条件、设备异构性和参与方行为模式下的效果。\n\n4. **改进的防御机制**：探索结合LDP、CDP与其他防御技术（如加密技术、安全聚合算法等）的方法，以提供更强的隐私保护和鲁棒性。\n\n5. **隐私度量比较**：开发更实用的方法来比较LDP和CDP提供的隐私保护水平，尽管它们具有不同的隐私定义。\n\n6. **效率和可扩展性**：研究如何提高LDP和CDP在大规模联邦学习环境中的效率和可扩展性，包括减少通信开销和计算成本。\n\n7. **参与者行为建模**：考虑参与者的不诚实行为，如不合作、作弊或恶意行为，研究这些行为对隐私保护和模型鲁棒性的影响。\n\n8. **跨领域应用**：将LDP和CDP应用于医疗、金融等敏感领域的联邦学习，研究在这些领域的特定要求和挑战。\n\n9. **用户参与和教育**：研究如何让用户更好地理解和参与到联邦学习中的隐私保护措施，提高用户对隐私保护措施的信任和满意度。\n\n通过这些进一步的探索，未来的研究可以更全面地理解和改进联邦学习中的隐私和鲁棒性问题，推动这一领域的技术进步和实际应用。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文主要探讨了在联邦学习（FL）环境中，如何利用差分隐私（DP）技术来增强数据隐私保护和模型鲁棒性。以下是论文的主要内容概述：\n\n1. **问题陈述**：论文首先指出联邦学习在隐私和鲁棒性方面存在的潜在漏洞，包括成员推断、属性推断和后门攻击等。\n\n2. **差分隐私技术**：介绍了局部差分隐私（LDP）和中心差分隐私（CDP）的概念，并讨论了它们在联邦学习中的应用可能性。\n\n3. **实验评估**：通过一系列实验，评估了LDP和CDP在防御后门攻击和成员推断攻击方面的有效性，并与其他防御机制进行了比较。\n\n4. **实证结果**：实验结果表明，LDP和CDP能够有效地减少后门攻击的成功率，并且在一定程度上抵御成员推断攻击，但在属性推断攻击方面效果有限。\n\n5. **权衡分析**：论文提供了一个测量框架，用于量化隐私保护和模型实用性之间的权衡，展示了不同隐私保护级别下模型性能的变化。\n\n6. **讨论与结论**：论文讨论了研究的局限性，并提出了未来工作的方向，包括扩展到更多攻击类型、数据集和任务，以及探索更高效的防御机制。\n\n总体而言，这篇论文通过实证研究展示了差分隐私技术在联邦学习中的潜力，为保护数据隐私和提高模型鲁棒性提供了有价值的见解和方法。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是Local and Central Differential Privacy for Robustness and Privacy in Federated Learning，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-54-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-204@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-217@NDSS": {
+        "meta": {
+            "title": "PoF: Proof-of-Following for Vehicle Platoons",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-217@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-77-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是如何在车辆编队（platooning）的场景中，确保车辆之间的物理接近性和通信的真实性。具体来说，论文提出了一个新的安全协议，称为Proof-of-Following (PoF)，用于验证一个候选车辆（candidate）是否真的在跟随一个验证者车辆（verifier）在典型的编队距离内。这个协议的目的是填补物理世界和数字世界之间的安全链接，确保车辆编队中的通信不会被远程攻击者伪造或篡改，从而提高车辆编队系统的安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 相关研究主要集中在以下几个方面：\n\n1. **物理上下文验证**：针对车辆应用，提出了多种方法来验证车辆声称的物理属性，例如安全定位/跟踪方法和运动验证方法。这些方法通过比较车辆声称的信息与其他可测量的无线信号特征（如到达角度或多普勒频移）的一致性来进行验证。\n\n2. **编队成员身份验证**：直接针对车辆编队身份验证的研究，如利用车辆在不平整路面上行驶时记录的相似垂直加速度来认证新候选车辆，或者使用驾驶轨迹作为编队成员身份的证明。\n\n3. **距离界定**（Distance bounding）：这是一种安全协议，用于确保证明者（候选者）与验证者（verifier）之间的距离不超过某个预定义的阈值。这些协议通常涉及挑战-响应协议，以确保测量的往返时间可以被限定。\n\n4. **基于物理上下文的接近性验证**：这类方法利用两个或多个设备可观察到的共同上下文来建立共享秘密并验证设备。这些方法可以分为两类：使用无线信号的小尺度衰落（in-band RF methods）和使用其他模态（如声音、光线等）的非无线方法（out-of-band methods）。\n\n5. **车辆编队控制**：研究了车辆编队中的控制算法，如协同自适应巡航控制（CACC），以维持车辆之间的固定距离。\n\n6. **无线信号衰落特性**：研究了无线信号在移动环境中的衰落特性，特别是大尺度衰落（large-scale fading）和小尺度衰落（small-scale fading），以及它们在车辆编队中的应用。\n\n7. **安全通信协议**：研究了如何在车辆网络中实现安全的通信，包括使用公钥基础设施（PKI）来提供车辆身份的认证和消息的完整性保证。\n\n这些相关研究为PoF协议的设计提供了理论和技术基础，特别是在物理层安全、车辆通信和身份验证方面。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过提出一个名为Proof-of-Following (PoF)的新协议来解决车辆编队中的身份验证和物理接近性问题。PoF协议的关键点和解决策略如下：\n\n1. **利用环境特征**：PoF协议利用车辆周围环境的无线信号衰落特性作为共同的随机源。具体来说，它使用来自蜂窝基站的环境射频（RF）信号的大规模衰落效应作为验证候选车辆是否跟随验证者车辆的依据。\n\n2. **大规模衰落特性**：大规模衰落是由于信号在长距离传播和绕过大型物体时的衰减造成的。这种衰落效应随距离和时间的增加而指数级衰减，这为移动车辆提供了一种难以预测的环境变化，从而增加了攻击者伪造信号的难度。\n\n3. **PoF协议流程**：PoF协议包括初始化、收集、PoF验证和持续跟随验证四个阶段。在这些阶段中，候选车辆和验证者车辆会同时收集RF信号强度（RSS）样本，并通过计算这些样本之间的相关性来验证候选车辆是否在跟随距离内。\n\n4. **安全分析**：论文对PoF协议进行了安全性分析，证明了它能够抵御远程攻击者、跟随过远的攻击者以及部分跟随的攻击者。此外，还讨论了如何防止中间人攻击（MiTM），即使在候选车辆不知道验证者身份的情况下。\n\n5. **实验评估**：作者在城市、高速公路和城市快速道路等不同环境下进行了实验评估，展示了PoF协议在实际条件下的有效性和安全性。实验结果表明，PoF协议能够在压倒性的概率上抵御预录制和跟随攻击。\n\n通过这些策略，PoF协议能够在不依赖于复杂的硬件设备的情况下，有效地将车辆的数字身份与其物理状态（如位置、速度等）绑定，从而提高了车辆编队系统的安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行的实验旨在评估Proof-of-Following (PoF)协议在不同驾驶环境下的性能和安全性。以下是实验的主要内容：\n\n1. **实验环境**：作者在城市、高速公路和城市快速道路等不同环境下进行了实验。这些环境包括了不同的交通流量、速度限制和道路条件，以模拟真实的车辆编队场景。\n\n2. **实验设备**：实验使用了基于NI USRP平台的设备，包括USRP N200无线电设备、VERT900天线、笔记本电脑用于记录GPS和RSS数据，以及GPS接收器。这些设备被安装在车辆上，用于收集和处理实验数据。\n\n3. **实验设置**：实验中使用了两辆车，一辆车作为验证者（verifier），另一辆车作为候选者（candidate）。在某些实验中，还使用了额外的车辆作为远程或跟随过远的攻击者。实验中控制了车辆之间的跟随距离，并记录了RSS样本、GPS位置信息和时间戳。\n\n4. **参数选择**：实验中对PoF协议的关键参数进行了选择和优化，包括样本数量、移动平均窗口大小、相关性阈值、相关性测试次数和通过率。这些参数的选择基于实验数据和统计分析，以最小化误报率（EER）。\n\n5. **安全性评估**：实验评估了PoF协议对不同类型的攻击者的抵抗力，包括远程攻击者、跟随过远的攻击者和部分跟随的攻击者。通过改变候选车辆与验证者之间的距离，实验模拟了这些攻击场景，并记录了PoF协议的通过率。\n\n6. **性能评估**：实验还评估了PoF协议在不同环境下的性能，包括RSS样本的随机性、协议的持续时间以及在不同跟随距离下的PoF通过率。\n\n7. **实验结果**：实验结果显示，PoF协议在城市和高速公路环境中都能有效地区分合法的候选车辆和攻击者。在城市环境中，PoF协议能够成功地在合法候选车辆和远程攻击者之间进行区分。在高速公路环境中，PoF协议对跟随过远的攻击者表现更好，主要是因为高速行驶时车辆之间的距离更大，攻击者更难以通过PoF测试。\n\n通过这些实验，论文验证了PoF协议在实际车辆编队场景中的有效性和安全性，为进一步的研究和实际应用提供了实验依据。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了Proof-of-Following (PoF)协议，并在实验中验证了其有效性。尽管如此，仍有一些潜在的研究方向可以进一步探索：\n\n1. **其他物理属性验证**：PoF协议目前主要关注于验证车辆是否在跟随距离内。未来的研究可以探索如何验证车辆的相对位置、车道保持以及其他与编队安全相关的物理属性。\n\n2. **多模态传感器融合**：研究如何结合RF信号以外的其他传感器数据（如摄像头、LiDAR、GPS等）来提高PoF协议的鲁棒性和准确性。\n\n3. **动态环境适应性**：研究PoF协议在更复杂和动态的环境中（如城市交通、多变天气条件）的适应性和性能。\n\n4. **实时攻击检测**：开发实时监控和检测机制，以识别和防御PoF协议可能遇到的新型攻击。\n\n5. **协议优化**：进一步优化PoF协议的参数选择和执行流程，以减少计算开销、提高效率，并在保持安全性的同时减少对车辆性能的影响。\n\n6. **标准化和集成**：探索如何将PoF协议集成到现有的车辆通信标准中，以及如何在实际的车辆网络中部署和实施。\n\n7. **跨车辆平台兼容性**：研究PoF协议在不同类型的车辆和硬件平台上的兼容性和可扩展性。\n\n8. **长期稳定性研究**：进行长期实验，以评估PoF协议在长时间运行中的稳定性和可靠性。\n\n9. **用户体验和可用性**：研究PoF协议对驾驶员和乘客的影响，以及如何设计用户友好的界面和交互方式。\n\n10. **法律和伦理问题**：探讨PoF协议在隐私保护、数据安全和法律责任方面的法律和伦理问题。\n\n这些研究方向可以帮助PoF协议更好地适应实际应用需求，提高车辆编队系统的安全性和效率。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提出了一种名为Proof-of-Following (PoF)的新安全协议，旨在解决车辆编队（platooning）中的安全问题。主要内容包括：\n\n1. **问题背景**：车辆编队能够显著提高道路安全、燃油效率和交通流量。编队中的车辆通过物理感知和车辆间通信（V2V）协调加速、刹车和转向。然而，V2V消息的真实性和完整性对于安全至关重要，现有的公钥基础设施（PKI）无法将车辆的数字身份与其物理状态（如位置、速度）绑定，存在安全漏洞。\n\n2. **PoF协议**：为了填补物理世界和数字世界之间的安全链接，作者提出了PoF协议。该协议通过验证候选车辆与验证者车辆之间的跟随距离来确保安全。PoF利用环境RF信号的大规模衰落特性作为随机源，构建了一个PoF原语。\n\n3. **安全性分析**：论文分析了PoF协议对远程攻击者、跟随过远的攻击者和部分跟随的攻击者的抵抗力。通过实验评估，PoF协议在城市、高速公路和城市快速道路条件下表现出色，能够有效抵御这些攻击。\n\n4. **实验评估**：作者在不同的驾驶环境中对PoF协议进行了实验评估，包括城市、高速公路和城市快速道路。实验结果表明，PoF协议能够在压倒性的概率上抵御预录制和跟随攻击。\n\n5. **未来方向**：论文讨论了PoF协议的潜在改进方向，包括验证其他物理属性、使用多模态传感器数据、优化协议参数、提高跨平台兼容性等。\n\n6. **结论**：PoF协议为车辆编队提供了一种有效的安全机制，通过利用环境RF信号的特性，实现了对车辆跟随状态的验证，提高了编队系统的安全性和可靠性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是PoF: Proof-of-Following for Vehicle Platoons，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-77-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-217@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-233@NDSS": {
+        "meta": {
+            "title": "Privacy in Urban Sensing with Instrumented Fleets, Using Air Pollution Monitoring As A Usecase",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-233@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-127-paper.pdf"
+        }
+    },
+    "=auto-draft-240@NDSS": {
+        "meta": {
+            "title": "Property Inference Attacks Against GANs",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-240@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-19-paper.pdf"
+        }
+    },
+    "=auto-draft-232@NDSS": {
+        "meta": {
+            "title": "ProvTalk: Towards Interpretable Multi-level Provenance Analysis in Networking Functions Virtualization (NFV)",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-232@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-103-paper.pdf"
+        }
+    },
+    "=auto-draft-235@NDSS": {
+        "meta": {
+            "title": "Remote Memory-Deduplication Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-235@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-81-paper.pdf"
+        }
+    },
+    "=auto-draft-237@NDSS": {
+        "meta": {
+            "title": "Repttack: Exploiting Cloud Schedulers to Guide Co-Location Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-237@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-149-paper.pdf"
+        }
+    },
+    "=auto-draft-220@NDSS": {
+        "meta": {
+            "title": "SemperFi: Anti-spoofing GPS Receiver for UAVs",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-220@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-71-paper.pdf"
+        }
+    },
+    "=auto-draft-219@NDSS": {
+        "meta": {
+            "title": "SpiralSpy: Exploring a Stealthy and Practical Covert Channel to Attack Air-gapped Computing Devices via mmWave Sensing",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-219@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-23-paper.pdf"
+        }
+    },
+    "=auto-draft-186@NDSS": {
+        "meta": {
+            "title": "Subverting Stateful Firewalls with Protocol States",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-186@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-37-paper.pdf"
+        }
+    },
+    "=auto-draft-189@NDSS": {
+        "meta": {
+            "title": "The Droid is in the Details: Environment-aware Evasion of Android Sandboxes",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-189@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-56A-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是如何提高移动设备恶意软件沙箱检测系统的准确性和鲁棒性。具体来说，它关注以下几个方面：\n\n1. **环境感知沙箱逃避技术**：研究者提出了一套新的移动沙箱逃避技术，这些技术利用移动设备上的API提取与环境相关的特征，如用户配置、设备上的文件数量以及硬件传感器等，以区分真实用户设备和沙箱环境。\n\n2. **沙箱检测的准确性**：通过收集真实用户设备和沙箱设备的数据，研究者展示了攻击者可以构建一个分类器，以98.54%的准确率区分真实Android设备和知名的移动沙箱。\n\n3. **沙箱环境的不足**：论文强调了即使沙箱环境尝试通过修补运行时属性来防止被检测，它们仍然难以创建出与真实设备无法区分的环境。研究者通过分析沙箱声称的制造商与真实设备之间的特征不一致性，来证明这一点。\n\n4. **移动沙箱的保护不足**：研究表明，现有的移动沙箱在防止“环境感知”沙箱检测方面存在不足，这可以被移动恶意软件利用来逃避检测并延长其生命周期。\n\n总的来说，论文的目标是揭示移动沙箱在模拟真实移动设备环境方面的不足，并提出改进建议，以帮助沙箱服务更有效地对抗能够感知环境的移动恶意软件。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了与移动沙箱检测和恶意软件逃避技术相关的一些研究，具体包括：\n\n1. **移动恶意软件检测**：研究者提到了使用静态和动态分析方法来检测恶意软件的相关工作。这包括使用应用商店（如Google PlayStore和iOS App Store）来分发和检测移动应用程序中的恶意软件。\n\n2. **沙箱逃避技术**：论文中提到了恶意软件如何通过代码混淆来阻碍静态分析，以及通过沙箱检测来绕过动态分析的方法。\n\n3. **移动沙箱指纹技术**：研究者讨论了如何通过识别仿真环境中的特定行为和API值来检测移动沙箱的技术。\n\n4. **环境感知逃避**：论文强调了环境感知逃避技术的重要性，即恶意软件能够感知其是否在沙箱环境中运行，并据此调整其行为。\n\n5. **桌面沙箱检测**：虽然论文主要关注移动沙箱，但也提到了桌面沙箱检测的相关研究，这些研究通常关注系统配置和使用模式在沙箱检测中的作用。\n\n6. **设备使用模式和磨损痕迹**：论文中提到了使用设备使用模式和磨损痕迹（如文件数量、系统设置、传感器配置等）来区分真实设备和沙箱环境的方法。\n\n7. **机器学习在沙箱检测中的应用**：论文中使用了机器学习分类器来提高沙箱检测的准确性，这涉及到了如何利用机器学习技术来分析和识别恶意软件行为模式的研究。\n\n这些相关研究为论文提出的环境感知沙箱逃避技术提供了背景和基础，同时也展示了沙箱检测和恶意软件逃避之间不断演变的对抗关系。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下步骤来解决移动沙箱检测的问题：\n\n1. **数据收集**：研究者首先从真实用户设备和多种移动沙箱环境中收集了大量的环境特征数据。这些数据包括了用户配置、设备上的文件数量、硬件传感器信息等，这些都是通过Android API获取的。\n\n2. **特征分析**：通过对收集到的数据进行分析，研究者识别出了能够区分真实设备和沙箱环境的关键特征。他们发现，尽管沙箱尝试模拟真实设备，但在一些细节上仍然存在差异。\n\n3. **分类器构建**：利用收集到的数据和识别出的关键特征，研究者构建了一个机器学习分类器。这个分类器能够以高准确率（98.54%）区分真实Android设备和沙箱环境。\n\n4. **制造商特定模型**：研究者进一步训练了一组针对特定制造商的机器学习分类器，这些模型能够识别出与特定制造商报告的环境特征不一致的沙箱环境。\n\n5. **鲁棒性测试**：为了测试分类器的鲁棒性，研究者对分类器进行了一系列的测试，包括移除一些重要特征后的分类器性能下降测试，以及在不同设备年龄和价格范围上的分类器性能测试。\n\n6. **最小化权限请求**：为了减少恶意软件引起怀疑的可能性，研究者还探讨了如何最小化应用程序请求的权限数量，同时保持分类器的高准确率。\n\n7. **负责任的披露**：研究者计划将他们的发现和训练好的模型提供给沙箱服务提供商，以帮助他们改进沙箱环境，使其更能抵抗恶意软件的逃避技术。\n\n通过这些方法，论文不仅揭示了当前移动沙箱服务的不足，还提供了一种系统性的方法来改进沙箱环境，使其更难以被恶意软件逃避。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了一系列实验来验证提出的环境感知沙箱检测技术的有效性，具体实验如下：\n\n1. **数据收集实验**：\n   - 从1,245台真实用户设备上收集环境特征数据。\n   - 使用Amazon Device Farm和Google Firebase Test Lab的云测试服务收集新设备数据作为基线数据。\n   - 将同样的数据收集应用提交到12个流行的Android沙箱服务和应用商店，以收集沙箱环境的数据。\n\n2. **特征分布分析实验**：\n   - 分析真实用户设备和沙箱设备之间特征分布的差异。\n   - 识别出能够区分真实设备和沙箱环境的关键特征。\n\n3. **机器学习分类器训练实验**：\n   - 使用收集到的数据训练一个基于决策树的机器学习分类器。\n   - 通过交叉验证和参数调优来优化分类器的性能。\n\n4. **分类器性能评估实验**：\n   - 在独立的测试集上评估分类器的准确性、假阳性率和假阴性率。\n   - 进行接收者操作特征曲线（ROC曲线）分析，以评估分类器在不同阈值下的性能。\n\n5. **特征重要性分析实验**：\n   - 通过迭代移除特征并重新训练分类器来评估每个特征的重要性。\n   - 确定分类器对单一特征的依赖程度，并评估模型的鲁棒性。\n\n6. **制造商特定模型训练实验**：\n   - 为几个主要的Android设备制造商训练特定的机器学习分类器。\n   - 评估这些模型在识别特定制造商设备方面的性能。\n\n7. **最小化权限请求实验**：\n   - 探索在不请求运行时权限的情况下，分类器的性能是否会显著下降。\n   - 确定哪些特征对于维持高准确率的沙箱检测是必要的。\n\n8. **沙箱逃避策略验证实验**：\n   - 使用提出的分类器和制造商特定模型来验证沙箱逃避策略的有效性。\n   - 通过进一步验证被分类器标记为真实设备的样本，来减少假阴性。\n\n这些实验不仅证明了所提出方法的有效性，还展示了如何通过系统地分析和利用移动设备的环境特征来提高沙箱检测的准确性和鲁棒性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 尽管论文提供了深入的分析和有效的解决方案，但仍有一些方面可以进行进一步的探索：\n\n1. **更大规模的数据集**：扩大真实用户设备的样本规模和多样性，以覆盖更广泛的设备配置、使用模式和地理位置，可能会提高分类器的泛化能力。\n\n2. **跨平台研究**：虽然论文专注于Android平台，但类似的沙箱逃避和检测技术也可以应用于iOS等其他移动操作系统。跨平台的研究可以提供更全面的视角。\n\n3. **实时动态适应**：研究沙箱环境如何能够实时监测并适应恶意软件的逃避策略，以及如何动态调整API返回值以更好地模拟真实设备。\n\n4. **对抗性机器学习**：探索使用对抗性样本来训练分类器，以增强其对恶意软件逃避技术的鲁棒性。\n\n5. **用户隐私保护**：研究在收集和分析用户数据时如何更好地保护用户隐私，例如通过差分隐私或匿名化技术。\n\n6. **沙箱技术的改进**：研究新的沙箱技术，如基于硬件的虚拟化技术，以提供更真实的设备模拟和更好的逃避检测能力。\n\n7. **恶意软件行为分析**：深入分析恶意软件的行为模式，以更好地理解它们如何与沙箱环境交互，并据此改进检测策略。\n\n8. **合作共享机制**：建立一个沙箱服务提供商和安全研究人员之间的合作共享机制，以共享关于恶意软件和逃避技术的见解和数据。\n\n9. **法律和伦理考量**：研究在开发和部署沙箱检测技术时需要考虑的法律和伦理问题，确保技术的使用不会侵犯用户权益。\n\n通过进一步的研究和探索，可以不断提高移动沙箱检测技术的有效性，更好地保护移动设备免受恶意软件的威胁。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **问题陈述**：论文讨论了移动沙箱检测工具在检测恶意软件时面临的挑战，特别是恶意软件如何通过环境感知技术来逃避沙箱环境的检测。\n\n2. **研究方法**：研究者提出了一种新的环境感知沙箱逃避技术，通过分析从Android API提取的环境特征来区分真实用户设备和沙箱环境。\n\n3. **数据收集**：通过在真实用户设备和多种沙箱环境中收集数据，研究者获得了环境特征的分布情况。\n\n4. **分类器开发**：利用收集到的数据，研究者开发了一个机器学习分类器，该分类器能够以高准确率区分真实设备和沙箱环境。\n\n5. **实验结果**：实验结果显示，所提出的分类器在区分真实设备和沙箱环境方面表现出色，准确率达到98.54%。\n\n6. **制造商特定模型**：研究者进一步开发了针对特定制造商的分类器，以识别沙箱环境中的不一致性。\n\n7. **沙箱改进建议**：论文讨论了如何改进沙箱环境，使其更难以被恶意软件逃避，包括使用真实设备进行测试和动态调整API返回值。\n\n8. **伦理和披露**：研究者强调了在进行研究时保护用户隐私的重要性，并计划将研究成果与沙箱服务提供商共享，以帮助他们改进服务。\n\n总体而言，论文提供了一种系统的方法来提高移动沙箱检测的准确性，并通过实验验证了其有效性。同时，它也指出了现有沙箱技术的不足，并为未来的研究和改进提供了方向。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是The Droid is in the Details: Environment-aware Evasion of Android Sandboxes，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-56A-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-189@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-212@NDSS": {
+        "meta": {
+            "title": "The Taming of the Stack: Isolating Stack Data from Memory Errors",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-212@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-60-paper.pdf"
+        }
+    },
+    "=auto-draft-252@NDSS": {
+        "meta": {
+            "title": "Transparency Dictionaries with Succinct Proofs of Correct Operation",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-252@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-143-paper.pdf"
+        }
+    },
+    "=auto-draft-190@NDSS": {
+        "meta": {
+            "title": "Uncovering Cross-Context Inconsistent Access Control Enforcement in Android",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-190@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-166-paper.pdf"
+        }
+    },
+    "=auto-draft-221@NDSS": {
+        "meta": {
+            "title": "V-Range: Enabling Secure Ranging in 5G Wireless Networks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-221@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-151-paper.pdf"
+        }
+    },
+    "=auto-draft-196@NDSS": {
+        "meta": {
+            "title": "A Lightweight IoT Cryptojacking Detection Mechanism in Heterogeneous Smart Home Networks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-196@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-208-paper.pdf"
+        }
+    },
+    "=auto-draft-246@NDSS": {
+        "meta": {
+            "title": "An In-depth Analysis of Duplicated Linux Kernel Bug Reports",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-246@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-159-paper.pdf"
+        }
+    },
+    "=auto-draft-238@NDSS": {
+        "meta": {
+            "title": "ATTEQ-NN: Attention-based QoE-aware Evasive Backdoor Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-238@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-12-paper.pdf"
+        }
+    },
+    "=auto-draft-211@NDSS": {
+        "meta": {
+            "title": "Building Embedded Systems Like It’s 1996",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-211@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-31-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是嵌入式设备中常见的攻击缓解措施的采用情况。具体来说，论文通过以下几个方面来探讨这个问题：\n\n1. **嵌入式设备的安全性现状**：论文指出，尽管嵌入式设备无处不在，但初步证据显示，与传统的桌面/服务器/手机相比，嵌入式设备中缺少保护措施，这构成了对嵌入式安全性的重大威胁。\n\n2. **攻击缓解措施的采用率**：通过深入研究超过10,000个基于Linux的嵌入式设备固件，论文测量了内存损坏攻击的标准缓解措施的采用情况。\n\n3. **采用率随时间的变化**：论文分析了嵌入式设备采用攻击缓解措施的情况是否随着时间的推移而改善，以及未来的发展趋势。\n\n4. **缺乏缓解措施的原因**：通过后续分析，论文推断了可能导致缺乏攻击缓解措施的一系列因素，包括非受保护软件的大量重用、过时内核的延迟升级以及自动化构建工具施加的限制。\n\n5. **改进建议**：论文提出了一系列可能有助于提高嵌入式设备采用攻击缓解措施的因素，并建议未来应关注这些方面以改善现状。\n\n总的来说，论文的目标是提高对嵌入式设备安全性的认识，特别是在攻击缓解措施的采用方面，并为未来的改进提供见解和建议。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了与其研究相关的几个领域和具体工作，包括：\n\n1. **嵌入式设备威胁研究**：一些研究致力于理解嵌入式设备面临的威胁，例如Alrawi等人提出的基于模型的方法来系统化家庭IoT设备的安全性，并评估了多种开源或市场上的家庭IoT设备。\n\n2. **固件漏洞研究**：Costin等人进行了大规模研究，测量了32k个嵌入式设备固件图像中的安全漏洞，并发现了多个未知漏洞。\n\n3. **攻击缓解措施的挑战**：Thompson和Zatko探讨了为什么MIPS设备通常缺少应用NX堆栈的问题，而Abbasi等人研究了嵌入式设备采用攻击缓解措施的挑战，特别是低端设备通常缺乏硬件和操作系统支持。\n\n4. **缓解措施测量工具**：论文提到了一些现有的工具，如Checksec、Hardening-Check和Pwntools，这些工具可以帮助检测用户空间缓解措施，并为论文中的检测策略提供了基础。\n\n5. **嵌入式固件分析工具**：Chen等人开发了FIRMADYNE，这是一个自动化的动态固件分析系统，可以运行固件二进制文件通过完整系统仿真和instrumented kernel。\n\n6. **攻击向量和缓解策略**：其他相关研究可能集中在特定的攻击向量和缓解策略上，例如David等人提出的Firmup工具，用于静态检测固件中的常见漏洞。\n\n这些相关研究为论文的研究背景提供了理论和实证基础，并帮助论文构建了其研究框架和方法论。论文的研究补充了现有文献，特别是在嵌入式设备攻击缓解措施的采用情况方面提供了新的见解。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 为了解决嵌入式设备中攻击缓解措施采用不足的问题，论文采取了以下步骤：\n\n1. **大规模研究设计**：论文设计了一个针对嵌入式设备固件的研究，旨在测量超过10,000个基于Linux的固件中内存损坏攻击的标准缓解措施的采用情况。\n\n2. **固件收集**：使用网络爬虫从主流嵌入式设备厂商的网站收集固件图像，并确保收集过程符合法律和道德界限。\n\n3. **固件解包和分析**：开发和使用工具（如FIRMADYNE和Vmlinux-to-ELF）来解包固件图像，并提取其中的Linux内核和用户空间二进制文件。\n\n4. **缓解措施识别**：开发了一套针对嵌入式二进制文件和内核的缓解措施识别工具，以静态分析的方式检测特定缓解措施的存在。\n\n5. **采用率测量**：对收集到的固件中的用户空间二进制文件和内核进行分析，以测量各种攻击缓解措施的采用率，并与桌面系统进行比较。\n\n6. **趋势分析**：将测量结果按时间进行划分，以了解攻击缓解措施采用情况随时间的演变。\n\n7. **因素推断**：通过分析可能影响缓解措施采用的因素，如构建工具的限制、二进制文件的重用情况等，来推断导致缓解措施缺乏的原因。\n\n8. **贡献和建议**：论文总结了其贡献，包括提供了一个全面的嵌入式设备攻击缓解措施采用情况的视角，并提出了可能的改进方向。\n\n通过这些步骤，论文不仅揭示了嵌入式设备中攻击缓解措施采用不足的现状，而且还为未来的改进提供了数据支持和见解。论文的研究结果和分析有助于提高嵌入式设备制造商、安全研究人员和政策制定者对于这一问题的认识，并指导他们采取行动以增强嵌入式设备的安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文进行了一系列实验来测量和分析嵌入式设备中攻击缓解措施的采用情况。以下是主要的实验步骤和内容：\n\n1. **固件图像收集**：使用网络爬虫从38个流行嵌入式设备厂商的网站收集了超过18,000个固件图像。\n\n2. **固件解包**：使用FIRMADYNE工具和自定义脚本来解包固件图像，并提取出大约3,000,000个用户空间二进制文件和8,000个Linux内核。\n\n3. **用户空间二进制文件分析**：对提取的用户空间二进制文件进行静态分析，以识别和测量以下攻击缓解措施的采用情况：\n   - 栈金丝雀（Stack Canaries）\n   - 重定位只读（Relocation Read-Only, RELRO）\n   - 非可执行栈（Non-executable Stack, NX）\n   - Fortify Source\n   - 位置独立（或ASLR兼容）代码（Position-Independent Code, PIC）\n\n4. **Linux内核分析**：对提取的Linux内核进行分析，以识别和测量以下内核级攻击缓解措施的采用情况：\n   - 栈保护器（Stack Protector）\n   - 特权升级防护（PXN）\n   - 控制流劫持防护（KASLR）\n   - 堆损坏防护（Freelist Randomization）\n   - 用户拷贝防护（USERCOPY）\n   - 只读可执行内存防护（Fortify Kernel RWX）\n\n5. **采用率测量**：计算每种缓解措施在不同厂商、不同设备类型、不同架构和不同时间段的采用率。\n\n6. **趋势分析**：分析缓解措施采用率随时间的变化趋势，以了解情况是否有所改善。\n\n7. **因素分析**：通过分析固件和内核中的共同点，推断可能导致攻击缓解措施缺失的因素。\n\n8. **数据集和工具发布**：为了支持研究的可重复性和进一步的研究，论文作者计划在论文发表时公开其数据集和工具。\n\n这些实验提供了一个全面的视角，以了解嵌入式设备中攻击缓解措施的采用情况，并揭示了在这一领域中存在的问题和潜在的改进方向。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 基于论文的研究结果和分析，以下是一些可能的进一步探索的点：\n\n1. **自动化工具的改进**：研究如何改进自动化构建工具（如Buildroot）以更快地集成新的攻击缓解措施，并减少采用这些措施的延迟。\n\n2. **二进制重用的影响**：深入研究二进制文件在不同产品和厂商之间的重用对攻击缓解措施采用率的影响，并探索可能的解决方案。\n\n3. **成本效益分析**：进行更详细的成本效益分析，以了解攻击缓解措施带来的性能和存储开销与安全增强之间的关系。\n\n4. **缓解措施的实时监控**：开发实时监控工具，以跟踪嵌入式设备中攻击缓解措施的采用情况，并及时发现潜在的安全问题。\n\n5. **用户自定义缓解策略**：研究如何允许用户或厂商自定义缓解策略，以便更好地满足特定设备或应用场景的安全需求。\n\n6. **硬件支持的缓解措施**：探索需要硬件支持的缓解措施，如内存保护单元（MPU）和执行保护（NX）位，以及如何在硬件不支持的情况下提供替代解决方案。\n\n7. **供应链安全**：研究如何通过供应链管理来确保固件和软件组件的安全性，包括缓解措施的采用和漏洞的及时修补。\n\n8. **法规和政策影响**：分析法规和政策如何影响嵌入式设备中攻击缓解措施的采用，并探讨如何制定有效的政策来提高设备安全性。\n\n9. **教育和培训**：研究如何提高嵌入式设备开发者和制造商对攻击缓解措施重要性的认识，并通过教育和培训来促进更好的安全实践。\n\n10. **跨平台研究**：将研究扩展到其他类型的嵌入式系统，如RTOS（实时操作系统）和裸机系统，以了解不同平台上攻击缓解措施的采用情况。\n\n这些进一步探索的点可以帮助学术界和工业界更好地理解和应对嵌入式设备安全领域中的挑战。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **背景与动机**：论文指出嵌入式设备广泛存在且对安全性要求高，但现有的攻击缓解措施在这些设备上的应用并不普遍，这可能导致严重的安全隐患。\n\n2. **研究目标**：旨在深入分析嵌入式设备上常见攻击缓解措施的采用情况，特别是针对内存损坏攻击的标准缓解措施。\n\n3. **方法论**：通过收集大量基于Linux的嵌入式设备固件，解包固件以提取用户空间二进制文件和Linux内核，并采用静态分析方法来测量攻击缓解措施的存在。\n\n4. **主要发现**：\n   - 嵌入式设备普遍缺乏用户空间和内核级别的攻击缓解措施。\n   - 缓解措施的采用率远低于桌面系统。\n   - 情况并未随着时间得到改善，且缺乏缓解措施的情况没有明显变化趋势。\n\n5. **因素分析**：研究者推断了导致缺乏攻击缓解措施的因素，包括自动化构建工具的限制、过时内核的使用、以及二进制文件的大量重用等。\n\n6. **贡献**：\n   - 提供了一个全面的视角来理解嵌入式设备中攻击缓解措施的缺乏。\n   - 揭示了导致缺乏攻击缓解措施的关键因素。\n   - 构建了一个更新的Linux嵌入式固件数据集，并开发了针对嵌入式二进制文件和内核的缓解措施识别工具。\n\n7. **未来工作**：论文提出了未来可能的研究方向，包括改进自动化工具、减少二进制文件重用的影响、进行成本效益分析等，以促进嵌入式设备安全性的提升。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是Building Embedded Systems Like It’s 1996，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-31-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-211@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-210@NDSS": {
+        "meta": {
+            "title": "Chosen-Instruction Attack Against Commercial Code Virtualization Obfuscators",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-210@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-15-paper.pdf"
+        }
+    },
+    "=auto-draft-243@NDSS": {
+        "meta": {
+            "title": "Clarion: Anonymous Communication from Multiparty Shuffling Protocols",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-243@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-141-paper.pdf"
+        }
+    },
+    "=auto-draft-198@NDSS": {
+        "meta": {
+            "title": "Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-198@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-296-paper.pdf"
+        }
+    },
+    "=auto-draft-260@NDSS": {
+        "meta": {
+            "title": "COOPER: Testing the Binding Code of Scripting Languages with Cooperative Mutation",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-260@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-353-paper.pdf"
+        }
+    },
+    "=auto-draft-259@NDSS": {
+        "meta": {
+            "title": "Cross-Language Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-259@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-78-paper.pdf"
+        }
+    },
+    "=auto-draft-258@NDSS": {
+        "meta": {
+            "title": "D-Box: DMA-enabled Compartmentalization for Embedded Applications",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-258@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-53-paper.pdf"
+        }
+    },
+    "=auto-draft-261@NDSS": {
+        "meta": {
+            "title": "Demystifying Local Business Search Poisoning for Illicit Drug Promotion",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-261@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-284-paper.pdf"
+        }
+    },
+    "=auto-draft-195@NDSS": {
+        "meta": {
+            "title": "ditto: WAN Traffic Obfuscation at Line Rate",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-195@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-56B-paper.pdf"
+        }
+    },
+    "=drawn-apart-a-device-identification-technique-based-on-remote-gpu-fingerprinting@NDSS": {
+        "meta": {
+            "title": "DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=drawn-apart-a-device-identification-technique-based-on-remote-gpu-fingerprinting@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-93-paper.pdf"
+        }
+    },
+    "=auto-draft-242@NDSS": {
+        "meta": {
+            "title": "DRAWN APART: A Device Identification Technique based on Remote GPU Fingerprinting",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-242@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-93-paper.pdf"
+        }
+    },
+    "=auto-draft-227@NDSS": {
+        "meta": {
+            "title": "Euler: Detecting Network Lateral Movement via Scalable Temporal Graph Link Prediction",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-227@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-107A-paper.pdf"
+        }
+    },
+    "=auto-draft-191@NDSS": {
+        "meta": {
+            "title": "Evaluating Susceptibility of VPN Implementations to DoS Attacks Using Adversarial Testing",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-191@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-43-paper.pdf"
+        }
+    },
+    "=auto-draft-250@NDSS": {
+        "meta": {
+            "title": "F-PKI: Enabling Innovation and Trust Flexibility in the HTTPS Public-Key Infrastructure",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-250@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-241-paper.pdf"
+        }
+    },
+    "=auto-draft-230@NDSS": {
+        "meta": {
+            "title": "FakeGuard: Exploring Haptic Response to Mitigate the Vulnerability in Commercial Fingerprint Anti-Spoofing",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-230@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-82-paper.pdf"
+        }
+    },
+    "=8485@NDSS": {
+        "meta": {
+            "title": "FANDEMIC: Firmware Attack Construction and Deployment on Power Management Integrated Circuit and Impacts on IoT Applications",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=8485@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-349-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是针对物联网（IoT）设备中的电源管理集成电路（PMIC）的固件漏洞。论文提出了一种名为FANDEMIC的固件攻击构造和部署方法，该方法通过逆向工程裸机IoT设备的固件二进制文件，并识别与PMIC交互的函数。然后，攻击者可以直接修改二进制文件，故意错误配置PMIC，从而改变供电线路电压，可能导致设备出现各种问题。论文展示了这种攻击的可能性，并通过实验验证了攻击对传感器数据的影响，并讨论了可能的缓解技术。具体来说，论文的主要贡献包括：\n\n1. 展示了裸机IoT设备中的一个漏洞。\n2. 展示了固件攻击如何改变PMIC的工作电压，干扰其宿主设备的正确功能。\n3. 提出了一个使用交叉相关函数匹配和Ghidra逆向工程系统二进制文件的框架，并构建和部署有效载荷。\n4. 提出了针对这种攻击的缓解技术。\n\n论文强调了固件漏洞对IoT设备安全性的影响，并提出了一种新的攻击类别，这可能会影响设备的电池寿命、加速老化、传感器数据损坏等，对依赖这些设备的基础设施和用户造成重大威胁。因此，论文旨在提高对这一问题的认识，并促进开发有效的防御措施来保护IoT设备免受此类攻击。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了多个与供应链安全、固件漏洞、硬件攻击和IoT设备安全性相关的研究。以下是一些论文中引用的相关研究：\n\n1. **供应链攻击和漏洞利用**:\n   - [22] D. Mehta 等人的研究，讨论了检测和预防PCB供应链植入物的方法。\n   - [7] FireEye 关于 SolarWinds 供应链攻击的报告，揭示了通过软件供应链进行的大规模攻击。\n\n2. **固件攻击和逆向工程工具**:\n   - [6] C. Eagle 和 K. Nance 的《The Ghidra Book》，介绍了Ghidra逆向工程工具的能力。\n   - [10] IDA，一个强大的反汇编器和多功能调试器。\n   - [2] Binwalk，一个用于搜索二进制映像中嵌入文件和可执行代码的工具。\n\n3. **硬件安全和攻击**:\n   - [4] A. Cui 等人的研究，探讨了固件修改攻击的案例研究。\n   - [27] J. Obermaier 等人的研究，关注微控制器固件保护的安全问题。\n   - [30] Tencent Security 的 \"Bad Power Attack\"，展示了通过恶意修改PMIC固件可能导致电池爆炸的风险。\n\n4. **IoT设备和供应链的安全性**:\n   - [5] Department of Homeland Security 发布的关于移动设备安全性的研究。\n   - [39] F. E. McFadden 和 R. D. Arnold 的研究，讨论了IT电子产品供应链风险的缓解。\n   - [41] K. Yang 等人的研究，提出了保护IoT供应链中端点设备的方法。\n\n5. **电池和电源管理**:\n   - [44] M. Yoshio 等人的著作，详细介绍了锂离子电池的技术。\n   - [16] T. S. X. Lab 的安全提示，关于某些快充产品中 \"BadPower\" 风险的警告。\n\n这些相关研究为论文提出的FANDEMIC攻击提供了背景知识，并展示了该领域的研究进展。论文通过结合这些相关领域的研究成果，提出了一个新的攻击向量，并探讨了其对IoT设备安全性的潜在影响。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下步骤来解决针对物联网（IoT）设备中的电源管理集成电路（PMIC）的固件攻击问题：\n\n1. **定义问题和攻击模型**：\n   - 明确了固件漏洞的类别，并提出了FANDEMIC攻击的概念，这是一种通过固件修改来恶意配置PMIC的攻击方式。\n   - 定义了攻击模型，包括攻击者可能位于供应链中的位置、PMIC的存在和配置方式、以及攻击的目标。\n\n2. **逆向工程和固件分析**：\n   - 使用Ghidra等工具对目标固件二进制文件进行逆向工程，以便理解固件的结构和功能。\n   - 提出了两种基于交叉相关的函数匹配算法，用于识别与PMIC交互的固件函数。\n\n3. **攻击构造和部署**：\n   - 描述了如何修改固件二进制文件来改变PMIC的配置，以及如何将修改后的固件部署到目标设备上。\n   - 通过实验验证了攻击的有效性，展示了通过改变供电电压对传感器数据造成的影响。\n\n4. **后果讨论**：\n   - 讨论了PMIC攻击可能带来的后果，包括电池退化和失败、加速老化效应、传感器数据损坏等。\n\n5. **缓解技术提出**：\n   - 提出了可能的缓解技术，包括固件审计、安全的固件更新机制等，以防止此类攻击的发生。\n\n通过这些步骤，论文不仅揭示了IoT设备中一个新的安全威胁，而且还提供了检测和防御这种威胁的方法。这些方法可以帮助设备制造商、安全研究人员和用户更好地理解和保护他们的设备免受固件攻击的影响。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了一个实验来验证FANDEMIC攻击对传感器数据的影响。以下是实验的详细步骤和设置：\n\n1. **实验设置**：\n   - 使用了Nordic nRF52832微控制器（MCU）和MAX20303电源管理集成电路（PMIC）。\n   - 配置了PMIC，使其通过I2C总线接收来自MCU的控制。\n   - 实验中还包括了一个MPX2010DP比例压力传感器和一个LMC6084运算放大器，用于模拟一个简单的传感器应用。\n\n2. **固件逆向工程**：\n   - 通过Ghidra和其他工具对固件进行了逆向工程，以确定与PMIC通信相关的函数。\n\n3. **固件修改**：\n   - 找到了控制PMIC的Buck2转换器输出电压的固件部分，并修改了这些部分以改变输出电压。\n\n4. **攻击实施**：\n   - 制作了一个恶意固件版本，将Buck2的输出电压设置为多个不同的值。\n   - 使用修改后的Intel Hex文件格式的固件对硬件进行了编程。\n\n5. **数据收集和分析**：\n   - 收集了修改后的固件在不同供电电压下从压力传感器读取的数据。\n   - 计算了与原始2.9V供电电压相比的压力读数的误差百分比。\n\n6. **结果**：\n   - 实验结果显示，通过改变供电电压，可以显著影响传感器的输出电压和压力读数。\n   - 例如，当供电电压从2.9V改变到3.9V时，压力读数的误差率可以达到3.75%/V的变化。\n\n通过这个实验，论文证明了FANDEMIC攻击是可行的，并且可以通过固件修改来影响IoT设备的传感器数据，从而证实了论文提出的攻击方法和潜在影响的有效性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了FANDEMIC攻击的概念，并展示了如何通过固件修改来影响物联网（IoT）设备的电源管理集成电路（PMIC）。尽管论文中已经进行了一些实验和分析，但仍有许多潜在的研究方向可以进一步探索：\n\n1. **攻击的普遍性**：\n   - 研究FANDEMIC攻击是否适用于不同类型的PMIC和MCU组合。\n   - 分析不同架构和设计的家庭和工业IoT设备对此类攻击的脆弱性。\n\n2. **攻击检测和防御机制**：\n   - 开发和测试新的入侵检测系统（IDS）和入侵防御系统（IPS），专门针对固件和PMIC攻击。\n   - 探索使用机器学习和行为分析技术来识别异常的固件行为和PMIC配置。\n\n3. **硬件级别的安全措施**：\n   - 研究如何在硬件级别上加强PMIC的安全，例如通过物理不可克隆函数（PUF）或硬件安全模块（HSM）。\n   - 探索使用安全启动和加密固件签名来防止恶意固件的部署。\n\n4. **固件更新和完整性验证**：\n   - 开发更加安全的固件更新协议，确保固件在整个供应链中不被篡改。\n   - 研究如何实现固件完整性的持续验证，即使在设备部署后也能保持。\n\n5. **供应链安全和审计**：\n   - 研究如何加强供应链管理，以防止恶意固件在制造过程中被注入。\n   - 探索使用区块链技术来跟踪和验证IoT设备组件的来源和完整性。\n\n6. **攻击的社会和经济影响**：\n   - 分析FANDEMIC攻击对公共安全、隐私和经济的潜在影响。\n   - 研究如何制定政策和法规来减轻这类攻击的风险。\n\n7. **跨平台攻击的适用性**：\n   - 探索FANDEMIC攻击是否可以扩展到其他类型的系统，例如使用操作系统的IoT设备或其他嵌入式系统。\n\n8. **用户和制造商教育**：\n   - 研究如何提高用户和制造商对IoT设备固件安全的认识。\n   - 开发教育材料和最佳实践指南，帮助制造商和用户保护他们的设备免受此类攻击。\n\n通过进一步的研究和开发，可以更好地理解和防御针对IoT设备的固件攻击，从而提高整个生态系统的安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **问题陈述**：\n   - 论文指出了物联网（IoT）设备中的电源管理集成电路（PMIC）存在的固件漏洞问题，这些漏洞可能被供应链攻击者利用来实施恶意配置，从而影响设备的正常运行。\n\n2. **攻击模型（FANDEMIC）**：\n   - 提出了一种名为FANDEMIC的固件攻击模型，该模型通过逆向工程IoT设备的固件二进制文件，识别与PMIC交互的函数，并修改这些函数来故意错误配置PMIC。\n\n3. **逆向工程和攻击构造**：\n   - 论文描述了使用Ghidra工具和Python脚本进行固件逆向工程的过程，并提出了两种基于交叉相关的函数匹配算法来定位PMIC配置函数。\n   - 展示了如何修改固件二进制文件以改变PMIC的行为，并提出了一个工作流程来实现这一过程。\n\n4. **实验验证**：\n   - 通过在nRF52微控制器和MAX20303 PMIC上实施攻击，论文验证了FANDEMIC攻击可以导致传感器数据损坏。\n\n5. **潜在后果**：\n   - 讨论了PMIC攻击可能导致的一系列后果，包括电池退化和故障、加速老化效应以及传感器数据损坏。\n\n6. **缓解策略**：\n   - 提出了几种可能的缓解技术，包括固件审计和安全的固件更新，以防止此类攻击的发生。\n\n7. **未来工作**：\n   - 论文最后提出了未来研究的方向，包括探索攻击的普遍性、开发新的检测和防御机制、加强硬件安全措施、改进供应链安全和审计等。\n\n总的来说，这篇论文揭示了IoT设备中一个新的安全威胁，即通过固件漏洞对PMIC进行攻击，并提供了一种方法来检测和防御这种攻击。论文的研究成果对于提高IoT设备的安全性具有重要意义。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是FANDEMIC: Firmware Attack Construction and Deployment on Power Management Integrated Circuit and Impacts on IoT Applications，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-349-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=8485@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-228@NDSS": {
+        "meta": {
+            "title": "Fooling the Eyes of Autonomous Vehicles: Robust Physical Adversarial Examples Against Traffic Sign Recognition Systems",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-228@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-130-paper.pdf"
+        }
+    },
+    "=auto-draft-188@NDSS": {
+        "meta": {
+            "title": "GhostTalk: Interactive Attack on Smartphone Voice System Through Power Line",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-188@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-254-paper.pdf"
+        }
+    },
+    "=auto-draft-262@NDSS": {
+        "meta": {
+            "title": "Hazard Integrated: Understanding Security Risks in App Extensions to Team Chat Systems",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-262@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-387-paper.pdf"
+        }
+    },
+    "=auto-draft-184@NDSS": {
+        "meta": {
+            "title": "HeadStart: Efficiently Verifiable and Low-Latency Participatory Randomness Generation at Scale",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-184@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-234-paper.pdf"
+        }
+    },
+    "=auto-draft-216@NDSS": {
+        "meta": {
+            "title": "Hiding My Real Self! Protecting Intellectual Property in Additive Manufacturing Systems Against Optical Side-Channel Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-216@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-298-paper.pdf"
+        }
+    },
+    "=auto-draft-222@NDSS": {
+        "meta": {
+            "title": "Hybrid Trust Multi-party Computation with Trusted Execution Environment",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-222@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-173-paper.pdf"
+        }
+    },
+    "=auto-draft-247@NDSS": {
+        "meta": {
+            "title": "Kasper: Scanning for Generalized Transient Execution Gadgets in the Linux Kernel",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-247@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-221-paper.pdf"
+        }
+    },
+    "=auto-draft-251@NDSS": {
+        "meta": {
+            "title": "Let’s Authenticate: Automated Certificates for User Authentication",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-251@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-272-paper.pdf"
+        }
+    },
+    "=auto-draft-193@NDSS": {
+        "meta": {
+            "title": "LogicMEM: Automatic Profile Generation for Binary-Only Memory Forensics via Logic Inference",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-193@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-324-paper.pdf"
+        }
+    },
+    "=mirror-model-inversion-for-deep-learning-network-with-high-fidelity@NDSS": {
+        "meta": {
+            "title": "MIRROR: Model Inversion for Deep Learning Network with High Fidelity",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=mirror-model-inversion-for-deep-learning-network-with-high-fidelity@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-335-paper.pdf"
+        }
+    },
+    "=auto-draft-203@NDSS": {
+        "meta": {
+            "title": "MIRROR: Model Inversion for Deep LearningNetwork with High Fidelity",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-203@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-335-paper.pdf"
+        }
+    },
+    "=auto-draft-199@NDSS": {
+        "meta": {
+            "title": "MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-199@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-314-paper.pdf"
+        }
+    },
+    "=auto-draft-253@NDSS": {
+        "meta": {
+            "title": "Multi-Certificate Attacks against Proof-of-Elapsed-Time and Their Countermeasures",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-253@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-158-paper.pdf"
+        }
+    },
+    "=auto-draft-255@NDSS": {
+        "meta": {
+            "title": "NC-Max: Breaking the Security-Performance Tradeoff in Nakamoto Consensus",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-255@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-370-paper.pdf"
+        }
+    },
+    "=auto-draft-231@NDSS": {
+        "meta": {
+            "title": "On Utility and Privacy in Synthetic Genomic Data",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-231@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-92-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文试图解决的问题是如何在保护隐私的同时，有效利用合成基因组数据（synthetic genomic data）以促进生物医学研究和个性化医疗的发展。基因组数据的极端敏感性使得直接发布或共享这些数据变得问题重重，甚至是不可能的。为了解决这个问题，研究者们探索了使用生成模型来学习真实数据的底层分布，并生成既保留真实数据显著特征又不暴露其内容的人工数据集。\n\n具体来说，这篇论文提供了对六种最先进合成基因组数据生成模型的实用性和隐私保护能力的首次评估。论文通过评估合成数据在常见任务（如等位基因群体统计和连锁不平衡）上的表现来衡量其实用性，并通过会员推断攻击（membership inference attacks）的视角来衡量隐私保护水平，即推断记录是否为训练数据的一部分。实验结果表明，没有单一的方法能够在所有方面都提供高实用性和强大的隐私保护。此外，训练数据集的大小和性质也很重要。尽管某些数据集和模型的组合可以产生接近真实数据分布的合成数据，但通常存在一些目标数据点容易受到会员推断攻击的威胁。论文提出的方法可以被实践者用来评估在实际环境中部署合成基因组数据的风险，并为未来的工作提供基准。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了多个与合成基因组数据、基因隐私和会员推断攻击（Membership Inference Attacks, MIA）相关的研究领域和具体工作。以下是一些相关研究的概述：\n\n1. **合成数据倡议**：\n   - 生成合成电子健康记录（EHR），以促进医学领域的机器学习研究和应用。\n   - 使用自编码器和生成对抗网络（GAN）的组合，如medGAN，来生成高维度的多标签离散数据。\n   - 探索生成合成健康患者数据以检测癌症和其他疾病的方法，例如RDP-CGAN。\n\n2. **基因隐私**：\n   - 会员推断攻击（MIA），这是一种隐私威胁，可以确定个体的基因型是否包含在复杂的DNA混合物中。\n   - 研究者们还探讨了如何通过提供访问训练好的分类模型来保护基因数据的隐私。\n\n3. **针对机器学习模型的会员推断攻击**：\n   - 对于判别性模型的会员推断攻击，目的是识别数据记录是否用于模型训练。\n   - 对于生成模型，如GAN和变分自编码器（VAE），研究者们探讨了如何通过模型输出的数据来推断训练集的成员资格。\n\n4. **差分隐私**：\n   - 差分隐私是一种技术，可以在提供数据访问的同时保护个体隐私。\n   - 研究者们尝试将差分隐私技术应用于图像和临床数据的生成模型，并评估了这些技术在基因数据上的适用性。\n\n5. **基因组数据共享和隐私风险**：\n   - 研究者们评估了基因组数据共享服务（如Beacon网络）的隐私风险，并提出了量化和缓解这些风险的方法。\n\n这些相关研究为合成基因组数据的生成和隐私保护提供了多种方法和技术，同时也揭示了在这一领域中存在的挑战和未解决的问题。论文的贡献在于系统地评估了现有方法的实用性和隐私保护能力，并提出了新的评估框架和指标，为未来的研究提供了基准。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过以下步骤来解决合成基因组数据的实用性和隐私保护问题：\n\n1. **评估现有模型**：\n   - 选择了六种现有的合成基因组数据生成模型，包括基于高阶SNV相关性的重组模型（Recomb）、受限玻尔兹曼机（RBM）、生成对抗网络（GAN）、重组RBM（Rec-RBM）、重组GAN（Rec-GAN）和Wasserstein GAN（WGAN）。\n\n2. **定义评估指标**：\n   - 定义了两组主要的评估指标：实用性（Utility）和隐私保护（Privacy）。\n   - 实用性指标包括等位基因群体统计、连锁不平衡等常见基因组数据分析任务的准确性。\n   - 隐私保护指标通过会员推断攻击（MIA）来衡量，特别是评估发布合成数据集而非真实数据集时的隐私增益（Privacy Gain, PG）。\n\n3. **进行实验**：\n   - 使用来自HapMap项目和1000 Genomes项目的基因组数据进行实验。\n   - 对每个模型生成的合成数据在多个统计任务上进行评估，以确定其保留真实数据特征的能力。\n   - 通过训练攻击模型来评估每个模型生成的数据在抵御会员推断攻击方面的隐私保护水平。\n\n4. **分析结果**：\n   - 发现没有单一的方法能够在所有方面都提供高实用性和强大的隐私保护。\n   - 观察到训练数据集的大小和性质对合成数据的实用性和隐私保护有显著影响。\n   - 指出即使是合成数据，也不能可靠地作为隐私保护机制，因为隐私增益（PG）的值是不可预测的，并且会根据目标和训练集的选择而波动。\n\n5. **提出未来工作**：\n   - 论文提出了未来工作的方向，包括对差分隐私技术在基因组数据上的可能适应性进行实验，以及探索更多数据点的基因组使用案例。\n\n通过这些步骤，论文不仅评估了现有技术的能力，还为合成基因组数据的生成和隐私保护提供了一个系统的评估框架，为未来的研究和技术发展奠定了基础。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文进行了一系列实验来评估合成基因组数据生成模型的实用性和隐私保护能力。以下是实验的主要内容：\n\n1. **数据集准备**：\n   - 使用了来自HapMap项目和1000 Genomes项目的基因组数据，特别是选择了1,000个SNPs（单核苷酸多态性）位点的数据。\n\n2. **模型训练与合成数据生成**：\n   - 训练了六种不同的合成数据生成模型，包括Recomb、RBM、GAN、Rec-RBM、Rec-GAN和WGAN。\n   - 每个模型都使用真实的基因组数据作为训练集来生成合成数据集。\n\n3. **实用性评估**：\n   - 评估合成数据在多个常见基因组数据分析任务上的表现，包括等位基因群体统计（如等位基因频率、群体统计）和连锁不平衡（Linkage Disequilibrium, LD）。\n   - 使用Kolmogorov-Smirnov（KS）测试来评估合成数据与真实数据在主要统计指标上的分布差异。\n\n4. **隐私保护评估**：\n   - 通过会员推断攻击（MIA）来评估合成数据的隐私保护水平，攻击的目标是推断记录是否为训练数据的一部分。\n   - 使用三种不同的攻击分类器：K-最近邻（KNN）、逻辑回归（LogReg）和随机森林（RandForest）。\n   - 引入了一种新的攻击变体，即在部分信息下的会员推断攻击（MIA-PI），模拟攻击者只拥有目标个体部分基因组信息的情况。\n\n5. **实验结果分析**：\n   - 分析了每个模型在不同数据集上的实用性和隐私保护表现。\n   - 比较了不同模型在抵御会员推断攻击方面的有效性，并探讨了训练数据集大小和性质对结果的影响。\n\n6. **可视化和讨论**：\n   - 通过图表和可视化展示了实验结果，包括合成数据与真实数据在统计特性上的比较，以及隐私增益（PG）的分布。\n   - 讨论了实验结果的意义，包括合成数据在实用性和隐私保护方面的局限性和潜在的应用。\n\n这些实验为论文提供了评估合成基因组数据生成模型的全面视角，揭示了不同模型在实用性和隐私保护方面的优缺点，并为未来的研究方向提供了数据支持。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了几个可以进一步探索的点，这些点主要集中在提高合成基因组数据的实用性和隐私保护能力上：\n\n1. **改进生成模型**：\n   - 探索新的或改进现有的生成模型，以更好地捕捉真实基因组数据的统计特性。\n   - 研究如何结合多种模型的优势，或者开发新的混合模型来提高合成数据的质量和隐私保护。\n\n2. **差分隐私技术的应用**：\n   - 尝试将差分隐私技术应用于合成基因组数据的生成过程中，以提供更强的隐私保证。\n   - 评估差分隐私技术在高维基因组数据上的适用性和效果，特别是在精准医疗应用中。\n\n3. **更大规模的数据集**：\n   - 在更大规模和更多样化的数据集上评估合成数据生成模型，以验证模型的泛化能力和实用性。\n   - 研究大规模数据集对隐私保护效果的影响，以及如何在大数据环境下维护个体隐私。\n\n4. **亲属隐私**：\n   - 研究合成数据可能对个体亲属隐私的影响，尤其是在家族遗传研究的背景下。\n   - 开发新的隐私保护措施，以防止通过合成数据推断出个体亲属的遗传信息。\n\n5. **实际部署和应用**：\n   - 在实际的生物医学研究和精准医疗项目中部署合成数据，并评估其在现实世界中的有效性和安全性。\n   - 与生物医学研究人员合作，了解合成数据在实际应用中的潜力和挑战。\n\n6. **法律和伦理考量**：\n   - 研究合成基因组数据的法律和伦理问题，包括数据所有权、使用权和访问控制。\n   - 探讨如何在保护隐私的同时，确保合成数据可以支持科学研究和公共健康目标。\n\n7. **用户和社区教育**：\n   - 提高公众对合成基因组数据及其潜在用途和风险的认识。\n   - 教育用户和社区如何安全地使用和管理合成数据，以及如何评估合成数据的质量和隐私保护。\n\n这些进一步探索的点可以帮助研究者、开发者和政策制定者更好地理解和管理合成基因组数据的生成和使用，同时确保科技进步不会以牺牲个人隐私为代价。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n1. **问题陈述**：论文探讨了如何在保护隐私的同时，有效利用合成基因组数据来促进生物医学研究和个性化医疗的发展。由于基因组数据的极端敏感性，直接共享真实数据存在隐私泄露的风险。\n\n2. **研究目标**：论文的目标是评估六种不同的合成基因组数据生成模型，以确定它们在实用性（保留真实数据特征的能力）和隐私保护（抵御会员推断攻击的能力）方面的表现。\n\n3. **方法论**：\n   - 选择了六种合成数据生成模型进行评估：Recomb、RBM、GAN、Rec-RBM、Rec-GAN和WGAN。\n   - 使用来自HapMap和1000 Genomes项目的基因组数据作为训练集。\n   - 评估模型生成的合成数据在等位基因群体统计、连锁不平衡等任务上的实用性。\n   - 通过会员推断攻击来量化隐私保护水平。\n\n4. **实验结果**：\n   - 发现没有单一模型在所有方面都表现出色。\n   - 训练数据集的大小和性质对合成数据的实用性和隐私保护有显著影响。\n   - 合成数据在某些情况下能提供比真实数据更好的隐私保护，但在其他情况下可能容易受到隐私攻击。\n\n5. **未来工作**：\n   - 论文提出了未来研究方向，包括改进生成模型、应用差分隐私技术、在更大规模的数据集上进行评估、研究亲属隐私问题、实际部署和应用合成数据、法律和伦理考量，以及用户和社区教育。\n\n6. **贡献**：\n   - 提供了一个系统的评估框架，用于评估合成基因组数据生成模型。\n   - 揭示了不同模型在实用性和隐私保护方面的优缺点。\n   - 为合成基因组数据的生成和隐私保护提供了基准，为未来的研究和技术发展奠定了基础。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是On Utility and Privacy in Synthetic Genomic Data，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-92-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-231@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-218@NDSS": {
+        "meta": {
+            "title": "Packet-Level Open-World App Fingerprinting on Wireless Traffic",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-218@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-210-paper.pdf"
+        }
+    },
+    "=auto-draft-187@NDSS": {
+        "meta": {
+            "title": "PHYjacking: Physical Input Hijacking for Zero-Permission Authorization Attacks on Android",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-187@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-97-paper.pdf"
+        }
+    },
+    "=auto-draft-185@NDSS": {
+        "meta": {
+            "title": "PMTUD is not Panacea: Revisiting IP Fragmentation Attacks against TCP",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-185@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-381-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文揭示了TCP协议在处理IP分片时存在的安全漏洞，并提出了一种新的攻击方法，该方法可以绕过TCP的Path Maximum Transmission Unit Discovery (PMTUD)机制，通过IP分片攻击来污染TCP流量。具体来说，论文解决了以下问题：\n\n1. **TCP对IP分片攻击的脆弱性**：尽管普遍认为TCP通过PMTUD机制能够有效避免IP分片攻击，论文指出TCP实际上仍然容易受到此类攻击。\n\n2. **IP分片触发的两种情况**：论文通过系统研究IP分片与TCP之间的复杂交互，发现了两种情况下IP分片仍然可以被触发：\n   - 当中间路由器的下一跳MTU小于发送方可接受的最小路径MTU时，发送方的TCP段将被路由器分片。\n   - 当发送方的IP层和TCP层之间的路径MTU值由于恶意构造的ICMP错误消息而不同步时，发送方可能会被欺骗分片TCP段。\n\n3. **攻击的实际可行性**：论文通过案例研究展示了攻击者如何利用IP分片攻击污染基于TCP的应用，例如HTTP和BGP，并进行了全面的评估，证明了这些攻击在现实世界中可能造成严重损害。\n\n4. **提出对策**：针对发现的漏洞，论文提出了增强PMTUD机制的对策，以避免在中间路由器或主机上触发IP分片，从而消除攻击的根源。\n\n总的来说，这篇论文挑战了关于TCP安全性的普遍观点，揭示了TCP在面对IP分片攻击时的脆弱性，并为防御此类攻击提供了解决方案。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了多个与IP分片和TCP安全性相关的研究领域和具体工作，包括但不限于：\n\n1. **IP分片攻击**：历史上，IP分片被广泛滥用来进行各种攻击，例如绕过入侵检测系统（IDS）、发起拒绝服务（DoS）攻击、污染DNS缓存等。\n\n2. **TCP的PMTUD机制**：作为对IP分片问题的回应，PMTUD机制被提出并广泛部署，以帮助确定两个通信主机之间的网络路径上的MTU，并避免IP分片。\n\n3. **TCP注入攻击**：研究者们探索了多种方法来推断TCP的随机序列号和确认号，并尝试进行离路径（off-path）TCP注入攻击。\n\n4. **IP地址预测**：一些研究专注于如何预测IP地址碎片中的Identification (IPID) 字段，以便攻击者可以构造恶意片段来污染TCP流量。\n\n5. **TCP/IP侧信道**：研究者们发现了多种TCP/IP实现中的侧信道，这些侧信道可以被用来推断TCP连接的存在，进而可能用于发起攻击。\n\n6. **BGP安全**：针对边界网关协议（BGP）的安全性研究，特别是如何通过操纵BGP路由表来进行攻击。\n\n7. **网络性能和安全性**：研究网络性能如何受到IP分片和重组的影响，以及如何改进网络设备和协议来提高安全性和性能。\n\n具体的相关研究文献包括但不限于以下RFC文档和学术论文：\n\n- RFC 1191, 1981: Path MTU Discovery\n- RFC 2385, 1998: Protection of BGP Sessions via the TCP MD5 Signature Option\n- RFC 5927, 2010: ICMP Attacks against TCP\n- Herzberg, A., & Shulman, H. (2013): Fragmentation considered poisonous, or: One-domain-to-rule-them-all.org\n- Gilad, Y., & Herzberg, A. (2013): Fragmentation considered vulnerable\n- Qian, Z., & Mao, Z. M. (2012): Off-path TCP Sequence Number Inference Attack: How to Crack Sequence Number under a Second\n- Feng, X., et al. (2020): Off-path TCP Exploits of the Mixed IPID Assignment\n\n这些相关研究为本篇论文的研究背景和方法提供了理论和实践基础。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文提出了几种解决方案来应对和缓解通过IP分片攻击TCP的问题：\n\n1. **增强PMTUD机制**：论文建议改进PMTUD机制，以避免在中间路由器或主机上触发IP分片。这包括确保TCP层和IP层之间的路径MTU值保持同步，避免由于ICMP错误消息导致的分片。\n\n2. **调整可接受的最小路径MTU值**：对于避免在路由器上发生IP分片，论文建议将发送方的可接受最小路径MTU值（min pmtu）设置为小于或等于中间路由器的下一跳MTU值。在Linux、FreeBSD和Mac系统中，可以通过sysctl命令手动将min pmtu重置为68字节，这是一个安全的值，因为互联网上的每个路由器都可以无分片地转发68字节的数据包。\n\n3. **处理ICMP“Fragmentation Needed”消息**：对于Linux内核版本3.8.1及更高版本中的漏洞，论文建议当收到一个ICMP“Fragmentation Needed”消息时，IP层应该主动更新MTU信息到TCP层，并通知TCP层立即调整最大段大小（MSS），以避免发送过大的段到IP层并触发分片。\n\n4. **丢弃非TCP段的ICMP错误消息**：如果服务器收到一个包含非TCP段（例如ICMP回显请求）的ICMP“Fragmentation Needed”消息，服务器应该直接丢弃该消息，因为合法的非TCP段不会触发ICMP“Fragmentation Needed”消息。\n\n5. **负责任的披露**：论文作者已经将Linux系统中的IP分片漏洞报告给了Linux社区和Bugzilla，并提交了概念验证（PoC）代码。对于由问题路由器引起的IP分片，作者联系了受影响的ISP披露了这一漏洞。此外，还向Microsoft报告了这一问题，因为Windows系统的可接受最小PMTV值（596字节）大于RFC 1191中的推荐值（576字节）。\n\n通过这些解决方案，论文旨在消除TCP流量通过IP分片进行污染攻击的风险，并提高网络的安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了两个主要的案例研究来展示和评估提出的IP分片攻击对TCP的影响：\n\n1. **操纵HTTP流量**：\n   - 攻击设置：涉及一个提供在线服务（如广告或网上银行）的Web服务器、一个执行攻击的攻击机器、一个访问Web服务器的受害者客户端，以及一个由攻击者控制的钓鱼网站。\n   - 攻击过程：攻击者首先通过钓鱼网站让受害者客户端下载并安装一个恶意脚本来帮助推断TCP连接。然后攻击者触发服务器TCP段上的IP分片，并伪造恶意IP片段以在客户端被缓存。这些伪造的片段与来自服务器的良性片段一起被重新组装，并推送到TCP层，从而成功污染HTTP流量。\n   - 攻击场景：包括Web缓存投毒和HTTP重定向拦截。在Web缓存投毒场景中，攻击者替换了客户端浏览器缓存中的合法内容。在HTTP重定向拦截场景中，攻击者通过恶意IP片段替换了HTTP重定向消息中的URL，导致客户端的请求被劫持到攻击者控制的假网站上。\n\n2. **操纵BGP路由表**：\n   - 攻击设置：涉及一个攻击机器和两台BGP路由器（Routeri和Routerj），Routeri向Routerj广播BGP路由信息，攻击者的目标是通过IP分片来篡改这些广播的路由信息，从而操纵Routerj的BGP路由表。\n   - 攻击过程：攻击者首先通过Linux实现中的侧信道探测到Routeri和Routerj之间的BGP连接，然后通过伪造ICMP“Fragmentation Needed”消息来欺骗Routeri分片其TCP段。攻击者接着伪造Routeri的身份，向Routerj发送恶意片段，这些片段将被缓存。最终，所有具有相同IPID的片段将被错误地重新组装，并将被污染的BGP消息推送到Routerj的BGP进程中。\n   - 攻击场景：污染BGP更新。攻击者可以替换BGP更新消息中的网络可达性信息（NLRI），例如将合法的路由前缀10.2.2.0/24替换为虚假的前缀12.2.0.0/24，从而在Routerj的路由表中注入虚假路由信息。\n\n这些实验展示了攻击者如何利用IP分片攻击来操纵基于TCP的应用和网络协议，证明了论文提出的攻击方法是可行的，并且能够在现实世界中造成严重的影响。此外，论文还对攻击的成功率进行了评估，证明了攻击在不同条件下的有效性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 尽管论文提出了有效的攻击方法和相应的缓解措施，但仍有一些潜在的研究方向可以进一步探索：\n\n1. **攻击检测和防御机制**：研究和开发新的入侵检测系统（IDS）和入侵防御系统（IPS），专门针对通过IP分片进行的TCP攻击，以实时识别和阻止这类攻击。\n\n2. **自动化攻击响应**：开发自动化的网络响应机制，以便在检测到此类攻击时，快速调整网络配置，如动态修改路径MTU值，以减轻攻击影响。\n\n3. **跨协议攻击研究**：探索IP分片攻击与其他网络协议（如QUIC）的交互，以及如何利用这些交互来设计跨协议攻击。\n\n4. **实际部署的挑战**：研究在现实世界的网络环境中部署论文提出的对策的可行性和挑战，包括对现有网络设备和软件的兼容性问题。\n\n5. **用户隐私和数据安全**：研究如何保护用户数据免受通过IP分片攻击可能导致的数据泄露和隐私侵犯。\n\n6. **网络测量和映射**：开发新的网络测量工具和技术，以更准确地识别和映射网络中的IP分片问题和脆弱性。\n\n7. **多路径和软件定义网络（SDN）**：研究在多路径网络和SDN环境中，IP分片攻击的影响以及相应的防御策略。\n\n8. **国际互联网治理和政策**：探讨如何通过国际互联网治理和政策合作，来提高全球互联网对此类攻击的防御能力。\n\n9. **教育和培训**：提高网络管理员和安全研究人员对IP分片攻击的认识，开发相关的教育和培训材料。\n\n10. **长期网络演化**：研究长期网络演化对IP分片攻击和防御策略的影响，包括新技术（如5G和物联网）的引入。\n\n这些研究方向可以帮助学术界和工业界更全面地理解和应对IP分片攻击，从而提高网络的安全性和可靠性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文主要内容的总结如下：\n\n1. **问题陈述**：论文指出，尽管TCP协议通过PMTUD机制来避免IP分片攻击，但实际上TCP仍然容易受到这类攻击。这与普遍认为TCP对IP分片免疫的观点相反。\n\n2. **研究发现**：通过系统研究，论文发现即使启用了PMTUD，仍然存在两种情况可以触发TCP段上的IP分片：\n   - 中间路由器的下一跳MTU小于发送方可接受的最小路径MTU。\n   - 恶意构造的ICMP错误消息导致发送方IP层和TCP层之间的路径MTU值不同步。\n\n3. **攻击方法**：论文提出了一种新的攻击方法，该方法利用IP分片来污染TCP流量。攻击者可以注入伪造的IP片段，这些片段会被接收方错误地重组并与原始TCP段结合。\n\n4. **案例研究**：论文通过两个案例研究展示了攻击的实际效果：\n   - 操纵HTTP流量，包括Web缓存投毒和HTTP重定向拦截。\n   - 操纵BGP路由表，通过污染BGP更新消息来影响路由。\n\n5. **攻击评估**：论文对攻击在现实世界中的有效性进行了全面评估，证明了攻击可以成功执行并对目标系统造成严重损害。\n\n6. **对策建议**：为了减轻这些攻击，论文提出了增强PMTUD机制的对策，包括调整可接受的最小路径MTU值和正确处理ICMP“Fragmentation Needed”消息。\n\n7. **负责任披露**：作者已经将发现的漏洞报告给了相关厂商和社区，并提出了一系列建议来提高网络设备和协议的安全性。\n\n总体而言，这篇论文揭示了TCP协议在处理IP分片时的安全漏洞，并提出了有效的攻击方法和防御对策，对于网络安全领域具有重要的理论和实践意义。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是PMTUD is not Panacea: Revisiting IP Fragmentation Attacks against TCP，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-381-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-185@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-257@NDSS": {
+        "meta": {
+            "title": "Preventing Kernel Hacks with HAKCs",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-257@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-26-paper.pdf"
+        },
+        "content": "<p class=\"faq-q\"><strong>Q</strong>: 这篇论文试图解决什么问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文介绍了一种名为硬件辅助内核分隔（Hardware-Assisted Kernel Compartmentalization，简称HAKC）的技术，旨在解决以下问题：\n\n1. **内核安全**：商品操作系统内核由于历史和实际原因仍然是单体结构。所有内核代码共享单一地址空间，具有提升的处理权限，并可以无限制地访问所有数据，包括与特定任务完成无关的数据。这种设计使得内核容易受到安全攻击，尤其是通过内核模块（Loadable Kernel Modules，LKMs）进行的攻击。\n\n2. **最小权限原则**：论文提出应用最小权限原则来分隔内核，以实现类似于微内核的安全收益，但又无需进行大规模的重新设计。\n\n3. **性能开销**：现有的内核保护措施（如虚拟化、微内核或编译器增强保护）往往以牺牲性能为代价。HAKC旨在最小化开发者努力和性能开销，同时提供强大的数据和控制流保护。\n\n4. **内核模块的安全性**：内核模块是Linux内核中CVEs的主要来源，由于它们的复杂性和攻击面较大，使得内核模块成为理想的分隔候选对象。\n\n5. **隔离代码和数据**：HAKC通过将代码和数据划分为不同的分区，并为每个分区指定访问策略，来隔离代码和数据。这允许开发者在不增加额外受信任计算基础（Trusted Computing Base，TCB）的情况下，实现代码和数据的隔离。\n\n总结来说，HAKC试图在不牺牲性能的前提下，通过硬件辅助的方式，提高内核的安全性，特别是针对内核模块的保护。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有哪些相关研究？</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文提到了与内核隔离、硬件辅助隔离、以及使用Arm PAC和MTE扩展相关的研究。下面是这些领域的一些具体相关研究：\n\n1. **内核隔离**:\n   - 微内核设计，如QNX [32]，它通过最小化受信任计算基础（TCB）来提供隔离。\n   - 非单体内核和一些单体内核隔离方法，如Nestix [18]，它通过在内核中创建隔离域来提供保护。\n\n2. **用户空间隔离**:\n   - 库操作系统（Library OSes）如OSv [72]，它们限制操作系统对应用程序的暴露。\n   - Unikernels [14]，为单个应用程序提供定制的内核和用户空间，实现隔离。\n\n3. **硬件基于隔离**:\n   - Intel的Memory Protection Keys (MPK) [31]，它允许进程将内存划分为多个域，并控制每个域的读写权限。\n   - Intel的Software Guard Extensions (SGX) [34]，为用户空间提供类似安全区域的保护。\n\n4. **Arm PAC和MTE扩展**:\n   - PACStack [49]，使用PAC来保护存储在堆栈上的返回地址。\n   - PTAuth [23]，通过在数据对象基址存储唯一ID并使用该ID作为PAC上下文来实现时间内存安全。\n   - PARTS [50]，一个LLVM工具链，使用PAC来支持抵抗指针重用的代码指针完整性（CPI）方案。\n\n5. **使用虚拟化技术的内核隔离**:\n   - VirtuOS [64]，使用Xen虚拟机监控器创建服务域来隔离Linux内核的不同子系统。\n   - HUKO [91]，基于Xen，隔离不受信任的扩展。\n\n这些相关研究提供了不同层面和方法的隔离解决方案，而HAKC专注于利用硬件特性来实现内核级别的代码和数据分隔，旨在提高安全性同时最小化性能开销和开发努力。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文如何解决这个问题？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文通过提出一种名为硬件辅助内核分隔（HAKC）的机制来解决上述问题。HAKC的解决方案包括以下几个关键组成部分：\n\n1. **分隔设计**：HAKC采用分隔设计，将代码和数据划分为单独的分区（称为Clique），并为每个分区指定访问策略。数据由单个分区拥有，并且分区的访问控制策略在运行时强制执行，防止未经授权的数据访问。\n\n2. **硬件依赖**：HAKC依赖硬件特性来强制执行分隔策略，避免了增加额外的受信任计算基础（TCB）。这种方法类似于微内核的安全保证，但不需要重大的重新设计。\n\n3. **数据访问策略**：HAKC确保所有数据都属于确切的一个分区，并且访问的数据符合为每个分区定义的数据访问策略。这通过在运行时检查指针的签名和颜色标签来实现。\n\n4. **控制流转换策略**：当一个分区需要将控制流转移到自身之外时，数据所有权会转移给目标，当返回时再转回。这样可以优化和强制执行安全的本地数据访问；在分区内的代码和数据访问是安全的且相对快速，而对外部数据和代码的访问则需要明确授权。\n\n5. **实现和评估**：作者在Linux v5.10中实现了HAKC，并使用Arm v8.5-A ISA的扩展功能来对ipv6.ko和nf_tables.ko这两个内核模块进行了分隔。通过微基准测试，作者评估了HAKC的性能开销，并在真实世界的网络浏览实验中测试了其实用性。\n\n6. **性能优化**：为了降低开销，HAKC采用了包括跨过程分析和数据检查放置的优化策略。跨过程分析用于确定哪些指针已经被验证，而数据检查放置优化用于仅在指针实际使用时才进行身份验证。\n\n通过这些方法，HAKC能够在保护内核免受攻击的同时，最小化对性能和开发者工作量的影响。论文的实验结果表明，HAKC在保持安全性的同时，对性能的影响是可接受的，并且在真实世界的工作负载下，用户不太可能注意到性能差异。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 论文做了哪些实验？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中进行了以下实验来评估HAKC的性能开销和实用性：\n\n1. **ApacheBench测试**：\n   - 使用ApacheBench对 compartmentalized 的ipv6.ko 内核模块进行测试，测量了从服务器传输不同大小数据（100KB、1MB、10MB）的请求每秒数（Requests/sec）和传输速率（Transfer Rate）。\n   - 将性能与未修改的内核进行比较，以评估在不同负载下HAKC的开销。\n\n2. **多个Compartment系统开销测试**：\n   - 将 nf_tables.ko 内核模块也进行compartmentalization，并与ipv6.ko一起在系统中使用，测试两者结合时的性能开销。\n   - 定义了一个包过滤规则，并使用修改过的内核和未修改的内核分别进行测试，比较两者的性能差异。\n\n3. **真实世界的网站浏览实验**：\n   - 使用Selenium脚本自动播放YouTube视频，并访问Alexa Top 50网站中的IPv6网站。\n   - 禁用所有内存和磁盘缓存，强制使用IPv6，并在每次网站检索之间切换内核，以测量使用compartmentalized ipv6.ko 内核模块与未修改内核之间的平均加载时间差异。\n\n4. **CVE案例研究**：\n   - 对两个真实世界的漏洞（CVE-2017-9074和CVE-2019-14815）进行了安全评估，以说明HAKC如何保护内核代码和数据不受此类漏洞的影响。\n\n这些实验旨在全面评估HAKC在不同场景下的性能表现，包括在网络传输、多个模块的组合使用，以及日常使用场景（如网页浏览）下的性能影响。此外，通过分析具体的CVE案例，论文还展示了HAKC在实际安全场景中的保护能力。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 有什么可以进一步探索的点？</p>\n<p class=\"faq-a\"><strong>A</strong>: 论文中提出了一些可以进一步探索的点，包括但不限于：\n\n1. **优化分隔策略**：论文中提到，开发性能最优的分隔策略类似于NP完全问题，因此未来的工作可以探索启发式方法和动态分析来提供足够好的（尽管可能不是最优的）解决方案。\n\n2. **更多分隔的实际评估**：虽然论文中对ipv6.ko和nf_tables.ko进行了分隔并评估了性能，但可以进一步评估更多不同的内核模块分隔后的性能影响，以及这些分隔在真实世界的应用场景中的表现。\n\n3. **自动化分隔过程**：论文提到了手动定义分隔策略的需要，未来的工作可以探索自动化工具或方法来减少开发者在定义分隔策略时的工作量。\n\n4. **性能开销的进一步降低**：论文中提到了一些性能优化措施，但还有可能通过更高级的编译器优化、硬件支持或其他技术来进一步降低HAKC的开销。\n\n5. **安全性分析和强化**：尽管HAKC提供了一定程度的安全性，但还可以对其安全性进行更深入的分析，包括形式化验证、对抗更复杂的攻击场景等。\n\n6. **硬件支持的扩展**：论文基于Arm架构实现了HAKC，但可以探索在其他架构上实现HAKC的可能性，以及如何利用不同硬件特性来增强或改进分隔机制。\n\n7. **与其他安全技术的结合**：探索HAKC与其他安全技术（如内存安全机制、虚拟化技术等）的结合使用，以提供更全面的保护。\n\n8. **长期维护和更新**：研究如何在产品的长期生命周期中维护和更新HAKC，包括如何处理新发现的漏洞、如何适应新的硬件特性等。\n\n这些方向可以为未来的研究提供指导，并帮助改进和加强HAKC以及类似技术的性能和安全性。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 总结一下论文的主要内容</p>\n<p class=\"faq-a\"><strong>A</strong>: 这篇论文的主要内容可以总结如下：\n\n**标题**: 防止内核黑客攻击的硬件辅助内核分隔（Preventing Kernel Hacks with HAKC）\n\n**作者**: Derrick McKee, Yianni Giannaris, Carolina Ortega Perez, Howard Shrobe, Mathias Payer, Hamed Okhravi, Nathan Burow\n\n**机构**: Purdue University, MIT CSAIL, EPFL, MIT Lincoln Laboratory\n\n**摘要**: 论文介绍了一种名为硬件辅助内核分隔（HAKC）的技术，旨在通过硬件辅助的方式对操作系统内核进行分隔，以提高安全性。HAKC通过将代码和数据划分为不同的分区（Clique），并为每个分区指定访问策略，来限制数据访问和控制流。这种方法旨在在最小化开发者工作量和性能开销的同时，提供强大的安全保护。\n\n**背景**: 论文讨论了现代操作系统内核的单体设计带来的安全挑战，特别是内核模块（LKMs）由于其复杂性和攻击面大，成为安全漏洞的主要来源。\n\n**方法**: HAKC利用Arm架构中的指针认证（PAC）和内存标签扩展（MTE）来实现内核代码和数据的分隔。它通过定义一个两级分隔策略（Clique和Compartment），并使用硬件来强制执行这些策略，从而在不增加额外受信任计算基础（TCB）的情况下，实现了类似于微内核的安全保证。\n\n**实验**: 作者在Linux v5.10上实现了HAKC，并对ipv6.ko和nf_tables.ko两个内核模块进行了分隔。通过ApacheBench测试和真实世界的网站浏览实验，评估了HAKC的性能开销。实验结果表明，HAKC在保持安全性的同时，对性能的影响是可接受的。\n\n**贡献**: 论文提供了一个用于定义细粒度分隔策略的API，一个基于硬件的分隔强制执行机制，以及在Linux内核模块上的实现和广泛的性能评估。\n\n**结论**: HAKC为商品单体内核提供了一种实用且性能开销低的分隔方法，可以作为提高内核安全性的有效手段。论文还讨论了未来的研究方向，包括优化分隔策略、自动化分隔过程、降低性能开销等。\n\n**分布声明**: 论文内容已获批准公开发布，分布不受限制。研究工作得到了美国国防部研究与工程副部长办公室的支持。</p>\n<p class=\"faq-q\"><strong>Q</strong>: 想要进一步了解论文</p>\n<p class=\"faq-a\"><strong>A</strong>: 以上只是了解一篇论文的几个基本FAQ。如果你还想与Kimi进一步讨论该论文，请点击 <a href=\"http://kimi.moonshot.cn/_prefill_chat?prefill_prompt=我们要讨论的论文是Preventing Kernel Hacks with HAKCs，链接是 https://www.ndss-symposium.org/wp-content/uploads/2022-26-paper.pdf ，已有的FAQ链接是 https://papers.cool/venue/kimi?paper=auto-draft-257@NDSS 。请以此为基础，继续回答我后面的问题。&system_prompt=你是一个学术助手，后面的对话将围绕着以下论文内容进行，已经通过链接给出了论文的PDF和论文已有的FAQ。用户将继续向你咨询论文的相关问题，请你作出专业的回答，不要出现第一人称，当涉及到分点回答时，鼓励你以markdown格式输出。&send_immediately=true&force_search=false\" target=\"_blank\"><strong>这里 <i class=\"fa fa-external-link\"></i></strong></a> 为你跳转Kimi AI网页版，并启动一个与该论文相关的新会话。</p>\n"
+    },
+    "=auto-draft-207@NDSS": {
+        "meta": {
+            "title": "Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-207@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-308-paper.pdf"
+        }
+    },
+    "=auto-draft-249@NDSS": {
+        "meta": {
+            "title": "Progressive Scrutiny: Incremental Detection of UBI bugs in the Linux Kernel",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-249@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-380-paper.pdf"
+        }
+    },
+    "=auto-draft-239@NDSS": {
+        "meta": {
+            "title": "RamBoAttack: A Robust and Query Efficient Deep Neural Network Decision Exploit",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-239@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-200-paper.pdf"
+        }
+    },
+    "=auto-draft-183@NDSS": {
+        "meta": {
+            "title": "ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-183@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-214-paper.pdf"
+        }
+    },
+    "=auto-draft-215@NDSS": {
+        "meta": {
+            "title": "RVPLAYER: Robotic Vehicle Forensics by Replay with What-if Reasoning",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-215@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-244-paper.pdf"
+        }
+    },
+    "=auto-draft-208@NDSS": {
+        "meta": {
+            "title": "ScriptChecker: To Tame Third-party Script Execution With Task Capabilities",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-208@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-382-paper.pdf"
+        }
+    },
+    "=auto-draft-248@NDSS": {
+        "meta": {
+            "title": "Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-248@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-345-paper.pdf"
+        }
+    },
+    "=auto-draft-254@NDSS": {
+        "meta": {
+            "title": "Shaduf: Non-Cycle Payment Channel Rebalancing",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-254@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-203-paper.pdf"
+        }
+    },
+    "=auto-draft-256@NDSS": {
+        "meta": {
+            "title": "Speeding Dumbo: Pushing Asynchronous BFT Closer to Practice",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-256@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-385-paper.pdf"
+        }
+    },
+    "=auto-draft-223@NDSS": {
+        "meta": {
+            "title": "SynthCT: Towards Portable Constant-Time Code",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-223@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-215-paper.pdf"
+        }
+    },
+    "=auto-draft-206@NDSS": {
+        "meta": {
+            "title": "Testability Tarpits: the Impact of Code Patterns on the Security Testing of Web Applications",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-206@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-150-paper.pdf"
+        }
+    },
+    "=auto-draft-202@NDSS": {
+        "meta": {
+            "title": "Tetrad: Actively Secure 4PC for Secure Training and Inference",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-202@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-58-paper.pdf"
+        }
+    },
+    "=auto-draft-192@NDSS": {
+        "meta": {
+            "title": "The Truth Shall Set Thee Free: Enabling Practical Forensic Capabilities in Smart Environments",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-192@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-133-paper.pdf"
+        }
+    },
+    "=auto-draft-234@NDSS": {
+        "meta": {
+            "title": "Titanium: A Metadata-Hiding File-Sharing System with Malicious Security",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-234@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-161-paper.pdf"
+        }
+    },
+    "=auto-draft-214@NDSS": {
+        "meta": {
+            "title": "Too Afraid to Drive: Systematic Discovery of Semantic DoS Vulnerability in Autonomous Driving Planning under Physical-World Attacks",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-214@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-177-paper.pdf"
+        }
+    },
+    "=auto-draft-244@NDSS": {
+        "meta": {
+            "title": "VPNInspector: Systematic Investigation of the VPN Ecosystem",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-244@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-285-paper.pdf"
+        }
+    },
+    "=auto-draft-226@NDSS": {
+        "meta": {
+            "title": "What You See is Not What the Network Infers: Detecting Adversarial Examples Based on Semantic Contradiction",
+            "type": "venue",
+            "source": "NDSS.2022",
+            "kimi_link": "https://papers.cool/venue/kimi?paper=auto-draft-226@NDSS",
+            "pdf_link": "https://www.ndss-symposium.org/wp-content/uploads/2022-1-paper.pdf"
+        }
+    }
+}
