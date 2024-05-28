@@ -55,7 +55,7 @@ def extract_all_text(soup):
 
 
 def extract_all_href(soup):
-    return soup.find_all('a', href=True)
+    return [soup['href'] for soup in soup.find_all('a', href=True)]
 
 
 def get_shortened_str(s: str, length: int = 100) -> str:
@@ -78,8 +78,9 @@ def parse(soup: BeautifulSoup, parses: dict, return_str=False, debug=False) -> S
     def _parse_element_by_href(soup: BeautifulSoup) -> BeautifulSoup:
         return extract_all_href(soup)
     
-    def _parse_element_by_text(soup: BeautifulSoup) -> BeautifulSoup:
-        return ''.join([''.join(_soup.split()) for _soup in extract_all_text(soup)])
+    def _parse_element_by_text(soup: BeautifulSoup, sep: str = '', return_as_list: bool = False) -> BeautifulSoup:
+        return sep.join([part for part in [''.join(_soup.split()) for _soup in extract_all_text(soup)] if part]) if not return_as_list \
+                else [[part for part in [''.join(_soup.split()) for _soup in extract_all_text(soup)] if part]]
 
     def _parse_element_by_attr(soup: BeautifulSoup, element_tp: str, attr_key: str, attr_value: str) -> BeautifulSoup:
         return find_element_by_attr(soup, element_tp, attr_key, attr_value)
@@ -125,15 +126,20 @@ def parse(soup: BeautifulSoup, parses: dict, return_str=False, debug=False) -> S
                 soup = _parse_element_by_type(soup, parse[1])
             elif parse_type == 'result':
                 attr_type = parse[1]
+                if len(parse) == 4:
+                    attr_kwargs = parse[2]
+                    attr_kwargs = {k: v for k, v in attr_kwargs}
+                else:
+                    attr_kwargs = {}
                 if attr_type == 'contents':
                     # ('result', 'contents', <index>)
-                    soup = _parse_element_by_content(soup)
+                    soup = _parse_element_by_content(soup, **attr_kwargs)
                 elif attr_type == 'text':
                     # ('result', 'text', <index>)
-                    soup = _parse_element_by_text(soup)
+                    soup = _parse_element_by_text(soup, **attr_kwargs)
                 elif attr_type == 'href':
                     # ('result', 'href', <index>)
-                    soup = _parse_element_by_href(soup)
+                    soup = _parse_element_by_href(soup, **attr_kwargs)
                 else:
                     print(f'warning: unsupported attr_type {repr(attr_type)}, all supported attr_type are {repr(["contents", "text", "href"])}')
                     soup = None
