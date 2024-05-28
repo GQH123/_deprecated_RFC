@@ -1,9 +1,10 @@
 import os
 import shutil
 from collections import namedtuple
+from distutils.dir_util import copy_tree
 
 
-__all__ = ['file', 'link', 'cp']
+__all__ = ['file', 'link', 'cp', 'cpdir']
 
 
 def dir_structrue(name, fields, f_make, **kwargs):
@@ -15,6 +16,12 @@ def dir_structrue(name, fields, f_make, **kwargs):
     result = namedtuple(name, fields, **kwargs)
     result.make = make
     return result
+
+
+def copy_dir(_path, cp_path):
+    cp_path = os.path.join(os.path.split(__file__)[0], 'templates', cp_path)
+    copy_tree(cp_path, _path)
+cpdir = dir_structrue('cpdir', ['cp_path'], copy_dir)
 
 
 def copy(_path, cp_path):
