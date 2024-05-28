@@ -1,0 +1,14 @@
+{
+    "SKIPPED": {
+        "total": 155,
+        "type": {
+            "MusicPreview": 155
+        }
+    },
+    "OK": {
+        "total": 39185,
+        "type": {
+            "MusicPreview": 39185
+        }
+    }
+}

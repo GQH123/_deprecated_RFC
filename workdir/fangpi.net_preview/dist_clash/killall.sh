@@ -1,0 +1,1 @@
+ps x | more | grep clash-fart | cut -d" " -f1 | xargs -I {} kill {}
