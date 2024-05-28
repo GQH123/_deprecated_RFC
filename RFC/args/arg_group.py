@@ -250,6 +250,7 @@ class RequestorArgs(Args):
         'report_step': 100,
         'wait_timeout': 20,
         'wait_sleep': 2,
+        'request_sleep': 0,
     })
     _required_args: List[str] = []
 

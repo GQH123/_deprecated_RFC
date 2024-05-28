@@ -233,6 +233,7 @@ class Requestor(AttrDict, RootType):
                 continue
             self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             self._fetch_single_sync(item)
+            time.sleep(self.request_sleep)
         self._finish_sync()
 
     async def _fetch_all_asyncio(
