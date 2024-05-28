@@ -1,0 +1,1 @@
+ps x | more | grep crawler_audiostock | cut -d" " -f1 | xargs -I {} kill {}
