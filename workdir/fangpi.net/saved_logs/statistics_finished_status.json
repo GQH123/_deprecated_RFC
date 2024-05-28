@@ -1,0 +1,14 @@
+{
+    "OK": {
+        "total": 570951,
+        "type": {
+            "MusicPage": 570951
+        }
+    },
+    "SKIPPED": {
+        "total": 185,
+        "type": {
+            "MusicPage": 185
+        }
+    }
+}

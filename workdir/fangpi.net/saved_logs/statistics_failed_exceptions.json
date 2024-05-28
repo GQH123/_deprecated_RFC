@@ -1,0 +1,44 @@
+{
+    "StatusCode 502 Error": {
+        "total": 678961,
+        "type": {
+            "MusicPage": 678961
+        }
+    },
+    "ServerDisconnectedError": {
+        "total": 3021922,
+        "type": {
+            "MusicPage": 3021922
+        }
+    },
+    "TimeoutError": {
+        "total": 7241,
+        "type": {
+            "MusicPage": 7241
+        }
+    },
+    "ClientConnectorError": {
+        "total": 13673,
+        "type": {
+            "MusicPage": 13673
+        }
+    },
+    "StatusCode 500 Error": {
+        "total": 17154,
+        "type": {
+            "MusicPage": 17154
+        }
+    },
+    "ClientPayloadError": {
+        "total": 3,
+        "type": {
+            "MusicPage": 3
+        }
+    },
+    "ClientOSError": {
+        "total": 10,
+        "type": {
+            "MusicPage": 10
+        }
+    }
+}
