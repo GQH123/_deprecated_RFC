@@ -1,0 +1,1 @@
+nohup zip $1.zip -r $1/ 2>&1 > $1.zip.log &
