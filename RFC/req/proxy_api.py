@@ -34,28 +34,24 @@ class PoolProxyAPI(AttrDict, RootType):
         process_id = int(process_name.split('-')[-1])
         assert process_id < len(self.proxy_pool), f'process_id {process_id} out of range, proxy_pool length {len(self.proxy_pool)}'
         return self.proxy_pool[process_id]
+    
 
-
-class QGNetProxyAPI(AttrDict, RootType):
-    _name: str = 'proxy_api'
+class BaseProxyAPI(AttrDict, RootType):
+    _name: str = 'base_proxy_api'
     
     def __init__(
         self,
-        proxy_api_key: str,
-        proxy_api_passwd: str,
+        proxy_api_info: dict,
     ):
+        super().__init__()
         self._get_logger_self(__name__, add_file_handler=ProxyAPI_logger_enable_file_handler, level='info')  # if loggers in multiprocessing intervening with each other, we will add special file handler for multiprocessing manually
-        proxy_api_url = f'https://share.proxy.qg.net/get?key={proxy_api_key}&distinct=true'
-        self.proxy_api_info = {
-            'url': proxy_api_url,
-            'key': proxy_api_key,
-            'passwd': proxy_api_passwd,
-        }
+        self.proxy_api_info = proxy_api_info
         self._log_dir = 'saved_logs'
         if not os.path.exists(self._log_dir):
             os.makedirs(self._log_dir, exist_ok=True)
         self.proxy_info = None
-        self.request_timeout = 1
+        self.request_timeout = 5
+        self.tag = self._name.split('_')[0]
 
     def _request(
         self,
@@ -68,19 +64,61 @@ class QGNetProxyAPI(AttrDict, RootType):
                     raise ValueError("proxy is unavailable")
                 self.proxy_info = new_proxy_info
                 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                with open('saved_logs/proxy_history.txt', 'a') as f:
+                with open(f'saved_logs/proxy_history_{self.tag}.txt', 'a') as f:
                     f.write(f'[{current_time}] {new_proxy_info}\n')
                 break
             except Exception as e:
                 error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
                 self._logger.error(f"failed to request proxy info, caught error {error_report}")
 
-    def _update(
+    def update(
         self,
     ):
         self._logger.info('updating proxy')
         self._request()
         self._logger.info('proxy updated successfully')
+
+    def _sub_check_update(
+        self,
+        proxy_info: dict = None,
+    ):
+        raise NotImplementedError
+
+    def _sub_apply(
+        self,
+        proxy_info: dict = None,
+    ):
+        raise NotImplementedError
+
+    def _check_update(
+        self,
+        proxy_info = None,
+    ):
+        self._logger.info('checking if proxy need to be updated')
+        return self._sub_check_update(proxy_info or self.proxy_info)
+
+    def apply(
+        self,
+        proxy_info = None,
+    ):
+        if self._check_update():
+            self.update()
+        return self._sub_apply(proxy_info or self.proxy_info)
+
+
+class QGNetProxyAPI(BaseProxyAPI):
+    _name: str = 'qgnet_proxy_api'
+    
+    def __init__(
+        self,
+        proxy_api_key: str,
+        proxy_api_passwd: str,
+    ):
+        super().__init__({
+            'url': f'https://share.proxy.qg.net/get?key={proxy_api_key}&distinct=true',
+            'key': proxy_api_key,
+            'passwd': proxy_api_passwd,
+        })
 
     def _sub_check_update(
         self,
@@ -113,26 +151,54 @@ class QGNetProxyAPI(AttrDict, RootType):
         }
         return proxies
 
-    def _check_update(
-        self,
-        proxy_info = None,
-    ):
-        self._logger.info('checking if proxy need to be updated')
-        return self._sub_check_update(proxy_info or self.proxy_info)
 
-    def apply(
+class ZMHTTPProxyAPI(BaseProxyAPI):
+    _name: str = 'zmhttp_proxy_api'
+    
+    def __init__(
         self,
-        proxy_info = None,
+        proxy_api_url: str
     ):
-        if self._check_update():
-            self._update()
-        return self._sub_apply(proxy_info or self.proxy_info)
+        super().__init__({
+            'url': proxy_api_url,
+        })
+
+    def _sub_check_update(
+        self,
+        proxy_info: dict = None,
+    ):
+        proxy_info = proxy_info or self.proxy_info
+        if proxy_info is None:
+            return True
+        if not proxy_info['success']:
+            return True
+        deadline = datetime.strptime(proxy_info['data'][0]['expire_time'], "%Y-%m-%d %H:%M:%S").timestamp()
+        if datetime.now().timestamp() >= deadline:
+            return True
+        return False
+
+    def _sub_apply(
+        self,
+        proxy_info: dict = None,
+    ):
+        proxy_info = proxy_info or self.proxy_info
+        proxyUrl = "http://%(ip)s:%(port)s" % {
+            "ip": proxy_info['data'][0]['ip'],
+            "port": proxy_info['data'][0]['port'],
+        }
+        proxies = {
+            "http": proxyUrl,
+            "https": proxyUrl,
+        }
+        self._logger.info(str(proxies))
+        return proxies
 
 
 # ------------------------------------ Module Postprocess ------------------------------------ #
 
 _nameToProxyAPI = {
     'qgnet': QGNetProxyAPI,
+    'zmhttp': ZMHTTPProxyAPI,
     'pool': PoolProxyAPI,
 }
 
