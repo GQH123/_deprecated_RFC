@@ -1,0 +1,1 @@
+ps x | more | grep clash-kimi | cut -d" " -f1 | xargs -I {} kill {}

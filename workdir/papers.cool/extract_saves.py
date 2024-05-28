@@ -6,12 +6,17 @@ import random
 
 savepath = './saves/'
 jsonpath = './jsons/'
+jsonpath_only_with_contents = './jsons/with_contents/'
+sampled_path = './submits/'
 
 
 def extract_saves(only_with_contents=False):
     paper_info_dict_full = {}
-    if not os.path.exists(jsonpath):
-        os.makedirs(jsonpath)
+    _jsonpath = jsonpath
+    if only_with_contents:
+        _jsonpath = jsonpath_only_with_contents
+    if not os.path.exists(_jsonpath):
+        os.makedirs(_jsonpath)
     for subdir in tqdm(os.listdir(savepath)):
         if not os.path.exists(os.path.join(savepath, subdir, 'subs')):
             continue
@@ -43,20 +48,23 @@ def extract_saves(only_with_contents=False):
             for paper_key in list(paper_info_dict.keys()):
                 if 'content' not in paper_info_dict[paper_key]:
                     del paper_info_dict[paper_key]
-        json.dump(paper_info_dict, open(os.path.join(jsonpath, f'{subdir}.json'), 'w'), indent=4, ensure_ascii=False)
+        json.dump(paper_info_dict, open(os.path.join(_jsonpath, f'{subdir}.json'), 'w'), indent=4, ensure_ascii=False)
         paper_info_dict_full = {**paper_info_dict_full, **paper_info_dict}
-    json.dump(paper_info_dict_full, open(os.path.join(jsonpath, 'full.json'), 'w'), indent=4, ensure_ascii=False)
+    json.dump(paper_info_dict_full, open(os.path.join(_jsonpath, 'full.json'), 'w'), indent=4, ensure_ascii=False)
 
 
-jsonpath_only_with_contents = './jsons/with_contents/'
-sampled_path = './submits/'
-
-
-def random_sample_papers_with_contents(n_samples=5000):
+def random_sample_papers_with_contents(n_samples='all', no_arxiv=False, only_arxiv=False):
     if not os.path.exists(sampled_path):
         os.makedirs(sampled_path)
-    full_papers_with_contents = json.load(open(os.path.join(jsonpath_only_with_contents, 'full.json')))
+    if no_arxiv:
+        full_papers_with_contents = {key: item for key, item in json.load(open(os.path.join(jsonpath_only_with_contents, 'full.json'))).items() if item['meta']['type'] != 'arxiv'}
+    elif only_arxiv:
+        full_papers_with_contents = {key: item for key, item in json.load(open(os.path.join(jsonpath_only_with_contents, 'full.json'))).items() if item['meta']['type'] == 'arxiv'}
+    else:
+        full_papers_with_contents = json.load(open(os.path.join(jsonpath_only_with_contents, 'full.json')))
     all_paper_keys = list(full_papers_with_contents.keys())
+    if n_samples == 'all':
+        n_samples = len(all_paper_keys)
     assert len(all_paper_keys) >= n_samples
     sampled_papers = []
     for i in tqdm(range(n_samples)):
@@ -67,4 +75,5 @@ def random_sample_papers_with_contents(n_samples=5000):
 
 
 # extract_saves(True)
-random_sample_papers_with_contents()
+# extract_saves(False)
+random_sample_papers_with_contents(only_arxiv=True)

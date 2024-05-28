@@ -1,0 +1,14 @@
+{
+    "ConnectionError": {
+        "total": 259,
+        "type": {
+            "PapersCoolPaperKimiSection": 259
+        }
+    },
+    "StatusCode 431 Error": {
+        "total": 400,
+        "type": {
+            "PapersCoolPaperKimiSection": 400
+        }
+    }
+}

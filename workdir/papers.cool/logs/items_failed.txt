@@ -1,0 +1,1292 @@
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-26)
+	status: ['SSLError'] SSLError(MaxRetryError("HTTPSConnectionPool(host='papers.cool', port=443): Max retries exceeded with url: /arxiv/cs.LG?date=2024-05-26&show=200000 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))"))
+timestamp: 2024-05-27 14:21:41.159993
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-03).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-03_=2405.00719)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-03).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-03_=2405.00719)')
+timestamp: 2024-05-27 14:21:44.587616
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.13044)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.13044)')
+timestamp: 2024-05-27 14:21:44.634785
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14769)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14769)')
+timestamp: 2024-05-27 14:21:47.664467
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=gallardoantolin19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=gallardoantolin19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:21:51.535247
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=yang20e@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=yang20e@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:21:51.544459
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=paraskevopoulos19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=paraskevopoulos19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:21:51.600167
+
+PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=rakotomalala22@interspeech_2022@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=rakotomalala22@interspeech_2022@ISCA)')
+timestamp: 2024-05-27 14:21:55.527958
+
+PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=ciccarelli22@interspeech_2022@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2022).PapersCoolPaperKimiSection(venue_INTERSPEECH.2022_=ciccarelli22@interspeech_2022@ISCA)')
+timestamp: 2024-05-27 14:21:57.579073
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=li19b@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=li19b@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:00.541979
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=mallolragolta19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=mallolragolta19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:01.597103
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=ma20@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=ma20@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:02.494248
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=ahlers19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=ahlers19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:03.537310
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=lenain20@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=lenain20@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:04.548942
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=kyriakopoulos20@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=kyriakopoulos20@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:05.457108
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=gimeno20@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=gimeno20@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:07.512051
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=lavechin20@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=lavechin20@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:08.426591
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=yamamoto19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=yamamoto19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:09.488902
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=tong20@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=tong20@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:10.510870
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=sheth19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=sheth19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:11.386161
+
+PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=chen20o@interspeech_2020@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2020).PapersCoolPaperKimiSection(venue_INTERSPEECH.2020_=chen20o@interspeech_2020@ISCA)')
+timestamp: 2024-05-27 14:22:12.448801
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=silva19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=silva19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:13.490308
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=douros19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=douros19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:15.405460
+
+PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=dhiman19@interspeech_2019@ISCA)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_INTERSPEECH.2019).PapersCoolPaperKimiSection(venue_INTERSPEECH.2019_=dhiman19@interspeech_2019@ISCA)')
+timestamp: 2024-05-27 14:22:18.486373
+
+PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2011@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2011@ACL)')
+timestamp: 2024-05-27 14:22:24.952786
+
+PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2012@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2012@ACL)')
+timestamp: 2024-05-27 14:22:25.205233
+
+PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2013@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2013@ACL)')
+timestamp: 2024-05-27 14:22:26.835053
+
+PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2014@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2014@ACL)')
+timestamp: 2024-05-27 14:22:27.923716
+
+PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2015@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2015@ACL)')
+timestamp: 2024-05-27 14:22:28.161023
+
+PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2016@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2019).PapersCoolPaperKimiSection(venue_ACL.2019_=P19-2016@ACL)')
+timestamp: 2024-05-27 14:22:29.785141
+
+PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2090@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2090@ACL)')
+timestamp: 2024-05-27 14:22:32.747040
+
+PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2091@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2091@ACL)')
+timestamp: 2024-05-27 14:22:34.115764
+
+PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2092@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2092@ACL)')
+timestamp: 2024-05-27 14:22:34.981767
+
+PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2093@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2018).PapersCoolPaperKimiSection(venue_ACL.2018_=P18-2093@ACL)')
+timestamp: 2024-05-27 14:22:35.703156
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.665@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.665@ACL)')
+timestamp: 2024-05-27 14:22:37.334399
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.301@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.301@ACL)')
+timestamp: 2024-05-27 14:22:41.656646
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.302@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.302@ACL)')
+timestamp: 2024-05-27 14:22:43.265611
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.303@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.303@ACL)')
+timestamp: 2024-05-27 14:22:43.953191
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.304@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.304@ACL)')
+timestamp: 2024-05-27 14:22:44.609394
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.305@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.305@ACL)')
+timestamp: 2024-05-27 14:22:46.227167
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.307@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.307@ACL)')
+timestamp: 2024-05-27 14:22:46.901896
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.308@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.308@ACL)')
+timestamp: 2024-05-27 14:22:50.200795
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.310@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.310@ACL)')
+timestamp: 2024-05-27 14:22:50.559740
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.311@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.311@ACL)')
+timestamp: 2024-05-27 14:22:53.178404
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.312@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.312@ACL)')
+timestamp: 2024-05-27 14:22:55.920577
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.313@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.313@ACL)')
+timestamp: 2024-05-27 14:22:56.837880
+
+PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.314@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2021).PapersCoolPaperKimiSection(venue_ACL.2021_=2021.findings-acl.314@ACL)')
+timestamp: 2024-05-27 14:22:59.795038
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.662@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.662@ACL)')
+timestamp: 2024-05-27 14:23:01.864696
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.663@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.663@ACL)')
+timestamp: 2024-05-27 14:23:02.121893
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.664@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.664@ACL)')
+timestamp: 2024-05-27 14:23:02.786093
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.666@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.666@ACL)')
+timestamp: 2024-05-27 14:23:04.833664
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.667@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.667@ACL)')
+timestamp: 2024-05-27 14:23:07.122469
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.668@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.668@ACL)')
+timestamp: 2024-05-27 14:23:08.808789
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.671@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.671@ACL)')
+timestamp: 2024-05-27 14:23:10.077487
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.670@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.670@ACL)')
+timestamp: 2024-05-27 14:23:10.818337
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.672@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.672@ACL)')
+timestamp: 2024-05-27 14:23:11.786914
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.673@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.673@ACL)')
+timestamp: 2024-05-27 14:23:13.012050
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.674@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.674@ACL)')
+timestamp: 2024-05-27 14:23:13.799622
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.675@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.675@ACL)')
+timestamp: 2024-05-27 14:23:14.756304
+
+PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.676@ACL)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(venue_ACL.2020).PapersCoolPaperKimiSection(venue_ACL.2020_=2020.acl-main.676@ACL)')
+timestamp: 2024-05-27 14:23:15.972231
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14791)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14791)')
+timestamp: 2024-05-27 14:23:51.137327
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14790)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14790)')
+timestamp: 2024-05-27 14:23:54.116480
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14755)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14755)')
+timestamp: 2024-05-27 14:23:57.225096
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14749)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14749)')
+timestamp: 2024-05-27 14:24:00.077457
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14748)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14748)')
+timestamp: 2024-05-27 14:24:00.249418
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14743)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14743)')
+timestamp: 2024-05-27 14:24:03.077921
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14742)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14742)')
+timestamp: 2024-05-27 14:24:03.272184
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14725)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14725)')
+timestamp: 2024-05-27 14:24:03.476578
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14714)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14714)')
+timestamp: 2024-05-27 14:24:07.277337
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14657)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14657)')
+timestamp: 2024-05-27 14:24:19.509608
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12605)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12605)')
+timestamp: 2024-05-27 14:24:30.737615
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12548)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12548)')
+timestamp: 2024-05-27 14:24:31.653939
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12520)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12520)')
+timestamp: 2024-05-27 14:24:34.292393
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12460)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12460)')
+timestamp: 2024-05-27 14:24:34.657355
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12458)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12458)')
+timestamp: 2024-05-27 14:24:36.659725
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12984)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12984)')
+timestamp: 2024-05-27 14:24:42.826602
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12969)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12969)')
+timestamp: 2024-05-27 14:24:44.592224
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12901)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12901)')
+timestamp: 2024-05-27 14:24:51.811940
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12802)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12802)')
+timestamp: 2024-05-27 14:25:04.345261
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12768)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12768)')
+timestamp: 2024-05-27 14:25:12.257030
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12634)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12634)')
+timestamp: 2024-05-27 14:25:24.362658
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12631)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12631)')
+timestamp: 2024-05-27 14:25:24.544055
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12627)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12627)')
+timestamp: 2024-05-27 14:25:25.826726
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12618)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12618)')
+timestamp: 2024-05-27 14:25:27.340099
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12596)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12596)')
+timestamp: 2024-05-27 14:25:27.486110
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12569)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12569)')
+timestamp: 2024-05-27 14:25:28.774517
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12522)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12522)')
+timestamp: 2024-05-27 14:25:30.305820
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12485)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12485)')
+timestamp: 2024-05-27 14:25:30.425954
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12450)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12450)')
+timestamp: 2024-05-27 14:25:31.739148
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12403)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12403)')
+timestamp: 2024-05-27 14:25:33.283512
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12402)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-22).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-22_=2404.12402)')
+timestamp: 2024-05-27 14:25:33.387048
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13060)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13060)')
+timestamp: 2024-05-27 14:25:39.560255
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14655)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14655)')
+timestamp: 2024-05-27 14:25:40.094227
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13454)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13454)')
+timestamp: 2024-05-27 14:25:51.539860
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.14244)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.14244)')
+timestamp: 2024-05-27 14:26:11.754812
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.14232)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.14232)')
+timestamp: 2024-05-27 14:26:15.666664
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.14133)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.14133)')
+timestamp: 2024-05-27 14:26:18.819405
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13891)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13891)')
+timestamp: 2024-05-27 14:26:30.669368
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13844)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13844)')
+timestamp: 2024-05-27 14:26:33.629070
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13841)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13841)')
+timestamp: 2024-05-27 14:26:33.694910
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13812)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13812)')
+timestamp: 2024-05-27 14:26:36.575249
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13789)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13789)')
+timestamp: 2024-05-27 14:26:39.537784
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13788)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13788)')
+timestamp: 2024-05-27 14:26:39.699181
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13742)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13742)')
+timestamp: 2024-05-27 14:26:45.482578
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13737)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13737)')
+timestamp: 2024-05-27 14:26:45.628001
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13736)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13736)')
+timestamp: 2024-05-27 14:26:46.575389
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13719)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13719)')
+timestamp: 2024-05-27 14:26:48.679525
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13630)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13630)')
+timestamp: 2024-05-27 14:27:04.043687
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13575)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13575)')
+timestamp: 2024-05-27 14:27:07.056010
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13564)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13564)')
+timestamp: 2024-05-27 14:27:10.000256
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13470)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13470)')
+timestamp: 2024-05-27 14:27:21.990485
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13428)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13428)')
+timestamp: 2024-05-27 14:27:24.979291
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13417)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13417)')
+timestamp: 2024-05-27 14:27:27.979397
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13402)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13402)')
+timestamp: 2024-05-27 14:27:30.974941
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13362)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13362)')
+timestamp: 2024-05-27 14:27:31.694571
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13274)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13274)')
+timestamp: 2024-05-27 14:27:42.879435
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13131)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13131)')
+timestamp: 2024-05-27 14:27:49.584888
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13096)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2404.13096)')
+timestamp: 2024-05-27 14:27:51.818590
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2003.09018)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-23).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-23_=2003.09018)')
+timestamp: 2024-05-27 14:27:51.932424
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14650)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14650)')
+timestamp: 2024-05-27 14:27:52.590290
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15256)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15256)')
+timestamp: 2024-05-27 14:27:54.795033
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15243)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15243)')
+timestamp: 2024-05-27 14:27:54.888667
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15231)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15231)')
+timestamp: 2024-05-27 14:27:55.558037
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15070)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15070)')
+timestamp: 2024-05-27 14:27:57.779078
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15042)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.15042)')
+timestamp: 2024-05-27 14:27:57.829745
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14906)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14906)')
+timestamp: 2024-05-27 14:27:58.516601
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14871)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14871)')
+timestamp: 2024-05-27 14:28:00.686030
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14763)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14763)')
+timestamp: 2024-05-27 14:28:00.754359
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14660)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14660)')
+timestamp: 2024-05-27 14:28:01.385324
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14606)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14606)')
+timestamp: 2024-05-27 14:28:03.636219
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14575)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14575)')
+timestamp: 2024-05-27 14:28:03.717148
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14547)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14547)')
+timestamp: 2024-05-27 14:28:04.325106
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14463)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14463)')
+timestamp: 2024-05-27 14:28:06.595545
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14459)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-24_=2404.14459)')
+timestamp: 2024-05-27 14:28:06.666423
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15320)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15320)')
+timestamp: 2024-05-27 14:28:07.405334
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16534)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16534)')
+timestamp: 2024-05-27 14:28:09.566445
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16696)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16696)')
+timestamp: 2024-05-27 14:28:09.624778
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16630)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16630)')
+timestamp: 2024-05-27 14:28:10.360265
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16468)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16468)')
+timestamp: 2024-05-27 14:28:12.538232
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15961)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15961)')
+timestamp: 2024-05-27 14:28:12.583241
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16457)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16457)')
+timestamp: 2024-05-27 14:28:13.334106
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15840)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15840)')
+timestamp: 2024-05-27 14:28:15.497734
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16455)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16455)')
+timestamp: 2024-05-27 14:28:15.539266
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15823)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15823)')
+timestamp: 2024-05-27 14:28:16.293466
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16417)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16417)')
+timestamp: 2024-05-27 14:28:18.471067
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15751)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15751)')
+timestamp: 2024-05-27 14:28:18.545945
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16388)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16388)')
+timestamp: 2024-05-27 14:28:19.264510
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15687)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15687)')
+timestamp: 2024-05-27 14:28:21.450677
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16280)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16280)')
+timestamp: 2024-05-27 14:28:21.503212
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15681)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15681)')
+timestamp: 2024-05-27 14:28:22.238383
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16260)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16260)')
+timestamp: 2024-05-27 14:28:24.402540
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15678)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15678)')
+timestamp: 2024-05-27 14:28:24.458974
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16208)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16208)')
+timestamp: 2024-05-27 14:28:25.223695
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15657)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15657)')
+timestamp: 2024-05-27 14:28:27.362675
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16196)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16196)')
+timestamp: 2024-05-27 14:28:27.427292
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15616)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15616)')
+timestamp: 2024-05-27 14:28:28.245710
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16188)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16188)')
+timestamp: 2024-05-27 14:28:30.325327
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16162)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16162)')
+timestamp: 2024-05-27 14:28:30.375831
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15601)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15601)')
+timestamp: 2024-05-27 14:28:31.188755
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16074)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16074)')
+timestamp: 2024-05-27 14:28:33.281645
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16069)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16069)')
+timestamp: 2024-05-27 14:28:33.334944
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15599)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15599)')
+timestamp: 2024-05-27 14:28:34.147943
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16067)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16067)')
+timestamp: 2024-05-27 14:28:36.229824
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15485)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15485)')
+timestamp: 2024-05-27 14:28:36.319755
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16057)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16057)')
+timestamp: 2024-05-27 14:28:37.106900
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15371)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15371)')
+timestamp: 2024-05-27 14:28:39.181547
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16054)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16054)')
+timestamp: 2024-05-27 14:28:39.296073
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15370)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15370)')
+timestamp: 2024-05-27 14:28:40.061843
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16048)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16048)')
+timestamp: 2024-05-27 14:28:42.143134
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15360)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15360)')
+timestamp: 2024-05-27 14:28:42.253546
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16047)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16047)')
+timestamp: 2024-05-27 14:28:43.029678
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15354)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15354)')
+timestamp: 2024-05-27 14:28:45.133083
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16041)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-26).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-26_=2404.16041)')
+timestamp: 2024-05-27 14:28:45.206960
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15353)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15353)')
+timestamp: 2024-05-27 14:28:45.998440
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15347)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15347)')
+timestamp: 2024-05-27 14:28:48.090415
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15310)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15310)')
+timestamp: 2024-05-27 14:28:48.952586
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15324)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15324)')
+timestamp: 2024-05-27 14:28:49.156301
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15307)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15307)')
+timestamp: 2024-05-27 14:28:51.053190
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15284)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15284)')
+timestamp: 2024-05-27 14:28:51.993731
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15282)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15282)')
+timestamp: 2024-05-27 14:28:52.146774
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15279)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2404.15279)')
+timestamp: 2024-05-27 14:28:54.020117
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2310.13458)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-25).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-25_=2310.13458)')
+timestamp: 2024-05-27 14:28:54.964172
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14645)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14645)')
+timestamp: 2024-05-27 14:28:55.138196
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14632)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14632)')
+timestamp: 2024-05-27 14:28:57.047342
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14629)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14629)')
+timestamp: 2024-05-27 14:28:57.958127
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16957)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16957)')
+timestamp: 2024-05-27 14:29:01.997318
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17522)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17522)')
+timestamp: 2024-05-27 14:29:03.969434
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17365)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17365)')
+timestamp: 2024-05-27 14:29:04.262694
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17323)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17323)')
+timestamp: 2024-05-27 14:29:05.358066
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17276)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17276)')
+timestamp: 2024-05-27 14:29:06.946649
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17126)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17126)')
+timestamp: 2024-05-27 14:29:07.230542
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17046)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17046)')
+timestamp: 2024-05-27 14:29:08.430449
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17028)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17028)')
+timestamp: 2024-05-27 14:29:09.926725
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17020)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17020)')
+timestamp: 2024-05-27 14:29:10.183498
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17018)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.17018)')
+timestamp: 2024-05-27 14:29:11.642403
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16913)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16913)')
+timestamp: 2024-05-27 14:29:12.947311
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16908)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16908)')
+timestamp: 2024-05-27 14:29:13.155297
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16906)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16906)')
+timestamp: 2024-05-27 14:29:14.599296
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16894)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16894)')
+timestamp: 2024-05-27 14:29:15.934352
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16890)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16890)')
+timestamp: 2024-05-27 14:29:16.114418
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16877)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16877)')
+timestamp: 2024-05-27 14:29:17.547484
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16847)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16847)')
+timestamp: 2024-05-27 14:29:18.913176
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16840)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-29).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-29_=2404.16840)')
+timestamp: 2024-05-27 14:29:19.074813
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18270)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18270)')
+timestamp: 2024-05-27 14:29:21.883431
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18130)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18130)')
+timestamp: 2024-05-27 14:29:22.037026
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17924)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17924)')
+timestamp: 2024-05-27 14:29:23.609333
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17758)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17758)')
+timestamp: 2024-05-27 14:29:24.843384
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17757)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17757)')
+timestamp: 2024-05-27 14:29:25.008648
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17725)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17725)')
+timestamp: 2024-05-27 14:29:26.640270
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18821)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18821)')
+timestamp: 2024-05-27 14:29:27.840899
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18791)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18791)')
+timestamp: 2024-05-27 14:29:27.962514
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18730)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18730)')
+timestamp: 2024-05-27 14:29:29.585306
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18713)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18713)')
+timestamp: 2024-05-27 14:29:30.788921
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18555)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18555)')
+timestamp: 2024-05-27 14:29:30.936213
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18553)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18553)')
+timestamp: 2024-05-27 14:29:32.544251
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18541)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18541)')
+timestamp: 2024-05-27 14:29:33.765246
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18527)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18527)')
+timestamp: 2024-05-27 14:29:33.927888
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18519)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18519)')
+timestamp: 2024-05-27 14:29:35.504221
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18518)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18518)')
+timestamp: 2024-05-27 14:29:36.755265
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18508)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18508)')
+timestamp: 2024-05-27 14:29:36.896341
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18470)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18470)')
+timestamp: 2024-05-27 14:29:38.484235
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18385)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18385)')
+timestamp: 2024-05-27 14:29:39.751768
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18328)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18328)')
+timestamp: 2024-05-27 14:29:39.864435
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18326)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18326)')
+timestamp: 2024-05-27 14:29:41.452847
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18311)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18311)')
+timestamp: 2024-05-27 14:29:42.694510
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18264)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18264)')
+timestamp: 2024-05-27 14:29:42.818566
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18197)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18197)')
+timestamp: 2024-05-27 14:29:44.420160
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18134)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18134)')
+timestamp: 2024-05-27 14:29:45.639166
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18094)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.18094)')
+timestamp: 2024-05-27 14:29:45.786253
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17999)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17999)')
+timestamp: 2024-05-27 14:29:47.416427
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17985)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17985)')
+timestamp: 2024-05-27 14:29:48.599204
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17975)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17975)')
+timestamp: 2024-05-27 14:29:48.735036
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17970)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17970)')
+timestamp: 2024-05-27 14:29:50.379313
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17947)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17947)')
+timestamp: 2024-05-27 14:29:51.658884
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17943)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17943)')
+timestamp: 2024-05-27 14:29:51.723664
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17937)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17937)')
+timestamp: 2024-05-27 14:29:53.330083
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17916)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17916)')
+timestamp: 2024-05-27 14:29:54.621834
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17892)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17892)')
+timestamp: 2024-05-27 14:29:54.662489
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17886)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17886)')
+timestamp: 2024-05-27 14:29:56.323979
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17871)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17871)')
+timestamp: 2024-05-27 14:29:57.566556
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17842)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17842)')
+timestamp: 2024-05-27 14:29:57.644796
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17820)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17820)')
+timestamp: 2024-05-27 14:29:59.281559
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17799)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17799)')
+timestamp: 2024-05-27 14:30:00.526098
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17794)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17794)')
+timestamp: 2024-05-27 14:30:00.628206
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17780)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17780)')
+timestamp: 2024-05-27 14:30:02.241215
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17766)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17766)')
+timestamp: 2024-05-27 14:30:03.499453
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17688)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17688)')
+timestamp: 2024-05-27 14:30:03.592101
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17674)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17674)')
+timestamp: 2024-05-27 14:30:05.223866
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17644)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17644)')
+timestamp: 2024-05-27 14:30:06.470180
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17611)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17611)')
+timestamp: 2024-05-27 14:30:06.552270
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17609)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17609)')
+timestamp: 2024-05-27 14:30:08.227419
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17608)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17608)')
+timestamp: 2024-05-27 14:30:09.430895
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17598)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17598)')
+timestamp: 2024-05-27 14:30:09.495986
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17590)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17590)')
+timestamp: 2024-05-27 14:30:11.169820
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17586)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-04-30).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-04-30_=2404.17586)')
+timestamp: 2024-05-27 14:30:12.395809
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19729)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19729)')
+timestamp: 2024-05-27 14:30:14.145227
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19725)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19725)')
+timestamp: 2024-05-27 14:30:15.421724
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19665)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19665)')
+timestamp: 2024-05-27 14:30:15.493107
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19573)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19573)')
+timestamp: 2024-05-27 14:30:17.155487
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19518)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19518)')
+timestamp: 2024-05-27 14:30:18.396038
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19456)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19456)')
+timestamp: 2024-05-27 14:30:18.510635
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19361)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19361)')
+timestamp: 2024-05-27 14:30:20.143508
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19349)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19349)')
+timestamp: 2024-05-27 14:30:23.637391
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19359)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19359)')
+timestamp: 2024-05-27 14:30:25.393550
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19346)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19346)')
+timestamp: 2024-05-27 14:30:26.141984
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19306)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19306)')
+timestamp: 2024-05-27 14:30:26.605410
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19253)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19253)')
+timestamp: 2024-05-27 14:30:29.092272
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19254)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19254)')
+timestamp: 2024-05-27 14:30:29.360596
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19244)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19244)')
+timestamp: 2024-05-27 14:30:29.568732
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19130)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19130)')
+timestamp: 2024-05-27 14:30:32.051332
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19093)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19093)')
+timestamp: 2024-05-27 14:30:32.532684
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19100)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19100)')
+timestamp: 2024-05-27 14:30:32.660608
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19076)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19076)')
+timestamp: 2024-05-27 14:30:36.209934
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19087)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19087)')
+timestamp: 2024-05-27 14:30:36.837545
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19048)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.19048)')
+timestamp: 2024-05-27 14:30:38.407944
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18981)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18981)')
+timestamp: 2024-05-27 14:30:38.794254
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18975)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18975)')
+timestamp: 2024-05-27 14:30:40.432183
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18943)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18943)')
+timestamp: 2024-05-27 14:30:41.382317
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18942)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18942)')
+timestamp: 2024-05-27 14:30:43.016893
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18955)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-01).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-01_=2404.18955)')
+timestamp: 2024-05-27 14:30:43.078619
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14616)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.14616)')
+timestamp: 2024-05-27 14:30:45.054491
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00186)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00186)')
+timestamp: 2024-05-27 14:30:45.600942
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00629)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00629)')
+timestamp: 2024-05-27 14:30:45.666530
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00568)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00568)')
+timestamp: 2024-05-27 14:30:47.642783
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00543)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00543)')
+timestamp: 2024-05-27 14:30:48.184922
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00461)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00461)')
+timestamp: 2024-05-27 14:30:48.254297
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00453)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00453)')
+timestamp: 2024-05-27 14:30:50.223985
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00418)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00418)')
+timestamp: 2024-05-27 14:30:50.765614
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00395)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00395)')
+timestamp: 2024-05-27 14:30:50.837820
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00392)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00392)')
+timestamp: 2024-05-27 14:30:52.804958
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00330)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00330)')
+timestamp: 2024-05-27 14:30:53.346904
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00307)
+	status: ['ValueError'] ValueError('unexpected status code 431 in response of PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-02).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-02_=2405.00307)')
+timestamp: 2024-05-27 14:30:53.422809
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-14).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-14_=2405.07609)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-27 19:03:21.741627
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-14).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-14_=2405.07580)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-27 19:20:12.662375
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-24_=2405.13753)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-27 23:15:41.644058
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-24_=2405.13735)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-27 23:15:43.618426
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-27).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-27_=2405.15317)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 00:29:07.659019
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-27).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-27_=2405.15264)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 00:29:11.335835
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-27).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-27_=2405.15033)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 00:41:31.044301
+
+PapersCoolPaperPage(arxiv_cs.AI?date=2024-05-27).PapersCoolPaperKimiSection(arxiv_cs.AI?date=2024-05-27_=2405.14899)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 00:41:33.444433
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-17).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-17_=2405.10004)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 03:56:50.508737
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-17).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-17_=2405.10068)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 03:56:50.525905
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-17).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-17_=2405.09959)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 03:56:50.526634
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-17).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-17_=2405.09864)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 03:56:52.392835
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-17).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-17_=2405.09851)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 03:56:52.430726
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-17).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-17_=2405.09820)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 03:56:52.708951
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-21).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-21_=2405.11289)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 04:30:01.665926
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-21).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-21_=2405.11295)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 04:30:02.094795
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-21).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-21_=2405.11133)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 04:30:05.096614
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-21).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-21_=2405.11064)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 04:30:05.183354
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-24).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-24_=2405.13753)
+	status: ['ConnectionError'] ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+timestamp: 2024-05-28 04:30:08.747082
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-21).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-21_=2405.11029)
+	status: ['ConnectionError'] ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+timestamp: 2024-05-28 04:30:09.579787
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-22).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-22_=2405.12979)
+	status: ['ConnectionError'] ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+timestamp: 2024-05-28 04:30:12.265930
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-22).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-22_=2405.12728)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 04:31:01.692253
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-22).PapersCoolPaperKimiSection(arxiv_cs.CV?date=2024-05-22_=2405.12724)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 04:31:03.529022
+
+PapersCoolPaperPage(arxiv_cs.CV?date=2024-05-26)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 05:28:45.219848
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-03).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-03_=2405.01157)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 08:15:43.816644
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-05-14).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-05-14_=2405.07252)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 08:15:43.815324
+
+PapersCoolPaperPage(arxiv_cs.CL?date=2024-05-13).PapersCoolPaperKimiSection(arxiv_cs.CL?date=2024-05-13_=2405.06424)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 08:15:45.721943
+
+PapersCoolPaperPage(arxiv_cs.CL?date=2024-05-13).PapersCoolPaperKimiSection(arxiv_cs.CL?date=2024-05-13_=2405.06459)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 08:15:45.759439
+
+PapersCoolPaperPage(arxiv_cs.CL?date=2024-05-27)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 09:31:02.130225
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-02-20).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-02-20_=2402.11740)
+	status: ['ChunkedEncodingError'] ChunkedEncodingError(ProtocolError(None))
+timestamp: 2024-05-28 12:26:16.145897
+
+PapersCoolPaperPage(arxiv_cs.LG?date=2024-02-20).PapersCoolPaperKimiSection(arxiv_cs.LG?date=2024-02-20_=2402.11604)
+	status: ['ConnectionError'] ConnectionError(ProtocolError(None))
+timestamp: 2024-05-28 12:26:18.383910
+

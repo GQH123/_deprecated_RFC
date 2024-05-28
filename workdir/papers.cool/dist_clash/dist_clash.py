@@ -14,9 +14,9 @@ def launch(n_proxy, config_path, clash_st_port=10000):
         clash_log_name = f'clash_dist_{i}.log'
         with open(dist_config_name, 'w') as f:
             f.write(dist_config)
-        launch_script += f'nohup ./clash-linux-amd64-v1.10.0 -d . -f {dist_config_name} 2>&1 > {clash_log_name} &\n'
+        launch_script += f'nohup ./clash-kimi -d . -f {dist_config_name} 2>&1 > {clash_log_name} &\n'
     with open('launch.sh', 'w') as f:
         f.write(launch_script)
-        
-        
+
+
 launch(3, 'config.yaml')

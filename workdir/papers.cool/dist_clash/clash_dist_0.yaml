@@ -238,7 +238,7 @@ proxy-groups:
   - name: "套餐状态"
     type: select
     proxies:
-      - ⛽ 剩余流量:1674G
+      - ⛽ 剩余流量:1997G
       - 📅 到期时间:2025-03-07
 
   - name: 🚀 节点选择
@@ -2534,7 +2534,7 @@ proxy-groups:
       - 【仅海外用户】日本10
 
 
-  - name: "⛽ 剩余流量:1674G"
+  - name: "⛽ 剩余流量:1997G"
     type: select
     proxies:
       - DIRECT
@@ -4427,6 +4427,7 @@ rules:
   - DOMAIN-SUFFIX,oaistatic.com,💬 OpenAi
   - DOMAIN-SUFFIX,oaiusercontent.com,💬 OpenAi
   - DOMAIN-SUFFIX,openai.com,💬 OpenAi
+  - DOMAIN-SUFFIX,chatgpt.com,💬 OpenAi
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,💬 OpenAi
   - DOMAIN-SUFFIX,sentry.io,💬 OpenAi
   - DOMAIN-SUFFIX,stripe.com,💬 OpenAi

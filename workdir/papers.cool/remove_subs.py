@@ -44,6 +44,8 @@ def remove_invalid_papers_and_count():
     vol_count_pair.sort(key=lambda x: int(x[1]), reverse=True)
     count = dict(vol_count_pair)
     print(f'total papers: {total_count}\n{json.dumps(count, indent=4, ensure_ascii=False, sort_keys=False)}')
+    count['__total__'] = total_count
+    json.dump(count, open('saved_logs/papers_count.json', 'w', encoding='utf-8'), indent=4, ensure_ascii=False, sort_keys=False)
 
 
 # remove_subs()

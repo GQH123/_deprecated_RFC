@@ -12,17 +12,17 @@ from RFC.utils.parse import (
     parse,
 )
 
-default_proxy_config = {
-    'http': 'http://127.0.0.1:7890',
-    'https': 'http://127.0.0.1:7890',
-    'all': 'socks5://127.0.0.1:7890',
-}
-
 # default_proxy_config = {
-#     'http': 'http://10.176.52.116:7890',
-#     'https': 'http://10.176.52.116:7890',
-#     'all': 'socks5://10.176.52.116:7890',
+#     'http': 'http://127.0.0.1:7890',
+#     'https': 'http://127.0.0.1:7890',
+#     'all': 'socks5://127.0.0.1:7890',
 # }
+
+default_proxy_config = {
+    'http': 'http://10.176.52.116:7890',
+    'https': 'http://10.176.52.116:7890',
+    'all': 'socks5://10.176.52.116:7890',
+}
 
 # manually maintained venus tags
 # https://papers.cool/venue/{venue_tag}?show=200000
@@ -164,6 +164,13 @@ class PapersCoolPaperPage(ItemType):
     
         ids = [f'{item.id}_'+kimi_link.split('?paper')[-1] for kimi_link in kimi_links]
         items_kwargs = [{'kimi_link': kimi_link} for kimi_link in kimi_links]
+        cls._logger.info(f'count for all item ids: {len(ids)}')
+        ids_items_kwargs = [(id, item_kwargs) for id, item_kwargs in zip(ids, items_kwargs) if id not in auto_skipped_ids.get('PapersCoolPaperKimiSection', set())]
+        if ids_items_kwargs:
+            ids, items_kwargs = zip(*ids_items_kwargs)
+        else:
+            ids, items_kwargs = [], []
+        cls._logger.info(f'count for added item ids: {len(ids)}')
         PapersCoolPaperKimiSection._add_items(ids=ids, items_kwargs=items_kwargs, bloodline=item.bloodline)
 
 
@@ -210,19 +217,48 @@ class PapersCoolPaperPage(ItemType):
 
 
 def lazy_request_cookies_online(*args, **kwargs):
-    proxies = kwargs.pop('proxies', default_proxy_config)
-    for i in range(5):
-        try:
-            resp = requests.request('post', "https://papers.cool/venue/star?key=kimi&paper=P16-1019@ACL", proxies=proxies)
-            return dict(resp.cookies)
-        except Exception as e:
-            error_report = f'cookies request error: [{type(e).__name__}] {e}'
-            print(error_report, flush=True)
-            time.sleep(0.5)
-            continue
-    error_report = 'cookies request error: all retries failed'
-    print(error_report, flush=True)
-    return {}
+    try:
+        assert 'kimi_link' in kwargs, 'kimi_link not in kwargs'
+        url = kwargs.pop('kimi_link')
+        proxies = kwargs.pop('proxies', default_proxy_config)
+        
+        client_cookies = {}
+        for i in range(5):
+            try:
+                resp = requests.request('get', 'https://papers.cool/venue/NDSS.2021', proxies=proxies)
+                client_cookies = dict(resp.cookies)
+                assert client_cookies, 'client cookies request error: empty cookies'
+                break
+            except Exception as e:
+                error_report = f'cookies request error: [{type(e).__name__}] {e}'
+                print(error_report, flush=True)
+                time.sleep(0.5)
+                continue
+        if not client_cookies:
+            raise ValueError('client cookies request error: all retries failed')
+        
+        paper_key = url.split('?paper=')[-1]
+        paper_type = url.split('/kimi?paper=')[0].split('https://papers.cool/')[-1]
+        paper_cookies = {}
+        for i in range(5):
+            try:
+                resp = requests.request('post', f"https://papers.cool/{paper_type}/star?key=kimi&paper={paper_key}", cookies=client_cookies, proxies=proxies)
+                paper_cookies = dict(resp.cookies)
+                assert paper_cookies, 'paper cookies request error: empty cookies'
+                break
+            except Exception as e:
+                error_report = f'paper cookies request error: [{type(e).__name__}] {e}'
+                print(error_report, flush=True)
+                time.sleep(0.5)
+                continue
+        if not paper_cookies:
+            raise ValueError('paper cookies request error: all retries failed')
+
+        return {**client_cookies, **paper_cookies}
+    except Exception as e:
+        error_report = f'cookies request error: [{type(e).__name__}] {e}, return empty cookies'
+        print(error_report, flush=True)
+        return {}
 
 
 proxy_pool = (
@@ -287,9 +323,30 @@ class PapersCoolPaperKimiSection(PapersCoolPaperPage):
         pass
 
 
+auto_skipped_ids = {}
+if os.path.exists('saved_logs/auto_skipped_ids.json'):
+    auto_skipped_ids = json.load(open('saved_logs/auto_skipped_ids.json', 'r'))
+if os.path.exists('saved_logs/statistics_finished_status_details.json'):
+    parsed_skipped_ids = json.load(open('saved_logs/statistics_finished_status_details.json', 'r'))['__all__']
+    for item_type in parsed_skipped_ids:
+        auto_skipped_ids[item_type] = list(set(auto_skipped_ids.get(item_type, []) + parsed_skipped_ids[item_type]))
+auto_skipped_ids_count = {item_type: len(auto_skipped_ids[item_type]) for item_type in auto_skipped_ids}
+print(f'count for auto_skipped_ids:\n{json.dumps(auto_skipped_ids_count, indent=4, ensure_ascii=False)}\n')
+json.dump(auto_skipped_ids, open('saved_logs/auto_skipped_ids.json', 'w'), indent=4, ensure_ascii=False)
+auto_skipped_ids = {item_type: set(auto_skipped_ids[item_type]) for item_type in auto_skipped_ids}
+
 ids = [f'{type}_{tag}' for type in type_tag_dict for tag in type_tag_dict[type]]
 items_kwargs = [{'paper_type': type, 'paper_tag': tag, 'symbol': '?' if type == 'venue' else '&'} for type in type_tag_dict for tag in type_tag_dict[type]]
-PapersCoolPaperPage._add_items(ids=ids, items_kwargs=items_kwargs, bloodline=[])
-PapersCoolPaperPage.start()
+print(f'count for all ids: {len(ids)}\n')
+# ids_items_kwargs = [(id, item_kwargs) for id, item_kwargs in zip(ids, items_kwargs) if id not in auto_skipped_ids.get('PapersCoolPaperPage', set())]
+# if ids_items_kwargs:
+#     ids, items_kwargs = zip(*ids_items_kwargs)
+# else:
+#     ids, items_kwargs = [], []
+print(f'count for added ids: {len(ids)}\n')
 
-# PapersCoolCookies.start(ids=range(100))
+if __name__ == '__main__':
+    PapersCoolPaperPage._add_items(ids=ids, items_kwargs=items_kwargs, bloodline=[])
+    PapersCoolPaperPage.start()
+    # PapersCoolCookies.start(ids=range(100))  
+    pass
