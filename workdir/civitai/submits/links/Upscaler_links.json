@@ -1,0 +1,110 @@
+{
+    "meta": {
+        "count": 57
+    },
+    "models": {
+        "01 ~ https://civitai.com/models/285969": [],
+        "4X-AnimeSharp ~ https://civitai.com/models/385895": [],
+        "4XFaceup ~ https://civitai.com/models/284723": [],
+        "4x-Ultrasharp ~ https://civitai.com/models/116225": [
+            "4x-UltraSharpv1.0 ~ https://civitai.com/api/download/models/125843"
+        ],
+        "4x-animesharp ~ https://civitai.com/models/292233": [],
+        "4xHFA2kLUDVAESwinIR_light ~ https://civitai.com/models/148124": [
+            "v1 ~ https://civitai.com/api/download/models/165249"
+        ],
+        "4xLSDIR ~ https://civitai.com/models/148090": [
+            "v1 ~ https://civitai.com/api/download/models/165214"
+        ],
+        "4xLSDIRplus ~ https://civitai.com/models/148097": [
+            "v1 ~ https://civitai.com/api/download/models/165220"
+        ],
+        "4xLSDIRplusN ~ https://civitai.com/models/148116": [
+            "v1 ~ https://civitai.com/api/download/models/165240"
+        ],
+        "4xNMKDSuperscale ~ https://civitai.com/models/141491": [
+            "4xNMKDSuperscaleSP1780 ~ https://civitai.com/api/download/models/156841"
+        ],
+        "4xNomosUpscalermodel ~ https://civitai.com/models/284715": [],
+        "4x_RealisticRescaler_100000_G ~ https://civitai.com/models/318385": [
+            "100000_G ~ https://civitai.com/api/download/models/357054"
+        ],
+        "8x_NMKD-Faces_160000_GUpscaler ~ https://civitai.com/models/142699": [
+            "v1.0 ~ https://civitai.com/api/download/models/158264"
+        ],
+        "8x_NMKD-Superscale_150000_G ~ https://civitai.com/models/292030": [
+            "150000_G ~ https://civitai.com/api/download/models/328284"
+        ],
+        "AIA ~ https://civitai.com/models/395768": [],
+        "AnimeVideoTest ~ https://civitai.com/models/290584": [],
+        "AnnSule ~ https://civitai.com/models/260921": [],
+        "Aria ~ https://civitai.com/models/270983": [],
+        "EpicHeroKing ~ https://civitai.com/models/84612": [],
+        "FiatCronos1 ~ https://civitai.com/models/363089": [],
+        "FixyourBlur-HiResModels ~ https://civitai.com/models/78396": [
+            "4xUltra&4xAnimeSharp ~ https://civitai.com/api/download/models/83197"
+        ],
+        "HAT-L_SRx4_ImageNet-pretrain ~ https://civitai.com/models/215737": [],
+        "HFA2k ~ https://civitai.com/models/148008": [
+            "v1 ~ https://civitai.com/api/download/models/165123"
+        ],
+        "Hvh ~ https://civitai.com/models/280221": [],
+        "Lala ~ https://civitai.com/models/266318": [],
+        "Lesley ~ https://civitai.com/models/271654": [],
+        "Macey ~ https://civitai.com/models/271783": [],
+        "Model1 ~ https://civitai.com/models/279655": [],
+        "Morgane ~ https://civitai.com/models/394742": [],
+        "MyModel ~ https://civitai.com/models/371250": [],
+        "NMKDSiax(\"CX\") ~ https://civitai.com/models/147641": [
+            "200k ~ https://civitai.com/api/download/models/164677",
+            "175k ~ https://civitai.com/api/download/models/164669"
+        ],
+        "Nomos8kSC ~ https://civitai.com/models/148120": [
+            "v1 ~ https://civitai.com/api/download/models/165243"
+        ],
+        "RealESRAnimeVideo ~ https://civitai.com/models/147831": [
+            "v3 ~ https://civitai.com/api/download/models/164916"
+        ],
+        "RealESRGAN_x4+HAT ~ https://civitai.com/models/99799": [
+            "v1.0 ~ https://civitai.com/api/download/models/106813"
+        ],
+        "RealESRGAN_x4Plus ~ https://civitai.com/models/147817": [
+            "v1 ~ https://civitai.com/api/download/models/164898"
+        ],
+        "RealESRGAN_x4PlusAnime6B ~ https://civitai.com/models/147821": [
+            "v1 ~ https://civitai.com/api/download/models/164904"
+        ],
+        "RealESRGeneralWDNx4 ~ https://civitai.com/models/147802": [
+            "v3 ~ https://civitai.com/api/download/models/164874"
+        ],
+        "RealESRGeneralx4 ~ https://civitai.com/models/147798": [
+            "v3 ~ https://civitai.com/api/download/models/164868"
+        ],
+        "RealisticRescaler ~ https://civitai.com/models/353462": [],
+        "Remacri ~ https://civitai.com/models/147759": [
+            "Original ~ https://civitai.com/api/download/models/164821",
+            "ExtraSmoother ~ https://civitai.com/api/download/models/164822"
+        ],
+        "Rk ~ https://civitai.com/models/373140": [],
+        "Rosali ~ https://civitai.com/models/90490": [],
+        "Test ~ https://civitai.com/models/291420": [],
+        "Torn ~ https://civitai.com/models/273020": [],
+        "Ultramix ~ https://civitai.com/models/147806": [
+            "Balanced ~ https://civitai.com/api/download/models/164891",
+            "Restore ~ https://civitai.com/api/download/models/164888",
+            "Smooth ~ https://civitai.com/api/download/models/164882"
+        ],
+        "Viktoria ~ https://civitai.com/models/81342": [],
+        "Weza ~ https://civitai.com/models/275608": [],
+        "YukikoSato ~ https://civitai.com/models/359820": [],
+        "a ~ https://civitai.com/models/366741": [],
+        "assassin ~ https://civitai.com/models/361154": [],
+        "christinacox ~ https://civitai.com/models/289575": [],
+        "gerardnbr ~ https://civitai.com/models/371639": [],
+        "ggggggg ~ https://civitai.com/models/265552": [],
+        "just ~ https://civitai.com/models/275447": [],
+        "mmmm ~ https://civitai.com/models/356757": [],
+        "suzume ~ https://civitai.com/models/288937": [],
+        "tgd ~ https://civitai.com/models/380275": []
+    }
+}

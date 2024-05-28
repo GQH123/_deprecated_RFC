@@ -16,7 +16,7 @@
         "cookies": "{}",
         "proxies": "{}",
         "headers": "{}",
-        "timeout": "None"
+        "timeout": "60"
     },
     "'RequestsSessionArgs'": {
         "lib": "None",
@@ -24,7 +24,7 @@
         "cookies": "{}",
         "proxies": "{}",
         "headers": "{}",
-        "timeout": "None",
+        "timeout": "60",
         "stream": "False"
     },
     "'AioHTTPSessionArgs'": {
@@ -33,7 +33,7 @@
         "cookies": "{}",
         "proxies": "{}",
         "headers": "{}",
-        "timeout": "None",
+        "timeout": "60",
         "chunked_size": "None"
     },
     "'AsksSessionArgs'": {
@@ -42,7 +42,7 @@
         "cookies": "{}",
         "proxies": "{}",
         "headers": "{}",
-        "timeout": "None"
+        "timeout": "60"
     },
     "'RequestorArgs'": {
         "nproc": "1",
@@ -64,7 +64,7 @@
         "stream": "StreamSetter(ArgSetter._fixed(False))",
         "is_leaf": "IsLeafSetter(ArgSetter._fixed(False))",
         "retry_limit": "RetryLimitSetter(ArgSetter._fixed(0))",
-        "timeout": "TimeoutSetter(ArgSetter._none())"
+        "timeout": "TimeoutSetter(ArgSetter._fixed(60))"
     },
     "'ItemArgGroup'": {
         "save_dir": "SaveDirSetter(ArgSetter._not_set())",

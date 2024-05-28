@@ -1,0 +1,20 @@
+{
+    "data": null,
+    "dataUpdateCount": 0,
+    "dataUpdatedAt": 0,
+    "error": {
+        "name": "TRPCError",
+        "message": "Anunexpectederrorocurred,pleasetryagainlater"
+    },
+    "errorUpdateCount": 1,
+    "errorUpdatedAt": 1713177631770,
+    "fetchFailureCount": 1,
+    "fetchFailureReason": {
+        "name": "TRPCError",
+        "message": "Anunexpectederrorocurred,pleasetryagainlater"
+    },
+    "fetchMeta": null,
+    "isInvalidated": false,
+    "status": "error",
+    "fetchStatus": "idle"
+}

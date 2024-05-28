@@ -1,6 +1,0 @@
-2024-02-14 00:11:30,492 <MainProcess:3694559, MainThread:139705137784640> (session.py:get_session:349 -> session.py:__init__:87) from logger `RFC.session_requests`
-[INFO] initialized
-
-2024-02-14 00:11:30,493 <MainProcess:3694559, MainThread:139705137784640> (session.py:get_session:349 -> session.py:__init__:89) from logger `RFC.session_requests`
-[INFO] session created, 'RequestsSession'({'lib': 'requests', 'no_session': True, 'cookies': {}, 'proxies': {}, 'headers': {}, 'stream': False, 'timeout': None})
-

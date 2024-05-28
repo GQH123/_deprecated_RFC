@@ -1,0 +1,154 @@
+{
+    "infos": {
+        "60": {
+            "id": 60,
+            "name": "UglySonic",
+            "description": "<p>💡Trainedby<ahref=\"https://huggingface.co/minimaxir\"rel=\"ugc\"target=\"_blank\">@minimaxir</a>whowrotea<ahref=\"https://minimaxir.com/2022/09/stable-diffusion-ugly-sonic/\"rel=\"ugc\"target=\"_blank\">blogpostaboutit</a>💡</p>UglySoniconStableDiffusion<p>Thisisthe&lt;ugly-sonic&gt;concepttaughttoStableDiffusionviaTextualInversion.Youcanloadthisconceptintothe<ahref=\"https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/stable_conceptualizer_inference.ipynb\"rel=\"ugc\"target=\"_blank\">StableConceptualizer</a>notebook.Youcanalsotrainyourownconceptsandloadthemintotheconceptlibrariesusing<ahref=\"https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/sd_textual_inversion_training.ipynb\"rel=\"ugc\"target=\"_blank\">thisnotebook</a>.</p><p>Hereisthenewconceptyouwillbeabletouseasanobject:</p>",
+            "poi": false,
+            "nsfw": false,
+            "type": "TextualInversion",
+            "uploadType": "Created",
+            "updatedAt": "2022-11-13T03:20:58.684Z",
+            "deletedAt": null,
+            "deletedBy": null,
+            "status": "Published",
+            "checkpointType": null,
+            "allowNoCredit": true,
+            "allowCommercialUse": "Sell",
+            "allowDerivatives": true,
+            "allowDifferentLicense": true,
+            "licenses": [],
+            "publishedAt": "2022-11-13T00:36:31.183Z",
+            "locked": false,
+            "meta": {
+                "imageNsfw": "None"
+            },
+            "earlyAccessDeadline": null,
+            "mode": null,
+            "availability": "Public",
+            "reportStats": null,
+            "user": {
+                "id": 469,
+                "image": "https://lh3.googleusercontent.com/a/ALm5wu1G02i1QoNouR5WKYgUj0CmPQJ8LtpUy5V0fiEQUfM=s96-c",
+                "username": "gabrielvidal",
+                "deletedAt": null,
+                "rank": {
+                    "leaderboardRank": null
+                },
+                "profilePicture": null,
+                "cosmetics": []
+            },
+            "modelVersions": [
+                {
+                    "id": 69,
+                    "modelId": 60,
+                    "name": "ugly-sonic",
+                    "description": null,
+                    "steps": null,
+                    "epochs": null,
+                    "clipSkip": null,
+                    "createdAt": "2022-11-13T00:36:31.183Z",
+                    "updatedAt": "2022-11-13T00:36:31.183Z",
+                    "trainedWords": [
+                        "UglySonic"
+                    ],
+                    "trainingStatus": null,
+                    "trainingDetails": null,
+                    "inaccurate": false,
+                    "baseModel": "SD1.5",
+                    "baseModelType": "Standard",
+                    "earlyAccessTimeFrame": 0,
+                    "status": "Published",
+                    "publishedAt": "2022-11-13T00:36:31.183Z",
+                    "meta": {},
+                    "vaeId": null,
+                    "settings": null,
+                    "rank": {
+                        "downloadCountAllTime": 211,
+                        "generationCountAllTime": 903,
+                        "ratingCountAllTime": 1,
+                        "ratingAllTime": 3
+                    },
+                    "files": [
+                        {
+                            "id": 409,
+                            "url": "https://5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/civitai-prod-settled/469/model/learnedEmbeds.EyzG.bin",
+                            "sizeKB": 3.7294921875,
+                            "name": "learned_embeds.bin",
+                            "type": "Model",
+                            "visibility": "Public",
+                            "metadata": {
+                                "fp": "fp16",
+                                "size": "full",
+                                "format": "PickleTensor"
+                            },
+                            "pickleScanResult": "Success",
+                            "pickleScanMessage": "**DetectedPickleimports(3)**\n```\ncollections.OrderedDict\ntorch.FloatStorage\ntorch._utils._rebuild_tensor_v2\n```",
+                            "virusScanResult": "Success",
+                            "virusScanMessage": null,
+                            "scannedAt": "2022-11-13T00:49:22.429Z",
+                            "hashes": [
+                                {
+                                    "type": "AutoV2",
+                                    "hash": "1EB9737B34"
+                                },
+                                {
+                                    "type": "SHA256",
+                                    "hash": "1EB9737B347AF5CF7908E27F5AD16586AC862F757467457F2676E83BB420A07A"
+                                },
+                                {
+                                    "type": "CRC32",
+                                    "hash": "5856C702"
+                                },
+                                {
+                                    "type": "BLAKE3",
+                                    "hash": "8E8C3C3B512A4E571840B7F1B25A09E483835C8B082765835A96DCE9DD08A82C"
+                                }
+                            ]
+                        }
+                    ],
+                    "generationCoverage": {
+                        "covered": true
+                    },
+                    "recommendedResources": [],
+                    "posts": [
+                        {
+                            "id": 55622
+                        }
+                    ],
+                    "hashes": [
+                        "1eb9737b347af5cf7908e27f5ad16586ac862f757467457f2676e83bb420a07a"
+                    ],
+                    "earlyAccessDeadline": null,
+                    "canDownload": true,
+                    "canGenerate": true
+                }
+            ],
+            "rank": {
+                "downloadCountAllTime": 211,
+                "ratingCountAllTime": 1,
+                "ratingAllTime": 3,
+                "favoriteCountAllTime": 17,
+                "imageCountAllTime": 6,
+                "collectedCountAllTime": 1,
+                "tippedAmountCountAllTime": 0,
+                "generationCountAllTime": 903,
+                "commentCountAllTime": 1
+            },
+            "tagsOnModels": [
+                {
+                    "tag": {
+                        "id": 76,
+                        "name": "sonic",
+                        "isCategory": false
+                    }
+                }
+            ],
+            "canGenerate": true,
+            "hasSuggestedResources": false
+        }
+    },
+    "meta": {
+        "count": 1
+    }
+}

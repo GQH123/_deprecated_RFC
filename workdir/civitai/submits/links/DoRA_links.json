@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "count": 17
+    },
+    "models": {
+        "AoiOgatastyle(DoRAforponyXL) ~ https://civitai.com/models/383104": [
+            "pony-v2-dora ~ https://civitai.com/api/download/models/427589"
+        ],
+        "HUNTERS ~ https://civitai.com/models/378211": [],
+        "HauntedBeanPlushiethatwill...|Concept|PonyXLDoRA ~ https://civitai.com/models/369554": [
+            "v1.0 ~ https://civitai.com/api/download/models/412904"
+        ],
+        "IoriYoshizuki(DORAexperimentversion)-I''s ~ https://civitai.com/models/356790": [
+            "v1.0 ~ https://civitai.com/api/download/models/398842"
+        ],
+        "KarlachDoraforSD1.5 ~ https://civitai.com/models/397767": [
+            "v1.0 ~ https://civitai.com/api/download/models/443584"
+        ],
+        "KlatorGort ~ https://civitai.com/models/395815": [],
+        "NK_Rapi(2Outfits) ~ https://civitai.com/models/392487": [
+            "v1.0 ~ https://civitai.com/api/download/models/437834"
+        ],
+        "PersonalAmistyle(DoRAforponyXL) ~ https://civitai.com/models/383085": [
+            "pony-v3-dora ~ https://civitai.com/api/download/models/427571"
+        ],
+        "Problemsolver68(dress/suit)SDXL ~ https://civitai.com/models/316932": [
+            "v5 ~ https://civitai.com/api/download/models/442974",
+            "v3.0 ~ https://civitai.com/api/download/models/403319",
+            "v1.0 ~ https://civitai.com/api/download/models/355734"
+        ],
+        "Soliya ~ https://civitai.com/models/376779": [],
+        "Victoria ~ https://civitai.com/models/384672": [],
+        "Victoria ~ https://civitai.com/models/384714": [],
+        "jyfc ~ https://civitai.com/models/396785": [],
+        "kitsune ~ https://civitai.com/models/397623": [],
+        "lookingawaytolookingatviewer-sliders.ntcai.xyz ~ https://civitai.com/models/397590": [
+            "v1.0 ~ https://civitai.com/api/download/models/443385"
+        ],
+        "mimi ~ https://civitai.com/models/378633": [],
+        "sadtohappyDoRA-sliders.ntcai.xyz ~ https://civitai.com/models/384623": [
+            "v1.0 ~ https://civitai.com/api/download/models/429247"
+        ]
+    }
+}

@@ -1,0 +1,181 @@
+{
+    "meta": {
+        "count": 98
+    },
+    "models": {
+        "1 ~ https://civitai.com/models/294848": [],
+        "121 ~ https://civitai.com/models/374283": [],
+        "21978 ~ https://civitai.com/models/355422": [],
+        "2Danimemotionloraforturninghead ~ https://civitai.com/models/355264": [
+            "v1.0 ~ https://civitai.com/api/download/models/397230"
+        ],
+        "ADStabilizedMotionModule ~ https://civitai.com/models/144373": [
+            "Stabilized-High ~ https://civitai.com/api/download/models/160485",
+            "Stabilized-Mid ~ https://civitai.com/api/download/models/160445"
+        ],
+        "ALTEREGOエス（Es） ~ https://civitai.com/models/296919": [],
+        "ALTEREGOエス（Es） ~ https://civitai.com/models/296924": [
+            "v1.0 ~ https://civitai.com/api/download/models/333612"
+        ],
+        "Ale ~ https://civitai.com/models/397932": [],
+        "Ami ~ https://civitai.com/models/361274": [],
+        "AndrewChung ~ https://civitai.com/models/293813": [],
+        "AnimateAnyMotion-ByDice ~ https://civitai.com/models/317279": [
+            "v1.0 ~ https://civitai.com/api/download/models/355836"
+        ],
+        "AnimateDiffMotionModules ~ https://civitai.com/models/108836": [
+            "sdxlv1.0beta ~ https://civitai.com/api/download/models/219642",
+            "v1.5v2 ~ https://civitai.com/api/download/models/159987",
+            "v1.5 ~ https://civitai.com/api/download/models/117231",
+            "v1.4 ~ https://civitai.com/api/download/models/117232"
+        ],
+        "AnimateDiffv3models ~ https://civitai.com/models/239419": [
+            "Adapter(FP32) ~ https://civitai.com/api/download/models/270053",
+            "Adapter(FP16) ~ https://civitai.com/api/download/models/270300",
+            "Adapter(alternate/FP16) ~ https://civitai.com/api/download/models/314487",
+            "Motion-Module(FP32) ~ https://civitai.com/api/download/models/270076",
+            "Motion-Module(FP16) ~ https://civitai.com/api/download/models/270322",
+            "SparseCtrl-RGB(FP32) ~ https://civitai.com/api/download/models/270127",
+            "SparseCtrlRGB(FP16) ~ https://civitai.com/api/download/models/270497",
+            "SparseCtrl-Scribble(FP32) ~ https://civitai.com/api/download/models/270207",
+            "SparseCtrlScribble(FP16) ~ https://civitai.com/api/download/models/271474"
+        ],
+        "AnimateDiffv3motionmodule ~ https://civitai.com/models/250424": [],
+        "AnimatediffV3motionmodule ~ https://civitai.com/models/290082": [],
+        "Animatediffface512 ~ https://civitai.com/models/186098": [
+            "v1.0 ~ https://civitai.com/api/download/models/208965"
+        ],
+        "Anna ~ https://civitai.com/models/286891": [],
+        "Ardi ~ https://civitai.com/models/280999": [],
+        "Astoria ~ https://civitai.com/models/272673": [],
+        "Asuka ~ https://civitai.com/models/279002": [],
+        "BOOBSSHAKE|AnimateDiffMotionLoRA ~ https://civitai.com/models/361056": [
+            "v1.0 ~ https://civitai.com/api/download/models/403465"
+        ],
+        "BellaRupp ~ https://civitai.com/models/289688": [],
+        "BubblingRings|AnimateDiffMotionLoRA ~ https://civitai.com/models/331718": [
+            "v1.0 ~ https://civitai.com/api/download/models/371646"
+        ],
+        "DroneMotionLORAs(mmv2based) ~ https://civitai.com/models/358150": [
+            "Droneforward ~ https://civitai.com/api/download/models/400356",
+            "Dronebacking ~ https://civitai.com/api/download/models/400360",
+            "Orbitright ~ https://civitai.com/api/download/models/400354",
+            "OrbitRight-3IV ~ https://civitai.com/api/download/models/429859",
+            "OrbitLeft ~ https://civitai.com/api/download/models/400321",
+            "Dronewalkingback-view ~ https://civitai.com/api/download/models/400364"
+        ],
+        "Drummer ~ https://civitai.com/models/386837": [],
+        "Ebonie ~ https://civitai.com/models/284439": [],
+        "Emi ~ https://civitai.com/models/390375": [],
+        "Enheduanna ~ https://civitai.com/models/292563": [],
+        "Explosive|AnimateDiffMotionLoRA ~ https://civitai.com/models/344203": [
+            "v1.0 ~ https://civitai.com/api/download/models/385286"
+        ],
+        "Flowerblooming ~ https://civitai.com/models/340650": [
+            "v1.0 ~ https://civitai.com/api/download/models/381418"
+        ],
+        "Helvetia ~ https://civitai.com/models/293310": [],
+        "Improved3DMotionModule ~ https://civitai.com/models/158389": [
+            "Improved3Dv1 ~ https://civitai.com/api/download/models/178017"
+        ],
+        "ImprovedHumansMotionModule ~ https://civitai.com/models/155528": [
+            "refined_human_movement_V1 ~ https://civitai.com/api/download/models/174464"
+        ],
+        "ItànÈjìOgbè ~ https://civitai.com/models/309173": [
+            "v1.0ÈjìOgbè ~ https://civitai.com/api/download/models/346969"
+        ],
+        "J ~ https://civitai.com/models/289089": [],
+        "Joan ~ https://civitai.com/models/295178": [],
+        "Kathrine ~ https://civitai.com/models/262410": [],
+        "Katie ~ https://civitai.com/models/385215": [],
+        "L1 ~ https://civitai.com/models/351859": [],
+        "Luoky ~ https://civitai.com/models/369991": [],
+        "MA99Creators ~ https://civitai.com/models/261490": [],
+        "MFNFWXL ~ https://civitai.com/models/374172": [],
+        "Maxime ~ https://civitai.com/models/295141": [],
+        "Milfebony ~ https://civitai.com/models/284447": [],
+        "MissionaryPOVMotionModuleforanimatediff,proofofconcept ~ https://civitai.com/models/123612": [
+            "v2.0 ~ https://civitai.com/api/download/models/200521",
+            "v0.7(bestcandidate) ~ https://civitai.com/api/download/models/134809",
+            "FullStrength(1.0) ~ https://civitai.com/api/download/models/134785"
+        ],
+        "Mona ~ https://civitai.com/models/355860": [],
+        "MyBaby ~ https://civitai.com/models/287369": [],
+        "Noname ~ https://civitai.com/models/390793": [],
+        "Noname ~ https://civitai.com/models/390799": [],
+        "OCgenerator ~ https://civitai.com/models/360817": [],
+        "Red ~ https://civitai.com/models/353031": [],
+        "SHATTER|AnimateDiffMotionLoRA ~ https://civitai.com/models/312519": [
+            "v1.0 ~ https://civitai.com/api/download/models/350715"
+        ],
+        "SL ~ https://civitai.com/models/293061": [],
+        "SamilyLopes ~ https://civitai.com/models/289177": [],
+        "SpinZoomLoop|AnimateDiffMotionLoRA ~ https://civitai.com/models/331415": [
+            "v1.0 ~ https://civitai.com/api/download/models/371295"
+        ],
+        "SwingMotionLora[v3] ~ https://civitai.com/models/380128": [
+            "v1.0 ~ https://civitai.com/api/download/models/424390"
+        ],
+        "TemporalDiffMotionModule ~ https://civitai.com/models/144354": [
+            "v1.0 ~ https://civitai.com/api/download/models/160418"
+        ],
+        "Test ~ https://civitai.com/models/360026": [],
+        "TiledSpiralMotionLoRA ~ https://civitai.com/models/328647": [
+            "v1.0 ~ https://civitai.com/api/download/models/368288"
+        ],
+        "Uiui ~ https://civitai.com/models/389272": [],
+        "YoinkoorLab'sNSFWMotionModule ~ https://civitai.com/models/140217": [
+            "YoinkoorExperimentsα ~ https://civitai.com/api/download/models/155368"
+        ],
+        "YoinkoorLab'sNSFWMotionModulev2 ~ https://civitai.com/models/144934": [
+            "GODMODEv2.0 ~ https://civitai.com/api/download/models/177016",
+            "GODMODE(real) ~ https://civitai.com/api/download/models/164465",
+            "GODMODE ~ https://civitai.com/api/download/models/163035",
+            "β ~ https://civitai.com/api/download/models/161129"
+        ],
+        "ZlikwidDiff_V1 ~ https://civitai.com/models/158986": [
+            "v1.0 ~ https://civitai.com/api/download/models/178745"
+        ],
+        "animeeyes-closedsmilemotionlora ~ https://civitai.com/models/388923": [
+            "v1.0 ~ https://civitai.com/api/download/models/433979"
+        ],
+        "bosorka ~ https://civitai.com/models/398452": [],
+        "film-net ~ https://civitai.com/models/275296": [
+            "v1.0 ~ https://civitai.com/api/download/models/310289"
+        ],
+        "g ~ https://civitai.com/models/358392": [],
+        "jMotion ~ https://civitai.com/models/284406": [],
+        "jMotion ~ https://civitai.com/models/285153": [],
+        "jMotion ~ https://civitai.com/models/285254": [],
+        "john ~ https://civitai.com/models/392415": [],
+        "logomaker ~ https://civitai.com/models/280744": [],
+        "lulu ~ https://civitai.com/models/279590": [],
+        "ninovia ~ https://civitai.com/models/281708": [],
+        "nisha ~ https://civitai.com/models/371733": [],
+        "odemleaq ~ https://civitai.com/models/395476": [],
+        "odemleaq ~ https://civitai.com/models/395549": [],
+        "ortiz ~ https://civitai.com/models/279779": [],
+        "pixart ~ https://civitai.com/models/270940": [],
+        "provati ~ https://civitai.com/models/269980": [],
+        "rogina ~ https://civitai.com/models/277906": [],
+        "sora ~ https://civitai.com/models/400288": [],
+        "sxyesaf ~ https://civitai.com/models/343330": [],
+        "taylor ~ https://civitai.com/models/366268": [],
+        "test ~ https://civitai.com/models/295426": [],
+        "test ~ https://civitai.com/models/377020": [],
+        "uNnika1 ~ https://civitai.com/models/257563": [],
+        "v3_mm_m1 ~ https://civitai.com/models/322884": [
+            "v1.0 ~ https://civitai.com/api/download/models/362018"
+        ],
+        "visceral ~ https://civitai.com/models/279228": [],
+        "İmaf ~ https://civitai.com/models/396211": [],
+        "простоя ~ https://civitai.com/models/281628": [],
+        "рита ~ https://civitai.com/models/356943": [],
+        "呵 ~ https://civitai.com/models/218286": [],
+        "미야 ~ https://civitai.com/models/372590": [],
+        "서동철 ~ https://civitai.com/models/396292": [],
+        "인첸트리스NU ~ https://civitai.com/models/284594": [],
+        "인첸트리스SE ~ https://civitai.com/models/284533": [],
+        "화이트 ~ https://civitai.com/models/289515": []
+    }
+}

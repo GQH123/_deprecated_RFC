@@ -1,3 +1,3 @@
-2024-02-21 03:06:06,350 <MainProcess:1138409, MainThread:140240668346176> (crawler_2.py:<module>:96 -> entry.py:start:62) from logger `RFC.entry`
+2024-04-17 18:58:19,920 <MainProcess:590034, MainThread:140335411472192> (crawler_civitai_model.py:<module>:114 -> entry.py:start:62) from logger `RFC.entry`
 [INFO] FINISHED
 
