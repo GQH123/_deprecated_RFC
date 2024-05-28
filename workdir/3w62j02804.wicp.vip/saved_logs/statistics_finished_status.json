@@ -1,0 +1,15 @@
+{
+    "SKIPPED": {
+        "total": 79,
+        "type": {
+            "PackDirStructure": 70,
+            "PackFile": 9
+        }
+    },
+    "OK": {
+        "total": 1336,
+        "type": {
+            "PackFile": 1336
+        }
+    }
+}

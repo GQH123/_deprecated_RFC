@@ -1,0 +1,24 @@
+2024-05-27 14:20:38,307 <MainProcess:2072155, MainThread:140581993367360> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'cookies' not set, using default {}
+
+2024-05-27 14:20:38,309 <MainProcess:2072155, MainThread:140581993367360> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'proxies' not set, using default {}
+
+2024-05-27 14:20:38,309 <MainProcess:2072155, MainThread:140581993367360> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'headers' not set, using default {}
+
+2024-05-27 14:20:38,310 <MainProcess:2072155, MainThread:140581993367360> (entry.py:start:45 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'timeout' not set, using default 60
+
+2024-05-27 14:20:38,310 <MainProcess:2072155, MainThread:140581993367360> (session.py:get_session:403 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'stream' not set, using default False
+
+2024-05-27 14:20:38,315 <MainProcess:2072155, MainThread:140581993367360> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-05-27 14:20:38,320 <MainProcess:2072155, MainThread:140581993367360> (middleware.py:get_middleware:401 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'reject_types' not set, using default []
+
+2024-05-27 14:20:38,323 <MainProcess:2072155, MainThread:140581993367360> (entry.py:start:48 -> arg_group.py:__init__:88) from logger `RFC.args`
+[INFO] arg 'request_sleep' not set, using default 0
+

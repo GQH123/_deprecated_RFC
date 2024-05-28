@@ -1,0 +1,12 @@
+[
+    "extension",
+    "isDir",
+    "isSymlink",
+    "mode",
+    "modified",
+    "name",
+    "path",
+    "resolution",
+    "size",
+    "type"
+]
