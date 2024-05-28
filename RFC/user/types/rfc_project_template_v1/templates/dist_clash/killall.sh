@@ -1,0 +1,1 @@
+ps x | more | grep clash-my | cut -d" " -f1 | xargs -I {} kill {}
