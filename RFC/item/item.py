@@ -192,11 +192,11 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             
             Note that you should add new items in reversed order. Because `item`s will be fetched from the end of the queue, so that the newly added `item`s will be processed first.
         """
-        pass
+        raise NotImplementedError(f"method `_generate` not implemented in {cls.__name__}")
     # SUBCLASS
     
     @classmethod
-    def _add_items_sinle_process(cls, ids, items_kwargs, extra_args, extra_kwargs) -> None:
+    def _add_items_single_process(cls, ids, items_kwargs, extra_args, extra_kwargs) -> None:
 
         def _reduce_active_adder_count():
             with get_global_lock():
@@ -224,22 +224,26 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             except TypeError:
                 return False
             
-        if not isinstance(ids, list):
-            if _isiterable(ids):
-                if isinstance(ids, str):
-                    ids = [ids]
+        def _convert_to_list(x):
+            if not isinstance(x, list):
+                if _isiterable(x):
+                    if isinstance(x, str):
+                        x = [x]
+                    else:
+                        x = list(x)
                 else:
-                    ids = list(ids)
-            else:
-                ids = [ids]
-
-        if 'bloodline' not in extra_kwargs:
-           cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items")
-           
+                    x = [x]
+            return x
+            
+        ids = _convert_to_list(ids)
         if items_kwargs is not None:
+            items_kwargs = _convert_to_list(items_kwargs)
             if len(items_kwargs) != len(ids):
                 cls._logger.error(f"length of items_kwargs {len(items_kwargs)} not equal to length of ids {len(ids)}")
                 assert False
+
+        if 'bloodline' not in extra_kwargs:
+           cls._logger.warning(f"no bloodline found in {repr(extra_kwargs)}, which is required for items\nif this is the root item, you should pass `bloodline=[]` when adding items\notherwise, in most cases, you should pass `bloodline=item.bloodline`")
     
         processes = []
         nproc = min(1, cls.requestor_args['nproc'])
@@ -252,7 +256,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             lower_n_ids = n_ids * i // nproc
             upper_n_ids = n_ids * (i + 1) // nproc
             items_kwargs = items_kwargs[lower_n_ids:upper_n_ids] if items_kwargs is not None else None
-            processes.append(Process(target=cls._add_items_sinle_process, args=(ids[lower_n_ids:upper_n_ids], items_kwargs, extra_args, extra_kwargs)))
+            processes.append(Process(target=cls._add_items_single_process, args=(ids[lower_n_ids:upper_n_ids], items_kwargs, extra_args, extra_kwargs)))
             processes[i].start()
         
     @classmethod

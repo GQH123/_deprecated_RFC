@@ -29,7 +29,7 @@ class Entry(RootType):
         Entry._registered_itemtypes[item_type.__name__] = (middleware_args, item_type._logger)
 
     @classmethod
-    def start(item_type, ids=[], *extra_args, **extra_kwargs) -> None:
+    def start(item_type, ids=[], items_kwargs=None, *extra_args, **extra_kwargs) -> None:
         """
             Start crawling with given `ids`. This is the MAIN ENTRY of the RFC, which I decided to place in `ItemType`. So in fact `ItemType` is the most important class in RFC. With such design, you could only import `ItemType`, subclass it to make your new `ItemType`s, and call its `start` method to start crawling, without accessing to any other RFC modules.
             
@@ -52,7 +52,7 @@ class Entry(RootType):
             raise e
         if not RootQueue._initialized:
             RootQueue.lazy_init()
-        item_type._add_items(ids, *extra_args, **extra_kwargs)
+        item_type._add_items(ids, items_kwargs, *extra_args, **extra_kwargs)
         Entry._started = True
         item_type._logger.info(f"{repr(item_type)} started")
         RootQueue_reporter = mp.Process(target=RootQueue.report)
