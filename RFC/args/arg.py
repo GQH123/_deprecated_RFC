@@ -183,10 +183,26 @@ class CookiesSetter(ArgSetter):
     @staticmethod
     def _lazy_func(id, arg_group, func, **kwargs):
         return LazyAttrFunc(func, **kwargs)  # do not contain `arg_group` arg, otherwise ArgSetter will have to be pickled, but this is impossible
+    
+    @staticmethod
+    def _field_str(id, arg_group, template, sep='; ', cont='=', **kwargs):
+        kwargs['id'] = id
+        cookies = template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
+        cookies = {k_v.split(cont)[0]: cont.join(k_v.split(cont)[1:]) for k_v in cookies.split(sep) if k_v}
+        return cookies
+    
+    @staticmethod
+    def _field_json(id, arg_group, template, **kwargs):
+        kwargs['id'] = id
+        cookies = template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
+        cookies = json.loads(cookies)
+        return cookies
 
     _all_supported_setters = {
         'file': _read_from_file,
         'lazy_func': _lazy_func,
+        'field_str': _field_str,
+        'field_json' : _field_json,
     }
 
 
@@ -202,20 +218,28 @@ class ProxiesSetter(ArgSetter):
     @staticmethod
     def _set_qgnet_api_info(id, arg_group, api_key, api_passwd, **kwargs):
         return {
-            'api_type': 'qgnet',
-            'api_key': api_key,
-            'api_passwd': api_passwd,
+            'proxy_api_type': 'qgnet',
+            'proxy_api_key': api_key,
+            'proxy_api_passwd': api_passwd,
         }
     
     @staticmethod
     def _set_pool_api_info(id, arg_group, pool, **kwargs):
         return {
-            'api_type': 'pool',
-            'pool': pool
+            'proxy_api_type': 'pool',
+            'proxy_pool': pool
+        }
+    
+    @staticmethod
+    def _set_zmhttp_api_info(id, arg_group, api_url, **kwargs):
+        return {
+            'proxy_api_type': 'zmhttp',
+            'proxy_api_url': api_url,
         }
 
     _all_supported_setters = {
         'qgnet': _set_qgnet_api_info,
+        'zmhttp': _set_zmhttp_api_info,
         'pool': _set_pool_api_info,
     }
 
@@ -269,9 +293,17 @@ class HeadersSetter(ArgSetter):
         if type not in options:
             raise ValueError(f"headers type {repr(type)} not supported, supported types are {repr(list(options.keys()))}.")
         return options[type]
+    
+    @staticmethod
+    def _field_json(id, arg_group, template, **kwargs):
+        kwargs['id'] = id
+        headers = template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
+        headers = json.loads(headers)
+        return headers
 
     _all_supported_setters = {
         'switch': _switch,
+        'field_json': _field_json,
     }
 
 
