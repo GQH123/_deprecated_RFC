@@ -236,7 +236,7 @@ class RequestsSession(Session):
                     req_headers['referer'] = item.referer
                 req_headers = req_headers or None
                 req_proxies = item.proxies or None
-                if 'proxy_api_type' in req_proxies:
+                if req_proxies is not None and 'proxy_api_type' in req_proxies:
                     req_proxies = self._request_proxy_api(req_proxies)
                 req_cookies = item.cookies or None
                 if isinstance(req_cookies, LazyAttrFunc):
@@ -318,7 +318,7 @@ class AioHTTPSession(Session):
                     req_headers['referer'] = item.referer
                 req_headers = req_headers or None
                 req_proxies = item.proxies or self._proxies or None
-                if 'proxy_api_type' in req_proxies:
+                if req_proxies is not None and 'proxy_api_type' in req_proxies:
                     req_proxies = self._request_proxy_api(req_proxies)
                 if isinstance(req_proxies, dict):
                     req_proxies = list(req_proxies.values())[0]
