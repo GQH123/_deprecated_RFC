@@ -16,5 +16,7 @@ def main():
     
     if args.cmd == 'init':
         initiator_main(args.project_path)
+    elif args.cmd is None:
+        main_parser.print_help()
     else:
         raise ValueError(f'unsupported command: {repr(args.cmd)}')
