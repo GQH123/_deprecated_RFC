@@ -1,1 +1,0 @@
-nohup python -u archive.py 2>&1 > archive.log &

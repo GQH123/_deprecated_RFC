@@ -1,1 +1,0 @@
-ps x | more | grep crawler_civitai_model | cut -d" " -f2 | xargs -I {} kill {}
