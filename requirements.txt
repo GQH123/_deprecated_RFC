@@ -1,0 +1,5 @@
+requests
+tqdm
+fake-useragent==1.1.3
+aiohttp
+beautifulsoup4==4.11.2
