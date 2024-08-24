@@ -10,6 +10,7 @@ from ..utils.defs import (
     VISITED,
     RobustOptionalFuncArgsTuple,
     ArgGroup_logger_enable_file_handler,
+    FIND_ARGS_LOOP,
 )
 from ..utils.log import get_logger
 
@@ -107,22 +108,46 @@ class ArgGroup(RootType):
         super().__init__()
         self._args = {}  # must set `eslf._args` before calling `self._get_logger` because the latter will call `self.__getattr__` to get `self._name` args
         ArgGroup._get_logger(__name__, level='debug', propagate=False, add_file_handler=ArgGroup_logger_enable_file_handler)
+        for defined_arg in self._defined_args:
+            if defined_arg not in args:
+                self._args[defined_arg] = self._defined_args[defined_arg]
+                self._logger.info(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
+                continue
+            if not isinstance(args[defined_arg], ArgSetter):
+                args[defined_arg] = self._defined_args[defined_arg].__class__(args[defined_arg])  # support that we do no need to pass in instantiated `ArgSetter`s
+            if args[defined_arg].__class__ != self._defined_args[defined_arg].__class__:
+                self._logger.warning(f"arg {repr(defined_arg)} type mismatch, expected {repr(self._defined_args[defined_arg])}, got {repr(args[defined_arg])}")
+                continue
+            self._args[defined_arg] = args[defined_arg]
         for arg in args:
             if arg not in self._defined_args:
                 self._logger.warning(f"arg {repr(arg)} not defined in {repr(self)}")
                 continue
-            if not isinstance(args[arg], ArgSetter):
-                args[arg] = self._defined_args[arg].__class__(args[arg])  # no need to pass in instantiated `ArgSetter`s
-            if args[arg].__class__ != self._defined_args[arg].__class__:
-                self._logger.warning(f"arg {repr(arg)} type mismatch, expected {repr(self._defined_args[arg])}, got {repr(args[arg])}")
-                continue
-            self._args[arg] = args[arg]
-        for defined_arg in self._defined_args:
-            if defined_arg not in self._args:
-                self._args[defined_arg] = self._defined_args[defined_arg]
-                self._logger.info(f"arg {repr(defined_arg)} not set, using default {repr(self._defined_args[defined_arg])}")
+        # please refer to https://stackoverflow.com/questions/38541015/how-to-monkey-patch-a-call-method & https://stackoverflow.com/questions/56401632/adding-getattr-method-to-an-existing-object-instance for how to monkey patch special methods such as __call__ and __getattr__
+        if FIND_ARGS_LOOP:
+            self._patch_special_method(self, self.__call__find_loop, self.__getattr__find_loop)
+        else:
+            self._patch_special_method(self, self.__call__not_find_loop, self.__getattr__not_find_loop)
+            
+    @staticmethod
+    def _patch_special_method(instance, call_func, getattr_func):
+        class _(type(instance)):
+            def __call__(self, *arg, **kwarg):
+                return call_func(*arg, **kwarg)
+            def __getattr__(self, *arg, **kwarg):
+                return getattr_func(*arg, **kwarg)
+        instance.__class__ = _
     
-    def __call__(self, id, *extra_args, **extra_kwargs):
+    def __call__not_find_loop(self, id, *extra_args, **extra_kwargs):
+        self._id = id
+        self._args_value = {}
+        self._extra_args = extra_args
+        self._extra_kwargs = extra_kwargs
+        for arg in self._args:
+            self._args_value[arg] = self._args[arg](self._id, self, *self._extra_args, **self._extra_kwargs)
+        return self._args_value
+    
+    def __call__find_loop(self, id, *extra_args, **extra_kwargs):
         """
             Call `ArgSetter`s in this group, attention is needed that some setter will use the value of other args, which introduces specific order of calling setters.
             
@@ -141,8 +166,11 @@ class ArgGroup(RootType):
                 self._path = []
                 self.__getattr__(arg)
         return self._args_value
+    
+    def __getattr__not_find_loop(self, arg):
+        return self._args_value[arg]
 
-    def __getattr__(self, arg):
+    def __getattr__find_loop(self, arg):
         """
             Return the value of arg `name`, if it is not set, call its setter and return the value. This is a tricky implement which should not be called by user, and is only intended to be called when calling `__call__` to set args.
 
@@ -268,6 +296,7 @@ class RequestArgGroup(ArgGroup):
         'cookies': CookiesSetter(('fixed', {})),      # `cookies`     default to empty dict
         'params': ParamsSetter('none'),             # `params`      default to None
         'payload': PayloadSetter('none'),           # `payload`     default to None
+        'json': JSONSetter('none'),                 # `json`        default to None
         'proxies': ProxiesSetter(('fixed', {})),           # `proxies`     default to None
         'user_agent': UserAgentSetter('random'),    # `user-agent`  is randomly set by convention
         'headers': HeadersSetter('switch'),         # `headers`     can switch to different headers templates
@@ -280,8 +309,8 @@ class RequestArgGroup(ArgGroup):
 
 class ItemArgGroup(ArgGroup):
     _defined_args: Dict[str, ArgSetter] = {
-        'save_dir': SaveDirSetter('not_set'),       # `save_dir`    is required, not set will raise error
         'bloodline': BloodlineSetter('inherit'),    # `bloodline`   is required, not set will raise error
+        'save_dir': SaveDirSetter('not_set'),       # `save_dir`    is required, not set will raise error
     }
 
 

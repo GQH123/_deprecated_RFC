@@ -90,10 +90,10 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
         request_lib: str,
     ):
         try:
-            self._logger.info(f"applying on {repr(item)}, received")
+            # self._logger.info(f"applying on {repr(item)}, received")
             # item._wrapped_logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
             _result = self._apply_sync(item, result, request_lib)
-            self._logger.info(f"applied on {repr(item)}, sent")
+            # self._logger.info(f"applied on {repr(item)}, sent")
             # item._wrapped_logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
             return _result
         except Exception as e:
@@ -109,10 +109,10 @@ class Middleware(AttrDict, RootType, metaclass=MiddlewareMeta):
         async_lib: str,
     ):
         try:
-            self._logger.info(f"applying on {repr(item)}, received")
+            # self._logger.info(f"applying on {repr(item)}, received")
             # item._wrapped_logger.info(f"applying middleware {repr(self)} on {repr(item)}, input")
             _result = await self._apply_async(item, result, request_lib, async_lib)
-            self._logger.info(f"applied on {repr(item)}, sent")
+            # self._logger.info(f"applied on {repr(item)}, sent")
             # item._wrapped_logger.info(f"applied middleware {repr(self)} on {repr(item)}, output")
             return _result
         except Exception as e:
@@ -166,7 +166,7 @@ class StatusCodeMiddleware(Middleware):
         status_code = get_status_code(result.response, request_lib)     # type: ignore
         if status_code not in self.expected_status_codes:               # type: ignore
             raise ValueError(f"unexpected status code {repr(status_code)} in response of {repr(item)}")
-        self._logger.info(f"status code {repr(status_code)} in response of {repr(item)}")
+        # self._logger.info(f"status code {repr(status_code)} in response of {repr(item)}")
         result.status_code = status_code
         return result
 

@@ -246,6 +246,7 @@ class RequestsSession(Session):
                     url=item.url,
                     params=item.params,
                     data=item.payload,
+                    json=item.json,
                     headers=req_headers,
                     allow_redirects=True,
                     cookies=req_cookies,
@@ -253,8 +254,8 @@ class RequestsSession(Session):
                     stream=self.stream,  # is you want to use StreamDownloadersession, this must be True
                     timeout=item.timeout,
                 )
-                self._logger.info(f"session requesting {repr(item)}")
-                self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
+                # self._logger.info(f"session requesting {repr(item)}")
+                # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
                 return self._session.request(**request_args)
             except ProxyError as e:
                 self._logger.warning(f"proxy error, update proxy and retry")
@@ -330,6 +331,7 @@ class AioHTTPSession(Session):
                     url=item.url,
                     params=item.params,
                     data=item.payload,
+                    json=item.json,
                     headers=req_headers,
                     allow_redirects=True,
                     cookies=req_cookies,
@@ -337,8 +339,8 @@ class AioHTTPSession(Session):
                     chunked=self.chunked_size,
                     timeout=aiohttp.ClientTimeout(total=item.timeout),
                 )
-                self._logger.info(f"session requesting {repr(item)}")
-                self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
+                # self._logger.info(f"session requesting {repr(item)}")
+                # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
                 return await self._session.request(**request_args)
             except (
                 ClientHttpProxyError,
@@ -414,7 +416,7 @@ def _module_postprocess():
     for var_name, var_value in globals().items():
         if var_name in __all__ and isinstance(var_value, type):
             module_report[repr(var_value.__qualname__)] = {name: repr(setter) for name, setter in var_value._defined_args.items()}
-    logger.debug(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
+    logger.info(f"module {__name__} loaded:\n{json.dumps(module_report, indent=4, ensure_ascii=False)}\n")
     module_ref_path = 'docs/refs'
     if not os.path.exists(module_ref_path):
         os.makedirs(module_ref_path)

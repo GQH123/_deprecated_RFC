@@ -112,14 +112,14 @@ class Requestor(AttrDict, RootType):
         if not os.path.exists(os.path.join(item.save_dir, '_result.pkl')):
             return None
         try:
-            self._logger.info(f"process {self._logger._process_name} saved result found for {repr(item)}")
+            # self._logger.info(f"process {self._logger._process_name} saved result found for {repr(item)}")
             # item._wrapped_logger.info(f"saved result found for {repr(item)}")
             if item.is_leaf:
                 return 'SKIPPED'
             return load_object(os.path.join(item.save_dir, '_result.pkl'), raise_exception=True, logger=self._logger)
         except Exception as e:
             error_report = f'[{repr(type(e).__name__)}] {repr(e)}\n{traceback.format_exc()}'
-            self._logger.info(f"process {self._logger._process_name} failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
+            self._logger.error(f"process {self._logger._process_name} failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
             # item._wrapped_logger.info(f"failed to load saved result for {repr(item)}, caught error {repr(error_report)}")
             return None
         
@@ -139,7 +139,7 @@ class Requestor(AttrDict, RootType):
         if result is not None:
             item.finish(True, result)
             self._finished_items.append((repr(item), 'SKIPPED', item._timestamp[FINISHED]))
-            self._logger.info(f"process {self._logger._process_name} fetched {repr(item)} from saved result")
+            # self._logger.info(f"process {self._logger._process_name} fetched {repr(item)} from saved result")
             self._fetch_single_finally_sync()
             return
         retry_limit = max(0, item.retry_limit)
@@ -151,12 +151,12 @@ class Requestor(AttrDict, RootType):
                     'response': resp,
                 })
                 _middleware = self._middlewares[item.bloodline[-1][0]]
-                self._logger.info(f"process {self._logger._process_name} sending {repr(item)} to middlewares")
+                # self._logger.info(f"process {self._logger._process_name} sending {repr(item)} to middlewares")
                 for middleware in _middleware:
                     result = middleware.apply_sync(item, result, self._session._request_lib)
                 item.finish(True, result)
                 self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
-                self._logger.info(f"process {self._logger._process_name} fetched {repr(item)}")
+                # self._logger.info(f"process {self._logger._process_name} fetched {repr(item)}")
                 break
             except Exception as e:
                 error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
@@ -190,7 +190,7 @@ class Requestor(AttrDict, RootType):
         if result is not None:
             item.finish(True, result)
             self._finished_items.append((repr(item), 'SKIPPED', item._timestamp[FINISHED]))
-            self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)} from saved result")
+            # self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)} from saved result")
             await self._fetch_single_finally_async(sema)
             return
         retry_limit = max(0, item.retry_limit)
@@ -202,12 +202,12 @@ class Requestor(AttrDict, RootType):
                     'response': resp,
                 })
                 _middleware = self._middlewares[item.bloodline[-1][0]]
-                self._logger.info(f"process {self._logger._process_name} task {task_name} sending {repr(item)} to middlewares")
+                # self._logger.info(f"process {self._logger._process_name} task {task_name} sending {repr(item)} to middlewares")
                 for middleware in _middleware:
                     result = await middleware.apply_async(item, result, self._session._request_lib, self._session._async_lib)
                 item.finish(True, result)
                 self._finished_items.append((repr(item), 'OK', item._timestamp[FINISHED]))
-                self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)}, step {self._step}")
+                # self._logger.info(f"process {self._logger._process_name} task {task_name} fetched {repr(item)}, step {self._step}")
                 break
             except Exception as e:
                 error_report = f'[{repr(type(e).__name__)}] {repr(e)}'
@@ -254,7 +254,7 @@ class Requestor(AttrDict, RootType):
                 sema.release()
                 await asyncio.sleep(self.wait_sleep)  # DO NOT use time.sleep otherwise the whole event loop will be blocked
                 continue
-            self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
+            # self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             task_name = f'async-{len(tasks)}'
             tasks.append(asyncio.create_task(self._fetch_single_async(item, asyncio.sleep, sema, task_name), name=task_name))
         for task in tasks:
@@ -279,7 +279,7 @@ class Requestor(AttrDict, RootType):
                     sema.release()
                     await trio.sleep(self.wait_sleep)  # DO NOT use time.sleep otherwise the whole event loop will be blocked
                     continue
-                self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
+                # self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
                 nursery.start_soon(self._fetch_single_async, item, trio.sleep, sema)
         await self._finish_async()
         

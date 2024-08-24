@@ -53,10 +53,14 @@ class Entry(RootType):
         if not RootQueue._initialized:
             RootQueue.lazy_init()
         item_type._add_items(ids, items_kwargs, *extra_args, **extra_kwargs)
+        
+        # start root queue reporter
         Entry._started = True
         item_type._logger.info(f"{repr(item_type)} started")
         RootQueue_reporter = mp.Process(target=RootQueue.report)
         RootQueue_reporter.start()
+        
+        # run requestor
         Entry._requestor.run()  # blocked until all items finished
         RootQueue_reporter.join()
         Entry._logger.info(f"FINISHED")

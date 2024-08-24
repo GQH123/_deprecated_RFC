@@ -2,6 +2,7 @@
 # from weakref import ref
 from time import time
 from typing import Any, Callable, Dict
+# from tqdm import tqdm
 
 from ..utils.ds import AttrDict
 from ..utils.cls import (
@@ -36,7 +37,8 @@ __all__ = [
 ]
 
 
-class Item(AttrDict, RootType):
+# class Item(AttrDict, RootType):
+class Item(AttrDict):
     """
         `Item` is the instance of `ItemType`, which is the unit of crawling. `Item` is fixed across different `ItemType`s, you should never subclass it.
         
@@ -49,12 +51,12 @@ class Item(AttrDict, RootType):
         args: AttrDict,
         generate: Callable[[Any], None],
     ):
-        if 'id' not in args:
-            raise ValueError(f"no id in {repr(args)}, which is required for items")
-        if 'bloodline' not in args:
-            raise ValueError(f"no bloodline in {repr(args)}, which is required for items")
-        if 'save_dir' not in args:
-            raise ValueError(f"no save_dir in {repr(args)}, which is required for items")
+        # if 'id' not in args:
+        #     raise ValueError(f"no id in {repr(args)}, which is required for items")
+        # if 'bloodline' not in args:
+        #     raise ValueError(f"no bloodline in {repr(args)}, which is required for items")
+        # if 'save_dir' not in args:
+        #     raise ValueError(f"no save_dir in {repr(args)}, which is required for items")
         super().__init__(args)
         # self._get_logger_self(name=f"{self.bloodline[-1][0]}({repr(self.bloodline[-1][1])})", log_path=self.save_dir, level='info', delay=False)  # type: ignore
         # Item._get_logger(__name__, level='debug', propagate=False, add_file_handler=True)  # handlers will be lost after adding to mp.manager.list()
@@ -176,11 +178,11 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             Call `ArgGroup`s in this `ItemType`.
         """
         args_value = extra_kwargs
-        args_value.update(RequestArgGroup(cls.request_arg_group)(id, *extra_args, **extra_kwargs))
-        args_value.update(ItemArgGroup(cls.item_arg_group)(id, *extra_args, _item_type=cls.__name__, **extra_kwargs))
-        if 'id' not in args_value:
-            args_value['id'] = id
-        cls._logger.info(f"item created with args:\n{repr(args_value)}")
+        args_value.update(cls._request_arg_group(id, *extra_args, **extra_kwargs))
+        args_value.update(cls._item_arg_group(id, *extra_args, _item_type=cls.__name__, **extra_kwargs))
+        # if 'id' not in args_value:
+        args_value['id'] = id
+        # cls._logger.info(f"item created with args:\n{repr(args_value)}")
         return Item(AttrDict(args_value), cls._generate)
 
     @classmethod
@@ -227,7 +229,7 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         def _convert_to_list(x):
             if not isinstance(x, list):
                 if _isiterable(x):
-                    if isinstance(x, str):
+                    if isinstance(x, str) or isinstance(x, dict) or isinstance(x, set):
                         x = [x]
                     else:
                         x = list(x)
@@ -248,6 +250,8 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
         processes = []
         nproc = min(1, cls.requestor_args['nproc'])
         n_ids = len(ids)
+        cls._request_arg_group = RequestArgGroup(cls.request_arg_group)
+        cls._item_arg_group = ItemArgGroup(cls.item_arg_group)
         with get_global_lock():
             if not RootQueue._initialized:
                 RootQueue.lazy_init()
@@ -256,6 +260,9 @@ class ItemType(RootQueue, Entry, metaclass=ItemTypeMeta):
             lower_n_ids = n_ids * i // nproc
             upper_n_ids = n_ids * (i + 1) // nproc
             items_kwargs = items_kwargs[lower_n_ids:upper_n_ids] if items_kwargs is not None else None
+            # items = [cls(id, *extra_args, **{**items_kwarg, **extra_kwargs}) for id, items_kwarg in tqdm(zip(ids, items_kwargs))]
+            # print(len(items))
+            # exit(0)
             processes.append(Process(target=cls._add_items_single_process, args=(ids[lower_n_ids:upper_n_ids], items_kwargs, extra_args, extra_kwargs)))
             processes[i].start()
         

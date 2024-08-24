@@ -20,6 +20,8 @@ Requestor_logger_enable_file_handler = True
 ProxyAPI_logger_enable_file_handler = True
 RFC_logger_enable_file_handler = False
 
+FIND_ARGS_LOOP = False
+
 # Visit Status of ArgSetters
 
 UNVISITED = 0

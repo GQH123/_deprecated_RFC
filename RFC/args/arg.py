@@ -24,6 +24,7 @@ __all__ = [
     'CookiesSetter',
     'ParamsSetter',
     'PayloadSetter',
+    'JSONSetter',
     'ProxiesSetter',
     'UserAgentSetter',
     'HeadersSetter',
@@ -92,6 +93,11 @@ class ArgSetter(ArgRootType):
         return template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
     
     @staticmethod
+    def _field_json(id, arg_group, template, **kwargs):
+        kwargs['id'] = id
+        return json.loads(template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]}))
+    
+    @staticmethod
     def _func(id, arg_group, func, **kwargs):
         return func(**kwargs)  # do not contain `arg_group` arg, otherwise ArgSetter will have to be pickled, but this is impossible
         
@@ -101,6 +107,7 @@ class ArgSetter(ArgRootType):
         'not_set': _not_set,
         'field': _field,
         'func': _func,
+        'field_json' : _field_json,
     }
     # SUBCLASS
 
@@ -190,19 +197,11 @@ class CookiesSetter(ArgSetter):
         cookies = template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
         cookies = {k_v.split(cont)[0]: cont.join(k_v.split(cont)[1:]) for k_v in cookies.split(sep) if k_v}
         return cookies
-    
-    @staticmethod
-    def _field_json(id, arg_group, template, **kwargs):
-        kwargs['id'] = id
-        cookies = template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
-        cookies = json.loads(cookies)
-        return cookies
 
     _all_supported_setters = {
         'file': _read_from_file,
         'lazy_func': _lazy_func,
         'field_str': _field_str,
-        'field_json' : _field_json,
     }
 
 
@@ -211,6 +210,10 @@ class ParamsSetter(ArgSetter):
 
 
 class PayloadSetter(ArgSetter):
+    pass
+
+
+class JSONSetter(ArgSetter):
     pass
 
 
@@ -293,17 +296,9 @@ class HeadersSetter(ArgSetter):
         if type not in options:
             raise ValueError(f"headers type {repr(type)} not supported, supported types are {repr(list(options.keys()))}.")
         return options[type]
-    
-    @staticmethod
-    def _field_json(id, arg_group, template, **kwargs):
-        kwargs['id'] = id
-        headers = template.format(**{field: kwargs.get(field, None) for field in [parse_tuple[1] for parse_tuple in list(string.Formatter().parse(template))]})
-        headers = json.loads(headers)
-        return headers
 
     _all_supported_setters = {
         'switch': _switch,
-        'field_json': _field_json,
     }
 
 

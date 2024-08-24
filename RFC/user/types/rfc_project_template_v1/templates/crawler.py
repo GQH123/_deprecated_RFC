@@ -32,6 +32,7 @@ class MyItemType(ItemType):
     request_arg_group = {
         'url': ('field', '<url>'),
         'proxies': ('fixed', default_proxy_config),
+        'timeout': ('fixed', 60),
     }
     item_arg_group = {
         'save_dir': ('auto', 'saves', 'subs'),
