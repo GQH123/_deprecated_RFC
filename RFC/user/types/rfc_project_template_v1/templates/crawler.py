@@ -95,7 +95,7 @@ if __name__ == '__main__':
         ids = get_all_ids()
         items_kwargs = get_all_items_kwargs()
         if items_kwargs is None:
-            tems_kwargs = [{} for id in ids]
+            items_kwargs = [{} for id in ids]
         print(f'count for all ids: {len(ids)}\n')
         
         # filter ids by item type
