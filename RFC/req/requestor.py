@@ -4,6 +4,7 @@ import datetime
 import traceback
 from typing import Any, List, Optional, Dict
 from multiprocessing import Process
+from collections import deque  # for task sequence
 
 from ..args.arg_group import RequestorArgs
 from ..utils.ds import AttrDict
@@ -241,7 +242,7 @@ class Requestor(AttrDict, RootType):
         async_sema: int,
     ):
         sema = asyncio.Semaphore(async_sema)
-        tasks = []
+        tasks = deque()  # should only keep the latest 100000 tasks
         while True:
             await sema.acquire()
             item = self._get_item_from_root_queue()
@@ -257,6 +258,9 @@ class Requestor(AttrDict, RootType):
             # self._logger.info(f"process {self._logger._process_name} got {repr(item)} from root queue")
             task_name = f'async-{len(tasks)}'
             tasks.append(asyncio.create_task(self._fetch_single_async(item, asyncio.sleep, sema, task_name), name=task_name))
+            while len(tasks) > 100000:
+                tasks.popleft()
+                # await task  # we do not want to await the task in case of blocking the whole event loop, simple discard it
         for task in tasks:
             await task
         await self._finish_async()

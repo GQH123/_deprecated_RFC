@@ -46,6 +46,17 @@ class RootQueue(RootType):
         """
             Add a new item to `RootQueue`.
         """
+        # in case queue is too long, wait for a while
+        while True:
+            wait_for_queue = False
+            with get_global_lock():
+                if len(RootQueue._root_item_queue) >= 100000:
+                    wait_for_queue = True
+            if wait_for_queue:
+                time.sleep(10)
+            else:
+                break
+        
         with get_global_lock():
             RootQueue._step.value += 1
             RootQueue._root_item_queue.append(item)  # type: ignore # now the item is of type `Item` but not `ItemType`
