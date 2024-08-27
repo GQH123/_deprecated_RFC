@@ -1,0 +1,1 @@
+ps x | more | grep crawler_xxx | cut -d" " -f$1 | xargs -I {} kill {}

@@ -4,14 +4,14 @@ from setuptools import find_packages, setup
 setup(
     name="RFC",
     py_modules=["RFC"],
-    version="0.0.1",
-    description="Renatus' Fast Crawler",
+    version="3.0.0",
+    description="Renatus' Fast Crawler V3",
     author="Renatus",
     packages=find_packages(),
     entry_points={
-        "console_scripts": [
-            "rfc = RFC.user.main:main",
-        ],
+        # "console_scripts": [
+        #     "rfc = RFC.user.main:main",
+        # ],
     },
     install_requires=[],
     include_package_data=True,
