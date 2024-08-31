@@ -185,6 +185,7 @@ class BasicMiddleware(Middleware):
     
     _defined_args = {
         'reject_types': [],
+        'force_id_naming': False,
     }
     
     def _apply_sync(
@@ -193,7 +194,7 @@ class BasicMiddleware(Middleware):
         result: AttrDict,
         request_lib: str,
     ):
-        result.filename = get_filename(result.response, request_lib, str(item.id))         # type: ignore
+        result.filename = get_filename(result.response, request_lib, str(item.id)) if not self.force_id_naming else str(item.id)    # type: ignore
         result.fileext = get_fileext(result.response, request_lib)                         # type: ignore
         if result.fileext and result.filename.endswith(result.fileext):
             result.filename = result.filename[:-len(result.fileext)]
