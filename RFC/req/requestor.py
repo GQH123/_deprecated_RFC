@@ -110,7 +110,7 @@ class Requestor(AttrDict, RootType):
         self,
         item,
     ):
-        if not os.path.exists(os.path.join(item.save_dir, '_result.pkl')):
+        if item.force_no_skip or not os.path.exists(os.path.join(item.save_dir, '_result.pkl')):
             return None
         try:
             # self._logger.info(f"process {self._logger._process_name} saved result found for {repr(item)}")

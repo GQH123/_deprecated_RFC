@@ -217,6 +217,7 @@ class StatusCodeMiddlewareArgs(MiddlewareArgs):
 class BasicMiddlewareArgs(MiddlewareArgs):
     _defined_args: AttrDict = AttrDict({
         'reject_types': [],
+        'force_id_naming': False,
     })
     _required_args: List[str] = []
 
@@ -304,6 +305,7 @@ class RequestArgGroup(ArgGroup):
         'is_leaf': IsLeafSetter(('fixed', False)),
         'retry_limit': RetryLimitSetter(('fixed', 0)),
         'timeout': TimeoutSetter(('fixed', 60)),
+        'force_no_skip': ForceNoSkipSetter(('fixed', False)),
     }
 
 

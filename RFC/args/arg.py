@@ -25,6 +25,7 @@ __all__ = [
     'ParamsSetter',
     'PayloadSetter',
     'JSONSetter',
+    'ForceNoSkipSetter',
     'ProxiesSetter',
     'UserAgentSetter',
     'HeadersSetter',
@@ -214,6 +215,10 @@ class PayloadSetter(ArgSetter):
 
 
 class JSONSetter(ArgSetter):
+    pass
+
+
+class ForceNoSkipSetter(ArgSetter):
     pass
 
 
