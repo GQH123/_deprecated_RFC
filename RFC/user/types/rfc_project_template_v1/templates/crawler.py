@@ -33,6 +33,7 @@ class MyItemType(ItemType):
         'url': ('field', '<url>'),
         'proxies': ('fixed', default_proxy_config),
         'timeout': ('fixed', 60),
+        # IMPORTANT: referer and user_agent should be set separately, do not set them in headers
     }
     item_arg_group = {
         'save_dir': ('auto', 'saves', 'subs'),
