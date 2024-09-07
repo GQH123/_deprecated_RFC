@@ -100,7 +100,7 @@ if __name__ == '__main__':
         print(f'count for all ids: {len(ids)}\n')
         
         # filter ids by item type
-        ids_items_kwargs = [(id, item_kwargs) for id, item_kwargs in zip(ids, items_kwargs) if str(id) not in auto_skipped_ids.get('MyItemType', set())]
+        ids_items_kwargs = [(id, item_kwargs) for id, item_kwargs in zip(ids, items_kwargs) if str(id) not in auto_skipped_ids.get(<MyItemType>, set())]
         if ids_items_kwargs:
             ids, items_kwargs = zip(*ids_items_kwargs)
         else:
