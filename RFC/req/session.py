@@ -258,9 +258,9 @@ class RequestsSession(Session):
                 # self._logger.debug(f"requesting {repr(item)} with args {repr(request_args)}")
                 return self._session.request(**request_args)
             except ProxyError as e:
-                self._logger.warning(f"proxy error, update proxy and retry")
+                self._logger.warning(f"proxy error, update proxy (ignore deadline) and retry")
                 if self._proxy_api is not None:
-                    self._proxy_api.update()
+                    self._proxy_api.apply(ignore_deadline=True)
                 pass
             except Exception as e:
                 raise e
@@ -346,9 +346,9 @@ class AioHTTPSession(Session):
                 ClientHttpProxyError,
                 ClientProxyConnectionError,
             ) as e:
-                self._logger.warning(f"proxy error, update proxy and retry")
+                self._logger.warning(f"proxy error, update proxy (ignore deadline) and retry")
                 if self._proxy_api is not None:
-                    self._proxy_api.update()
+                    self._proxy_api.apply(ignore_deadline=True)
                 pass
             except Exception as e:
                 raise e

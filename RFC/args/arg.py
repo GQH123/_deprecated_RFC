@@ -230,6 +230,15 @@ class ProxiesSetter(ArgSetter):
             'proxy_api_key': api_key,
             'proxy_api_passwd': api_passwd,
         }
+        
+    @staticmethod
+    def _set_qgnet_batch_api_info(id, arg_group, api_key, api_passwd, batch_size, **kwargs):
+        return {
+            'proxy_api_type': 'qgnet_batch',
+            'proxy_api_key': api_key,
+            'proxy_api_passwd': api_passwd,
+            'proxy_batch_size': batch_size,
+        }
     
     @staticmethod
     def _set_pool_api_info(id, arg_group, pool, **kwargs):
@@ -247,6 +256,7 @@ class ProxiesSetter(ArgSetter):
 
     _all_supported_setters = {
         'qgnet': _set_qgnet_api_info,
+        'qgnet_batch': _set_qgnet_batch_api_info,
         'zmhttp': _set_zmhttp_api_info,
         'pool': _set_pool_api_info,
     }
