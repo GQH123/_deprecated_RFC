@@ -15,6 +15,17 @@ RotatingFileHandler_config = dict(
     maxBytes=10*1024*1024,
 )
 
+HOST_TIMEZONE_OFFSET = {
+    '115499db69ac': 0,
+    '69345b47b41e': 0,
+    '570e7506e832': 0,
+    'fnlp-cpu-52125': +8,
+    'f3f2cdfbb650': 0,
+}  # YOU SHOULD SET THIS CAREFULLY!
+
+import socket
+TIMEZONE_OFFSET = HOST_TIMEZONE_OFFSET[socket.gethostname()]
+
 ArgGroup_logger_enable_file_handler = False
 Requestor_logger_enable_file_handler = True
 ProxyAPI_logger_enable_file_handler = True
