@@ -48,7 +48,7 @@ class MyItemType(ItemType):
         },
         'basic': {},
         'content_saver': {},
-        'result_saver': {},
+        'result_saver': {},  # IMPORTANT: result_saver must be placed at the end, otherwise it cannot catch errors occurred in previous middlewares
     }
     requestor_args = {
         'nproc': 1,
