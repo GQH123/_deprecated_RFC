@@ -95,7 +95,7 @@ if __name__ == '__main__':
         items_kwargs = get_all_items_kwargs()
         if items_kwargs is None:
             items_kwargs = [{} for id in ids]
-        print(f'count for all ids: {len(ids)}\n')
+        print(f'count for all ids: {len(ids)}', file=open('added_ids.txt', 'a'))
         
         # filter ids by item type
         ids_items_kwargs = [(id, item_kwargs) for id, item_kwargs in zip(ids, items_kwargs) if str(id) not in auto_skipped_ids.get(<MyItemType>, set())]
@@ -103,7 +103,7 @@ if __name__ == '__main__':
             ids, items_kwargs = zip(*ids_items_kwargs)
         else:
             ids, items_kwargs = [], []
-        print(f'count for added ids: {len(ids)}\n')
+        print(f'count for added ids: {len(ids)}', file=open('added_ids.txt', 'a'))
     """
 
     # make sure item id contains no '/' so that item.save_dir will be a valid path, and better use unique id for each item (but not necessary) for convenience
