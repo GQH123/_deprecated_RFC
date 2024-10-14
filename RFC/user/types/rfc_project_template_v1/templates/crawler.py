@@ -10,13 +10,11 @@ from RFC.utils.parse import (
     parse,
 )
 
-
 default_proxy_config = {
     'http': 'http://127.0.0.1:7890',
     'https': 'http://127.0.0.1:7890',
     'all': 'socks5://127.0.0.1:7890',
 }
-
 
 # default_proxy_config = {
 #     'http': 'http://10.176.52.116:7890',
@@ -109,6 +107,5 @@ if __name__ == '__main__':
     """
 
     # make sure item id contains no '/' so that item.save_dir will be a valid path, and better use unique id for each item (but not necessary) for convenience
-    
     # MyItemType.start(ids=ids, items_kwargs=items_kwargs, bloodline=[])
     ...

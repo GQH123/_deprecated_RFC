@@ -5,13 +5,11 @@ import requests
 
 from RFC.item.item import ItemType
 
-
 default_proxy_config = {
     'http': 'http://127.0.0.1:7890',
     'https': 'http://127.0.0.1:7890',
     'all': 'socks5://127.0.0.1:7890',
 }
-
 
 # default_proxy_config = {
 #     'http': 'http://10.176.52.116:7890',
